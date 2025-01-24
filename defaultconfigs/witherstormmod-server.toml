@@ -1,0 +1,526 @@
+
+#Server options
+[server]
+	#Specifies if a warning should be printed out to server operators if flying is disabled.
+	#Default: true
+	flyingEnabledWarning = true
+
+	#Misc
+	[server.misc]
+		#Toggle to enable/disable Wither Storm chunk loading when no players are online.
+		#Default: false
+		shouldChunkLoadWhenNoPlayers = false
+		#Specifies the invulnerability time when the Wither Storm has been summoned, in seconds. When invulnerable, the Wither Storm doesn't move and can't be attacked.
+		#Default: 50
+		#Range: 1 ~ 320
+		invulnerabilityTime = 50
+		#Specifies the height the Wither Storm will fly at during phase 4 and up.
+		#Default: 75
+		#Range: 10 ~ 150
+		flyingHeight = 75
+		#Makes the Wither Storm randomly adjust it's flying height itself between 40 and 80.
+		#Default: false
+		dynamicFlyingHeight = false
+		#The time (in seconds) that the Wither Storm should take before adjusting it's dynamic flying height.
+		#Default: 60
+		#Range: 15 ~ 1200
+		dynamicFlyingHeightTime = 60
+		#If the Wither Storm's ultimate target has a command block tool and the Wither Storm is at phase 7, a timer specified by this value (in minutes) + random will countdown until the hole will automatically appear.
+		#Default: 6
+		#Range: 1 ~ 30
+		tillShouldShowHole = 6
+		#Specifies if the bowels entrance hole in the Wither Storm's mass at the end of phase 7 should be available or not.
+		#Default: true
+		shouldShowHole = true
+		#Specifies the rotation speed of the Wither Storm.
+		#Default: 0.1
+		#Range: 0.1 ~ 1.0
+		rotationSpeed = 0.1
+		#Specifies if the Wither Storm should regenerate its health and be melee attackable.
+		#Default: true
+		witherStormInvulnerability = true
+		#The Wither Storm's bossbar and boss music will automatically toggle based on whether the player is underground or not. Disable to revert back to default bossbar/boss theme logic.
+		#Default: true
+		smartBossbar = true
+		#Specifies if players should spawn somewhere random when entering the bowels. Disable to revert to a static entrance position.
+		#Default: true
+		randomBowelsEntrance = true
+		#Specifies if crossbows should be able to also shoot ender pearls. Disable if facing compatibility issues.
+		#Default: true
+		crossbowsSupportEnderPearls = true
+		#Specifies if players should temporarily respawn away from the Wither Storm when they die to it, if their respawn point is near the Storm.
+		#Default: true
+		preventWitherStormCamping = true
+		#Specifies if max strength damange resistance should be given to the player when falling out of the bowels, to mitigate fall damage.
+		#Default: true
+		bowelsFallResistance = true
+		#Specifies the phase the Wither Storm should be set to when resummoned by a withered beacon.
+		#Default: 4
+		#Range: 0 ~ 7
+		resummonedPhase = 4
+		#Specifies if the Wither Storm's heads can be attacked.
+		#Default: true
+		canAttackHeads = true
+		#Specifies if only the end of phase five can be formidibombed, instead of all of phase 5.
+		#Default: false
+		endOfPhaseFiveBombableExclusively = false
+		#Specifies if global sounds made by the Wither Storm (e.x. evolve sound) should play cross dimensionally.
+		#Default: false
+		shouldPlayGlobalSoundsCrossDimensionally = false
+		#Makes the Wither Storm attempt to only grab blocks that were tagged in the Tractor Distractions json.
+		#Default: false
+		onlyTryPickingUpTractorTagged = false
+		#CAUTION THIS WILL BE EXTREMELY LAGGY, THIS SETS THE WITHER STORM TO HAVE NO SMALL CLUSTER COOLDOWN.
+		#Default: false
+		constantBlackhole = false
+		#Specifies if a Wither Storm head should immediately kill the player upon biting them. Does not apply to heads inside the bowels.
+		#Default: false
+		instantChomp = false
+		#Specifies if the Wither Storm should heal whenever it eats a mob (determined by half the mob's max health).
+		#Default: false
+		healFromChomp = false
+
+	#Ultimate Target Logic
+	[server.ultimate_target_logic]
+		#Specifies the targeting type the Wither Storm should use to determine it's ultimate target.
+		#Default: NEAREST
+		#Allowed Values: NEAREST, FARTHEST, GROUP, NONE, RANDOM_STROLL, RANDOM_PLAYER, RANDOMIZED, RANDOM_STROLL_NEAR_PLAYER
+		ultimateTargetingType = "NEAREST"
+		#Makes the Wither Storm target the player that was farthest from it while using FARTHEST targeting for the configured amount of time (in minutes).
+		#Default: 15
+		#Range: 1 ~ 60
+		farthestTargetingTime = 15
+		#If you're using RANDOMIZED targeting you can use this to set how often (in minutes) the Wither Storm should switch its targeting type.
+		#Default: 15
+		#Range: 1 ~ 60
+		randomizedTargetingTime = 15
+		#When set to true the Wither Storm will have a 10% chance to speedup when it changes it's targeting type while using RANDOMIZED targeting.
+		#Default: true
+		randomlySpeedUpWithTargetChange = true
+		#Specifies if the amulet should override the Wither Storm's targeting.
+		#Default: true
+		amuletOverride = true
+		#The max amount of distance a Wither Storm can travel at once when using the RANDOM_STROLL or RANDOM_STROLL_NEAR_PLAYER targeting type.
+		#Default: 500
+		#Range: 200 ~ 5000
+		maxRandomStrollTargetingTypeRadius = 500
+		#If the Wither Storm's ultimate target is hidden (bossbar is not visible for that target) for an extended period of time, it will ignore that target temporarily and go for a different player. Toggle to disable. NOTE: Only functional on a multiplayer environment.
+		#Default: true
+		ignoreUltimateTargetIfHidden = true
+		#Specifies if smaller Wither Storms should follow one with more consumed entities.
+		#Default: true
+		witherStormsFollowBiggerStorms = true
+
+		#Chases
+		[server.ultimate_target_logic.chases]
+			#If the ultimate target is stationary for a specific amount of time, the Wither Storm will begin to move towards it at a faster rate (chase). Toggle to enable/disable this feature.
+			#Default: true
+			shouldChaseWhenTargetStopped = true
+			#Specifies if the Wither Storm should accelerate when it evolves into the next phase..
+			#Default: true
+			chaseOnPhaseChange = true
+
+		#Target Stationary Logic
+		[server.ultimate_target_logic.target_stationary_logic]
+			#If the player remains in a radius of chunks specified by this value for a specific amount of time, the Wither Storm will begin to move towards the player at a faster rate
+			#Requires restart.
+			#Default: 8
+			#Range: 0 ~ 16
+			targetStationaryChunkRadius = 8
+			#Specifies the amount of time in minutes that the Wither Storm's ultimate target must be stationary in order for it to accelerate
+			#Requires restart.
+			#Default: 30
+			#Range: 1 ~ 120
+			targetStationaryMinutes = 30
+			#Specifies if the Wither Storm should use the phase as a multiplier when calculating the time in ticks it takes for it to start accelerating, when its ultimate target is stationary.
+			#Default: true
+			usePhaseAsDistanceMultiplier = true
+			#Specifies if the Wither Storm should use this value as a multiplier when calculating the time in ticks it takes for it to start accelerating, when its ultimate target is stationary.
+			#Default: 1.0
+			#Range: 0.1 ~ 24.0
+			distanceMultiplier = 1.0
+			#Specifies the amount of time in minutes that the Wither Storm's ultimate target has begun to run away in order to slow back down again.
+			#Default: 10
+			#Range: 1 ~ 90
+			targetRunawayMinutes = 10
+
+		#Runaway Attempts
+		[server.ultimate_target_logic.runaway_attempts]
+			#Specifies if the Wither Storm should count the times its ultimate target leaves the stationary chunk radius. After a specified amount of attempts has been reached, the Wither Storm will accelerate to its Target Stationary Speed.
+			#Default: true
+			targetRunawayAttempts = true
+			#Specifies the required time, in minutes, the Wither Storms ultimate target must be stationary in order to be able to count a runaway attempt when it tries to leave the stationary chunk radius.
+			#Default: 2
+			#Range: 1 ~ 20
+			targetRunawayAttemptMinutes = 2
+			#Specifies the amount of runaway attempts made by the Wither Storms ultimate target that must be met for it to begin a chase.
+			#Default: 5
+			#Range: 1 ~ 32
+			targetRunawayAttemptsRequired = 5
+			#Specifies the required time that must pass (in minutes) in order to decrease the runaway attempt amount. This timer only counts if the Wither Storms ultimate target remains in the stationary chunk radius.
+			#Default: 16
+			#Range: 1 ~ 48
+			minutesTillRunawayAttemptDiminish = 16
+
+		#Distractions
+		[server.ultimate_target_logic.distractions]
+			#Specifies when the Wither Storm is done chasing its ultimate target if it should become 'distracted' and go to a random nearby area.
+			#Default: true
+			targettingDistractionsEnabled = true
+			#Specifies the time in minutes that the Wither Storm should be distracted for, plus some random modifying and more.
+			#Default: 25
+			#Range: 1 ~ 25
+			distractionTimeMinutes = 25
+			#Distractions will not occur if the Wither Storm's ultimate target is outside the radius determined by this value + its target range. Although, if the ultimate target is inside the radius, but then leaves, a distraction can then later occur.
+			#Default: 1000
+			#Range: 100 ~ 3000
+			maximumDistractionDistance = 1000
+			#Distractions will not occur IMMEDIATELY if the Wither Storm's ultimate target is INSIDE the radius determined by this value + its target range. If the target is inside this radius, the Wither Storm will wait before becoming distracted, to see if the target is outside the radius. If not, a distraction will not occur. Set to 0 to disable.
+			#Default: 50
+			#Range: 10 ~ 500
+			minimumDistractionDistance = 50
+			#Distractions may or may not occur if the conditions are met/unmet based off of a random chance. Toggle to enable/disable.
+			#Default: true
+			randomDistractionChances = true
+			#Specifies the search radius multiplier for when searching for a random location to go to.
+			#Default: 1
+			#Range: 1 ~ 8
+			searchableRangeMultiplier = 1
+			#For when the Wither Storm needs to wait to become distracted, this value (in minutes) will specifiy the wait time, plus a random modifier.
+			#Default: 2
+			#Range: 1 ~ 20
+			distractionWaitTime = 2
+			#Specifies if the Wither Storm should get distracted when a player boats across water for too long. Used to prevent specific scenarios where the Wither Storm is chasing players but it can't quite keep up.
+			#Default: true
+			boatingForTooLongDistractions = true
+			#The amount of time a player needs to be boating until the Wither Storm will become distracted.
+			#Default: 60
+			#Range: 30 ~ 300
+			boatingForTooLongSeconds = 60
+
+		#Random Strolling
+		[server.ultimate_target_logic.random_strolling]
+			#Specifies if the Wither Storm should stroll around the player if they're hidden from the storm.
+			#Default: true
+			randomStrollingWhenTargetHidden = true
+
+		#Speed
+		[server.ultimate_target_logic.speed]
+			#Specifies a modifier value of Target Stationary Flying Speed attribute. The higher the value, the faster the Wither Storm will go when its ultimate target is stationary
+			#Requires restart.
+			#Default: 0.4
+			#Range: 0.01 ~ 1.0
+			chasingFlyingSpeed = 0.4
+			#Specifies a modifier value of Slow Flying Speed attribute. The higher the value, the faster the Wither Storm will go when it's ultimate target is not stationary
+			#Requires restart.
+			#Default: 0.02
+			#Range: 0.01 ~ 1.0
+			normalFlyingSpeed = 0.02
+
+	#Targeting
+	[server.targeting]
+		#The targeting invulnerability time in seconds players who escape from a Wither Storm after injuring a head get.
+		#Default: 40
+		#Range: 0 ~ 60
+		headEscapeTime = 40
+		#Modifies the tractor beam pull speed, higher = faster.
+		#Default: 0.2
+		#Range: 0.1 ~ 1.0
+		tractorPullSpeedModifier = 0.2
+		#Specifies if certain mobs (by default, players) should be targeted over others.
+		#Default: true
+		specialTargetingBias = true
+		#The percent chance certain mobs (by default, players) should be picked up over others.
+		#Default: 75
+		#Range: 0 ~ 100
+		specialTargetingBiasChance = 75
+
+	#Evolution
+	[server.evolution]
+		#Specifies a modifier value of the evolution rate attribute. The higher the value, the longer it takes for the Wither Storm to make a complete evolution (from phases 0 to 7), and vice versa. Cannot be lower than 0.
+		#Default: 1.0
+		#Range: 0.01 ~ 32.0
+		evolutionAttributeModifier = 0.1
+
+	#Performance
+	[server.performance]
+		#Specifies if Block Clusters should remove non-important items in its path. NOTE: Disabling can cause major lag.
+		#Default: true
+		clustersRemoveItems = true
+		#If true, the hitbox of the Wither Storm and Wither Storm Segment's will be shrunk vertically to one block. Enable if facing major server lag in the bigger Wither Storm phases
+		#Requires restart.
+		#Default: false
+		squashHitbox = false
+		#Specifies the chunk loading radius for the Wither Storm
+		#Requires restart.
+		#Default: 12
+		#Range: 6 ~ 32
+		chunkLoadingRadius = 12
+		#Specifies if junk items near the Wither Storm should be immediately destroyed. NOTE: Disabling will cause massive server side and potential FPS lag!.
+		#Default: true
+		removeNearbyJunk = true
+		#Specifies if mobs should go into nearby nether portals when running away from a Wither Storm.
+		#Default: true
+		mobsRunIntoPortals = true
+
+	#World Consumption
+	[server.world_consumption]
+		#Alters the interval (in ticks) of picking up block clusters for the hunchback phases (phase 0 - 3). NOTE: This value changes the evolution speed of the Wither Storm significantly.
+		#Default: 20
+		#Range: 10 ~ 80
+		hunchbackClusterPickupInterval = 20
+		#Alters the interval (in ticks) of picking up block clusters for the destroyer phases (phase 4 - 5). NOTE: This value changes the evolution speed of the Wither Storm significantly.
+		#Default: 40
+		#Range: 10 ~ 80
+		clusterPickupInterval = 40
+		#Alters the interval (in ticks) of picking up block clusters for the devourer phases (phase 6+). NOTE: This value changes the evolution speed of the Wither Storm significantly.
+		#Default: 40
+		#Range: 10 ~ 80
+		devourerClusterPickupInterval = 40
+		#Specifies if the Wither Storm's tractor beams can pull in multiple mobs at once that interesect the beam.
+		#Default: true
+		canPickupMobClusters = true
+		#Increases the radius of block clusters linearly by this amount. NOTE: Greatly impacts the Wither Storm's evolution rate. Greater values also lead to worse performance!.
+		#Default: 0
+		#Range: 0 ~ 16
+		clusterSizeModifier = 0
+		#Specifies if the Wither Storm should be able to pick up block clusters with its tractor beams.
+		#Default: true
+		tractorBeamClusterPickUp = true
+		#Makes it so the Wither Storm will remove fluids above Y 63 with its tractor beams.
+		#Default: true
+		tractorBeamsRemoveFluids = true
+		#Modifies the Wither Storm's block cluster pull speed by multiplying the default speed with this value.
+		#Default: 1.0
+		#Range: 0.1 ~ 10.0
+		blockClusterPullSpeedModifier = 1.0
+		#Multiplies the speed of block clusters being pulled in by a Wither Storm's tractor beam by this value.
+		#Default: 1.0
+		#Range: 0.1 ~ 10.0
+		tractorBeamClusterSpeedModifier = 1.0
+		#How far the tractor beams should search for distraction blocks, NOTE: High values may cause lag.
+		#Default: 10
+		#Range: 4 ~ 256
+		tractorBeamBlockSearchRadius = 10
+		#Specifies if block clusters can have a chance to spiral counter clockwise when being consumed by the Wither Storm.
+		#Default: false
+		canClustersSpiralCounterClockwise = false
+		#Specifies if the Wither Storm should convert falling blocks into clusters (NOTE: This can be very laggy and cause the Wither Storm to evolve fast!).
+		#Default: false
+		convertFallingBlocks = false
+		#Specifies the height of which tractor beams should remove water. The default of 63 is ocean height and upwards.
+		#Default: 63
+		#Range: -64 ~ 320
+		tractorBeamFluidRemovalHeight = 63
+
+	#Caves
+	[server.caves]
+		#Specifies if the screen should shake and other various cave rumble effects should occur when underground and near the Storm.
+		#Default: true
+		caveRumbles = true
+		#Specifies if sounds from the Wither Storm should be heard when deep underground.
+		#Default: true
+		occludeSoundsUnderground = true
+		#Higher values makes cave rumbles more 'intense,' and makes more dripstone and glowberries fall.
+		#Default: 0.25
+		#Range: 0.0 ~ 1.0
+		caveRumbleIntensity = 0.25
+		#Specifies if a random chance for extended cave rumbles to occur should be possible.
+		#Default: true
+		chanceForExtendedRumbles = true
+		#Specifies the minimum interval possible (in seconds) between cave rumbles.
+		#Default: 60
+		#Range: 5 ~ 1800
+		caveRumbleIntervalMin = 60
+		#Specifies the maximum interval possible (in seconds) between cave rumbles.
+		#Default: 180
+		#Range: 5 ~ 1800
+		caveRumbleIntervalMax = 180
+		#Specifies if cave rumbles should mess with redstone type blocks.
+		#Default: true
+		caveRumblesMessWithRedstone = true
+
+	#Wither Sickness
+	[server.wither_sickness]
+		#Specifies if mobs should be able to receive wither sickness
+		#Requires restart.
+		#Default: true
+		witherSicknessEnabled = true
+		#Specifies if mobs should convert to sickened mobs once they die from wither sickness.
+		#Default: true
+		sickenedMobConversions = true
+		#Specifies if entities who are reinfected over a short period of time should receive wither sickness with a greater strength.
+		#Default: true
+		increaseAmplifier = true
+		#After a mob has been targetted by the Wither Storm a set maximum of times, the mob will become infected
+		#Requires restart.
+		#Default: 6
+		#Range: 1 ~ 40
+		requiredContacts = 6
+		#Specifies the amount of time in seconds high immunity mobs (players) must be near the Wither Storm in order to to begin infection
+		#Requires restart.
+		#Default: 600
+		#Range: 12 ~ 1200
+		requiredProximitySeconds = 600
+		#Specifies the amount of time in seconds high immunity mobs (players) must be infected in order to be applied the wither sickness effect
+		#Requires restart.
+		#Default: 720
+		#Range: 12 ~ 1200
+		applicationDelay = 720
+		#Specifies the delay, in seconds, before high immunity mobs (players) are cured of wither sickness
+		#Requires restart.
+		#Default: 480
+		#Range: 12 ~ 1200
+		cureDelay = 480
+		#Specifies the amount of time in seconds that low immunity mobs must be near the Wither Storm in order to begin infection
+		#Requires restart.
+		#Default: 360
+		#Range: 12 ~ 1200
+		lowImmuneRequiredProximitySeconds = 360
+		#Specifies the amount of time in seconds low immunity mobs must be infected in order to be applied the wither sickness effect
+		#Requires restart.
+		#Default: 410
+		#Range: 12 ~ 1200
+		lowImmuneApplicationDelay = 410
+		#Specifies the delay, in seconds, before low immunity mobs are cured of wither sickness
+		#Requires restart.
+		#Default: 480
+		#Range: 12 ~ 1200
+		lowImmuneCureDelay = 480
+		#High immunity mobs (players) will be assigned a random proximity seconds modifier that will change the proximity seconds time. This value will set the maximum potential limit for that modifier, in seconds.
+		#Default: 180
+		#Range: 12 ~ 1200
+		proximitySecondsModifierMax = 180
+		#High immunity mobs (players) will be assigned a random application delay modifier that will change the application delay. This value will set the maximum potential limit for that modifier, in seconds.
+		#Default: 300
+		#Range: 12 ~ 1200
+		applicationDelayModifierMax = 300
+		#High immunity mobs (players) will be assigned a random cure delay modifier that will change the cure delay. This value will set the maximum potential limit for that modifier, in seconds.
+		#Default: 180
+		#Range: 12 ~ 1200
+		cureDelayModifierMax = 180
+		#Low immunity mobs will be assigned a random proximity seconds delay modifier that will change the proximity seconds time. This value will set the maximum potential limit for that modifier, in seconds.
+		#Default: 180
+		#Range: 12 ~ 1200
+		lowImmuneProximityModifierMax = 180
+		#Low immunity mobs will be assigned a random application delay modifier that will change the proximity seconds time. This value will set the maximum potential limit for that modifier, in seconds.
+		#Default: 140
+		#Range: 12 ~ 1200
+		lowImmuneApplicationModifierMax = 140
+		#Low immunity mobs will be assigned a random cure delay modifier that will change the cure delay time. This value will set the maximum potential limit for that modifier, in seconds.
+		#Default: 180
+		#Range: 12 ~ 1200
+		lowImmuneCureDelayModifierMax = 180
+		#Specifies if Wither Sickness should be removed after a player respawns.
+		#Default: true
+		keepSicknessAfterRespawn = true
+
+	#Formidibomb
+	[server.formidibomb]
+		#Specifies the fuse in ticks that count down to the formidibomb's explosion. The fuse is set when the block is crafted.
+		#Default: 12000
+		#Range: 1 ~ 12000
+		craftFuseTicks = 12000
+		#If the formidibomb is manually set on fire the fuse tick count will be set to this value, if the original fuse is greater than this value.
+		#Default: 1200
+		#Range: 1 ~ 12000
+		catchFireFuseTicks = 1200
+		#Specifies if after a set amount of time the formidibomb item should drop out of whatever inventory is holding it and should spawn as the entity.
+		#Default: true
+		shouldDropFromInventory = true
+		#Specifies the interval for when the formidibomb will drop out of its inventory (if enabled). This value divides the crafted fuse ticks to get the interval (e.x. 12000 / 4 = 3000).
+		#Default: 4
+		#Range: 1 ~ 8
+		dropInterval = 4
+		#Lowers the resistance of blocks in the path of the explosion, effectively increasing the strength of the explosion which allows for obsidian, etc. to be destroyed.
+		#Default: true
+		lowerBlockResistance = true
+		#Specifies if a formidibomb's auto detonation fuse should be enabled.
+		#Default: true
+		formidibombFuseEnabled = true
+
+	#Playing dead
+	[server.playing_dead]
+		#Specifies if the Wither Storm should automatically revive if not found after a period of time.
+		#Default: true
+		revivalTimer = true
+		#Specifies when (in minutes) the Wither Storm will automatically revive when playing dead.
+		#Default: 60
+		#Range: 1 ~ 120
+		revivalTimeMinutes = 60
+		#Specifies the time (in minutes) after being revived that the Wither Storm should ignore players.
+		#Default: 3
+		#Range: 1 ~ 40
+		revivalPlayerProtection = 3
+
+	#Withered Symbiont
+	[server.withered_symbiont]
+		#Specifies if the Wither Storm can summon the Withered Symbiont.
+		#Default: true
+		canSummonSymbiont = true
+		#Specifies if the Withered Symbiont is hostile towards other mobs (This is only applied to Symbionts spawned after this change is applied).
+		#Default: false
+		shouldSymbiontAttackMobs = false
+		#Specifies the minimum interval (+random) in seconds that the Wither Storm should check for Withered Symbiont spawn conditions.
+		#Default: 60
+		#Range: 1 ~ 240
+		minimumSpawnCheckInterval = 60
+		#Specifies the delay in minutes (+random) that the Wither Storm will be able to summon a Withered Symbiont.
+		#Default: 10
+		#Range: 1 ~ 20
+		witherStormSummoningDelay = 10
+		#Specifies the time in minutes (+random) that the players who killed a Withered Symbiont should be ignored by the Wither Storm for.
+		#Default: 5
+		#Range: 1 ~ 10
+		playerInvulnerableTime = 5
+		#Specifies the delay in minutes (+random) that the Wither Storm should be able summon a Withered Symbiont for the player it summoned one for.
+		#Default: 10
+		#Range: 1 ~ 60
+		playerSummoningDelay = 10
+		#If a player kills a Withered Symbiont, their sumoning delay will be increased to this value in minutes (+random).
+		#Default: 40
+		#Range: 1 ~ 60
+		playerSummoningDelayOnKill = 40
+		#Specifies if the Withered Symbiont can be attacked from behind if it's not vulnerable.
+		#Default: false
+		attackableWhenNotVulnerable = false
+		#If multiple players are near the Withered Symbiont, the command block book will automatically drop into the inventory of the player the Symbiont was spawned for, if they are nearby and have inventory space.
+		#Default: true
+		bookDropsInInventory = true
+		#Adds this value multiplied by the amount of nearby players to the Symbiont's max health when it is spawned. Set to zero to disable this feature.
+		#Default: 20.0
+		#Range: 0.0 ~ 100.0
+		healthScalePerPlayer = 20.0
+
+	#Flaming Skulls
+	[server.flaming_skulls]
+		#The flaming skull explosion size when they collide with blocks.
+		#Default: 5.0
+		#Range: 1.0 ~ 16.0
+		flamingSkullExplosionSize = 5.0
+		#The speed modifier for flaming wither skulls. Higher = faster.
+		#Default: 1.0
+		#Range: 0.5 ~ 8.0
+		flamingSkullSpeedModifier = 1.0
+
+	#Roaring
+	[server.roaring]
+		#Specifies the lowest time, in seconds, it will take for one of the Wither Storm's heads to initiate a roar and shoot a flaming skull.
+		#Default: 20
+		#Range: 1 ~ 100
+		minimumRoarInterval = 20
+		#Specifies the greatest time, in seconds, it will take for one of the Wither Storm's heads to initiate a roar and shoot a flaming skull.
+		#Default: 50
+		#Range: 1 ~ 100
+		maximumRoarInterval = 50
+
+	#Item Preservation
+	[server.item_preservation]
+		#When a player dies, a block cluster containing their items will be created into the world based on the condition defined by this value. Acts as a gravestone.
+		#Default: CHOMPED_OR_KILLED_NEAR_HEAD
+		#Allowed Values: ANY_WITHER_STORM_DEATH, CHOMPED_OR_KILLED_NEAR_HEAD, CHOMPED, DISABLED
+		itemPreservation = "CHOMPED_OR_KILLED_NEAR_HEAD"
+		#Specifies if drops should be preserved using block clusters (gravestones) for all mobs, not just players.
+		#Default: false
+		preserveDropsForAllMobs = false
+

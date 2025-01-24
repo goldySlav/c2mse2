@@ -13,6 +13,10 @@
       "emc": 0
     },
     {
+      "item": "ae2:sky_stone_block",
+      "emc": 256
+    },
+    {
       "item": "ae2:calculation_processor_press",
       "emc": 0
     },
@@ -735,10 +739,6 @@
     {
       "item": "createmetallurgy:tungsten_ingot",
       "emc": 1024
-    },
-    {
-      "item": "ae2:sky_stone_block",
-      "emc": 0
     },
     {
       "item": "rftoolsbase:dimensionalshard",
