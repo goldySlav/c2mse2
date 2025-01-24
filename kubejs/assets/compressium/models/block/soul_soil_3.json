@@ -1,0 +1,22 @@
+{
+  "parent": "minecraft:block/block",
+  "children": {
+    "Solid": {
+      "parent": "minecraft:block/soul_soil"
+    },
+    "Translucent": {
+      "parent": "minecraft:block/cube_all",
+      "textures": {
+        "all": "compressium:block/layer_3"
+      }
+    }
+  },
+  "item_render_order": [
+    "Solid",
+    "Translucent"
+  ],
+  "loader": "forge:composite",
+  "textures": {
+    "particle": "minecraft:block/soul_soil"
+  }
+}

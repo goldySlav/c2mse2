@@ -1,0 +1,10 @@
+{
+  "name": "Blursed Earth",
+  "colors": [
+    "6e6a66",
+    "bc5430"
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/draconium"
+  }
+}

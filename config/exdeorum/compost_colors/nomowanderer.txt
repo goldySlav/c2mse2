@@ -1,0 +1,5 @@
+// Compost colors for nomowanderer. You may add your own colors, change existing ones, or remove colors that aren't needed.
+no_mo_wanderer_totem, #b4ab7c
+no_soliciting_sign, #bb9354
+trader_cloth_piece, #b5865e
+trader_rug, #ae8666

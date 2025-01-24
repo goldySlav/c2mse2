@@ -1,0 +1,577 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4_inductive_age"
+	group: "2F6B1FE330B2219D"
+	icon: "kubejs:inductive_machine"
+	id: "013DE0102E7C3A34"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["48753F8B4874A9F9"]
+			id: "57D09DE864191C39"
+			tasks: [{
+				id: "6708BF662CC45BA8"
+				title: "Start Chapter"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -18.5d
+		}
+		{
+			dependencies: ["0771ABE6A5754AA1"]
+			id: "52257FDA80778223"
+			shape: "rsquare"
+			tasks: [{
+				id: "718690544202BBF3"
+				item: "kubejs:inductive_machine"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"50036BDE7951A561"
+				"1467542289484994"
+				"561E1DCEDCA82076"
+			]
+			icon: "kubejs:inductive_mechanism"
+			id: "0771ABE6A5754AA1"
+			tasks: [
+				{
+					id: "1C42657AFC0566FD"
+					item: "kubejs:inductive_mechanism"
+					type: "item"
+				}
+				{
+					id: "284DE148FA1A5043"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["48753F8B4874A9F9"]
+			id: "50036BDE7951A561"
+			shape: "rsquare"
+			tasks: [{
+				id: "60599694322A6F8C"
+				item: {
+					Count: 1
+					id: "kubejs:chromatic_resonator"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["108E9D3231FAC5D2"]
+			icon: "kubejs:radiant_coil"
+			id: "1467542289484994"
+			tasks: [
+				{
+					id: "68FB1FB93123A59F"
+					item: "kubejs:radiant_coil"
+					type: "item"
+				}
+				{
+					id: "3744D3C5EBFAFA69"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["19EEAF629AE72C2A"]
+			icon: "extendedcrafting:ender_nugget"
+			id: "561E1DCEDCA82076"
+			tasks: [
+				{
+					id: "4925D709C664C86B"
+					item: "extendedcrafting:ender_nugget"
+					type: "item"
+				}
+				{
+					id: "2312937CA9AD9AB7"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"157B734BA037EFF4"
+				"7821FDEDDD684DD1"
+			]
+			icon: "createmetallurgy:molten_void_steel_bucket"
+			id: "19EEAF629AE72C2A"
+			tasks: [
+				{
+					id: "6F89B96D07786C95"
+					item: "createmetallurgy:molten_void_steel_bucket"
+					type: "item"
+				}
+				{
+					id: "7EEAB7229272F041"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3322460DD120C633"]
+			icon: "vintageimprovements:refined_radiance_sheet"
+			id: "108E9D3231FAC5D2"
+			tasks: [
+				{
+					id: "2AC7E4CE3CE1D42E"
+					item: "vintageimprovements:refined_radiance_sheet"
+					type: "item"
+				}
+				{
+					id: "36378D5842F17521"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["12D6ACC2191CB67C"]
+			icon: "kubejs:ender_bucket"
+			id: "157B734BA037EFF4"
+			tasks: [
+				{
+					id: "535653E02ECD3EE3"
+					item: "kubejs:ender_bucket"
+					type: "item"
+				}
+				{
+					id: "75E32B3896C40042"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["14F9B5367649B1B4"]
+			icon: "createmetallurgy:molten_iron_bucket"
+			id: "7821FDEDDD684DD1"
+			tasks: [
+				{
+					id: "2D46276700A38059"
+					item: "createmetallurgy:molten_iron_bucket"
+					type: "item"
+				}
+				{
+					id: "23F17B9EFFA4F857"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4A1625B6EFBE3B31"]
+			icon: "minecraft:iron_nugget"
+			id: "14F9B5367649B1B4"
+			tasks: [
+				{
+					id: "6422C52A5EDC948F"
+					item: "minecraft:iron_nugget"
+					type: "item"
+				}
+				{
+					id: "0964006088E25269"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["09DC92D492782F92"]
+			icon: "minecraft:gravel"
+			id: "4A1625B6EFBE3B31"
+			tasks: [
+				{
+					id: "373753A40CE63C74"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					id: "6B5B8CB183A07F3B"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["57D09DE864191C39"]
+			icon: "minecraft:cobblestone"
+			id: "09DC92D492782F92"
+			tasks: [
+				{
+					id: "15332C34C0B40681"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					id: "7DBAC6DD0DCD279E"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["57D09DE864191C39"]
+			icon: "minecraft:ender_pearl"
+			id: "12D6ACC2191CB67C"
+			tasks: [
+				{
+					id: "7EE06CDEB951B183"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "14ABC8A17F7BF8FF"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 3.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["72990BF5F56BCE79"]
+			icon: {
+				Count: 1
+				id: "create:chromatic_compound"
+				tag: { }
+			}
+			id: "3D7634CDF66F9B4F"
+			tasks: [
+				{
+					id: "4011057EE598CE27"
+					item: {
+						Count: 1
+						id: "create:chromatic_compound"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "2230776385ECA004"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["18B527C2EA8919A3"]
+			icon: "ae2:magenta_paint_ball"
+			id: "72990BF5F56BCE79"
+			tasks: [
+				{
+					id: "0DB673BDD2554979"
+					item: "ae2:magenta_paint_ball"
+					type: "item"
+				}
+				{
+					id: "40249F9025164D29"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7126921CB51269CE"]
+			id: "18B527C2EA8919A3"
+			shape: "rsquare"
+			tasks: [{
+				id: "6314C333AAC34BBE"
+				item: "ae2:blue_paint_ball"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6D16034A9185896D"]
+			id: "7126921CB51269CE"
+			shape: "rsquare"
+			tasks: [{
+				id: "74CD9AD8BADD4198"
+				item: "ae2:green_paint_ball"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4DDBCB7680B7278D"]
+			id: "6D16034A9185896D"
+			shape: "rsquare"
+			tasks: [{
+				id: "4F4BB971665ECE8C"
+				item: "ae2:yellow_paint_ball"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["0DB134BA7AC6B87F"]
+			id: "4DDBCB7680B7278D"
+			shape: "rsquare"
+			tasks: [{
+				id: "7D3AB27CDFCCE6E9"
+				item: "ae2:red_paint_ball"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"664AEADF35125B8E"
+				"7DE4880FCD6D8720"
+			]
+			icon: "kubejs:dye_entangled_singularity"
+			id: "0DB134BA7AC6B87F"
+			tasks: [
+				{
+					id: "232EB280DA9A774E"
+					item: "kubejs:dye_entangled_singularity"
+					type: "item"
+				}
+				{
+					id: "6B6761AA480B2031"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["57D09DE864191C39"]
+			icon: "minecraft:cactus"
+			id: "4F740B2BF0374ECA"
+			tasks: [
+				{
+					id: "0A8E5CF3D273ADA2"
+					item: "minecraft:cactus"
+					type: "item"
+				}
+				{
+					id: "46AB4B3A26D5872F"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["4F740B2BF0374ECA"]
+			icon: "minecraft:green_dye"
+			id: "664AEADF35125B8E"
+			tasks: [
+				{
+					id: "484FF50AC87E3A4C"
+					item: "minecraft:green_dye"
+					type: "item"
+				}
+				{
+					id: "6D5BEDF8B1011275"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["79E99A0EA6245495"]
+			icon: "ae2:quantum_entangled_singularity"
+			id: "7DE4880FCD6D8720"
+			tasks: [
+				{
+					id: "065D2EE605FD0A15"
+					item: "ae2:quantum_entangled_singularity"
+					type: "item"
+				}
+				{
+					id: "346D65CC28DD5118"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["20BF1EDF6E1D1332"]
+			icon: "ae2:singularity"
+			id: "79E99A0EA6245495"
+			tasks: [
+				{
+					id: "2EE5C9E20539FD1C"
+					item: "ae2:singularity"
+					type: "item"
+				}
+				{
+					id: "71C6374134348920"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: -11.0d
+		}
+		{
+			dependencies: [
+				"09DC92D492782F92"
+				"2C53BC8ECC03FA94"
+			]
+			icon: "create:crushing_wheel"
+			id: "20BF1EDF6E1D1332"
+			tasks: [
+				{
+					id: "2FE4577204B500DA"
+					item: "create:crushing_wheel"
+					type: "item"
+				}
+				{
+					id: "0F5DC78CD4E041BB"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["1EB45C5AAABC5DA4"]
+			icon: "minecraft:stick"
+			id: "2C53BC8ECC03FA94"
+			tasks: [
+				{
+					id: "468A5293C65A7BF5"
+					item: "minecraft:stick"
+					type: "item"
+				}
+				{
+					id: "51B2BF04A3A5B666"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["3249DB80C35AA038"]
+			icon: "minecraft:oak_planks"
+			id: "1EB45C5AAABC5DA4"
+			tasks: [
+				{
+					id: "6B29B996C713F8B1"
+					item: "minecraft:oak_planks"
+					type: "item"
+				}
+				{
+					id: "113A4D0B974297B6"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["57D09DE864191C39"]
+			icon: "minecraft:oak_log"
+			id: "3249DB80C35AA038"
+			tasks: [
+				{
+					id: "3178CEB2076D8C75"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					id: "21C31BC09F1713CB"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["72990BF5F56BCE79"]
+			id: "4E057339305B0202"
+			shape: "rsquare"
+			tasks: [{
+				id: "1A2DB9324116F65C"
+				item: "kubejs:abstruse_waste_bucket"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3D7634CDF66F9B4F"]
+			description: [
+				"&6Chromatic Compound&r is known to absorb light and darkness."
+				""
+				"Create a &6light beam&r powerful enough to convert Chromatic Singularity into Refined Radiance."
+			]
+			icon: "create:refined_radiance"
+			id: "3322460DD120C633"
+			tasks: [
+				{
+					id: "784C5CC5CE7BB31A"
+					item: "create:refined_radiance"
+					type: "item"
+				}
+				{
+					id: "715798EA56A7BAAD"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.5d
+			y: 0.5d
+		}
+	]
+	title: "4. Inductive Age"
+}

@@ -1,0 +1,190 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "furnaces"
+	group: "051AA46D917B6FBA"
+	icon: "ironfurnaces:million_furnace"
+	id: "4C153D39BB09873B"
+	order_index: 17
+	quest_links: [ ]
+	quests: [
+		{
+			disable_toast: true
+			icon: "minecraft:furnace"
+			id: "420FD0321935D03B"
+			size: 1.0d
+			tasks: [{
+				id: "760DA123B9244405"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"420FD0321935D03B"
+				"7CC0ECDC0BD708A6"
+			]
+			dependency_requirement: "one_completed"
+			disable_toast: true
+			icon: "ironfurnaces:iron_furnace"
+			id: "1333C783A64E4675"
+			size: 1.0d
+			tasks: [{
+				id: "7F300EA5EEA53733"
+				item: "ironfurnaces:iron_furnace"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["420FD0321935D03B"]
+			disable_toast: true
+			icon: "ironfurnaces:copper_furnace"
+			id: "7CC0ECDC0BD708A6"
+			size: 1.0d
+			tasks: [{
+				id: "3CF865FEFAB23E00"
+				item: "ironfurnaces:copper_furnace"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1333C783A64E4675"]
+			dependency_requirement: "one_completed"
+			disable_toast: true
+			icon: "ironfurnaces:gold_furnace"
+			id: "6CB09A55F618B316"
+			size: 1.0d
+			tasks: [{
+				id: "419234AB0525097F"
+				item: "ironfurnaces:gold_furnace"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6CB09A55F618B316"]
+			disable_toast: true
+			icon: "ironfurnaces:diamond_furnace"
+			id: "406E040FE089E386"
+			size: 1.0d
+			tasks: [{
+				id: "07A47586AE8FDFAD"
+				item: "ironfurnaces:diamond_furnace"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["406E040FE089E386"]
+			disable_toast: true
+			icon: "ironfurnaces:emerald_furnace"
+			id: "3704F233D95BADFE"
+			size: 1.0d
+			tasks: [{
+				id: "7EF5E6957ED0ACDD"
+				item: "ironfurnaces:emerald_furnace"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["406E040FE089E386"]
+			disable_toast: true
+			icon: "ironfurnaces:crystal_furnace"
+			id: "5BB2520F9F6E45FE"
+			size: 1.0d
+			tasks: [{
+				id: "51061ABC4F7CC1DC"
+				item: "ironfurnaces:crystal_furnace"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"5BB2520F9F6E45FE"
+				"3704F233D95BADFE"
+			]
+			dependency_requirement: "one_completed"
+			disable_toast: true
+			icon: "ironfurnaces:obsidian_furnace"
+			id: "5456F471ADB32976"
+			size: 1.0d
+			tasks: [{
+				id: "5D321D491830BBB6"
+				item: "ironfurnaces:obsidian_furnace"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["5456F471ADB32976"]
+			disable_toast: true
+			icon: "ironfurnaces:netherite_furnace"
+			id: "77C11AFA1DE6C848"
+			size: 1.0d
+			tasks: [{
+				id: "21D7F541B002289C"
+				item: "ironfurnaces:netherite_furnace"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["77C11AFA1DE6C848"]
+			disable_toast: true
+			icon: "projecte:dm_furnace"
+			id: "1883097E9A75BF92"
+			size: 1.0d
+			tasks: [{
+				id: "67E7996FE8DEBD7C"
+				item: "projecte:dm_furnace"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["1883097E9A75BF92"]
+			disable_toast: true
+			icon: "projecte:rm_furnace"
+			id: "4A5C8B2BDAC639B2"
+			size: 1.0d
+			tasks: [{
+				id: "32E883DF831C4110"
+				item: "projecte:rm_furnace"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["4A5C8B2BDAC639B2"]
+			icon: "ironfurnaces:million_furnace"
+			id: "121DB78DAC412A40"
+			size: 1.0d
+			tasks: [{
+				id: "5D7334E590635EAD"
+				item: "ironfurnaces:million_furnace"
+				type: "item"
+			}]
+			title: "&fArtifact: Infinity Furnace"
+			x: 0.0d
+			y: 15.0d
+		}
+	]
+	title: "Furnaces"
+}

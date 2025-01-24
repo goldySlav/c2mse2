@@ -1,0 +1,286 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2_copper_age"
+	group: "2F6B1FE330B2219D"
+	icon: "kubejs:copper_machine"
+	id: "429BA020217DDAEB"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7BB1CC985EDC3BEA"]
+			id: "069880B5BBFEDBA6"
+			tasks: [{
+				id: "23BD5FCB30E6BE14"
+				title: "Start Chapter"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"4657F5E790EDB92D"
+				"37E11FF4DB4A05A1"
+				"4C793E5E91461036"
+			]
+			icon: "kubejs:sealed_mechanism"
+			id: "29DEAE2791EBFE7B"
+			tasks: [
+				{
+					id: "7E73D49B24D1F8FF"
+					item: "kubejs:sealed_mechanism"
+					type: "item"
+				}
+				{
+					id: "043FD588FCF7D7EF"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["35B503F3B05BB324"]
+			icon: "minecraft:charcoal"
+			id: "1F421F089C39C2B3"
+			tasks: [
+				{
+					id: "67EBB92A15F52B1C"
+					item: "minecraft:charcoal"
+					type: "item"
+				}
+				{
+					id: "2FE87515B9068544"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1F421F089C39C2B3"]
+			icon: "createmetallurgy:coke"
+			id: "25BC9F6213430089"
+			tasks: [
+				{
+					id: "6448E4E65E822F5E"
+					item: "createmetallurgy:coke"
+					type: "item"
+				}
+				{
+					id: "7A1E7C5EF38D5CF7"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["069880B5BBFEDBA6"]
+			icon: "minecraft:granite"
+			id: "1F6E3C251067FE32"
+			tasks: [
+				{
+					id: "21A9AC9FBAECB320"
+					item: "minecraft:granite"
+					type: "item"
+				}
+				{
+					id: "205078248E4B52A9"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1F6E3C251067FE32"]
+			icon: "kubejs:crushed_granite"
+			id: "2409A2C0E77A7086"
+			tasks: [
+				{
+					id: "1C185F7C22CA66BF"
+					item: "kubejs:crushed_granite"
+					type: "item"
+				}
+				{
+					id: "28B3ED559427C534"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2409A2C0E77A7086"]
+			icon: "create:copper_nugget"
+			id: "1F93CEDBFF04CC3F"
+			tasks: [
+				{
+					id: "3EB877FBC171DF2B"
+					item: "create:copper_nugget"
+					type: "item"
+				}
+				{
+					id: "189C0EA1F0FF3DB8"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1F93CEDBFF04CC3F"]
+			icon: "minecraft:copper_ingot"
+			id: "4FCC832C0601D256"
+			tasks: [
+				{
+					id: "798AA207670469D2"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "231E596C40056BCF"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4FCC832C0601D256"]
+			icon: "createaddition:copper_rod"
+			id: "1B41E5301611D094"
+			tasks: [
+				{
+					id: "24E9CC5F157F237D"
+					item: "createaddition:copper_rod"
+					type: "item"
+				}
+				{
+					id: "71008D05074B60BF"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1B41E5301611D094"]
+			icon: "vintageimprovements:copper_spring"
+			id: "4C793E5E91461036"
+			tasks: [
+				{
+					id: "6F31A95511A0857F"
+					item: "vintageimprovements:copper_spring"
+					type: "item"
+				}
+				{
+					id: "298F6C348F51A5B8"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6D7C1B46E000BDBA"]
+			icon: "kubejs:polished_coke"
+			id: "37E11FF4DB4A05A1"
+			tasks: [
+				{
+					id: "0F0B1C809259B860"
+					item: "kubejs:polished_coke"
+					type: "item"
+				}
+				{
+					id: "16939CA57F656C78"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["069880B5BBFEDBA6"]
+			icon: "minecraft:oak_log"
+			id: "35B503F3B05BB324"
+			tasks: [
+				{
+					id: "7195434399B727AF"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					id: "30DEC36511C7C62D"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7BB1CC985EDC3BEA"]
+			id: "4657F5E790EDB92D"
+			shape: "rsquare"
+			tasks: [{
+				id: "6E450C16FFC406BE"
+				item: {
+					Count: 1
+					id: "projectred_core:screwdriver"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["29DEAE2791EBFE7B"]
+			id: "10AC4EE77F6CC3BC"
+			shape: "rsquare"
+			tasks: [{
+				id: "4C1F650A36259645"
+				item: "kubejs:copper_machine"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["25BC9F6213430089"]
+			icon: "kubejs:nourished_coke"
+			id: "6D7C1B46E000BDBA"
+			tasks: [
+				{
+					id: "2730CCBC62B8EC06"
+					item: "kubejs:nourished_coke"
+					type: "item"
+				}
+				{
+					id: "3207F550B896BEA3"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: 4.0d
+		}
+	]
+	title: "2. Copper Age"
+}

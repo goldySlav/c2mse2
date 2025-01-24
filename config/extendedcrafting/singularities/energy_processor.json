@@ -1,0 +1,10 @@
+{
+  "name": "Energy Processor",
+  "colors": [
+    "b02121",
+    "1b53a7"
+  ],
+  "ingredient": {
+    "item": "minecraft:lapis_lazuli"
+  }
+}

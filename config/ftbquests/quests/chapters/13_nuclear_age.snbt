@@ -1,0 +1,343 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "13_nuclear_age"
+	group: "2F6B1FE330B2219D"
+	icon: "mekanism:radioactive_waste_barrel"
+	id: "58B6D3B476A28B3D"
+	order_index: 12
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1222F19F5B1A65ED"]
+			icon: "mekanism:radioactive_waste_barrel"
+			id: "6B767ADA3BB83EFC"
+			size: 1.0d
+			tasks: [{
+				id: "34B4B9A98EB22AE4"
+				title: "Start Chapter"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"634AF89DCADA4875"
+				"4DC6F2BECBCE719B"
+			]
+			icon: "mekanism:radioactive_waste_barrel"
+			id: "4007FAAE27EAB13B"
+			size: 1.0d
+			tasks: [{
+				id: "20A460C7FB574C63"
+				title: "End Chapter"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6B767ADA3BB83EFC"]
+			icon: "mekanismgenerators:fission_fuel_assembly"
+			id: "49B703AEB8618033"
+			size: 1.0d
+			tasks: [
+				{
+					id: "35C5E0B5E7C93B4B"
+					item: "mekanismgenerators:fission_fuel_assembly"
+					type: "item"
+				}
+				{
+					id: "38A5A52849079C24"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Build \"Fission Reactor\""
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6B767ADA3BB83EFC"]
+			icon: "mekanismgenerators:turbine_blade"
+			id: "6B370D74642ACB0B"
+			size: 1.0d
+			tasks: [
+				{
+					id: "23BBF6445E0A42B1"
+					item: "mekanismgenerators:turbine_blade"
+					type: "item"
+				}
+				{
+					id: "5F428D4364C4881B"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Build \"Turbine\""
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6B767ADA3BB83EFC"]
+			icon: "mekanism:thermal_evaporation_controller"
+			id: "266A769FB79B8874"
+			size: 1.0d
+			tasks: [
+				{
+					id: "1270D9A08B39FDBC"
+					item: "mekanism:thermal_evaporation_controller"
+					type: "item"
+				}
+				{
+					id: "14F20A486629749E"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Build First \"Thermal Evaporation Plant\""
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6B767ADA3BB83EFC"]
+			icon: "mekanism:thermal_evaporation_controller"
+			id: "7075DDD4914166AA"
+			size: 1.0d
+			tasks: [
+				{
+					id: "7B46A2579CC0F378"
+					item: "mekanism:thermal_evaporation_controller"
+					type: "item"
+				}
+				{
+					id: "566671379087EC54"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Build Second \"Thermal Evaporation Plant\""
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"553F722132C5EB99"
+				"24CF370CA33E4015"
+			]
+			icon: "mekanism:basic_induction_cell"
+			id: "634AF89DCADA4875"
+			size: 1.0d
+			tasks: [
+				{
+					id: "373736B79A7EF6B5"
+					item: "mekanism:basic_induction_cell"
+					type: "item"
+				}
+				{
+					id: "6C5B5ED1C397042C"
+					item: "mekanism:basic_induction_provider"
+					type: "item"
+				}
+				{
+					id: "50FFEC23F13EF515"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Build \"Induction Matrix\""
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["24CF370CA33E4015"]
+			icon: "mekanism:radioactive_waste_barrel"
+			id: "4DC6F2BECBCE719B"
+			size: 1.0d
+			tasks: [
+				{
+					id: "25F7968E4B054900"
+					item: "mekanism:radioactive_waste_barrel"
+					type: "item"
+				}
+				{
+					id: "570B4663B7322494"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Produce \"Nuclear Waste\""
+			x: -2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["49B703AEB8618033"]
+			icon: {
+				Count: 1
+				id: "extendedcrafting:singularity"
+				tag: {
+					Id: "extendedcrafting:reprocessed_fissile_fragment"
+				}
+			}
+			id: "48E617ABB21FABA1"
+			optional: true
+			rewards: [{
+				auto: "enabled"
+				command: "/mek radiation removeAll"
+				exclude_from_claim_all: true
+				icon: "mekanism:radioactive_waste_barrel"
+				id: "3E8A48AF062E0F89"
+				ignore_reward_blocking: true
+				team_reward: true
+				title: "Radiation Removed"
+				type: "command"
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "7AA9C07F60108CF0"
+					item: "minecraft:salmon"
+					type: "item"
+				}
+				{
+					id: "34A84A9F6A52C13D"
+					title: "I UNDERSTAND WHAT I'M DOING"
+					type: "checkmark"
+				}
+				{
+					id: "5D18A557EE567E97"
+					title: "Remove All Radiation Sources"
+					type: "checkmark"
+				}
+			]
+			title: "Remove Radiation (ONE TIME THING)"
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"49B703AEB8618033"
+				"6B370D74642ACB0B"
+			]
+			icon: "mekanism:basic_pressurized_tube"
+			id: "24CF370CA33E4015"
+			size: 1.0d
+			tasks: [{
+				id: "4BDAD6A7E05AEA77"
+				title: "Done"
+				type: "checkmark"
+			}]
+			title: "Connect Reactor With Turbine"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["224BCAD2BDF66EDB"]
+			icon: "mekanism:dust_lithium"
+			id: "553F722132C5EB99"
+			size: 1.0d
+			tasks: [
+				{
+					id: "018FDB8E19FE303A"
+					item: "mekanism:chemical_crystallizer"
+					type: "item"
+				}
+				{
+					id: "267235E1FF86DF72"
+					item: "mekanism:dust_lithium"
+					type: "item"
+				}
+				{
+					id: "410FD6DE48A73715"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Produce \"Lithium Dust\""
+			x: 1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["266A769FB79B8874"]
+			icon: "mekanism:brine_bucket"
+			id: "3090D1689AE445C7"
+			size: 1.0d
+			tasks: [
+				{
+					id: "30CEB4479F5BF378"
+					item: "mekanism:brine_bucket"
+					type: "item"
+				}
+				{
+					id: "5EA6A3CE64B48E8E"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Produce \"Brine\""
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"7075DDD4914166AA"
+				"3090D1689AE445C7"
+			]
+			icon: "mekanism:lithium_bucket"
+			id: "6C915B5711CE6E29"
+			size: 1.0d
+			tasks: [
+				{
+					id: "1E01326CF1361AA5"
+					item: "mekanism:lithium_bucket"
+					type: "item"
+				}
+				{
+					id: "5412C8B27022CABC"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Produce \"Liquid Lithium\""
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6C915B5711CE6E29"]
+			icon: "mekanism:lithium_bucket"
+			id: "224BCAD2BDF66EDB"
+			size: 1.0d
+			tasks: [
+				{
+					id: "1CC305BF2F29CD66"
+					item: "mekanism:rotary_condensentrator"
+					type: "item"
+				}
+				{
+					id: "7795BF8DA7F013F4"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Produce \"Lithium\""
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["553F722132C5EB99"]
+			id: "741C64EA89FC05AC"
+			size: 1.0d
+			tasks: [{
+				id: "180A51515C2CB4F1"
+				item: "fluxnetworks:flux_controller"
+				type: "item"
+			}]
+			title: "Flux Networks: Powerful/Compact/Wireless Storage"
+			x: 2.0d
+			y: 8.0d
+		}
+	]
+	title: "12. Atomic Age"
+}

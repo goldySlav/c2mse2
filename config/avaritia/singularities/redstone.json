@@ -1,0 +1,23 @@
+{
+  "name": "singularity.avaritia.redstone",
+  "colors": [
+    "900000",
+    "df0000"
+  ],
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/redstone",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/redstone"
+  },
+  "count": 200,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": true
+}

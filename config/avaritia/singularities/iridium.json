@@ -1,0 +1,23 @@
+{
+  "name": "singularity.avaritia.iridium",
+  "colors": [
+    "e6e6fa",
+    "e6e6fa"
+  ],
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/iridium",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/iridium"
+  },
+  "count": 80,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": true
+}

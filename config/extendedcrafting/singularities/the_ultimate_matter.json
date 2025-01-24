@@ -1,0 +1,10 @@
+{
+  "name": "The Ultimate Matter",
+  "colors": [
+    "a12a51",
+    "82308a"
+  ],
+  "ingredient": {
+    "item": "kubejs:the_ultimate_matter"
+  }
+}

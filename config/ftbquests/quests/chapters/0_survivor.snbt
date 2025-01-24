@@ -1,0 +1,1335 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0_survivor"
+	group: "2F6B1FE330B2219D"
+	icon: "projecte:transmutation_tablet"
+	id: "35A8EC8198212883"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["40D115852A0164D5"]
+			description: ["&6Crouch + Right Click&r the grass to get stone pebbles. Use these pebbles to &6Craft&r Stone."]
+			id: "060CE00D435A9EE6"
+			rewards: [{
+				count: 64
+				id: "391E922087A845BC"
+				item: "minecraft:stone"
+				type: "item"
+			}]
+			subtitle: "\"#poundtheground\""
+			tasks: [{
+				id: "3FC04FDE3F81D3C5"
+				item: "minecraft:stone"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["060CE00D435A9EE6"]
+			description: [
+				"To get dirt you have to break Grass Block right beneath you."
+				"Be careful now..."
+				""
+				"You have &63 ways&r to do that:"
+				"1) Break 1 and &6fall down&r with and try to catch it (void will not kill you)"
+				"2) &6Build underneath&r it with stone and break 1 safely (yes, you can build under blocks here!)"
+				"3) Quickly &6Replace&r a grass block with a stone, the dirt block should pop up on top of your newly placed stone (but stay close to it to collect it quickly)"
+			]
+			id: "010991462F2D347B"
+			rewards: [{
+				count: 64
+				id: "1F42899CCA956140"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			subtitle: "So dirty"
+			tasks: [{
+				id: "4148B1D8BD04D4E8"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["010991462F2D347B"]
+			description: ["Getting the precious sand block is as simple as &6Transmuting&r Dirt or Grass with your &6Philosopher's Stone&r."]
+			id: "6C74D714C882776C"
+			rewards: [{
+				count: 64
+				id: "7A81BCABE0E7F050"
+				item: "minecraft:red_sand"
+				type: "item"
+			}]
+			subtitle: "Remember, it has gravity!"
+			tasks: [{
+				id: "0004195016E2460C"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			title: "Sand"
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6C74D714C882776C"]
+			description: ["4 Sand = 1 Sandstone."]
+			id: "4FADC55FA94C323C"
+			rewards: [{
+				count: 3
+				id: "13282595B690F69C"
+				item: "pamhc2trees:spiderweb_sapling"
+				type: "item"
+			}]
+			subtitle: "Pretty straightforward"
+			tasks: [{
+				id: "2386EA6CAFE2BA0E"
+				item: "minecraft:sandstone"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4FADC55FA94C323C"]
+			description: ["Sandstone has a special property. It can be &6Transmuted&r into Gravel."]
+			id: "7A39507B6BEB0459"
+			rewards: [{
+				count: 8
+				id: "7590FD76546BABD3"
+				item: "minecraft:sandstone"
+				type: "item"
+			}]
+			subtitle: "It also has gravity!"
+			tasks: [{
+				id: "531C4FC0653FFBB5"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4FADC55FA94C323C"]
+			description: ["He would chuck, he would, as much as he could, and chuck as much wood as a woodchuck would if a woodchuck could chuck wood."]
+			id: "4747F0E81C972CE7"
+			subtitle: "How much wood would a woodchuck chuck?"
+			tasks: [{
+				id: "62427C273019E486"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4FADC55FA94C323C"]
+			description: [
+				"&6Harvest&r the Spiderweb Fruit to obtain String"
+				"Right-Clicking will allow you to harvest the same friut unlimited amount of times"
+				""
+				"(Tip: If you get close enough, you can repeatedly crouch to &6Accelerate&r growth of saplings, fruit, or many crops)"
+			]
+			id: "57BE7ACAF994B7DA"
+			subtitle: "Now without those silkworms!"
+			tasks: [{
+				id: "035B21E03420F066"
+				item: "minecraft:string"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4FADC55FA94C323C"]
+			description: ["Spiderweb trees grow with oak leaves, you souldn't have any problems with this one."]
+			id: "5B7C2661F67D46A7"
+			subtitle: "An Oak tree a day keeps pollution at bay"
+			tasks: [{
+				id: "378A502C6E5152BF"
+				item: "minecraft:oak_sapling"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4747F0E81C972CE7"]
+			id: "7DB66F1A0165564A"
+			subtitle: "The Vanilla way"
+			tasks: [{
+				id: "5C89EFC98DF3BD02"
+				item: "minecraft:oak_planks"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7A39507B6BEB0459"]
+			description: [
+				"To obtain Flint, you should &6craft&r 3 blocks of Gravel into one piece of Flint."
+				""
+				"You cannot get Flint from breaking Gravel in this modpack!"
+			]
+			id: "06B73ED996510809"
+			rewards: [{
+				count: 8
+				id: "66BC7846AB94A7C8"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			subtitle: "No more gambling..."
+			tasks: [{
+				id: "5869C2D9BD80EE67"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["57BE7ACAF994B7DA"]
+			id: "2F0EEB2C44C0B62B"
+			subtitle: "Nothing too fancy"
+			tasks: [{
+				id: "1A50BDE125CE8947"
+				item: "minecraft:white_wool"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"2F0EEB2C44C0B62B"
+				"7DB66F1A0165564A"
+				"6E6E24468D9F6CF1"
+			]
+			description: ["Bed is important, we don't want Phantoms interrupting you in creating your factory."]
+			id: "797AD3EEB528F028"
+			rewards: [{
+				id: "4DC8576EA06F2EDC"
+				item: "ad_astra:ice_shard"
+				type: "item"
+			}]
+			subtitle: "Good night"
+			tasks: [{
+				id: "74EC8F755AA5D512"
+				item: "minecraft:white_bed"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["6E6E24468D9F6CF1"]
+			description: [
+				"Simply turns plant materials into water."
+				"Also collects rain."
+			]
+			id: "507CF662963C3F93"
+			subtitle: "Making water!"
+			tasks: [{
+				id: "775153D26255642A"
+				item: "exdeorum:oak_crucible"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6E6E24468D9F6CF1"]
+			description: [
+				"&6Craft&r an Oak Sieve."
+				""
+				"(Tip: All connected Sieves up to 2 blocks away with the same tier of Mesh will sieve together, as long as you have enough blocks in hand)"
+			]
+			id: "103CE2253D32A60E"
+			rewards: [{
+				id: "5DFCC645A005DDBD"
+				item: "minecraft:rabbit_hide"
+				type: "item"
+			}]
+			subtitle: "Let's get it started"
+			tasks: [{
+				id: "5FFA00FE26AC3F5F"
+				item: "exdeorum:oak_sieve"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"103CE2253D32A60E"
+				"57BE7ACAF994B7DA"
+			]
+			id: "34BF9226B9CB7468"
+			rewards: [{
+				id: "416A8C5DB09F6904"
+				item: "exdeorum:string_mesh"
+				type: "item"
+			}]
+			subtitle: "Craft one, get one free!"
+			tasks: [{
+				id: "45A1DD76F029C668"
+				item: "exdeorum:string_mesh"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["34BF9226B9CB7468"]
+			id: "28EAAF6D88C1C639"
+			rewards: [{
+				id: "27605452DFAB1B8A"
+				item: "exdeorum:flint_mesh"
+				type: "item"
+			}]
+			subtitle: "Craft one, get another one free!"
+			tasks: [{
+				id: "2C6D455FBC41EAE1"
+				item: "exdeorum:flint_mesh"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["28EAAF6D88C1C639"]
+			id: "684B6462EE75C027"
+			rewards: [{
+				id: "1E71400C38C30665"
+				item: "exdeorum:iron_mesh"
+				type: "item"
+			}]
+			subtitle: "Craft one, get one more for completely free!"
+			tasks: [{
+				id: "2D787EB8BAA8337F"
+				item: "exdeorum:iron_mesh"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["684B6462EE75C027"]
+			id: "4CBA5DA4160CFFDF"
+			rewards: [{
+				id: "2E9759BC2D204995"
+				item: "exdeorum:golden_mesh"
+				type: "item"
+			}]
+			subtitle: "Obtain one, you will be blessed with another one!"
+			tasks: [{
+				id: "215C61B6A2ED77C2"
+				item: "exdeorum:golden_mesh"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["4CBA5DA4160CFFDF"]
+			id: "034E9BFFAF7D234A"
+			rewards: [
+				{
+					id: "6E684DDC13CDBE13"
+					item: "exdeorum:diamond_mesh"
+					type: "item"
+				}
+				{
+					id: "76761F208AD3C9B0"
+					item: "ad_astra:ice_shard"
+					type: "item"
+				}
+			]
+			subtitle: "Yup, you will get another one of this as well"
+			tasks: [{
+				id: "657FFF323C121FFE"
+				item: "exdeorum:diamond_mesh"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["034E9BFFAF7D234A"]
+			id: "558BAC0BD9E4AEE8"
+			rewards: [
+				{
+					id: "769B82D9F49C3BC0"
+					item: "exdeorum:netherite_mesh"
+					type: "item"
+				}
+				{
+					id: "0687B30F472E5C43"
+					item: "ad_astra:ice_shard"
+					type: "item"
+				}
+			]
+			subtitle: "You know the drill by now"
+			tasks: [{
+				id: "48B88AD129CCE7A2"
+				item: "exdeorum:netherite_mesh"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"06B73ED996510809"
+				"7DB66F1A0165564A"
+			]
+			description: [
+				"&6Craft&r a Crafting Table using Planks and Flint"
+				""
+				"You can craft stuff using Philosopher's Stone (&6C&r key by default), but the Crafting Table now keeps its contents, making it more handy for repeated crafting processes."
+			]
+			id: "6E6E24468D9F6CF1"
+			rewards: [
+				{
+					id: "64C217AD70A6C4F3"
+					item: "minecraft:rabbit_hide"
+					type: "item"
+				}
+				{
+					id: "72457494F5F8DB8E"
+					item: "ad_astra:ice_shard"
+					type: "item"
+				}
+			]
+			subtitle: "It's not just a habit"
+			tasks: [{
+				id: "2DC185DEC0F0FE91"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6E6E24468D9F6CF1"]
+			description: [
+				"Barrels unlock simple crafting using &6Fluids&r."
+				"Also collects rain."
+			]
+			id: "571BFE823C86B5E5"
+			subtitle: "Can't do a barrel roll with this one"
+			tasks: [{
+				id: "7319201E280DA298"
+				item: "exdeorum:oak_barrel"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"507CF662963C3F93"
+				"537AFA12D08CACA4"
+			]
+			description: ["Have an iron bucket as a reward for your hard work so far."]
+			id: "7F72D28E5491D5A8"
+			rewards: [{
+				id: "50F27BB6AABEFF51"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			subtitle: "Water IS infinite"
+			tasks: [{
+				id: "0C5ACA6FCC45C63A"
+				item: "exdeorum:porcelain_water_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["31E1A1B90775CEB3"]
+			description: ["It has many culinary uses, but right now you'll be doing something else with it."]
+			id: "30B21667551DF85C"
+			subtitle: "Not too grindy to obtain"
+			tasks: [{
+				id: "495D1A3B95461842"
+				item: "pamhc2foodcore:grinderitem"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["30B21667551DF85C"]
+			description: ["&6Grind Down&r Sand using your Grinder."]
+			id: "55E9D4BDA721C1AD"
+			rewards: [
+				{
+					id: "69051A1E18D24350"
+					item: "exdeorum:unfired_porcelain_bucket"
+					type: "item"
+				}
+				{
+					id: "74528084BE681E87"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+			]
+			subtitle: "No hammers please"
+			tasks: [{
+				id: "055267D5D97E01F7"
+				item: "exdeorum:dust"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["1650C74BB0E1784B"]
+			description: [
+				"Is your Stone looking like this?"
+				"Let me fix that."
+				"First, &6Break&r the old one."
+				"Oops, it turned into Cobblestone!"
+			]
+			id: "3F98CAAF250576FC"
+			subtitle: "Cobble cobble"
+			tasks: [{
+				id: "3264818F03C1AECB"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["3F98CAAF250576FC"]
+			description: ["&6Combine&r some Cobble and Stone."]
+			id: "008BB5215051D670"
+			subtitle: "Because furnaces need to be solid"
+			tasks: [{
+				count: 8L
+				id: "7FA184AF69599AF5"
+				item: "quark:sturdy_stone"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["008BB5215051D670"]
+			id: "1123CB57600B0785"
+			subtitle: "Hot Topic"
+			tasks: [{
+				id: "1AF0A132DE7C00F8"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"77C1BBC9FB8B9EFC"
+				"571BFE823C86B5E5"
+				"7F72D28E5491D5A8"
+			]
+			description: [
+				"Uses you should be currently interested in are:"
+				""
+				"1) Creating &6Soul Sand&r"
+				"2) Creating &6Summoning Dolls&r"
+			]
+			id: "52EF7A3B2337E031"
+			subtitle: "Spooky"
+			tasks: [{
+				id: "3E6CEB8C1326D310"
+				item: "exdeorum:porcelain_witch_water_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["34BF9226B9CB7468"]
+			description: ["&6Sieve&r Dirt."]
+			id: "6B58B1F81A6FD19D"
+			subtitle: "DON'T inhale these!"
+			tasks: [{
+				id: "68AE9AB9ED496B5A"
+				item: "exdeorum:mycelium_spores"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6B58B1F81A6FD19D"]
+			description: ["You can use it for mushrooms, but it's more important to create &6Witch water&r."]
+			id: "77C1BBC9FB8B9EFC"
+			subtitle: "That's a nice Mycelium"
+			tasks: [{
+				icon: "minecraft:mycelium"
+				id: "5884536E735D4D04"
+				observe_type: 0
+				timer: 0L
+				title: "Observe \"Mycelium\""
+				to_observe: "minecraft:mycelium"
+				type: "observation"
+			}]
+			x: -5.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["52EF7A3B2337E031"]
+			description: ["Put a Sand Block inside a Barrel full of &6Witchwater&r."]
+			id: "52FCEC68CA9B1A56"
+			rewards: [{
+				count: 64
+				id: "3959577FFDF8B93B"
+				item: "minecraft:soul_sand"
+				type: "item"
+			}]
+			subtitle: "How many faces do you see on it?"
+			tasks: [{
+				id: "5F8CDEC97FFDA8E7"
+				item: "minecraft:soul_sand"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["280BAE9B3DA5F614"]
+			description: ["Next quests from this row will simply require you to do some &6Transmutation&r with the Phillosopher's Stone."]
+			id: "0957A972AE349816"
+			rewards: [{
+				id: "0631C1951B0C52BD"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			subtitle: "Iron Age"
+			tasks: [{
+				id: "0FAE5F52A01495B8"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 27.5d
+		}
+		{
+			dependencies: ["52FCEC68CA9B1A56"]
+			description: ["Trust me, it's important."]
+			id: "3AB759C4C40EB132"
+			rewards: [
+				{
+					id: "1FBB8A506A594BF8"
+					item: "minecraft:rabbit_hide"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "53093658082F61C1"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+			]
+			subtitle: "Always good to have some Quartz"
+			tasks: [{
+				id: "535C488C25F494C6"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 20.5d
+		}
+		{
+			dependencies: ["2D92B7747FD1811E"]
+			description: ["&6Break&r a Clay Block."]
+			id: "21CA38B7D4AFBFC2"
+			subtitle: "No uncrafting!"
+			tasks: [{
+				id: "2386DCB0572FD115"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["34BF9226B9CB7468"]
+			description: ["&6Sieve&r Dust."]
+			id: "416B25E4A7C990DD"
+			rewards: [{
+				count: 8
+				id: "32793DCF19F9A47D"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			subtitle: "Handy alternative to twerking"
+			tasks: [{
+				id: "74CA998CAA8584BE"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"21CA38B7D4AFBFC2"
+				"416B25E4A7C990DD"
+			]
+			id: "537AFA12D08CACA4"
+			subtitle: "Ceramics!"
+			tasks: [{
+				id: "0513CAA30AA93438"
+				item: "exdeorum:porcelain_clay_ball"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"537AFA12D08CACA4"
+				"1123CB57600B0785"
+			]
+			description: ["Used exclusively to melt down Gravel or rocks into &6Lava&r."]
+			id: "2F2B89B0807F6DA9"
+			subtitle: "Make your own rock soup"
+			tasks: [{
+				id: "7421A59B33048D0C"
+				item: "exdeorum:porcelain_crucible"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["2F2B89B0807F6DA9"]
+			description: ["A quick reminder, porcelain buckets &6Break&r after you pour Lava out of it"]
+			id: "587E109D89450B8B"
+			subtitle: "So hot"
+			tasks: [{
+				id: "055910FDC483520C"
+				item: "exdeorum:porcelain_lava_bucket"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["587E109D89450B8B"]
+			description: ["Note: To actually collect Obsidian, use Barrel"]
+			id: "19B3A861D2FAC002"
+			subtitle: "Ice Bucket Challenge"
+			tasks: [{
+				id: "1F916D6C43E34CA5"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["55E9D4BDA721C1AD"]
+			description: ["Putting Dust in a Barrel full of water will make Clay."]
+			id: "2D92B7747FD1811E"
+			subtitle: "I need more, Claymore"
+			tasks: [{
+				id: "53AC2407CC640418"
+				item: "minecraft:clay"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["0957A972AE349816"]
+			description: [
+				"8 Iron Ingots = 1 &eGold Ingot&r"
+				"Use &6Philosopher's Stone&r."
+			]
+			id: "3B60F82D6B66DD05"
+			rewards: [{
+				id: "073ECE4214EC6CDE"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			subtitle: "Midas touch"
+			tasks: [{
+				id: "63D0A640922774BA"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 27.5d
+		}
+		{
+			dependencies: ["3B60F82D6B66DD05"]
+			description: [
+				"4 &eGold Ingots&r = 1 &bDiamond&r"
+				"Use &6Philosopher's Stone&r."
+			]
+			id: "46A016D2D3028709"
+			rewards: [{
+				id: "6CD924DDB35FF9FA"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			subtitle: "Easiest diamonds of your life"
+			tasks: [{
+				id: "2053151A955D3C9B"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 27.5d
+		}
+		{
+			dependencies: ["46A016D2D3028709"]
+			description: [
+				"2 &bDiamonds&r = 1 &aEmerald&r"
+				"Use &6Philosopher's Stone&r."
+			]
+			id: "28780B6E562030B4"
+			rewards: [{
+				id: "1DF3246306A03339"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "Wandering Trader loves these"
+			tasks: [{
+				id: "41700B9F18C023F0"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 27.5d
+		}
+		{
+			description: [
+				"You can use \"Philosopher's Stone\" on a block to &6Transform&r it to another block."
+				"&4(don't do that with blocks you're standing on!)&r"
+				""
+				"For example:"
+				""
+				"Grass/Dirt >> Sand (and vice versa)"
+				""
+				"Obsidian >> Lava (be careful with this one, lol)"
+				""
+				"Check JEI for all possible transmutations."
+			]
+			id: "40D115852A0164D5"
+			rewards: [{
+				id: "45485C2F339FAFBC"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: { }
+					}
+					id: "projecte:philosophers_stone"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "\"Hey you, look at me!\""
+			tasks: [{
+				icon: "projecte:transmutation_table"
+				id: "5EAEE7E8897AA39E"
+				observe_type: 0
+				timer: 0L
+				title: "Find \"Transmutation Table\""
+				to_observe: "projecte:transmutation_table"
+				type: "observation"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["40D115852A0164D5"]
+			description: ["In case you lost yours... please don't abuse."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: { }
+				}
+				id: "projecte:philosophers_stone"
+				tag: { }
+			}
+			id: "40268C8D365E4765"
+			rewards: [{
+				id: "62E212DDAE59F348"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: { }
+					}
+					id: "projecte:philosophers_stone"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "You really need only one"
+			tasks: [{
+				id: "4C595A6483F3CC34"
+				title: "Give Me Philosopher's Stone"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0957A972AE349816"]
+			id: "16A425EE8612FFD7"
+			rewards: [{
+				id: "1A0CADD850B18C9F"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			subtitle: "To spice up your stone platform"
+			tasks: [{
+				id: "045229F9C105EDC1"
+				item: {
+					Count: 1
+					id: "rechiseled:chisel"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -9.5d
+			y: 26.5d
+		}
+		{
+			dependencies: ["0957A972AE349816"]
+			description: [
+				"4 Iron Ingots = 1 &2Ender Pearl&r"
+				"Use &6Philosopher's Stone&r."
+			]
+			id: "5E67DB2399299642"
+			rewards: [{
+				id: "0F3CF2785F33C449"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			subtitle: "Essence of Ender"
+			tasks: [{
+				id: "5FD28589B07271C9"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 27.5d
+		}
+		{
+			dependencies: ["6E6E24468D9F6CF1"]
+			description: ["Note: Tools are &6upgradable&r in this pack."]
+			id: "1650C74BB0E1784B"
+			subtitle: "Don't get rid of this one!"
+			tasks: [{
+				id: "084276505942555F"
+				item: {
+					Count: 1
+					id: "minecraft:wooden_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["28EAAF6D88C1C639"]
+			description: ["Can be obtained by &6Sieving&r Dirt or Gravel with Flint Mesh or better."]
+			id: "138A7D6988F0942C"
+			subtitle: "Doesn't feel good in your shoe"
+			tasks: [{
+				id: "2F8DA0FFFC16E343"
+				item: "exdeorum:andesite_pebble"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["138A7D6988F0942C"]
+			description: ["Simple &6Crafting&r process."]
+			id: "31E1A1B90775CEB3"
+			subtitle: "You either love it or hate it"
+			tasks: [{
+				id: "56E869770CEE2B9F"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["28EAAF6D88C1C639"]
+			description: ["Starting from Flint Mesh, &6Sieving&r Dirt will sometimes yield you Zinc Ore Chunks."]
+			id: "5055909CC3C8048D"
+			subtitle: "Chunky"
+			tasks: [{
+				id: "5739E222D3E18426"
+				item: "exdeorum:zinc_ore_chunk"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["5055909CC3C8048D"]
+			description: ["&6Combine&r some Zinc Ore Chunks."]
+			id: "2CD9B17CE186B23F"
+			subtitle: "It likes to be warm"
+			tasks: [{
+				id: "2683C2D61AFE7520"
+				item: "create:raw_zinc"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["2CD9B17CE186B23F"]
+			description: ["Remember to check which items can go into &6Transmutation Table&r."]
+			id: "2138DCA255C3F6DA"
+			rewards: [{
+				count: 8
+				id: "198A9C642DB02BF7"
+				item: "create:zinc_ingot"
+				type: "item"
+			}]
+			subtitle: "Quite soft for a metal"
+			tasks: [{
+				id: "7765015047CA1282"
+				item: "create:zinc_ingot"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["2138DCA255C3F6DA"]
+			id: "3F71BE17A74B795F"
+			subtitle: "Nugget like any other"
+			tasks: [{
+				id: "091B18946B11B7DA"
+				item: "create:zinc_nugget"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 14.5d
+		}
+		{
+			dependencies: [
+				"2DFC85339857AE3C"
+				"31E1A1B90775CEB3"
+				"3F71BE17A74B795F"
+			]
+			description: ["First main alloy in Create, you'll be using it quite a lot"]
+			id: "7CD986B22D99A3EE"
+			rewards: [{
+				count: 8
+				id: "6F8CEE4D9E94D3F6"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			subtitle: "Let's Create an Alloy"
+			tasks: [{
+				id: "31F8BDF3B5F623BA"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["34BF9226B9CB7468"]
+			description: ["&6Sieve&r Sand."]
+			id: "2EE24F1DFFD74255"
+			subtitle: "Wiggly"
+			tasks: [{
+				id: "0162ED3B4D436248"
+				item: "minecraft:kelp"
+				type: "item"
+			}]
+			title: "Kelp"
+			x: -7.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7CD986B22D99A3EE"]
+			description: ["&6Key Component&r of &cAndesite Age&r"]
+			id: "1CED050B23075E82"
+			rewards: [{
+				count: 8
+				id: "2DFFAC1A170B410A"
+				item: "kubejs:kinetic_mechanism"
+				type: "item"
+			}]
+			subtitle: "It's important"
+			tasks: [{
+				id: "454B019B0DC5F695"
+				item: "kubejs:kinetic_mechanism"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["1CED050B23075E82"]
+			description: ["Think of it as a machine casing for all the &cAndesite Age&r mechines."]
+			id: "29E65F66F0E124B0"
+			subtitle: "It's also important"
+			tasks: [{
+				id: "31103FE9FBAB4B52"
+				item: "kubejs:andesite_machine"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["34260690CD86003C"]
+			description: ["&6Encased Fan&r unlocks quite a few processing possibilities."]
+			id: "23BF5124DE31CA4A"
+			subtitle: "The Hot Wind Blowing"
+			tasks: [{
+				id: "77675E34F5C1EB73"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 25.5d
+		}
+		{
+			dependencies: ["23BF5124DE31CA4A"]
+			description: ["&6Bulk Wash&r some Gravel."]
+			id: "280BAE9B3DA5F614"
+			tasks: [{
+				id: "3AB32B77701BB0E3"
+				item: "minecraft:iron_nugget"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 26.5d
+		}
+		{
+			dependencies: [
+				"28780B6E562030B4"
+				"19B3A861D2FAC002"
+				"3AB759C4C40EB132"
+			]
+			description: ["You completed &6The Tutorial&r!"]
+			id: "338E0D727FFD60DC"
+			rewards: [{
+				id: "529A3DF83C55CCD8"
+				item: "minecraft:cookie"
+				type: "item"
+			}]
+			subtitle: "You did it!"
+			tasks: [{
+				id: "5D86B2997084D970"
+				title: "End Chapter"
+				type: "checkmark"
+			}]
+			title: "Proud Survivor"
+			x: -3.0d
+			y: 29.0d
+		}
+		{
+			dependencies: ["7CD986B22D99A3EE"]
+			description: ["The Water Wheel utilizes flowing water to generate &6Rotational Force&r. Every single contraption is powered by it."]
+			id: "05565AD3061BA165"
+			rewards: [{
+				id: "160C7127CA17A9BD"
+				item: "ad_astra:ice_shard"
+				type: "item"
+			}]
+			subtitle: "Rotational force!"
+			tasks: [{
+				id: "5BCF04EBEA70835B"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["3F4648E7D27CE3D8"]
+			description: [
+				"To obtain this mighty chunk of Coal, &6Sieve&r Gravel"
+				"...or &6Transmute&r 4 pieces of Charcoal using your Philosopher's Stone."
+			]
+			id: "5569DED57157B576"
+			rewards: [{
+				id: "719979AA74E3ECD9"
+				item: "minecraft:rabbit_hide"
+				type: "item"
+			}]
+			subtitle: "Fuel that's EMCable"
+			tasks: [{
+				id: "373DC24C6CC75482"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["1123CB57600B0785"]
+			id: "3F4648E7D27CE3D8"
+			subtitle: "Carefully burned logs"
+			tasks: [{
+				id: "08E122C403DB2670"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"21CA38B7D4AFBFC2"
+				"2EE24F1DFFD74255"
+			]
+			description: ["Not actually edible, but you'll want a handful of these."]
+			id: "6EA10841E5316046"
+			subtitle: "Yummy!"
+			tasks: [{
+				id: "32994274060774EE"
+				item: "kubejs:algal_blend"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["6EA10841E5316046"]
+			description: [
+				"&6Smelt&r Algal Blend"
+				"Still not edible, but useful for making a certain alloy."
+			]
+			id: "2DFC85339857AE3C"
+			subtitle: "Crunchy"
+			tasks: [{
+				id: "0CC3E70D3D360827"
+				item: "kubejs:algal_brick"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 17.5d
+		}
+		{
+			dependencies: [
+				"29E65F66F0E124B0"
+				"05565AD3061BA165"
+			]
+			description: ["Note: &6Helve Hammer&r is only used later on for automation, manual crafting doesn't require it."]
+			id: "7BAC94ABED951BAF"
+			subtitle: "Your first machine!"
+			tasks: [{
+				id: "79E8AE6E1345AF64"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 22.5d
+		}
+		{
+			dependencies: ["6D7932C87A1AC2EC"]
+			description: ["Crucial component of the &6Encased Fan&r."]
+			id: "34260690CD86003C"
+			subtitle: "No, you cannot put it on your hat"
+			tasks: [{
+				id: "480AE58AA1BC3CAD"
+				item: "create:propeller"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 24.5d
+		}
+		{
+			dependencies: ["7BAC94ABED951BAF"]
+			description: ["Nice and flat, perfect for propellers."]
+			id: "6D7932C87A1AC2EC"
+			subtitle: "Enjoy it's shine while it lasts"
+			tasks: [{
+				id: "4F77A955D151D1EA"
+				item: "createaddition:zinc_sheet"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 23.5d
+		}
+		{
+			dependencies: ["5B7C2661F67D46A7"]
+			description: [
+				"It's nice to have different options available, isn't it?"
+				"&6Philosopher's Stone &rmight help you out."
+			]
+			id: "4881E4CEAF220C99"
+			rewards: [{
+				count: 64
+				id: "11238FCA11DA860F"
+				item: "minecraft:oak_sapling"
+				type: "item"
+			}]
+			subtitle: "If Oak is not enough for you"
+			tasks: [
+				{
+					id: "62F11BA5D5E7341E"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+				{
+					id: "14345369F120D3DB"
+					item: "minecraft:spruce_sapling"
+					type: "item"
+				}
+				{
+					id: "6F2B943A2737272B"
+					item: "minecraft:birch_sapling"
+					type: "item"
+				}
+				{
+					id: "7EAB4E70DC901E5E"
+					item: "minecraft:jungle_sapling"
+					type: "item"
+				}
+				{
+					id: "14AF7782F4B86F12"
+					item: "minecraft:acacia_sapling"
+					type: "item"
+				}
+				{
+					id: "3D8D946DC3F0C625"
+					item: "minecraft:dark_oak_sapling"
+					type: "item"
+				}
+				{
+					id: "3A9D0C44D47C8C0B"
+					item: "minecraft:cherry_sapling"
+					type: "item"
+				}
+			]
+			title: "First Collection"
+			x: 1.0d
+			y: 7.0d
+		}
+	]
+	subtitle: ["Survive in open space after horrible accident"]
+	title: "0. Surviving Age"
+}

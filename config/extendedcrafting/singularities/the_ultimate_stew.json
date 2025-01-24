@@ -1,0 +1,10 @@
+{
+  "name": "The Ultimate Stew",
+  "colors": [
+    "bbc435",
+    "82308a"
+  ],
+  "ingredient": {
+    "item": "avaritia:ultimate_stew"
+  }
+}

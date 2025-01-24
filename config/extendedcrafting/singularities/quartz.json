@@ -1,0 +1,10 @@
+{
+  "name": "Nether Quartz",
+  "colors": [
+    "b5b4ac",
+    "6c6c6c"
+  ],
+  "ingredient": {
+    "item": "minecraft:iron_ingot"
+  }
+}

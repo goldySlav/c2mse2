@@ -1,0 +1,8 @@
+{
+    "name": "C2MSE: Multiblock Guide Book",
+    "landing_text": "Welcome to \"Create 2 Mekanism: Sky Edition 2\" guide book! This Book is intended to help you building multiblock structures easily. $(l)You can read the chapters in any order$(reset), as they each focus on one structure. Enjoy!",
+    "version": 1,
+    "creative_tab": "minecraft:tools_and_utilities",
+    "show_progress": false,
+    "model": "kubejs:c2m_guide_book"
+}

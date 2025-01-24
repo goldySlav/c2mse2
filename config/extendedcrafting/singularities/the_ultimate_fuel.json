@@ -1,0 +1,10 @@
+{
+  "name": "The Ultimate Fuel",
+  "colors": [
+    "a9c495",
+    "82308a"
+  ],
+  "ingredient": {
+    "item": "ironfurnaces:rainbow_coal"
+  }
+}

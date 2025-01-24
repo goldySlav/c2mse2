@@ -1,0 +1,10 @@
+{
+  "item.sophisticatedbackpacks.copper_backpack": "Iron Backpack",
+    "item.sophisticatedbackpacks.iron_backpack": "Gold Backpack",
+    "item.sophisticatedbackpacks.gold_backpack": "Diamond Backpack",
+    "item.sophisticatedbackpacks.diamond_backpack": "Emerald Backpack",
+  "block.sophisticatedbackpacks.copper_backpack": "Iron Backpack",
+    "block.sophisticatedbackpacks.iron_backpack": "Gold Backpack",
+    "block.sophisticatedbackpacks.gold_backpack": "Diamond Backpack",
+    "block.sophisticatedbackpacks.diamond_backpack": "Emerald Backpack"
+}

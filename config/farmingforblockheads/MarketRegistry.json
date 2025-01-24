@@ -1,0 +1,40 @@
+{
+	"groupOverrides": {
+        "Vanilla Seeds": {
+            "payment": {
+                "item": "minecraft:emerald",
+                "count": 8
+            }
+        },
+        "Vanilla Saplings": {
+            "payment": {
+                "item": "minecraft:emerald",
+                "count": 8
+            }
+        },
+        "Vanilla Mushrooms": {
+            "payment": {
+                "item": "minecraft:emerald",
+                "count": 8
+            }
+        },
+        "BiomesOPlenty Saplings": {
+            "payment": {
+                "item": "minecraft:emerald",
+                "count": 8
+            }
+        },
+        "Pam's HarvestCraft 2 Crops Seeds": {
+            "payment": {
+                "item": "minecraft:emerald",
+                "count": 8
+            }
+        },
+        "Pam's HarvestCraft 2 Trees Saplings": {
+            "payment": {
+                "item": "minecraft:emerald",
+                "count": 8
+            }
+        }
+	}
+}

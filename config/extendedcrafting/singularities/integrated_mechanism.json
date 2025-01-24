@@ -1,0 +1,10 @@
+{
+  "name": "Integrated Mechanism",
+  "colors": [
+    "545230",
+    "8e1a"
+  ],
+  "ingredient": {
+    "item": "minecraft:emerald"
+  }
+}

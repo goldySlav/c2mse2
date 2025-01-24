@@ -1,0 +1,320 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "axes"
+	group: "051AA46D917B6FBA"
+	icon: {
+		Count: 1
+		id: "avaritia:natures_ruin"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "2B976D1E1B4D9F49"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3856CA52A8EA55D4"]
+			disable_toast: true
+			icon: "miniutilities:healing_axe"
+			id: "45197B77CA0CEAD9"
+			size: 1.0d
+			tasks: [{
+				id: "0DDF23705F5C93B4"
+				item: "miniutilities:healing_axe"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["45197B77CA0CEAD9"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: { }
+				}
+				id: "projecte:dm_axe"
+				tag: { }
+			}
+			id: "1969ACF260521F10"
+			size: 1.0d
+			tasks: [{
+				id: "6B0CC6884527671F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: { }
+					}
+					id: "projecte:dm_axe"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1969ACF260521F10"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: { }
+				}
+				id: "projecte:rm_axe"
+				tag: { }
+			}
+			id: "11A1C343DBBD9FAA"
+			size: 1.0d
+			tasks: [{
+				id: "5EAE31CABD8CE80F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: { }
+					}
+					id: "projecte:rm_axe"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["11A1C343DBBD9FAA"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "industrialforegoing:infinity_saw"
+				tag: {
+					CanCharge: 1b
+					Energy: 0L
+					Fluid: {
+						Amount: 0
+						FluidName: "biofuel"
+					}
+					Selected: "POOR"
+					Special: 0b
+				}
+			}
+			id: "39C65371AF627005"
+			size: 1.0d
+			tasks: [{
+				id: "4F900E421ECB2485"
+				item: {
+					Count: 1
+					id: "industrialforegoing:infinity_saw"
+					tag: {
+						CanCharge: 1b
+						Energy: 0L
+						Fluid: {
+							Amount: 0
+							FluidName: "biofuel"
+						}
+						Selected: "POOR"
+						Special: 0b
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["79F5495ADA18AC1E"]
+			icon: {
+				Count: 1
+				id: "avaritia:natures_ruin"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0442BFACC8EE8BFD"
+			size: 1.0d
+			tasks: [{
+				id: "7C361D8705029237"
+				item: {
+					Count: 1
+					id: "avaritia:natures_ruin"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&eArtifact: Nature's Ruin"
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["39C65371AF627005"]
+			disable_toast: true
+			id: "727500952AE90904"
+			tasks: [{
+				id: "02EEE533FB765800"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+								provider_id: [I;
+									1004786114
+									815615021
+									-1074305303
+									-50145905
+								]
+							}
+						}
+					}
+					id: "draconicevolution:wyvern_axe"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["727500952AE90904"]
+			disable_toast: true
+			id: "06E876288105A79C"
+			tasks: [{
+				id: "6348B72AB5970367"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+								provider_id: [I;
+									-64658018
+									-1303624128
+									-1236806621
+									-863687251
+								]
+							}
+						}
+					}
+					id: "draconicevolution:draconic_axe"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["06E876288105A79C"]
+			disable_toast: true
+			id: "79F5495ADA18AC1E"
+			tasks: [{
+				id: "6F5002E2CD8982B4"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+								provider_id: [I;
+									85272
+									-797163407
+									-1774229261
+									-1273029648
+								]
+							}
+						}
+					}
+					id: "draconicevolution:chaotic_axe"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["1E6AC6BF753DE997"]
+			disable_toast: true
+			id: "3856CA52A8EA55D4"
+			tasks: [{
+				id: "37E70F674F602E78"
+				item: {
+					Count: 1
+					id: "pureemeraldtools:emerald_netherite_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0823F2ABF8D54D41"]
+			disable_toast: true
+			id: "1E6AC6BF753DE997"
+			tasks: [{
+				id: "31FA8720216617A4"
+				item: {
+					Count: 1
+					id: "minecraft:netherite_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			disable_toast: true
+			id: "0823F2ABF8D54D41"
+			tasks: [{
+				id: "0351914D6B1DE2CA"
+				item: {
+					Count: 1
+					id: "pureemeraldtools:pure_emerald_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+	]
+	title: "Axes"
+}

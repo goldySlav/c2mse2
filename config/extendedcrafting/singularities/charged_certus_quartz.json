@@ -1,0 +1,10 @@
+{
+  "name": "Charged Certus Quartz",
+  "colors": [
+    "5aa6e6",
+    "1aaca8"
+  ],
+  "ingredient": {
+    "item": "minecraft:diamond"
+  }
+}

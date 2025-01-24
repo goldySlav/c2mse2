@@ -1,0 +1,23 @@
+{
+  "name": "singularity.avaritia.copper",
+  "colors": [
+    "89511a",
+    "e47200"
+  ],
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/copper",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/copper"
+  },
+  "count": 400,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": true
+}

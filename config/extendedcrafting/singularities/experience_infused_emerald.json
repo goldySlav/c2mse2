@@ -1,0 +1,10 @@
+{
+  "name": "Experience Infused Emerald",
+  "colors": [
+    "7df8ac",
+    "8e1a"
+  ],
+  "ingredient": {
+    "item": "minecraft:emerald"
+  }
+}

@@ -1,0 +1,1 @@
+{"type":"mekanism:reaction","duration":100,"fluidInput":{"amount":1000,"tag":"minecraft:water"},"gasInput":{"amount":100,"gas":"mekanism:polonium"},"gasOutput":{"amount":100,"gas":"mekanism:nuclear_waste"},"itemInput":{"ingredient":{"tag":"forge:dusts/fluorite"}},"itemOutput":{"item":"mekanism:pellet_polonium"}}

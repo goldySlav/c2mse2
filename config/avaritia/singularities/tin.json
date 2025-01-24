@@ -1,0 +1,23 @@
+{
+  "name": "singularity.avaritia.tin",
+  "colors": [
+    "9ba9b2",
+    "a5c7de"
+  ],
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/tin",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/tin"
+  },
+  "count": 400,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": true
+}

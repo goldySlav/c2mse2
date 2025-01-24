@@ -1,0 +1,14 @@
+{
+  "name": "singularity.avaritia.clay",
+  "colors": [
+    "666b7f",
+    "8890ad"
+  ],
+  "ingredient": {
+    "item": "minecraft:clay_ball"
+  },
+  "count": 150,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": true
+}

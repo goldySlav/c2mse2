@@ -1,0 +1,34 @@
+{
+    "name": "Fusion Reactor",
+    "icon": "mekanismgenerators:fusion_reactor_controller",
+    "category": "patchouli:build",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Here you can find a visualisation of how to build \"$(1)Fusion Reactor$(reset)\". This will be one of the best ways to generate power in the late game."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Fusion Reactor",
+            "multiblock": {
+                "pattern": [
+                    [ "  C  ", " CGC ", "CGOGC", " CGC ", "  C  " ],
+                    [ " CGC ", "C   C", "G   G", "C   C", " CGC " ],
+                    [ "CGPGC", "G   G", "P   P", "G   G", "CGLGC" ],
+                    [ " CGC ", "C   C", "G   G", "C   C", " CGC " ],
+                    [ "  C  ", " CGC ", "CG0GC", " CGC ", "  C  " ]
+                ],
+                "mapping": {
+                    "C": "mekanismgenerators:fusion_reactor_frame",
+                    "G": "mekanismgenerators:reactor_glass",
+                    "P": "mekanismgenerators:fusion_reactor_port",
+                    "O": "mekanismgenerators:fusion_reactor_controller",
+                    "L": "mekanismgenerators:laser_focus_matrix",
+                    "0": "mekanismgenerators:reactor_glass"
+                }
+            },
+            "enable_visualize": true,
+            "text": "(Click Visualize even if it appears blank)$(br)Place it somewhere in a world, but make sure that it doesn't cross any chunk borders ($(l)F3 + G$(reset) to see chunk borders)."
+        }
+    ]
+}

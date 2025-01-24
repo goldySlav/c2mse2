@@ -1,0 +1,55 @@
+
+["Config for More Vanilla Shields!"]
+	#README!!!!!!!!!!!!!!!!!!!! Only change the Values before creating a world or a server! Or change the values before creating or having a Shield! If you change the values (and you already used a shield), your world should break
+	#If you want tooltips to be enabled then let it on true
+	enableTooltips = false
+	#If you want particles to be enabled then let it on true
+	enableParticles = true
+	#Here you can set up the density of the redstone shield. (2500 as max bcs some of yall try to crash some games)
+	#Range: 0.1 ~ 2500.0
+	redstoneShieldDensity = 0.1
+	#Durability of Leather Shield. Default Durability is 196
+	leatherShieldDurability = 196
+	#Durability of Gold Shield. Default Durability is 322
+	goldShieldDurability = 572
+	#Durability of Diamond Shield. Default Durability is 512
+	diamondShieldDurability = 821
+	#Durability of Glass Shield. Default Durability is 300
+	glassShieldDurability = 300
+	#Durability of Tinted Glass Shield. Default Durability is 300
+	tintedGlassShieldDurability = 300
+	#Durability of Brown Stained Glass Shield. Default Durability is 300
+	brownStainedGlassShieldDurability = 300
+	#Durability of Blue Stained Glass Shield. Default Durability is 300
+	blueStainedGlassShieldDurability = 300
+	#Durability of Cyan Stained Glass Shield. Default Durability is 300
+	cyanStainedGlassShieldDurability = 300
+	#Durability of Light Blue Stained Glass Shield. Default Durability is 300
+	lightBlueStainedGlassShieldDurability = 300
+	#Durability of Green Stained Glass Shield. Default Durability is 300
+	greenStainedGlassShieldDurability = 300
+	#Durability of Lime Stained Glass Shield. Default Durability is 300
+	limeStainedGlassShieldDurability = 300
+	#Durability of Yellow Stained Glass Shield. Default Durability is 300
+	yellowStainedGlassShieldDurability = 300
+	#Durability of Pink Stained Glass Shield. Default Durability is 300
+	pinkStainedGlassShieldDurability = 300
+	#Durability of Orange Stained Glass Shield. Default Durability is 300
+	orangeStainedGlassShieldDurability = 300
+	#Durability of Red Stained Glass Shield. Default Durability is 300
+	redStainedGlassShieldDurability = 300
+	#Durability of Netherite Shield. Default Durability is 2042
+	netheriteShieldDurability = 1663
+	#Durability of Emerald Shield. Default Durability is 512
+	emeraldShieldDurability = 1295
+	#Durability of Amethyst Shield. Default Durability is 432
+	amethystShieldDurability = 432
+	#Durability of Redstone Shield. Default Durability is 250
+	redstoneShieldDurability = 250
+	#Durability of Obsidian Shield. Default Durability is 610
+	obsidianShieldDurability = 610
+	#Durability of Coal Shield. Default Durability is 268
+	coalShieldDurability = 268
+	#Durability of End Crystal Shield. Default Durability is 750
+	endCrystalShieldDurability = 750
+

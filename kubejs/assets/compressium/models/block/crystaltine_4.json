@@ -1,0 +1,22 @@
+{
+  "parent": "minecraft:block/block",
+  "children": {
+    "Solid": {
+      "parent": "extendedcrafting:block/crystaltine_block"
+    },
+    "Translucent": {
+      "parent": "minecraft:block/cube_all",
+      "textures": {
+        "all": "compressium:block/layer_4"
+      }
+    }
+  },
+  "item_render_order": [
+    "Solid",
+    "Translucent"
+  ],
+  "loader": "forge:composite",
+  "textures": {
+    "particle": "extendedcrafting:block/crystaltine_block"
+  }
+}

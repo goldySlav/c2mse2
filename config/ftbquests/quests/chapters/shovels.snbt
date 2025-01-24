@@ -1,0 +1,281 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "shovels"
+	group: "051AA46D917B6FBA"
+	icon: {
+		Count: 1
+		id: "avaritia:planet_eater"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "78DBDF892ABB6816"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["091CABE61E125844"]
+			disable_toast: true
+			icon: "miniutilities:erosion_shovel"
+			id: "6CC05EB096845CCA"
+			size: 1.0d
+			tasks: [{
+				id: "68CB7351ECA30BBF"
+				item: "miniutilities:erosion_shovel"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6CC05EB096845CCA"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: { }
+				}
+				id: "projecte:dm_shovel"
+				tag: { }
+			}
+			id: "166C2DACFF8448F7"
+			size: 1.0d
+			tasks: [{
+				id: "502AAB15D39A3ED3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: { }
+					}
+					id: "projecte:dm_shovel"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["166C2DACFF8448F7"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: { }
+				}
+				id: "projecte:rm_shovel"
+				tag: { }
+			}
+			id: "2BE02AB830DA6188"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "7FD294C8E88BF044"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: { }
+					}
+					id: "projecte:rm_shovel"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["574E1D1E01095AA5"]
+			icon: {
+				Count: 1
+				id: "avaritia:planet_eater"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "22F9328F1EED8926"
+			size: 1.0d
+			tasks: [{
+				id: "6C2A8D62D7E3F035"
+				item: {
+					Count: 1
+					id: "avaritia:planet_eater"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&eArtifact: Planet Eater"
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["2BE02AB830DA6188"]
+			disable_toast: true
+			id: "05BBAC5B1EC0942A"
+			tasks: [{
+				id: "79D062EF3929A402"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+								provider_id: [I;
+									-104643750
+									477971777
+									-1818691931
+									-218562724
+								]
+							}
+						}
+					}
+					id: "draconicevolution:wyvern_shovel"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["05BBAC5B1EC0942A"]
+			disable_toast: true
+			id: "01F8A8C1BF45F093"
+			tasks: [{
+				id: "00CA35A652022653"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+								provider_id: [I;
+									-1776866951
+									2031042708
+									-1218001129
+									-1084605597
+								]
+							}
+						}
+					}
+					id: "draconicevolution:draconic_shovel"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["01F8A8C1BF45F093"]
+			disable_toast: true
+			id: "574E1D1E01095AA5"
+			tasks: [{
+				id: "2D3019E50DDCDCCF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+								provider_id: [I;
+									-634985098
+									94259106
+									-2138966495
+									-2003633707
+								]
+							}
+						}
+					}
+					id: "draconicevolution:chaotic_shovel"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["263AA4FDE6BBB410"]
+			disable_toast: true
+			id: "091CABE61E125844"
+			tasks: [{
+				id: "3C63AED30B0481CF"
+				item: {
+					Count: 1
+					id: "pureemeraldtools:emerald_netherite_shovel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			disable_toast: true
+			id: "6335E82EA0D32D0C"
+			tasks: [{
+				id: "7DB8CDAD7E51D6C5"
+				item: {
+					Count: 1
+					id: "pureemeraldtools:pure_emerald_shovel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6335E82EA0D32D0C"]
+			disable_toast: true
+			id: "263AA4FDE6BBB410"
+			tasks: [{
+				id: "3F38123BBCE2885D"
+				item: {
+					Count: 1
+					id: "minecraft:netherite_shovel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+	]
+	title: "Shovels"
+}

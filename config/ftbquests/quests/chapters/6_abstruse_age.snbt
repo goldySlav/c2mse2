@@ -1,0 +1,404 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6_abstruse_age"
+	group: "2F6B1FE330B2219D"
+	icon: "kubejs:abstruse_machine"
+	id: "6264A218E2069DB9"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5BF4BD18436A015E"]
+			id: "2E8778D432B12A09"
+			tasks: [{
+				id: "374CE40934CB995D"
+				title: "Start Chapter"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["576B2716D30C74CB"]
+			id: "2E6CE520086D8586"
+			shape: "rsquare"
+			tasks: [{
+				id: "3B32476FCA9650B4"
+				item: "kubejs:abstruse_machine"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"093939204AD0D6C0"
+				"578CFA9452732B7E"
+			]
+			icon: "kubejs:abstruse_mechanism"
+			id: "576B2716D30C74CB"
+			tasks: [
+				{
+					id: "5C9BCF7E5E58CD9B"
+					item: "kubejs:abstruse_mechanism"
+					type: "item"
+				}
+				{
+					id: "60F64F3B2DD09FCB"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"7B6ACD7ADD5DE33E"
+				"02BF2A9AA4214BA7"
+				"1310A3ECC10F5090"
+				"64BF76E7FA414649"
+				"695C45867737D934"
+				"5E76742299D40DED"
+				"0FE9149C3B9186B1"
+				"41D1058AA0FDDC3A"
+				"5B4056D7CA4530C4"
+				"17652A1E7B8B35FF"
+			]
+			icon: "kubejs:computation_matrix"
+			id: "093939204AD0D6C0"
+			tasks: [
+				{
+					id: "6F50DA08B5FD63C4"
+					item: "kubejs:computation_matrix"
+					type: "item"
+				}
+				{
+					id: "1F7DC34A9EDE4D9F"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			description: ["Please note, that all math operations can be done also in &6Advanced Crafting Table&r &o(not shown in JEI for some reason)&r"]
+			icon: "kubejs:zero"
+			id: "7B6ACD7ADD5DE33E"
+			tasks: [
+				{
+					id: "28FA409A989612A1"
+					item: "kubejs:zero"
+					type: "item"
+				}
+				{
+					id: "54A60EA8189BFA0A"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			description: ["Please note, that all math operations can be done also in &6Advanced Crafting Table&r &o(not shown in JEI for some reason)&r"]
+			icon: "kubejs:one"
+			id: "02BF2A9AA4214BA7"
+			tasks: [
+				{
+					id: "5CCE4F5A3ED858E5"
+					item: "kubejs:one"
+					type: "item"
+				}
+				{
+					id: "19B49A36CEA5BFC9"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			description: ["Please note, that all math operations can be done also in &6Advanced Crafting Table&r &o(not shown in JEI for some reason)&r"]
+			icon: "kubejs:two"
+			id: "1310A3ECC10F5090"
+			tasks: [
+				{
+					id: "2E130A43E4D3F300"
+					item: "kubejs:two"
+					type: "item"
+				}
+				{
+					id: "4AFD826BB7035299"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			description: ["Please note, that all math operations can be done also in &6Advanced Crafting Table&r &o(not shown in JEI for some reason)&r"]
+			icon: "kubejs:three"
+			id: "64BF76E7FA414649"
+			tasks: [
+				{
+					id: "013A0D91B55E0307"
+					item: "kubejs:three"
+					type: "item"
+				}
+				{
+					id: "33EDCFC1C95750C7"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			description: ["Please note, that all math operations can be done also in &6Advanced Crafting Table&r &o(not shown in JEI for some reason)&r"]
+			icon: "kubejs:four"
+			id: "695C45867737D934"
+			tasks: [
+				{
+					id: "310DE8757E7C46C6"
+					item: "kubejs:four"
+					type: "item"
+				}
+				{
+					id: "5A9320B5384238FD"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			description: ["Please note, that all math operations can be done also in &6Advanced Crafting Table&r &o(not shown in JEI for some reason)&r"]
+			icon: "kubejs:five"
+			id: "5E76742299D40DED"
+			tasks: [
+				{
+					id: "79F2DD69AE8C9E23"
+					item: "kubejs:five"
+					type: "item"
+				}
+				{
+					id: "286210B22BEB441D"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			description: ["Please note, that all math operations can be done also in &6Advanced Crafting Table&r &o(not shown in JEI for some reason)&r"]
+			icon: "kubejs:six"
+			id: "0FE9149C3B9186B1"
+			tasks: [
+				{
+					id: "4C735707FEB651F6"
+					item: "kubejs:six"
+					type: "item"
+				}
+				{
+					id: "58B8DEC7DD23302A"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			description: ["Please note, that all math operations can be done also in &6Advanced Crafting Table&r &o(not shown in JEI for some reason)&r"]
+			icon: "kubejs:seven"
+			id: "41D1058AA0FDDC3A"
+			tasks: [
+				{
+					id: "4ECC8D069C089B83"
+					item: "kubejs:seven"
+					type: "item"
+				}
+				{
+					id: "7A69C70E73239978"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			description: ["Please note, that all math operations can be done also in &6Advanced Crafting Table&r &o(not shown in JEI for some reason)&r"]
+			icon: "kubejs:eight"
+			id: "5B4056D7CA4530C4"
+			tasks: [
+				{
+					id: "0FC770661DA03FC7"
+					item: "kubejs:eight"
+					type: "item"
+				}
+				{
+					id: "5152F9D40565B965"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			description: ["Please note, that all math operations can be done also in &6Advanced Crafting Table&r &o(not shown in JEI for some reason)&r"]
+			icon: "kubejs:nine"
+			id: "17652A1E7B8B35FF"
+			tasks: [
+				{
+					id: "19C17AA8B0B09190"
+					item: "kubejs:nine"
+					type: "item"
+				}
+				{
+					id: "060BA1CD0D986B94"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 5.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2E8778D432B12A09"]
+			id: "0B12B976E0EBAE0A"
+			shape: "rsquare"
+			tasks: [{
+				id: "61FC1D5595CDA091"
+				item: "kubejs:three_cast"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E8778D432B12A09"]
+			id: "225891006A2AC89D"
+			shape: "rsquare"
+			tasks: [{
+				id: "4BAFEE0440AD4E3F"
+				item: "kubejs:eight_cast"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E8778D432B12A09"]
+			id: "0F7DDA78A13D7FFC"
+			shape: "rsquare"
+			tasks: [{
+				id: "7ACC13B6EB028159"
+				item: "kubejs:plus_cast"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E8778D432B12A09"]
+			id: "7729657E979AE027"
+			shape: "rsquare"
+			tasks: [{
+				id: "037A4F12EB6953E4"
+				item: "kubejs:minus_cast"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E8778D432B12A09"]
+			id: "5C13BA5CFC7A7908"
+			shape: "rsquare"
+			tasks: [{
+				id: "1E3CCFC8F51DB31E"
+				item: "kubejs:divide_cast"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E8778D432B12A09"]
+			id: "60693DBE2262B78A"
+			shape: "rsquare"
+			tasks: [{
+				id: "2EB73829FDAE6AB7"
+				item: "kubejs:multiply_cast"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0B12B976E0EBAE0A"
+				"225891006A2AC89D"
+				"0F7DDA78A13D7FFC"
+				"7729657E979AE027"
+				"5C13BA5CFC7A7908"
+				"60693DBE2262B78A"
+			]
+			icon: "kubejs:matrix_bucket"
+			id: "552F8C2C880166A7"
+			tasks: [
+				{
+					id: "2607C704CAB5C6FD"
+					item: "kubejs:matrix_bucket"
+					type: "item"
+				}
+				{
+					id: "254ABEBF39F0E77B"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5BF4BD18436A015E"]
+			id: "578CFA9452732B7E"
+			shape: "rsquare"
+			tasks: [{
+				id: "104E8435778E96BA"
+				item: {
+					Count: 1
+					id: "kubejs:chromatic_resonator"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 9.0d
+		}
+	]
+	title: "6. Abstruse Age"
+}

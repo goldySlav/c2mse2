@@ -1,0 +1,23 @@
+{
+  "name": "singularity.avaritia.electrum",
+  "colors": [
+    "a79135",
+    "a79135"
+  ],
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/electrum",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/electrum"
+  },
+  "count": 400,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": true
+}

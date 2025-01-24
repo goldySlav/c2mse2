@@ -1,0 +1,22 @@
+{
+  "parent": "minecraft:block/block",
+  "children": {
+    "Solid": {
+      "parent": "ad_astra:block/desh_block"
+    },
+    "Translucent": {
+      "parent": "minecraft:block/cube_all",
+      "textures": {
+        "all": "compressium:block/layer_1"
+      }
+    }
+  },
+  "item_render_order": [
+    "Solid",
+    "Translucent"
+  ],
+  "loader": "forge:composite",
+  "textures": {
+    "particle": "ad_astra:block/desh_block"
+  }
+}

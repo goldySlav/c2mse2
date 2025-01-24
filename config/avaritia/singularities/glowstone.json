@@ -1,0 +1,14 @@
+{
+  "name": "singularity.avaritia.glowstone",
+  "colors": [
+    "b47140",
+    "ffbc5e"
+  ],
+  "ingredient": {
+    "item": "minecraft:glowstone"
+  },
+  "count": 200,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": false
+}

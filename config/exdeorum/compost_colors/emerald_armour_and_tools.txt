@@ -1,0 +1,10 @@
+// Compost colors for emerald_armour_and_tools. You may add your own colors, change existing ones, or remove colors that aren't needed.
+emerald_armour_boots, #edffed
+emerald_armour_chestplate, #beffb6
+emerald_armour_helmet, #ffffff
+emerald_armour_leggings, #ebffed
+emerald_tools_axe, #f5fff0
+emerald_tools_hoe, #fffff8
+emerald_tools_pickaxe, #eaffe3
+emerald_tools_shovel, #fffff8
+emerald_tools_sword, #379d4a

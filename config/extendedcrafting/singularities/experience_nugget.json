@@ -1,0 +1,10 @@
+{
+  "name": "Experience Nugget",
+  "colors": [
+    "48db6d",
+    "bc5430"
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/draconium"
+  }
+}

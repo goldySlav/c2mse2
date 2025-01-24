@@ -1,0 +1,48 @@
+{
+    "name": "Evaporation Plant (18x4x4)",
+    "icon": "mekanism:thermal_evaporation_controller",
+    "category": "patchouli:build",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Here you can find a visualisation of how to build smallest \"$(1)Thermal Evaporation Plant$(reset)\".$(br)This machine is needed to produce Brine from water.$(br)We will build the biggest one right away, $(1)and then build 1 more$(reset) to make Liquid Lithium from Brine.$(br)Highly recommended to place this multiblock 1 block into the earth, for aesthetic purposes (no functional difference)."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Evaporation Plant",
+            "multiblock": {
+                "pattern": [
+                    [ "SBBS", "B  B", "B  B", "RBBR" ],
+                    [ "BGGB", "G  G", "G  G", "BGGB" ],
+                    [ "BGGB", "G  G", "G  G", "BGGB" ],
+                    [ "BGGB", "G  G", "G  G", "BGGB" ],
+                    [ "BGGB", "G  G", "G  G", "BGGB" ],
+                    [ "BGGB", "G  G", "G  G", "BGGB" ],
+                    [ "BGGB", "G  G", "G  G", "BGGB" ],
+                    [ "BGGB", "G  G", "G  G", "BGGB" ],
+                    [ "BGGB", "G  G", "G  G", "BGGB" ],
+                    [ "BGGB", "G  G", "G  G", "BGGB" ],
+                    [ "BGGB", "G  G", "G  G", "BGGB" ],
+                    [ "BGGB", "G  G", "G  G", "BGGB" ],
+                    [ "BGGB", "G  G", "G  G", "BGGB" ],
+                    [ "BGGB", "G  G", "G  G", "BGGB" ],
+                    [ "BGGB", "G  G", "G  G", "BGGB" ],
+                    [ "BCGB", "G  G", "V  V", "BGGB" ],
+                    [ "BGGB", "G  G", "G  G", "BGGB" ],
+                    [ "BBBB", "BBBB", "B0BB", "BBBB" ]
+                ],
+                "mapping": {
+                    "S": "mekanismgenerators:advanced_solar_generator[facing=east]",
+                    "B": "mekanism:thermal_evaporation_block",
+                    "G": "mekanism:structural_glass",
+                    "C": "mekanism:thermal_evaporation_controller",
+                    "V": "mekanism:thermal_evaporation_valve",
+                    "R": "mekanismgenerators:advanced_solar_generator[facing=west]",
+                    "0": "mekanism:thermal_evaporation_block"
+                }
+            },
+            "enable_visualize": true,
+            "text": "(Click Visualize even if it appears blank)$(br)Place it somewhere in a world, but make sure that it doesn't cross any chunk borders ($(l)F3 + G$(reset) to see chunk borders)."
+        }
+    ]
+}

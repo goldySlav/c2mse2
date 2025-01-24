@@ -1,0 +1,23 @@
+{
+  "name": "singularity.avaritia.invar",
+  "colors": [
+    "929d97",
+    "929d97"
+  ],
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/invar",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/invar"
+  },
+  "count": 400,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": true
+}

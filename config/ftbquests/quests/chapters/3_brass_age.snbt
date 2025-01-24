@@ -1,0 +1,598 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3_brass_age"
+	group: "2F6B1FE330B2219D"
+	icon: "kubejs:brass_machine"
+	id: "30850AFF378BECBE"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["10AC4EE77F6CC3BC"]
+			id: "0B16696302C3F3C5"
+			tasks: [{
+				id: "5500F9D1A7125F11"
+				title: "Start Chapter"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["668A952600ABBB6D"]
+			id: "48753F8B4874A9F9"
+			shape: "rsquare"
+			tasks: [{
+				id: "6B242C49911A64B1"
+				item: "kubejs:brass_machine"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"6A1BBA66DE2014C1"
+				"657A6EEA9A8F6549"
+				"7FD29CB9FD8A147C"
+			]
+			icon: "create:precision_mechanism"
+			id: "668A952600ABBB6D"
+			tasks: [
+				{
+					id: "3144F9C84F53CD5A"
+					item: "create:precision_mechanism"
+					type: "item"
+				}
+				{
+					id: "3BEAF79171B50F26"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["10AC4EE77F6CC3BC"]
+			id: "6A1BBA66DE2014C1"
+			shape: "rsquare"
+			tasks: [{
+				id: "424DF95817D1B773"
+				item: {
+					Count: 1
+					id: "projectred_core:screwdriver"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"562716E1F2F30704"
+				"6A440498F22DB5B5"
+			]
+			icon: "create:electron_tube"
+			id: "657A6EEA9A8F6549"
+			tasks: [
+				{
+					id: "7D168CB53F6DF01C"
+					item: "create:electron_tube"
+					type: "item"
+				}
+				{
+					id: "3A83E151F59CE8FF"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3984091B70C5869E"]
+			icon: "create:brass_nugget"
+			id: "7FD29CB9FD8A147C"
+			tasks: [
+				{
+					id: "1284B6AAFD3C372C"
+					item: "create:brass_nugget"
+					type: "item"
+				}
+				{
+					id: "4A96AF456BA33119"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"202EBC6D790314E6"
+				"6ECC004E4EB82368"
+			]
+			icon: "createmetallurgy:molten_brass_bucket"
+			id: "3984091B70C5869E"
+			tasks: [
+				{
+					id: "41FCDE8EFEF94B0B"
+					item: "createmetallurgy:molten_brass_bucket"
+					type: "item"
+				}
+				{
+					id: "57269E311AC244A3"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["15E1AB9E8845B81E"]
+			icon: "createmetallurgy:molten_zinc_bucket"
+			id: "6ECC004E4EB82368"
+			tasks: [
+				{
+					id: "0DB067A1948C3772"
+					item: "createmetallurgy:molten_zinc_bucket"
+					type: "item"
+				}
+				{
+					id: "48C86A3D4D6DF6F3"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4E4478825579AB53"]
+			icon: "createmetallurgy:molten_copper_bucket"
+			id: "202EBC6D790314E6"
+			tasks: [
+				{
+					id: "4FFEA3248BCF0C33"
+					item: "createmetallurgy:molten_copper_bucket"
+					type: "item"
+				}
+				{
+					id: "6808E9D181FACF38"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["44C3247A6B4D844E"]
+			icon: "create:copper_nugget"
+			id: "4E4478825579AB53"
+			tasks: [
+				{
+					id: "0744B5C74ADA9CB0"
+					item: "create:copper_nugget"
+					type: "item"
+				}
+				{
+					id: "1EF6C91A8773C60B"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0D8B364DB116E060"]
+			icon: "create:zinc_nugget"
+			id: "15E1AB9E8845B81E"
+			tasks: [
+				{
+					id: "0AB43520D7D7E064"
+					item: "create:zinc_nugget"
+					type: "item"
+				}
+				{
+					id: "50EC99B88418FDBD"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"18F089334C583E34"
+				"4E6C04506584D408"
+			]
+			icon: "kubejs:liquid_redstone_bucket"
+			id: "2DCAABDF526C9332"
+			tasks: [
+				{
+					id: "60BECE5A83DC6CDE"
+					item: "kubejs:liquid_redstone_bucket"
+					type: "item"
+				}
+				{
+					id: "3F9526544BEFAC29"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2DCAABDF526C9332"
+				"7EFA012B9C2A157C"
+			]
+			icon: "create:polished_rose_quartz"
+			id: "6A440498F22DB5B5"
+			tasks: [
+				{
+					id: "25B308D4C856ECD6"
+					item: "create:polished_rose_quartz"
+					type: "item"
+				}
+				{
+					id: "40304E49BF8F151B"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["157D853038DA9297"]
+			icon: "createmetallurgy:molten_iron_bucket"
+			id: "562716E1F2F30704"
+			tasks: [
+				{
+					id: "76CF64AFEDD12D4C"
+					item: "createmetallurgy:molten_iron_bucket"
+					type: "item"
+				}
+				{
+					id: "2FB1126717DB8564"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["10AC4EE77F6CC3BC"]
+			icon: "minecraft:quartz"
+			id: "7EFA012B9C2A157C"
+			tasks: [
+				{
+					id: "285D68F6BCCB591C"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					id: "2156A6CC880335BE"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"4189E71C621177B0"
+				"2EAEF08EBE9F97E8"
+			]
+			icon: "kubejs:sky_solution_bucket"
+			id: "18F089334C583E34"
+			tasks: [
+				{
+					id: "5B5185F4FD38FE9F"
+					item: "kubejs:sky_solution_bucket"
+					type: "item"
+				}
+				{
+					id: "55F12C708B5D2138"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["31AC01B1F159EE17"]
+			icon: "ae2:charged_certus_quartz_crystal"
+			id: "4E6C04506584D408"
+			tasks: [
+				{
+					id: "63E9F06D7B53AF27"
+					item: "ae2:charged_certus_quartz_crystal"
+					type: "item"
+				}
+				{
+					id: "21E0EE0D9AE0A1BB"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0C9B71DD7A9DEEB7"]
+			icon: "minecraft:iron_nugget"
+			id: "157D853038DA9297"
+			tasks: [
+				{
+					id: "0CBE0175DBF4CF64"
+					item: "minecraft:iron_nugget"
+					type: "item"
+				}
+				{
+					id: "11204C7FC01658F9"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1EA91261B3883D58"]
+			icon: "ae2:certus_quartz_crystal"
+			id: "31AC01B1F159EE17"
+			tasks: [
+				{
+					id: "3E05972C5076FEE1"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+				{
+					id: "72975F5481A5C800"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2F7B52A729167B69"]
+			icon: "minecraft:gravel"
+			id: "0C9B71DD7A9DEEB7"
+			tasks: [
+				{
+					id: "0E3686EB1E75F7A0"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					id: "4AE2A1E1C69E64E6"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["65F344525400EFE7"]
+			icon: "kubejs:crushed_diorite"
+			id: "0D8B364DB116E060"
+			tasks: [
+				{
+					id: "4EF2B5F0C99C7964"
+					item: "kubejs:crushed_diorite"
+					type: "item"
+				}
+				{
+					id: "0583E12819C62077"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["47B0F53E35B9511F"]
+			icon: "kubejs:crushed_granite"
+			id: "44C3247A6B4D844E"
+			tasks: [
+				{
+					id: "0EA4E236673E0666"
+					item: "kubejs:crushed_granite"
+					type: "item"
+				}
+				{
+					id: "167BB11576B55BD7"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0B16696302C3F3C5"]
+			icon: "minecraft:cobblestone"
+			id: "2F7B52A729167B69"
+			tasks: [
+				{
+					id: "78F6AE476836236A"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					id: "5EA4354D15BA3F9D"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0B16696302C3F3C5"]
+			icon: "minecraft:diorite"
+			id: "65F344525400EFE7"
+			tasks: [
+				{
+					id: "7FB746D9A0B8FC5B"
+					item: "minecraft:diorite"
+					type: "item"
+				}
+				{
+					id: "5D6ECFD0557570E8"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0B16696302C3F3C5"]
+			icon: "minecraft:granite"
+			id: "47B0F53E35B9511F"
+			tasks: [
+				{
+					id: "6BA2B6F08392B380"
+					item: "minecraft:granite"
+					type: "item"
+				}
+				{
+					id: "474D9A82DECBF58F"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3B83B6DF32386BEA"]
+			id: "1EA91261B3883D58"
+			tasks: [{
+				id: "09FDE8171D99B762"
+				item: "kubejs:certus_seed_small"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2EAEF08EBE9F97E8"]
+			id: "3B83B6DF32386BEA"
+			tasks: [{
+				id: "229B0DC9254CBEAC"
+				item: "kubejs:certus_seed_tiny"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0B16696302C3F3C5"]
+			id: "1E9D9B683C14E688"
+			tasks: [{
+				id: "3E6288E72AAAD067"
+				item: "kubejs:certus_seed"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3A9FE888E23290AA"]
+			icon: "ae2:sky_dust"
+			id: "4189E71C621177B0"
+			tasks: [
+				{
+					id: "0C102F6ABA75872A"
+					item: "ae2:sky_dust"
+					type: "item"
+				}
+				{
+					id: "5B6FF8FFD479CB84"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Automate \"Sky Stone Dust\" Production"
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0B16696302C3F3C5"]
+			icon: "minecraft:water_bucket"
+			id: "2EAEF08EBE9F97E8"
+			tasks: [
+				{
+					id: "5B0B7048F28AF34F"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					id: "4A76293E8D03FEED"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["206C6656700CD8CA"]
+			description: ["You can get your first Sky Stone from Smelting Sky Stone Dust."]
+			id: "3A9FE888E23290AA"
+			shape: "rsquare"
+			tasks: [{
+				id: "3C51AFB544D5A4EC"
+				item: "ae2:sky_stone_block"
+				type: "item"
+			}]
+			title: "Smelt Your First \"Sky Stone\""
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0B16696302C3F3C5"]
+			description: [
+				"To manually create your first Sky Stone Dust you will need Gem Dust, Gunpowder and Cloud in a Bottle."
+				""
+				"1. \"Gem Dust\" can be obtained by dropping Anvil onto a Apotheosis Gem."
+				"1.1 Apotheosis Gem can be found as a loot from mobs or in dungeon chests in the nether."
+				""
+				"2. Cloud in a Bottle can be obtained by right clicking empty bottle in the sky on cloud level (Y=192)"
+			]
+			id: "206C6656700CD8CA"
+			shape: "rsquare"
+			tasks: [{
+				id: "4F9B4DCB9E1BE44F"
+				item: "ae2:sky_dust"
+				type: "item"
+			}]
+			title: "Craft Your First \"Sky Stone Dust\""
+			x: -1.0d
+			y: -5.5d
+		}
+	]
+	title: "3. Brass Age"
+}

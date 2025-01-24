@@ -1,0 +1,23 @@
+{
+  "name": "singularity.avaritia.iron",
+  "colors": [
+    "7f7f7f",
+    "e6e7e8"
+  ],
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/iron",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/iron"
+  },
+  "count": 400,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": true
+}

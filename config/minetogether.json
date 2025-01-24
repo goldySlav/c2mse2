@@ -1,0 +1,22 @@
+{
+	// For modpack creators. Enter your CurseForge project id here.
+	"curseProjectID": "",
+	// For modpack creators. Enter your 'Promo Code' here.
+	"promoCode": "",
+	// For modpack creators. The pregen size when selected during orders.
+	"pregenDiameter": 120,
+	// If the realms button should be replaced.
+	"replaceRealms": true,
+	// If the pause menu buttons should be moved around to insert the Open To Friends button.
+	"moveButtonsOnPauseMenu": true,
+	// If all chat messages should be logged to console.
+	"logChatToConsole": false,
+	// Create _VERY_ verbose logs. May create hugenorums log files.
+	"debugMode": false,
+	// Enables dumping all MTConnect packets to logs.
+	"dumpConnectPackets": false,
+	// If pause screen buttons are enabled.
+	"pauseScreenButtons": true,
+	// If not null, replaces the Bug Reports button on the pause screen to open this link.
+	"issueTrackerUrl": "https://pste.ch/",
+}

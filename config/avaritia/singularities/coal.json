@@ -1,0 +1,23 @@
+{
+  "name": "singularity.avaritia.coal",
+  "colors": [
+    "101015",
+    "323232"
+  ],
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/coal",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/coal"
+  },
+  "count": 200,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": false
+}

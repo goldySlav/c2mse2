@@ -1,0 +1,10 @@
+{
+  "name": "Kinetic Mechanism",
+  "colors": [
+    "70502d",
+    "8e1a"
+  ],
+  "ingredient": {
+    "item": "minecraft:emerald"
+  }
+}

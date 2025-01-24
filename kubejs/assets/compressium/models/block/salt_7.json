@@ -1,0 +1,22 @@
+{
+  "parent": "minecraft:block/block",
+  "children": {
+    "Solid": {
+      "parent": "mekanism:item/block_salt"
+    },
+    "Translucent": {
+      "parent": "minecraft:block/cube_all",
+      "textures": {
+        "all": "compressium:block/layer_7"
+      }
+    }
+  },
+  "item_render_order": [
+    "Solid",
+    "Translucent"
+  ],
+  "loader": "forge:composite",
+  "textures": {
+    "particle": "mekanism:block/block_salt"
+  }
+}

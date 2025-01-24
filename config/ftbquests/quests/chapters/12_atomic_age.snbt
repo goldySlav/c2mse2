@@ -1,0 +1,560 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "12_atomic_age"
+	group: "2F6B1FE330B2219D"
+	icon: "megacells:radioactive_cell_component"
+	id: "4FB19DB5B43609F8"
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["22D8EC1F40640E0F"]
+			icon: "mekanism:steel_casing"
+			id: "175194707CB6993D"
+			size: 1.0d
+			tasks: [{
+				id: "49ED1F64E4270D91"
+				title: "Start Chapter"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7FEAADF8D4805FA1"]
+			icon: "mekanism:radioactive_waste_barrel"
+			id: "1222F19F5B1A65ED"
+			size: 1.0d
+			tasks: [{
+				id: "2502F18CC0C7CD9A"
+				title: "End Chapter"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["175194707CB6993D"]
+			id: "04E3A77AAD92E48E"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "73EF303A8C27D3F8"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04E3A77AAD92E48E"]
+			id: "68B5136068E50E35"
+			optional: true
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "3D39A79B04828DA6"
+				item: "mekanism:enriched_carbon"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["04E3A77AAD92E48E"]
+			id: "4BA87F3BB747DFD9"
+			optional: true
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "0EB734C0E8ABBCF1"
+				item: "mekanism:enriched_redstone"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["175194707CB6993D"]
+			icon: "minecraft:kelp"
+			id: "0F91FF745C6A6FE9"
+			size: 1.0d
+			tasks: [
+				{
+					id: "5C020AAECAFDF528"
+					item: "minecraft:kelp"
+					type: "item"
+				}
+				{
+					id: "5C12CFB20B305BD9"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F91FF745C6A6FE9"]
+			icon: "mekanism:bio_fuel"
+			id: "6C92BD1E04C25141"
+			size: 1.0d
+			tasks: [
+				{
+					id: "2D38B02E451CADCB"
+					item: "mekanism:bio_fuel"
+					type: "item"
+				}
+				{
+					id: "2F34060556D49655"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["42CAD2CEDBBEF256"]
+			icon: "mekanismgenerators:gas_burning_generator"
+			id: "7532E6C56C1A469B"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "1B70F7A4815F2277"
+				item: "mekanismgenerators:gas_burning_generator"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["175194707CB6993D"]
+			icon: "mekanism:electrolytic_separator"
+			id: "507D0A542DABC262"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "5EEB725C521E3661"
+				item: "mekanism:electrolytic_separator"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"507D0A542DABC262"
+				"70CC6E126E4D5C1A"
+			]
+			icon: "mekanism:hydrogen_bucket"
+			id: "751C742C767ADF36"
+			size: 1.0d
+			tasks: [{
+				id: "088E5C1EDFDCEC6B"
+				title: "Done"
+				type: "checkmark"
+			}]
+			title: "Produce \"Hydrogen\""
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6C92BD1E04C25141"
+				"751C742C767ADF36"
+				"70CC6E126E4D5C1A"
+			]
+			icon: "mekanism:ethene_bucket"
+			id: "42CAD2CEDBBEF256"
+			size: 1.0d
+			tasks: [{
+				id: "34CFF57D3775A052"
+				title: "Done"
+				type: "checkmark"
+			}]
+			title: "Produce \"Ethylene\""
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["175194707CB6993D"]
+			icon: "minecraft:water_bucket"
+			id: "70CC6E126E4D5C1A"
+			size: 1.0d
+			tasks: [{
+				id: "0C879CC116CAE5D0"
+				title: "Done"
+				type: "checkmark"
+			}]
+			title: "Pump \"Water\""
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["175194707CB6993D"]
+			icon: {
+				Count: 1
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "patchouli:c2m_guide_book"
+				}
+			}
+			id: "5E7DAFD87C32C1A9"
+			optional: true
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "020734B7654DA328"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "patchouli:c2m_guide_book"
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7532E6C56C1A469B"]
+			icon: "minecraft:water_bucket"
+			id: "13C8E26649A1A4A8"
+			size: 1.0d
+			tasks: [
+				{
+					id: "54346952776E4BE6"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					id: "2EB30C3EEC8FF325"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Produce \"Water\""
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7532E6C56C1A469B"]
+			icon: "minecraft:coal"
+			id: "26EECA80558B6525"
+			size: 1.0d
+			tasks: [
+				{
+					id: "62D4C6F41EFB0E80"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "4F54F42644467D38"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Produce \"Coal\""
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["13C8E26649A1A4A8"]
+			icon: "mekanism:oxygen_bucket"
+			id: "3D7F5551AB1A1EDD"
+			size: 1.0d
+			tasks: [
+				{
+					id: "3B42C04930C1120F"
+					item: "mekanism:electrolytic_separator"
+					type: "item"
+				}
+				{
+					id: "2EDBA0E2AD05614F"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Produce \"Oxygen\""
+			x: 4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["13C8E26649A1A4A8"]
+			icon: "mekanism:hydrogen_bucket"
+			id: "13C9C369F4782DAA"
+			size: 1.0d
+			tasks: [
+				{
+					id: "378C65E0DFEF42D5"
+					item: "mekanism:rotary_condensentrator"
+					type: "item"
+				}
+				{
+					id: "098BD91B21A7B6F7"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Produce \"Water Vapor\""
+			x: 3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"26EECA80558B6525"
+				"13C8E26649A1A4A8"
+				"3D7F5551AB1A1EDD"
+			]
+			icon: "mekanism:dust_sulfur"
+			id: "6C4FF49F4D4143AE"
+			size: 1.0d
+			tasks: [
+				{
+					id: "5852046D9584DFE0"
+					item: "mekanism:pressurized_reaction_chamber"
+					type: "item"
+				}
+				{
+					id: "054B635BCA96DBA1"
+					item: "mekanism:dust_sulfur"
+					type: "item"
+				}
+				{
+					id: "42726F4A9180A33B"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Produce \"Sulfur Dust\""
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6C4FF49F4D4143AE"]
+			icon: "mekanism:sulfur_dioxide_bucket"
+			id: "360255E37BC67810"
+			size: 1.0d
+			tasks: [
+				{
+					id: "3286C19560D5BA59"
+					item: "mekanism:chemical_oxidizer"
+					type: "item"
+				}
+				{
+					id: "7C9AD96893F7259F"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Produce \"Sulfur Dioxide\""
+			x: 5.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"360255E37BC67810"
+				"3D7F5551AB1A1EDD"
+			]
+			icon: "mekanism:sulfur_trioxide_bucket"
+			id: "1BA4718376230E48"
+			size: 1.0d
+			tasks: [
+				{
+					id: "6D75060852B1C9FB"
+					item: "mekanism:chemical_infuser"
+					type: "item"
+				}
+				{
+					id: "1802C5DF442261D3"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Produce \"Sulfur Trioxide\""
+			x: 4.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"1BA4718376230E48"
+				"13C9C369F4782DAA"
+			]
+			icon: "mekanism:sulfuric_acid_bucket"
+			id: "5C1E0132BBF8A0F0"
+			size: 1.0d
+			tasks: [
+				{
+					id: "5FD57E3DAD66F41A"
+					item: "mekanism:chemical_infuser"
+					type: "item"
+				}
+				{
+					id: "624E6543DA654EF5"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Produce \"Sulfuric Acid\""
+			x: 4.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["7532E6C56C1A469B"]
+			icon: "mekanism:fluorite_gem"
+			id: "20CC5C91FC42DE9D"
+			size: 1.0d
+			tasks: [
+				{
+					id: "62EDF2E56F7C98B6"
+					item: "mekanism:fluorite_gem"
+					type: "item"
+				}
+				{
+					id: "541D610BE2FFEDBC"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Produce \"Fluorite\""
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"20CC5C91FC42DE9D"
+				"5C1E0132BBF8A0F0"
+			]
+			icon: "mekanism:hydrofluoric_acid_bucket"
+			id: "5F9E6A0C63A3481A"
+			size: 1.0d
+			tasks: [
+				{
+					id: "5FF72AD4E38CEFD2"
+					item: "mekanism:chemical_dissolution_chamber"
+					type: "item"
+				}
+				{
+					id: "13A1D1AD9B6BF4DA"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Produce \"Hydrofluoric Acid\""
+			x: 4.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["7532E6C56C1A469B"]
+			icon: "mekanism:ingot_uranium"
+			id: "689782169F79936D"
+			size: 1.0d
+			tasks: [
+				{
+					id: "7DE9209BE29DAAEA"
+					item: "mekanism:ingot_uranium"
+					type: "item"
+				}
+				{
+					id: "5BD5973BF75C5859"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Produce \"Uranium Ingot\""
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["689782169F79936D"]
+			icon: "mekanism:yellow_cake_uranium"
+			id: "5D63BCB5FA615E21"
+			size: 1.0d
+			tasks: [
+				{
+					id: "57CDF53C8B7F7E41"
+					item: "mekanism:yellow_cake_uranium"
+					type: "item"
+				}
+				{
+					id: "52522E362EC1ACE8"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Produce \"Yellow Cake Uranium\""
+			x: 7.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5D63BCB5FA615E21"]
+			icon: "mekanism:uranium_oxide_bucket"
+			id: "14EE95343465E6EC"
+			size: 1.0d
+			tasks: [
+				{
+					id: "6D4BA8DD1571C4BF"
+					item: "mekanism:chemical_oxidizer"
+					type: "item"
+				}
+				{
+					id: "230C07A8D5BE29EE"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Produce \"Uranium Oxide\""
+			x: 7.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"14EE95343465E6EC"
+				"5F9E6A0C63A3481A"
+			]
+			icon: "mekanism:uranium_hexafluoride_bucket"
+			id: "510B99972A258AE5"
+			size: 1.0d
+			tasks: [
+				{
+					id: "65DE819A3DADD66B"
+					item: "mekanism:chemical_infuser"
+					type: "item"
+				}
+				{
+					id: "1BCC8AC5AA4C331B"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Produce \"Uranium Hexafluoride\""
+			x: 5.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["510B99972A258AE5"]
+			icon: "mekanism:heavy_water_bucket"
+			id: "7FEAADF8D4805FA1"
+			size: 1.0d
+			tasks: [
+				{
+					id: "02B3740153E20B68"
+					item: "mekanism:isotopic_centrifuge"
+					type: "item"
+				}
+				{
+					id: "6A060D17B7C18BAB"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Produce \"Fissile Fuel\""
+			x: 5.0d
+			y: 18.0d
+		}
+	]
+	title: "11. Chemical Age"
+}

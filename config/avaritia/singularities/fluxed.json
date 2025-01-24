@@ -1,0 +1,23 @@
+{
+  "name": "singularity.avaritia.fluxed",
+  "colors": [
+    "fffc95",
+    "d62306"
+  ],
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/electrum_flux",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/electrum_flux"
+  },
+  "count": 100,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": true
+}

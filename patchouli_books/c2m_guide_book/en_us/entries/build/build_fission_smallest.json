@@ -1,0 +1,35 @@
+{
+    "name": "Fission Reactor (3x3x4)",
+    "icon": "mekanismgenerators:control_rod_assembly",
+    "category": "patchouli:build",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Here you can find a visualisation of how to build smallest \"$(1)Fission Reactor$(reset)\". This will be your first reactor to build."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Fission Reactor",
+            "multiblock": {
+                "pattern": [
+                    [ " CCC", " CCC", " CCC" ],
+                    [ " CGC", " GRP", " CGC" ],
+                    [ " CGC", "TPFP", " CPC" ],
+                    [ " CCC", "NC0C", " CCC" ]
+                ],
+                "mapping": {
+                    "C": "mekanismgenerators:fission_reactor_casing",
+                    "G": "mekanismgenerators:reactor_glass",
+                    "P": "mekanismgenerators:fission_reactor_port",
+                    "R": "mekanismgenerators:control_rod_assembly",
+                    "F": "mekanismgenerators:fission_fuel_assembly",
+                    "T": "mekanism:basic_pressurized_tube",
+                    "N": "mekanism:radioactive_waste_barrel",
+                    "0": "mekanismgenerators:fission_reactor_casing"
+                }
+            },
+            "enable_visualize": true,
+            "text": "(Click Visualize even if it appears blank)$(br)Place it somewhere in a world, but make sure that it doesn't cross any chunk borders ($(l)F3 + G$(reset) to see chunk borders)."
+        }
+    ]
+}

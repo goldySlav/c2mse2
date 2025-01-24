@@ -1,0 +1,20 @@
+//priority: 3
+
+JEIEvents.removeCategories(event => {
+  event.remove("jei:information")
+  event.remove("ae2:certus_growth")
+  event.remove("ae2:condenser")
+  event.remove("ae2:attuneemnt")
+  event.remove("ae2:entropy")
+  event.remove("jumbofurnace:jumbo_smelting")
+  event.remove("extendedcrafting:basic_crafting")
+  event.remove("ironfurnaces:generator_regular")
+  event.remove("ironfurnaces:generator_blasting")
+  event.remove("ironfurnaces:generator_smoking")
+  event.remove("jeresources:villager")
+  event.remove("tombstone:combine")
+  event.remove("packagedauto:fluid_package_filling")
+  event.remove("packagedauto:fluid_package_contents")
+  event.remove("enderio:alloy_smelting")
+  event.remove("avaritia:compressor")
+})

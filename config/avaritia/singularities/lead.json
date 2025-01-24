@@ -1,0 +1,23 @@
+{
+  "name": "singularity.avaritia.lead",
+  "colors": [
+    "3e3d4e",
+    "444072"
+  ],
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/lead",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/lead"
+  },
+  "count": 300,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": true
+}

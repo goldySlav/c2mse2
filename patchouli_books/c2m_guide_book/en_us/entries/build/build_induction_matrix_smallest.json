@@ -1,0 +1,32 @@
+{
+    "name": "Induction Matrix (3x3x4)",
+    "icon": "mekanism:basic_induction_cell",
+    "category": "patchouli:build",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Here you can find a visualisation of how to build smallest \"$(1)Induction Matrix$(reset)\".$(br)This machine is needed to store large amounts of energy.$(br)Feel free to change $(1)Induction Cell/Induction Provider$(reset) inside to more advanced ones (later)."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Induction Matrix",
+            "multiblock": {
+                "pattern": [
+                    [ "CCCC", "CGGC", "CCCC" ],
+                    [ "CGGC", "PINP", "CGGC" ],
+                    [ "CCCC", "C0GC", "CCCC" ]
+                ],
+                "mapping": {
+                    "C": "mekanism:induction_casing",
+                    "G": "mekanism:structural_glass",
+                    "P": "mekanism:induction_port",
+                    "I": "mekanism:basic_induction_cell",
+                    "N": "mekanism:basic_induction_provider",
+                    "0": "mekanism:structural_glass"
+                }
+            },
+            "enable_visualize": true,
+            "text": "(Click Visualize even if it appears blank)$(br)Place it somewhere in a world, but make sure that it doesn't cross any chunk borders ($(l)F3 + G$(reset) to see chunk borders)."
+        }
+    ]
+}

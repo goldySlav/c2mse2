@@ -1,0 +1,12 @@
+// Compost colors for havenpebbles. You may add your own colors, change existing ones, or remove colors that aren't needed.
+andesite_pebble, #a7a7a5
+basalt_pebble, #6e6f78
+blackstone_pebble, #3e363e
+calcite_pebble, #ffffff
+deepslate_pebble, #5c5b64
+diorite_pebble, #e1e1e1
+dripstone_pebble, #9b7668
+granite_pebble, #c58d7a
+netherrack_pebble, #702929
+stone_pebble, #868686
+tuff_pebble, #8d9186

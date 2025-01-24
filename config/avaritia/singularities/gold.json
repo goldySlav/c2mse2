@@ -1,0 +1,23 @@
+{
+  "name": "singularity.avaritia.gold",
+  "colors": [
+    "dba213",
+    "e8ef23"
+  ],
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/gold",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/gold"
+  },
+  "count": 200,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": true
+}

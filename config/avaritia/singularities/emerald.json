@@ -1,0 +1,23 @@
+{
+  "name": "singularity.avaritia.emerald",
+  "colors": [
+    "8cd170",
+    "5cbe34"
+  ],
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/emerald",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/emerald"
+  },
+  "count": 200,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": true
+}

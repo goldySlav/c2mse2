@@ -1,0 +1,11 @@
+// Compost colors for ppfluids. You may add your own colors, change existing ones, or remove colors that aren't needed.
+fluid_item, #cccccc
+high_fluid_extraction_module, #e4c5ac
+high_fluid_filter_module, #b9c8b6
+high_fluid_retrieval_module, #aec9ab
+low_fluid_extraction_module, #d4c9c0
+low_fluid_filter_module, #c5cdc2
+low_fluid_retrieval_module, #c3ccc2
+medium_fluid_extraction_module, #dac5b4
+medium_fluid_filter_module, #c0cfbe
+medium_fluid_retrieval_module, #bbccb8

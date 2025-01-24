@@ -1,0 +1,23 @@
+{
+  "name": "singularity.avaritia.platinum",
+  "colors": [
+    "5a82e2",
+    "bfff"
+  ],
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/platinum",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/platinum"
+  },
+  "count": 100,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": true
+}

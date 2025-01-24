@@ -1,0 +1,23 @@
+{
+  "name": "singularity.avaritia.amethyst",
+  "colors": [
+    "54398a",
+    "b38ef3"
+  ],
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/amethyst",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/amethyst"
+  },
+  "count": 80,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": false
+}

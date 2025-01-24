@@ -1,0 +1,35 @@
+{
+    "name": "Fission Reactor (7x9x6)",
+    "icon": "mekanismgenerators:control_rod_assembly",
+    "category": "patchouli:build",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Here you can find a visualisation of how to build middle-sized \"$(1)Fission Reactor$(reset)\". If you haven't built any fission reactor yet and looking for a first one to build, please navigate to the \"$(1)Fission Reactor (3x3x4)$(reset)\" section."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Fission Reactor",
+            "multiblock": {
+                "pattern": [
+                    [ "CCCCCCCCC", "CCCCCCCCC", "CCCCCCCCC", "CCCCCCCCC", "CCCCCCCCC", "CCCCCCCCC", "CCCCCCCCC" ],
+                    [ "CGGGGGGGC", "GR R R RG", "G R R R G", "GR R R RG", "G R R R G", "GR R R RG", "CGGGGGGGC" ],
+                    [ "CGGGGGGGC", "GF F F FG", "G F F F G", "GF F F FG", "G F F F G", "GF F F FG", "CGGGGGGGC" ],
+                    [ "CGGGGGGGC", "GF F F FG", "G F F F G", "PF F F FP", "G F F F G", "GF F F FG", "CGGGGGGGC" ],
+                    [ "CGGGGGGGC", "GF F F FG", "G F F F G", "PF F F FP", "G F F F G", "GF F F FG", "CGGGGGGGC" ],
+                    [ "CCCCCCCCC", "CCCCCCCCC", "CCCCCCCCC", "CCCC0CCCC", "CCCCCCCCC", "CCCCCCCCC", "CCCCCCCCC" ]
+                ],
+                "mapping": {
+                    "C": "mekanismgenerators:fission_reactor_casing",
+                    "G": "mekanismgenerators:reactor_glass",
+                    "R": "mekanismgenerators:control_rod_assembly",
+                    "F": "mekanismgenerators:fission_fuel_assembly",
+                    "P": "mekanismgenerators:fission_reactor_port",
+                    "0": "mekanismgenerators:fission_reactor_casing"
+                }
+            },
+            "enable_visualize": true,
+            "text": "(Click Visualize even if it appears blank)$(br)Place it somewhere in a world, but make sure that it doesn't cross any chunk borders ($(l)F3 + G$(reset) to see chunk borders)."
+        }
+    ]
+}

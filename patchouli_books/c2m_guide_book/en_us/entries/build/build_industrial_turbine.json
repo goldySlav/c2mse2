@@ -1,0 +1,42 @@
+{
+    "name": "Industrial Turbine (5x5x9)",
+    "icon": "mekanismgenerators:turbine_blade",
+    "category": "patchouli:build",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Here you can find a visualisation of how to build your first \"$(1)Industrial Turbine$(reset)\".$(br)This machine is needed to produce energy from your first reactor.$(br)$(1)Add 10 turbine blades to turbine rotors$(reset), projection can't handle that.$(br)Highly recommended to place this multiblock 1 block into the earth, for aesthetic purposes (no functional difference)."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Industrial Turbine",
+            "multiblock": {
+                "pattern": [
+                    [ "CCCCC", "CVVVC", "CVVVC", "CVVVC", "CCCCC" ],
+                    [ "CVVVC", "VSSSV", "VEESV", "VESSV", "CVVVC" ],
+                    [ "CVVVC", "VDDDV", "VDRDV", "VDDDV", "CVVVC" ],
+                    [ "CGGGC", "G   G", "G Q G", "G   G", "CGGGC" ],
+                    [ "CGGGC", "G   G", "G Q G", "G   G", "CGGGC" ],
+                    [ "CGGGC", "G   G", "G Q G", "G   G", "CGGGC" ],
+                    [ "CGGGC", "G   G", "G Q G", "G   G", "CGGGC" ],
+                    [ "CGGGC", "L   L", "G Q G", "G   G", "CGGGC" ],
+                    [ "CCCCC", "CCCCC", "CC0CC", "CCCCC", "CCCCC" ]
+                ],
+                "mapping": {
+                    "C": "mekanismgenerators:turbine_casing",
+                    "V": "mekanismgenerators:turbine_vent",
+                    "G": "mekanism:structural_glass",
+                    "S": "mekanismgenerators:saturating_condenser",
+                    "D": "mekanism:pressure_disperser",
+                    "L": "mekanismgenerators:turbine_valve",
+                    "E": "mekanismgenerators:electromagnetic_coil",
+                    "R": "mekanismgenerators:rotational_complex",
+                    "Q": "mekanismgenerators:turbine_rotor",
+                    "0": "mekanismgenerators:turbine_casing"
+                }
+            },
+            "enable_visualize": true,
+            "text": "(Click Visualize even if it appears blank)$(br)Place it somewhere in a world, but make sure that it doesn't cross any chunk borders ($(l)F3 + G$(reset) to see chunk borders)."
+        }
+    ]
+}

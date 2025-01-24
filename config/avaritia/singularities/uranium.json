@@ -1,0 +1,23 @@
+{
+  "name": "singularity.avaritia.uranium",
+  "colors": [
+    "46800d",
+    "46800d"
+  ],
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/uranium",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/uranium"
+  },
+  "count": 200,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": true
+}

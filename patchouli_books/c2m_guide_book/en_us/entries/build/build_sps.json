@@ -1,0 +1,36 @@
+{
+    "name": "Supercritical Phase Shifter",
+    "icon": "mekanism:sps_casing",
+    "category": "patchouli:build",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Here you can find a visualisation of how to build \"$(1)Supercritical Phase Shifter$(reset)\". This multiblock will allow you to produce antimatter."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "SPS",
+            "multiblock": {
+                "pattern": [
+                    [ "  CCC  ", " CGGGC ", "CGGGGGC", "CGGGGGC", "CGGGGGC", " CGGGC ", "  CCC  " ],
+                    [ " CGGGC ", "C     C", "G     G", "G     G", "G     G", "C     C", " CGGGC " ],
+                    [ "CGGGGGC", "G     G", "G     G", "G     G", "G     G", "G     G", "CGGGGGC" ],
+                    [ "CGGGGGC", "G     G", "G     G", "PT   SP", "G     G", "G     G", "CGGGGGC" ],
+                    [ "CGGGGGC", "G     G", "G     G", "G     G", "G     G", "G     G", "CGGGGGC" ],
+                    [ " CGGGC ", "C     C", "G     G", "P     P", "G     G", "C     C", " CGGGC " ],
+                    [ "  CCC  ", " CGGGC ", "CGGGGGC", "CGG0GGC", "CGGGGGC", " CGGGC ", "  CCC  " ]
+                ],
+                "mapping": {
+                    "C": "mekanism:sps_casing",
+                    "G": "mekanism:structural_glass",
+                    "P": "mekanism:sps_port",
+                    "S": "mekanism:supercharged_coil[facing=north]",
+                    "T": "mekanism:supercharged_coil[facing=south]",
+                    "0": "mekanism:structural_glass"
+                }
+            },
+            "enable_visualize": true,
+            "text": "(Click Visualize even if it appears blank)$(br)Place it somewhere in a world, but make sure that it doesn't cross any chunk borders ($(l)F3 + G$(reset) to see chunk borders)."
+        }
+    ]
+}

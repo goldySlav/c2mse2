@@ -1,0 +1,23 @@
+{
+  "name": "singularity.avaritia.netherite",
+  "colors": [
+    "31292a",
+    "654740"
+  ],
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/netherite",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/netherite"
+  },
+  "count": 200,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": false
+}

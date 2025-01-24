@@ -1,0 +1,4 @@
+// Compost colors for theoneprobe. You may add your own colors, change existing ones, or remove colors that aren't needed.
+creativeprobe, #ffffff
+probe, #ffffff
+probenote, #fcffff

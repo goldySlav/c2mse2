@@ -1,0 +1,23 @@
+{
+  "name": "singularity.avaritia.aluminum",
+  "colors": [
+    "caccda",
+    "caccda"
+  ],
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/aluminum",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/aluminum"
+  },
+  "count": 300,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": true
+}

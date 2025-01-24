@@ -1,0 +1,10 @@
+{
+  "name": "Advanced Machine Frame",
+  "colors": [
+    "8a8a8a",
+    "bc5430"
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/draconium"
+  }
+}

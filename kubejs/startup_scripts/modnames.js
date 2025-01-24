@@ -1,0 +1,1 @@
+Platform.mods.kubejs.name = "C2M: Sky Edition 2"
