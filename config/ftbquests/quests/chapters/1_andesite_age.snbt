@@ -10,7 +10,15 @@
 	quests: [
 		{
 			dependencies: ["338E0D727FFD60DC"]
+			description: [
+				"This chapter will show you steps required to automate &6Kinetic Mechanism&r."
+				""
+				"You can think of &6Quests&r as singular machines."
+				"&6Quest Lines&r as assembly lines."
+				"&6Dependencies&r between quests as conveyor belts/pipes/conduits."
+			]
 			id: "3E2DC9403C0E6EFA"
+			subtitle: "The fun part begins!"
 			tasks: [{
 				id: "4BA76226490C4174"
 				title: "Start Chapter"
@@ -25,8 +33,10 @@
 				"1F37785A2EB1702F"
 				"5A45B5E6F35CB178"
 			]
+			description: ["This is your final assembly for this chapter. Remember to take healthy breaks!"]
 			icon: "kubejs:kinetic_mechanism"
 			id: "739171B55D996DDC"
+			subtitle: "E = (mv^2):2"
 			tasks: [
 				{
 					id: "05C443CB47E22E13"
@@ -44,8 +54,10 @@
 		}
 		{
 			dependencies: ["4A9B54919E72FA35"]
+			description: ["Note: This and &6Clay&r can be created using the same machine, to save space."]
 			icon: "create:zinc_nugget"
 			id: "7DF7474895BF1A95"
+			subtitle: "Tiny bit of softness"
 			tasks: [
 				{
 					id: "343B4CEE55BC1F1C"
@@ -63,8 +75,10 @@
 		}
 		{
 			dependencies: ["33BEFD296FDFA54A"]
+			description: ["I'd like to mention that &6Fan behind Lava&r is most broken form of smelting I've ever seen."]
 			icon: "kubejs:algal_brick"
 			id: "0DFFD83AEE19C056"
+			subtitle: "Cooler than clay"
 			tasks: [
 				{
 					id: "34DA41C67A95F32F"
@@ -85,8 +99,13 @@
 				"6A4CF765655D0B51"
 				"121330192A469576"
 			]
+			description: [
+				"It's possible you've already used this method, as it's more efficient than crafting by hand."
+				"If you haven't, check &6JEI&r and think how much EMC have you wasted by not using it as soon as you could."
+			]
 			icon: "kubejs:algal_blend"
 			id: "33BEFD296FDFA54A"
+			subtitle: "Nutrious..?"
 			tasks: [
 				{
 					id: "5667929F83350392"
@@ -104,8 +123,10 @@
 		}
 		{
 			dependencies: ["3E2DC9403C0E6EFA"]
+			description: ["[No Description For You, Andesite]"]
 			icon: "minecraft:andesite"
 			id: "0E2401C16A6796D2"
+			subtitle: "[No Subtitle For You, Andesite]"
 			tasks: [
 				{
 					id: "12CA9EC5EB5C4217"
@@ -123,8 +144,13 @@
 		}
 		{
 			dependencies: ["25FE7279CD14331E"]
+			description: [
+				"I think name speaks for itself."
+				"If it doesn't, check &6JEI&r for instructions."
+			]
 			icon: "kubejs:crushed_diorite"
 			id: "4A9B54919E72FA35"
+			subtitle: "Are you proud of yourself now?"
 			tasks: [
 				{
 					id: "2DAE929FB49A93CC"
@@ -142,8 +168,13 @@
 		}
 		{
 			dependencies: ["3E2DC9403C0E6EFA"]
+			description: [
+				"There is exactly one block of difference between the automatic &6Cobblestone&r, &6Andesite&r and &6Diorite&r setups."
+				"Remember about your ability to &6Ponder&r about all of the Create components, even items from some add-ons are able to be &6Pondered&r about."
+			]
 			icon: "minecraft:diorite"
 			id: "25FE7279CD14331E"
+			subtitle: "Well, you'll possibly crush it"
 			tasks: [
 				{
 					id: "5CBC0E36541CCDB9"
@@ -161,8 +192,10 @@
 		}
 		{
 			dependencies: ["3E2DC9403C0E6EFA"]
+			description: ["If you are stuck on how to automate &6Kelp&r production, you can check &6JEI&r for instructions."]
 			icon: "minecraft:kelp"
 			id: "121330192A469576"
+			subtitle: "I like to grow it, grow it"
 			tasks: [
 				{
 					id: "1756A94DC1EC58BF"
@@ -180,8 +213,10 @@
 		}
 		{
 			dependencies: ["133C541CACD526F2"]
+			description: ["Hint: This and &6Zinc Nugget&r can be made using the same machine, if you don't care about aesthetics."]
 			icon: "minecraft:clay_ball"
 			id: "6A4CF765655D0B51"
+			subtitle: "Snowball, but clay"
 			tasks: [
 				{
 					id: "27845FB72A8C4ABC"
@@ -199,8 +234,10 @@
 		}
 		{
 			dependencies: ["3C24483E939DA419"]
+			description: ["Just like &6Wood&r processing quest line, sometimes you need to use the same machine more than once to achieve desired effect."]
 			icon: "minecraft:sand"
 			id: "133C541CACD526F2"
+			subtitle: "Will you smash it?"
 			tasks: [
 				{
 					id: "76CBE20D3CD935FA"
@@ -218,8 +255,15 @@
 		}
 		{
 			dependencies: ["579C9DA2168287E1"]
+			description: [
+				"Too early for crushing wheels."
+				"Too grindy to manually crush it."
+				"What's the perfect solution?"
+				"Explore &6JEI&r."
+			]
 			icon: "minecraft:gravel"
 			id: "3C24483E939DA419"
+			subtitle: "Will you crush it?"
 			tasks: [
 				{
 					id: "30D9AB5BC28B39A5"
@@ -237,8 +281,14 @@
 		}
 		{
 			dependencies: ["3E2DC9403C0E6EFA"]
+			description: [
+				"&6JEI&r knows how to make &6Cobblestone&r."
+				""
+				"Note: &6Subtitle&r suggets a mod that will also be helpful."
+			]
 			icon: "minecraft:cobblestone"
 			id: "579C9DA2168287E1"
+			subtitle: "Cobble for days"
 			tasks: [
 				{
 					id: "299179631DF32600"
@@ -256,8 +306,14 @@
 		}
 		{
 			dependencies: ["3E2DC9403C0E6EFA"]
+			description: [
+				"If you are stuck on how to automate &6Logs&r production, remember your best friend, &6JEI&r."
+				""
+				"Tip: You can also try &6Pondering&r about &6Mechanical Saw&r."
+			]
 			icon: "minecraft:oak_log"
 			id: "43508B0FFB023677"
+			subtitle: "Sleep like a log"
 			tasks: [
 				{
 					id: "6D2750B27BDEFACD"
@@ -275,8 +331,10 @@
 		}
 		{
 			dependencies: ["43508B0FFB023677"]
+			description: ["You probably guessed &6Mechanical Saw&r is your best friend in this questline."]
 			icon: "minecraft:oak_planks"
 			id: "4958CC1FF86F44E6"
+			subtitle: "Full block"
 			tasks: [
 				{
 					id: "10D0B7BAC472D6C2"
@@ -294,8 +352,10 @@
 		}
 		{
 			dependencies: ["4958CC1FF86F44E6"]
+			description: ["Just like &6Cobblestone&r processing quest line, sometimes you need to use the same machine more than once to achieve desired effect."]
 			icon: "minecraft:oak_slab"
 			id: "5A45B5E6F35CB178"
+			subtitle: "Half a block"
 			tasks: [
 				{
 					id: "6FB29ECBD2A894EA"
@@ -313,8 +373,10 @@
 		}
 		{
 			dependencies: ["338E0D727FFD60DC"]
+			description: ["&6Diamond Saw&r has the most durability of all the Saws available to you at this point, which means you don't have to resupply the &6Deplyer&r as often."]
 			id: "122BB3418C4D5ED5"
 			shape: "rsquare"
+			subtitle: "For the lazy"
 			tasks: [{
 				id: "380C7CA0A2B0A883"
 				item: {
@@ -331,8 +393,13 @@
 		}
 		{
 			dependencies: ["739171B55D996DDC"]
+			description: [
+				"And off you go to the next chapter!"
+				"(I hope you're having fun so far :D)"
+			]
 			id: "7BB1CC985EDC3BEA"
 			shape: "rsquare"
+			subtitle: "You can't automate this one yet"
 			tasks: [{
 				id: "06877F5988510B20"
 				item: "kubejs:andesite_machine"
@@ -347,8 +414,13 @@
 				"7DF7474895BF1A95"
 				"0E2401C16A6796D2"
 			]
+			description: [
+				"\"Guys, I think he wants us to check &6JEI&r for instructions. "
+				"I'm not sure though.\""
+			]
 			icon: "create:andesite_alloy"
 			id: "1F37785A2EB1702F"
+			subtitle: "Cold-blooded alloy"
 			tasks: [
 				{
 					id: "53135E04CE21121D"
@@ -366,6 +438,7 @@
 		}
 		{
 			dependencies: ["3E2DC9403C0E6EFA"]
+			description: ["Gather &6Useful Machines&r now, then you'll be able to create contraptions without being limited by materials"]
 			id: "49EC062582ABFE64"
 			rewards: [
 				{
@@ -381,6 +454,7 @@
 					type: "item"
 				}
 			]
+			subtitle: "The factory..."
 			tasks: [
 				{
 					id: "1DEFCC9F05756C4F"
@@ -429,6 +503,7 @@
 		}
 		{
 			dependencies: ["3E2DC9403C0E6EFA"]
+			description: ["Power has to be transmitted around somehow, doesn't it?"]
 			id: "01DC5D2DF6322077"
 			rewards: [
 				{
@@ -504,6 +579,7 @@
 					type: "item"
 				}
 			]
+			subtitle: "...must grow."
 			tasks: [
 				{
 					count: 16L
@@ -583,5 +659,6 @@
 			y: -1.5d
 		}
 	]
+	subtitle: ["The automation begins"]
 	title: "1. Andesite Age"
 }

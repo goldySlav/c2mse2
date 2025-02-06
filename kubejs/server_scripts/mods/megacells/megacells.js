@@ -44,4 +44,22 @@ ServerEvents.recipes(event => {
 		if (i !== componentsLength - 1)
 			event.recipes.mekanism.nucleosynthesizing(MGC(`cell_component_${componentSizes[MGC()][i]}`), `${i + 6}x ${M("antimatter")}`, MGC(`cell_component_${componentSizes[MGC()][i + 1]}`), (i + 6) * 10)
 	}
+
+	//MEGA crafting co-processor unit
+	removeRecipeByOutput(event, [
+		MGC("mega_crafting_accelerator"),
+	])
+	event.recipes.extendedcrafting.shaped_table(MGC('mega_crafting_accelerator'), [
+		'CEBEC',
+		'EDDDE',
+		'BDADB',
+		'EDDDE',
+		'CEBEC',
+	], {
+		A: MGC('mega_crafting_unit'),
+		B: AE2('fluix_smart_cable'),
+		C: CP('iron_2'),
+		D: KJ('engineering_processor_wafer'),
+		E: CP('fluix_1'),
+	})
 })

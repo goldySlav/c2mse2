@@ -6,8 +6,6 @@ ServerEvents.recipes((event) => {
 		PEX("elite_crafter"),
 		PEX("ultimate_crafter"),
 		PEXEX("epic_crafter"),
-		
-		// w/o replace
 		PEX("ender_crafter"),
 		PEX("combination_crafter"),
 		PEX("marked_pedestal"),
@@ -118,5 +116,41 @@ ServerEvents.recipes((event) => {
 		A: EC('enhanced_redstone_ingot'),
 		B: AE2("molecular_assembler"),
 		C: EC("auto_flux_crafter"),
+	})
+
+	event.recipes.extendedcrafting.shaped_table(PEX('combination_crafter'), [
+		'AAAAAAAAAAA',
+		'ABBBBBBBBBA',
+		'ABAAAAAAABA',
+		'ABABBBBBABA',
+		'ABABAAABABA',
+		'ABABACABABA',
+		'ABABAAABABA',
+		'ABABBBBBABA',
+		'ABAAAAAAABA',
+		'ABBBBBBBBBA',
+		'AAAAAAAAAAA',
+	], {
+		A: CP('crystaltine_1'),
+		B: AE2("molecular_assembler"),
+		C: EC("crafting_core"),
+	})
+
+	event.recipes.extendedcrafting.shaped_table(PEX('marked_pedestal'), [
+		'AAAAAAAAAAA',
+		'ABBBBBBBBBA',
+		'ABAAAAAAABA',
+		'ABABBBBBABA',
+		'ABABAAABABA',
+		'ABABACABABA',
+		'ABABAAABABA',
+		'ABABBBBBABA',
+		'ABAAAAAAABA',
+		'ABBBBBBBBBA',
+		'AAAAAAAAAAA',
+	], {
+		A: CP('crystaltine_1'),
+		B: AE2("molecular_assembler"),
+		C: EC("pedestal"),
 	})
 })

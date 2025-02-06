@@ -462,24 +462,13 @@
 		}
 		{
 			disable_toast: true
-			id: "6C02419FB9351160"
-			tasks: [{
-				id: "6D0602538B2DD861"
-				item: "artifacts:pickaxe_heater"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 4.5d
-		}
-		{
-			disable_toast: true
 			id: "75873D46BB7E16F2"
 			tasks: [{
 				id: "0A5A6A4C4D3DB480"
 				item: "artifacts:aqua_dashers"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 1.5d
 			y: 4.5d
 		}
 		{
@@ -490,8 +479,8 @@
 				item: "artifacts:bunny_hoppers"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 6.0d
+			x: 3.0d
+			y: 4.5d
 		}
 		{
 			disable_toast: true
@@ -501,7 +490,7 @@
 				item: "artifacts:kitty_slippers"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.5d
 			y: 6.0d
 		}
 		{
@@ -512,7 +501,7 @@
 				item: "artifacts:running_shoes"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -6.0d
 			y: 6.0d
 		}
 		{
@@ -523,7 +512,7 @@
 				item: "artifacts:snowshoes"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.5d
 			y: 6.0d
 		}
 		{
@@ -534,7 +523,7 @@
 				item: "artifacts:steadfast_spikes"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.0d
 			y: 6.0d
 		}
 		{
@@ -545,7 +534,7 @@
 				item: "artifacts:flippers"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.5d
 			y: 6.0d
 		}
 		{
@@ -556,7 +545,7 @@
 				item: "artifacts:rooted_boots"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 0.0d
 			y: 6.0d
 		}
 		{
@@ -567,7 +556,7 @@
 				item: "artifacts:whoopee_cushion"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 1.5d
 			y: 6.0d
 		}
 		{
@@ -578,8 +567,8 @@
 				item: "artifacts:thorn_pendant"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 7.5d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
 			disable_toast: true
@@ -595,7 +584,7 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.5d
 			y: 7.5d
 		}
 		{
@@ -612,7 +601,7 @@
 				}
 				type: "item"
 			}]
-			x: -4.5d
+			x: -6.0d
 			y: 7.5d
 		}
 		{
@@ -629,7 +618,7 @@
 				}
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.5d
 			y: 7.5d
 		}
 		{
@@ -646,7 +635,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.0d
 			y: 7.5d
 		}
 		{
@@ -663,7 +652,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.5d
 			y: 7.5d
 		}
 		{
@@ -680,7 +669,7 @@
 				}
 				type: "item"
 			}]
-			x: 1.5d
+			x: 0.0d
 			y: 7.5d
 		}
 		{
@@ -695,7 +684,7 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
+			x: 1.5d
 			y: 7.5d
 		}
 		{
@@ -710,8 +699,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: 9.0d
+			x: 3.0d
+			y: 7.5d
 		}
 		{
 			disable_toast: true
@@ -725,7 +714,7 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.5d
 			y: 9.0d
 		}
 		{
@@ -736,7 +725,7 @@
 				item: "draconicevolution:advanced_magnet"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -6.0d
 			y: 9.0d
 		}
 		{
@@ -783,7 +772,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.0d
 			y: 9.0d
 		}
 		{
@@ -830,7 +819,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.5d
 			y: 9.0d
 		}
 		{
@@ -877,7 +866,7 @@
 				}
 				type: "item"
 			}]
-			x: 1.5d
+			x: 0.0d
 			y: 9.0d
 		}
 		{
@@ -888,7 +877,7 @@
 				item: "draconicevolution:magnet"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.5d
 			y: 9.0d
 		}
 		{
@@ -919,7 +908,7 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
+			x: 1.5d
 			y: 9.0d
 		}
 		{
@@ -950,8 +939,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: 10.5d
+			x: 3.0d
+			y: 9.0d
 		}
 		{
 			disable_toast: true
@@ -981,7 +970,7 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.5d
 			y: 10.5d
 		}
 	]

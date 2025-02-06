@@ -584,4 +584,7 @@ ServerEvents.recipes((event) => {
 		`4x ${M("hdpe_stick")}`,
 		`6x ${M("reprocessed_fissile_fragment")}`,
 	])
+	
+	//space painting
+	event.shapeless(AA("space_painting"), [MC("painting"), AE2("sky_dust")])
 })

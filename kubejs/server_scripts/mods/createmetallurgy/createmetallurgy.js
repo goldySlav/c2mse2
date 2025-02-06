@@ -94,6 +94,9 @@ ServerEvents.recipes((event) => {
 	customRecipes.create.melting(event, [`10x ${CR_M("molten_tungsten")}`], [F("#nuggets/tungsten")], 20, 1)
 	customRecipes.create.melting(event, [`90x ${CR_M("molten_void_steel")}`], [F("#ingots/ender_ingot")], 40, 1)
 	customRecipes.create.melting(event, [`10x ${CR_M("molten_void_steel")}`], [F("#nuggets/ender_ingot")], 20, 1)
+	customRecipes.create.melting(event, [`90x ${CR_M("molten_steel")}`], [F("#ingots/steel")], 40, 2)
+	customRecipes.create.melting(event, [`90x ${CR_M("molten_steel")}`], [F("#plates/steel")], 40, 2)
+	customRecipes.create.melting(event, [`10x ${CR_M("molten_steel")}`], [F("#nuggets/steel")], 20, 2)
 
 	customRecipes.create.casting.table(event, MC("iron_ingot"), `90x ${CR_M("molten_iron")}`, "ingot")
 	customRecipes.create.casting.table(event, MC("iron_nugget"), `10x ${CR_M("molten_iron")}`, "nugget", 20)
@@ -135,6 +138,12 @@ ServerEvents.recipes((event) => {
 	customRecipes.create.casting.basin(event, EC("ender_ingot_block"), `810x ${CR_M("molten_void_steel")}`)
 	
 	customRecipes.create.casting.table(event, CR("experience_nugget"), `3x ${CR_EI("experience")}`, "nugget", 20)
+
+	customRecipes.create.casting.table(event, M("ingot_steel"), `90x ${CR_M("molten_steel")}`, "ingot")
+	customRecipes.create.casting.table(event, M("nugget_steel"), `10x ${CR_M("molten_steel")}`, "nugget", 20)
+	customRecipes.create.casting.table(event, AA("steel_plate"), `90x ${CR_M("molten_steel")}`, "plate")
+	customRecipes.create.casting.table(event, CR_V("steel_rod"), `45x ${CR_M("molten_steel")}`, "rod")
+	customRecipes.create.casting.basin(event, M("block_steel"), `810x ${CR_M("molten_steel")}`)
 	
 	//ender alloy
 	customRecipes.create.alloying(event, [`20x ${CR_M("molten_void_steel")}`], [`10x ${CR_M("molten_iron")}`, `10x ${KJ("ender")}`], 40, 1)

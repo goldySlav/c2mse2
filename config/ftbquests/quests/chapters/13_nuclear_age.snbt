@@ -177,7 +177,7 @@
 				Count: 1
 				id: "extendedcrafting:singularity"
 				tag: {
-					Id: "extendedcrafting:reprocessed_fissile_fragment"
+					Id: "extendedcrafting:experience_infused_emerald"
 				}
 			}
 			id: "48E617ABB21FABA1"

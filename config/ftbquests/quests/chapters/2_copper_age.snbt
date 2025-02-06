@@ -10,7 +10,9 @@
 	quests: [
 		{
 			dependencies: ["7BB1CC985EDC3BEA"]
+			description: ["This chapter gives you access to &6copper&r and more."]
 			id: "069880B5BBFEDBA6"
+			subtitle: "The beninging."
 			tasks: [{
 				id: "23BD5FCB30E6BE14"
 				title: "Start Chapter"
@@ -25,8 +27,15 @@
 				"37E11FF4DB4A05A1"
 				"4C793E5E91461036"
 			]
+			description: [
+				"The final step for glory."
+				"You &6can't give up&r now, don't listen to chapter 1 and &6&lgrind more&r&r."
+				""
+				"&nTHE FACTORY NEEDS YOU!&r :smile:"
+			]
 			icon: "kubejs:sealed_mechanism"
 			id: "29DEAE2791EBFE7B"
+			subtitle: "You fate is sealed! You will finish me!"
 			tasks: [
 				{
 					id: "7E73D49B24D1F8FF"
@@ -44,8 +53,14 @@
 		}
 		{
 			dependencies: ["35B503F3B05BB324"]
+			description: [
+				"Charcoal can be made by &6smelting&r any type of log."
+				""
+				"&6JEI&r is your friend."
+			]
 			icon: "minecraft:charcoal"
 			id: "1F421F089C39C2B3"
+			subtitle: "Smells nice... like BBQ"
 			tasks: [
 				{
 					id: "67EBB92A15F52B1C"
@@ -63,8 +78,10 @@
 		}
 		{
 			dependencies: ["1F421F089C39C2B3"]
+			description: ["This badboy is also made by smelting but &6not logs&r, you instead smelt &6charcoal&r."]
 			icon: "createmetallurgy:coke"
 			id: "25BC9F6213430089"
+			subtitle: "No, not THAT coke"
 			tasks: [
 				{
 					id: "6448E4E65E822F5E"
@@ -82,8 +99,15 @@
 		}
 		{
 			dependencies: ["069880B5BBFEDBA6"]
+			description: [
+				"Granite can be generated infinitely using the &6mechanical extruder&r. &6JEI&r pls help!!"
+				"Another handy way is to sieve &6gravel&r and combine granite pebbles in a 2x2 gird."
+				""
+				"TIP: You can click &6'K'&r to automaticaly craft any items in &62x2 grid&r(as long as they have a &6recipe&r for it)"
+			]
 			icon: "minecraft:granite"
 			id: "1F6E3C251067FE32"
+			subtitle: "As ugly as ever"
 			tasks: [
 				{
 					id: "21A9AC9FBAECB320"
@@ -101,8 +125,13 @@
 		}
 		{
 			dependencies: ["1F6E3C251067FE32"]
+			description: [
+				"Kinda self explanatory."
+				"Check &6JEI&r if confused."
+			]
 			icon: "kubejs:crushed_granite"
 			id: "2409A2C0E77A7086"
+			subtitle: "The way all granite should be. Crushed."
 			tasks: [
 				{
 					id: "1C185F7C22CA66BF"
@@ -120,8 +149,10 @@
 		}
 		{
 			dependencies: ["2409A2C0E77A7086"]
+			description: ["Copper nuggets obtained by &6washing&r crushed gratine."]
 			icon: "create:copper_nugget"
 			id: "1F93CEDBFF04CC3F"
+			subtitle: "Small, shiny and red ... what is it?"
 			tasks: [
 				{
 					id: "3EB877FBC171DF2B"
@@ -139,8 +170,10 @@
 		}
 		{
 			dependencies: ["1F93CEDBFF04CC3F"]
+			description: ["Do I need to explain... :skull:"]
 			icon: "minecraft:copper_ingot"
 			id: "4FCC832C0601D256"
+			subtitle: "Like really do I need to?"
 			tasks: [
 				{
 					id: "798AA207670469D2"
@@ -158,8 +191,14 @@
 		}
 		{
 			dependencies: ["4FCC832C0601D256"]
+			description: [
+				"Made by rolling &6copper ingots&r in a rolling mill."
+				""
+				"&6JEI&r?"
+			]
 			icon: "createaddition:copper_rod"
 			id: "1B41E5301611D094"
+			subtitle: "Long and usefull."
 			tasks: [
 				{
 					id: "24E9CC5F157F237D"
@@ -177,8 +216,18 @@
 		}
 		{
 			dependencies: ["1B41E5301611D094"]
+			description: [
+				"You can make this one by using the &6spring coiling machine&r and our &6rods&r."
+				""
+				"Please note, that the &6Spring Coiling Machine&r outputs from the front side of the machine."
+				""
+				"So if you want to output a spring on a belt, make sure to do something like you see on the screenshot."
+				""
+				"{image:kubejs:textures/quests/spring_tutorial.png width:225 height:150 align:1}"
+			]
 			icon: "vintageimprovements:copper_spring"
 			id: "4C793E5E91461036"
+			subtitle: "So many curves."
 			tasks: [
 				{
 					id: "6F31A95511A0857F"
@@ -196,8 +245,16 @@
 		}
 		{
 			dependencies: ["6D7C1B46E000BDBA"]
+			description: [
+				"Polished coke is made by doing a &63 step process&r:"
+				""
+				"&l&61.&r&r Cutting Nourished coke on a mechanical saw."
+				"&l&62.&r&r After goes vibrating it in a &6vibrating table&r."
+				"&l&63.&r&r And lastly you polish it on a belt grinder on &6low rotation&r."
+			]
 			icon: "kubejs:polished_coke"
 			id: "37E11FF4DB4A05A1"
+			subtitle: "Nice and shiny"
 			tasks: [
 				{
 					id: "0F0B1C809259B860"
@@ -215,8 +272,10 @@
 		}
 		{
 			dependencies: ["069880B5BBFEDBA6"]
+			description: ["Refer back to &6chapter 1&r if you are confused."]
 			icon: "minecraft:oak_log"
 			id: "35B503F3B05BB324"
+			subtitle: "Morning Wood?"
 			tasks: [
 				{
 					id: "7195434399B727AF"
@@ -234,8 +293,14 @@
 		}
 		{
 			dependencies: ["7BB1CC985EDC3BEA"]
+			description: [
+				"&6Screwdriver&r a tool used to make sealed mechanism."
+				""
+				"TIP: Use a drawer to have to restock deployers less often."
+			]
 			id: "4657F5E790EDB92D"
 			shape: "rsquare"
+			subtitle: "Handy for electrical work"
 			tasks: [{
 				id: "6E450C16FFC406BE"
 				item: {
@@ -252,8 +317,14 @@
 		}
 		{
 			dependencies: ["29DEAE2791EBFE7B"]
+			description: [
+				"Off you go."
+				""
+				"We hope you don't leave :smile:"
+			]
 			id: "10AC4EE77F6CC3BC"
 			shape: "rsquare"
+			subtitle: "Make a few and chill."
 			tasks: [{
 				id: "4C1F650A36259645"
 				item: "kubejs:copper_machine"
@@ -264,8 +335,10 @@
 		}
 		{
 			dependencies: ["25BC9F6213430089"]
+			description: ["&6Nourished coke&r is made by combining water and coke in a &6mixer&r."]
 			icon: "kubejs:nourished_coke"
 			id: "6D7C1B46E000BDBA"
+			subtitle: "Its art, not chemistry"
 			tasks: [
 				{
 					id: "2730CCBC62B8EC06"

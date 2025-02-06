@@ -143,4 +143,66 @@ ServerEvents.recipes((event) => {
 		A: MVS("leather_shield"),
 		B: F("#ingots/iron"),
 	})
+	
+	//ingots from gas
+	event.custom({
+		type: M('crystallizing'),
+		chemicalType: 'gas',
+		input: { amount: 90, gas: KJ("gaseous_iron_compound") },
+		output: MC(`iron_ingot`),
+	}).id(`${MC()}/iron_ingot_from_gas`)
+	event.custom({
+		type: M('crystallizing'),
+		chemicalType: 'gas',
+		input: { amount: 90, gas: KJ("gaseous_gold_compound") },
+		output: MC(`gold_ingot`),
+	}).id(`${MC()}/gold_ingot_from_gas`)
+	event.custom({
+		type: M('crystallizing'),
+		chemicalType: 'gas',
+		input: { amount: 90, gas: KJ("gaseous_copper_compound") },
+		output: MC(`copper_ingot`),
+	}).id(`${MC()}/copper_ingot_from_gas`)
+	event.custom({
+		type: M('crystallizing'),
+		chemicalType: 'gas',
+		input: { amount: 90, gas: KJ("gaseous_zinc_compound") },
+		output: CR(`zinc_ingot`),
+	}).id(`${MC()}/zinc_ingot_from_gas`)
+	event.custom({
+		type: M('crystallizing'),
+		chemicalType: 'gas',
+		input: { amount: 90, gas: KJ("gaseous_brass_compound") },
+		output: CR(`brass_ingot`),
+	}).id(`${MC()}/brass_ingot_from_gas`)
+	event.custom({
+		type: M('crystallizing'),
+		chemicalType: 'gas',
+		input: { amount: 90, gas: KJ("gaseous_tungsten_compound") },
+		output: CR_M(`tungsten_ingot`),
+	}).id(`${MC()}/tungsten_ingot_from_gas`)
+	event.custom({
+		type: M('crystallizing'),
+		chemicalType: 'gas',
+		input: { amount: 90, gas: KJ("gaseous_steel_compound") },
+		output: M(`ingot_steel`),
+	}).id(`${MC()}/steel_ingot_from_gas`)
+	event.custom({
+		type: M('crystallizing'),
+		chemicalType: 'gas',
+		input: { amount: 90, gas: KJ("gaseous_void_steel_compound") },
+		output: EC(`ender_ingot`),
+	}).id(`${MC()}/void_steel_ingot_from_gas`)
+	event.custom({
+		type: M('crystallizing'),
+		chemicalType: 'gas',
+		input: { amount: 90, gas: KJ("gaseous_certus_compound") },
+		output: AE2(`certus_quartz_crystal`),
+	}).id(`${MC()}/certus_quartz_crystal_from_gas`)
+	event.custom({
+		type: M('crystallizing'),
+		chemicalType: 'gas',
+		input: { amount: 90, gas: KJ("gaseous_diamond_compound") },
+		output: MC(`diamond`),
+	}).id(`${MC()}/diamond_from_gas`)
 })

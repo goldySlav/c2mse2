@@ -15,7 +15,7 @@ ServerEvents.recipes((event) => {
 	removeRecipeByOutput(event, [
 		AE2_A("quantum_processor_press"),
 	])
-	customRecipes.expatternprovider.cutter(event, AE2_A("quantum_processor_press"), 1, KJ("circuit_scrap"), 1, AE2_A("quantum_infusion_source"), 100)
+	customRecipes.expatternprovider.cutter(event, AE2_A("quantum_processor_press"), 1, KJ("circuit_scrap"), 1, AE2_A("quantum_infusion_source"), 1000)
 	
 	//quantum alloy block to alloy
 	event.shapeless(Item.of(AE2_A("quantum_alloy"), 9), [AE2_A("quantum_alloy_block")])

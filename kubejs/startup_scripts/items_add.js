@@ -79,8 +79,8 @@ StartupEvents.registry('item', event => {
 	let processors = ["Calculation", "Logic", "Engineering", "Energy", "Accumulation", "Quantum"]
 	processors.forEach(name => {
 		let e = name.toLowerCase()
-		event.create(`incomplete_${e}_processor`, 'create:sequenced_assembly').displayName(`Incomplete ${name} Processor`)
-		event.create(`incomplete_${e}_processor_wafer`, 'create:sequenced_assembly').displayName(`Incomplete ${name} Processor Wafer`)
+		event.create(`broken_${e}_processor`).displayName(`Broken ${name} Processor`)
+		event.create(`broken_${e}_processor_wafer`).displayName(`Broken ${name} Processor Wafer`)
 	})
 
 	event.create('dye_entangled_singularity').unstackable().displayName('Chromatic Singularity').rarity("rare")

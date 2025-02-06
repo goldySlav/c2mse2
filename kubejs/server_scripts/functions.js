@@ -692,6 +692,70 @@ const customRecipes = {
 			})
 		}
 	},
+	mekanism: {
+		infusion_conversion: function(event, infuseType, infuseAmount, itemId) {
+			event.custom({
+				type: M("infusion_conversion"),
+				input: {
+					ingredient: {
+						item: itemId,
+					}
+				},
+				output: {
+					amount: infuseAmount,
+					infuse_type: infuseType,
+				}
+			})
+		},
+		fission: function(event, inputGas, inputGasAmount, outputGas, outputGasAmount, heatAmount) {
+			heatAmount = heatAmount ? heatAmount : 1
+			event.custom({
+				type: M("fission"),
+				input: {
+					gas: inputGas,
+					amount: inputGasAmount,
+				},
+				output: {
+					gas: outputGas,
+					amount: outputGasAmount,
+				},
+				heat: heatAmount,
+			})
+		},
+		condensentrating: function(event, fluidId, fluidAmount, gasId, gasAmount) {
+			event.custom({
+				type: M("rotary"),
+				fluidInput: {
+					amount: fluidAmount,
+					fluid: fluidId
+				},
+				fluidOutput: {
+					amount: fluidAmount,
+					fluid: fluidId
+				},
+				gasInput: {
+					amount: gasAmount,
+					gas: gasId
+				},
+				gasOutput: {
+					amount: gasAmount,
+					gas: gasId
+				}
+			})
+		},
+		oxidizing: function(event, item, gasId, gasAmount) {
+			event.custom({
+				type: M("oxidizing"),
+				input: {
+					ingredient: toRecipeJsonItem(item),
+				},
+				output: {
+					amount: gasAmount,
+					gas: gasId,
+				}
+			})
+		},
+	},
 }
 
 const toRecipeJsonItem = (items) => {

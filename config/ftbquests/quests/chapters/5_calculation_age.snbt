@@ -41,7 +41,7 @@
 				}
 			]
 			x: 2.0d
-			y: 6.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["33021D172E8878E4"]
@@ -53,7 +53,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 7.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["52257FDA80778223"]
@@ -71,12 +71,12 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 6.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
 				"1C09C4944CCD355E"
-				"6B2F8C0DC04DA057"
+				"2047ED5BC1025722"
 			]
 			icon: "ae2:logic_processor"
 			id: "43AFCDFA7ACF7345"
@@ -93,12 +93,12 @@
 				}
 			]
 			x: 2.0d
-			y: 4.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
 				"1C09C4944CCD355E"
-				"6B2F8C0DC04DA057"
+				"1AC724A44BF86C74"
 			]
 			icon: "ae2:calculation_processor"
 			id: "07B04478FDDFACAA"
@@ -115,12 +115,12 @@
 				}
 			]
 			x: 0.5d
-			y: 4.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
 				"1C09C4944CCD355E"
-				"6B2F8C0DC04DA057"
+				"52B16095142EF424"
 			]
 			icon: "ae2:engineering_processor"
 			id: "1DA27C8DD289D4F3"
@@ -137,7 +137,7 @@
 				}
 			]
 			x: 3.5d
-			y: 4.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["61869729796C25AB"]
@@ -232,7 +232,7 @@
 				}
 			]
 			x: 5.0d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2D69A78F6D4F555E"]
@@ -630,6 +630,48 @@
 			title: "Alternative Way of Thinking"
 			x: -2.5d
 			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6B2F8C0DC04DA057"
+				"36C7C15C0AC39A62"
+			]
+			id: "1AC724A44BF86C74"
+			tasks: [{
+				id: "469856BC31A191EC"
+				item: "kubejs:broken_calculation_processor"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"6B2F8C0DC04DA057"
+				"64735AB276DED681"
+			]
+			id: "2047ED5BC1025722"
+			tasks: [{
+				id: "6A8ACB2DEE5C1C88"
+				item: "kubejs:broken_logic_processor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"6B2F8C0DC04DA057"
+				"6875D32CBA0E015F"
+			]
+			id: "52B16095142EF424"
+			tasks: [{
+				id: "295C5F859DE7313D"
+				item: "kubejs:broken_engineering_processor"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.5d
 		}
 	]
 	title: "5. Calculation Age"

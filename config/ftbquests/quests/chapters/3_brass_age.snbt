@@ -10,7 +10,13 @@
 	quests: [
 		{
 			dependencies: ["10AC4EE77F6CC3BC"]
+			description: [
+				"The start of another adventure. Oh wait, you're not new!"
+				""
+				"PS: You get &6Brass&r."
+			]
 			id: "0B16696302C3F3C5"
+			subtitle: "Another one??"
 			tasks: [{
 				id: "5500F9D1A7125F11"
 				title: "Start Chapter"
@@ -21,8 +27,14 @@
 		}
 		{
 			dependencies: ["668A952600ABBB6D"]
+			description: [
+				"The &6final piece&r to unlock the brass age."
+				""
+				"So close yet so far."
+			]
 			id: "48753F8B4874A9F9"
 			shape: "rsquare"
+			subtitle: "Yay fitration."
 			tasks: [{
 				id: "6B242C49911A64B1"
 				item: "kubejs:brass_machine"
@@ -37,8 +49,10 @@
 				"657A6EEA9A8F6549"
 				"7FD29CB9FD8A147C"
 			]
+			description: ["&nTH- THE FACTORY STILL NEEDS YOU&r"]
 			icon: "create:precision_mechanism"
 			id: "668A952600ABBB6D"
+			subtitle: "Precision more like ..."
 			tasks: [
 				{
 					id: "3144F9C84F53CD5A"
@@ -56,8 +70,10 @@
 		}
 		{
 			dependencies: ["10AC4EE77F6CC3BC"]
+			description: ["Like I said its used to make more than just sealed mechanisms."]
 			id: "6A1BBA66DE2014C1"
 			shape: "rsquare"
+			subtitle: "The handy man"
 			tasks: [{
 				id: "424DF95817D1B773"
 				item: {
@@ -77,8 +93,13 @@
 				"562716E1F2F30704"
 				"6A440498F22DB5B5"
 			]
+			description: [
+				"Made by pouring &6molten iron&r onto &6roze quartz&r."
+				"It doesn't need anything fancy just a depot and a spout."
+			]
 			icon: "create:electron_tube"
 			id: "657A6EEA9A8F6549"
+			subtitle: "Lights?"
 			tasks: [
 				{
 					id: "7D168CB53F6DF01C"
@@ -96,8 +117,13 @@
 		}
 		{
 			dependencies: ["3984091B70C5869E"]
+			description: [
+				"Finally we have &6&o&lbrass&r&r&r."
+				"This one is made by pumping your &6molten brass&r onto a &6casting table&r with a &6nugget cast&r."
+			]
 			icon: "create:brass_nugget"
 			id: "7FD29CB9FD8A147C"
+			subtitle: "The casting is so good in this movie"
 			tasks: [
 				{
 					id: "1284B6AAFD3C372C"
@@ -118,8 +144,15 @@
 				"202EBC6D790314E6"
 				"6ECC004E4EB82368"
 			]
+			description: [
+				"&6Molten Brass&r is made by combining &6molten copper&r and &6molten zinc&r in a heated foundry basin."
+				"You combine it with the new and improved &6foundry mixer&r."
+				""
+				"PS: &6JEI&r is still exists."
+			]
 			icon: "createmetallurgy:molten_brass_bucket"
 			id: "3984091B70C5869E"
+			subtitle: "Alloying never heard of it."
 			tasks: [
 				{
 					id: "41FCDE8EFEF94B0B"
@@ -137,8 +170,10 @@
 		}
 		{
 			dependencies: ["15E1AB9E8845B81E"]
+			description: ["Its the &6same here&r as in molten iron go have a look. The diference is that you use &6zinc&r."]
 			icon: "createmetallurgy:molten_zinc_bucket"
 			id: "6ECC004E4EB82368"
+			subtitle: "Also hot"
 			tasks: [
 				{
 					id: "0DB067A1948C3772"
@@ -156,8 +191,10 @@
 		}
 		{
 			dependencies: ["4E4478825579AB53"]
+			description: ["Oh yeah its the &6same here&r aswell i forgot. Remember to use &6copper&r tho."]
 			icon: "createmetallurgy:molten_copper_bucket"
 			id: "202EBC6D790314E6"
+			subtitle: "Hot here as well"
 			tasks: [
 				{
 					id: "4FFEA3248BCF0C33"
@@ -175,8 +212,10 @@
 		}
 		{
 			dependencies: ["44C3247A6B4D844E"]
+			description: ["Made by washing &6crushed granite&r."]
 			icon: "create:copper_nugget"
 			id: "4E4478825579AB53"
+			subtitle: "Yea you already did this"
 			tasks: [
 				{
 					id: "0744B5C74ADA9CB0"
@@ -194,8 +233,10 @@
 		}
 		{
 			dependencies: ["0D8B364DB116E060"]
+			description: ["Made yet again by washing &6crushed diorite&r."]
 			icon: "create:zinc_nugget"
 			id: "15E1AB9E8845B81E"
+			subtitle: "New way new me."
 			tasks: [
 				{
 					id: "0AB43520D7D7E064"
@@ -216,8 +257,10 @@
 				"18F089334C583E34"
 				"4E6C04506584D408"
 			]
+			description: ["Made by yet again mixing, but now its &6sky solution&r with &6charged certus quartz&r."]
 			icon: "kubejs:liquid_redstone_bucket"
 			id: "2DCAABDF526C9332"
+			subtitle: "More mixing. WHY?"
 			tasks: [
 				{
 					id: "60BECE5A83DC6CDE"
@@ -238,8 +281,14 @@
 				"2DCAABDF526C9332"
 				"7EFA012B9C2A157C"
 			]
+			description: [
+				"Pressurize some of our &6liqiud redstone&r with &l&6normal&r&r(nether) &6quartz&r in a compressor."
+				""
+				"TIP: It has more modes. Try using your wrench."
+			]
 			icon: "create:polished_rose_quartz"
 			id: "6A440498F22DB5B5"
+			subtitle: "Made with love and pressure"
 			tasks: [
 				{
 					id: "25B308D4C856ECD6"
@@ -257,8 +306,15 @@
 		}
 		{
 			dependencies: ["157D853038DA9297"]
+			description: [
+				"Made by &6melting&r iron nuggets (ingots and blocks too). Oh nice &6new&r blocks?"
+				"Melting is done in a &6foundry basin&r with a &6foundry lid&r ontop of it and bellow all of them will be a &6blaze burner&r(The heat source)."
+				""
+				"You can ask &6JEI&r more questions."
+			]
 			icon: "createmetallurgy:molten_iron_bucket"
 			id: "562716E1F2F30704"
+			subtitle: "Careful its hot"
 			tasks: [
 				{
 					id: "76CF64AFEDD12D4C"
@@ -276,8 +332,14 @@
 		}
 		{
 			dependencies: ["10AC4EE77F6CC3BC"]
+			description: [
+				"&6JEI&r help??"
+				""
+				"TIP: At this point you should trying making &6EMC links&r or &6energy condensers&r."
+			]
 			icon: "minecraft:quartz"
 			id: "7EFA012B9C2A157C"
+			subtitle: "White?"
 			tasks: [
 				{
 					id: "285D68F6BCCB591C"
@@ -298,8 +360,10 @@
 				"4189E71C621177B0"
 				"2EAEF08EBE9F97E8"
 			]
+			description: ["Can be obtained by &6mixing&r skystone dust and water."]
 			icon: "kubejs:sky_solution_bucket"
 			id: "18F089334C583E34"
+			subtitle: "Mixing away"
 			tasks: [
 				{
 					id: "5B5185F4FD38FE9F"
@@ -317,8 +381,13 @@
 		}
 		{
 			dependencies: ["31AC01B1F159EE17"]
+			description: [
+				"There are &6plenty&r ways to do this."
+				"You can ask &6JEI&r for guidance."
+			]
 			icon: "ae2:charged_certus_quartz_crystal"
 			id: "4E6C04506584D408"
+			subtitle: "BZZZZZZT"
 			tasks: [
 				{
 					id: "63E9F06D7B53AF27"
@@ -336,8 +405,10 @@
 		}
 		{
 			dependencies: ["0C9B71DD7A9DEEB7"]
+			description: ["Made by washing &6gravel&r."]
 			icon: "minecraft:iron_nugget"
 			id: "157D853038DA9297"
+			subtitle: "You should already know this one"
 			tasks: [
 				{
 					id: "0CBE0175DBF4CF64"
@@ -355,8 +426,10 @@
 		}
 		{
 			dependencies: ["1EA91261B3883D58"]
+			description: ["Oh wow it &6grew&r. Just like I told you it would. Now quick &6EMC&r it."]
 			icon: "ae2:certus_quartz_crystal"
 			id: "31AC01B1F159EE17"
+			subtitle: "The fruit of you labour."
 			tasks: [
 				{
 					id: "3E05972C5076FEE1"
@@ -376,6 +449,7 @@
 			dependencies: ["2F7B52A729167B69"]
 			icon: "minecraft:gravel"
 			id: "0C9B71DD7A9DEEB7"
+			subtitle: "Gravity?"
 			tasks: [
 				{
 					id: "0E3686EB1E75F7A0"
@@ -395,6 +469,7 @@
 			dependencies: ["65F344525400EFE7"]
 			icon: "kubejs:crushed_diorite"
 			id: "0D8B364DB116E060"
+			subtitle: "Just Gravity?"
 			tasks: [
 				{
 					id: "4EF2B5F0C99C7964"
@@ -414,6 +489,7 @@
 			dependencies: ["47B0F53E35B9511F"]
 			icon: "kubejs:crushed_granite"
 			id: "44C3247A6B4D844E"
+			subtitle: "More gravity?"
 			tasks: [
 				{
 					id: "0EA4E236673E0666"
@@ -431,8 +507,10 @@
 		}
 		{
 			dependencies: ["0B16696302C3F3C5"]
+			description: ["You can make this using an &6extruder&r or by making a simple &6cobble gen&r."]
 			icon: "minecraft:cobblestone"
 			id: "2F7B52A729167B69"
+			subtitle: "Cobble for life"
 			tasks: [
 				{
 					id: "78F6AE476836236A"
@@ -450,8 +528,10 @@
 		}
 		{
 			dependencies: ["0B16696302C3F3C5"]
+			description: ["The &6same&r as granite."]
 			icon: "minecraft:diorite"
 			id: "65F344525400EFE7"
+			subtitle: "Ugly 2"
 			tasks: [
 				{
 					id: "7FB746D9A0B8FC5B"
@@ -469,8 +549,10 @@
 		}
 		{
 			dependencies: ["0B16696302C3F3C5"]
+			description: ["Go back to &6chapter 2&r. :smile: or scream &6JEI.&r"]
 			icon: "minecraft:granite"
 			id: "47B0F53E35B9511F"
+			subtitle: "Ugly"
 			tasks: [
 				{
 					id: "6BA2B6F08392B380"
@@ -488,7 +570,9 @@
 		}
 		{
 			dependencies: ["3B83B6DF32386BEA"]
+			description: ["Keep spitting."]
 			id: "1EA91261B3883D58"
+			subtitle: "Keep growing"
 			tasks: [{
 				id: "09FDE8171D99B762"
 				item: "kubejs:certus_seed_small"
@@ -499,7 +583,13 @@
 		}
 		{
 			dependencies: ["2EAEF08EBE9F97E8"]
+			description: [
+				"Spit on it with water and it shall &6&lGROW&r&r."
+				""
+				"&6JEI&r help I- I'm lost."
+			]
 			id: "3B83B6DF32386BEA"
+			subtitle: "Grow"
 			tasks: [{
 				id: "229B0DC9254CBEAC"
 				item: "kubejs:certus_seed_tiny"
@@ -510,7 +600,9 @@
 		}
 		{
 			dependencies: ["0B16696302C3F3C5"]
+			description: ["Sifting skystone? crushed?? but how?"]
 			id: "1E9D9B683C14E688"
+			subtitle: "Gonna grow some crystals. -Walter"
 			tasks: [{
 				id: "3E6288E72AAAD067"
 				item: "kubejs:certus_seed"
@@ -521,8 +613,10 @@
 		}
 		{
 			dependencies: ["3A9FE888E23290AA"]
+			description: ["Made by &6crushing&r skystone which has an &6EMC&r value."]
 			icon: "ae2:sky_dust"
 			id: "4189E71C621177B0"
+			subtitle: "This guy again..."
 			tasks: [
 				{
 					id: "0C102F6ABA75872A"
@@ -543,6 +637,7 @@
 			dependencies: ["0B16696302C3F3C5"]
 			icon: "minecraft:water_bucket"
 			id: "2EAEF08EBE9F97E8"
+			subtitle: "Dory's house"
 			tasks: [
 				{
 					id: "5B0B7048F28AF34F"
@@ -563,6 +658,7 @@
 			description: ["You can get your first Sky Stone from Smelting Sky Stone Dust."]
 			id: "3A9FE888E23290AA"
 			shape: "rsquare"
+			subtitle: "Cooking? still?"
 			tasks: [{
 				id: "3C51AFB544D5A4EC"
 				item: "ae2:sky_stone_block"
@@ -575,15 +671,16 @@
 		{
 			dependencies: ["0B16696302C3F3C5"]
 			description: [
-				"To manually create your first Sky Stone Dust you will need Gem Dust, Gunpowder and Cloud in a Bottle."
+				"To manually create your first Sky Stone Dust you will need &6Gem Dust&r, &6Gunpowder&r and &6Cloud in a Bottle&r."
 				""
 				"1. \"Gem Dust\" can be obtained by dropping Anvil onto a Apotheosis Gem."
-				"1.1 Apotheosis Gem can be found as a loot from mobs or in dungeon chests in the nether."
+				"1.1 Apotheosis Gems can be found as a loot from mobs or in dungeon chests in the nether."
 				""
-				"2. Cloud in a Bottle can be obtained by right clicking empty bottle in the sky on cloud level (Y=192)"
+				"2. Cloud in a Bottle can be obtained by right clicking empty bottle in the sky on &6cloud level&r (Y=192)"
 			]
 			id: "206C6656700CD8CA"
 			shape: "rsquare"
+			subtitle: "So high, I believe I can fly!!"
 			tasks: [{
 				id: "4F9B4DCB9E1BE44F"
 				item: "ae2:sky_dust"

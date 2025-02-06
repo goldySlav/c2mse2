@@ -191,6 +191,30 @@ ServerEvents.recipes((event) => {
             output: Item.of(KJ('flux_star_fragment'), 9),
             inputs: EC('flux_star')
         }, //not really a wafer, but recipe suits well
+        {
+            output: Item.of(KJ('broken_calculation_processor'), 9),
+            inputs: KJ('broken_calculation_processor_wafer')
+        },
+        {
+            output: Item.of(KJ('broken_logic_processor'), 9),
+            inputs: KJ('broken_logic_processor_wafer')
+        },
+        {
+            output: Item.of(KJ('broken_engineering_processor'), 9),
+            inputs: KJ('broken_engineering_processor_wafer')
+        },
+        {
+            output: Item.of(KJ('broken_energy_processor'), 9),
+            inputs: KJ('broken_energy_processor_wafer')
+        },
+        {
+            output: Item.of(KJ('broken_accumulation_processor'), 9),
+            inputs: KJ('broken_accumulation_processor_wafer')
+        },
+        {
+            output: Item.of(KJ('broken_quantum_processor'), 9),
+            inputs: KJ('broken_quantum_processor_wafer')
+        },
 	]
 	wafers.forEach((wafer) => {
         event.shapeless(wafer.inputs, wafer.output)
@@ -569,12 +593,83 @@ ServerEvents.recipes((event) => {
 	//dye entangled singularity
 	dyes.forEach(dye => {
 		customRecipes.create.vacuumizing(event, [KJ("dye_entangled_singularity")], [dye, AE2('quantum_entangled_singularity')], 20)
+		event.recipes.mekanismCombining(KJ("dye_entangled_singularity"), AE2('quantum_entangled_singularity'), dye)
 	})
 	
 	
 	
 	//toxic waste liquid fuel
 	customRecipes.create.liquidFuel(event, F("waste"), 1000, true)
+	
+	
+	
+	//custom infusions
+	customRecipes.mekanism.infusion_conversion(event, KJ("waste"), 10, AE2("magenta_paint_ball"))
+	customRecipes.mekanism.infusion_conversion(event, KJ("waste"), 20, AE2("blue_paint_ball"))
+	customRecipes.mekanism.infusion_conversion(event, KJ("waste"), 30, AE2("green_paint_ball"))
+	customRecipes.mekanism.infusion_conversion(event, KJ("waste"), 40, AE2("yellow_paint_ball"))
+	customRecipes.mekanism.infusion_conversion(event, KJ("waste"), 50, AE2("red_paint_ball"))
+	customRecipes.mekanism.infusion_conversion(event, KJ("waste"), 80, KJ("dye_entangled_singularity"))
+	
+	
+	
+	//custom steel in fission reactor
+	customRecipes.mekanism.fission(event, KJ("gaseous_iron_compound"), 1, KJ("gaseous_steel_compound"), 1, 0)
+	
+	
+	
+	//gaseous molten metals
+	customRecipes.mekanism.condensentrating(event, CR_M("molten_iron"), 1, KJ("gaseous_iron_compound"), 1)
+	customRecipes.mekanism.condensentrating(event, CR_M("molten_gold"), 1, KJ("gaseous_gold_compound"), 1)
+	customRecipes.mekanism.condensentrating(event, CR_M("molten_copper"), 1, KJ("gaseous_copper_compound"), 1)
+	customRecipes.mekanism.condensentrating(event, CR_M("molten_zinc"), 1, KJ("gaseous_zinc_compound"), 1)
+	customRecipes.mekanism.condensentrating(event, CR_M("molten_brass"), 1, KJ("gaseous_brass_compound"), 1)
+	customRecipes.mekanism.condensentrating(event, CR_M("molten_tungsten"), 1, KJ("gaseous_tungsten_compound"), 1)
+	customRecipes.mekanism.condensentrating(event, CR_M("molten_steel"), 1, KJ("gaseous_steel_compound"), 1)
+	customRecipes.mekanism.condensentrating(event, CR_M("molten_void_steel"), 1, KJ("gaseous_void_steel_compound"), 1)
+	customRecipes.mekanism.condensentrating(event, KJ("molten_certus"), 1, KJ("gaseous_certus_compound"), 1)
+	customRecipes.mekanism.condensentrating(event, KJ("molten_diamond"), 1, KJ("gaseous_diamond_compound"), 1)
+	
+	
+	
+	//custom metal/gem melting in chemical oxidizer
+	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/iron"), KJ("gaseous_iron_compound"), 810)
+	customRecipes.mekanism.oxidizing(event, F("#ingots/iron"), KJ("gaseous_iron_compound"), 90)
+	customRecipes.mekanism.oxidizing(event, F("#nuggets/iron"), KJ("gaseous_iron_compound"), 10)
+	
+	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/gold"), KJ("gaseous_gold_compound"), 810)
+	customRecipes.mekanism.oxidizing(event, F("#ingots/gold"), KJ("gaseous_gold_compound"), 90)
+	customRecipes.mekanism.oxidizing(event, F("#nuggets/gold"), KJ("gaseous_gold_compound"), 10)
+	
+	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/copper"), KJ("gaseous_copper_compound"), 810)
+	customRecipes.mekanism.oxidizing(event, F("#ingots/copper"), KJ("gaseous_copper_compound"), 90)
+	customRecipes.mekanism.oxidizing(event, F("#nuggets/copper"), KJ("gaseous_copper_compound"), 10)
+	
+	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/zinc"), KJ("gaseous_zinc_compound"), 810)
+	customRecipes.mekanism.oxidizing(event, F("#ingots/zinc"), KJ("gaseous_zinc_compound"), 90)
+	customRecipes.mekanism.oxidizing(event, F("#nuggets/zinc"), KJ("gaseous_zinc_compound"), 10)
+	
+	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/brass"), KJ("gaseous_brass_compound"), 810)
+	customRecipes.mekanism.oxidizing(event, F("#ingots/brass"), KJ("gaseous_brass_compound"), 90)
+	customRecipes.mekanism.oxidizing(event, F("#nuggets/brass"), KJ("gaseous_brass_compound"), 10)
+	
+	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/tungsten"), KJ("gaseous_tungsten_compound"), 810)
+	customRecipes.mekanism.oxidizing(event, F("#ingots/tungsten"), KJ("gaseous_tungsten_compound"), 90)
+	customRecipes.mekanism.oxidizing(event, F("#nuggets/tungsten"), KJ("gaseous_tungsten_compound"), 10)
+	
+	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/steel"), KJ("gaseous_steel_compound"), 810)
+	customRecipes.mekanism.oxidizing(event, F("#ingots/steel"), KJ("gaseous_steel_compound"), 90)
+	customRecipes.mekanism.oxidizing(event, F("#nuggets/steel"), KJ("gaseous_steel_compound"), 10)
+	
+	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/ender_ingot"), KJ("gaseous_void_steel_compound"), 810)
+	customRecipes.mekanism.oxidizing(event, F("#ingots/ender_ingot"), KJ("gaseous_void_steel_compound"), 90)
+	customRecipes.mekanism.oxidizing(event, F("#nuggets/ender_ingot"), KJ("gaseous_void_steel_compound"), 10)
+	
+	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/certus_quartz"), KJ("gaseous_certus_compound"), 810)
+	customRecipes.mekanism.oxidizing(event, F("#gems/certus_quartz"), KJ("gaseous_certus_compound"), 90)
+	
+	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/diamond"), KJ("gaseous_diamond_compound"), 810)
+	customRecipes.mekanism.oxidizing(event, F("#gems/diamond"), KJ("gaseous_diamond_compound"), 90)
 	
 	
 	
@@ -1102,7 +1197,7 @@ console.log(`[mechanisms] liquid mB: ${liquidForMatrix}, matrix: ${mechForMatrix
 	inductive_machine(KJ('circuit_scrap'), 1)
 	inductive_machine(DE('generator'), 1, IFC('obsidian_furnace'))
 	inductive_machine(CR_ET('energy_transmitter'), 1, CR('shaft'))
-	inductive_machine(CR_ET('item_transmitter'), 1, MC('hopper'))
+	inductive_machine(CR_ET('item_transmitter'), 1, CR('chute'))
 	inductive_machine(CR_ET('fluid_transmitter'), 1, CR('mechanical_pump'))
 	inductive_machine(EIO("soul_binder"), 1, MC('soul_sand'))
 	inductive_machine(EIO("impulse_hopper"), 1, P('energy_hopper_hardened'))

@@ -3,8 +3,7 @@
 ServerEvents.recipes((event) => {
 	//removals
 	removeRecipeByOutput(event, [
-		CR("chute"), //dupes unstackable items when transferred from drawer through a pipe
-		CR("smart_chute"), //dupes unstackable items when transferred from drawer through a pipe
+		
 	])
 	
 	removeRecipeByID(event, [
@@ -147,6 +146,29 @@ ServerEvents.recipes((event) => {
 		CR("electron_tube"),
 	])
 	event.recipes.create.filling(Item.of(CR("electron_tube"), 1), [CR('polished_rose_quartz'), Fluid.of(CR_M('molten_iron'), 10)])
+	event.custom({
+		type: AE2_A("reaction"),
+		energy: 1000000,
+	    fluid: {
+			fluidStack: {
+				Amount: 320,
+				FluidName: CR_M("molten_iron")
+			}
+		},
+		input_items: [
+			{
+				amount: 64,
+				ingredient: {
+					item: CR("polished_rose_quartz")
+				}
+			},
+		],
+		output: {
+			"#": 64,
+			"#c": "ae2:i",
+			id: CR("electron_tube"),
+		}
+	})
 	
 	//rose quartz
 	removeRecipeByOutput(event, [
@@ -283,9 +305,6 @@ ServerEvents.recipes((event) => {
 		customRecipes.ad_astra.compressing(event, CR(`${sheet}_sheet`), F(`#ingots/${sheet}`))
 	})
 	customRecipes.ad_astra.compressing(event, CR(`golden_sheet`), F(`#ingots/gold`))
-	
-	//chutes to hopper
-    event.replaceInput({}, CR("chute"), MC("hopper"))
 	
 	//tank from reservoir
 	event.shapeless(CR("fluid_tank"), CR_DD('fluid_reservoir'))
