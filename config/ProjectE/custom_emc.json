@@ -97,6 +97,10 @@
       "emc": 524288
     },
     {
+      "item": "mekanism_extras:ingot_naquadah",
+      "emc": 2097152
+    },
+    {
       "item": "meetyourfight:music_disc_magnum",
       "emc": 0
     },

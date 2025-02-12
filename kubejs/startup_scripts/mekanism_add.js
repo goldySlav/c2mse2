@@ -38,6 +38,7 @@ const $InfuseTypeBuilder = Java.loadClass('mekanism.api.chemical.infuse.InfuseTy
 
 StartupEvents.registry('mekanism:infuse_type', event => {
     event.createCustom('kubejs:waste', () => new $InfuseType($InfuseTypeBuilder.builder().tint(0x295e20)))
+    event.createCustom('kubejs:explosion_essence', () => new $InfuseType($InfuseTypeBuilder.builder().tint(0x4f4f4f)))
 })
 
 

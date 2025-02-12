@@ -17,7 +17,7 @@ WorldgenEvents.remove(event => {
 	  "rftoolsbase:dimensionalshard_nether",
 	  "rftoolsbase:dimensionalshard_end",
 	  
-	  "sgjourney:nether_naquadah_ore",
+	  "mekanism_extras:end_naquadah_ore",
     ]
   })
 })

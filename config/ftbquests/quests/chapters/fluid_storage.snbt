@@ -9,9 +9,15 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["254B1CE0803DA72D"]
+			description: [
+				"Each &2Basic Fluid Tank&r can store "
+				"&632 000 mB&r (32 Buckets) of a single fluid."
+			]
 			disable_toast: true
 			id: "65D3DA6704C586F4"
 			size: 1.0d
+			subtitle: "Basically a tank"
 			tasks: [{
 				id: "4799C1E7826F86D0"
 				item: "mekanism:basic_fluid_tank"
@@ -22,9 +28,15 @@
 		}
 		{
 			dependencies: ["65D3DA6704C586F4"]
+			description: [
+				"Each &4Advanced Fluid Tank&r can store "
+				"&664 000 mB&r (64 Buckets) of a single fluid."
+				"This is twice as much compared to &2Basic Fluid Tank&r and it can be upgraded without breaking if you wish using &4Advanced Tier Installer&r."
+			]
 			disable_toast: true
 			id: "09B85773C78D8987"
 			size: 1.0d
+			subtitle: "Advancing into fluid tankery"
 			tasks: [{
 				id: "2A8A91B665996BC0"
 				item: "mekanism:advanced_fluid_tank"
@@ -35,9 +47,15 @@
 		}
 		{
 			dependencies: ["09B85773C78D8987"]
+			description: [
+				"Each &bElite Fluid Tank&r can store "
+				"&6128 000 mB&r (128 Buckets) of a single fluid."
+				"This is twice as much compared to &4Advanced Fluid Tank&r and it can be upgraded without breaking if you wish using &bElite Tier Installer&r."
+			]
 			disable_toast: true
 			id: "1AF5DC72498A1EF5"
 			size: 1.0d
+			subtitle: "Elite tanking capabilities"
 			tasks: [{
 				id: "57793E8802EA62B4"
 				item: "mekanism:elite_fluid_tank"
@@ -48,9 +66,15 @@
 		}
 		{
 			dependencies: ["1AF5DC72498A1EF5"]
+			description: [
+				"Each &dUltimate Fluid Tank&r can store "
+				"&6256 000 mB&r (256 Buckets) of a single fluid."
+				"This is twice as much compared to &2Elite Fluid Tank&r and it can be upgraded without breaking if you wish using &dUltimate Tier Installer&r."
+			]
 			disable_toast: true
 			id: "00E28EF5E92C8FE4"
 			size: 1.0d
+			subtitle: "Ultimately, a tank"
 			tasks: [{
 				id: "1BDC15CAF793893E"
 				item: "mekanism:ultimate_fluid_tank"
@@ -60,16 +84,76 @@
 			y: 3.0d
 		}
 		{
+			description: [
+				"Each &6Tank&r block can store 8000mB (8 Buckets) of any fluid, but one per tank."
+				"Tanks can be connected together for shared storage with base up to 3x3 blocks and height up to 32 blocks high."
+				""
+				"Maximum capacity of a singular tank multiblock is &62 304 000 mB&r (2 304 Buckets) with a size of &63x32x3&r (288 blocks or 4.5 stacks)."
+			]
 			disable_toast: true
 			id: "254B1CE0803DA72D"
 			size: 1.0d
+			subtitle: "Modular Tank"
 			tasks: [{
 				id: "2890350A69F7001C"
 				item: "create:fluid_tank"
 				type: "item"
 			}]
-			x: -12.0d
-			y: -1.5d
+			x: -10.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["00E28EF5E92C8FE4"]
+			description: [
+				"Each &aAbsolute Fluid Tank&r can store "
+				"&64 096 000 mB&r (4096 Buckets) of a single fluid."
+				"This is 16 times more compared to &5Ultimate Fluid Tank&r and it can be upgraded without breaking if you wish using &bAbsolute Tier Installer&r."
+			]
+			disable_toast: true
+			id: "0208CC49B9D2A4D0"
+			subtitle: "Absolutely tanky"
+			tasks: [{
+				id: "4D26E6D0EF785FC2"
+				item: "mekanism_extras:absolute_fluid_tank"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0208CC49B9D2A4D0"]
+			disable_toast: true
+			id: "2E1D8569D2A68DDD"
+			tasks: [{
+				id: "5FACC5BC8FF75356"
+				item: "mekanism_extras:supreme_fluid_tank"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2E1D8569D2A68DDD"]
+			disable_toast: true
+			id: "029A3AB286EFB208"
+			tasks: [{
+				id: "0815309EF37E33E7"
+				item: "mekanism_extras:cosmic_fluid_tank"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["029A3AB286EFB208"]
+			id: "7E166B27DA315923"
+			tasks: [{
+				id: "34091DA19AE4CDBB"
+				item: "mekanism_extras:infinite_fluid_tank"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 9.0d
 		}
 	]
 	title: "Fluid Storage"

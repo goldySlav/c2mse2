@@ -36,7 +36,7 @@ ServerEvents.recipes((event) => {
 		B: CP('diamond_3'),
 		C: MC('blast_furnace'),
 		D: F('#ingots/osmium'),
-		E: AE2('energy_cell'),
+		E: CP('fluix_1'),
 		F: F('#gears/gold'),
 		G: IF('plastic'),
 	})
@@ -100,49 +100,54 @@ ServerEvents.recipes((event) => {
 		M("elite_bin"),
 		M("ultimate_bin"),
 	])
-	event.shaped(M("basic_bin"), [
-		'CBC',
-		'RTR',
-		'CCC',
-	], {
-		C: MC("cobblestone"),
-		B: M("basic_control_circuit"),
-		R: F("#ingots/red_alloy"),
-		T: TC("item_trash_can")
-	})
 
-	event.shaped(M("advanced_bin"), [
-		'CBC',
-		'ATA',
-		'CCC',
-	], {
-		C: CP("cobblestone_1"),
-		B: M("advanced_control_circuit"),
-		A: M("alloy_infused"),
-		T: M("basic_bin")
-	})
+	event.recipes.create.item_application(M("basic_bin"), [TC("item_trash_can"), M(`basic_tier_installer`)])
+	event.shapeless(M("basic_bin"), [TC("item_trash_can"), M(`basic_tier_installer`)])
+	event.shapeless(M("advanced_bin"), [M("basic_bin"), M(`advanced_tier_installer`)])
+	event.shapeless(M("elite_bin"), [M("advanced_bin"), M(`elite_tier_installer`)])
+	event.shapeless(M("ultimate_bin"), [M("elite_bin"), M(`ultimate_tier_installer`)])
 
-	event.shaped(M("elite_bin"), [
-		'CBC',
-		'ATA',
-		'CCC',
-	], {
-		C: CP("cobblestone_2"),
-		B: M("elite_control_circuit"),
-		A: M("alloy_reinforced"),
-		T: M("advanced_bin")
-	})
+	//fluid tanks
+	removeRecipeByOutput(event, [
+		M("basic_fluid_tank"),
+		M("advanced_fluid_tank"),
+		M("elite_fluid_tank"),
+		M("ultimate_fluid_tank"),
+	])
 
-	event.shaped(M("ultimate_bin"), [
-		'CBC',
-		'ATA',
-		'CCC',
-	], {
-		C: CP("cobblestone_3"),
-		B: M("ultimate_control_circuit"),
-		A: M("alloy_atomic"),
-		T: M("elite_bin")
-	})
+	event.recipes.create.item_application(M("basic_fluid_tank"), [CR("fluid_tank"), M(`basic_tier_installer`)])
+	event.shapeless(M("basic_fluid_tank"), [CR("fluid_tank"), M(`basic_tier_installer`)])
+	event.shapeless(M("advanced_fluid_tank"), [M("basic_fluid_tank"), M(`advanced_tier_installer`)])
+	event.shapeless(M("elite_fluid_tank"), [M("advanced_fluid_tank"), M(`elite_tier_installer`)])
+	event.shapeless(M("ultimate_fluid_tank"), [M("elite_fluid_tank"), M(`ultimate_tier_installer`)])
+
+	//chemical tanks
+	removeRecipeByOutput(event, [
+		M("basic_chemical_tank"),
+		M("advanced_chemical_tank"),
+		M("elite_chemical_tank"),
+		M("ultimate_chemical_tank"),
+	])
+
+	event.recipes.create.item_application(M("basic_chemical_tank"), [M("radioactive_waste_barrel"), M(`basic_tier_installer`)])
+	event.shapeless(M("basic_chemical_tank"), [M("radioactive_waste_barrel"), M(`basic_tier_installer`)])
+	event.shapeless(M("advanced_chemical_tank"), [M("basic_chemical_tank"), M(`advanced_tier_installer`)])
+	event.shapeless(M("elite_chemical_tank"), [M("advanced_chemical_tank"), M(`elite_tier_installer`)])
+	event.shapeless(M("ultimate_chemical_tank"), [M("elite_chemical_tank"), M(`ultimate_tier_installer`)])
+	
+	//cubes
+	removeRecipeByOutput(event, [
+		M("basic_energy_cube"),
+		M("advanced_energy_cube"),
+		M("elite_energy_cube"),
+		M("ultimate_energy_cube"),
+	])
+
+	event.recipes.create.item_application(M("basic_energy_cube"), [MGC("mega_energy_cell"), M(`basic_tier_installer`)])
+	event.shapeless(M("basic_energy_cube"), [MGC("mega_energy_cell"), M(`basic_tier_installer`)])
+	event.shapeless(M("advanced_energy_cube"), [M("basic_energy_cube"), M(`advanced_tier_installer`)])
+	event.shapeless(M("elite_energy_cube"), [M("advanced_energy_cube"), M(`elite_tier_installer`)])
+	event.shapeless(M("ultimate_energy_cube"), [M("elite_energy_cube"), M(`ultimate_tier_installer`)])
 
 	//salt
 	event.shapeless(Item.of(M('salt'), 4), M('block_salt'))
@@ -1024,130 +1029,6 @@ ServerEvents.recipes((event) => {
 		L: MI_C('dye_rainbow'),
 	})
 
-	//basic energy cube
-	removeRecipeByOutput(event, [
-		M("basic_energy_cube"),
-	])
-	event.recipes.extendedcrafting.shaped_table(M("basic_energy_cube"), [
-		'BCHHJHHCB',
-		'CIMGGGMIC',
-		'HMKFFFKMH',
-		'HGFEDEFGH',
-		'JGFDADFGJ',
-		'HGFEDEFGH',
-		'HMLFFFLMH',
-		'CIMGGGMIC',
-		'BCHHJHHCB',
-	], {
-		B: CP('iron_3'),
-		C: CP('diorite_2'),
-		D: M('steel_casing'),
-		E: M('energy_tablet'),
-		F: KJ('ether_gem'),
-		G: M('basic_control_circuit'),
-		H: MC('redstone'),
-		I: F('#storage_blocks/osmium'),
-		J: F('#storage_blocks/steel'),
-		M: P('dielectric_casing'),
-		A: CR_A('capacitor'),
-		K: AE2('energy_cell'),
-		L: AE2('energy_cell'),
-	})
-	event.recipes.mekanism.nucleosynthesizing(MGC("mega_energy_cell"), `6x ${M("antimatter")}`, M("basic_energy_cube"), 60)
-
-	//advanced energy cube
-	removeRecipeByOutput(event, [
-		M("advanced_energy_cube"),
-	])
-	event.recipes.extendedcrafting.shaped_table(M("advanced_energy_cube"), [
-		'BCHHJHHCB',
-		'CIMGGGMIC',
-		'HMKFFFKMH',
-		'HGFEDEFGH',
-		'JGFDADFGJ',
-		'HGFEDEFGH',
-		'HMLFFFLMH',
-		'CIMGGGMIC',
-		'BCHHJHHCB',
-	], {
-		B: CP('gold_3'),
-		C: CP('diorite_2'),
-		D: M('steel_casing'),
-		E: M('energy_tablet'),
-		F: KJ('ether_gem'),
-		G: M('advanced_control_circuit'),
-		H: M('alloy_infused'),
-		I: F('#storage_blocks/osmium'),
-		J: F('#storage_blocks/steel'),
-		M: P('dielectric_casing'),
-		A: M('basic_energy_cube'),
-		K: AE2('dense_energy_cell'),
-		L: AE2('dense_energy_cell'),
-	})
-	event.recipes.mekanism.nucleosynthesizing(M("basic_energy_cube"), `8x ${M("antimatter")}`, M("advanced_energy_cube"), 80)
-
-	//elite energy cube
-	removeRecipeByOutput(event, [
-		M("elite_energy_cube"),
-	])
-	event.recipes.extendedcrafting.shaped_table(M("elite_energy_cube"), [
-		'BCHHJHHCB',
-		'CIMGGGMIC',
-		'HMKFFFKMH',
-		'HGFEDEFGH',
-		'JGFDADFGJ',
-		'HGFEDEFGH',
-		'HMLFFFLMH',
-		'CIMGGGMIC',
-		'BCHHJHHCB',
-	], {
-		B: CP('diamond_3'),
-		C: CP('diorite_2'),
-		D: M('steel_casing'),
-		E: M('energy_tablet'),
-		F: KJ('ether_gem'),
-		G: M('elite_control_circuit'),
-		H: M('alloy_reinforced'),
-		I: F('#storage_blocks/osmium'),
-		J: F('#storage_blocks/steel'),
-		M: P('dielectric_casing'),
-		A: M('advanced_energy_cube'),
-		K: AE2('dense_energy_cell'),
-		L: AE2('dense_energy_cell'),
-	})
-	event.recipes.mekanism.nucleosynthesizing(M("advanced_energy_cube"), `10x ${M("antimatter")}`, M("elite_energy_cube"), 100)
-
-	//ultimate energy cube
-	removeRecipeByOutput(event, [
-		M("ultimate_energy_cube"),
-	])
-	event.recipes.extendedcrafting.shaped_table(M("ultimate_energy_cube"), [
-		'BCHHJHHCB',
-		'CIMGGGMIC',
-		'HMKFFFKMH',
-		'HGFEDEFGH',
-		'JGFDADFGJ',
-		'HGFEDEFGH',
-		'HMLFFFLMH',
-		'CIMGGGMIC',
-		'BCHHJHHCB',
-	], {
-		B: CP('emerald_3'),
-		C: CP('diorite_3'),
-		D: M('steel_casing'),
-		E: M('energy_tablet'),
-		F: KJ('ether_gem'),
-		G: M('ultimate_control_circuit'),
-		H: M('alloy_atomic'),
-		I: CP('osmium_1'),
-		J: CP('steel_1'),
-		M: P('dielectric_casing'),
-		A: M('elite_energy_cube'),
-		K: MGC('mega_energy_cell'),
-		L: MGC('mega_energy_cell'),
-	})
-	event.recipes.mekanism.nucleosynthesizing(M("elite_energy_cube"), `12x ${M("antimatter")}`, M("ultimate_energy_cube"), 120)
-
 	//induction casing
 	removeRecipeByOutput(event, [
 		M("induction_casing"),
@@ -1163,10 +1044,10 @@ ServerEvents.recipes((event) => {
 		'BHHCCCHHB',
 		'BBBBGBBBB',
 	], {
-		A: M('energy_tablet'),
+		A: M('steel_casing'),
 		B: M('hdpe_sheet'),
 		C: F('#storage_blocks/steel'),
-		D: M('steel_casing'),
+		D: M('energy_tablet'),
 		E: M('energy_tablet'),
 		F: F('#dusts/lithium'),
 		G: M('ultimate_universal_cable'),
@@ -1188,19 +1069,18 @@ ServerEvents.recipes((event) => {
 		'BKIGGGIKB',
 		'BBHHJHHBB',
 	], {
-		B: MC('redstone_block'),
-		H: CP('steel_1'),
+		B: MC('redstone'),
+		H: F('#storage_blocks/steel'),
 		J: EC('flux_star'),
-		I: CP('osmium_1'),
+		I: F('#storage_blocks/osmium'),
 		G: M('basic_control_circuit'),
-		D: MGC('mega_energy_cell'),
-		E: M('steel_casing'),
+		D: M('energy_tablet'),
+		E: singularityId('charged_certus_quartz'),
 		F: F('#dusts/lithium'),
-		A: M('ultimate_energy_cube'),
+		A: M('basic_energy_cube'),
 		K: M('hdpe_sheet'),
 		L: M('energy_tablet'),
 	})
-	event.recipes.mekanism.nucleosynthesizing(M("ultimate_energy_cube"), `14x ${M("antimatter")}`, M("basic_induction_cell"), 140)
 
 	//advanced induction cell
 	removeRecipeByOutput(event, [
@@ -1217,19 +1097,18 @@ ServerEvents.recipes((event) => {
 		'BKIGGGIKB',
 		'BBHHJHHBB',
 	], {
-		B: CP('redstone_1'),
-		H: CP('steel_1'),
+		B: M('alloy_infused'),
+		H: F('#storage_blocks/steel'),
 		J: EC('flux_star'),
-		I: CP('osmium_1'),
+		I: F('#storage_blocks/osmium'),
 		G: M('advanced_control_circuit'),
-		D: MGC('mega_energy_cell'),
-		E: M('steel_casing'),
-		F: F('#dusts/lithium'),
-		A: M('basic_induction_cell'),
+		D: M("basic_induction_cell"),
+		E: singularityId('charged_certus_quartz'),
+		F: M('energy_tablet'),
+		A: M('advanced_energy_cube'),
 		K: M('hdpe_sheet'),
 		L: M('energy_tablet'),
 	})
-	event.recipes.mekanism.nucleosynthesizing(M("basic_induction_cell"), `16x ${M("antimatter")}`, M("advanced_induction_cell"), 160)
 
 	//elite induction cell
 	removeRecipeByOutput(event, [
@@ -1246,19 +1125,18 @@ ServerEvents.recipes((event) => {
 		'BKIGGGIKB',
 		'BBHHJHHBB',
 	], {
-		B: CP('redstone_2'),
-		H: CP('steel_1'),
+		B: M('alloy_reinforced'),
+		H: F('#storage_blocks/steel'),
 		J: EC('flux_star'),
-		I: CP('osmium_1'),
+		I: F('#storage_blocks/osmium'),
 		G: M('elite_control_circuit'),
-		D: MGC('mega_energy_cell'),
-		E: M('steel_casing'),
-		F: F('#dusts/lithium'),
-		A: M('advanced_induction_cell'),
+		D: M("advanced_induction_cell"),
+		E: singularityId('charged_certus_quartz'),
+		F: M('energy_tablet'),
+		A: M('elite_energy_cube'),
 		K: M('hdpe_sheet'),
 		L: M('energy_tablet'),
 	})
-	event.recipes.mekanism.nucleosynthesizing(M("advanced_induction_cell"), `18x ${M("antimatter")}`, M("elite_induction_cell"), 180)
 
 	//ultimate induction cell
 	removeRecipeByOutput(event, [
@@ -1275,19 +1153,18 @@ ServerEvents.recipes((event) => {
 		'BKIGGGIKB',
 		'BBHHJHHBB',
 	], {
-		B: CP('redstone_3'),
-		H: CP('steel_1'),
+		B: M('alloy_atomic'),
+		H: F('#storage_blocks/steel'),
 		J: EC('flux_star'),
-		I: CP('osmium_1'),
+		I: F('#storage_blocks/osmium'),
 		G: M('ultimate_control_circuit'),
-		D: MGC('mega_energy_cell'),
-		E: M('steel_casing'),
-		F: F('#dusts/lithium'),
-		A: M('elite_induction_cell'),
+		D: M("elite_induction_cell"),
+		E: singularityId('charged_certus_quartz'),
+		F: M('energy_tablet'),
+		A: M('ultimate_energy_cube'),
 		K: M('hdpe_sheet'),
 		L: M('energy_tablet'),
 	})
-	event.recipes.mekanism.nucleosynthesizing(M("elite_induction_cell"), `20x ${M("antimatter")}`, M("ultimate_induction_cell"), 200)
 
 	//basic induction provider
 	removeRecipeByOutput(event, [
@@ -1304,15 +1181,15 @@ ServerEvents.recipes((event) => {
 		'BKIGGGIKB',
 		'BBHHJHHBB',
 	], {
-		B: MC('redstone_block'),
-		H: CP('steel_1'),
+		B: MC('redstone'),
+		H: F('#storage_blocks/steel'),
 		J: M('basic_universal_cable'),
-		I: CP('osmium_1'),
+		I: F('#storage_blocks/osmium'),
 		G: M('basic_control_circuit'),
-		D: MGC('mega_energy_cell'),
-		E: M('steel_casing'),
+		D: M('energy_tablet'),
+		E: singularityId('laser_node'),
 		F: F('#dusts/lithium'),
-		A: M('ultimate_energy_cube'),
+		A: M('basic_energy_cube'),
 		K: M('hdpe_sheet'),
 		L: M('energy_tablet'),
 	})
@@ -1332,19 +1209,18 @@ ServerEvents.recipes((event) => {
 		'BKIGGGIKB',
 		'BBHHJHHBB',
 	], {
-		B: CP('redstone_1'),
-		H: CP('steel_1'),
-		J: M('advanced_universal_cable'),
-		I: CP('osmium_1'),
+		B: M('alloy_infused'),
+		H: F('#storage_blocks/steel'),
+		J: M('advanced_universal_cable'), //
+		I: F('#storage_blocks/osmium'),
 		G: M('advanced_control_circuit'),
-		D: MGC('mega_energy_cell'),
-		E: M('steel_casing'),
-		F: F('#dusts/lithium'),
-		A: M('basic_induction_provider'),
+		D: M("basic_induction_provider"), //
+		E: singularityId('laser_node'), //
+		F: M('energy_tablet'),
+		A: M('advanced_energy_cube'),
 		K: M('hdpe_sheet'),
 		L: M('energy_tablet'),
 	})
-	event.recipes.mekanism.nucleosynthesizing(M("basic_induction_provider"), `16x ${M("antimatter")}`, M("advanced_induction_provider"), 160)
 
 	//elite induction provider
 	removeRecipeByOutput(event, [
@@ -1361,19 +1237,18 @@ ServerEvents.recipes((event) => {
 		'BKIGGGIKB',
 		'BBHHJHHBB',
 	], {
-		B: CP('redstone_2'),
-		H: CP('steel_1'),
+		B: M('alloy_reinforced'),
+		H: F('#storage_blocks/steel'),
 		J: M('elite_universal_cable'),
-		I: CP('osmium_1'),
+		I: F('#storage_blocks/osmium'),
 		G: M('elite_control_circuit'),
-		D: MGC('mega_energy_cell'),
-		E: M('steel_casing'),
-		F: F('#dusts/lithium'),
-		A: M('advanced_induction_provider'),
+		D: M("advanced_induction_provider"),
+		E: singularityId('laser_node'),
+		F: M('energy_tablet'),
+		A: M('elite_energy_cube'),
 		K: M('hdpe_sheet'),
 		L: M('energy_tablet'),
 	})
-	event.recipes.mekanism.nucleosynthesizing(M("advanced_induction_provider"), `18x ${M("antimatter")}`, M("elite_induction_provider"), 180)
 
 	//ultimate induction provider
 	removeRecipeByOutput(event, [
@@ -1390,19 +1265,18 @@ ServerEvents.recipes((event) => {
 		'BKIGGGIKB',
 		'BBHHJHHBB',
 	], {
-		B: CP('redstone_3'),
-		H: CP('steel_1'),
+		B: M('alloy_atomic'),
+		H: F('#storage_blocks/steel'),
 		J: M('ultimate_universal_cable'),
-		I: CP('osmium_1'),
+		I: F('#storage_blocks/osmium'),
 		G: M('ultimate_control_circuit'),
-		D: MGC('mega_energy_cell'),
-		E: M('steel_casing'),
-		F: F('#dusts/lithium'),
-		A: M('elite_induction_provider'),
+		D: M("elite_induction_provider"),
+		E: singularityId('laser_node'),
+		F: M('energy_tablet'),
+		A: M('ultimate_energy_cube'),
 		K: M('hdpe_sheet'),
 		L: M('energy_tablet'),
 	})
-	event.recipes.mekanism.nucleosynthesizing(M("elite_induction_provider"), `20x ${M("antimatter")}`, M("ultimate_induction_provider"), 200)
 
 	//thermal evaporation block
 	removeRecipeByOutput(event, [
@@ -1837,29 +1711,6 @@ ServerEvents.recipes((event) => {
 		K: M("hdpe_sheet"),
 		L: M("hdpe_sheet"),
 	})
-
-	//radioactive waste barrel
-	removeRecipeByOutput(event, [
-		M("radioactive_waste_barrel"),
-	])
-	event.recipes.extendedcrafting.shaped_table(M("radioactive_waste_barrel"), [
-		'BBBBBBBBB',
-		'BGGGGGGGB',
-		'BGFFFFFGB',
-		'BGFEDEFGB',
-		'BGFDADFGB',
-		'BGFEDEFGB',
-		'BGFFFFFGB',
-		'BGGGGGGGB',
-		'BBBBBBBBB',
-	], {
-		D: M('hdpe_sheet'),
-		E: M('hdpe_sheet'),
-		F: CP('osmium_1'),
-		G: CP('steel_1'),
-		B: CP('lead_1'),
-		A: M('ultimate_chemical_tank'),
-	})
 	
 	//security desk
 	removeRecipeByOutput(event, [
@@ -1932,7 +1783,7 @@ ServerEvents.recipes((event) => {
 	], {
 		B: F('#storage_blocks/steel'),
 		H: M('alloy_atomic'),
-		G: CP('emerald_3'),
+		G: CP('diamond_3'),
 		I: M('ultimate_control_circuit'),
 		D: AE2('controller'),
 		E: MG("fusion_reactor_frame"),

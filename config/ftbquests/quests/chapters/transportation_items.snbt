@@ -48,7 +48,7 @@
 				type: "item"
 			}]
 			x: -16.5d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["004C4541D2BADE41"]
@@ -62,7 +62,7 @@
 				type: "item"
 			}]
 			x: -16.5d
-			y: 4.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["51F58BA6A364DF25"]
@@ -76,7 +76,7 @@
 				type: "item"
 			}]
 			x: -16.5d
-			y: 6.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["795A1FF4C30FF9E0"]
@@ -90,7 +90,7 @@
 				type: "item"
 			}]
 			x: -16.5d
-			y: 7.5d
+			y: 9.0d
 		}
 		{
 			disable_toast: true
@@ -181,11 +181,11 @@
 				type: "item"
 			}]
 			title: "Reversed Zinc Hopper"
-			x: -18.0d
-			y: 3.0d
+			x: -19.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["3C111B831C75AA55"]
+			dependencies: ["03592A32F39AF315"]
 			disable_toast: true
 			id: "0E3ED6FADB044138"
 			size: 1.0d
@@ -196,7 +196,7 @@
 			}]
 			title: "Item Pipe"
 			x: -16.5d
-			y: 1.5d
+			y: 3.0d
 		}
 		{
 			disable_toast: true
@@ -220,7 +220,66 @@
 				type: "item"
 			}]
 			x: -15.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3C111B831C75AA55"]
+			disable_toast: true
+			id: "03592A32F39AF315"
+			tasks: [{
+				id: "1C18371CB8E14F96"
+				item: "enderio:item_conduit"
+				type: "item"
+			}]
+			x: -16.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["50A55FFC9014A936"]
+			disable_toast: true
+			id: "1B106BB0ED486B7C"
+			tasks: [{
+				id: "2B02336271B64E99"
+				item: "mekanism_extras:absolute_logistical_transporter"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1B106BB0ED486B7C"]
+			disable_toast: true
+			id: "3D15031737FC2517"
+			tasks: [{
+				id: "74C8D91F2C46D5F1"
+				item: "mekanism_extras:supreme_logistical_transporter"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["3D15031737FC2517"]
+			disable_toast: true
+			id: "36F1B626ACC42F2B"
+			tasks: [{
+				id: "74324DCAD73A6DC7"
+				item: "mekanism_extras:cosmic_logistical_transporter"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["36F1B626ACC42F2B"]
+			id: "5429250762DDC2F4"
+			tasks: [{
+				id: "483D4B0CB33BF808"
+				item: "mekanism_extras:infinite_logistical_transporter"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 15.0d
 		}
 	]
 	title: "Item Transportation"

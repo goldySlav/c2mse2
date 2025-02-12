@@ -186,4 +186,7 @@ StartupEvents.registry('item', event => {
 	
 	//summoning doll
 	event.create('summoning_doll').displayName('Summoning Doll').rarity("uncommon")
+	
+	//preserved explosion
+	event.create('preserved_explosion').displayName('Preserved Explosion').rarity("epic")
 });

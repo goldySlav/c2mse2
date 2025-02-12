@@ -22,10 +22,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"634AF89DCADA4875"
-				"4DC6F2BECBCE719B"
-			]
+			dependencies: ["634AF89DCADA4875"]
 			icon: "mekanism:radioactive_waste_barrel"
 			id: "4007FAAE27EAB13B"
 			size: 1.0d
@@ -34,8 +31,8 @@
 				title: "End Chapter"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 10.5d
+			x: -0.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["6B767ADA3BB83EFC"]
@@ -147,29 +144,8 @@
 				}
 			]
 			title: "Build \"Induction Matrix\""
-			x: 0.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["24CF370CA33E4015"]
-			icon: "mekanism:radioactive_waste_barrel"
-			id: "4DC6F2BECBCE719B"
-			size: 1.0d
-			tasks: [
-				{
-					id: "25F7968E4B054900"
-					item: "mekanism:radioactive_waste_barrel"
-					type: "item"
-				}
-				{
-					id: "570B4663B7322494"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
-			title: "Produce \"Nuclear Waste\""
-			x: -2.5d
-			y: 6.0d
+			x: -0.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["49B703AEB8618033"]

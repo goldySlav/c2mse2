@@ -482,6 +482,18 @@
 			x: 16.0d
 			y: 8.0d
 		}
+		{
+			dependencies: ["6C108DBDA6B2A44B"]
+			id: "487FD75522A99D1C"
+			shape: "circle"
+			tasks: [{
+				id: "4D0B5C4E6F94AF1F"
+				item: "pipez:infinity_upgrade"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 11.0d
+		}
 	]
 	title: "15. GOD"
 }

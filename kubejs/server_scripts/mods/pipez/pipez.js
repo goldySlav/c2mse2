@@ -19,9 +19,9 @@ ServerEvents.recipes((event) => {
     ])
 
     //pipez
-    donutCraftFull(event, Item.of(PZ("item_pipe"), 8), PP("pipe"), KJ("blank_upgrade"))
-    donutCraftFull(event, Item.of(PZ("fluid_pipe"), 8), CR("fluid_pipe"), KJ("blank_upgrade"))
-    donutCraftFull(event, Item.of(PZ("energy_pipe"), 8), AE2('fluix_glass_cable'), KJ("blank_upgrade"))
+    donutCraftFull(event, Item.of(PZ("item_pipe"), 8), EIO("item_conduit"), KJ("blank_upgrade"))
+    donutCraftFull(event, Item.of(PZ("fluid_pipe"), 8), EIO("fluid_conduit"), KJ("blank_upgrade"))
+    donutCraftFull(event, Item.of(PZ("energy_pipe"), 8), EIO('energy_conduit'), KJ("blank_upgrade"))
 
     //upgrades
     donutCraftFull(event, PZ("basic_upgrade"), CP("iron_1"), KJ("blank_upgrade"))

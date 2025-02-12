@@ -204,16 +204,16 @@ ServerEvents.recipes((event) => {
 	})
 	
 	//conduits
-	donutCraftFull(event, Item.of(EIO("me_conduit"), 1), EIO("conduit_binder"), AE2("#glass_cable"))
-	donutCraftFull(event, Item.of(EIO("me_conduit"), 1), EIO("conduit_binder"), AE2("#covered_cable"))
-	donutCraftFull(event, Item.of(EIO("dense_me_conduit"), 1), EIO("conduit_binder"), AE2("#covered_dense_cable"))
-	donutCraftFull(event, Item.of(EIO("item_conduit"), 1), EIO("conduit_binder"), PP("pipe"))
-	donutCraftFull(event, Item.of(EIO("redstone_conduit"), 1), EIO("conduit_binder"), PR_T("red_alloy_wire"))
-	donutCraftFull(event, Item.of(EIO("energy_conduit"), 1), EIO("conduit_binder"), P("energy_cable_basic"))
-	donutCraftFull(event, Item.of(EIO("fluid_conduit"), 1), EIO("conduit_binder"), CR("fluid_pipe"))
-	donutCraftFull(event, Item.of(EIO("chemical_conduit"), 1), EIO("conduit_binder"), M("basic_pressurized_tube"))
+	donutCraftFull(event, Item.of(EIO("me_conduit"), 8), AE2("#glass_cable"), EIO("conduit_binder"))
+	donutCraftFull(event, Item.of(EIO("me_conduit"), 8), AE2("#covered_cable"), EIO("conduit_binder"))
+	donutCraftFull(event, Item.of(EIO("dense_me_conduit"), 8), AE2("#covered_dense_cable"), EIO("conduit_binder"))
+	donutCraftFull(event, Item.of(EIO("item_conduit"), 8), PP("pipe"), EIO("conduit_binder"))
+	donutCraftFull(event, Item.of(EIO("redstone_conduit"), 8), PR_T("red_alloy_wire"), EIO("conduit_binder"))
+	donutCraftFull(event, Item.of(EIO("energy_conduit"), 8), P("energy_cable_basic"), EIO("conduit_binder"))
+	donutCraftFull(event, Item.of(EIO("fluid_conduit"), 8), CR("fluid_pipe"), EIO("conduit_binder"))
+	donutCraftFull(event, Item.of(EIO("chemical_conduit"), 8), M("basic_pressurized_tube"), EIO("conduit_binder"))
 	
-	event.recipes.extendedcrafting.shaped_table(Item.of(EIO("pressurized_fluid_conduit"), 1),
+	event.recipes.extendedcrafting.shaped_table(Item.of(EIO("pressurized_fluid_conduit"), 8),
 		[
 			"CCCCC",
 			"CBBBC",
@@ -221,13 +221,13 @@ ServerEvents.recipes((event) => {
 			"CBBBC",
 			"CCCCC",
 		], {
-			A: EIO("fluid_conduit"),
-			B: tieredItems.ch2.mat,
+			A: tieredItems.ch2.mat,
+			B: EIO("fluid_conduit"),
 			C: EIO("conduit_binder"),
 		}
 	)
 	
-	event.recipes.extendedcrafting.shaped_table(Item.of(EIO("ender_fluid_conduit"), 1),
+	event.recipes.extendedcrafting.shaped_table(Item.of(EIO("ender_fluid_conduit"), 8),
 		[
 			"CCCCC",
 			"CBBBC",
@@ -235,13 +235,13 @@ ServerEvents.recipes((event) => {
 			"CBBBC",
 			"CCCCC",
 		], {
-			A: EIO("pressurized_fluid_conduit"),
-			B: tieredItems.ch3.mat,
+			A: tieredItems.ch3.mat,
+			B: EIO("pressurized_fluid_conduit"),
 			C: EIO("conduit_binder"),
 		}
 	)
 	
-	event.recipes.extendedcrafting.shaped_table(Item.of(EIO("pressurized_chemical_conduit"), 1),
+	event.recipes.extendedcrafting.shaped_table(Item.of(EIO("pressurized_chemical_conduit"), 8),
 		[
 			"CCCCC",
 			"CBBBC",
@@ -249,8 +249,8 @@ ServerEvents.recipes((event) => {
 			"CBBBC",
 			"CCCCC",
 		], {
-			A: EIO("chemical_conduit"),
-			B: tieredItems.ch2.mat,
+			A: tieredItems.ch2.mat,
+			B: EIO("chemical_conduit"),
 			C: EIO("conduit_binder"),
 		}
 	)
@@ -263,8 +263,8 @@ ServerEvents.recipes((event) => {
 			"CBBBC",
 			"CCCCC",
 		], {
-			A: EIO("pressurized_chemical_conduit"),
-			B: tieredItems.ch3.mat,
+			A: tieredItems.ch3.mat,
+			B: EIO("pressurized_chemical_conduit"),
 			C: EIO("conduit_binder"),
 		}
 	)
@@ -277,8 +277,8 @@ ServerEvents.recipes((event) => {
 			"CBBBC",
 			"CCCCC",
 		], {
-			A: M("advanced_thermodynamic_conductor"),
-			B: tieredItems.ch3.mat,
+			A: tieredItems.ch3.mat,
+			B: M("advanced_thermodynamic_conductor"),
 			C: EIO("conduit_binder"),
 		}
 	)
@@ -375,7 +375,7 @@ ServerEvents.recipes((event) => {
 		A: MC("gravel"),
 		B: MC("clay"),
 		C: F("#sand"),
-		D: P("dielectric_paste"),
+		D: tieredItems.ch3.circuit,
 	})
 	
 })

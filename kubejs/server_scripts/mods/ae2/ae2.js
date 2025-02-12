@@ -202,6 +202,9 @@ ServerEvents.recipes((event) => {
 		event.recipes.mekanism.metallurgic_infusing(procWaferId, brokenWaferId, `80x ${KJ("waste")}`)
 	})
 	
+	//quantum entangled singularity
+	event.recipes.mekanism.metallurgic_infusing(Item.of(AE2("quantum_entangled_singularity"), 2), AE2("singularity"), `20x ${KJ("explosion_essence")}`)
+	
 	//sky dust from cloud
 	customRecipes.create.vacuumizing(event, [AE2("sky_dust")], [AP("gem_dust"), MC('gunpowder'), Q("bottled_cloud")], 80)
 

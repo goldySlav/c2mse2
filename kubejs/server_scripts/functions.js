@@ -31,6 +31,7 @@ const RTB = (id, x) => MOD("rftoolsbase", id, x)
 const TM = (id, x) => MOD("torchmaster", id, x)
 const M = (id, x) => MOD("mekanism", id, x)
 const MG = (id, x) => MOD("mekanismgenerators", id, x)
+const M_E = (id, x) => MOD("mekanism_extras", id, x)
 const WH = (id, x) => MOD("woodenhopper", id, x)
 const CG = (id, x) => MOD("cobblefordays", id, x)
 const CP = (id, x) => MOD("compressium", id, x)
@@ -752,6 +753,24 @@ const customRecipes = {
 				output: {
 					amount: gasAmount,
 					gas: gasId,
+				}
+			})
+		},
+		painting: function(event, outputId, inputId, pigmentColor, pigmentAmount) {
+			pigmentAmount = pigmentAmount ? pigmentAmount : 128
+			event.custom({
+				type: M("painting"),
+				chemicalInput: {
+					amount: pigmentAmount,
+					pigment: M(pigmentColor)
+				},
+				itemInput: {
+					ingredient: {
+						item: inputId
+					}
+				},
+				output: {
+					item: outputId
 				}
 			})
 		},

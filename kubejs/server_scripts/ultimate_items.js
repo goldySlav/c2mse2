@@ -17,7 +17,8 @@ ServerEvents.recipes(event => {
 		F("#ingots/draconium_awakened"), F("#ingots/draconium"), F("#ingots/enhanced_redstone_ingot"), F("#ingots/ender_ingot"), 
 		F("#ingots/enhanced_ender_ingot"), IF("pink_slime_ingot"), F("#ingots/sky_steel"), F("#ingots/bronze"), F("#ingots/steel"), 
 		F("#ingots/refined_obsidian"), F("#ingots/refined_glowstone"), F("#ingots/osmium"), F("#ingots/tin"), F("#ingots/lead"), 
-		F("#ingots/uranium"), F("#ingots/unstable"), F("#ingots/red_alloy"), AV("crystal_matrix_ingot"), AV("neutronium_ingot"),
+		F("#ingots/uranium"), F("#ingots/naquadah"), F("#ingots/unstable"), F("#ingots/red_alloy"), AV("crystal_matrix_ingot"),
+		AV("neutronium_ingot"), 
 	]).id(KJ(`${EC()}/the_ultimate_ingot`)).tier(5)
 
 	//the ultimate pearl
@@ -87,8 +88,8 @@ ServerEvents.recipes(event => {
 		F("#dusts/diamond"), F("#dusts/draconium"), F("#dusts/grains_of_infinity"), F("#dusts/flux"), F("#dusts/fluorite"), AE2_A("quantum_infused_dust"),
 		F("#dusts/netherite"), F("#dusts/charcoal"), F("#dusts/sulfur"), F("#dusts/bronze"), F("#dusts/lapis"), F("#dusts/quartz"), F("#dusts/emerald"),
 		F("#dusts/steel"), F("#dusts/refined_obsidian"), F("#dusts/iron"), F("#dusts/gold"), F("#dusts/osmium"), F("#dusts/copper"), F("#dusts/tin"),
-		F("#dusts/lead"), F("#dusts/uranium"), F("#dusts/lithium"), PRE("low_covalence_dust"), PRE("medium_covalence_dust"), PRE("high_covalence_dust"), 
-		F("#dusts/tungsten"), F("#dusts/zinc"), AP("gem_dust"),
+		F("#dusts/lead"), F("#dusts/uranium"), F("#dusts/naquadah"), F("#dusts/radiance"), F("#dusts/lithium"), PRE("low_covalence_dust"),
+		PRE("medium_covalence_dust"), PRE("high_covalence_dust"), F("#dusts/tungsten"), F("#dusts/zinc"), AP("gem_dust"),
 	]).tier(5).id(KJ('the_ultimate_dust'))
 
 	//the ultimate shard
@@ -202,15 +203,15 @@ ServerEvents.recipes(event => {
 	creativeItemMix(event, P("energy_cell_creative"), P("energy_cell_nitro"))
 	
 	//mekanism
-	creativeItemMix(event, M("creative_fluid_tank"), M("ultimate_fluid_tank"))
-	creativeItemMix(event, M("creative_chemical_tank"), M("ultimate_chemical_tank"))
-	creativeItemMix(event, M("creative_bin"), M("ultimate_bin"))
+	creativeItemMix(event, M("creative_fluid_tank"), M_E("infinite_fluid_tank"))
+	creativeItemMix(event, M("creative_chemical_tank"), M_E("infinite_chemical_tank"))
+	creativeItemMix(event, M("creative_bin"), M_E("infinite_bin"))
 	event.recipes.create.mixing(
 		[ 
 			Item.of(M('creative_energy_cube'), '{mekData:{EnergyContainers:[{Container:0b,stored:"18446744073709551615.9999"}],componentConfig:{config0:{side0:4,side1:4,side2:4,side3:4,side4:4,side5:4}}}}'),
 			WSM("withered_nether_star"),
 		], [
-			PREXP("final_star"), M("ultimate_energy_cube"), WSM("withered_nether_star"),
+			PREXP("final_star"), M_E("infinite_energy_cube"), WSM("withered_nether_star"),
 		],
 	).superheated()
 	
@@ -234,4 +235,7 @@ ServerEvents.recipes(event => {
 	
 	//CM
 	creativeItemMix(event, CM("creative_upgrade"), CM("speed_iii_upgrade"))
+	
+	//infinity pipe upgrade (@pipez)
+	creativeItemMix(event, PZ("infinity_upgrade"), PZ("ultimate_upgrade"))
 })

@@ -537,6 +537,56 @@ ServerEvents.recipes((event) => {
 	
 	
 	
+	//preserved explosion
+	event.custom({
+		type: AE2_A("reaction"),
+		energy: 1500000,
+	    fluid: {
+			fluidStack: {
+				Amount: 16000,
+				FluidName: MC("water")
+			}
+		},
+		input_items: [
+			{
+				amount: 16,
+				ingredient: {
+					item: MC("tnt")
+				}
+			},
+		],
+		output: {
+			"#": 64,
+			"#c": "ae2:i",
+			id: KJ("preserved_explosion"),
+		}
+	})
+	event.custom({
+		type: AE2_A("reaction"),
+		energy: 1500000,
+	    fluid: {
+			fluidStack: {
+				Amount: 16000,
+				FluidName: MC("water")
+			}
+		},
+		input_items: [
+			{
+				amount: 32,
+				ingredient: {
+					item: AE2("tiny_tnt")
+				}
+			},
+		],
+		output: {
+			"#": 64,
+			"#c": "ae2:i",
+			id: KJ("preserved_explosion"),
+		}
+	})
+	
+	
+	
 	//ae2-type seeds
 	event.stonecutting(Item.of(KJ('certus_seed'), 2), F('#gems/certus_quartz'))
 	event.stonecutting(Item.of(KJ('quartz_seed'), 2), F('#gems/quartz'))
@@ -595,6 +645,9 @@ ServerEvents.recipes((event) => {
 		customRecipes.create.vacuumizing(event, [KJ("dye_entangled_singularity")], [dye, AE2('quantum_entangled_singularity')], 20)
 		event.recipes.mekanismCombining(KJ("dye_entangled_singularity"), AE2('quantum_entangled_singularity'), dye)
 	})
+	colours.forEach(color => {
+		customRecipes.mekanism.painting(event, KJ("dye_entangled_singularity"), AE2("quantum_entangled_singularity"), color)
+	})
 	
 	
 	
@@ -610,6 +663,8 @@ ServerEvents.recipes((event) => {
 	customRecipes.mekanism.infusion_conversion(event, KJ("waste"), 40, AE2("yellow_paint_ball"))
 	customRecipes.mekanism.infusion_conversion(event, KJ("waste"), 50, AE2("red_paint_ball"))
 	customRecipes.mekanism.infusion_conversion(event, KJ("waste"), 80, KJ("dye_entangled_singularity"))
+
+	customRecipes.mekanism.infusion_conversion(event, KJ("explosion_essence"), 80, KJ("preserved_explosion"))
 	
 	
 	
@@ -1097,6 +1152,7 @@ console.log(`[mechanisms] liquid mB: ${liquidForMatrix}, matrix: ${mechForMatrix
 	copper_machine(EC('crafting_core'), 1, MC('crafting_table'))
 	copper_machine(EC('pedestal'), 1)
 	copper_machine(CR('steam_engine'), 1, CR('hand_crank'))
+	copper_machine(CR_DD('hydraulic_press'), 1, CR("mechanical_press"))
 	
 	//brass machine
 	event.shaped(KJ('brass_machine'), [
@@ -1138,7 +1194,7 @@ console.log(`[mechanisms] liquid mB: ${liquidForMatrix}, matrix: ${mechForMatrix
 	brass_machine(PP('crafting_terminal'), 1, PP('item_terminal'))
 	brass_machine(PP('pressurizer'), 1, CR('propeller'))
 	brass_machine(CR_A("tesla_coil"), 1, AE2("charger"))
-	brass_machine(AA("compressor"), 1, CR("mechanical_press"))
+	brass_machine(AA("compressor"), 1, CR_DD('hydraulic_press'))
 	brass_machine(P('energy_cell_basic'), 1, P('battery_basic'))
 	brass_machine(P('ender_cell_basic'), 1, P('ender_cell_starter'))
 	brass_machine(P('energizing_rod_basic'), 1, P('energizing_rod_starter'))
@@ -1180,7 +1236,6 @@ console.log(`[mechanisms] liquid mB: ${liquidForMatrix}, matrix: ${mechForMatrix
 	inductive_machine(IF('item_transporter_type'), 2)
 	inductive_machine(IF('fluid_transporter_type'), 2)
 	inductive_machine(IF('world_transporter_type'), 2)
-	inductive_machine(KJ('blank_upgrade'), 2)
 	inductive_machine(P('energy_cell_hardened'), 1, P('battery_hardened'))
 	inductive_machine(P('ender_cell_hardened'), 1, P('ender_cell_basic'))
 	inductive_machine(P('energizing_rod_hardened'), 1, P('energizing_rod_basic'))
@@ -1252,6 +1307,7 @@ console.log(`[mechanisms] liquid mB: ${liquidForMatrix}, matrix: ${mechForMatrix
 	fluix_machine(AE2('controller'), 1)
 	fluix_machine(LIO('laser_node'), 2, CR_V("laser_item"))
 	fluix_machine(EIO("double_layer_capacitor"), 1, EIO('basic_capacitor'))
+	fluix_machine(KJ('blank_upgrade'), 2)
 	
 	//abstruse machine
 	event.shaped(KJ('abstruse_machine'), [

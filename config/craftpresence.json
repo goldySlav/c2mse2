@@ -118,7 +118,7 @@
       "isInstance": false,
       "activityType": 0,
       "partyPrivacy": 1,
-      "details": "C2M: Sky Edition 2 v0.6.9",
+      "details": "C2M: Sky Edition 2 v0.6.10",
       "gameState": "{getOrDefault(server.message)}",
       "largeImageKey": "https://mc-heads.net/avatar/{getOrDefault(player.uuid.short, player.name)}",
       "largeImageText": "{player.name}",

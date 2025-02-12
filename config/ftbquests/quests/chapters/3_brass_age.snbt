@@ -582,7 +582,10 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["2EAEF08EBE9F97E8"]
+			dependencies: [
+				"2EAEF08EBE9F97E8"
+				"1E9D9B683C14E688"
+			]
 			description: [
 				"Spit on it with water and it shall &6&lGROW&r&r."
 				""

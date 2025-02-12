@@ -19,7 +19,7 @@
 				item: "create:fluid_pipe"
 				type: "item"
 			}]
-			x: -9.0d
+			x: -8.5d
 			y: 0.0d
 		}
 		{
@@ -33,7 +33,7 @@
 				item: "create:smart_fluid_pipe"
 				type: "item"
 			}]
-			x: -9.5d
+			x: -10.0d
 			y: 1.5d
 		}
 		{
@@ -48,7 +48,7 @@
 				type: "item"
 			}]
 			x: -8.5d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["0E919CF3F726D50E"]
@@ -62,7 +62,7 @@
 				type: "item"
 			}]
 			x: -8.5d
-			y: 4.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2DD32484A04FF458"]
@@ -76,7 +76,7 @@
 				type: "item"
 			}]
 			x: -8.5d
-			y: 6.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["75C0B1F4C0651A6F"]
@@ -90,7 +90,7 @@
 				type: "item"
 			}]
 			x: -8.5d
-			y: 7.5d
+			y: 9.0d
 		}
 		{
 			disable_toast: true
@@ -102,7 +102,7 @@
 				item: "xnet:controller"
 				type: "item"
 			}]
-			x: -12.0d
+			x: -11.5d
 			y: 0.0d
 		}
 		{
@@ -115,7 +115,7 @@
 				item: "create:portable_fluid_interface"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.0d
 			y: 0.0d
 		}
 		{
@@ -128,7 +128,7 @@
 				item: "industrialforegoing:fluid_transporter_type"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -5.5d
 			y: 0.0d
 		}
 		{
@@ -142,11 +142,11 @@
 				type: "item"
 			}]
 			title: "Fluid Hopper"
-			x: -10.5d
+			x: -10.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["64B39EE5BBB2DCC1"]
+			dependencies: ["16D0CEB000070BFC"]
 			id: "05E2A70FEDF3E8A3"
 			size: 1.0d
 			tasks: [{
@@ -155,7 +155,7 @@
 				type: "item"
 			}]
 			x: -8.5d
-			y: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["05E2A70FEDF3E8A3"]
@@ -166,8 +166,91 @@
 				item: "pipez:universal_pipe"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["64B39EE5BBB2DCC1"]
+			disable_toast: true
+			id: "16D0CEB000070BFC"
+			tasks: [{
+				id: "772C16EF7467A167"
+				item: "enderio:fluid_conduit"
+				type: "item"
+			}]
+			x: -8.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["16D0CEB000070BFC"]
+			disable_toast: true
+			id: "4CE0D241659579FB"
+			tasks: [{
+				id: "1FA44B83E9100CA5"
+				item: "enderio:pressurized_fluid_conduit"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4CE0D241659579FB"]
+			disable_toast: true
+			id: "4E30AD0EE56A76AB"
+			tasks: [{
+				id: "6381690077723B19"
+				item: "enderio:ender_fluid_conduit"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["392E5BF9BDD147FC"]
+			disable_toast: true
+			id: "1AC37FF49CCB2671"
+			tasks: [{
+				id: "432F0734895DE122"
+				item: "mekanism_extras:absolute_mechanical_pipe"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1AC37FF49CCB2671"]
+			disable_toast: true
+			id: "49194262773305AC"
+			tasks: [{
+				id: "006257795BF89A96"
+				item: "mekanism_extras:supreme_mechanical_pipe"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["49194262773305AC"]
+			disable_toast: true
+			id: "07A59AE7F46026FF"
+			tasks: [{
+				id: "41CC7D36B9B44870"
+				item: "mekanism_extras:cosmic_mechanical_pipe"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["07A59AE7F46026FF"]
+			id: "18809BFB60995B76"
+			tasks: [{
+				id: "3E3BCB1BB4A4C23D"
+				item: "mekanism_extras:infinite_mechanical_pipe"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 15.0d
 		}
 	]
 	title: "Fluid Transportation"
