@@ -1187,7 +1187,7 @@ ServerEvents.recipes((event) => {
 		I: F('#storage_blocks/osmium'),
 		G: M('basic_control_circuit'),
 		D: M('energy_tablet'),
-		E: singularityId('laser_node'),
+		E: singularityId('fluix'),
 		F: F('#dusts/lithium'),
 		A: M('basic_energy_cube'),
 		K: M('hdpe_sheet'),
@@ -1215,7 +1215,7 @@ ServerEvents.recipes((event) => {
 		I: F('#storage_blocks/osmium'),
 		G: M('advanced_control_circuit'),
 		D: M("basic_induction_provider"), //
-		E: singularityId('laser_node'), //
+		E: singularityId('fluix'), //
 		F: M('energy_tablet'),
 		A: M('advanced_energy_cube'),
 		K: M('hdpe_sheet'),
@@ -1243,7 +1243,7 @@ ServerEvents.recipes((event) => {
 		I: F('#storage_blocks/osmium'),
 		G: M('elite_control_circuit'),
 		D: M("advanced_induction_provider"),
-		E: singularityId('laser_node'),
+		E: singularityId('fluix'),
 		F: M('energy_tablet'),
 		A: M('elite_energy_cube'),
 		K: M('hdpe_sheet'),
@@ -1271,7 +1271,7 @@ ServerEvents.recipes((event) => {
 		I: F('#storage_blocks/osmium'),
 		G: M('ultimate_control_circuit'),
 		D: M("elite_induction_provider"),
-		E: singularityId('laser_node'),
+		E: singularityId('fluix'),
 		F: M('energy_tablet'),
 		A: M('ultimate_energy_cube'),
 		K: M('hdpe_sheet'),
@@ -1902,7 +1902,7 @@ ServerEvents.recipes((event) => {
 	removeRecipeByOutput(event, [
 		M("qio_drive_array"),
 	])
-	event.recipes.mekanism.nucleosynthesizing(AE2("drive"), `100x ${M("antimatter")}`, M("qio_drive_array"), 1000)
+	event.recipes.mekanism.nucleosynthesizing(AE2_E("ex_drive"), `100x ${M("antimatter")}`, M("qio_drive_array"), 1000)
 
 	//module base
 	removeRecipeByOutput(event, [

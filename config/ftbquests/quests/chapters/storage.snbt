@@ -4,7 +4,7 @@
 	disable_toast: true
 	filename: "storage"
 	group: "051AA46D917B6FBA"
-	icon: "mekanism:qio_drive_array"
+	icon: "mekanism_extras:infinite_bin"
 	id: "484AD78C89162C3A"
 	order_index: 13
 	quest_links: [ ]
@@ -263,6 +263,18 @@
 			}]
 			x: -3.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["0826A148DAD0D37E"]
+			disable_toast: true
+			id: "760A31B64FC90408"
+			tasks: [{
+				id: "338DB6405FEAEA20"
+				item: "enderstorage:ender_chest"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.5d
 		}
 	]
 	title: "Item Storage"

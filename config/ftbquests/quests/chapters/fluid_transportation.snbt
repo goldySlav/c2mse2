@@ -252,6 +252,17 @@
 			x: -8.5d
 			y: 15.0d
 		}
+		{
+			disable_toast: true
+			id: "5C2221B2380FF4BB"
+			tasks: [{
+				id: "120F9FC9099DF729"
+				item: "enderstorage:ender_tank"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
 	]
 	title: "Fluid Transportation"
 }

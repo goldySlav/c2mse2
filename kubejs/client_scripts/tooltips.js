@@ -75,7 +75,7 @@ ItemEvents.tooltip(event => {
 
     //miniutilities
     event.add('miniutilities:unstable_ingot', [
-		Text.green('This WILL kill you, blow up, and lose all your crafting materials to make this if you hold this too long')
+		Text.green('Will slow you while you hold it, maybe it will even explode and KILL you if you hold it too long...')
 	])
 	
 	//gem dust

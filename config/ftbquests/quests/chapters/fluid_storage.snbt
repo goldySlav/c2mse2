@@ -155,6 +155,18 @@
 			x: -10.5d
 			y: 9.0d
 		}
+		{
+			dependencies: ["254B1CE0803DA72D"]
+			disable_toast: true
+			id: "0FC716C38043CCA1"
+			tasks: [{
+				id: "6594FBE99C681465"
+				item: "enderstorage:ender_tank"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -3.0d
+		}
 	]
 	title: "Fluid Storage"
 }

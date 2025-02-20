@@ -147,31 +147,6 @@
 			x: -2.5d
 			y: 3.0d
 		}
-		{
-			dependencies: ["664FA5515E623202"]
-			description: [
-				"Stats:"
-				"Hunger Restored: &48 points&r"
-				"Saturation Restored: &e13 points&r"
-				""
-				"Notes:"
-				"- Does not count towards SoL: CE's collection"
-				"- It costs 64 EMC to eat it one time"
-				"- It can be crafted into &bEternal Steak&r"
-			]
-			disable_toast: true
-			icon: "projectexpansion:infinite_steak"
-			id: "7B5AD1328712B848"
-			size: 1.0d
-			subtitle: "Endless food"
-			tasks: [{
-				id: "76615D3A1A4CC75D"
-				item: "projectexpansion:infinite_steak"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 1.5d
-		}
 	]
 	title: "Food"
 }

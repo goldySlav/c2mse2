@@ -221,7 +221,7 @@ ServerEvents.recipes((event) => {
 			"CBBBC",
 			"CCCCC",
 		], {
-			A: tieredItems.ch2.mat,
+			A: tieredItems.ch4.mat,
 			B: EIO("fluid_conduit"),
 			C: EIO("conduit_binder"),
 		}
@@ -235,7 +235,7 @@ ServerEvents.recipes((event) => {
 			"CBBBC",
 			"CCCCC",
 		], {
-			A: tieredItems.ch3.mat,
+			A: tieredItems.ch5.mat,
 			B: EIO("pressurized_fluid_conduit"),
 			C: EIO("conduit_binder"),
 		}
@@ -249,13 +249,13 @@ ServerEvents.recipes((event) => {
 			"CBBBC",
 			"CCCCC",
 		], {
-			A: tieredItems.ch2.mat,
+			A: tieredItems.ch4.mat,
 			B: EIO("chemical_conduit"),
 			C: EIO("conduit_binder"),
 		}
 	)
 	
-	event.recipes.extendedcrafting.shaped_table(Item.of(EIO("ender_chemical_conduit"), 1),
+	event.recipes.extendedcrafting.shaped_table(Item.of(EIO("ender_chemical_conduit"), 8),
 		[
 			"CCCCC",
 			"CBBBC",
@@ -263,13 +263,13 @@ ServerEvents.recipes((event) => {
 			"CBBBC",
 			"CCCCC",
 		], {
-			A: tieredItems.ch3.mat,
+			A: tieredItems.ch5.mat,
 			B: EIO("pressurized_chemical_conduit"),
 			C: EIO("conduit_binder"),
 		}
 	)
 	
-	event.recipes.extendedcrafting.shaped_table(Item.of(EIO("heat_conduit"), 1),
+	event.recipes.extendedcrafting.shaped_table(Item.of(EIO("heat_conduit"), 8),
 		[
 			"CCCCC",
 			"CBBBC",
@@ -277,7 +277,7 @@ ServerEvents.recipes((event) => {
 			"CBBBC",
 			"CCCCC",
 		], {
-			A: tieredItems.ch3.mat,
+			A: tieredItems.ch10.mat,
 			B: M("advanced_thermodynamic_conductor"),
 			C: EIO("conduit_binder"),
 		}

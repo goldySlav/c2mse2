@@ -4,7 +4,7 @@
 	disable_toast: true
 	filename: "transportation_items"
 	group: "051AA46D917B6FBA"
-	icon: "enderio:vacuum_chest"
+	icon: "mekanism_extras:infinite_logistical_transporter"
 	id: "2528B69526F831C6"
 	order_index: 15
 	quest_links: [ ]
@@ -280,6 +280,17 @@
 			}]
 			x: -16.5d
 			y: 15.0d
+		}
+		{
+			disable_toast: true
+			id: "084293E5A7577E1C"
+			tasks: [{
+				id: "7B26013CC2D58373"
+				item: "enderstorage:ender_chest"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 0.0d
 		}
 	]
 	title: "Item Transportation"

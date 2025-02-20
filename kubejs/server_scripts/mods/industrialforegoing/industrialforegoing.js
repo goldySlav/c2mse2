@@ -1366,28 +1366,6 @@ ServerEvents.recipes((event) => {
 
 
 
-  //infinity charger
-	event.recipes.extendedcrafting.shaped_table(IF("infinity_charger"), [
-		'EEEEEEEEE',
-		'EGFFFFFGE',
-		'EFEEEEEFE',
-		'EFECBCEFE',
-		'EFEBDBEFE',
-		'EFECBCEFE',
-		'EFEEEEEFE',
-		'EGFFFFFGE',
-		'EEEEEEEEE',
-	], {
-		B: AE2('controller'),
-		C: AV("neutronium_ingot"),
-		D: AE2('charger'),
-		E: M("ultimate_induction_cell"),
-		F: M("ultimate_induction_provider"),
-		G: MU("the_final_opinium_core"),
-	})
-
-
-
   //plant gatherer
 	event.recipes.extendedcrafting.shaped_table(IF("plant_gatherer"), [
 		'BGGGGGB',

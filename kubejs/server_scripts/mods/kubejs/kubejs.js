@@ -626,6 +626,29 @@ ServerEvents.recipes((event) => {
 	
 	//sky solution
 	event.recipes.create.mixing(Fluid.of(KJ("sky_solution"), 250), [Item.of(AE2('sky_dust'), 1), Fluid.of(MC('water'), 125)])
+	event.custom({
+		type: AE2_A("reaction"),
+		energy: 1500000,
+	    fluid: {
+			fluidStack: {
+				Amount: 4000,
+				FluidName: MC("water")
+			}
+		},
+		input_items: [
+			{
+				amount: 32,
+				ingredient: {
+					item: AE2("sky_dust")
+				}
+			},
+		],
+		output: {
+			"#": 8000,
+			"#c": "ae2:f",
+			id: KJ("sky_solution"),
+		}
+	})
 	
 	
 	
@@ -637,6 +660,29 @@ ServerEvents.recipes((event) => {
 		AE2('charged_certus_quartz_crystal'),
 		Fluid.of(KJ("sky_solution"), 250),
 	]).id(KJ(`${KJ()}/liquid_redstone_from_charged_certus`))
+	event.custom({
+		type: AE2_A("reaction"),
+		energy: 1500000,
+	    fluid: {
+			fluidStack: {
+				Amount: 8000,
+				FluidName: KJ("sky_solution")
+			}
+		},
+		input_items: [
+			{
+				amount: 32,
+				ingredient: {
+					item: AE2("charged_certus_quartz_crystal")
+				}
+			},
+		],
+		output: {
+			"#": 8000,
+			"#c": "ae2:f",
+			id: KJ("liquid_redstone"),
+		}
+	})
 	
 	
 	
@@ -1257,7 +1303,7 @@ console.log(`[mechanisms] liquid mB: ${liquidForMatrix}, matrix: ${mechForMatrix
 	inductive_machine(EIO("soul_binder"), 1, MC('soul_sand'))
 	inductive_machine(EIO("impulse_hopper"), 1, P('energy_hopper_hardened'))
 	inductive_machine(ES('ender_chest'), 1, IC('obsidian_chest'))
-	inductive_machine(ES('ender_tank'), 1, M('basic_fluid_tank'))
+	inductive_machine(ES('ender_tank'), 1, CR('fluid_tank'))
 	inductive_machine(ES('ender_pouch'), 1, PRE('#alchemical_bags'))
 	inductive_machine(EIO("xp_vacuum"), 1, EIO('xp_obelisk'))
 	inductive_machine(EIO("vacuum_chest"), 1, M('teleportation_core'))
@@ -1465,4 +1511,5 @@ console.log(`[mechanisms] liquid mB: ${liquidForMatrix}, matrix: ${mechForMatrix
 	electric_machine(X('redstone_proxy'), 1, F('#ingots/red_alloy'))
 	electric_machine(X('redstone_proxy_upd'), 1, PR_T('red_alloy_wire'))
 	electric_machine(M('laser'), 1, CR_V('laser_item'))
+	electric_machine(IF("infinity_charger"), 1, AE2_E('ex_charger'))
 })
