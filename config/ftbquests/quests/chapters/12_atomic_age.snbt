@@ -77,6 +77,7 @@
 		}
 		{
 			dependencies: ["175194707CB6993D"]
+			description: ["Or any bio-source that can produce the Bio Fuel"]
 			icon: "minecraft:kelp"
 			id: "0F91FF745C6A6FE9"
 			size: 1.0d

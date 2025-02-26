@@ -337,18 +337,11 @@
 		{
 			dependencies: ["4CBA5DA4160CFFDF"]
 			id: "034E9BFFAF7D234A"
-			rewards: [
-				{
-					id: "6E684DDC13CDBE13"
-					item: "exdeorum:diamond_mesh"
-					type: "item"
-				}
-				{
-					id: "76761F208AD3C9B0"
-					item: "ad_astra:ice_shard"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "6E684DDC13CDBE13"
+				item: "exdeorum:diamond_mesh"
+				type: "item"
+			}]
 			subtitle: "Yup, you will get another one of this as well"
 			tasks: [{
 				id: "657FFF323C121FFE"
@@ -867,6 +860,7 @@
 				tag: { }
 			}
 			id: "40268C8D365E4765"
+			optional: true
 			rewards: [{
 				id: "62E212DDAE59F348"
 				item: {
@@ -879,6 +873,7 @@
 				}
 				type: "item"
 			}]
+			shape: "circle"
 			subtitle: "You really need only one"
 			tasks: [{
 				id: "4C595A6483F3CC34"

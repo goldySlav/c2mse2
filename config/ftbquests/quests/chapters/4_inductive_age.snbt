@@ -517,9 +517,9 @@
 		{
 			dependencies: ["79E99A0EA6245495"]
 			description: [
-				"Made by exploding an &6ender pearl&r and &6sigularity&r together using &6tnt&r."
+				"Made by exploding an &6ender pearl&r and &6sigularity&r together using &6TNT&r."
 				""
-				"Can be made by using &6dispencers&r and &6droppers&r to drop the items and once the tht explodes filter the result into your system."
+				"Can be made by using &6dispencers&r and &6droppers&r to drop the items and once the TNT explodes, filter the result into your system."
 				""
 				""
 				"{image:kubejs:textures/quests/entangled_singularity.png width:220 height:130 align:center}"
@@ -684,6 +684,18 @@
 				"&6Chromatic Compound&r is known to absorb light and darkness."
 				""
 				"Create a &6light beam&r powerful enough to convert Chromatic Compound into Refined Radiance."
+				""
+				"HINT on the next page if needed..."
+				""
+				"{@pagebreak}"
+				""
+				"The block that creates the light beam needed for you - comes from vanilla Minecraft."
+				""
+				"Another HINT on the next page..."
+				""
+				"{@pagebreak}"
+				""
+				"It's &6beacon&r, you dumbass..."
 			]
 			icon: "create:refined_radiance"
 			id: "3322460DD120C633"

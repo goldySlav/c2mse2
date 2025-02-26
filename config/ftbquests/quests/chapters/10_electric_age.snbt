@@ -333,6 +333,18 @@
 			x: 2.0d
 			y: -1.5d
 		}
+		{
+			dependencies: ["66D4449924C2F39C"]
+			id: "1DDC675114F3E1BF"
+			shape: "rsquare"
+			tasks: [{
+				id: "770A476DB8613D3B"
+				item: "mekanism_extras:ingot_naquadah"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
 	]
 	title: "10. Electric Age"
 }

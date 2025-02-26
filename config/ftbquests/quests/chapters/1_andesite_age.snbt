@@ -454,6 +454,7 @@
 					type: "item"
 				}
 			]
+			shape: "rsquare"
 			subtitle: "The factory..."
 			tasks: [
 				{
@@ -578,7 +579,14 @@
 					item: "create_dd:inverse_box"
 					type: "item"
 				}
+				{
+					count: 4
+					id: "67730A7C126EC60E"
+					item: "create_dd:kinetic_motor"
+					type: "item"
+				}
 			]
+			shape: "rsquare"
 			subtitle: "...must grow."
 			tasks: [
 				{
@@ -651,6 +659,12 @@
 					count: 8L
 					id: "7AFFF8A56D6F7D53"
 					item: { Count: 8, id: "create_dd:inverse_box" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4EE27C586AC61B10"
+					item: "create_dd:kinetic_motor"
 					type: "item"
 				}
 			]

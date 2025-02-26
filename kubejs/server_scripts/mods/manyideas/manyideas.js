@@ -54,6 +54,7 @@ ServerEvents.recipes(event => {
 			])
 			event.stonecutting(door, MI_D(`#doors_${mat}`))
 		})
+		event.stonecutting(MC(`${mat}_door`), MI_D(`#doors_${mat}`))
 		
 		const lodge = MI_D(`mini_lodge_outhouse_${mat}`)
 		removeRecipeByOutput(event, [

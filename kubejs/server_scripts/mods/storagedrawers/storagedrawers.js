@@ -47,10 +47,10 @@ ServerEvents.recipes((event) => {
 	])
 	
 	donutCraftFull(event, SD("obsidian_storage_upgrade"), MC("obsidian"), SD("upgrade_template"))
-	donutCraftFull(event, SD("iron_storage_upgrade"), F("#ingots/iron"), SD("upgrade_template"))
-	donutCraftFull(event, SD("gold_storage_upgrade"), F("#ingots/gold"), SD("upgrade_template"))
-	donutCraftFull(event, SD("diamond_storage_upgrade"), F("#gems/diamond"), SD("upgrade_template"))
-	donutCraftFull(event, SD("emerald_storage_upgrade"), F("#gems/emerald"), SD("upgrade_template"))
+	donutCraftFull(event, SD("iron_storage_upgrade"), F("#storage_blocks/iron"), SD("obsidian_storage_upgrade"))
+	donutCraftFull(event, SD("gold_storage_upgrade"), F("#storage_blocks/gold"), SD("iron_storage_upgrade"))
+	donutCraftFull(event, SD("diamond_storage_upgrade"), F("#storage_blocks/diamond"), SD("gold_storage_upgrade"))
+	donutCraftFull(event, SD("emerald_storage_upgrade"), F("#storage_blocks/emerald"), SD("diamond_storage_upgrade"))
 	donutCraftFull(event, SD("one_stack_upgrade"), MC("flint"), SD("upgrade_template"))
 	event.shaped(SD("void_upgrade"), [
 		'AAA',

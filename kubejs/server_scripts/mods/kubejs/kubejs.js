@@ -470,6 +470,7 @@ ServerEvents.recipes((event) => {
 			id: KJ("nourished_coke"),
 		}
 	})
+	event.recipes.mekanism.injecting(Item.of(KJ("nourished_coke"), 2), F("#gems/coke"), {gas: M("steam"), amount: 1})
 	
 	let tPolishedCoke = KJ('nourished_coke')
 	event.recipes.create.sequenced_assembly([
