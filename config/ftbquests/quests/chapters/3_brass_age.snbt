@@ -22,7 +22,7 @@
 				title: "Start Chapter"
 				type: "checkmark"
 			}]
-			x: 0.5d
+			x: 0.0d
 			y: -7.0d
 		}
 		{
@@ -150,13 +150,13 @@
 				""
 				"PS: &6JEI&r is still exists."
 			]
-			icon: "createmetallurgy:molten_brass_bucket"
+			icon: "tconstruct:molten_brass_bucket"
 			id: "3984091B70C5869E"
 			subtitle: "Alloying never heard of it."
 			tasks: [
 				{
 					id: "41FCDE8EFEF94B0B"
-					item: "createmetallurgy:molten_brass_bucket"
+					item: "tconstruct:molten_brass_bucket"
 					type: "item"
 				}
 				{
@@ -171,13 +171,13 @@
 		{
 			dependencies: ["15E1AB9E8845B81E"]
 			description: ["Its the &6same here&r as in molten iron go have a look. The diference is that you use &6zinc&r."]
-			icon: "createmetallurgy:molten_zinc_bucket"
+			icon: "tconstruct:molten_zinc_bucket"
 			id: "6ECC004E4EB82368"
 			subtitle: "Also hot"
 			tasks: [
 				{
 					id: "0DB067A1948C3772"
-					item: "createmetallurgy:molten_zinc_bucket"
+					item: "tconstruct:molten_zinc_bucket"
 					type: "item"
 				}
 				{
@@ -192,13 +192,13 @@
 		{
 			dependencies: ["4E4478825579AB53"]
 			description: ["Oh yeah its the &6same here&r aswell i forgot. Remember to use &6copper&r tho."]
-			icon: "createmetallurgy:molten_copper_bucket"
+			icon: "tconstruct:molten_copper_bucket"
 			id: "202EBC6D790314E6"
 			subtitle: "Hot here as well"
 			tasks: [
 				{
 					id: "4FFEA3248BCF0C33"
-					item: "createmetallurgy:molten_copper_bucket"
+					item: "tconstruct:molten_copper_bucket"
 					type: "item"
 				}
 				{
@@ -312,13 +312,13 @@
 				""
 				"You can ask &6JEI&r more questions."
 			]
-			icon: "createmetallurgy:molten_iron_bucket"
+			icon: "tconstruct:molten_iron_bucket"
 			id: "562716E1F2F30704"
 			subtitle: "Careful its hot"
 			tasks: [
 				{
 					id: "76CF64AFEDD12D4C"
-					item: "createmetallurgy:molten_iron_bucket"
+					item: "tconstruct:molten_iron_bucket"
 					type: "item"
 				}
 				{

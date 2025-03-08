@@ -263,6 +263,17 @@
 			x: -4.0d
 			y: 0.0d
 		}
+		{
+			disable_toast: true
+			id: "3AEE11790335547D"
+			tasks: [{
+				id: "1B8A7A61899DEB08"
+				item: "createendertransmission:fluid_transmitter"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 0.0d
+		}
 	]
 	title: "Fluid Transportation"
 }

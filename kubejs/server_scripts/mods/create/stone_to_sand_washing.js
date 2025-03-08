@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
 		Item.of(MC("quartz")).withChance(splashSecondaryChance)
 	], KJ("crushed_diorite"))
 
-    //crushedAndesiteTungsten
+    //crushedAndesiteCobalt
     event.remove({ id: MC("andesite") })
 	event.remove({ id: CR("compacting/andesite_from_flint") })
 	event.remove({ id: CR("milling/andesite") })
@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
 	event.recipes.createMilling([KJ("crushed_andesite")], MC("andesite")).processingTime(processingTimesDefault.milling)
 
 	event.recipes.createSplashing([
-		Item.of(CR_M("tungsten_nugget")).withChance(splashPrimaryChance),
+		Item.of(TCT("cobalt_nugget")).withChance(splashPrimaryChance),
 		Item.of(MC("gunpowder")).withChance(splashSecondaryChance)
 	], KJ("crushed_andesite"))
 

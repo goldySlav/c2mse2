@@ -15,9 +15,22 @@ ServerEvents.recipes((event) => {
 	
 	
 	//sheets compat AA
-	const sheets = ["refined_radiance", "shadow_steel", "uranium", "tin", "refined_obsidian", "refined_glowstone", "osmium", "lead", "bronze", "andesite"]
-	sheets.forEach(sheet => {
+	const sheetsAA = [
+		"refined_radiance", "shadow_steel", "uranium", "tin", "refined_obsidian", "refined_glowstone",
+		"osmium", "lead", "bronze", "andesite", "cobalt", "queens_slime", "slimesteel", "manyullyn",
+		"pig_iron", "rose_gold", "amethyst_bronze", "hepatizon", 
+	]
+	sheetsAA.forEach(sheet => {
 		customRecipes.ad_astra.compressing(event, CR_V(`${sheet}_sheet`), F(`#ingots/${sheet}`))
+	})
+	
+	//sheets compat TCT
+	const sheetsTCT = [
+		"queens_slime", "slimesteel", "manyullyn", "osmium", "pig_iron", "refined_glowstone",
+		"refined_obsidian", "amethyst_bronze", "hepatizon", "cobalt", 
+	]
+	sheetsTCT.forEach(sheet => {
+		event.recipes.tconstruct.casting_table(CR_V(`${sheet}_sheet`), Fluid.of(TCT(`molten_${sheet}`), 90), TCT("plate_cast"), false, 60)
 	})
 	
 	

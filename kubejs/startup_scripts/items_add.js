@@ -43,10 +43,10 @@ StartupEvents.registry('item', event => {
 	})
 
     event.create('algal_blend').displayName('Algal Blend')
+    event.create('coke').displayName('Coke')
     event.create('algal_brick').displayName('Algal Brick')
 	event.create('drill_head').displayName('Drill Head')
 	event.create('saw_blade').displayName('Saw Blade')
-	event.create('necrotic_bone').displayName('Necrotic Bone')
 	event.create('sand_ball').displayName('Ball of Sand')
 	event.create('rough_sand').displayName('Sand Chunks')
 	event.create('purified_sand').displayName('Purified Sand')
@@ -141,11 +141,6 @@ StartupEvents.registry('item', event => {
 
 
 	event.create('ball_cast').displayName('Ball Cast').unstackable()
-	event.create('ingot_cast').displayName('Ingot Cast').unstackable()
-	event.create('nugget_cast').displayName('Nugget Cast').unstackable()
-	event.create('plate_cast').displayName('Plate Cast').unstackable()
-	event.create('rod_cast').displayName('Rod Cast').unstackable()
-	event.create('gem_cast').displayName('Gem Cast').unstackable()
 	
 	//tools
 	//saw

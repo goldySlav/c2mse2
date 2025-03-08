@@ -220,7 +220,7 @@
 			size: 2.0d
 			tasks: [{
 				id: "7CE0C8A1259F1681"
-				item: "storagedrawers:creative_vending_upgrade"
+				item: "functionalstorage:creative_vending_upgrade"
 				type: "item"
 			}]
 			x: 8.0d

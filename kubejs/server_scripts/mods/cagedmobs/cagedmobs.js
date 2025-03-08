@@ -48,13 +48,8 @@ ServerEvents.recipes((event) => {
 		MC("mooshroom"), MC("mule"), MC("ocelot"), MC("panda"), MC("parrot"), MC("pig"), MC("polar_bear"), 
 		MC("pufferfish"), MC("rabbit"), MC("salmon"), MC("sheep"), MC("silverfish"), MC("sniffer"),
 		MC("squid"), MC("strider"), MC("tadpole"), MC("trader_llama"), MC("tropical_fish"), MC("turtle"), 
-		MC("villager"), MC("wandering_trader"), MC("wolf"), Q("crab"), Q("toretoise"),Q("stoneling"), 
-		//AM("grizzly_bear"), AM("roadrunner"), 
-		//AM("gazelle"), AM("fly"), AM("rattlesnake"), AM("endergrade"), AM("lobster"), AM("capuchin_monkey"), 
-		//AM("warped_toad"), AM("moose"), AM("mimicube"), AM("raccoon"), AM("blobfish"), AM("seal"), AM("cockroach"), 
-		//AM("shoebill"), AM("elephant"), AM("soul_vulture"), AM("crow"), AM("alligator_snapping_turtle"), 
-		//AM("mungus"), AM("straddler"), AM("emu"), AM("platypus"), AM("tasmanian_devil"), AM("kangaroo"), 
-		//AM("leafcutter_ant"), AM("bald_eagle"), AM("mimic_octopus"), AM("seagull"),
+		MC("villager"), MC("wandering_trader"), MC("wolf"), Q("crab"), Q("toretoise"), Q("stoneling"),
+		TCT("sky_slime"), TCT("ender_slime"),
 	]
 
 	const midEntities = [
@@ -65,11 +60,6 @@ ServerEvents.recipes((event) => {
 		MC("spider"), MC("stray"), MC("vex"), MC("vindicator"), MC("witch"), MC("wither_skeleton"), 
 		MC("zoglin"), MC("zombie"), MC("zombie_horse"), MC("zombie_villager"), MC("zombified_piglin"),
 		Q("forgotten"), Q("foxhound"), Q("wraith"), ART("mimic"), CR_DD("seething_ablaze"),
-		//AM("bone_serpent"), AM("crocodile"), AM("sunbird"), 
-		//AM("gorilla"), AM("crimson_mosquito"), AM("hammerhead_shark"), AM("komodo_dragon"), 
-		//AM("guster"), AM("warped_mosco"), AM("dropbear"), AM("cachalot_whale"), AM("enderiophage"), 
-		//AM("tarantula_hawk"), AM("frilled_shark"), AM("froststalker"), AM("tusklin"), AM("laviathan"), 
-		//AM("cosmaw"), AM("centipede"), AM("centipede_head"), AM("centipede_tail"), AM("centipede_body"), 
 	]
 	
 	const bigEntities = [

@@ -334,7 +334,7 @@ ServerEvents.recipes((event) => {
 		'GIFEFIG',
 		'BGGGGGB',
 	], {
-		A: SD("#drawers"),
+		A: FS("#drawer"),
 		B: CP('gold_2'),
 		C: IC('obsidian_chest'),
 		D: MB("netherite_barrel"),

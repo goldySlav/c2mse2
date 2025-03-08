@@ -741,8 +741,8 @@
       "emc": 0
     },
     {
-      "item": "createmetallurgy:tungsten_ingot",
-      "emc": 1024
+      "item": "tconstruct:cobalt_ingot",
+      "emc": 4096
     },
     {
       "item": "rftoolsbase:dimensionalshard",
@@ -767,6 +767,18 @@
     {
       "item": "create_dd:music_disc_waltz_of_the_flowers",
       "emc": 0
+    },
+    {
+      "item": "tconstruct:sky_slime_ball",
+      "emc": 32
+    },
+    {
+      "item": "tconstruct:ichor_slime_ball",
+      "emc": 32
+    },
+    {
+      "item": "tconstruct:ender_slime_ball",
+      "emc": 32
     }
   ]
 }

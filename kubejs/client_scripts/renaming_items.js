@@ -83,5 +83,7 @@ ClientEvents.lang('en_us', event => {
 	event.renameBlock('create_dd:fluid_reservoir', "Fluid Tank (Horizontal)")
 	
 	event.renameItem('projecte:swiftwolf_rending_gale', "Switfwolf's Rending Gale (Advanced Angel Ring)")
+	
+	event.renameBlock('enderio:enderman_head', "Suspicious Enderman Head")
 });
 

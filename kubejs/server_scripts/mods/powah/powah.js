@@ -60,7 +60,7 @@ ServerEvents.recipes((event) => {
 	removeRecipeByID(event, [
 		P("energizing/ender_core"),
 	])
-	event.recipes.create.mixing(P("ender_core"), [MC("ender_eye"), P("dielectric_casing"), Fluid.of(KJ("ender"), 90)])
+	event.recipes.create.mixing(P("ender_core"), [MC("ender_eye"), P("dielectric_casing"), Fluid.of(TCT("molten_ender"), 90)])
 	
 	//thermoelectric plate
 	removeRecipeByOutput(event, [

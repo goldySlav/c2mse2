@@ -143,13 +143,13 @@
 				"Combine &6molten iron&r and &6molten ender&r to make &6molten ender alloy&r."
 				"Do this in a foundry mixer. It is the &6same setup&r as making brass."
 			]
-			icon: "createmetallurgy:molten_void_steel_bucket"
+			icon: "kubejs:molten_ender_alloy_bucket"
 			id: "19EEAF629AE72C2A"
 			subtitle: "Molten hot teleportation?"
 			tasks: [
 				{
 					id: "6F89B96D07786C95"
-					item: "createmetallurgy:molten_void_steel_bucket"
+					item: "kubejs:molten_ender_alloy_bucket"
 					type: "item"
 				}
 				{
@@ -185,13 +185,13 @@
 		{
 			dependencies: ["12D6ACC2191CB67C"]
 			description: ["Melt &6ender pearls&r the same way you melt iron to make &6molten ender&r."]
-			icon: "kubejs:ender_bucket"
+			icon: "tconstruct:molten_ender_bucket"
 			id: "157B734BA037EFF4"
 			subtitle: "Molten teleportation?"
 			tasks: [
 				{
 					id: "535653E02ECD3EE3"
-					item: "kubejs:ender_bucket"
+					item: "tconstruct:molten_ender_bucket"
 					type: "item"
 				}
 				{
@@ -209,13 +209,13 @@
 				"Melt the &6iron&r to make &6molten iron&r."
 				"If you &6forgot&r how to do that refer back to &6chapter 3&r."
 			]
-			icon: "createmetallurgy:molten_iron_bucket"
+			icon: "tconstruct:molten_iron_bucket"
 			id: "7821FDEDDD684DD1"
 			subtitle: "Yup molten again. Still hot!"
 			tasks: [
 				{
 					id: "2D46276700A38059"
-					item: "createmetallurgy:molten_iron_bucket"
+					item: "tconstruct:molten_iron_bucket"
 					type: "item"
 				}
 				{

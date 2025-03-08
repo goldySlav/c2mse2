@@ -18,7 +18,7 @@ const MER = (id, x) => MOD("merequester", id, x)
 const CF = (id, x) => MOD("comforts", id, x)
 const MC = (id, x) => MOD("minecraft", id, x)
 const KJ = (id, x) => MOD("kubejs", id, x)
-const SD = (id, x) => MOD("storagedrawers", id, x)
+const FS = (id, x) => MOD("functionalstorage", id, x)
 const F = (id, x) => MOD("forge", id, x)
 const Q = (id, x) => MOD("quark", id, x)
 const PHC_FC = (id, x) => MOD("pamhc2foodcore", id, x)
@@ -66,7 +66,6 @@ const EIO = (id, x) => MOD("enderio", id, x)
 const CM = (id, x) => MOD("cagedmobs", id, x)
 const CR = (id, x) => MOD("create", id, x)
 const CR_A = (id, x) => MOD("createaddition", id, x)
-const CR_M = (id, x) => MOD("createmetallurgy", id, x)
 const CR_EI = (id, x) => MOD("create_enchantment_industry", id, x)
 const CR_V = (id, x) => MOD("vintageimprovements", id, x)
 const CR_S = (id, x) => MOD("createsifter", id, x)
@@ -77,7 +76,6 @@ const CR_DD = (id, x) => MOD("create_dd", id, x)
 const CR_RC = (id, x) => MOD("rechiseledcreate", id, x)
 const CR_N = (id, x) => MOD("create_netherless", id, x)
 const CR_RW = (id, x) => MOD("railways", id, x)
-const FCD = (id, x) => MOD("framedcompactdrawers", id, x)
 const PR_C = (id, x) => MOD("projectred_core", id, x)
 const PR_T = (id, x) => MOD("projectred_transmission", id, x)
 const PR_I = (id, x) => MOD("projectred_illumination", id, x)
@@ -106,7 +104,7 @@ const RC = (id, x) => MOD("rechiseled", id, x)
 const ES = (id, x) => MOD("enderstorage", id, x)
 const AR = (id, x) => MOD("angelring", id, x)
 const ENT = (id, x) => MOD("entangled", id, x)
-
+const TCT = (id, x) => MOD("tconstruct", id, x)
 
 
 const processingTimesDefault = {
@@ -263,31 +261,6 @@ const customRecipes = {
 				maxChargeRate: 50
 			})
 		},
-		alloying: function (e, outputArr, inputArr, ticks, heat) {
-			ticks = ticks ? ticks : 40
-			const recipeObj = {
-				type: CR_M("alloying"),
-				ingredients: toRecipeJsonFluid(inputArr),
-				processingTime: ticks,
-				results: toRecipeJsonFluid(outputArr),
-			}
-			if (heat) {
-				let heatStr = ""
-				switch (heat) {
-					case 1:
-						heatStr = "heated";
-						break;
-					case 2:
-						heatStr = "superheated";
-						break;
-					default:
-						heatStr = "heated";
-						break;
-				}
-				recipeObj.heatRequirement = heatStr
-			}
-			e.custom(recipeObj)
-		},
 		pressurizing: function (e, outputArr, fluid, item, ticks) {
 			ticks = ticks ? ticks : 60
 			e.custom({
@@ -338,152 +311,6 @@ const customRecipes = {
 				],
 				keepHeldItem: true
 			})
-		},
-		melting: function (e, outputArr, inputArr, ticks, heat) {
-			ticks = ticks ? ticks : 40
-			const recipeObj = {
-				type: CR_M("melting"),
-				ingredients: toRecipeJsonItem(inputArr),
-				processingTime: ticks,
-				results: toRecipeJsonFluid(outputArr),
-			}
-			if (heat) {
-				let heatStr = ""
-				switch (heat) {
-					case 1:
-						heatStr = "heated";
-						break;
-					case 2:
-						heatStr = "superheated";
-						break;
-					default:
-						heatStr = "heated";
-						break;
-				}
-				recipeObj.heatRequirement = heatStr
-			}
-			e.custom(recipeObj)
-		},
-		casting: {
-			cast: function(num) {
-				let item
-				switch(num) {
-					case 'ball':
-						item = KJ("ball_cast");
-						break;
-					case 'ingot':
-						item = KJ("ingot_cast");
-						break;
-					case 'nugget':
-						item = KJ("nugget_cast");
-						break;
-					case 'plate':
-						item = KJ("plate_cast");
-						break;
-					case 'rod':
-						item = KJ("rod_cast");
-						break;
-					case 'gem':
-						item = KJ("gem_cast");
-						break;
-					case '3':
-						item = KJ("three_cast");
-						break;
-					case 'three':
-						item = KJ("three_cast");
-						break;
-					case '8':
-						item = KJ("eight_cast");
-						break;
-					case 'eight':
-						item = KJ("eight_cast");
-						break;
-					case '+':
-						item = KJ("plus_cast");
-						break;
-					case 'plus':
-						item = KJ("plus_cast");
-						break;
-					case '-':
-						item = KJ("minus_cast");
-						break;
-					case 'minus':
-						item = KJ("minus_cast");
-						break;
-					case '*':
-						item = KJ("multiply_cast");
-						break;
-					case 'multiply':
-						item = KJ("multiply_cast");
-						break;
-					case '/':
-						item = KJ("divide_cast");
-						break;
-					case 'divide':
-						item = KJ("divide_cast");
-						break;
-					case 'calculation':
-						item = AE2("calculation_processor_press");
-						break;
-					case 'calculation_wafer':
-						item = KJ("calculation_processor_press_wafer");
-						break;
-					case 'engineering':
-						item = AE2("engineering_processor_press");
-						break;
-					case 'engineering_wafer':
-						item = KJ("engineering_processor_press_wafer");
-						break;
-					case 'logic':
-						item = AE2("logic_processor_press");
-						break;
-					case 'logic_wafer':
-						item = KJ("logic_processor_press_wafer");
-						break;
-					case 'energy':
-						item = AF("energy_processor_press");
-						break;
-					case 'energy_wafer':
-						item = KJ("energy_processor_press_wafer");
-						break;
-					case 'accumulation':
-						item = MGC("accumulation_processor_press");
-						break;
-					case 'accumulation_wafer':
-						item = KJ("accumulation_processor_press_wafer");
-						break;
-					case 'quantum':
-						item = AE2_A("quantum_processor_press");
-						break;
-					case 'quantum_wafer':
-						item = KJ("quantum_processor_press_wafer");
-						break;
-					default:
-						item = KJ("empty_cast");
-						break;
-				}
-				return item
-			},
-			table: function (e, output, fluid, cast, ticks, moldConsumed) {
-				ticks = ticks ? ticks : 80
-				e.custom({
-				  type: CR_M("casting_in_table"),
-				  ingredients: [toRecipeJsonItem(this.cast(cast)), toRecipeJsonFluid(fluid)],
-				  processingTime: ticks,
-				  mold_consumed: moldConsumed == true,
-				  result: toRecipeJsonItem(output)
-				})
-			},
-			basin: function (e, output, fluid, ticks) {
-				ticks = ticks ? ticks : 150
-				e.custom({
-				  type: CR_M("casting_in_basin"),
-				  ingredients: [toRecipeJsonFluid(fluid)],
-				  processingTime: ticks,
-				  mold_consumed: false,
-				  result: toRecipeJsonItem(output)
-				})
-			},
 		},
 		charge: function (e, output, input, nrg) {
 			nrg = nrg ? nrg : 10000
@@ -774,6 +601,9 @@ const customRecipes = {
 				}
 			})
 		},
+	},
+	tconstruct: {
+		
 	},
 }
 
@@ -1072,7 +902,7 @@ const souledEggedEntities = [
 	WSM("sickened_mushroom_cow"), WSM("sickened_parrot"), WSM("sickened_phantom"), WSM("sickened_pig"), 
 	WSM("sickened_pillager"), WSM("sickened_skeleton"), WSM("sickened_snow_golem"), WSM("sickened_spider"), 
 	WSM("sickened_villager"), WSM("sickened_vindicator"), WSM("sickened_wolf"), WSM("sickened_zombie"), 
-	WSM("tentacle"), WSM("withered_symbiont"),
+	WSM("tentacle"), WSM("withered_symbiont"), TCT("sky_slime"), TCT("ender_slime"),
 	//AM("grizzly_bear"), AM("roadrunner"), AM("bone_serpent"),
 	//AM("gazelle"), AM("crocodile"), AM("fly"), AM("hummingbird"), AM("orca"), AM("sunbird"), AM("gorilla"),
 	//AM("crimson_mosquito"), AM("rattlesnake"), AM("endergrade"), AM("hammerhead_shark"), AM("lobster"),
@@ -1235,7 +1065,7 @@ const tieredItems = {
 		casing: CR("andesite_casing"),
 	},
 	ch2: {
-		mat: CR_M("coke"),
+		mat: KJ("coke"),
 		circuit: KJ("sealed_mechanism"),
 		machine: KJ("copper_machine"),
 		casing: CR("copper_casing"),

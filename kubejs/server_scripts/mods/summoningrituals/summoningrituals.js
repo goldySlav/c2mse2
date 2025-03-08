@@ -239,7 +239,7 @@ ServerEvents.recipes(event => {
 	//strider
     event.recipes.summoningrituals.altar(KJ("summoning_doll"))
 		.mobOutput(MC('strider'))
-		.input(Item.of(CR_M("tungsten_ingot"), 8))
+		.input(Item.of(TCT("cobalt_ingot"), 8))
 		.input(Item.of(MC("lava_bucket"), 1))
 		.input(Item.of(MC("gold_nugget"), 3))
 		.input(Item.of(MC("quartz"), 9))

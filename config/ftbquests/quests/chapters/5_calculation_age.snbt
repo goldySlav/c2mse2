@@ -310,13 +310,13 @@
 		{
 			dependencies: ["78F0F6CE6BE3168B"]
 			description: ["For this one melt some &6gold&r(nuggets, ingots...) blaze cake &6not needed&r."]
-			icon: "createmetallurgy:molten_gold_bucket"
+			icon: "tconstruct:molten_gold_bucket"
 			id: "2E85CA8FECE54675"
 			subtitle: "Not so high temperatures."
 			tasks: [
 				{
 					id: "74BF602E574D0F2D"
-					item: "createmetallurgy:molten_gold_bucket"
+					item: "tconstruct:molten_gold_bucket"
 					type: "item"
 				}
 				{
@@ -331,13 +331,13 @@
 		{
 			dependencies: ["201C1E972A7885EC"]
 			description: ["Melting &6diamons&r (blaze cakes here too)."]
-			icon: "kubejs:molten_diamond_bucket"
+			icon: "tconstruct:molten_diamond_bucket"
 			id: "0DCD7F96839FB02B"
 			subtitle: "They are high again."
 			tasks: [
 				{
 					id: "7CA80B8C8954A8FD"
-					item: "kubejs:molten_diamond_bucket"
+					item: "tconstruct:molten_diamond_bucket"
 					type: "item"
 				}
 				{

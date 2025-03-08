@@ -50,7 +50,7 @@ ServerEvents.recipes((event) => {
 		'BSB',
 		' B '
 	], {
-		B: KJ("necrotic_bone"),
+		B: TCT("necrotic_bone"),
 		S: F("#glass")
 	})
 

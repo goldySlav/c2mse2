@@ -32,6 +32,11 @@ ServerEvents.recipes((event) => {
 		EC('enhanced_redstone_component'),
 	])
 	
+	event.recipes.tconstruct.casting_table(EC("ender_ingot"), Fluid.of(KJ("molten_ender_alloy"), 90), TCT("ingot_cast"), false, 60)
+	event.recipes.tconstruct.casting_table(EC("ender_nugget"), Fluid.of(KJ("molten_ender_alloy"), 10), TCT("nugget_cast"), false, 20)
+	event.recipes.tconstruct.melting(Fluid.of(KJ("molten_ender_alloy"), 90), EC("ender_ingot"), 1429, 60)
+	event.recipes.tconstruct.melting(Fluid.of(KJ("molten_ender_alloy"), 10), EC("ender_nugget"), 1429, 20)
+	
 	//advanced crafting tables
 	event.shaped(EC('advanced_table'), [
 		'ABA',

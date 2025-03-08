@@ -79,13 +79,13 @@
 		{
 			dependencies: ["1F421F089C39C2B3"]
 			description: ["This badboy is also made by smelting but &6not logs&r, you instead smelt &6charcoal&r."]
-			icon: "createmetallurgy:coke"
+			icon: "kubejs:coke"
 			id: "25BC9F6213430089"
 			subtitle: "No, not THAT coke"
 			tasks: [
 				{
 					id: "6448E4E65E822F5E"
-					item: "createmetallurgy:coke"
+					item: "kubejs:coke"
 					type: "item"
 				}
 				{
