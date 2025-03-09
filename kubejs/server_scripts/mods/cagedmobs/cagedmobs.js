@@ -40,35 +40,7 @@ ServerEvents.recipes((event) => {
 	grow(ART("mimic"), 3, ["cave"])
 	grow(CR_DD("seething_ablaze"), 3, ["nether"])
 	
-	
-
-	const smallEntities = [
-		MC("allay"), MC("axolotl"), MC("bat"), MC("bee"), MC("camel"), MC("cat"), MC("chicken"), MC("cod"), MC("cow"), 
-		MC("dolphin"), MC("donkey"), MC("fox"), MC("frog"), MC("glow_squid"), MC("goat"), MC("horse"), MC("llama"), 
-		MC("mooshroom"), MC("mule"), MC("ocelot"), MC("panda"), MC("parrot"), MC("pig"), MC("polar_bear"), 
-		MC("pufferfish"), MC("rabbit"), MC("salmon"), MC("sheep"), MC("silverfish"), MC("sniffer"),
-		MC("squid"), MC("strider"), MC("tadpole"), MC("trader_llama"), MC("tropical_fish"), MC("turtle"), 
-		MC("villager"), MC("wandering_trader"), MC("wolf"), Q("crab"), Q("toretoise"), Q("stoneling"),
-		TCT("sky_slime"), TCT("ender_slime"),
-	]
-
-	const midEntities = [
-		MC("blaze"), MC("cave_spider"), MC("creeper"), MC("drowned"), MC("enderman"), MC("illusioner"),
-		MC("endermite"), MC("evoker"), MC("ghast"), MC("guardian"), MC("hoglin"), MC("husk"), MC("iron_golem"), 
-		MC("magma_cube"), MC("phantom"), MC("piglin"), MC("piglin_brute"), MC("pillager"), MC("ravager"), 
-		MC("shulker"), MC("skeleton"), MC("skeleton_horse"), MC("slime"), MC("snow_golem"), 
-		MC("spider"), MC("stray"), MC("vex"), MC("vindicator"), MC("witch"), MC("wither_skeleton"), 
-		MC("zoglin"), MC("zombie"), MC("zombie_horse"), MC("zombie_villager"), MC("zombified_piglin"),
-		Q("forgotten"), Q("foxhound"), Q("wraith"), ART("mimic"), CR_DD("seething_ablaze"),
-	]
-	
-	const bigEntities = [
-		MC("ender_dragon"), MC("wither"), MC("elder_guardian"), MC("warden"),
-		//AM("void_worm"),  
-		
-	]
-	
-	function addLoot(entity, item, chance, minAmount, maxAmount) {
+	function addLoot(entity, item, chance, minAmount, maxAmount, lightning) {
 		chance = chance ? chance : 1.0
 		minAmount = minAmount ? minAmount : 1
 		maxAmount = maxAmount ? maxAmount : 1
@@ -82,21 +54,12 @@ ServerEvents.recipes((event) => {
 						item: item
 					},
 					minAmount: minAmount,
-					maxAmount: maxAmount
+					maxAmount: maxAmount,
+					lightning: !!lightning
 				}
 			]
 		})
 	}
-	
-	smallEntities.forEach(entity => {
-		addLoot(entity, CR("experience_nugget"), 0.5, 1, 1)
-	})
-	midEntities.forEach(entity => {
-		addLoot(entity, CR("experience_nugget"), 0.75, 1, 3)
-	})
-	bigEntities.forEach(entity => {
-		addLoot(entity, CR("experience_nugget"), 1.0, 1, 16)
-	})
 	
 	addLoot(MC("warden"), MC("sculk_shrieker"), 0.15, 1, 2)
 	addLoot(MC("warden"), MC("echo_shard"), 0.5, 3, 6)
@@ -130,8 +93,56 @@ ServerEvents.recipes((event) => {
 	//sponge fragments from guardian
 	addLoot(MC("guardian"), CM("sponge_fragment"), 0.1)
 	
+	//TConstruct & EIO heads
+	addLoot(MC("blaze"), TCT("blaze_head"), 0.05, 1, 1, true)
+	addLoot(MC("enderman"), TCT("enderman_head"), 0.05, 1, 1, true)
+	addLoot(MC("enderman"), EIO("enderman_head"), 0.01, 1, 1, true)
+	addLoot(MC("drowned"), TCT("drowned_head"), 0.05, 1, 1, true)
+	addLoot(MC("spider"), TCT("spider_head"), 0.05, 1, 1, true)
+	addLoot(MC("cave_spider"), TCT("cave_spider_head"), 0.05, 1, 1, true)
+	addLoot(MC("piglin_brute"), TCT("piglin_brute_head"), 0.05, 1, 1, true)
+	addLoot(MC("zombified_piglin"), TCT("zombified_piglin_head"), 0.05, 1, 1, true)
+	
 	//warden receptor
 	event.recipes.create.crushing([
 		Item.of(CM('warden_receptor')).withChance(0.01)
 	], MC('sculk_shrieker')).processingTime(processingTimesDefault.crushing)
+	
+	
+
+	const smallEntities = [
+		MC("allay"), MC("axolotl"), MC("bat"), MC("bee"), MC("camel"), MC("cat"), MC("chicken"), MC("cod"), MC("cow"), 
+		MC("dolphin"), MC("donkey"), MC("fox"), MC("frog"), MC("glow_squid"), MC("goat"), MC("horse"), MC("llama"), 
+		MC("mooshroom"), MC("mule"), MC("ocelot"), MC("panda"), MC("parrot"), MC("pig"), MC("polar_bear"), 
+		MC("pufferfish"), MC("rabbit"), MC("salmon"), MC("sheep"), MC("silverfish"), MC("sniffer"),
+		MC("squid"), MC("strider"), MC("tadpole"), MC("trader_llama"), MC("tropical_fish"), MC("turtle"), 
+		MC("villager"), MC("wandering_trader"), MC("wolf"), Q("crab"), Q("toretoise"), Q("stoneling"),
+		TCT("sky_slime"), TCT("ender_slime"),
+	]
+
+	const midEntities = [
+		MC("blaze"), MC("cave_spider"), MC("creeper"), MC("drowned"), MC("enderman"), MC("illusioner"),
+		MC("endermite"), MC("evoker"), MC("ghast"), MC("guardian"), MC("hoglin"), MC("husk"), MC("iron_golem"), 
+		MC("magma_cube"), MC("phantom"), MC("piglin"), MC("piglin_brute"), MC("pillager"), MC("ravager"), 
+		MC("shulker"), MC("skeleton"), MC("skeleton_horse"), MC("slime"), MC("snow_golem"), 
+		MC("spider"), MC("stray"), MC("vex"), MC("vindicator"), MC("witch"), MC("wither_skeleton"), 
+		MC("zoglin"), MC("zombie"), MC("zombie_horse"), MC("zombie_villager"), MC("zombified_piglin"),
+		Q("forgotten"), Q("foxhound"), Q("wraith"), ART("mimic"), CR_DD("seething_ablaze"),
+	]
+	
+	const bigEntities = [
+		MC("ender_dragon"), MC("wither"), MC("elder_guardian"), MC("warden"),
+		//AM("void_worm"),  
+		
+	]
+	
+	smallEntities.forEach(entity => {
+		addLoot(entity, CR("experience_nugget"), 0.5, 1, 1)
+	})
+	midEntities.forEach(entity => {
+		addLoot(entity, CR("experience_nugget"), 0.75, 1, 3)
+	})
+	bigEntities.forEach(entity => {
+		addLoot(entity, CR("experience_nugget"), 1.0, 1, 16)
+	})
 })

@@ -121,7 +121,7 @@
 		}
 		{
 			dependencies: ["5A1BCAD3FA42E967"]
-			icon: "create_enchantment_industry:ink_bucket"
+			icon: "tconstruct:molten_obsidian_bucket"
 			id: "5765BC3B238E7F7D"
 			size: 1.0d
 			tasks: [

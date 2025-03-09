@@ -106,6 +106,10 @@ const AR = (id, x) => MOD("angelring", id, x)
 const ENT = (id, x) => MOD("entangled", id, x)
 const TCT = (id, x) => MOD("tconstruct", id, x)
 
+const SD = (id, x) => MOD("storagedrawers", id, x)
+const FCD = (id, x) => MOD("framedcompactdrawers", id, x)
+const CR_M = (id, x) => MOD("createmetallurgy", id, x)
+
 
 const processingTimesDefault = {
 	milling: 300,

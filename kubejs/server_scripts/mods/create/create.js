@@ -309,4 +309,15 @@ ServerEvents.recipes((event) => {
 	
 	//vault from stockpile
 	event.shapeless(CR("item_vault"), CR_DD('item_stockpile'))
+	
+	//blaze burner from head
+	event.shaped(CR("blaze_burner"), [
+        ' C ',
+        ' B ',
+        ' A '
+    ], {
+        A: CR('empty_blaze_burner'),
+        B: MC('soul_sand'),
+        C: TCT('blaze_head'),
+    })
 })
