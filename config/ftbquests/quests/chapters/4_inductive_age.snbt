@@ -45,7 +45,7 @@
 				"1467542289484994"
 				"561E1DCEDCA82076"
 			]
-			description: ["&n&lYOU&r&r&n and only &lYOU&r&r&n can make this factory &6great&r.&r"]
+			description: ["&n&lYOU&r&n and only &lYOU&r&n can make this factory &6great&r."]
 			icon: "kubejs:inductive_mechanism"
 			id: "0771ABE6A5754AA1"
 			subtitle: "Inductive? So its good for power?"
@@ -87,9 +87,9 @@
 		{
 			dependencies: ["108E9D3231FAC5D2"]
 			description: [
-				"This one is made by imprinting a &6nether star&r onto the refined radiance sheet using a &6curving press&r."
+				"This one is made by imprinting a &6Nether Star&r onto the Refined Radiance Sheet using a &6Curving Press&r."
 				""
-				"NOTE: Nether star is &6not&r consumed."
+				"NOTE: Nether Star is &6not&r consumed."
 			]
 			icon: "kubejs:radiant_coil"
 			id: "1467542289484994"
@@ -112,13 +112,13 @@
 		{
 			dependencies: ["19EEAF629AE72C2A"]
 			description: [
-				"Cast the &6molten ender alloy&r in a crasting table using a &6nugget cast&r."
+				"Casting is virtually the same for everything that needs to be cast."
 				""
-				"Same as brass. :smile:"
+				"Take your Brass for example. :smile:"
 			]
 			icon: "extendedcrafting:ender_nugget"
 			id: "561E1DCEDCA82076"
-			subtitle: "Casting again. Oh man the old one was good."
+			subtitle: "Casting again. Oh man the old one was better"
 			tasks: [
 				{
 					id: "4925D709C664C86B"
@@ -139,10 +139,7 @@
 				"157B734BA037EFF4"
 				"7821FDEDDD684DD1"
 			]
-			description: [
-				"Combine &6molten iron&r and &6molten ender&r to make &6molten ender alloy&r."
-				"Do this in a foundry mixer. It is the &6same setup&r as making brass."
-			]
+			description: ["Make a new alloy out of &6Molten Iron&r and &6Molten Ender&r."]
 			icon: "kubejs:molten_ender_alloy_bucket"
 			id: "19EEAF629AE72C2A"
 			subtitle: "Molten hot teleportation?"
@@ -163,7 +160,7 @@
 		}
 		{
 			dependencies: ["3322460DD120C633"]
-			description: ["Just &6flatten&r it. Use a &6mechanical press&r."]
+			description: ["Just &6Flatten&r it. Use a &6Mechanical Press&r."]
 			icon: "vintageimprovements:refined_radiance_sheet"
 			id: "108E9D3231FAC5D2"
 			subtitle: "Flat shiny"
@@ -184,7 +181,12 @@
 		}
 		{
 			dependencies: ["12D6ACC2191CB67C"]
-			description: ["Melt &6ender pearls&r the same way you melt iron to make &6molten ender&r."]
+			description: [
+				"Melt &6Ender Pearls&r the same way you would melt anything else"
+				""
+				"Note:Smelteries and Melters can use a number of fluids as The Heat Source™."
+				"Different fluids give different temperatures, directly impacting melting speed."
+			]
 			icon: "tconstruct:molten_ender_bucket"
 			id: "157B734BA037EFF4"
 			subtitle: "Molten teleportation?"
@@ -206,12 +208,12 @@
 		{
 			dependencies: ["14F9B5367649B1B4"]
 			description: [
-				"Melt the &6iron&r to make &6molten iron&r."
-				"If you &6forgot&r how to do that refer back to &6chapter 3&r."
+				"Melt the &6Iron&r."
+				"If you forgot how to do that refer back to &6Chapter 3&r."
 			]
 			icon: "tconstruct:molten_iron_bucket"
 			id: "7821FDEDDD684DD1"
-			subtitle: "Yup molten again. Still hot!"
+			subtitle: "Yup, molten again. Still hot!"
 			tasks: [
 				{
 					id: "2D46276700A38059"
@@ -232,9 +234,9 @@
 			description: [
 				"So many times. I'm tired. Leave me alone."
 				""
-				"Just &6wash&r the damn gravel."
+				"Just &6Wash&r the goddamn gravel."
 				""
-				"TIP: Use &6EMC links&r for everything so that I don't have to explain."
+				"TIP: Use &6EMC Links&r for everything so that I don't have to explain."
 			]
 			icon: "minecraft:iron_nugget"
 			id: "14F9B5367649B1B4"
@@ -255,10 +257,10 @@
 		}
 		{
 			dependencies: ["09DC92D492782F92"]
-			description: ["No coment."]
+			description: ["No comment."]
 			icon: "minecraft:gravel"
 			id: "4A1625B6EFBE3B31"
-			subtitle: "Gravity? Still?"
+			subtitle: "I got bored of Gravel and Gravity puns"
 			tasks: [
 				{
 					id: "373753A40CE63C74"
@@ -276,7 +278,7 @@
 		}
 		{
 			dependencies: ["57D09DE864191C39"]
-			description: ["Ok like for real now. I'm not going to explain this &620 times&r."]
+			description: ["I really hope you've learned the basics by now."]
 			icon: "minecraft:cobblestone"
 			id: "09DC92D492782F92"
 			subtitle: "Cobble wobble"
@@ -300,7 +302,7 @@
 			description: [
 				"You should have some by now. You crafted them in &6chapter 0&r."
 				""
-				"For automation use &6EMC links&r or if you really want to make it hard &6haunt&r slimeballs using a fan."
+				"If only there was a block that &6Links&r directlt to your &6EMC&r..."
 			]
 			icon: "minecraft:ender_pearl"
 			id: "12D6ACC2191CB67C"
@@ -322,7 +324,7 @@
 		}
 		{
 			dependencies: ["72990BF5F56BCE79"]
-			description: ["Made &6only&r in mechanical crafters in a &62x2 grid&r."]
+			description: ["Made &6Exclusively&r in Mechanical Crafters in a &62x2 grid&r."]
 			icon: {
 				Count: 1
 				id: "create:chromatic_compound"
@@ -353,7 +355,7 @@
 			dependencies: ["18B527C2EA8919A3"]
 			description: [
 				"And finally."
-				"Draining &6blue balls&r to make &6magenta balls&r."
+				"Draining &6Blue&r balls to make &6Magenta&r balls."
 			]
 			icon: "ae2:magenta_paint_ball"
 			id: "72990BF5F56BCE79"
@@ -377,7 +379,7 @@
 			dependencies: ["7126921CB51269CE"]
 			description: [
 				"Yet again."
-				"But now we drain the &6green ones&r."
+				"But now we drain the &6Green&r ones."
 			]
 			id: "18B527C2EA8919A3"
 			shape: "rsquare"
@@ -394,7 +396,7 @@
 			dependencies: ["6D16034A9185896D"]
 			description: [
 				"Still same."
-				"But draining &6yellow balls&r now."
+				"But draining &6Yellow&r balls now."
 			]
 			id: "7126921CB51269CE"
 			shape: "rsquare"
@@ -411,7 +413,7 @@
 			dependencies: ["4DDBCB7680B7278D"]
 			description: [
 				"Same as red one."
-				"But can also be made by &6draning red balls&r using a drain. &7[foreshadowing]&r"
+				"But can also be made by &6Draning&r red balls using a Drain. &7[foreshadowing]&r"
 			]
 			id: "6D16034A9185896D"
 			shape: "rsquare"
@@ -427,7 +429,7 @@
 		{
 			dependencies: ["0DB134BA7AC6B87F"]
 			description: [
-				"Crush a &6chromatic singularity&r to make &6paint balls&r of all kinds."
+				"Crush a &6Chromatic Singularity&r to make &6Paint Balls&r of all kinds."
 				""
 				"Drop chance in &6JEI&r."
 			]
@@ -448,7 +450,7 @@
 				"7DE4880FCD6D8720"
 			]
 			description: [
-				"We now use our &6entangled singularities&r and &6green dye&r(can be any kind) to make &6chromatic singularities&r."
+				"We now use our &6Entangled Singularitys&r and &6Any Dye&r to make a &6Chromatic Singularity&r."
 				"Made by &6vacuuming&r the two together."
 			]
 			icon: "kubejs:dye_entangled_singularity"
@@ -472,8 +474,10 @@
 		{
 			dependencies: ["57D09DE864191C39"]
 			description: [
-				"There are multiple ways to go about getting your &6first cactus&r but the best one is to sift some &6sand&r."
-				"Once you have one cactus just &6USE some EMC links&r, like you should have been doing this for a &6while now&r."
+				"Cactus is recommended by this guidebook, but if you really wish, uou could use Cocoa Beans for example, or any other way to automatically get dyes."
+				""
+				"There are multiple ways to go about getting your first &6Cactus&r but the best one is to sift some &6Sand&r."
+				"Once you have one cactus just &6USE EMC links&r, like you should have been doing this for a &6while now&r."
 			]
 			icon: "minecraft:cactus"
 			id: "4F740B2BF0374ECA"
@@ -495,7 +499,7 @@
 		}
 		{
 			dependencies: ["4F740B2BF0374ECA"]
-			description: ["Pretty simple just cook the spiky plant."]
+			description: ["Pretty s1mple actually. Just cook or crush the spiky plant."]
 			icon: "minecraft:green_dye"
 			id: "664AEADF35125B8E"
 			subtitle: "Smells good"
@@ -517,9 +521,9 @@
 		{
 			dependencies: ["79E99A0EA6245495"]
 			description: [
-				"Made by exploding an &6ender pearl&r and &6sigularity&r together using &6TNT&r."
+				"Made by exploding an &6Ender Pearl&r and a &6Sigularity&r together using &6TNT&r or &6Tiny TNT&r."
 				""
-				"Can be made by using &6dispencers&r and &6droppers&r to drop the items and once the TNT explodes, filter the result into your system."
+				"Can be made by using &6Cispencers&r and &6Droppers&r on a Redstone Clock to drop the items and once the TNT explodes, filter the result into your system."
 				""
 				""
 				"{image:kubejs:textures/quests/entangled_singularity.png width:220 height:130 align:center}"
@@ -544,7 +548,7 @@
 		}
 		{
 			dependencies: ["20BF1EDF6E1D1332"]
-			description: ["When you&6 Crush&r a &6Crusher&r it gets &6Crushed&r down to a &5Singularity&r"]
+			description: ["When you&6 Crush&r a &6Crusher&r using &6Crushers& it gets &6Crushed&r down to a &5Singularity&r"]
 			icon: "ae2:singularity"
 			id: "79E99A0EA6245495"
 			subtitle: "The irony."
@@ -569,7 +573,7 @@
 				"2C53BC8ECC03FA94"
 			]
 			description: [
-				"Made using mechanical creafters."
+				"Crafted Mechanically."
 				""
 				"{image:kubejs:textures/quests/crushingwheel_crafter.png width:220 height:130 align:center fit:true}"
 				""
@@ -598,7 +602,9 @@
 			description: [
 				"Same here like do you need an explanation?!"
 				""
-				"Ok. Put &6two planks under&r each other in a crafting table and you will get &6four sticks&r."
+				"Ok. &6Mechanical Saw&r."
+				""
+				"Happy?"
 			]
 			icon: "minecraft:stick"
 			id: "2C53BC8ECC03FA94"
@@ -623,7 +629,7 @@
 			description: [
 				"Do I really need to say this..."
 				""
-				"Ok fine. Just put &6one log&r in the crafting table and you will get &6four planks&r."
+				"Ok fine. &6Mechanical Saw&r."
 			]
 			icon: "minecraft:oak_planks"
 			id: "1EB45C5AAABC5DA4"
@@ -695,7 +701,7 @@
 				""
 				"{@pagebreak}"
 				""
-				"It's &6beacon&r, you dumbass..."
+				"It's a &6Beacon&r, you dumbass..."
 			]
 			icon: "create:refined_radiance"
 			id: "3322460DD120C633"
