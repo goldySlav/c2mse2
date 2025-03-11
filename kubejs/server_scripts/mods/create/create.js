@@ -178,8 +178,7 @@ ServerEvents.recipes((event) => {
 	removeRecipeByOutput(event, [
 		CR("polished_rose_quartz"),
 	])
-	customRecipes.create.pressurizing(event, [CR('polished_rose_quartz')], `250x ${KJ("liquid_redstone")}`, AE2('certus_quartz_crystal'))
-	customRecipes.create.pressurizing(event, [CR('polished_rose_quartz')], `250x ${KJ("liquid_redstone")}`, MC('quartz'))
+	event.recipes.create.mixing(CR('polished_rose_quartz'), [Fluid.of(KJ("liquid_redstone"), 250), [AE2('certus_quartz_crystal'), MC('quartz')]])
 	event.custom({
 		type: AE2_A("reaction"),
 		energy: 1000000,
@@ -303,12 +302,6 @@ ServerEvents.recipes((event) => {
 		customRecipes.ad_astra.compressing(event, CR(`${sheet}_sheet`), F(`#ingots/${sheet}`))
 	})
 	customRecipes.ad_astra.compressing(event, CR(`golden_sheet`), F(`#ingots/gold`))
-	
-	//tank from reservoir
-	event.shapeless(CR("fluid_tank"), CR_DD('fluid_reservoir'))
-	
-	//vault from stockpile
-	event.shapeless(CR("item_vault"), CR_DD('item_stockpile'))
 	
 	//blaze burner from head
 	event.shaped(CR("blaze_burner"), [

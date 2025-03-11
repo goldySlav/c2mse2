@@ -392,15 +392,11 @@
 		{
 			dependencies: ["792CCD66259F06BD"]
 			description: [
-				"Coke chunks are made with a long 4 step process:"
+				"Coke chunks are made with a short 2 step process, but it has to be repeated multiple times:"
 				""
-				"&6&l1.&r Processing the Polished Coke with a laser that needs both &6Rotation&r and &6Power&r."
+				"&6&l1.&r Saw the Polished Coke with a Mechanical Saw."
 				""
-				"&6&l2.&r Grinding it on a Belt Grinder on &6Medium&r rotation speed."
-				""
-				"&6&l3.&r Next comes &6Vibrating&r on a Vibrating Table."
-				""
-				"&6&l4.&r Last is spouting &6H2O&r(Water) on it."
+				"&6&l2.&r Last is spouting &6H2O&r(Water) on it."
 			]
 			icon: "kubejs:coke_chunk"
 			id: "3BB8214617F3B855"
@@ -674,9 +670,9 @@
 		{
 			dependencies: ["325605BD444D4AB0"]
 			description: [
-			"Either go to the &6Nether&r or combine Witchwater and Lava in a &6Stone Barrel&r."
-			"Combining flowing Witchwater and flowing Lava in world also works, I guess."
-			"...Mechanical extruder would also work, I guess."
+				"Either go to the &6Nether&r or combine Witchwater and Lava in a &6Stone Barrel&r."
+				"Combining flowing Witchwater and flowing Lava in world also works, I guess."
+				"...Mechanical extruder would also work, I guess."
 			]
 			icon: "minecraft:netherrack"
 			id: "5A7D10FED1E2F5CD"

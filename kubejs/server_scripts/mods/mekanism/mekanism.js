@@ -204,7 +204,7 @@ ServerEvents.recipes((event) => {
 		G: F('#storage_blocks/steel'),
 		H: KJ('ether_gem'),
 		I: M('ultimate_control_circuit'),
-		J: CR_V('centrifuge'),
+		J: F('#gears/diamond'),
 	}).id(KJ(`${M()}/extended_crafting/isotopic_centrifuge`))
 	
 	//energy tablet
@@ -1943,7 +1943,7 @@ ServerEvents.recipes((event) => {
 	mekaUnit(event, M("module_laser_dissipation_unit"), [
 		`4x ${M("alloy_infused")}`,
 		`2x ${M("laser_amplifier")}`,
-		`3x ${CR_V("laser_item")}`,
+		`3x ${LB("laser_source_block")}`,
 		`1x ${M("laser")}`,
 		`6x ${M("hdpe_stick")}`,
 		`4x ${M("reprocessed_fissile_fragment")}`,

@@ -766,8 +766,8 @@ ServerEvents.recipes((event) => {
 	], {
 		A: IF("machine_frame_simple"),
 		B: CP('diamond_2'),
-		C: CR_V("laser_item"),
-		D: CR_V("laser_item"),
+		C: LB("laser_source_block"),
+		D: LB("laser_source_block"),
 		E: P('dielectric_casing'),
 		F: F('#gears/gold'),
 		G: IF('plastic'),
@@ -1073,7 +1073,7 @@ ServerEvents.recipes((event) => {
 		A: IF("machine_frame_advanced"),
 		B: CP('gold_2'),
 		C: MC('water_bucket'),
-		D: CR_V("laser_item"),
+		D: LB("laser_source_block"),
 		E: P('dielectric_casing'),
 		F: F('#gears/diamond'),
 		G: IF('plastic'),
@@ -1224,7 +1224,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: IF("machine_frame_advanced"),
 		B: CP('gold_2'),
-		C: CR_V("laser_item"),
+		C: LB("laser_source_block"),
 		D: F('#raw_materials'),
 		E: P('dielectric_casing'),
 		F: F('#gears/gold'),
@@ -1500,7 +1500,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: IF("machine_frame_advanced"),
 		B: CP('gold_2'),
-		C: CR_V('laser_item'),
+		C: LB("laser_source_block"),
 		D: MC('sculk_catalyst'),
 		E: P('dielectric_casing'),
 		F: F('#gears/diamond'),

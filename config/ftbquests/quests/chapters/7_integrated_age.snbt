@@ -10,6 +10,7 @@
 	quests: [
 		{
 			dependencies: ["39DA9F7639D6AD78"]
+			description: ["The end just like that. Wasn't so hard was it?"]
 			id: "09CD8EB06036A1C4"
 			shape: "rsquare"
 			tasks: [{
@@ -22,7 +23,9 @@
 		}
 		{
 			dependencies: ["2E6CE520086D8586"]
+			description: ["Wow man you are getting far. Keep it up!"]
 			id: "342C68B775AAD6FC"
+			subtitle: "Another one!"
 			tasks: [{
 				id: "115A6385522B2961"
 				title: "Start Chapter"
@@ -36,6 +39,7 @@
 				"4FB684E7281BF230"
 				"5DF8DBD5A4EE1943"
 			]
+			description: ["EXPAND EXPAND EXPAND EXPAND!!!!"]
 			icon: "kubejs:integrated_mechanism"
 			id: "39DA9F7639D6AD78"
 			tasks: [
@@ -57,6 +61,7 @@
 			dependencies: ["2E6CE520086D8586"]
 			id: "4FB684E7281BF230"
 			shape: "rsquare"
+			subtitle: "Trusty tool for math"
 			tasks: [{
 				id: "18CC1688A1D22ECC"
 				item: {
@@ -73,8 +78,10 @@
 		}
 		{
 			dependencies: ["4C846C447750DDC2"]
+			description: ["Just cook the dry rubber."]
 			icon: "industrialforegoing:plastic"
 			id: "5DF8DBD5A4EE1943"
+			subtitle: "Don't throw me in the sea!!"
 			tasks: [
 				{
 					id: "06D2D79C686D8B5B"
@@ -95,8 +102,14 @@
 				"7615113F775FAB67"
 				"1703708CBC9B2247"
 			]
+			description: [
+				"Made simply by putting &6latex&r and &6water&r into a &6powered&r latex processing unit."
+				""
+				"NOTE: 750ml of latex for one dry rubber"
+			]
 			icon: "industrialforegoing:dryrubber"
 			id: "4C846C447750DDC2"
+			subtitle: "Stretchy"
 			tasks: [
 				{
 					id: "5050F42331B09B3D"
@@ -114,8 +127,10 @@
 		}
 		{
 			dependencies: ["342C68B775AAD6FC"]
+			description: ["Used for making dry rubber."]
 			id: "7615113F775FAB67"
 			shape: "rsquare"
+			subtitle: "BeEp bOOp bo0P"
 			tasks: [{
 				id: "67B68EDE4E4E52C7"
 				item: "industrialforegoing:latex_processing_unit"
@@ -126,8 +141,15 @@
 		}
 		{
 			dependencies: ["5E0D79B5243A491C"]
+			description: [
+				"By putting a log infront of the fluid extractor we will make latex."
+				""
+				""
+				"NOTE: The extractor works faster when powered."
+			]
 			icon: "industrialforegoing:latex_bucket"
 			id: "1703708CBC9B2247"
+			subtitle: "Tree liquid"
 			tasks: [
 				{
 					id: "469A4842EB613501"
@@ -145,8 +167,10 @@
 		}
 		{
 			dependencies: ["342C68B775AAD6FC"]
+			description: ["Used for making latex."]
 			id: "5E0D79B5243A491C"
 			shape: "rsquare"
+			subtitle: "Your first industrial machines"
 			tasks: [{
 				id: "747E523F5A5BE989"
 				item: "industrialforegoing:fluid_extractor"

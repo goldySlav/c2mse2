@@ -56,6 +56,7 @@ StartupEvents.registry('item', event => {
 	event.create('nourished_coke').displayName('Nourished Coke')
 	event.create('polished_coke').displayName('Polished Coke')
 	event.create('blank_upgrade').displayName('Blank Pipe Upgrade')
+	event.create('radiant_sheet').displayName('Radiant Sheet').rarity("uncommon").glow(true)
 	event.create('ender_star_fragment').displayName('Ender Star Fragment').rarity("uncommon").glow(true)
 	event.create('flux_star_fragment').displayName('Flux Star Fragment').rarity("uncommon").glow(true)
 	event.create('universe_piece').displayName('Piece of Universe').glow(true).rarity("epic")
@@ -157,9 +158,9 @@ StartupEvents.registry('item', event => {
 	event.create('unstable_chromatic_resonator').displayName('Unstable Chromatic Resonator').glow(true).rarity("epic").maxDamage(512000).texture("kubejs:item/chromatic_resonator")
 	
 	//calculator
-	event.create('calculator').displayName('Calculator')
-	event.create('charged_calculator').displayName('Charged Calculator').maxDamage(1024)
-	event.create('unstable_charged_calculator').displayName('Unstable Charged Calculator').glow(true).rarity("epic").maxDamage(1024000).texture("kubejs:item/charged_calculator")
+	event.create('calculator').displayName('Broken Calculator')
+	event.create('charged_calculator').displayName('Fibonacci Calculator').maxDamage(1024)
+	event.create('unstable_charged_calculator').displayName('Unstable Fibonacci Calculator').glow(true).rarity("epic").maxDamage(1024000).texture("kubejs:item/charged_calculator")
 	
 	//mechanisms
 	let mechanism = (name, glow) => {

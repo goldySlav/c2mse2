@@ -18,7 +18,7 @@
 				title: "Start Chapter"
 				type: "checkmark"
 			}]
-			x: -0.5d
+			x: -2.0d
 			y: -3.5d
 		}
 		{
@@ -48,7 +48,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -0.5d
+			x: -2.0d
 			y: 7.0d
 		}
 		{
@@ -73,7 +73,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -2.0d
+			x: -1.0d
 			y: 0.0d
 		}
 		{
@@ -94,7 +94,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -2.0d
+			x: -1.0d
 			y: 2.0d
 		}
 		{
@@ -217,21 +217,17 @@
 		{
 			dependencies: ["1B41E5301611D094"]
 			description: [
-				"You can make this one by using the &6spring coiling machine&r and our &6rods&r."
+				"You can make this one by using the &6rolling mill&r on our &6rods&r once again."
 				""
-				"Please note, that the &6Spring Coiling Machine&r outputs from the front side of the machine."
-				""
-				"So if you want to output a spring on a belt, make sure to do something like you see on the screenshot."
-				""
-				"{image:kubejs:textures/quests/spring_tutorial.png width:225 height:150 align:1}"
+				"Please note, that you can also use Tinkers Construct's casting of a Molten Copper too!"
 			]
-			icon: "vintageimprovements:copper_spring"
+			icon: "createaddition:copper_wire"
 			id: "4C793E5E91461036"
 			subtitle: "So many curves."
 			tasks: [
 				{
 					id: "6F31A95511A0857F"
-					item: "vintageimprovements:copper_spring"
+					item: "createaddition:copper_wire"
 					type: "item"
 				}
 				{
@@ -240,18 +236,15 @@
 					type: "checkmark"
 				}
 			]
-			x: 1.0d
+			x: 0.0d
 			y: 5.5d
 		}
 		{
-			dependencies: ["6D7C1B46E000BDBA"]
-			description: [
-				"Polished coke is made by doing a &63 step process&r:"
-				""
-				"&l&61.&r&r Cutting Nourished coke on a mechanical saw."
-				"&l&62.&r&r After goes vibrating it in a &6vibrating table&r."
-				"&l&63.&r&r And lastly you polish it on a belt grinder on &6low rotation&r."
+			dependencies: [
+				"6D7C1B46E000BDBA"
+				"7724D3FEA4626577"
 			]
+			description: ["Polished coke is made by polishing it with a &6Sand Paper&r"]
 			icon: "kubejs:polished_coke"
 			id: "37E11FF4DB4A05A1"
 			subtitle: "Nice and shiny"
@@ -288,7 +281,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -2.0d
+			x: -1.0d
 			y: -2.0d
 		}
 		{
@@ -312,7 +305,7 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
+			x: -0.5d
 			y: 7.0d
 		}
 		{
@@ -330,7 +323,7 @@
 				item: "kubejs:copper_machine"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -2.0d
 			y: 8.5d
 		}
 		{
@@ -351,8 +344,137 @@
 					type: "checkmark"
 				}
 			]
-			x: -2.0d
+			x: -1.5d
 			y: 4.0d
+		}
+		{
+			dependencies: ["069880B5BBFEDBA6"]
+			icon: "minecraft:sugar_cane"
+			id: "2F91D141FA26B1F4"
+			tasks: [
+				{
+					id: "17122C264B62C997"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+				{
+					id: "374B9096D480ADFD"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2F91D141FA26B1F4"]
+			icon: "minecraft:paper"
+			id: "2932906391CDEA37"
+			tasks: [
+				{
+					id: "73DD91A96AB8D948"
+					item: "minecraft:paper"
+					type: "item"
+				}
+				{
+					id: "1A32C72E0780C2BC"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["51E2D60A136A26BE"]
+			icon: "minecraft:sand"
+			id: "5B92B32743B113EF"
+			tasks: [
+				{
+					id: "66B8D7A61681C6A9"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "567E0C2444CA07DD"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"5B92B32743B113EF"
+				"2932906391CDEA37"
+			]
+			icon: {
+				Count: 1
+				id: "create:sand_paper"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7724D3FEA4626577"
+			tasks: [
+				{
+					id: "43126BFFBD82DD7D"
+					item: {
+						Count: 1
+						id: "create:sand_paper"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5A863123644E9EB4"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["069880B5BBFEDBA6"]
+			icon: "minecraft:cobblestone"
+			id: "0CAA346BF2A2A07C"
+			tasks: [
+				{
+					id: "40D018B026EDF50C"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					id: "13707B51FAE3FD16"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0CAA346BF2A2A07C"]
+			icon: "minecraft:gravel"
+			id: "51E2D60A136A26BE"
+			tasks: [
+				{
+					id: "4F2C09E722A911E0"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					id: "50FE01BB3E1B7917"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -5.0d
+			y: 0.0d
 		}
 	]
 	title: "2. Copper Age"

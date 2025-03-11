@@ -86,11 +86,7 @@
 		}
 		{
 			dependencies: ["108E9D3231FAC5D2"]
-			description: [
-				"This one is made by imprinting a &6Nether Star&r onto the Refined Radiance Sheet using a &6Curving Press&r."
-				""
-				"NOTE: Nether Star is &6not&r consumed."
-			]
+			description: ["This one is made by folding a Radiant Sheet using a &6Mechanical Crafter&r."]
 			icon: "kubejs:radiant_coil"
 			id: "1467542289484994"
 			subtitle: "Oh now its a coil"
@@ -161,13 +157,13 @@
 		{
 			dependencies: ["3322460DD120C633"]
 			description: ["Just &6Flatten&r it. Use a &6Mechanical Press&r."]
-			icon: "vintageimprovements:refined_radiance_sheet"
+			icon: "kubejs:radiant_sheet"
 			id: "108E9D3231FAC5D2"
 			subtitle: "Flat shiny"
 			tasks: [
 				{
 					id: "2AC7E4CE3CE1D42E"
-					item: "vintageimprovements:refined_radiance_sheet"
+					item: "kubejs:radiant_sheet"
 					type: "item"
 				}
 				{
@@ -184,7 +180,7 @@
 			description: [
 				"Melt &6Ender Pearls&r the same way you would melt anything else"
 				""
-				"Note:Smelteries and Melters can use a number of fluids as The Heat Source™."
+				"Note:Smelteries and Melters can use a number of fluids as The Heat Source."
 				"Different fluids give different temperatures, directly impacting melting speed."
 			]
 			icon: "tconstruct:molten_ender_bucket"
@@ -451,7 +447,7 @@
 			]
 			description: [
 				"We now use our &6Entangled Singularitys&r and &6Any Dye&r to make a &6Chromatic Singularity&r."
-				"Made by &6vacuuming&r the two together."
+				"Made by &6mixing&r the two together."
 			]
 			icon: "kubejs:dye_entangled_singularity"
 			id: "0DB134BA7AC6B87F"
@@ -548,7 +544,7 @@
 		}
 		{
 			dependencies: ["20BF1EDF6E1D1332"]
-			description: ["When you&6 Crush&r a &6Crusher&r using &6Crushers& it gets &6Crushed&r down to a &5Singularity&r"]
+			description: ["When you &6Crush&r a &6Crusher&r using &6Crushers&r it gets &6Crushed&r down to a &5Singularity&r"]
 			icon: "ae2:singularity"
 			id: "79E99A0EA6245495"
 			subtitle: "The irony."

@@ -292,20 +292,6 @@
 			y: 15.0d
 		}
 		{
-			description: ["Base burn time: &62000&r ticks."]
-			disable_toast: true
-			id: "37F3251D15392073"
-			size: 1.0d
-			subtitle: "Smelts &810&r items"
-			tasks: [{
-				id: "21CF7A1E3C18860B"
-				item: "createmetallurgy:coke"
-				type: "item"
-			}]
-			x: -0.5d
-			y: -7.5d
-		}
-		{
 			description: ["Base burn time: &61600&r ticks."]
 			disable_toast: true
 			id: "1C3859F95A9C1E95"
@@ -320,7 +306,6 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["37F3251D15392073"]
 			description: [
 				"Base burn time: &61600&r ticks."
 				"Cost per operation: &6128 EMC&r."
@@ -335,7 +320,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: -6.0d
+			y: -7.5d
 		}
 	]
 	title: "Fuels"

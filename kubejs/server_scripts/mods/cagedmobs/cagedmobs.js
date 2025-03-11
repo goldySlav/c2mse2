@@ -38,7 +38,6 @@ ServerEvents.recipes((event) => {
 	}
 	
 	grow(ART("mimic"), 3, ["cave"])
-	grow(CR_DD("seething_ablaze"), 3, ["nether"])
 	
 	function addLoot(entity, item, chance, minAmount, maxAmount, lightning) {
 		chance = chance ? chance : 1.0
@@ -84,9 +83,6 @@ ServerEvents.recipes((event) => {
 		addLoot(ART("mimic"), artifact, 0.005)
 	})
 	
-	//seething ablaze
-	addLoot(CR_DD("seething_ablaze"), CR_DD("seething_ablaze_rod"), 0.15, 1, 2)
-	
 	//cobweb from spider
 	addLoot(MC("spider"), MC("cobweb"), 0.1)
 	
@@ -127,7 +123,7 @@ ServerEvents.recipes((event) => {
 		MC("shulker"), MC("skeleton"), MC("skeleton_horse"), MC("slime"), MC("snow_golem"), 
 		MC("spider"), MC("stray"), MC("vex"), MC("vindicator"), MC("witch"), MC("wither_skeleton"), 
 		MC("zoglin"), MC("zombie"), MC("zombie_horse"), MC("zombie_villager"), MC("zombified_piglin"),
-		Q("forgotten"), Q("foxhound"), Q("wraith"), ART("mimic"), CR_DD("seething_ablaze"),
+		Q("forgotten"), Q("foxhound"), Q("wraith"), ART("mimic"),
 	]
 	
 	const bigEntities = [

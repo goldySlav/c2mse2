@@ -207,4 +207,7 @@ ServerEvents.recipes((event) => {
 	
 	//grass block
 	event.recipes.create.deploying(MC("grass_block"), [MC("dirt"), EXD(`grass_seeds`)])
+	
+	//emerald dupe from diamond
+	customRecipes.create.ifiniDeploying(event, MC("emerald"), MC("diamond"), MC("nether_star"))
 })

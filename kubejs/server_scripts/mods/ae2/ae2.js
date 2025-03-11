@@ -211,7 +211,7 @@ ServerEvents.recipes((event) => {
 	event.recipes.mekanism.metallurgic_infusing(Item.of(AE2("quantum_entangled_singularity"), 2), AE2("singularity"), `20x ${KJ("explosion_essence")}`)
 	
 	//sky dust from cloud
-	customRecipes.create.vacuumizing(event, [AE2("sky_dust")], [AP("gem_dust"), MC('gunpowder'), Q("bottled_cloud")], 80)
+	event.recipes.create.mixing(AE2("sky_dust"), [AP("gem_dust"), MC('gunpowder'), Q("bottled_cloud")])
 
 	//crafting unit
 	removeRecipeByOutput(event, [

@@ -473,26 +473,7 @@ ServerEvents.recipes((event) => {
 	})
 	event.recipes.mekanism.injecting(Item.of(KJ("nourished_coke"), 2), F("#gems/coke"), {gas: M("steam"), amount: 1})
 	
-	let tPolishedCoke = KJ('nourished_coke')
-	event.recipes.create.sequenced_assembly([
-		KJ('polished_coke'),
-	], KJ('nourished_coke'), [
-		event.recipes.create.cutting(tPolishedCoke, tPolishedCoke),
-		event.custom({
-			type: CR_V("vibrating"),
-			ingredients: toRecipeJsonItem([tPolishedCoke]),
-			results: toRecipeJsonItem([tPolishedCoke]),
-			processingTime: 20
-		}),
-		event.custom({
-			type: CR_V("polishing"),
-			speedLimits: 1,
-			ingredients: toRecipeJsonItem([tPolishedCoke]),
-			results: toRecipeJsonItem([tPolishedCoke]),
-			processingTime: 20
-		}),
-	]).transitionalItem(tPolishedCoke)
-		.loops(1)
+	event.recipes.create.sandpaper_polishing(KJ('polished_coke'), KJ('nourished_coke'))
 	event.recipes.mekanism.enriching(KJ('polished_coke'), KJ('nourished_coke'))
 	
 	
@@ -504,29 +485,11 @@ ServerEvents.recipes((event) => {
 	event.recipes.create.sequenced_assembly([
 		KJ('coke_chunk'),
 	], KJ('polished_coke'), [
-		event.custom({
-			type: CR_V("laser_cutting"),
-			ingredients: toRecipeJsonItem([t]),
-			results: toRecipeJsonItem([t]),
-			energy: 2000,
-			maxChargeRate: 50
-		}),
-		event.custom({
-			type: CR_V("polishing"),
-			speedLimits: 2,
-			ingredients: toRecipeJsonItem([t]),
-			results: toRecipeJsonItem([t]),
-			processingTime: 20
-		}),
-		event.custom({
-			type: CR_V("vibrating"),
-			ingredients: toRecipeJsonItem([t]),
-			results: toRecipeJsonItem([t]),
-			processingTime: 60
-		}),
+		event.recipes.create.cutting(t, t),
 		event.recipes.create.filling(t, [t, Fluid.of(MC("water"), 250)]),
 	]).transitionalItem(t)
-		.loops(1)
+		.loops(2)
+	event.recipes.mekanism.sawing(KJ('polished_coke'), Item.of(KJ('coke_chunk'), 2))
 	
 	event.recipes.create.emptying([KJ("rough_sand"), Fluid.of(KJ("fine_sand"), 500)], KJ("sand_ball"))
 	customRecipes.create.sifting(event, [KJ("purified_sand")], KJ("rough_sand"), 6)
@@ -685,8 +648,8 @@ ServerEvents.recipes((event) => {
 	
 	//dye entangled singularity
 	dyes.forEach(dye => {
-		customRecipes.create.vacuumizing(event, [KJ("dye_entangled_singularity")], [dye, AE2('quantum_entangled_singularity')], 20)
-		event.recipes.mekanismCombining(KJ("dye_entangled_singularity"), AE2('quantum_entangled_singularity'), dye)
+		event.recipes.create.mixing(KJ("dye_entangled_singularity"), [dye, AE2('quantum_entangled_singularity')])
+		event.recipes.mekanism.combining(KJ("dye_entangled_singularity"), AE2('quantum_entangled_singularity'), dye)
 	})
 	colours.forEach(color => {
 		customRecipes.mekanism.painting(event, KJ("dye_entangled_singularity"), AE2("quantum_entangled_singularity"), color)
@@ -771,8 +734,12 @@ ServerEvents.recipes((event) => {
 	
 	
 	
+	//radiant sheet
+	event.recipes.create.pressing(KJ(`radiant_sheet`), CR("refined_radiance"))
+	customRecipes.ad_astra.compressing(event, KJ(`radiant_sheet`), CR("refined_radiance"))
+	
 	//radiant coil
-	customRecipes.create.curvingWithItem(event, [KJ('radiant_coil')], [F('#plates/refined_radiance')], MC("nether_star"))
+	event.recipes.create.mechanical_crafting(KJ("radiant_coil"), "A", { A: KJ('radiant_sheet') })
 	
 	
 	
@@ -909,6 +876,14 @@ ServerEvents.recipes((event) => {
 		}
 	}
 	
+	//fibonacci sequence with calculator
+	event.recipes.create.deploying(KJ("one"), [KJ("zero"), F("#tools/calculators")])
+	event.recipes.create.deploying(KJ("two"), [KJ("one"), F("#tools/calculators")])
+	event.recipes.create.deploying(KJ("three"), [KJ("two"), F("#tools/calculators")])
+	event.recipes.create.deploying(KJ("five"), [KJ("three"), F("#tools/calculators")])
+	event.recipes.create.deploying(KJ("eight"), [KJ("five"), F("#tools/calculators")])
+	event.recipes.create.deploying(KJ("missingno"), [KJ("eight"), F("#tools/calculators")])
+	
 	//COUNT NUMBERS IN JSFIDDLE FORMULAS
 /* const mechanismCost = 200,
 perCast = 25,
@@ -1044,7 +1019,7 @@ castsForNumber = {
 		KJ('sealed_mechanism'),
 	], KJ('kinetic_mechanism'), [
 		event.recipes.create.deploying(tSealed, [tSealed, KJ('polished_coke')]),
-		event.recipes.create.deploying(tSealed, [tSealed, CR_V('#springs/copper')]),
+		event.recipes.create.deploying(tSealed, [tSealed, F('#wires/copper')]),
 		event.recipes.create.deploying(tSealed, [tSealed, F("#tools/screwdrivers")])
 	]).transitionalItem(tSealed)
 		.loops(1)
@@ -1198,19 +1173,13 @@ castsForNumber = {
 	andesite_machine(CR('mechanical_piston'), 1, MC("piston"))
 	andesite_machine(CR('rope_pulley'), 1, CF("rope_and_nail"))
 	andesite_machine(IF('water_condensator'), 1, MC("water_bucket"))
-	andesite_machine(CR_V('belt_grinder'), 1, CR_V("grinder_belt"))
-	andesite_machine(CR_V('spring_coiling_machine'), 1, CR_V("spring_coiling_machine_wheel"))
-	andesite_machine(CR_V('vibrating_table'), 1, CR_V("iron_spring"))
-	andesite_machine(CR_V('centrifuge'), 1, CR("mechanical_bearing"))
 	andesite_machine(CR_A('rolling_mill'), 1, CR("shaft"))
 	andesite_machine(CR_ME('mechanical_extruder'), 1, F("#cobblestone_generators"))
 	andesite_machine(CR_S('sifter'), 1, EXD("#sieves"))
 	andesite_machine(EIO('enchanter'), 1, MC("enchanting_table"))
 	andesite_machine(KJ('pipe_module_utility'), 4)
 	andesite_machine(SR('altar'), 1)
-	andesite_machine(CR_DD('kinetic_motor'), 1)
 	andesite_machine(CR_RC('mechanical_chisel'), 1, RC("chisel"))
-	andesite_machine(CR_V('curving_press'), 1, CR_V("brass_spring"))
 	
 	//copper machine
 	event.shaped(KJ('copper_machine'), [
@@ -1240,7 +1209,6 @@ castsForNumber = {
 	copper_machine(CR('item_drain'), 1, Q("grate"))
 	copper_machine(CR('smart_fluid_pipe'), 1, CR("fluid_pipe"))
 	copper_machine(CR_EI('printer'), 1, MC("dried_kelp"))
-	copper_machine(CR_V('vacuum_chamber'), 1, CR("mechanical_pump"))
 	copper_machine(KJ('pipe_module_tier_1'), 4)
 	copper_machine(AE2('charger'), 1, AE2('certus_quartz_crystal'))
 	copper_machine(P('energy_cell_starter'), 1, P('battery_starter'))
@@ -1257,7 +1225,6 @@ castsForNumber = {
 	copper_machine(EC('crafting_core'), 1, MC('crafting_table'))
 	copper_machine(EC('pedestal'), 1)
 	copper_machine(CR('steam_engine'), 1, CR('hand_crank'))
-	copper_machine(CR_DD('hydraulic_press'), 1, CR("mechanical_press"))
 	copper_machine(TCT('smeltery_controller'), 1, TCT("seared_melter"))
 	
 	//brass machine
@@ -1300,7 +1267,7 @@ castsForNumber = {
 	brass_machine(PP('crafting_terminal'), 1, PP('item_terminal'))
 	brass_machine(PP('pressurizer'), 1, CR('propeller'))
 	brass_machine(CR_A("tesla_coil"), 1, AE2("charger"))
-	brass_machine(AA("compressor"), 1, CR_DD('hydraulic_press'))
+	brass_machine(AA("compressor"), 1, CR('mechanical_press'))
 	brass_machine(P('energy_cell_basic'), 1, P('battery_basic'))
 	brass_machine(P('ender_cell_basic'), 1, P('ender_cell_starter'))
 	brass_machine(P('energizing_rod_basic'), 1, P('energizing_rod_starter'))
@@ -1311,8 +1278,6 @@ castsForNumber = {
 	brass_machine(P('player_transmitter_basic'), 1, P('player_transmitter_starter'))
 	brass_machine(P('energy_hopper_basic'), 1, P('energy_hopper_starter'))
 	brass_machine(P('energy_discharger_basic'), 1, P('energy_discharger_starter'))
-	brass_machine(CR_V('laser'), 1, CR_V('laser_item'))
-	brass_machine(CR_DD('industrial_fan'), 1, CR('encased_fan'))
 	brass_machine(CR_A('portable_energy_interface'), 2)
 	brass_machine(EIO('xp_obelisk'), 1, EIO('experience_rod'))
 	
@@ -1411,7 +1376,7 @@ castsForNumber = {
 	fluix_machine(AA('radio'), 1, X('antenna_base'))
 	fluix_machine(AA('ti_69'), 1)
 	fluix_machine(AE2('controller'), 1)
-	fluix_machine(LIO('laser_node'), 2, CR_V("laser_item"))
+	fluix_machine(LIO('laser_node'), 2, LB("laser_source_block"))
 	fluix_machine(EIO("double_layer_capacitor"), 1, EIO('basic_capacitor'))
 	fluix_machine(KJ('blank_upgrade'), 2)
 	
@@ -1570,6 +1535,6 @@ castsForNumber = {
 	electric_machine(X('wireless_router'), 1, CR('redstone_link'))
 	electric_machine(X('redstone_proxy'), 1, F('#ingots/red_alloy'))
 	electric_machine(X('redstone_proxy_upd'), 1, PR_T('red_alloy_wire'))
-	electric_machine(M('laser'), 1, CR_V('laser_item'))
+	electric_machine(M('laser'), 1, LB("laser_source_block"))
 	electric_machine(IF("infinity_charger"), 1, AE2_E('ex_charger'))
 })

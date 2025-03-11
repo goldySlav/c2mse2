@@ -13,6 +13,7 @@
   "terrain": {
     "fancyBreakingParticles": true,
     "fancyCrackingParticles": true,
+    "fancyFallingDustParticles": true,
     "spawnWhileFrozen": true,
     "infiniteDuration": false,
     "smartBreaking": true,
@@ -100,6 +101,14 @@
     "maxLifetime": 100,
     "sizeMultiplier": 1.0,
     "gravityMultiplier": 1.0
+  },
+  "misc": {
+    "fancySnowballParticles": true,
+    "fancySlimeParticles": true,
+    "fancyBreakingSplashPotionParticles": true,
+    "snowballParticleSizeMultiplier": 1.0,
+    "slimeParticleSizeMultiplier": 1.0,
+    "breakingSplashPotionParticleSizeMultiplier": 1.0
   },
   "animations": {
     "enabled": false,

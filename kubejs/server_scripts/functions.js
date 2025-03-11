@@ -105,6 +105,7 @@ const ES = (id, x) => MOD("enderstorage", id, x)
 const AR = (id, x) => MOD("angelring", id, x)
 const ENT = (id, x) => MOD("entangled", id, x)
 const TCT = (id, x) => MOD("tconstruct", id, x)
+const LB = (id, x) => MOD("laserbridges", id, x)
 
 const SD = (id, x) => MOD("storagedrawers", id, x)
 const FCD = (id, x) => MOD("framedcompactdrawers", id, x)
@@ -200,15 +201,6 @@ const armorPieces = {
 
 const customRecipes = {
 	create: {
-		vibrating: function (e, outputArr, inputArr, ticks) {
-			ticks = ticks ? ticks : 200
-			e.custom({
-				type: CR_V("vibrating"),
-				ingredients: toRecipeJsonItem(inputArr),
-				results: toRecipeJsonItem(outputArr),
-				processingTime: ticks
-			})
-		},
 		sifting: function (e, outputArr, item, mesh, ticks) {
 			ticks = ticks ? ticks : 500
 			let meshStr
@@ -242,53 +234,6 @@ const customRecipes = {
 				],
 				results: toRecipeJsonItem(outputArr),
 				processingTime: ticks
-			})
-		},
-		beltPolishing: function (e, outputArr, inputArr, speed, ticks) {
-			ticks = ticks ? ticks : 20
-			speed = speed ? speed : 1 //1/2/3
-			e.custom({
-				type: CR_V("polishing"),
-				speedLimits: speed,
-				ingredients: toRecipeJsonItem(inputArr),
-				results: toRecipeJsonItem(outputArr),
-				processingTime: ticks
-			})
-		},
-		lasering: function (e, outputArr, inputArr, energy) {
-			energy = energy ? energy : 2000
-			e.custom({
-				type: CR_V("laser_cutting"),
-				ingredients: toRecipeJsonItem(inputArr),
-				results: toRecipeJsonItem(outputArr),
-				energy: energy,
-				maxChargeRate: 50
-			})
-		},
-		pressurizing: function (e, outputArr, fluid, item, ticks) {
-			ticks = ticks ? ticks : 60
-			e.custom({
-			  type: CR_V("pressurizing"),
-			  ingredients: [toRecipeJsonFluid(fluid), toRecipeJsonItem(item)],
-			  results: toRecipeJsonItem(outputArr),
-			  processingTime: ticks,
-			})
-		},
-		vacuumizing: function (e, outputArr, inputArr, ticks) {
-			ticks = ticks ? ticks : 60
-			e.custom({
-			  type: CR_V("vacuumizing"),
-			  ingredients: toRecipeJsonItem(inputArr),
-			  results: toRecipeJsonItem(outputArr),
-			  processingTime: ticks,
-			})
-		},
-		curvingWithItem: function (e, outputArr, inputArr, head) {
-			e.custom({
-			  type: CR_V("curving"),
-			  ingredients: toRecipeJsonItem(inputArr),
-			  results: toRecipeJsonItem(outputArr),
-			  itemAsHead: head,
 			})
 		},
 		liquidFuel: function (e, fluidTag, amount, superHeated, ticks) {
@@ -829,7 +774,6 @@ const singularities = [
 	{ id: "experience_nugget", core: CR("experience_nugget") },
 	{ id: "experience_bottle", core: MC("experience_bottle") },
 	{ id: "hyper_experience_bottle", core: CR_EI("hyper_experience_bottle") },
-	{ id: "redstone_module", core: CR_V("redstone_module") },
 	{ id: "reach_upgrade", core: EB("reach_upgrade3") },
 	{ id: "cow_jar", core: CFB("cow_jar") },
 	{ id: "flux_core", core: FN("flux_core") },

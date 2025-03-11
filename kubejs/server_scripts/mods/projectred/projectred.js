@@ -24,7 +24,7 @@ ServerEvents.recipes((event) => {
 		'BBB',
 		'AAA',
 	], {
-		A: F('#plates/andesite'),
+		A: F('#plates/iron'),
 		B: PR_T('red_alloy_wire')
 	})
 

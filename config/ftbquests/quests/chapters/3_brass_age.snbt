@@ -93,9 +93,7 @@
 				"562716E1F2F30704"
 				"6A440498F22DB5B5"
 			]
-			description: [
-				"Made by spouting &6Molten Iron&r onto &6Rose Quartz&r."
-			]
+			description: ["Made by spouting &6Molten Iron&r onto &6Rose Quartz&r."]
 			icon: "create:electron_tube"
 			id: "657A6EEA9A8F6549"
 			subtitle: "Lights?"
@@ -307,7 +305,7 @@
 			description: [
 				"Made by &Melting&r anything related to Iron. Nuggets, blocks, ingots... Bars?"
 				"You name it!"
-				"Melting is done either in the &6Smeltery multiblock&r or the &6Melter&r. Remember to use something as The Heat Source™."
+				"Melting is done either in the &6Smeltery multiblock&r or the &6Melter&r. Remember to use something as The Heat Source."
 				""
 				"You can ask &6JEI&r more questions."
 				"{@pagebreak}"
@@ -320,7 +318,7 @@
 				"Search by OreDict name: Type $ in front of a word ($ingot)"
 				"Search by Creative Tab: Type % in front of a word (%Nature)"
 				"Multiple Searches: Separate terms with | characters (\"wrench|hammer\")"
-				"Searching for \"@tinkers #heart\" should show you all possible items for The Heat Source™."
+				"Searching for \"@tinkers #heart\" should show you all possible items for The Heat Source."
 			]
 			icon: "tconstruct:molten_iron_bucket"
 			id: "562716E1F2F30704"
