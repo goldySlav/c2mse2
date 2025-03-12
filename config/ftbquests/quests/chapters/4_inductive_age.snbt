@@ -86,7 +86,11 @@
 		}
 		{
 			dependencies: ["108E9D3231FAC5D2"]
-			description: ["This one is made by folding a Radiant Sheet using a &6Mechanical Crafter&r."]
+			description: [
+				"This one is made either by folding a Radiant Sheet using a &6Mechanical Crafter&r OR by imprinting it with &6Nether Star&r."
+				""
+				"Up to you which way to choose, and please note that &6Nether Star will not be consumed&r in the process."
+			]
 			icon: "kubejs:radiant_coil"
 			id: "1467542289484994"
 			subtitle: "Oh now its a coil"

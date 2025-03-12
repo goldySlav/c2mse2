@@ -740,6 +740,7 @@ ServerEvents.recipes((event) => {
 	
 	//radiant coil
 	event.recipes.create.mechanical_crafting(KJ("radiant_coil"), "A", { A: KJ('radiant_sheet') })
+	customRecipes.create.ifiniDeploying(event, KJ("radiant_coil"), KJ('radiant_sheet'), MC("nether_star"))
 	
 	
 	
