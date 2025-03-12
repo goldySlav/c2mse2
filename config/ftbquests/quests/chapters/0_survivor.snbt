@@ -10,7 +10,7 @@
 	quests: [
 		{
 			dependencies: ["40D115852A0164D5"]
-			description: ["&6Crouch + Right Click&r the grass to get stone pebbles. Use these pebbles to &6Craft&r Stone."]
+			description: ["&6Crouch + Right Click&r the Grass Block to get stone pebbles. Use these pebbles to &6Craft&r Stone."]
 			id: "060CE00D435A9EE6"
 			rewards: [{
 				count: 64
@@ -814,9 +814,9 @@
 		}
 		{
 			description: [
-				"&6The transmutation table&r is an &6important&r tool. If you look &6under&r for example dirt you will find \"&eEMC:&r 1 :x:\", if you put an item that has this under its name into the table(fire icon), it will change the :x: to a :white_check_mark: which means you have learned it."
-				"Each item has its &6own EMC value&r for which you can take it out of the table if you have added it to it before and if you have enought EMC(like money)."
-				""
+				"The &6Transmutation Table&r is the &6Most Important&r tool. Take a look at for example Dirt's tooltip, you will find \"&eEMC:&r 1 :x:\", if you put an item that has this under its name into the table(fire icon), it will change the :x: to a :white_check_mark: which means you have learned it."
+				"Primary, unprocessed materials have their own, unique &6EMC Value&r for which you can take it out of the table if you have added it to it before and if you have enough EMC(like money)."
+				"When you start mixing or infusing those primary resources, they unfortunately &6Lose&r their EMC value. This is why you will need to &6Manufacture&r all of the secondary resources, this is your main goal in this pack."
 				""
 				"You can use \"Philosopher's Stone\" on a block to &6Transform&r it to another block."
 				"&4(don't do that with blocks you're standing on!)&r"
@@ -828,6 +828,7 @@
 				"Obsidian >> Lava (be careful with this one, lol)"
 				""
 				"Check JEI for all possible transmutations."
+				"Note: Philosopher's Stone also has a number of different functionalities. Check &6Controls&r menu to see everything you can do with it."
 			]
 			id: "40D115852A0164D5"
 			rewards: [{
