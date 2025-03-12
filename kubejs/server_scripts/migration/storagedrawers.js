@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
 			const woodenDrawerFS = FS(`${wood}_${size}`)
 			const woodenDrawerSD = SD(`${wood}_full_drawers_${size}`)
 			
-			event.shapeless(woodenDrawerFS, [woodenDrawerSD])
+			event.shapeless(Item.of(woodenDrawerFS, 2), [woodenDrawerSD])
 		})
 	})
 	
