@@ -64,8 +64,10 @@
 				"41D1058AA0FDDC3A"
 				"17652A1E7B8B35FF"
 			]
+			description: ["That's for you to figure out how to get the Matrix in the bucket."]
 			icon: "kubejs:matrix_bucket"
 			id: "093939204AD0D6C0"
+			subtitle: "Don't drink the Matrix >:("
 			tasks: [
 				{
 					id: "6F50DA08B5FD63C4"
@@ -283,8 +285,13 @@
 		}
 		{
 			dependencies: ["2E8778D432B12A09"]
+			description: [
+			"Blueprints for some of the casts got lost in the time-space continuum."
+			"You need to prove your capability of solving basic math problems."
+			]
 			id: "0B12B976E0EBAE0A"
 			shape: "rsquare"
+			subtitle: "<&63&r"
 			tasks: [{
 				id: "61FC1D5595CDA091"
 				item: "kubejs:three_cast"
@@ -295,8 +302,10 @@
 		}
 		{
 			dependencies: ["2E8778D432B12A09"]
+			description: ["But how to get 10 numbers out of 2 numbers and 4 symbols?"]
 			id: "225891006A2AC89D"
 			shape: "rsquare"
+			subtitle: "The calculator can help you if you're stuck"
 			tasks: [{
 				id: "4BAFEE0440AD4E3F"
 				item: "kubejs:eight_cast"
@@ -307,8 +316,10 @@
 		}
 		{
 			dependencies: ["2E8778D432B12A09"]
+			description: ["Plus cast is used to cast a plus."]
 			id: "0F7DDA78A13D7FFC"
 			shape: "rsquare"
+			subtitle: "Stay positive!"
 			tasks: [{
 				id: "7ACC13B6EB028159"
 				item: "kubejs:plus_cast"
@@ -319,6 +330,7 @@
 		}
 		{
 			dependencies: ["2E8778D432B12A09"]
+			description: ["Minus cast is used to cast a minus."]
 			id: "7729657E979AE027"
 			shape: "rsquare"
 			tasks: [{
@@ -331,8 +343,10 @@
 		}
 		{
 			dependencies: ["2E8778D432B12A09"]
+			description: ["Divide cast is used to cast a division symbol."]
 			id: "5C13BA5CFC7A7908"
 			shape: "rsquare"
+			subtitle: "Divided by oceans, united by Minecraft"
 			tasks: [{
 				id: "1E3CCFC8F51DB31E"
 				item: "kubejs:divide_cast"
@@ -343,8 +357,10 @@
 		}
 		{
 			dependencies: ["2E8778D432B12A09"]
+			description: ["Multiply cast is used to case a multiplication symbol"]
 			id: "60693DBE2262B78A"
 			shape: "rsquare"
+			subtitle: "Multiple hours of fun ahead of you"
 			tasks: [{
 				id: "2EB73829FDAE6AB7"
 				item: "kubejs:multiply_cast"
@@ -362,8 +378,13 @@
 				"5C13BA5CFC7A7908"
 				"60693DBE2262B78A"
 			]
+			description: [
+			"This liquid is similar to Liquid Matrix in structure, but is missing some core elements."
+			"Your task is to make everything you can out of it to be able to complete the structure."
+			]
 			icon: "kubejs:raw_logic_bucket"
 			id: "552F8C2C880166A7"
+			subtitle: "Raw beauty of maths"
 			tasks: [
 				{
 					id: "2607C704CAB5C6FD"
@@ -381,8 +402,10 @@
 		}
 		{
 			dependencies: ["5BF4BD18436A015E"]
+			description: ["I'm starting to think it's something more than just a magnet"]
 			id: "578CFA9452732B7E"
 			shape: "rsquare"
+			subtitle: "Resonate the Matrix"
 			tasks: [{
 				id: "104E8435778E96BA"
 				item: {
@@ -399,7 +422,12 @@
 		}
 		{
 			dependencies: ["093939204AD0D6C0"]
+			description: [
+			"Liquid Matrix uses a &6Calculation Mechanism&r as a catalyst to harden and take a solid form."
+			"Good thing is that process does not destroy your mechanism, meaning you can reuse it as much as you wish."
+			]
 			id: "26E19614D31B5F7F"
+			subtitle: "Now you're the one in control of the Matrix"
 			tasks: [{
 				id: "6DE3DF498A459C71"
 				item: "kubejs:computation_matrix"
@@ -410,7 +438,9 @@
 		}
 		{
 			dependencies: ["552F8C2C880166A7"]
+			description: ["Remember that 9 is the highest number you can get."]
 			id: "3B811C618C88B679"
+			subtitle: "+1"
 			tasks: [{
 				id: "54B3F63CCC51FA2E"
 				item: "kubejs:plus"
@@ -421,7 +451,9 @@
 		}
 		{
 			dependencies: ["552F8C2C880166A7"]
+			description: ["Substracting is safe, you can't go below 0 though."]
 			id: "24B852898662A844"
+			subtitle: "Not related to electrons"
 			tasks: [{
 				id: "571FBBB758B7CCA6"
 				item: "kubejs:minus"
@@ -432,7 +464,12 @@
 		}
 		{
 			dependencies: ["552F8C2C880166A7"]
+			description: [
+			"Watch out!"
+			"Dividing by 0 can have &4Unforeseen consequences&r."
+			]
 			id: "7D55551FC4D093FB"
+			subtitle: "Divide and conquer"
 			tasks: [{
 				id: "3AFD5A47913000D9"
 				item: "kubejs:divide"
@@ -443,7 +480,9 @@
 		}
 		{
 			dependencies: ["552F8C2C880166A7"]
+			description: ["Yeah, you can &6Multiply&r the numbers!"]
 			id: "71E947CAE871BF0E"
+			subtitle: "Like rabbits"
 			tasks: [{
 				id: "563781A38F5439AF"
 				item: "kubejs:multiply"
@@ -463,6 +502,7 @@
 			]
 			description: ["All math operations can be done also in &6Advanced Crafting Table&r &o(not shown in JEI for some reason)&r"]
 			id: "70D4D7DC1155F946"
+			subtitle: "Technical difficulties"
 			tasks: [{
 				id: "47B2E6F38C2161CA"
 				title: "Understood"

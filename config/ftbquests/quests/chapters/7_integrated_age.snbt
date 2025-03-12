@@ -10,7 +10,7 @@
 	quests: [
 		{
 			dependencies: ["39DA9F7639D6AD78"]
-			description: ["The end just like that. Wasn't so hard was it?"]
+			description: ["The end of another chapter, just like that. It wasn't so hard, was it?"]
 			id: "09CD8EB06036A1C4"
 			shape: "rsquare"
 			tasks: [{
@@ -23,7 +23,7 @@
 		}
 		{
 			dependencies: ["2E6CE520086D8586"]
-			description: ["Wow man you are getting far. Keep it up!"]
+			description: ["Wow man, you are getting far. Keep it up!"]
 			id: "342C68B775AAD6FC"
 			subtitle: "Another one!"
 			tasks: [{
@@ -59,6 +59,10 @@
 		}
 		{
 			dependencies: ["2E6CE520086D8586"]
+			description: [
+			"This &6Calculator&r can be also used to simlpify some of your operations on numbers."
+			"Does the term &6Fibonacci Sequence&r ring a bell?"
+			]
 			id: "4FB684E7281BF230"
 			shape: "rsquare"
 			subtitle: "Trusty tool for math"
@@ -81,7 +85,7 @@
 			description: ["Just cook the dry rubber."]
 			icon: "industrialforegoing:plastic"
 			id: "5DF8DBD5A4EE1943"
-			subtitle: "Don't throw me in the sea!!"
+			subtitle: "Don't throw it in the sea!!"
 			tasks: [
 				{
 					id: "06D2D79C686D8B5B"
@@ -103,9 +107,10 @@
 				"1703708CBC9B2247"
 			]
 			description: [
-				"Made simply by putting &6latex&r and &6water&r into a &6powered&r latex processing unit."
+				"Made simply by putting &6Latex&r and &6Water&r into a Latex Processing Unit."
+				"Remember to supply it with power"
 				""
-				"NOTE: 750ml of latex for one dry rubber"
+				"750mB of Latex + 500mB of Water -> 1 Dry Rubber"
 			]
 			icon: "industrialforegoing:dryrubber"
 			id: "4C846C447750DDC2"
@@ -142,10 +147,11 @@
 		{
 			dependencies: ["5E0D79B5243A491C"]
 			description: [
-				"By putting a log infront of the fluid extractor we will make latex."
+				"By putting any Log in front of the Fluid Extractor we will make Latex."
 				""
 				""
 				"NOTE: The extractor works faster when powered."
+				"NOTE 2: &6Accacia Logs&r are the richest in tree liquids."
 			]
 			icon: "industrialforegoing:latex_bucket"
 			id: "1703708CBC9B2247"
@@ -167,10 +173,10 @@
 		}
 		{
 			dependencies: ["342C68B775AAD6FC"]
-			description: ["Used for making latex."]
+			description: ["Used for making Latex."]
 			id: "5E0D79B5243A491C"
 			shape: "rsquare"
-			subtitle: "Your first industrial machines"
+			subtitle: "Your first industrial machine"
 			tasks: [{
 				id: "747E523F5A5BE989"
 				item: "industrialforegoing:fluid_extractor"
