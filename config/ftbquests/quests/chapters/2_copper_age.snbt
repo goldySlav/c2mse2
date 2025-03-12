@@ -54,7 +54,7 @@
 		{
 			dependencies: ["35B503F3B05BB324"]
 			description: [
-				"Charcoal can be made by &6Smelting&r or &6Smoking&r any type of log."
+				"Charcoal can be made by &6Smelting&r any type of log."
 				""
 				"&6JEI&r is your friend."
 			]
