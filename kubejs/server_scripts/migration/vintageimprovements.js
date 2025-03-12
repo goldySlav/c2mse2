@@ -20,7 +20,7 @@ ServerEvents.recipes((event) => {
 	event.shapeless(Item.of(CR('andesite_alloy'), 2), [CR_V('andesite_sheet')])
 	
 	
-	event.shapeless(Item.of(MC('copper_ingot'), 4), [CR_V('copper_spring')])
+	event.shapeless(Item.of(MC('copper_ingot'), 2), [CR_V('copper_spring')])
 	
 	
 	
