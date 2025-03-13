@@ -191,17 +191,17 @@
 		{
 			dependencies: ["4FCC832C0601D256"]
 			description: [
-				"Made by rolling &6Copper Ingots&r in a Rolling Mill."
+				"Made by presing &6Copper Ingots&r with Mechanical Press."
 				""
 				"&6JEI&r?"
 			]
-			icon: "createaddition:copper_rod"
+			icon: "create:copper_sheet"
 			id: "1B41E5301611D094"
 			subtitle: "Long and useful."
 			tasks: [
 				{
 					id: "24E9CC5F157F237D"
-					item: "createaddition:copper_rod"
+					item: "create:copper_sheet"
 					type: "item"
 				}
 				{
