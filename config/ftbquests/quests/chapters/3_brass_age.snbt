@@ -22,19 +22,19 @@
 				title: "Start Chapter"
 				type: "checkmark"
 			}]
-			x: 0.5d
+			x: 0.0d
 			y: -7.0d
 		}
 		{
 			dependencies: ["668A952600ABBB6D"]
 			description: [
-				"The &6final piece&r to unlock the brass age."
+				"The final piece to unlock the &6Brass Age&r."
 				""
 				"So close yet so far."
 			]
 			id: "48753F8B4874A9F9"
 			shape: "rsquare"
-			subtitle: "Yay fitration."
+			subtitle: "Advanced filtering"
 			tasks: [{
 				id: "6B242C49911A64B1"
 				item: "kubejs:brass_machine"
@@ -70,7 +70,7 @@
 		}
 		{
 			dependencies: ["10AC4EE77F6CC3BC"]
-			description: ["Like I said its used to make more than just sealed mechanisms."]
+			description: ["Like I said, it's used to make more than just sealed mechanisms."]
 			id: "6A1BBA66DE2014C1"
 			shape: "rsquare"
 			subtitle: "The handy man"
@@ -93,10 +93,7 @@
 				"562716E1F2F30704"
 				"6A440498F22DB5B5"
 			]
-			description: [
-				"Made by pouring &6molten iron&r onto &6roze quartz&r."
-				"It doesn't need anything fancy just a depot and a spout."
-			]
+			description: ["Made by spouting &6Molten Iron&r onto &6Rose Quartz&r."]
 			icon: "create:electron_tube"
 			id: "657A6EEA9A8F6549"
 			subtitle: "Lights?"
@@ -118,8 +115,8 @@
 		{
 			dependencies: ["3984091B70C5869E"]
 			description: [
-				"Finally we have &6&o&lbrass&r&r&r."
-				"This one is made by pumping your &6molten brass&r onto a &6casting table&r with a &6nugget cast&r."
+				"Finally we have &6&o&lbrass&r."
+				"This one is made by casting &6Molten Brass&r onto a &6Casting Table&r with a cast of your choice, preferably the &6Nugget Cast&r."
 			]
 			icon: "create:brass_nugget"
 			id: "7FD29CB9FD8A147C"
@@ -145,18 +142,17 @@
 				"6ECC004E4EB82368"
 			]
 			description: [
-				"&6Molten Brass&r is made by combining &6molten copper&r and &6molten zinc&r in a heated foundry basin."
-				"You combine it with the new and improved &6foundry mixer&r."
+				"&6Molten Brass&r is made by alloying &6Molten Copper&r and &6Molten Zinc&r together in the Smeltery or the Alloy Tank."
 				""
 				"PS: &6JEI&r is still exists."
 			]
-			icon: "createmetallurgy:molten_brass_bucket"
+			icon: "tconstruct:molten_brass_bucket"
 			id: "3984091B70C5869E"
 			subtitle: "Alloying never heard of it."
 			tasks: [
 				{
 					id: "41FCDE8EFEF94B0B"
-					item: "createmetallurgy:molten_brass_bucket"
+					item: "tconstruct:molten_brass_bucket"
 					type: "item"
 				}
 				{
@@ -170,14 +166,14 @@
 		}
 		{
 			dependencies: ["15E1AB9E8845B81E"]
-			description: ["Its the &6same here&r as in molten iron go have a look. The diference is that you use &6zinc&r."]
-			icon: "createmetallurgy:molten_zinc_bucket"
+			description: ["Everything is melting in exact same way."]
+			icon: "tconstruct:molten_zinc_bucket"
 			id: "6ECC004E4EB82368"
 			subtitle: "Also hot"
 			tasks: [
 				{
 					id: "0DB067A1948C3772"
-					item: "createmetallurgy:molten_zinc_bucket"
+					item: "tconstruct:molten_zinc_bucket"
 					type: "item"
 				}
 				{
@@ -191,14 +187,14 @@
 		}
 		{
 			dependencies: ["4E4478825579AB53"]
-			description: ["Oh yeah its the &6same here&r aswell i forgot. Remember to use &6copper&r tho."]
-			icon: "createmetallurgy:molten_copper_bucket"
+			description: ["Yeah, its the same here as well, I forgot. Molten Copper requires you to use &6Copper&r tho."]
+			icon: "tconstruct:molten_copper_bucket"
 			id: "202EBC6D790314E6"
 			subtitle: "Hot here as well"
 			tasks: [
 				{
 					id: "4FFEA3248BCF0C33"
-					item: "createmetallurgy:molten_copper_bucket"
+					item: "tconstruct:molten_copper_bucket"
 					type: "item"
 				}
 				{
@@ -212,7 +208,7 @@
 		}
 		{
 			dependencies: ["44C3247A6B4D844E"]
-			description: ["Made by washing &6crushed granite&r."]
+			description: ["Made by washing &6Crushed Granite&r."]
 			icon: "create:copper_nugget"
 			id: "4E4478825579AB53"
 			subtitle: "Yea you already did this"
@@ -233,7 +229,7 @@
 		}
 		{
 			dependencies: ["0D8B364DB116E060"]
-			description: ["Made yet again by washing &6crushed diorite&r."]
+			description: ["Made yet again by washing &6Crushed Diorite&r."]
 			icon: "create:zinc_nugget"
 			id: "15E1AB9E8845B81E"
 			subtitle: "New way new me."
@@ -257,7 +253,7 @@
 				"18F089334C583E34"
 				"4E6C04506584D408"
 			]
-			description: ["Made by yet again mixing, but now its &6sky solution&r with &6charged certus quartz&r."]
+			description: ["Mix &6Sky Solution&r with &6Charged Certus Quartz&r."]
 			icon: "kubejs:liquid_redstone_bucket"
 			id: "2DCAABDF526C9332"
 			subtitle: "More mixing. WHY?"
@@ -282,7 +278,7 @@
 				"7EFA012B9C2A157C"
 			]
 			description: [
-				"Pressurize some of our &6liqiud redstone&r with &l&6normal&r&r(nether) &6quartz&r in a compressor."
+				"Pressurize some of our &6Liqiud Redstone&r with &6Nether Quartz&r in a compressor."
 				""
 				"TIP: It has more modes. Try using your wrench."
 			]
@@ -307,18 +303,30 @@
 		{
 			dependencies: ["157D853038DA9297"]
 			description: [
-				"Made by &6melting&r iron nuggets (ingots and blocks too). Oh nice &6new&r blocks?"
-				"Melting is done in a &6foundry basin&r with a &6foundry lid&r ontop of it and bellow all of them will be a &6blaze burner&r(The heat source)."
+				"Made by &6Melting&r anything related to Iron. Nuggets, blocks, ingots... Bars?"
+				"You name it!"
+				"Melting is done either in the &6Smeltery multiblock&r or the &6Melter&r. Remember to use something as The Heat Source."
 				""
 				"You can ask &6JEI&r more questions."
+				"{@pagebreak}"
+				"TIP: JEI can also help you search for specific items by &6Special Tags&r."
+				"Search by Mod Name or ModID: Type @ in front of a word (@tinker)"
+				"Multiple terms work together (cogwheel @create)"
+				"Exclude search terms: Type - in front of a word (@create -small)"
+				"Search terms that have spaces in them: Type \"\" around the words (\"two words\")"
+				"Search by Tooltip Only: Type # in front of a word (#capacity)"
+				"Search by OreDict name: Type $ in front of a word ($ingot)"
+				"Search by Creative Tab: Type % in front of a word (%Nature)"
+				"Multiple Searches: Separate terms with | characters (\"wrench|hammer\")"
+				"Searching for \"@tinkers #heart\" should show you all possible items for The Heat Source."
 			]
-			icon: "createmetallurgy:molten_iron_bucket"
+			icon: "tconstruct:molten_iron_bucket"
 			id: "562716E1F2F30704"
 			subtitle: "Careful its hot"
 			tasks: [
 				{
 					id: "76CF64AFEDD12D4C"
-					item: "createmetallurgy:molten_iron_bucket"
+					item: "tconstruct:molten_iron_bucket"
 					type: "item"
 				}
 				{
@@ -335,7 +343,8 @@
 			description: [
 				"&6JEI&r help??"
 				""
-				"TIP: At this point you should trying making &6EMC links&r or &6energy condensers&r."
+				"TIP: At this point you should try incorporating &6EMC links&r or &6Energy Conensers&r in your factories."
+				"Remember though if you play on a server, your EMC Links &6Don't Work&r when you are not connected!"
 			]
 			icon: "minecraft:quartz"
 			id: "7EFA012B9C2A157C"
@@ -360,7 +369,7 @@
 				"4189E71C621177B0"
 				"2EAEF08EBE9F97E8"
 			]
-			description: ["Can be obtained by &6mixing&r skystone dust and water."]
+			description: ["Can be obtained by &6Mixing&r skystone dust and water."]
 			icon: "kubejs:sky_solution_bucket"
 			id: "18F089334C583E34"
 			subtitle: "Mixing away"
@@ -405,7 +414,7 @@
 		}
 		{
 			dependencies: ["0C9B71DD7A9DEEB7"]
-			description: ["Made by washing &6gravel&r."]
+			description: ["Made by washing &6Gravel&r."]
 			icon: "minecraft:iron_nugget"
 			id: "157D853038DA9297"
 			subtitle: "You should already know this one"
@@ -426,10 +435,10 @@
 		}
 		{
 			dependencies: ["1EA91261B3883D58"]
-			description: ["Oh wow it &6grew&r. Just like I told you it would. Now quick &6EMC&r it."]
+			description: ["Oh wow it's &6Growing&r. Just like I told you it would. Now you definitely should &6EMCify&r it."]
 			icon: "ae2:certus_quartz_crystal"
 			id: "31AC01B1F159EE17"
-			subtitle: "The fruit of you labour."
+			subtitle: "The fruit of your labour."
 			tasks: [
 				{
 					id: "3E05972C5076FEE1"
@@ -449,7 +458,7 @@
 			dependencies: ["2F7B52A729167B69"]
 			icon: "minecraft:gravel"
 			id: "0C9B71DD7A9DEEB7"
-			subtitle: "Gravity?"
+			subtitle: "Gravelity?"
 			tasks: [
 				{
 					id: "0E3686EB1E75F7A0"
@@ -507,7 +516,7 @@
 		}
 		{
 			dependencies: ["0B16696302C3F3C5"]
-			description: ["You can make this using an &6extruder&r or by making a simple &6cobble gen&r."]
+			description: ["You can make this using an &6Mechanical Extruder&r or by making a simple &6Cobblestone Generator&r."]
 			icon: "minecraft:cobblestone"
 			id: "2F7B52A729167B69"
 			subtitle: "Cobble for life"
@@ -528,7 +537,7 @@
 		}
 		{
 			dependencies: ["0B16696302C3F3C5"]
-			description: ["The &6same&r as granite."]
+			description: ["The same as &6Granite&r."]
 			icon: "minecraft:diorite"
 			id: "65F344525400EFE7"
 			subtitle: "Ugly 2"
@@ -549,7 +558,7 @@
 		}
 		{
 			dependencies: ["0B16696302C3F3C5"]
-			description: ["Go back to &6chapter 2&r. :smile: or scream &6JEI.&r"]
+			description: ["Go back to &6Chapter 2&r. :smile: ...or scream &6JEI.&r"]
 			icon: "minecraft:granite"
 			id: "47B0F53E35B9511F"
 			subtitle: "Ugly"
@@ -587,7 +596,7 @@
 				"1E9D9B683C14E688"
 			]
 			description: [
-				"Spit on it with water and it shall &6&lGROW&r&r."
+				"Spit on it with water and it shall &6&lGROW&r."
 				""
 				"&6JEI&r help I- I'm lost."
 			]
@@ -616,7 +625,7 @@
 		}
 		{
 			dependencies: ["3A9FE888E23290AA"]
-			description: ["Made by &6crushing&r skystone which has an &6EMC&r value."]
+			description: ["Made by &6Crushing&r skystone which has an &6EMC&r value."]
 			icon: "ae2:sky_dust"
 			id: "4189E71C621177B0"
 			subtitle: "This guy again..."
@@ -658,10 +667,10 @@
 		}
 		{
 			dependencies: ["206C6656700CD8CA"]
-			description: ["You can get your first Sky Stone from Smelting Sky Stone Dust."]
+			description: ["You can get your first Sky Stone from &6Smelting&r Sky Stone Dust."]
 			id: "3A9FE888E23290AA"
 			shape: "rsquare"
-			subtitle: "Cooking? still?"
+			subtitle: "Jesse, we need to cook"
 			tasks: [{
 				id: "3C51AFB544D5A4EC"
 				item: "ae2:sky_stone_block"

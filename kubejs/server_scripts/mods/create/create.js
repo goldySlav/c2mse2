@@ -11,8 +11,6 @@ ServerEvents.recipes((event) => {
 		/create:milling\/compat\/botania/,
 	])
 	
-	customRecipes.create.alloying(event, [`20x ${CR_M("molten_brass")}`], [`10x ${CR_M("molten_copper")}`, `10x ${CR_M("molten_zinc")}`], 40, 1)
-	
 	//andesite alloy chain 
 	removeRecipeByOutput(event, [
 		CR('andesite_alloy'),
@@ -145,14 +143,14 @@ ServerEvents.recipes((event) => {
 	removeRecipeByOutput(event, [
 		CR("electron_tube"),
 	])
-	event.recipes.create.filling(Item.of(CR("electron_tube"), 1), [CR('polished_rose_quartz'), Fluid.of(CR_M('molten_iron'), 10)])
+	event.recipes.create.filling(Item.of(CR("electron_tube"), 1), [CR('polished_rose_quartz'), Fluid.of(TCT('molten_iron'), 10)])
 	event.custom({
 		type: AE2_A("reaction"),
 		energy: 1000000,
 	    fluid: {
 			fluidStack: {
 				Amount: 320,
-				FluidName: CR_M("molten_iron")
+				FluidName: TCT("molten_iron")
 			}
 		},
 		input_items: [
@@ -180,8 +178,7 @@ ServerEvents.recipes((event) => {
 	removeRecipeByOutput(event, [
 		CR("polished_rose_quartz"),
 	])
-	customRecipes.create.pressurizing(event, [CR('polished_rose_quartz')], `250x ${KJ("liquid_redstone")}`, AE2('certus_quartz_crystal'))
-	customRecipes.create.pressurizing(event, [CR('polished_rose_quartz')], `250x ${KJ("liquid_redstone")}`, MC('quartz'))
+	event.recipes.create.mixing(CR('polished_rose_quartz'), [Fluid.of(KJ("liquid_redstone"), 250), [AE2('certus_quartz_crystal'), MC('quartz')]])
 	event.custom({
 		type: AE2_A("reaction"),
 		energy: 1000000,
@@ -306,9 +303,14 @@ ServerEvents.recipes((event) => {
 	})
 	customRecipes.ad_astra.compressing(event, CR(`golden_sheet`), F(`#ingots/gold`))
 	
-	//tank from reservoir
-	event.shapeless(CR("fluid_tank"), CR_DD('fluid_reservoir'))
-	
-	//vault from stockpile
-	event.shapeless(CR("item_vault"), CR_DD('item_stockpile'))
+	//blaze burner from head
+	event.shaped(CR("blaze_burner"), [
+        ' C ',
+        ' B ',
+        ' A '
+    ], {
+        A: CR('empty_blaze_burner'),
+        B: MC('soul_sand'),
+        C: TCT('blaze_head'),
+    })
 })

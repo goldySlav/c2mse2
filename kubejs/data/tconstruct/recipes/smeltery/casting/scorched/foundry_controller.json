@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:retextured_casting_basin",
+  "cast": {
+    "item": "tconstruct:smeltery_controller"
+  },
+  "cast_consumed": true,
+  "cooling_time": 221,
+  "fluid": {
+    "amount": 1000,
+    "fluid": "kubejs:sky_solution"
+  },
+  "result": "tconstruct:foundry_controller"
+}

@@ -13,7 +13,9 @@ ServerEvents.recipes(event => {
 	event.recipes.extendedcrafting.shapeless_table(EC("the_ultimate_ingot"), [
 		F("#ingots/iron"), F("#ingots/copper"), F("#ingots/zinc"), CR("andesite_alloy"), F("#ingots/gold"), F("#ingots/netherite"),
 		F("#ingots/desh"), F("#ingots/refined_radiance"), F("#ingots/shadow_steel"), AE2_A("quantum_alloy"),
-		F("#ingots/ostrum"), F("#ingots/calorite"), CM("#ingots/star_infused_netherite"), F("#ingots/tungsten"), F("#ingots/brass"), 
+		F("#ingots/ostrum"), F("#ingots/calorite"), CM("#ingots/star_infused_netherite"), F("#ingots/cobalt"), F("#ingots/slimesteel"),
+		F("#ingots/amethyst_bronze"), F("#ingots/brass"), F("#ingots/rose_gold"), F("#ingots/pig_iron"), F("#ingots/cinderslime"),
+		F("#ingots/queens_slime"), F("#ingots/manyullyn"), F("#ingots/hepatizon"), 
 		F("#ingots/draconium_awakened"), F("#ingots/draconium"), F("#ingots/enhanced_redstone_ingot"), F("#ingots/ender_ingot"), 
 		F("#ingots/enhanced_ender_ingot"), IF("pink_slime_ingot"), F("#ingots/sky_steel"), F("#ingots/bronze"), F("#ingots/steel"), 
 		F("#ingots/refined_obsidian"), F("#ingots/refined_glowstone"), F("#ingots/osmium"), F("#ingots/tin"), F("#ingots/lead"), 
@@ -89,7 +91,7 @@ ServerEvents.recipes(event => {
 		F("#dusts/netherite"), F("#dusts/charcoal"), F("#dusts/sulfur"), F("#dusts/bronze"), F("#dusts/lapis"), F("#dusts/quartz"), F("#dusts/emerald"),
 		F("#dusts/steel"), F("#dusts/refined_obsidian"), F("#dusts/iron"), F("#dusts/gold"), F("#dusts/osmium"), F("#dusts/copper"), F("#dusts/tin"),
 		F("#dusts/lead"), F("#dusts/uranium"), F("#dusts/naquadah"), F("#dusts/radiance"), F("#dusts/lithium"), PRE("low_covalence_dust"),
-		PRE("medium_covalence_dust"), PRE("high_covalence_dust"), F("#dusts/tungsten"), F("#dusts/zinc"), AP("gem_dust"),
+		PRE("medium_covalence_dust"), PRE("high_covalence_dust"), AP("gem_dust"),
 	]).tier(5).id(KJ('the_ultimate_dust'))
 
 	//the ultimate shard
@@ -224,7 +226,7 @@ ServerEvents.recipes(event => {
 	creativeItemMix(event, IFC("million_furnace"), PRE("rm_furnace"))
 	
 	//storage drawers
-	creativeItemMix(event, SD("creative_vending_upgrade"), SD("emerald_storage_upgrade"))
+	creativeItemMix(event, FS("creative_vending_upgrade"), FS("netherite_upgrade"))
 	
 	//DE
 	creativeItemMix(event, DE("creative_op_capacitor"), DE("creative_capacitor"))

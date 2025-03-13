@@ -43,10 +43,10 @@ StartupEvents.registry('item', event => {
 	})
 
     event.create('algal_blend').displayName('Algal Blend')
+    event.create('coke').displayName('Coke')
     event.create('algal_brick').displayName('Algal Brick')
 	event.create('drill_head').displayName('Drill Head')
 	event.create('saw_blade').displayName('Saw Blade')
-	event.create('necrotic_bone').displayName('Necrotic Bone')
 	event.create('sand_ball').displayName('Ball of Sand')
 	event.create('rough_sand').displayName('Sand Chunks')
 	event.create('purified_sand').displayName('Purified Sand')
@@ -56,6 +56,7 @@ StartupEvents.registry('item', event => {
 	event.create('nourished_coke').displayName('Nourished Coke')
 	event.create('polished_coke').displayName('Polished Coke')
 	event.create('blank_upgrade').displayName('Blank Pipe Upgrade')
+	event.create('radiant_sheet').displayName('Radiant Sheet').rarity("uncommon").glow(true)
 	event.create('ender_star_fragment').displayName('Ender Star Fragment').rarity("uncommon").glow(true)
 	event.create('flux_star_fragment').displayName('Flux Star Fragment').rarity("uncommon").glow(true)
 	event.create('universe_piece').displayName('Piece of Universe').glow(true).rarity("epic")
@@ -90,7 +91,7 @@ StartupEvents.registry('item', event => {
 	
 	//numbers
 	let number = (name) => {
-		let id = name.toLowerCase()
+		let id = name.toLowerCase().split(" ").join("_")
 		event.create(id).glow(true).rarity("epic").displayName(name)
 	}
 
@@ -108,12 +109,30 @@ StartupEvents.registry('item', event => {
 	number('Minus')
 	number('Multiply')
 	number('Divide')
+	number('Factorial')
+	number('Power')
+	number('Remainder')
+	number('Square Root')
+	number('Greater Than')
+	number('Less Than')
+	number('Greater Or Equal')
+	number('Less Or Equal')
+	number('Equal')
+	number('Equality')
+	number('Non Equality')
+	number('True')
+	number('False')
 	event.create('three_cast').displayName('Integer Cast (3)').unstackable()
 	event.create('eight_cast').displayName('Integer Cast (8)').unstackable()
 	event.create('plus_cast').displayName('Operator Cast (+)').unstackable()
 	event.create('minus_cast').displayName('Operator Cast (-)').unstackable()
 	event.create('multiply_cast').displayName('Operator Cast (x)').unstackable()
 	event.create('divide_cast').displayName('Operator Cast (/)').unstackable()
+	event.create('factorial_cast').displayName('Operator Cast (!)').unstackable()
+	event.create('power_cast').displayName('Operator Cast (^)').unstackable()
+	event.create('remainder_cast').displayName('Operator Cast (%)').unstackable()
+	event.create('square_root_cast').displayName('Operator Cast (√)').unstackable()
+	event.create('equal_cast').displayName('Operator Cast (=)').unstackable()
 	event.create('computation_matrix').parentModel("kubejs:item/computation_matrix").displayName('Computation Matrix').rarity('advanced')
 
     event.create('silicon_press_wafer').displayName('Inscriber Silicon Press Wafer').rarity("rare")
@@ -141,11 +160,6 @@ StartupEvents.registry('item', event => {
 
 
 	event.create('ball_cast').displayName('Ball Cast').unstackable()
-	event.create('ingot_cast').displayName('Ingot Cast').unstackable()
-	event.create('nugget_cast').displayName('Nugget Cast').unstackable()
-	event.create('plate_cast').displayName('Plate Cast').unstackable()
-	event.create('rod_cast').displayName('Rod Cast').unstackable()
-	event.create('gem_cast').displayName('Gem Cast').unstackable()
 	
 	//tools
 	//saw
@@ -162,9 +176,9 @@ StartupEvents.registry('item', event => {
 	event.create('unstable_chromatic_resonator').displayName('Unstable Chromatic Resonator').glow(true).rarity("epic").maxDamage(512000).texture("kubejs:item/chromatic_resonator")
 	
 	//calculator
-	event.create('calculator').displayName('Calculator')
-	event.create('charged_calculator').displayName('Charged Calculator').maxDamage(1024)
-	event.create('unstable_charged_calculator').displayName('Unstable Charged Calculator').glow(true).rarity("epic").maxDamage(1024000).texture("kubejs:item/charged_calculator")
+	event.create('calculator').displayName('Broken Calculator')
+	event.create('charged_calculator').displayName('Fibonacci Calculator').maxDamage(1024)
+	event.create('unstable_charged_calculator').displayName('Unstable Fibonacci Calculator').glow(true).rarity("epic").maxDamage(1024000).texture("kubejs:item/charged_calculator")
 	
 	//mechanisms
 	let mechanism = (name, glow) => {

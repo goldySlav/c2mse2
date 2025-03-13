@@ -111,4 +111,124 @@ const soilRegistry = [
       categories: [ 'basalt', 'nether' ],
       growthModifier: 1
    },
+   {
+      block: 'tconstruct:earth_slime_dirt',
+      categories: [ 'slime' ],
+      growthModifier: 1
+   },
+   {
+      block: 'tconstruct:sky_slime_dirt',
+      categories: [ 'slime' ],
+      growthModifier: 1
+   },
+   {
+      block: 'tconstruct:ichor_slime_dirt',
+      categories: [ 'slime' ],
+      growthModifier: 1
+   },
+   {
+      block: 'tconstruct:ender_slime_dirt',
+      categories: [ 'slime' ],
+      growthModifier: 1
+   },
+   {
+      block: 'tconstruct:earth_vanilla_slime_grass',
+      categories: [ 'slime' ],
+      growthModifier: 1.5
+   },
+   {
+      block: 'tconstruct:earth_earth_slime_grass',
+      categories: [ 'slime' ],
+      growthModifier: 1.5
+   },
+   {
+      block: 'tconstruct:earth_sky_slime_grass',
+      categories: [ 'slime' ],
+      growthModifier: 1.5
+   },
+   {
+      block: 'tconstruct:earth_ichor_slime_grass',
+      categories: [ 'slime' ],
+      growthModifier: 1.5
+   },
+   {
+      block: 'tconstruct:earth_ender_slime_grass',
+      categories: [ 'slime' ],
+      growthModifier: 1.5
+   },
+   {
+      block: 'tconstruct:sky_vanilla_slime_grass',
+      categories: [ 'slime' ],
+      growthModifier: 1.5
+   },
+   {
+      block: 'tconstruct:sky_earth_slime_grass',
+      categories: [ 'slime' ],
+      growthModifier: 1.5
+   },
+   {
+      block: 'tconstruct:sky_sky_slime_grass',
+      categories: [ 'slime' ],
+      growthModifier: 1.5
+   },
+   {
+      block: 'tconstruct:sky_ichor_slime_grass',
+      categories: [ 'slime' ],
+      growthModifier: 1.5
+   },
+   {
+      block: 'tconstruct:sky_ender_slime_grass',
+      categories: [ 'slime' ],
+      growthModifier: 1.5
+   },
+   {
+      block: 'tconstruct:ender_vanilla_slime_grass',
+      categories: [ 'slime' ],
+      growthModifier: 1.5
+   },
+   {
+      block: 'tconstruct:ender_earth_slime_grass',
+      categories: [ 'slime' ],
+      growthModifier: 1.5
+   },
+   {
+      block: 'tconstruct:ender_sky_slime_grass',
+      categories: [ 'slime' ],
+      growthModifier: 1.5
+   },
+   {
+      block: 'tconstruct:ender_ichor_slime_grass',
+      categories: [ 'slime' ],
+      growthModifier: 1.5
+   },
+   {
+      block: 'tconstruct:ender_ender_slime_grass',
+      categories: [ 'slime' ],
+      growthModifier: 1.5
+   },
+   {
+      block: 'tconstruct:blood_vanilla_slime_grass',
+      categories: [ 'slime' ],
+      growthModifier: 1.5
+   },
+   {
+      block: 'tconstruct:blood_earth_slime_grass',
+      categories: [ 'slime' ],
+      growthModifier: 1.5
+   },
+   {
+      block: 'tconstruct:blood_sky_slime_grass',
+      categories: [ 'slime' ],
+      growthModifier: 1.5
+   },
+   {
+      block: 'tconstruct:blood_ichor_slime_grass',
+      categories: [ 'slime' ],
+      growthModifier: 1.5
+   },
+   {
+      block: 'tconstruct:blood_ender_slime_grass',
+      categories: [ 'slime' ],
+      growthModifier: 1.5
+   },
 ];

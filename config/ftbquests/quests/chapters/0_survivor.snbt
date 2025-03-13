@@ -10,7 +10,7 @@
 	quests: [
 		{
 			dependencies: ["40D115852A0164D5"]
-			description: ["&6Crouch + Right Click&r the grass to get stone pebbles. Use these pebbles to &6Craft&r Stone."]
+			description: ["&6Crouch + Right Click&r the Grass Block &2WITH EMPTY HAND&r to get stone pebbles. Use these pebbles to &6Craft&r Stone."]
 			id: "060CE00D435A9EE6"
 			rewards: [{
 				count: 64
@@ -114,7 +114,11 @@
 		}
 		{
 			dependencies: ["4FADC55FA94C323C"]
-			description: ["He would chuck, he would, as much as he could, and chuck as much wood as a woodchuck would if a woodchuck could chuck wood."]
+			description: [
+				"He would chuck, he would, as much as he could, and chuck as much wood as a woodchuck would if a woodchuck could chuck wood."
+				""
+				"NOTE: I don't know what drugs this guy is on but, you can &6crouch&r or &6sprint&r next to a crop to grow it &6faster&r. (different descriptor!)"
+			]
 			id: "4747F0E81C972CE7"
 			subtitle: "How much wood would a woodchuck chuck?"
 			tasks: [{
@@ -533,6 +537,8 @@
 				"7F72D28E5491D5A8"
 			]
 			description: [
+				"Made by putting a &6barrel&r full of water onto of &6mycelium&r."
+				""
 				"Uses you should be currently interested in are:"
 				""
 				"1) Creating &6Soul Sand&r"
@@ -719,7 +725,7 @@
 		}
 		{
 			dependencies: ["587E109D89450B8B"]
-			description: ["Note: To actually collect Obsidian, use Barrel"]
+			description: ["Note: To actually collect Obsidian, use a barrel"]
 			id: "19B3A861D2FAC002"
 			subtitle: "Ice Bucket Challenge"
 			tasks: [{
@@ -808,6 +814,12 @@
 		}
 		{
 			description: [
+				"The &6Transmutation Table&r is the &6Most Important&r tool. Take a look at for example Dirt's tooltip, you will find "
+				"\"&eEMC:&r 1 (:x:)\", if you put an item that has this under its name into the table(fire icon), it will change the :x: to a :white_check_mark: which means you have learned it."
+				""
+				"Primary, unprocessed materials have their own, unique &6EMC Value&r for which you can take it out of the table if you have added it to it before and if you have enough EMC(like money)."
+				"When you start mixing or infusing those primary resources, they unfortunately &6Lose&r their EMC value. This is why you will need to &6Manufacture&r all of the secondary resources, this is your main goal in this pack."
+				""
 				"You can use \"Philosopher's Stone\" on a block to &6Transform&r it to another block."
 				"&4(don't do that with blocks you're standing on!)&r"
 				""
@@ -818,6 +830,7 @@
 				"Obsidian >> Lava (be careful with this one, lol)"
 				""
 				"Check JEI for all possible transmutations."
+				"Note: Philosopher's Stone also has a number of different functionalities. Check &6Controls&r menu to see everything you can do with it."
 			]
 			id: "40D115852A0164D5"
 			rewards: [{
@@ -1033,7 +1046,11 @@
 				"31E1A1B90775CEB3"
 				"3F71BE17A74B795F"
 			]
-			description: ["First main alloy in Create, you'll be using it quite a lot"]
+			description: [
+				"First main alloy in Create, you'll be using it quite a lot."
+				""
+				"Combine &6all&r the things you made here so far."
+			]
 			id: "7CD986B22D99A3EE"
 			rewards: [{
 				count: 8
@@ -1200,7 +1217,11 @@
 				"21CA38B7D4AFBFC2"
 				"2EE24F1DFFD74255"
 			]
-			description: ["Not actually edible, but you'll want a handful of these."]
+			description: [
+				"Not actually edible, but you'll want a handful of these."
+				""
+				"Made by combining &6kelp&r and &6clay&r in a crafting grid."
+			]
 			id: "6EA10841E5316046"
 			subtitle: "Yummy!"
 			tasks: [{

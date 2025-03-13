@@ -69,4 +69,22 @@ ServerEvents.recipes((event) => {
 		A: SBP("gold_backpack"),
 		B: PET("pure_emerald"),
 	})
+	
+	
+	
+	//magnet upgrade
+	removeRecipeByOutput(event, [
+		SBP("magnet_upgrade"),
+	])
+	event.shaped(SBP("magnet_upgrade"), [
+		'EBE',
+		'ACA',
+		'ADA'
+	], {
+		A: F(`#ingots/iron`),
+		B: M("teleportation_core"),
+		C: SBP("pickup_upgrade"),
+		D: KJ("chromatic_resonator"),
+		E: MC("ender_pearl"),
+	})
 })

@@ -573,18 +573,6 @@
 					item: "create:andesite_funnel"
 					type: "item"
 				}
-				{
-					count: 8
-					id: "1DEB8B7D3F37868B"
-					item: "create_dd:inverse_box"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "67730A7C126EC60E"
-					item: "create_dd:kinetic_motor"
-					type: "item"
-				}
 			]
 			shape: "rsquare"
 			subtitle: "...must grow."
@@ -653,18 +641,6 @@
 					count: 32L
 					id: "15B247E4313720F9"
 					item: { Count: 32, id: "create:andesite_funnel" }
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "7AFFF8A56D6F7D53"
-					item: { Count: 8, id: "create_dd:inverse_box" }
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "4EE27C586AC61B10"
-					item: "create_dd:kinetic_motor"
 					type: "item"
 				}
 			]

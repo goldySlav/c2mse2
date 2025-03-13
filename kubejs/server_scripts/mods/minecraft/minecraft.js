@@ -118,12 +118,8 @@ ServerEvents.recipes((event) => {
 	event.recipes.create.mixing([Fluid.of(MC("water"), 500)], [MC("snow_block")])
 	event.recipes.create.mixing([Fluid.of(MC("water"), 125)], [MC("snow")])
 	event.recipes.create.mixing([Fluid.of(MC("water"), 125)], [MC("snowball")])
-
-    //bone from necrotic
-    event.shapeless(MC("bone"), [KJ("necrotic_bone")])
 	
 	//ender pearl
-	customRecipes.create.casting.table(event, MC("ender_pearl"), `90x ${KJ("ender")}`, "ball")
 	event.shapeless(Item.of(MC('ender_pearl'), 9), F('#storage_blocks/ender_pearl'))
 	
 	//slab from planks
@@ -178,9 +174,9 @@ ServerEvents.recipes((event) => {
 	event.custom({
 		type: M('crystallizing'),
 		chemicalType: 'gas',
-		input: { amount: 90, gas: KJ("gaseous_tungsten_compound") },
-		output: CR_M(`tungsten_ingot`),
-	}).id(`${MC()}/tungsten_ingot_from_gas`)
+		input: { amount: 90, gas: KJ("gaseous_cobalt_compound") },
+		output: TCT(`cobalt_ingot`),
+	}).id(`${MC()}/cobalt_ingot_from_gas`)
 	event.custom({
 		type: M('crystallizing'),
 		chemicalType: 'gas',
@@ -190,9 +186,9 @@ ServerEvents.recipes((event) => {
 	event.custom({
 		type: M('crystallizing'),
 		chemicalType: 'gas',
-		input: { amount: 90, gas: KJ("gaseous_void_steel_compound") },
+		input: { amount: 90, gas: KJ("gaseous_ender_alloy_compound") },
 		output: EC(`ender_ingot`),
-	}).id(`${MC()}/void_steel_ingot_from_gas`)
+	}).id(`${MC()}/ender_alloy_ingot_from_gas`)
 	event.custom({
 		type: M('crystallizing'),
 		chemicalType: 'gas',
@@ -205,4 +201,13 @@ ServerEvents.recipes((event) => {
 		input: { amount: 90, gas: KJ("gaseous_diamond_compound") },
 		output: MC(`diamond`),
 	}).id(`${MC()}/diamond_from_gas`)
+	
+	//mycelium
+	event.recipes.create.deploying(MC("mycelium"), [MC("dirt"), EXD(`mycelium_spores`)])
+	
+	//grass block
+	event.recipes.create.deploying(MC("grass_block"), [MC("dirt"), EXD(`grass_seeds`)])
+	
+	//emerald dupe from diamond
+	customRecipes.create.ifiniDeploying(event, MC("emerald"), MC("diamond"), MC("nether_star"))
 })

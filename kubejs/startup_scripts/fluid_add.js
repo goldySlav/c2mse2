@@ -21,26 +21,11 @@ StartupEvents.registry("fluid", event => {
 		.bucketColor(0xE3DBB0)
 	
 	event
-		.create('ender')
-		.displayName(`Resonant Ender`)
-		.stillTexture('kubejs:fluid/ender_still')
-		.flowingTexture('kubejs:fluid/ender_flow')
-		.bucketColor(0x182F38)
-	
-	event
 		.create('abstruse_waste')
 		.displayName(`Abstruse Waste`)
 		.stillTexture('kubejs:fluid/waste_still')
 		.flowingTexture('kubejs:fluid/waste_flow')
 		.bucketColor(0x2a4524)
-	
-	event
-		.create('molten_diamond')
-		.displayName(`Molten Diamond`)
-		.stillTexture('kubejs:fluid/number_still')
-		.flowingTexture('kubejs:fluid/number_flow')
-		.color(0x009dbf)
-		.bucketColor(0x009dbf)
 	
 	event
 		.create('molten_certus')
@@ -51,9 +36,49 @@ StartupEvents.registry("fluid", event => {
 		.bucketColor(0x03cffc)
 	
 	event
+		.create('raw_logic')
+		.displayName(`Liquified Logic (Unprocessed)`)
+		.stillTexture('kubejs:fluid/number_still')
+		.flowingTexture('kubejs:fluid/number_flow')
+		.color(0xE7FFCB)
+		
+	let colors = [0xCBE827, 0xAEE827, 0x68E827, 0x27E86E, 0x27E8B1, 0x27DEE8, 0x27B5E8, 0x2798E8, 0x2778E8, 0x2748E8]
+	for (let i = 0; i < colors.length; i++) {
+		event
+			.create(`number_${i}`)
+			.displayName(`Liquified Logic (${i})`)
+			.stillTexture('kubejs:fluid/number_still')
+			.flowingTexture('kubejs:fluid/number_flow')
+			.color(colors[i])
+	}
+	
+	event
+		.create('truthy')
+		.displayName(`Liquified Logic (Truthy)`)
+		.stillTexture('kubejs:fluid/number_still')
+		.flowingTexture('kubejs:fluid/number_flow')
+		.color(0x8df542)
+		.bucketColor(0x8df542)
+	
+	event
+		.create('falsy')
+		.displayName(`Liquified Logic (Falsy)`)
+		.stillTexture('kubejs:fluid/number_still')
+		.flowingTexture('kubejs:fluid/number_flow')
+		.color(0xe03326)
+		.bucketColor(0xe03326)
+	
+	event
 		.create('matrix')
-		.displayName(`Liquified Logic`)
+		.displayName(`Liquified Computation Matrix`)
 		.stillTexture('kubejs:fluid/matrix_still')
 		.flowingTexture('kubejs:fluid/matrix_flow')
 		.bucketColor(0xCBE827)
+	
+	event
+		.create('molten_ender_alloy')
+		.displayName(`Molten Ender Alloy`)
+		.stillTexture('kubejs:fluid/ender_alloy_still')
+		.flowingTexture('kubejs:fluid/ender_alloy_flow')
+		.bucketColor(0x286951)
 })

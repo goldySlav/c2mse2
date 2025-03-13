@@ -329,7 +329,7 @@ ServerEvents.recipes((event) => {
 	})
 	
 	//grinding balls
-	customRecipes.create.casting.table(event, EIO("soularium_grinding_ball"), `90x ${CR_M("molten_brass")}`, "ball")
+	event.recipes.tconstruct.casting_table(EIO("soularium_grinding_ball"), Fluid.of(TCT("molten_brass"), 90), KJ("ball_cast"), false, 40)
 	
 	//wrench
 	event.smithing(EIO("yeta_wrench"), tieredItems.ch2.circuit, FB("framed_wrench"), EIO("grains_of_infinity"))
@@ -339,7 +339,7 @@ ServerEvents.recipes((event) => {
 		type: EIO("shaped_entity_storage"),
 		category: "misc",
 		key: {
-			A: { tag: F("plates/tungsten") },
+			A: { tag: F("plates/cobalt") },
 			B: { item: EIO("broken_spawner") },
 			C: { item: tieredItems.ch4.machine },
 			D: { item: tieredItems.ch4.mat },
@@ -361,7 +361,7 @@ ServerEvents.recipes((event) => {
 	
 	//coordinate selector
 	event.shaped(EIO("coordinate_selector"), ["ABA", " CA", "  A"], {
-		A: F("#plates/tungsten"),
+		A: F("#plates/cobalt"),
 		B: MC("ender_pearl"),
 		C: MC("compass"),
 	})

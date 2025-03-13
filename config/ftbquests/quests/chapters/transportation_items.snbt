@@ -292,6 +292,17 @@
 			x: -10.5d
 			y: 0.0d
 		}
+		{
+			disable_toast: true
+			id: "4E0B0E44D71A6F7C"
+			tasks: [{
+				id: "5B56BCF9F0F01F72"
+				item: "createendertransmission:item_transmitter"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 0.0d
+		}
 	]
 	title: "Item Transportation"
 }

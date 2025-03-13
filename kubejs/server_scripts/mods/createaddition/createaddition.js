@@ -22,7 +22,7 @@ ServerEvents.recipes((event) => {
 		B: F('#plates/brass'),
 		C: CR_A('copper_spool'),
 		D: CR_A('capacitor'),
-		E: CR_DD('kinetic_motor'),
+		E: F('#rods/iron'),
 	})
 	event.recipes.extendedcrafting.shaped_table(CR_A('electric_motor'), [
 		'  A  ',
@@ -34,7 +34,7 @@ ServerEvents.recipes((event) => {
 		B: F('#plates/brass'),
 		C: CR_A('copper_spool'),
 		D: CR_A('capacitor'),
-		E: CR_DD('kinetic_motor'),
+		E: F('#rods/iron'),
 	})
 	
 	//alternator
@@ -48,10 +48,10 @@ ServerEvents.recipes((event) => {
 		' BDB ',
 	], {
 		A: CR('andesite_alloy'),
-		B: F('#plates/andesite'),
+		B: F('#plates/iron'),
 		C: CR_A('copper_spool'),
 		D: CR_A('capacitor'),
-		E: CR_DD('kinetic_motor'),
+		E: F('#rods/iron'),
 	})
 	event.recipes.extendedcrafting.shaped_table(CR_A('alternator'), [
 		'  A  ',
@@ -60,15 +60,21 @@ ServerEvents.recipes((event) => {
 		' BDB ',
 	], {
 		A: CR('andesite_alloy'),
-		B: F('#plates/andesite'),
+		B: F('#plates/iron'),
 		C: CR_A('copper_spool'),
 		D: CR_A('capacitor'),
-		E: CR_DD('kinetic_motor'),
+		E: F('#rods/iron'),
 	})
 	
 	//sheets compat AA
 	const sheets = ["zinc"]
 	sheets.forEach(sheet => {
 		customRecipes.ad_astra.compressing(event, CR_A(`${sheet}_sheet`), F(`#ingots/${sheet}`))
+	})
+	
+	//rods compat TCT
+	const rods = ["copper", "gold", "brass"]
+	rods.forEach(rod => {
+		event.recipes.tconstruct.casting_table(CR_A(`${rod}_rod`), Fluid.of(TCT(`molten_${rod}`), 45), TCT(`rod_cast`), false, 40)
 	})
 })

@@ -25,10 +25,10 @@ ServerEvents.recipes((event) => {
 	]) //ch3
 	combEye("lost", [
 		`3x ${AE2("singularity")}`,
-		`2x ${CR_V("refined_radiance_spring")}`,
+		`3x ${KJ("radiant_coil")}`,
 		`2x ${KJ("inductive_mechanism")}`,
 		`3x ${PREXP("magenta_matter")}`,
-		KJ("radiant_coil"),
+		CR("shadow_steel"),
 		MC("compass"),
 	]) //ch4
 	combEye("nether", [
@@ -115,14 +115,14 @@ ServerEvents.recipes((event) => {
 		`1x ${MC("wither_skeleton_skull")}`,
 		`1x ${MC("piglin_head")}`,
 		`1x ${EIO("enderman_head")}`,
-		`1x ${ART("plastic_drinking_hat")}`,
-		`1x ${ART("novelty_drinking_hat")}`,
-		`1x ${ART("snorkel")}`,
-		`1x ${ART("night_vision_goggles")}`,
-		`1x ${ART("villager_hat")}`,
-		`1x ${ART("superstitious_hat")}`,
-		`1x ${ART("cowboy_hat")}`,
-		`1x ${ART("anglers_hat")}`,
+		`1x ${TCT("blaze_head")}`,
+		`1x ${TCT("enderman_head")}`,
+		`1x ${TCT("husk_head")}`,
+		`1x ${TCT("drowned_head")}`,
+		`1x ${TCT("spider_head")}`,
+		`1x ${TCT("cave_spider_head")}`,
+		`1x ${TCT("piglin_brute_head")}`,
+		`1x ${TCT("zombified_piglin_head")}`,
 		`4x ${AP("gem_dust")}`,
 	]) //treasure hunter
 })

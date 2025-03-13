@@ -448,7 +448,31 @@ const treeRegistry = [
                 fruit: 'pamhc2trees:acornitem',
                 substrate: 'dirt',
                 rate: { living: 50, dead: 6 }
-            }
+            },
+            {
+                sapling: 'tconstruct:earth_slime_sapling',
+                trunk: 'tconstruct:greenheart_log',
+                leaf: 'tconstruct:earth_slime_leaves',
+                fruit: 'minecraft:slime_ball',
+                substrate: 'slime',
+                rate: { living: 50, dead: 6 }
+            },
+            {
+                sapling: 'tconstruct:sky_slime_sapling',
+                trunk: 'tconstruct:skyroot_log',
+                leaf: 'tconstruct:sky_slime_leaves',
+                fruit: 'tconstruct:sky_slime_ball',
+                substrate: 'slime',
+                rate: { living: 50, dead: 6 }
+            },
+            {
+                sapling: 'tconstruct:ender_slime_sapling',
+                trunk: 'tconstruct:enderbark_log',
+                leaf: 'tconstruct:ender_slime_leaves',
+                fruit: 'tconstruct:ender_slime_ball',
+                substrate: 'slime',
+                rate: { living: 50, dead: 6 }
+            },
         ]
     },
     {

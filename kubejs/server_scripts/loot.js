@@ -84,8 +84,6 @@ ServerEvents.blockLootTables(event => {
 })
 
 LootJS.modifiers(event => {
-	event.addEntityLootModifier(MC("wither_skeleton")).replaceLoot(MC("bone"), KJ("necrotic_bone"), true)
-	
 	//remove flint drop from gravel (manually)
     event.addBlockLootModifier(MC("gravel")).replaceLoot(MC("flint"), MC("gravel"))
 });

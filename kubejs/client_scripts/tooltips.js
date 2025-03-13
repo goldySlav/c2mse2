@@ -248,9 +248,4 @@ ItemEvents.tooltip(event => {
 
 	//swiftwolf's rending gale
     event.add('projecte:swiftwolf_rending_gale', '§7Requires §6Mobius Fuel §7or a charged star for creative flight')
-	
-	
-	
-	//hydraulic press
-    event.add('create_dd:hydraulic_press', '§7Allows pressing a stack at a time. Requires §9Water§7.')
 })

@@ -85,7 +85,7 @@ ServerEvents.recipes((event) => {
 		var element = colors[index];
 		if (index == colors.length - 1)
 			continue;
-		event.recipes.create.emptying([AE2(colors[index + 1] + '_paint_ball'), Fluid.of(KJ('abstruse_waste'), 50)], AE2(element + '_paint_ball')).id(KJ(`ae2/draining_${colors[index]}_ball`))
+		event.recipes.create.emptying([AE2(colors[index + 1] + '_paint_ball'), Fluid.of(KJ('abstruse_waste'), 100)], AE2(element + '_paint_ball')).id(KJ(`ae2/draining_${colors[index]}_ball`))
 	}
 	
 	//inscriber press from scrap
@@ -96,9 +96,9 @@ ServerEvents.recipes((event) => {
 		AE2("logic_processor_press"),
 	])
 	customRecipes.expatternprovider.cutter(event, AE2("silicon_press"), 1, KJ("circuit_scrap"), 1, MC("water"), 1000)
-	customRecipes.expatternprovider.cutter(event, AE2("engineering_processor_press"), 1, KJ("circuit_scrap"), 1, KJ("molten_diamond"), 90)
+	customRecipes.expatternprovider.cutter(event, AE2("engineering_processor_press"), 1, KJ("circuit_scrap"), 1, TCT("molten_diamond"), 90)
 	customRecipes.expatternprovider.cutter(event, AE2("calculation_processor_press"), 1, KJ("circuit_scrap"), 1, KJ("molten_certus"), 90)
-	customRecipes.expatternprovider.cutter(event, AE2("logic_processor_press"), 1, KJ("circuit_scrap"), 1, CR_M("molten_gold"), 90)
+	customRecipes.expatternprovider.cutter(event, AE2("logic_processor_press"), 1, KJ("circuit_scrap"), 1, TCT("molten_gold"), 90)
 	event.stonecutting(AE2("name_press"), KJ("circuit_scrap"))
 	
 	//printed silicon
@@ -117,7 +117,8 @@ ServerEvents.recipes((event) => {
 			brokenId: KJ("broken_calculation_processor"),
 			brokenWaferId: KJ("broken_calculation_processor_wafer"),
 			liquid: KJ("molten_certus"),
-			cast: "calculation",
+			cast: AE2("calculation_processor_press"),
+			castWafer: KJ("calculation_processor_press_wafer"),
 		},
 		{
 			procId: AE2("logic_processor"),
@@ -126,8 +127,9 @@ ServerEvents.recipes((event) => {
 			circWaferId: KJ("printed_logic_processor_wafer"),
 			brokenId: KJ("broken_logic_processor"),
 			brokenWaferId: KJ("broken_logic_processor_wafer"),
-			liquid: CR_M("molten_gold"),
-			cast: "logic",
+			liquid: TCT("molten_gold"),
+			cast: AE2("logic_processor_press"),
+			castWafer: KJ("logic_processor_press_wafer"),
 		},
 		{
 			procId: AE2("engineering_processor"),
@@ -136,8 +138,9 @@ ServerEvents.recipes((event) => {
 			circWaferId: KJ("printed_engineering_processor_wafer"),
 			brokenId: KJ("broken_engineering_processor"),
 			brokenWaferId: KJ("broken_engineering_processor_wafer"),
-			liquid: KJ("molten_diamond"),
-			cast: "engineering",
+			liquid: TCT("molten_diamond"),
+			cast: AE2("engineering_processor_press"),
+			castWafer: KJ("engineering_processor_press_wafer"),
 		},
 		{
 			procId: AF("energy_processor"),
@@ -147,7 +150,8 @@ ServerEvents.recipes((event) => {
 			brokenId: KJ("broken_energy_processor"),
 			brokenWaferId: KJ("broken_energy_processor_wafer"),
 			liquid: KJ("liquid_redstone"),
-			cast: "energy",
+			cast: AF("energy_processor_press"),
+			castWafer: KJ("energy_processor_press_wafer"),
 		},
 		{
 			procId: MGC("accumulation_processor"),
@@ -157,7 +161,8 @@ ServerEvents.recipes((event) => {
 			brokenId: KJ("broken_accumulation_processor"),
 			brokenWaferId: KJ("broken_accumulation_processor_wafer"),
 			liquid: KJ("abstruse_waste"),
-			cast: "accumulation",
+			cast: MGC("accumulation_processor_press"),
+			castWafer: KJ("accumulation_processor_press_wafer"),
 		},
 		{
 			procId: AE2_A("quantum_processor"),
@@ -167,22 +172,22 @@ ServerEvents.recipes((event) => {
 			brokenId: KJ("broken_quantum_processor"),
 			brokenWaferId: KJ("broken_quantum_processor_wafer"),
 			liquid: AE2_A("quantum_infusion_source"),
-			cast: "quantum",
+			cast: AE2_A("quantum_processor_press"),
+			castWafer: KJ("quantum_processor_press_wafer"),
 		},
 	]
 	processors.forEach(obj => {
-		const { procId, procWaferId, circId, circWaferId, brokenId, brokenWaferId, liquid, cast } = obj
+		const { procId, procWaferId, circId, circWaferId, brokenId, brokenWaferId, liquid, cast, castWafer } = obj
 		const siliconId = AE2('printed_silicon')
 		const siliconWaferId = KJ('printed_silicon_wafer')
-		const castId = customRecipes.create.casting.cast(cast)
 		
 		//printed circuit
 		removeRecipeByOutput(event, [
 			circId,
 		])
 		
-		customRecipes.create.casting.table(event, circId, `10x ${liquid}`, cast, 10)
-		customRecipes.create.casting.table(event, circWaferId, `90x ${liquid}`, `${cast}_wafer`, 20)
+		event.recipes.tconstruct.casting_table(circId, Fluid.of(liquid, 10), cast, false, 10)
+		event.recipes.tconstruct.casting_table(circWaferId, Fluid.of(liquid, 90), castWafer, false, 20)
 		
 		//broken processor
 		event.recipes.create.deploying(brokenId, [siliconId, circId])
@@ -206,7 +211,7 @@ ServerEvents.recipes((event) => {
 	event.recipes.mekanism.metallurgic_infusing(Item.of(AE2("quantum_entangled_singularity"), 2), AE2("singularity"), `20x ${KJ("explosion_essence")}`)
 	
 	//sky dust from cloud
-	customRecipes.create.vacuumizing(event, [AE2("sky_dust")], [AP("gem_dust"), MC('gunpowder'), Q("bottled_cloud")], 80)
+	event.recipes.create.mixing(AE2("sky_dust"), [AP("gem_dust"), MC('gunpowder'), Q("bottled_cloud")])
 
 	//crafting unit
 	removeRecipeByOutput(event, [

@@ -10,13 +10,7 @@
 	quests: [
 		{
 			dependencies: ["52257FDA80778223"]
-			description: [
-				"You make some useful things here."
-				""
-				""
-				"&7If you find any mistakes here I'm sorry but the damn game deleted my progress 3 times.&r"
-				"&7&o-Jaminna&r&r"
-			]
+			description: ["I hope you are good at maths!"]
 			id: "325605BD444D4AB0"
 			subtitle: "There is still more."
 			tasks: [{
@@ -93,7 +87,7 @@
 				"1C09C4944CCD355E"
 				"2047ED5BC1025722"
 			]
-			description: ["Made by &6filling&r the broken circuit with &6disgusting&r(abstruse) water using a spout.\""]
+			description: ["Made by &6Filling&r the respective Broken Circuit with disgusting &6Waste&r using a Spout."]
 			icon: "ae2:logic_processor"
 			id: "43AFCDFA7ACF7345"
 			tasks: [
@@ -116,7 +110,7 @@
 				"1C09C4944CCD355E"
 				"1AC724A44BF86C74"
 			]
-			description: ["\"Made by &6filling&r the broken circuit with &6gross&r(abstruse) water using a spout.\""]
+			description: ["Made by &6Filling&r the respective Broken Circuit with gross &6Waste&r using a Spout."]
 			icon: "ae2:calculation_processor"
 			id: "07B04478FDDFACAA"
 			tasks: [
@@ -139,7 +133,7 @@
 				"1C09C4944CCD355E"
 				"52B16095142EF424"
 			]
-			description: ["\"Made by &6filling&r the broken circuit with &6revolting&r(abstruse) water using a spout.\""]
+			description: ["Made by &6Filling&r the respective Broken Circuit with revolting &6Waste&r using a Spout."]
 			icon: "ae2:engineering_processor"
 			id: "1DA27C8DD289D4F3"
 			tasks: [
@@ -159,7 +153,7 @@
 		}
 		{
 			dependencies: ["61869729796C25AB"]
-			description: ["\"Made by casting &6molten certus quartz&r in a casting table with an inscriber &6calculation&r press.\""]
+			description: ["Made by casting &6Molten Certus Quartz&r in a casting table with an &6Inscriber Calculation Press&r."]
 			icon: "ae2:printed_calculation_processor"
 			id: "36C7C15C0AC39A62"
 			tasks: [
@@ -179,7 +173,7 @@
 		}
 		{
 			dependencies: ["2E85CA8FECE54675"]
-			description: ["\"Made by casting &6molten gold&r in a casting table with an inscriber &6logic&r press.\""]
+			description: ["Made by casting &6Molten Gold&r in a casting table with an &6Inscriber Logic Press&r."]
 			icon: "ae2:printed_logic_processor"
 			id: "64735AB276DED681"
 			tasks: [
@@ -199,7 +193,7 @@
 		}
 		{
 			dependencies: ["0DCD7F96839FB02B"]
-			description: ["\"Made by casting &6molten diamond&r in a casting table with an inscriber &6engineering&r press.\""]
+			description: ["Made by casting &6Molten Diamond&r in a casting table with an &6Inscriber Engineering Press&r."]
 			icon: "ae2:printed_engineering_processor"
 			id: "6875D32CBA0E015F"
 			tasks: [
@@ -219,7 +213,7 @@
 		}
 		{
 			dependencies: ["3EF1C5A04B24E10E"]
-			description: ["\"Made by deploying an inscriber silicon press onto silicon.\""]
+			description: ["\"Made by deploying an Inscriber Silicon Press onto Silicon.\""]
 			icon: "ae2:printed_silicon"
 			id: "6B2F8C0DC04DA057"
 			tasks: [
@@ -240,7 +234,7 @@
 		{
 			dependencies: ["52257FDA80778223"]
 			description: [
-				"We made this in &6chapter 4&r remember."
+				"We made this in &6Chapter 4&r remember."
 				"Well... probably. I don't know if you did."
 			]
 			icon: "kubejs:abstruse_waste_bucket"
@@ -263,10 +257,10 @@
 		}
 		{
 			dependencies: ["2D69A78F6D4F555E"]
-			description: ["Smelt the &6silicon compound&r to get this guy."]
+			description: ["Smelt the &6Silicon Compound&r to get this guy."]
 			icon: "ae2:silicon"
 			id: "3EF1C5A04B24E10E"
-			subtitle: "Water tight."
+			subtitle: "Silicon Valley"
 			tasks: [
 				{
 					id: "30234B2870E63DB2"
@@ -285,13 +279,13 @@
 		{
 			dependencies: ["2EC7ECACA8C64880"]
 			description: [
-				"Melting like any other but you have to use a &6blaze cake&r on the blaze burner."
+				"Melting."
 				""
-				"TIP: Recommend &6automating&r blaze cake. :thumbsup:"
+				"Yeah, melting."
 			]
 			icon: "kubejs:molten_certus_bucket"
 			id: "61869729796C25AB"
-			subtitle: "Melting at super temperatures."
+			subtitle: "Supermelting"
 			tasks: [
 				{
 					id: "776F8EAF92D9F9A4"
@@ -309,14 +303,14 @@
 		}
 		{
 			dependencies: ["78F0F6CE6BE3168B"]
-			description: ["For this one melt some &6gold&r(nuggets, ingots...) blaze cake &6not needed&r."]
-			icon: "createmetallurgy:molten_gold_bucket"
+			description: ["This becomes your new basic."]
+			icon: "tconstruct:molten_gold_bucket"
 			id: "2E85CA8FECE54675"
-			subtitle: "Not so high temperatures."
+			subtitle: "Not so high temperatures"
 			tasks: [
 				{
 					id: "74BF602E574D0F2D"
-					item: "createmetallurgy:molten_gold_bucket"
+					item: "tconstruct:molten_gold_bucket"
 					type: "item"
 				}
 				{
@@ -331,13 +325,13 @@
 		{
 			dependencies: ["201C1E972A7885EC"]
 			description: ["Melting &6diamons&r (blaze cakes here too)."]
-			icon: "kubejs:molten_diamond_bucket"
+			icon: "tconstruct:molten_diamond_bucket"
 			id: "0DCD7F96839FB02B"
-			subtitle: "They are high again."
+			subtitle: "They are high again. Are you?"
 			tasks: [
 				{
 					id: "7CA80B8C8954A8FD"
-					item: "kubejs:molten_diamond_bucket"
+					item: "tconstruct:molten_diamond_bucket"
 					type: "item"
 				}
 				{
@@ -355,7 +349,7 @@
 				"1236C8AA793DCE6E"
 				"3BB8214617F3B855"
 			]
-			description: ["Combine coke chunks, purified sand and fine sand to make this."]
+			description: ["Combine Coke Chunks, Purified Sand and Fine Sand to make this."]
 			icon: "kubejs:silicon_compound"
 			id: "2D69A78F6D4F555E"
 			subtitle: "Compound butter?"
@@ -376,7 +370,7 @@
 		}
 		{
 			dependencies: ["0C905BBE99EAF556"]
-			description: ["Try sifting &6sand chunks&r in a andesite or bass sifter with a &6netherite&r mesh."]
+			description: ["Try sifting &6Sand Chunks&r in a Create Sifter with a &6Netherite Mesh&r."]
 			icon: "kubejs:purified_sand"
 			id: "36DFF3E3982944FD"
 			subtitle: "Now this is sand."
@@ -398,19 +392,15 @@
 		{
 			dependencies: ["792CCD66259F06BD"]
 			description: [
-				"Coke chunks are made with a long 4 step process:"
+				"Coke chunks are made with a short 2 step process, but it has to be repeated multiple times:"
 				""
-				"&6&l1.&r&r Processing the polished coke with a laser that needs both &6rotation&r and &6power&r."
+				"&6&l1.&r Saw the Polished Coke with a Mechanical Saw."
 				""
-				"&6&l2.&r&r Grinding it on a belt grinder on &6medium&r rotation."
-				""
-				"&6&l3.&r&r Next comes &6vibrating&r on a vibrating table."
-				""
-				"&6&l4.&r&r Last is spouting &6H2O&r(water) on it."
+				"&6&l2.&r Last is spouting &6H2O&r(Water) on it."
 			]
 			icon: "kubejs:coke_chunk"
 			id: "3BB8214617F3B855"
-			subtitle: "Process so long."
+			subtitle: "Process so long"
 			tasks: [
 				{
 					id: "16E2F5795BB1DFA1"
@@ -428,7 +418,7 @@
 		}
 		{
 			dependencies: ["7037302B8C2694EE"]
-			description: ["A product of &6draining&r balls of sand."]
+			description: ["A product of &6Draining&r balls of sand."]
 			icon: "kubejs:fine_sand_bucket"
 			id: "1236C8AA793DCE6E"
 			subtitle: "Substitution fow snow?"
@@ -449,10 +439,10 @@
 		}
 		{
 			dependencies: ["51A64DFC8F377F14"]
-			description: ["Made by &6washing&r sandstone."]
+			description: ["Made by &6Washing&r Sandstone."]
 			icon: "kubejs:sand_ball"
 			id: "7037302B8C2694EE"
-			subtitle: "Perfect substitution for snowballs."
+			subtitle: "Perfect substitution for snowballs"
 			tasks: [
 				{
 					id: "5759D7F2726CE28A"
@@ -470,7 +460,7 @@
 		}
 		{
 			dependencies: ["325605BD444D4AB0"]
-			description: ["We did this once in &6chapter 2&r so just reapeat it here."]
+			description: ["If your Chapter 2 makes more Coke than it can use, you can use that here."]
 			icon: "kubejs:polished_coke"
 			id: "792CCD66259F06BD"
 			subtitle: "Best quality coke out there."
@@ -492,7 +482,7 @@
 		{
 			dependencies: ["7037302B8C2694EE"]
 			description: [
-				"Made by &6draining&r balls of sand."
+				"That's what remains from the Sandballs when you drain all the Fine Sand out of them."
 				""
 				""
 				""
@@ -518,7 +508,7 @@
 		}
 		{
 			dependencies: ["2B7780ADC68F3E8F"]
-			description: ["Combine four sand to make one sandstone. More in &6JEI&r"]
+			description: ["You know how to make Sandstone, do you?"]
 			icon: "minecraft:sandstone"
 			id: "51A64DFC8F377F14"
 			subtitle: "Packed tight."
@@ -540,10 +530,10 @@
 		{
 			dependencies: ["38F5E619902249C0"]
 			description: [
-				"Crush gravel?"
+				"Crush Gravel?"
 				""
 				""
-				"PRO TIP: If you &6still&r haven't started using &6EMC links&r then you should. Like, &6Please!&r"
+				"PRO TIP: If you &6still&r haven't started using &6EMC Links&r then you should. Like, &6Please!&r"
 			]
 			icon: "minecraft:sand"
 			id: "2B7780ADC68F3E8F"
@@ -590,7 +580,7 @@
 				""
 				"                        ...."
 				""
-				"                       &6&lNO!&r&r"
+				"                       &6&lNO!&r"
 			]
 			icon: "minecraft:cobblestone"
 			id: "155318044955E7FB"
@@ -612,7 +602,7 @@
 		}
 		{
 			dependencies: ["325605BD444D4AB0"]
-			description: ["If you want to automate this without EMC links go for it."]
+			description: ["If you want to automate this without EMC Links go for it."]
 			icon: "ae2:certus_quartz_crystal"
 			id: "2EC7ECACA8C64880"
 			subtitle: "Pointy."
@@ -633,7 +623,11 @@
 		}
 		{
 			dependencies: ["065CE6560F385C25"]
-			description: ["Made by ... You guessed it - &6washing&r crushed netherrack."]
+			description: [
+				"Made by ... You guessed it - &6Washing&r Crushed Netherrack."
+				""
+				"Note:The &6Byproduct&r is crucial for production of Blaze Cakes."
+			]
 			icon: "minecraft:gold_nugget"
 			id: "78F0F6CE6BE3168B"
 			subtitle: "More nuggets? What for?"
@@ -654,7 +648,7 @@
 		}
 		{
 			dependencies: ["5A7D10FED1E2F5CD"]
-			description: ["Crush some netherrack."]
+			description: ["Crush some Netherrack."]
 			icon: "exdeorum:crushed_netherrack"
 			id: "065CE6560F385C25"
 			subtitle: "Oh this one has it too."
@@ -675,10 +669,14 @@
 		}
 		{
 			dependencies: ["325605BD444D4AB0"]
-			description: ["Either go to the &6nether&r or combine witchwater and lava in a &6stone&r barrel."]
+			description: [
+				"Either go to the &6Nether&r or combine Witchwater and Lava in a &6Stone Barrel&r."
+				"Combining flowing Witchwater and flowing Lava in world also works, I guess."
+				"...Mechanical extruder would also work, I guess."
+			]
 			icon: "minecraft:netherrack"
 			id: "5A7D10FED1E2F5CD"
-			subtitle: "Strait from hell!"
+			subtitle: "Straight from hell!"
 			tasks: [
 				{
 					id: "75E942C9BB94D8F2"
@@ -699,7 +697,7 @@
 			description: ["You should have this guy by now."]
 			icon: "minecraft:diamond"
 			id: "201C1E972A7885EC"
-			subtitle: "The best ngl."
+			subtitle: "Often overrated"
 			tasks: [
 				{
 					id: "51B4192A7FC0A239"
@@ -735,7 +733,7 @@
 				"6B2F8C0DC04DA057"
 				"36C7C15C0AC39A62"
 			]
-			description: ["Made by deploying a printed &6calculation&r circuit onto pressed silicon."]
+			description: ["Made by deploying a &6Printed Calculation Circuit&r onto Pressed Silicon."]
 			id: "1AC724A44BF86C74"
 			subtitle: "Broken? So what now?"
 			tasks: [{
@@ -751,7 +749,7 @@
 				"6B2F8C0DC04DA057"
 				"64735AB276DED681"
 			]
-			description: ["Made by deploying a printed &6logic&r circuit onto pressed silicon."]
+			description: ["Made by deploying a &6Printed Logic Circuit&r onto Pressed Silicon."]
 			id: "2047ED5BC1025722"
 			subtitle: "Its broken? Its useless then."
 			tasks: [{
@@ -767,7 +765,7 @@
 				"6B2F8C0DC04DA057"
 				"6875D32CBA0E015F"
 			]
-			description: ["Made by deploying a printed &6engineering&r circuit onto pressed silicon."]
+			description: ["Made by deploying a &6Printed Engineering Circuit&r onto Pressed Silicon."]
 			id: "52B16095142EF424"
 			subtitle: "You can fix it right?"
 			tasks: [{
