@@ -10,13 +10,18 @@
 	quests: [
 		{
 			dependencies: ["5BF4BD18436A015E"]
+			description: [
+				"In this chapter you have to perform some basic math operations as well as some BOOLEAN math!"
+				""
+				"Complete freedom of how you will do that, Have Fun!"
+			]
 			id: "2E8778D432B12A09"
 			tasks: [{
 				id: "374CE40934CB995D"
 				title: "Start Chapter"
 				type: "checkmark"
 			}]
-			x: 1.0d
+			x: 2.5d
 			y: 1.0d
 		}
 		{
@@ -28,7 +33,7 @@
 				item: "kubejs:abstruse_machine"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.5d
 			y: 15.0d
 		}
 		{
@@ -50,7 +55,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 1.0d
+			x: 2.5d
 			y: 13.5d
 		}
 		{
@@ -63,8 +68,14 @@
 				"0FE9149C3B9186B1"
 				"41D1058AA0FDDC3A"
 				"17652A1E7B8B35FF"
+				"758349AB312334BE"
+				"316465E9167266FE"
 			]
-			description: ["That's for you to figure out how to get the Matrix in the bucket."]
+			description: [
+				"Create the &2Matrix Alloy&r by putting all of the previously created liquids into a single &6Smeltery&r."
+				""
+				"That's for you to figure out how to get the Matrix in the bucket."
+			]
 			icon: "kubejs:matrix_bucket"
 			id: "093939204AD0D6C0"
 			subtitle: "Don't drink the Matrix >:("
@@ -80,12 +91,16 @@
 					type: "checkmark"
 				}
 			]
-			x: 1.0d
+			x: 2.5d
 			y: 10.5d
 		}
 		{
 			dependencies: ["70D4D7DC1155F946"]
-			description: ["Please note, that all math operations can be done also in &6Advanced Crafting Table&r &o(not shown in JEI for some reason)&r"]
+			description: [
+				"Multiple ways to get &60&r."
+				""
+				"Pick the one you like!"
+			]
 			icon: "kubejs:zero"
 			id: "7B6ACD7ADD5DE33E"
 			tasks: [
@@ -100,12 +115,16 @@
 					type: "checkmark"
 				}
 			]
-			x: -3.0d
+			x: -2.0d
 			y: 9.0d
 		}
 		{
 			dependencies: ["70D4D7DC1155F946"]
-			description: ["Please note, that all math operations can be done also in &6Advanced Crafting Table&r &o(not shown in JEI for some reason)&r"]
+			description: [
+				"Multiple ways to get &61&r."
+				""
+				"Pick the one you like!"
+			]
 			icon: "kubejs:one"
 			id: "02BF2A9AA4214BA7"
 			tasks: [
@@ -120,12 +139,16 @@
 					type: "checkmark"
 				}
 			]
-			x: -2.0d
+			x: -1.0d
 			y: 9.0d
 		}
 		{
 			dependencies: ["70D4D7DC1155F946"]
-			description: ["Please note, that all math operations can be done also in &6Advanced Crafting Table&r &o(not shown in JEI for some reason)&r"]
+			description: [
+				"Multiple ways to get &62&r."
+				""
+				"Pick the one you like!"
+			]
 			icon: "kubejs:two"
 			id: "1310A3ECC10F5090"
 			tasks: [
@@ -140,7 +163,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -1.0d
+			x: 0.0d
 			y: 9.0d
 		}
 		{
@@ -160,12 +183,16 @@
 					type: "checkmark"
 				}
 			]
-			x: -3.0d
+			x: -2.5d
 			y: 6.0d
 		}
 		{
 			dependencies: ["70D4D7DC1155F946"]
-			description: ["Please note, that all math operations can be done also in &6Advanced Crafting Table&r &o(not shown in JEI for some reason)&r"]
+			description: [
+				"Multiple ways to get &64&r."
+				""
+				"Pick the one you like!"
+			]
 			icon: "kubejs:four"
 			id: "695C45867737D934"
 			tasks: [
@@ -180,12 +207,16 @@
 					type: "checkmark"
 				}
 			]
-			x: 0.5d
+			x: 1.0d
 			y: 9.0d
 		}
 		{
 			dependencies: ["70D4D7DC1155F946"]
-			description: ["Please note, that all math operations can be done also in &6Advanced Crafting Table&r &o(not shown in JEI for some reason)&r"]
+			description: [
+				"Multiple ways to get &65&r."
+				""
+				"Pick the one you like!"
+			]
 			icon: "kubejs:five"
 			id: "5E76742299D40DED"
 			tasks: [
@@ -200,12 +231,16 @@
 					type: "checkmark"
 				}
 			]
-			x: 1.5d
+			x: 2.0d
 			y: 9.0d
 		}
 		{
 			dependencies: ["70D4D7DC1155F946"]
-			description: ["Please note, that all math operations can be done also in &6Advanced Crafting Table&r &o(not shown in JEI for some reason)&r"]
+			description: [
+				"Multiple ways to get &66&r."
+				""
+				"Pick the one you like!"
+			]
 			icon: "kubejs:six"
 			id: "0FE9149C3B9186B1"
 			tasks: [
@@ -220,12 +255,16 @@
 					type: "checkmark"
 				}
 			]
-			x: 2.5d
+			x: 3.0d
 			y: 9.0d
 		}
 		{
 			dependencies: ["70D4D7DC1155F946"]
-			description: ["Please note, that all math operations can be done also in &6Advanced Crafting Table&r &o(not shown in JEI for some reason)&r"]
+			description: [
+				"Multiple ways to get &67&r."
+				""
+				"Pick the one you like!"
+			]
 			icon: "kubejs:seven"
 			id: "41D1058AA0FDDC3A"
 			tasks: [
@@ -240,7 +279,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 3.5d
+			x: 4.0d
 			y: 9.0d
 		}
 		{
@@ -265,7 +304,11 @@
 		}
 		{
 			dependencies: ["70D4D7DC1155F946"]
-			description: ["Please note, that all math operations can be done also in &6Advanced Crafting Table&r &o(not shown in JEI for some reason)&r"]
+			description: [
+				"Multiple ways to get &69&r."
+				""
+				"Pick the one you like!"
+			]
 			icon: "kubejs:nine"
 			id: "17652A1E7B8B35FF"
 			tasks: [
@@ -297,7 +340,7 @@
 				item: "kubejs:three_cast"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -2.5d
 			y: 3.0d
 		}
 		{
@@ -325,7 +368,7 @@
 				item: "kubejs:plus_cast"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -0.5d
 			y: 3.0d
 		}
 		{
@@ -338,7 +381,7 @@
 				item: "kubejs:minus_cast"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 0.5d
 			y: 3.0d
 		}
 		{
@@ -352,7 +395,7 @@
 				item: "kubejs:divide_cast"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 1.5d
 			y: 3.0d
 		}
 		{
@@ -366,7 +409,7 @@
 				item: "kubejs:multiply_cast"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 2.5d
 			y: 3.0d
 		}
 		{
@@ -377,6 +420,11 @@
 				"7729657E979AE027"
 				"5C13BA5CFC7A7908"
 				"60693DBE2262B78A"
+				"0C356AEF65F9421E"
+				"15315D63C8875CE4"
+				"46B2F134D5278D1E"
+				"06D2A8F8EEED2FD5"
+				"7FDCA6288E7EA08D"
 			]
 			description: [
 				"This liquid is similar to Liquid Matrix in structure, but is missing some core elements."
@@ -397,7 +445,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 1.0d
+			x: 2.5d
 			y: 4.5d
 		}
 		{
@@ -417,7 +465,7 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
+			x: 4.0d
 			y: 13.5d
 		}
 		{
@@ -433,7 +481,7 @@
 				item: "kubejs:computation_matrix"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.5d
 			y: 12.0d
 		}
 		{
@@ -446,7 +494,7 @@
 				item: "kubejs:plus"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -0.5d
 			y: 6.0d
 		}
 		{
@@ -459,7 +507,7 @@
 				item: "kubejs:minus"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 0.5d
 			y: 6.0d
 		}
 		{
@@ -475,7 +523,7 @@
 				item: "kubejs:divide"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 1.5d
 			y: 6.0d
 		}
 		{
@@ -488,7 +536,7 @@
 				item: "kubejs:multiply"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 2.5d
 			y: 6.0d
 		}
 		{
@@ -499,6 +547,11 @@
 				"24B852898662A844"
 				"7D55551FC4D093FB"
 				"71E947CAE871BF0E"
+				"1018568DF4291BDA"
+				"14CF5B44C7FF5F67"
+				"157DB63F2E8ADBD4"
+				"5B6CE05FFE16C9BE"
+				"2DC1819D10F9C676"
 			]
 			description: ["All math operations can be done also in &6Advanced Crafting Table&r &o(not shown in JEI for some reason)&r"]
 			id: "70D4D7DC1155F946"
@@ -509,8 +562,171 @@
 				type: "checkmark"
 			}]
 			title: "General Info"
-			x: 1.0d
+			x: 2.5d
 			y: 7.5d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			id: "14CF5B44C7FF5F67"
+			tasks: [{
+				id: "2859167322F50D71"
+				item: "kubejs:factorial"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			id: "157DB63F2E8ADBD4"
+			tasks: [{
+				id: "3DD6FA18B64D0D6F"
+				item: "kubejs:power"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			id: "1018568DF4291BDA"
+			tasks: [{
+				id: "217F4A3C21B0A3C1"
+				item: "kubejs:remainder"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			id: "2DC1819D10F9C676"
+			tasks: [{
+				id: "127C8EBE1FA8E110"
+				item: "kubejs:square_root"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2E8778D432B12A09"]
+			id: "15315D63C8875CE4"
+			shape: "rsquare"
+			tasks: [{
+				id: "349747C12A7F5D98"
+				item: "kubejs:factorial_cast"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E8778D432B12A09"]
+			id: "46B2F134D5278D1E"
+			shape: "rsquare"
+			tasks: [{
+				id: "5AB8DE2E0BD3DBF5"
+				item: "kubejs:power_cast"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E8778D432B12A09"]
+			id: "0C356AEF65F9421E"
+			shape: "rsquare"
+			tasks: [{
+				id: "00623EC453D488F3"
+				item: "kubejs:remainder_cast"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E8778D432B12A09"]
+			id: "06D2A8F8EEED2FD5"
+			shape: "rsquare"
+			tasks: [{
+				id: "2022A7F7AC53B69D"
+				item: "kubejs:square_root_cast"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			id: "5B6CE05FFE16C9BE"
+			tasks: [{
+				id: "4EDD985B3681B63C"
+				item: "kubejs:equal"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2E8778D432B12A09"]
+			id: "7FDCA6288E7EA08D"
+			shape: "rsquare"
+			tasks: [{
+				id: "25F536A845A5DD8E"
+				item: "kubejs:equal_cast"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["70D4D7DC1155F946"]
+			description: [
+				"Multiple ways to get &6TRUE&r."
+				""
+				"Pick the one you like!"
+			]
+			icon: "kubejs:true"
+			id: "758349AB312334BE"
+			tasks: [
+				{
+					id: "11662822883BD5EA"
+					item: "kubejs:true"
+					type: "item"
+				}
+				{
+					id: "0F461B8CDE299349"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["70D4D7DC1155F946"]
+			description: [
+				"Multiple ways to get &6FALSE&r."
+				""
+				"Pick the one you like!"
+			]
+			icon: "kubejs:false"
+			id: "316465E9167266FE"
+			tasks: [
+				{
+					id: "6FC8C578067137E8"
+					item: "kubejs:false"
+					type: "item"
+				}
+				{
+					id: "78D28324230CE986"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 7.0d
+			y: 9.0d
 		}
 	]
 	title: "6. Abstruse Age"

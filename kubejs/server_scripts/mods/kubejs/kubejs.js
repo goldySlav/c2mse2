@@ -761,7 +761,7 @@ ServerEvents.recipes((event) => {
 	
 	
 	//brass casts
-	const customCastsBrass = ["three", "eight", "plus", "minus", "multiply", "divide"]
+	const customCastsBrass = ["three", "eight", "plus", "minus", "multiply", "divide", "factorial", "power", "remainder", "square_root", "equal"]
 	customCastsBrass.forEach(cast => {
 		event.stonecutting(KJ(`${cast}_cast`), F('#plates/brass'))
 	})
@@ -772,8 +772,28 @@ ServerEvents.recipes((event) => {
 	
 	
 	
+	//other math operators
+	event.shapeless(KJ("greater_than"), [KJ("power")])
+	event.shapeless(KJ("less_than"), [KJ("greater_than")])
+	event.shapeless(KJ("power"), [KJ("less_than")])
+	event.recipes.create.deploying(KJ("equality"), [KJ("equal"), KJ("equal")])
+	event.recipes.create.deploying(KJ("non_equality"), [KJ("factorial"), KJ("equal")])
+	event.recipes.create.deploying(KJ("non_equality"), [KJ("equal"), KJ("factorial")])
+	event.recipes.create.deploying(KJ("greater_or_equal"), [KJ("greater_than"), KJ("equal")])
+	event.recipes.create.deploying(KJ("greater_or_equal"), [KJ("equal"), KJ("greater_than")])
+	event.recipes.create.deploying(KJ("less_or_equal"), [KJ("less_than"), KJ("equal")])
+	event.recipes.create.deploying(KJ("less_or_equal"), [KJ("equal"), KJ("less_than")])
+	
+	event.recipes.create.deploying(KJ("false"), [KJ("true"), KJ("factorial")])
+	event.recipes.create.deploying(KJ("false"), [KJ("factorial"), KJ("true")])
+	
+	event.recipes.create.deploying(KJ("true"), [KJ("factorial"), KJ("false")])
+	event.recipes.create.deploying(KJ("true"), [KJ("false"), KJ("factorial")])
+	
+	
+	
 	//numbers
-	let numbers = ["three", "eight", "plus", "minus", "multiply", "divide"]
+	let numbers = ["three", "eight", "plus", "minus", "multiply", "divide", "factorial", "power", "remainder", "square_root", "equal"]
 	numbers.forEach(number => {
 		event.recipes.tconstruct.casting_table(KJ(number), Fluid.of(KJ("raw_logic"), 25), KJ(`${number}_cast`), false, 10)
 	})
@@ -790,6 +810,7 @@ ServerEvents.recipes((event) => {
 		Fluid.of(KJ("number_4"), alloyAmount), Fluid.of(KJ("number_5"), alloyAmount),
 		Fluid.of(KJ("number_6"), alloyAmount), Fluid.of(KJ("number_7"), alloyAmount),
 		Fluid.of(KJ("number_8"), alloyAmount), Fluid.of(KJ("number_9"), alloyAmount),
+		Fluid.of(KJ("truthy"), alloyAmount), Fluid.of(KJ("falsy"), alloyAmount),
 	], 2048)
 
 	meltNumber(KJ("calculation_mechanism"), KJ("raw_logic"), 200)
@@ -803,6 +824,8 @@ ServerEvents.recipes((event) => {
 	meltNumber(KJ("seven"), KJ("number_7"), 25)
 	meltNumber(KJ("eight"), KJ("number_8"), 25)
 	meltNumber(KJ("nine"), KJ("number_9"), 25)
+	meltNumber(KJ("true"), KJ("truthy"), 25)
+	meltNumber(KJ("false"), KJ("falsy"), 25)
 
 	event.recipes.tconstruct.casting_basin(KJ("computation_matrix"), Fluid.of(KJ("matrix"), 50), KJ("calculation_mechanism"), false, 20)
 	event.custom({
@@ -830,9 +853,10 @@ ServerEvents.recipes((event) => {
 	})
 
 	let nums = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
-	let ops = [(a, b) => a + b, (a, b) => a - b, (a, b) => a * b, (a, b) => b == 0 ? 'error' : a / b]
-	let opNames = ['plus', 'minus', 'multiply', 'divide']
+	let ops = [(a, b) => a + b, (a, b) => a - b, (a, b) => a * b, (a, b) => b == 0 ? 'error' : a / b, (a, b) => Math.pow(a, b), (a, b) => a % b]
+	let opNames = ['plus', 'minus', 'multiply', 'divide', 'power', 'remainder']
 
+	//basic math ops
 	for (var a = 0; a < 10; a++) {
 		for (var b = 0; b < 10; b++) {
 			for (var op = 0; op < ops.length; op++) {
@@ -877,13 +901,61 @@ ServerEvents.recipes((event) => {
 		}
 	}
 	
+	let comps = [(a, b) => a == b, (a, b) => a != b, (a, b) => a > b, (a, b) => a < b, (a, b) => a >= b, (a, b) => a <= b]
+	let compNames = ['equality', 'non_equality', 'greater_than', 'less_than', 'greater_or_equal', 'less_or_equal']
+	
+	//comparison math ops
+	for (var a = 0; a < 10; a++) {
+		for (var b = 0; b < 10; b++) {
+			for (var op = 0; op < comps.length; op++) {
+
+				let result = `${comps[op](a, b)}`
+				var output = KJ(result);
+
+				event.custom({
+					"type": CR("mechanical_crafting"),
+					"pattern": [
+						"AOB"
+					],
+					"key": {
+						"A": {
+							"item": KJ(nums[a])
+						},
+						"O": {
+							"item": KJ(compNames[op])
+						},
+						"B": {
+							"item": KJ(nums[b])
+						}
+					},
+					"result": {
+						"item": output
+					},
+					"acceptMirrored": false
+				})
+				event.recipes.extendedcrafting.shaped_table(output, ["AOB"], { A: KJ(nums[a]), O: KJ(compNames[op]), B: KJ(nums[b]) })
+			}
+		}
+	}
+	
 	//fibonacci sequence with calculator
 	event.recipes.create.deploying(KJ("one"), [KJ("zero"), F("#tools/calculators")])
 	event.recipes.create.deploying(KJ("two"), [KJ("one"), F("#tools/calculators")])
 	event.recipes.create.deploying(KJ("three"), [KJ("two"), F("#tools/calculators")])
 	event.recipes.create.deploying(KJ("five"), [KJ("three"), F("#tools/calculators")])
 	event.recipes.create.deploying(KJ("eight"), [KJ("five"), F("#tools/calculators")])
-	event.recipes.create.deploying(KJ("missingno"), [KJ("eight"), F("#tools/calculators")])
+	
+	//factorial
+	event.recipes.create.deploying(KJ("one"), [KJ("zero"), KJ("factorial")])
+	event.recipes.create.deploying(KJ("one"), [KJ("one"), KJ("factorial")])
+	event.recipes.create.deploying(KJ("two"), [KJ("two"), KJ("factorial")])
+	event.recipes.create.deploying(KJ("six"), [KJ("three"), KJ("factorial")])
+	
+	//square root
+	event.recipes.create.deploying(KJ("zero"), [KJ("zero"), KJ("square_root")])
+	event.recipes.create.deploying(KJ("one"), [KJ("one"), KJ("square_root")])
+	event.recipes.create.deploying(KJ("two"), [KJ("four"), KJ("square_root")])
+	event.recipes.create.deploying(KJ("three"), [KJ("nine"), KJ("square_root")])
 	
 	//COUNT NUMBERS IN JSFIDDLE FORMULAS
 /* const mechanismCost = 200,

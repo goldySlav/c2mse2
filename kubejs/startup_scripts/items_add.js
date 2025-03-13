@@ -91,7 +91,7 @@ StartupEvents.registry('item', event => {
 	
 	//numbers
 	let number = (name) => {
-		let id = name.toLowerCase()
+		let id = name.toLowerCase().split(" ").join("_")
 		event.create(id).glow(true).rarity("epic").displayName(name)
 	}
 
@@ -109,12 +109,30 @@ StartupEvents.registry('item', event => {
 	number('Minus')
 	number('Multiply')
 	number('Divide')
+	number('Factorial')
+	number('Power')
+	number('Remainder')
+	number('Square Root')
+	number('Greater Than')
+	number('Less Than')
+	number('Greater Or Equal')
+	number('Less Or Equal')
+	number('Equal')
+	number('Equality')
+	number('Non Equality')
+	number('True')
+	number('False')
 	event.create('three_cast').displayName('Integer Cast (3)').unstackable()
 	event.create('eight_cast').displayName('Integer Cast (8)').unstackable()
 	event.create('plus_cast').displayName('Operator Cast (+)').unstackable()
 	event.create('minus_cast').displayName('Operator Cast (-)').unstackable()
 	event.create('multiply_cast').displayName('Operator Cast (x)').unstackable()
 	event.create('divide_cast').displayName('Operator Cast (/)').unstackable()
+	event.create('factorial_cast').displayName('Operator Cast (!)').unstackable()
+	event.create('power_cast').displayName('Operator Cast (^)').unstackable()
+	event.create('remainder_cast').displayName('Operator Cast (%)').unstackable()
+	event.create('square_root_cast').displayName('Operator Cast (√)').unstackable()
+	event.create('equal_cast').displayName('Operator Cast (=)').unstackable()
 	event.create('computation_matrix').parentModel("kubejs:item/computation_matrix").displayName('Computation Matrix').rarity('advanced')
 
     event.create('silicon_press_wafer').displayName('Inscriber Silicon Press Wafer').rarity("rare")

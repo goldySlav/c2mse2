@@ -53,6 +53,22 @@ StartupEvents.registry("fluid", event => {
 	}
 	
 	event
+		.create('truthy')
+		.displayName(`Liquified Logic (Truthy)`)
+		.stillTexture('kubejs:fluid/number_still')
+		.flowingTexture('kubejs:fluid/number_flow')
+		.color(0x8df542)
+		.bucketColor(0x8df542)
+	
+	event
+		.create('falsy')
+		.displayName(`Liquified Logic (Falsy)`)
+		.stillTexture('kubejs:fluid/number_still')
+		.flowingTexture('kubejs:fluid/number_flow')
+		.color(0xe03326)
+		.bucketColor(0xe03326)
+	
+	event
 		.create('matrix')
 		.displayName(`Liquified Computation Matrix`)
 		.stillTexture('kubejs:fluid/matrix_still')
