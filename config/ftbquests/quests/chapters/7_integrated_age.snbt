@@ -60,8 +60,8 @@
 		{
 			dependencies: ["2E6CE520086D8586"]
 			description: [
-			"This &6Calculator&r can be also used to simlpify some of your operations on numbers."
-			"Does the term &6Fibonacci Sequence&r ring a bell?"
+				"This &6Calculator&r can be also used to simlpify some of your operations on numbers."
+				"Does the term &6Fibonacci Sequence&r ring a bell?"
 			]
 			id: "4FB684E7281BF230"
 			shape: "rsquare"

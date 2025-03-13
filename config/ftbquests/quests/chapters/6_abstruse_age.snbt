@@ -286,8 +286,8 @@
 		{
 			dependencies: ["2E8778D432B12A09"]
 			description: [
-			"Blueprints for some of the casts got lost in the time-space continuum."
-			"You need to prove your capability of solving basic math problems."
+				"Blueprints for some of the casts got lost in the time-space continuum."
+				"You need to prove your capability of solving basic math problems."
 			]
 			id: "0B12B976E0EBAE0A"
 			shape: "rsquare"
@@ -379,8 +379,8 @@
 				"60693DBE2262B78A"
 			]
 			description: [
-			"This liquid is similar to Liquid Matrix in structure, but is missing some core elements."
-			"Your task is to make everything you can out of it to be able to complete the structure."
+				"This liquid is similar to Liquid Matrix in structure, but is missing some core elements."
+				"Your task is to make everything you can out of it to be able to complete the structure."
 			]
 			icon: "kubejs:raw_logic_bucket"
 			id: "552F8C2C880166A7"
@@ -423,8 +423,8 @@
 		{
 			dependencies: ["093939204AD0D6C0"]
 			description: [
-			"Liquid Matrix uses a &6Calculation Mechanism&r as a catalyst to harden and take a solid form."
-			"Good thing is that process does not destroy your mechanism, meaning you can reuse it as much as you wish."
+				"Liquid Matrix uses a &6Calculation Mechanism&r as a catalyst to harden and take a solid form."
+				"Good thing is that process does not destroy your mechanism, meaning you can reuse it as much as you wish."
 			]
 			id: "26E19614D31B5F7F"
 			subtitle: "Now you're the one in control of the Matrix"
@@ -465,8 +465,8 @@
 		{
 			dependencies: ["552F8C2C880166A7"]
 			description: [
-			"Watch out!"
-			"Dividing by 0 can have &4Unforeseen consequences&r."
+				"Watch out!"
+				"Dividing by 0 can have &4Unforeseen consequences&r."
 			]
 			id: "7D55551FC4D093FB"
 			subtitle: "Divide and conquer"

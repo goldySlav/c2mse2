@@ -101,10 +101,8 @@
 			dependencies: ["069880B5BBFEDBA6"]
 			description: [
 				"Granite can be generated infinitely using the &6Mechanical Extruder&r. &6JEI&r pls help!!"
-				"Another handy way is to sieve &6Gravel&r and combine Granite Pebbles in a 2x2 gird."
 				""
-				"TIP: You can hit &6'K'&r while hovering your cursor over \"compressable\" items to manually craft them in your 2x2 grid (as long as they have a &6recipe&r for it)"
-				"If you are in the GUI with 3x3 grid, you can use the same key to quickly compress 9 things into one."
+				"Another handy way is to sieve &6Gravel&r and combine Granite Pebbles in a 2x2 gird."
 			]
 			icon: "minecraft:granite"
 			id: "1F6E3C251067FE32"
@@ -351,8 +349,8 @@
 		{
 			dependencies: ["069880B5BBFEDBA6"]
 			description: [
-			"Vanilla farm works pretty well."
-			"For convenience, you might want to use &6Botany Pots&r though."
+				"Vanilla farm works pretty well."
+				"For convenience, you might want to use &6Botany Pots&r though."
 			]
 			icon: "minecraft:sugar_cane"
 			id: "2F91D141FA26B1F4"
@@ -375,8 +373,8 @@
 		{
 			dependencies: ["2F91D141FA26B1F4"]
 			description: [
-			"You could make paper in similar manner to how it is made in real life..."
-			"If you don't know how, check JEI and learn a new thing! :smile:"
+				"You could make paper in similar manner to how it is made in real life..."
+				"If you don't know how, check JEI and learn a new thing! :smile:"
 			]
 			icon: "minecraft:paper"
 			id: "2932906391CDEA37"
@@ -423,8 +421,8 @@
 				"2932906391CDEA37"
 			]
 			description: [
-			"Hint: It's a &6Shapeless&r recipe."
-			"If you are clever and have some spare EMC, soon you will be able use a more durable material for a better Sandpaper."
+				"Hint: It's a &6Shapeless&r recipe."
+				"If you are clever and have some spare EMC, soon you will be able use a more durable material for a better Sandpaper."
 			]
 			icon: {
 				Count: 1
@@ -459,10 +457,10 @@
 		{
 			dependencies: ["069880B5BBFEDBA6"]
 			description: [
-			"> Be me."
-			"> Ask to automate Cobblestone."
-			"> Refuse to elaborate."
-			"> Leave."
+				"> Be me."
+				"> Ask to automate Cobblestone."
+				"> Refuse to elaborate."
+				"> Leave."
 			]
 			icon: "minecraft:cobblestone"
 			id: "0CAA346BF2A2A07C"
