@@ -21,6 +21,11 @@ ServerEvents.recipes((event) => {
 	
 	
 	event.shapeless(Item.of(MC('copper_ingot'), 2), [CR_V('copper_spring')])
+	event.shapeless(Item.of(MC('iron_ingot'), 2), [CR_V('iron_spring')])
+	
+	
+	
+	event.shapeless(Item.of(LB('laser_source_block'), 2), [CR_V('laser_item')])
 	
 	
 	

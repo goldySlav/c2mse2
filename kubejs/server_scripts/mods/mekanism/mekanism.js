@@ -904,7 +904,7 @@ ServerEvents.recipes((event) => {
 		I: F('#storage_blocks/osmium'),
 		J: F('#storage_blocks/steel'),
 		M: M('advanced_control_circuit'),
-		A: F('#storage_blocks/coke'),
+		A: F('#gems/coke'),
 		K: MC('furnace'),
 		L: MC('furnace'),
 	})

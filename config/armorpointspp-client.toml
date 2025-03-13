@@ -85,7 +85,7 @@
 	showToughnessWhenZero = false
 	# Hides the health bar + health value text regardless of other config optoins
 	# Available: true, false [default: false]
-	hideHealthBar = false
+	hideHealthBar = true
 	# Show absorption as border around health
 	# Available: true, false [default: true]
 	enableAbsorption = true
