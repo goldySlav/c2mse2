@@ -56,7 +56,7 @@
 			dependencies: ["04E3A77AAD92E48E"]
 			id: "68B5136068E50E35"
 			optional: true
-			shape: "rsquare"
+			shape: "circle"
 			size: 1.0d
 			tasks: [{
 				id: "3D39A79B04828DA6"
@@ -70,7 +70,7 @@
 			dependencies: ["04E3A77AAD92E48E"]
 			id: "4BA87F3BB747DFD9"
 			optional: true
-			shape: "rsquare"
+			shape: "circle"
 			size: 1.0d
 			tasks: [{
 				id: "0EB734C0E8ABBCF1"
