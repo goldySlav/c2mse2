@@ -7,7 +7,12 @@ ServerEvents.recipes((event) => {
 		EC("enhanced_redstone_ingot"),
 		EC("flux_star"),
 	])
+	removeRecipeByInput(event, [
+		EC("luminessence"),
+	])
 	removeRecipeByOutput(event, [
+		EC('basic_table'),
+		EC('basic_auto_table'),
 		EC('advanced_table'),
 		EC('advanced_auto_table'),
 		EC('elite_table'),
@@ -34,6 +39,7 @@ ServerEvents.recipes((event) => {
 	
 	event.recipes.tconstruct.casting_table(EC("ender_ingot"), Fluid.of(KJ("molten_ender_alloy"), 90), TCT("ingot_cast"), false, 60)
 	event.recipes.tconstruct.casting_table(EC("ender_nugget"), Fluid.of(KJ("molten_ender_alloy"), 10), TCT("nugget_cast"), false, 20)
+	//event.recipes.tconstruct.casting_basin(EC("ender_ingot_block"), Fluid.of(KJ("molten_ender_alloy"), 810)) - can't be added for now, bugged and doesn't let cast in basin w/o a cast
 	event.recipes.tconstruct.melting(Fluid.of(KJ("molten_ender_alloy"), 90), EC("ender_ingot"), 1429, 60)
 	event.recipes.tconstruct.melting(Fluid.of(KJ("molten_ender_alloy"), 10), EC("ender_nugget"), 1429, 20)
 	
