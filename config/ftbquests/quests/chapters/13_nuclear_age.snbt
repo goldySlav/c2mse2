@@ -39,18 +39,12 @@
 			icon: "mekanismgenerators:fission_fuel_assembly"
 			id: "49B703AEB8618033"
 			size: 1.0d
-			tasks: [
-				{
-					id: "35C5E0B5E7C93B4B"
-					item: "mekanismgenerators:fission_fuel_assembly"
-					type: "item"
-				}
-				{
-					id: "38A5A52849079C24"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				icon: "mekanismgenerators:fission_fuel_assembly"
+				id: "0036D38202CF0DC4"
+				title: "Build \"Fission Reactor\""
+				type: "custom"
+			}]
 			title: "Build \"Fission Reactor\""
 			x: -2.5d
 			y: 1.5d
@@ -60,18 +54,12 @@
 			icon: "mekanismgenerators:turbine_blade"
 			id: "6B370D74642ACB0B"
 			size: 1.0d
-			tasks: [
-				{
-					id: "23BBF6445E0A42B1"
-					item: "mekanismgenerators:turbine_blade"
-					type: "item"
-				}
-				{
-					id: "5F428D4364C4881B"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				icon: "mekanismgenerators:turbine_blade"
+				id: "13EB4C7E62ACBB0B"
+				title: "Build \"Turbine\""
+				type: "custom"
+			}]
 			title: "Build \"Turbine\""
 			x: -1.0d
 			y: 1.5d
@@ -81,18 +69,12 @@
 			icon: "mekanism:thermal_evaporation_controller"
 			id: "266A769FB79B8874"
 			size: 1.0d
-			tasks: [
-				{
-					id: "1270D9A08B39FDBC"
-					item: "mekanism:thermal_evaporation_controller"
-					type: "item"
-				}
-				{
-					id: "14F20A486629749E"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				icon: "mekanism:thermal_evaporation_controller"
+				id: "11982C1C8B95A1FF"
+				title: "Build \"Thermal Evaporation Plant\""
+				type: "custom"
+			}]
 			title: "Build First \"Thermal Evaporation Plant\""
 			x: 1.0d
 			y: 1.5d
@@ -123,26 +105,16 @@
 				"553F722132C5EB99"
 				"24CF370CA33E4015"
 			]
+			description: ["Output Power produced by Industrial Turbine to a bigger Power Storage: &2Induction Matrix&r!"]
 			icon: "mekanism:basic_induction_cell"
 			id: "634AF89DCADA4875"
 			size: 1.0d
-			tasks: [
-				{
-					id: "373736B79A7EF6B5"
-					item: "mekanism:basic_induction_cell"
-					type: "item"
-				}
-				{
-					id: "6C5B5ED1C397042C"
-					item: "mekanism:basic_induction_provider"
-					type: "item"
-				}
-				{
-					id: "50FFEC23F13EF515"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				icon: "mekanism:basic_induction_cell"
+				id: "779C3021A94ABD69"
+				title: "Build \"Induction Matrix\""
+				type: "custom"
+			}]
 			title: "Build \"Induction Matrix\""
 			x: -0.5d
 			y: 8.5d
@@ -188,7 +160,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "Remove Radiation (ONE TIME THING)"
+			title: "Remove Radiation &2(ONE TIME THING)"
 			x: -2.5d
 			y: 3.0d
 		}
@@ -197,15 +169,24 @@
 				"49B703AEB8618033"
 				"6B370D74642ACB0B"
 			]
-			icon: "mekanism:basic_pressurized_tube"
+			description: [
+				"1. Pump \"&8Fission Fuel&r\" into Fission Reactor Port configured as \"&2Input Only&r\""
+				"2. Connect &eRadioactive Waste Barrel&r to the Fission Reactor Port configured as \"&6Output Waste&r\""
+				"3. Connect &9Industrial Turbine&r to the Fission Reactor Port configured as \"&bOutput Coolant&r\""
+				"4. Configure Reactor's \"Rate Limit\" to a safe value"
+				"5. Start the Reactor to produce &2Nuclear Waste&r."
+				""
+				"P.S. Don't forget to output actual electrical power produced by Industrial Turbine."
+			]
+			icon: "industrialforegoing:sewage_bucket"
 			id: "24CF370CA33E4015"
 			size: 1.0d
 			tasks: [{
-				id: "4BDAD6A7E05AEA77"
+				id: "25AF902F12E141FF"
 				title: "Done"
 				type: "checkmark"
 			}]
-			title: "Connect Reactor With Turbine"
+			title: "Produce \"Nuclear Waste\""
 			x: -1.0d
 			y: 3.0d
 		}
@@ -214,23 +195,11 @@
 			icon: "mekanism:dust_lithium"
 			id: "553F722132C5EB99"
 			size: 1.0d
-			tasks: [
-				{
-					id: "018FDB8E19FE303A"
-					item: "mekanism:chemical_crystallizer"
-					type: "item"
-				}
-				{
-					id: "267235E1FF86DF72"
-					item: "mekanism:dust_lithium"
-					type: "item"
-				}
-				{
-					id: "410FD6DE48A73715"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "267235E1FF86DF72"
+				item: "mekanism:dust_lithium"
+				type: "item"
+			}]
 			title: "Produce \"Lithium Dust\""
 			x: 1.0d
 			y: 7.5d
@@ -285,18 +254,12 @@
 			icon: "mekanism:lithium_bucket"
 			id: "224BCAD2BDF66EDB"
 			size: 1.0d
-			tasks: [
-				{
-					id: "1CC305BF2F29CD66"
-					item: "mekanism:rotary_condensentrator"
-					type: "item"
-				}
-				{
-					id: "7795BF8DA7F013F4"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				icon: "mekanism:lithium_bucket"
+				id: "019B941A1E8248CC"
+				title: "Produce \"Lithium\""
+				type: "custom"
+			}]
 			title: "Produce \"Lithium\""
 			x: 2.0d
 			y: 6.0d

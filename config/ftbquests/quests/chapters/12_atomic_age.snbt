@@ -23,6 +23,11 @@
 		}
 		{
 			dependencies: ["7FEAADF8D4805FA1"]
+			description: [
+				"Please note that there is no \"&6Spent Nuclear Waste&r\" in the pack."
+				""
+				"So you will &6re-use&r all &2Nuclear Waste&r really soon!"
+			]
 			icon: "mekanism:radioactive_waste_barrel"
 			id: "1222F19F5B1A65ED"
 			size: 1.0d
@@ -101,18 +106,11 @@
 			icon: "mekanism:bio_fuel"
 			id: "6C92BD1E04C25141"
 			size: 1.0d
-			tasks: [
-				{
-					id: "2D38B02E451CADCB"
-					item: "mekanism:bio_fuel"
-					type: "item"
-				}
-				{
-					id: "2F34060556D49655"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "2D38B02E451CADCB"
+				item: "mekanism:bio_fuel"
+				type: "item"
+			}]
 			x: 7.5d
 			y: 1.5d
 		}
@@ -153,9 +151,10 @@
 			id: "751C742C767ADF36"
 			size: 1.0d
 			tasks: [{
-				id: "088E5C1EDFDCEC6B"
-				title: "Done"
-				type: "checkmark"
+				icon: "mekanism:hydrogen_bucket"
+				id: "274BAB8649C6F7E3"
+				title: "Produce \"Hydrogen\""
+				type: "custom"
 			}]
 			title: "Produce \"Hydrogen\""
 			x: 6.0d
@@ -167,13 +166,15 @@
 				"751C742C767ADF36"
 				"70CC6E126E4D5C1A"
 			]
+			description: ["Look at the machine or a tank with &6Ethylene&r gas to complete the quest."]
 			icon: "mekanism:ethene_bucket"
 			id: "42CAD2CEDBBEF256"
 			size: 1.0d
 			tasks: [{
-				id: "34CFF57D3775A052"
-				title: "Done"
-				type: "checkmark"
+				icon: "mekanism:ethene_bucket"
+				id: "28AC198C2C973783"
+				title: "Produce \"Ethylene\""
+				type: "custom"
 			}]
 			title: "Produce \"Ethylene\""
 			x: 5.0d
@@ -267,18 +268,12 @@
 			icon: "mekanism:oxygen_bucket"
 			id: "3D7F5551AB1A1EDD"
 			size: 1.0d
-			tasks: [
-				{
-					id: "3B42C04930C1120F"
-					item: "mekanism:electrolytic_separator"
-					type: "item"
-				}
-				{
-					id: "2EDBA0E2AD05614F"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				icon: "mekanism:oxygen_bucket"
+				id: "0AD69B6498B2FF5A"
+				title: "Produce \"Oxygen\""
+				type: "custom"
+			}]
 			title: "Produce \"Oxygen\""
 			x: 4.5d
 			y: 7.5d
@@ -288,18 +283,12 @@
 			icon: "mekanism:hydrogen_bucket"
 			id: "13C9C369F4782DAA"
 			size: 1.0d
-			tasks: [
-				{
-					id: "378C65E0DFEF42D5"
-					item: "mekanism:rotary_condensentrator"
-					type: "item"
-				}
-				{
-					id: "098BD91B21A7B6F7"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				icon: "mekanism:steam_bucket"
+				id: "6FD010D55631704A"
+				title: "Produce \"Water Vapor\""
+				type: "custom"
+			}]
 			title: "Produce \"Water Vapor\""
 			x: 3.5d
 			y: 7.5d
@@ -313,23 +302,11 @@
 			icon: "mekanism:dust_sulfur"
 			id: "6C4FF49F4D4143AE"
 			size: 1.0d
-			tasks: [
-				{
-					id: "5852046D9584DFE0"
-					item: "mekanism:pressurized_reaction_chamber"
-					type: "item"
-				}
-				{
-					id: "054B635BCA96DBA1"
-					item: "mekanism:dust_sulfur"
-					type: "item"
-				}
-				{
-					id: "42726F4A9180A33B"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "054B635BCA96DBA1"
+				item: "mekanism:dust_sulfur"
+				type: "item"
+			}]
 			title: "Produce \"Sulfur Dust\""
 			x: 6.0d
 			y: 9.0d
@@ -339,18 +316,12 @@
 			icon: "mekanism:sulfur_dioxide_bucket"
 			id: "360255E37BC67810"
 			size: 1.0d
-			tasks: [
-				{
-					id: "3286C19560D5BA59"
-					item: "mekanism:chemical_oxidizer"
-					type: "item"
-				}
-				{
-					id: "7C9AD96893F7259F"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				icon: "mekanism:sulfur_dioxide_bucket"
+				id: "7565D3D59A8D43D3"
+				title: "Produce \"Sulfur Dioxide\""
+				type: "custom"
+			}]
 			title: "Produce \"Sulfur Dioxide\""
 			x: 5.5d
 			y: 10.5d
@@ -363,18 +334,12 @@
 			icon: "mekanism:sulfur_trioxide_bucket"
 			id: "1BA4718376230E48"
 			size: 1.0d
-			tasks: [
-				{
-					id: "6D75060852B1C9FB"
-					item: "mekanism:chemical_infuser"
-					type: "item"
-				}
-				{
-					id: "1802C5DF442261D3"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				icon: "mekanism:sulfur_trioxide_bucket"
+				id: "6EF43F344AD049BF"
+				title: "Produce \"Sulfur Trioxide\""
+				type: "custom"
+			}]
 			title: "Produce \"Sulfur Trioxide\""
 			x: 4.5d
 			y: 12.0d
@@ -387,18 +352,12 @@
 			icon: "mekanism:sulfuric_acid_bucket"
 			id: "5C1E0132BBF8A0F0"
 			size: 1.0d
-			tasks: [
-				{
-					id: "5FD57E3DAD66F41A"
-					item: "mekanism:chemical_infuser"
-					type: "item"
-				}
-				{
-					id: "624E6543DA654EF5"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				icon: "mekanism:sulfuric_acid_bucket"
+				id: "299134F8D9980D33"
+				title: "Produce \"Sulfuric Acid\""
+				type: "custom"
+			}]
 			title: "Produce \"Sulfuric Acid\""
 			x: 4.5d
 			y: 13.5d
@@ -432,18 +391,12 @@
 			icon: "mekanism:hydrofluoric_acid_bucket"
 			id: "5F9E6A0C63A3481A"
 			size: 1.0d
-			tasks: [
-				{
-					id: "5FF72AD4E38CEFD2"
-					item: "mekanism:chemical_dissolution_chamber"
-					type: "item"
-				}
-				{
-					id: "13A1D1AD9B6BF4DA"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				icon: "mekanism:hydrofluoric_acid_bucket"
+				id: "7E5250F7ED09C414"
+				title: "Produce \"Hydrofluoric Acid\""
+				type: "custom"
+			}]
 			title: "Produce \"Hydrofluoric Acid\""
 			x: 4.5d
 			y: 15.0d
@@ -453,18 +406,11 @@
 			icon: "mekanism:ingot_uranium"
 			id: "689782169F79936D"
 			size: 1.0d
-			tasks: [
-				{
-					id: "7DE9209BE29DAAEA"
-					item: "mekanism:ingot_uranium"
-					type: "item"
-				}
-				{
-					id: "5BD5973BF75C5859"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "7DE9209BE29DAAEA"
+				item: "mekanism:ingot_uranium"
+				type: "item"
+			}]
 			title: "Produce \"Uranium Ingot\""
 			x: 7.5d
 			y: 6.0d
@@ -495,18 +441,12 @@
 			icon: "mekanism:uranium_oxide_bucket"
 			id: "14EE95343465E6EC"
 			size: 1.0d
-			tasks: [
-				{
-					id: "6D4BA8DD1571C4BF"
-					item: "mekanism:chemical_oxidizer"
-					type: "item"
-				}
-				{
-					id: "230C07A8D5BE29EE"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				icon: "mekanism:uranium_oxide_bucket"
+				id: "46B24E83FD493099"
+				title: "Produce \"Uranium Oxide\""
+				type: "custom"
+			}]
 			title: "Produce \"Uranium Oxide\""
 			x: 7.5d
 			y: 9.0d
@@ -519,18 +459,12 @@
 			icon: "mekanism:uranium_hexafluoride_bucket"
 			id: "510B99972A258AE5"
 			size: 1.0d
-			tasks: [
-				{
-					id: "65DE819A3DADD66B"
-					item: "mekanism:chemical_infuser"
-					type: "item"
-				}
-				{
-					id: "1BCC8AC5AA4C331B"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				icon: "mekanism:uranium_hexafluoride_bucket"
+				id: "75C7507F8F9A44A8"
+				title: "Produce \"Uranium Hexafluoride\""
+				type: "custom"
+			}]
 			title: "Produce \"Uranium Hexafluoride\""
 			x: 5.0d
 			y: 16.5d
@@ -540,21 +474,29 @@
 			icon: "mekanism:heavy_water_bucket"
 			id: "7FEAADF8D4805FA1"
 			size: 1.0d
-			tasks: [
-				{
-					id: "02B3740153E20B68"
-					item: "mekanism:isotopic_centrifuge"
-					type: "item"
-				}
-				{
-					id: "6A060D17B7C18BAB"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				icon: "mekanism:heavy_water_bucket"
+				id: "5E6F0C6ECA9046C1"
+				title: "Produce \"Fissile Fuel\""
+				type: "custom"
+			}]
 			title: "Produce \"Fissile Fuel\""
 			x: 5.0d
 			y: 18.0d
+		}
+		{
+			dependencies: ["7532E6C56C1A469B"]
+			description: ["Useless for now, essential in the future."]
+			id: "34EA98B758C17AE6"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "20371B6EC31655B6"
+				item: "mekanism:substrate"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.5d
 		}
 	]
 	title: "11. Chemical Age"

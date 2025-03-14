@@ -34,18 +34,11 @@
 			icon: "mekanism:pellet_antimatter"
 			id: "311416D716462A51"
 			size: 1.0d
-			tasks: [
-				{
-					id: "3EE1698B52AA1F98"
-					item: "mekanism:chemical_crystallizer"
-					type: "item"
-				}
-				{
-					id: "1D2D5E3615EEF132"
-					item: "mekanism:pellet_antimatter"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1D2D5E3615EEF132"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
 			title: "Produce \"Antimatter Pellet\""
 			x: 0.0d
 			y: 7.5d
@@ -59,9 +52,10 @@
 			id: "20FB4134CB25F589"
 			size: 1.0d
 			tasks: [{
-				id: "2D282D24ED99421E"
-				title: "Done"
-				type: "checkmark"
+				icon: "mekanismgenerators:fusion_fuel_bucket"
+				id: "2E544E1DBA9A5464"
+				title: "Produce \"Antimatter\""
+				type: "custom"
 			}]
 			title: "Produce \"Antimatter\""
 			x: 0.0d
@@ -72,23 +66,12 @@
 			icon: "mekanism:sps_casing"
 			id: "42325E7B61BA086D"
 			size: 1.0d
-			tasks: [
-				{
-					id: "3BB44CF508849214"
-					item: "mekanism:sps_casing"
-					type: "item"
-				}
-				{
-					id: "6EBFEA936546BF58"
-					item: "mekanism:sps_port"
-					type: "item"
-				}
-				{
-					id: "1572C53937CB0F38"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				icon: "mekanism:sps_port"
+				id: "79B2122EF99ED7FC"
+				title: "Build \"Supercritical Phase Shifter\""
+				type: "custom"
+			}]
 			title: "Build \"Supercritical Phase Shifter\""
 			x: 0.0d
 			y: 4.5d
@@ -98,23 +81,11 @@
 			icon: "avaritia:pileof_neutrons"
 			id: "031EFBF6364330ED"
 			size: 1.0d
-			tasks: [
-				{
-					id: "796E21E482556A1F"
-					item: "mekanism:chemical_crystallizer"
-					type: "item"
-				}
-				{
-					id: "1FF2CDA6BE6927D5"
-					item: "avaritia:pileof_neutrons"
-					type: "item"
-				}
-				{
-					id: "0E6856F932E5DAEB"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "1FF2CDA6BE6927D5"
+				item: "avaritia:pileof_neutrons"
+				type: "item"
+			}]
 			title: "Produce \"Pile of Neutrons\""
 			x: 0.0d
 			y: 3.0d
@@ -124,18 +95,12 @@
 			icon: "tconstruct:molten_obsidian_bucket"
 			id: "5765BC3B238E7F7D"
 			size: 1.0d
-			tasks: [
-				{
-					id: "1397F94B5A234BAC"
-					item: "mekanism:solar_neutron_activator"
-					type: "item"
-				}
-				{
-					id: "31C660E136422EDE"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				icon: "tconstruct:molten_obsidian_bucket"
+				id: "70FB15765ACFC45E"
+				title: "Produce \"Neutron Gas\""
+				type: "custom"
+			}]
 			title: "Produce \"Neutron Gas\""
 			x: 0.0d
 			y: 1.5d
@@ -171,9 +136,10 @@
 			id: "01964C0138888B4C"
 			size: 1.0d
 			tasks: [{
-				id: "73A48D2ABDF15E3B"
-				item: "mekanismgenerators:fusion_reactor_controller"
-				type: "item"
+				icon: "mekanismgenerators:fusion_reactor_controller"
+				id: "5BB7AAD1FC337828"
+				title: "Build \"Fusion Reactor\""
+				type: "custom"
 			}]
 			title: "Build \"Fusion Reactor\""
 			x: -1.5d
@@ -229,32 +195,25 @@
 			}
 			id: "7E3407BE70809944"
 			size: 1.0d
-			tasks: [
-				{
-					id: "30F9719246762F91"
-					item: {
-						Count: 1
-						id: "mekanismgenerators:hohlraum"
-						tag: {
-							mekData: {
-								GasTanks: [{
-									Tank: 0b
-									stored: {
-										amount: 10L
-										gasName: "mekanismgenerators:fusion_fuel"
-									}
-								}]
-							}
+			tasks: [{
+				id: "30F9719246762F91"
+				item: {
+					Count: 1
+					id: "mekanismgenerators:hohlraum"
+					tag: {
+						mekData: {
+							GasTanks: [{
+								Tank: 0b
+								stored: {
+									amount: 10L
+									gasName: "mekanismgenerators:fusion_fuel"
+								}
+							}]
 						}
 					}
-					type: "item"
 				}
-				{
-					id: "3F9F481AF121A644"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+				type: "item"
+			}]
 			title: "Fill \"Hohlraum\" With \"D-T Fuel\""
 			x: -4.5d
 			y: 3.0d
@@ -953,6 +912,41 @@
 			}]
 			x: 0.0d
 			y: 24.0d
+		}
+		{
+			dependencies: ["6AB76FDE0D3060DC"]
+			description: [
+				"&6Advanced Storage Cells&r to put into QIO Drive Array."
+				""
+				"In case you need it."
+			]
+			id: "20D42E964CF69CF2"
+			optional: true
+			shape: "circle"
+			tasks: [
+				{
+					id: "1E5BA07B09CE8555"
+					item: "mekanism_extras:qio_drive_collapse"
+					type: "item"
+				}
+				{
+					id: "6077C5086E92F697"
+					item: "mekanism_extras:qio_drive_gamma"
+					type: "item"
+				}
+				{
+					id: "00A587C7352B3BDB"
+					item: "mekanism_extras:qio_drive_black_hole"
+					type: "item"
+				}
+				{
+					id: "2F4CF9C9232E9CE5"
+					item: "mekanism_extras:qio_drive_singularity"
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: 11.5d
 		}
 	]
 	title: "14. Astral Age"
