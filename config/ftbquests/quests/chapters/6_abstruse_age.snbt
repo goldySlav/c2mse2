@@ -26,8 +26,10 @@
 		}
 		{
 			dependencies: ["576B2716D30C74CB"]
+			description: ["These can be used to create the simplest of Industrial Machines."]
 			id: "2E6CE520086D8586"
 			shape: "rsquare"
+			subtitle: "Now the interesting part begins"
 			tasks: [{
 				id: "3B32476FCA9650B4"
 				item: "kubejs:abstruse_machine"
@@ -40,6 +42,11 @@
 			dependencies: [
 				"093939204AD0D6C0"
 				"578CFA9452732B7E"
+			]
+			description: [
+			"I bet your factory is pretty big by now."
+			"If &6Preformance&r is starting to worsen, consider &6Spreading out&r your assembly lines a bit."
+			"Now you have plenty of options to transfer everything wirelessly."
 			]
 			icon: "kubejs:abstruse_mechanism"
 			id: "576B2716D30C74CB"
@@ -103,6 +110,7 @@
 			]
 			icon: "kubejs:zero"
 			id: "7B6ACD7ADD5DE33E"
+			subtitle: "Nothing represented by something"
 			tasks: [
 				{
 					id: "28FA409A989612A1"
@@ -127,6 +135,7 @@
 			]
 			icon: "kubejs:one"
 			id: "02BF2A9AA4214BA7"
+			subtitle: "\"Oh, don't fall! Ha-ha-ha, ONE\""
 			tasks: [
 				{
 					id: "5CCE4F5A3ED858E5"
@@ -151,6 +160,7 @@
 			]
 			icon: "kubejs:two"
 			id: "1310A3ECC10F5090"
+			subtitle: "Take the trouble and make it double"
 			tasks: [
 				{
 					id: "2E130A43E4D3F300"
@@ -168,9 +178,14 @@
 		}
 		{
 			dependencies: ["552F8C2C880166A7"]
-			description: ["Please note, that all math operations can be done also in &6Advanced Crafting Table&r &o(not shown in JEI for some reason)&r"]
+			description: [
+				"Multiple ways to get &63&r."
+				""
+				"Pick the one you like!"
+			]
 			icon: "kubejs:three"
 			id: "64BF76E7FA414649"
+			subtitle: "<&63&r"
 			tasks: [
 				{
 					id: "013A0D91B55E0307"
@@ -195,6 +210,7 @@
 			]
 			icon: "kubejs:four"
 			id: "695C45867737D934"
+			subtitle: "That's right, it goes into the square hole"
 			tasks: [
 				{
 					id: "310DE8757E7C46C6"
@@ -219,6 +235,7 @@
 			]
 			icon: "kubejs:five"
 			id: "5E76742299D40DED"
+			subtitle: "Five nights? Harr harr harr"
 			tasks: [
 				{
 					id: "79F2DD69AE8C9E23"
@@ -243,6 +260,7 @@
 			]
 			icon: "kubejs:six"
 			id: "0FE9149C3B9186B1"
+			subtitle: "Arguably the best number"
 			tasks: [
 				{
 					id: "4C735707FEB651F6"
@@ -267,6 +285,7 @@
 			]
 			icon: "kubejs:seven"
 			id: "41D1058AA0FDDC3A"
+			subtitle: "Seven human souls are required to shatter the Barrier"
 			tasks: [
 				{
 					id: "4ECC8D069C089B83"
@@ -284,9 +303,14 @@
 		}
 		{
 			dependencies: ["552F8C2C880166A7"]
-			description: ["Please note, that all math operations can be done also in &6Advanced Crafting Table&r &o(not shown in JEI for some reason)&r"]
+			description: [
+				"Multiple ways to get &68&r."
+				""
+				"Pick the one you like!"
+			]
 			icon: "kubejs:eight"
 			id: "5B4056D7CA4530C4"
+			subtitle: "Tilt your head and you'll see Infinity!"
 			tasks: [
 				{
 					id: "0FC770661DA03FC7"
@@ -311,6 +335,7 @@
 			]
 			icon: "kubejs:nine"
 			id: "17652A1E7B8B35FF"
+			subtitle: "The largest single digit number"
 			tasks: [
 				{
 					id: "19C17AA8B0B09190"
@@ -330,7 +355,7 @@
 			dependencies: ["2E8778D432B12A09"]
 			description: [
 				"Blueprints for some of the casts got lost in the time-space continuum."
-				"You need to prove your capability of solving basic math problems."
+				"You need to prove your capability of solving basic and intermediate math problems."
 			]
 			id: "0B12B976E0EBAE0A"
 			shape: "rsquare"
@@ -345,7 +370,7 @@
 		}
 		{
 			dependencies: ["2E8778D432B12A09"]
-			description: ["But how to get 10 numbers out of 2 numbers and 4 symbols?"]
+			description: ["Now try to get 10 numbers and 2 boolean states out of 2 numbers and 15 symbols."]
 			id: "225891006A2AC89D"
 			shape: "rsquare"
 			subtitle: "The calculator can help you if you're stuck"
@@ -359,7 +384,7 @@
 		}
 		{
 			dependencies: ["2E8778D432B12A09"]
-			description: ["Plus cast is used to cast a plus."]
+			description: ["Plus Cast is used to cast a Plus."]
 			id: "0F7DDA78A13D7FFC"
 			shape: "rsquare"
 			subtitle: "Stay positive!"
@@ -373,9 +398,10 @@
 		}
 		{
 			dependencies: ["2E8778D432B12A09"]
-			description: ["Minus cast is used to cast a minus."]
+			description: ["Minus Cast is used to cast a Minus."]
 			id: "7729657E979AE027"
 			shape: "rsquare"
+			subtitle: "Negative"
 			tasks: [{
 				id: "037A4F12EB6953E4"
 				item: "kubejs:minus_cast"
@@ -386,7 +412,7 @@
 		}
 		{
 			dependencies: ["2E8778D432B12A09"]
-			description: ["Divide cast is used to cast a division symbol."]
+			description: ["Divide Cast is used to cast a Sivision symbol."]
 			id: "5C13BA5CFC7A7908"
 			shape: "rsquare"
 			subtitle: "Divided by oceans, united by Minecraft"
@@ -400,7 +426,7 @@
 		}
 		{
 			dependencies: ["2E8778D432B12A09"]
-			description: ["Multiply cast is used to case a multiplication symbol"]
+			description: ["Multiply Cast is used to cast a Multiplication symbol."]
 			id: "60693DBE2262B78A"
 			shape: "rsquare"
 			subtitle: "Multiple hours of fun ahead of you"
@@ -450,7 +476,7 @@
 		}
 		{
 			dependencies: ["5BF4BD18436A015E"]
-			description: ["I'm starting to think it's something more than just a magnet"]
+			description: ["I'm starting to think it's something more than just a magnet."]
 			id: "578CFA9452732B7E"
 			shape: "rsquare"
 			subtitle: "Resonate the Matrix"
@@ -567,7 +593,12 @@
 		}
 		{
 			dependencies: ["552F8C2C880166A7"]
+			description: [
+			"Factorial is a somewhat tricky operation."
+			"The factorial of a positive integer \"n\" is defined as the product of all positive integers from 1 to n. For example, &65! = 5 × 4 × 3 × 2 × 1 = 120&r."
+			]
 			id: "14CF5B44C7FF5F67"
+			subtitle: "5! != 5"
 			tasks: [{
 				id: "2859167322F50D71"
 				item: "kubejs:factorial"
@@ -578,7 +609,9 @@
 		}
 		{
 			dependencies: ["552F8C2C880166A7"]
+			description: ["The power (or exponent) of a number says how many times to use the number in a multiplication."]
 			id: "157DB63F2E8ADBD4"
+			subtitle: "Go, go &6Power&rrangers"
 			tasks: [{
 				id: "3DD6FA18B64D0D6F"
 				item: "kubejs:power"
@@ -589,7 +622,20 @@
 		}
 		{
 			dependencies: ["552F8C2C880166A7"]
+			description:[
+			"Remainder is a quite funny operation actually."
+			"It's best seen on an example:"
+			"3:2 = 1.5"
+			"This equation can be also formed as follows:"
+			"3:2 = 1 r. 1"
+			"r stands for &6Remainder&r. Here, have some more examples:"
+			"5%2 = 1"
+			"16%6 = 4"
+			"19%20 = 19"
+			"Remainder operation returns the, well, remainder from division."
+			]
 			id: "1018568DF4291BDA"
+			subtitle: "Remain focussed"
 			tasks: [{
 				id: "217F4A3C21B0A3C1"
 				item: "kubejs:remainder"
@@ -600,7 +646,9 @@
 		}
 		{
 			dependencies: ["552F8C2C880166A7"]
+			description: ["Square root actually means \"to the power of (1/2)\""]
 			id: "2DC1819D10F9C676"
+			subtitle: "It must be hard for plants to grow square roots"
 			tasks: [{
 				id: "127C8EBE1FA8E110"
 				item: "kubejs:square_root"
@@ -611,8 +659,10 @@
 		}
 		{
 			dependencies: ["2E8778D432B12A09"]
+			description: ["Factorial Cast is used to cast a Factorial."]
 			id: "15315D63C8875CE4"
 			shape: "rsquare"
+			subtitle: "Is your factory growing?"
 			tasks: [{
 				id: "349747C12A7F5D98"
 				item: "kubejs:factorial_cast"
@@ -623,8 +673,11 @@
 		}
 		{
 			dependencies: ["2E8778D432B12A09"]
+			
+			description: ["Power Cast is used to cast a Power symbol."]
 			id: "46B2F134D5278D1E"
 			shape: "rsquare"
+			subtitle: "Powah???"
 			tasks: [{
 				id: "5AB8DE2E0BD3DBF5"
 				item: "kubejs:power_cast"
@@ -635,8 +688,10 @@
 		}
 		{
 			dependencies: ["2E8778D432B12A09"]
+			description: ["Remainder Cast is used to cast a Remainder symbol."]
 			id: "0C356AEF65F9421E"
 			shape: "rsquare"
+			subtitle: "The stranger I remain"
 			tasks: [{
 				id: "00623EC453D488F3"
 				item: "kubejs:remainder_cast"
@@ -646,9 +701,11 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["2E8778D432B12A09"]
+			dependencies: ["2E8778D432B12A09
+			description: ["Square root Cast is used to cast a Square Root symbol."]
 			id: "06D2A8F8EEED2FD5"
 			shape: "rsquare"
+			subtitle: "In Minecraft even the roots are square!"
 			tasks: [{
 				id: "2022A7F7AC53B69D"
 				item: "kubejs:square_root_cast"
@@ -659,7 +716,12 @@
 		}
 		{
 			dependencies: ["552F8C2C880166A7"]
+			description: [
+			"When you slap two = symbols together, you get an operator to compare two pieces of data, including numbers and expressions."
+			"A comparator, if you will."
+			]
 			id: "5B6CE05FFE16C9BE"
+			subtitle: "If you ever wrote any piece of code you will know this one!"
 			tasks: [{
 				id: "4EDD985B3681B63C"
 				item: "kubejs:equal"
@@ -670,8 +732,10 @@
 		}
 		{
 			dependencies: ["2E8778D432B12A09"]
+			description: ["Equal Cast is used to cast an Equality symbol."]
 			id: "7FDCA6288E7EA08D"
 			shape: "rsquare"
+			subtitle: "I write quest descriptions and you read them. We are not the same"
 			tasks: [{
 				id: "25F536A845A5DD8E"
 				item: "kubejs:equal_cast"
@@ -689,6 +753,7 @@
 			]
 			icon: "kubejs:true"
 			id: "758349AB312334BE"
+			subtitle: "It is true that you enjoy this pack"
 			tasks: [
 				{
 					id: "11662822883BD5EA"
@@ -713,6 +778,7 @@
 			]
 			icon: "kubejs:false"
 			id: "316465E9167266FE"
+			subtitle: "It is false that Fortnite is better than Minecraft"
 			tasks: [
 				{
 					id: "6FC8C578067137E8"
