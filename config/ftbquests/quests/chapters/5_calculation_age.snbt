@@ -213,7 +213,7 @@
 		}
 		{
 			dependencies: ["3EF1C5A04B24E10E"]
-			description: ["\"Made by deploying an Inscriber Silicon Press onto Silicon.\""]
+			description: ["Made by deploying an Inscriber Silicon Press onto Silicon."]
 			icon: "ae2:printed_silicon"
 			id: "6B2F8C0DC04DA057"
 			tasks: [
@@ -324,7 +324,7 @@
 		}
 		{
 			dependencies: ["201C1E972A7885EC"]
-			description: ["Melting &6diamons&r (blaze cakes here too)."]
+			description: ["Melting &6Diamons&r."]
 			icon: "tconstruct:molten_diamond_bucket"
 			id: "0DCD7F96839FB02B"
 			subtitle: "They are high again. Are you?"
@@ -396,7 +396,7 @@
 				""
 				"&6&l1.&r Saw the Polished Coke with a Mechanical Saw."
 				""
-				"&6&l2.&r Last is spouting &6H2O&r(Water) on it."
+				"&6&l2.&r Last is Spouting &6H2O&r(Water) on it."
 			]
 			icon: "kubejs:coke_chunk"
 			id: "3BB8214617F3B855"
@@ -555,7 +555,7 @@
 		}
 		{
 			dependencies: ["155318044955E7FB"]
-			description: ["Crush cobblestone?"]
+			description: ["Crush Cobblestone?"]
 			icon: "minecraft:gravel"
 			id: "38F5E619902249C0"
 			subtitle: "Why do you still have gravity?"
