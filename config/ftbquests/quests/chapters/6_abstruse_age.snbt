@@ -595,7 +595,7 @@
 			dependencies: ["552F8C2C880166A7"]
 			description: [
 			"Factorial is a somewhat tricky operation."
-			"The factorial of a positive integer \"n\" is defined as the product of all positive integers from 1 to n. For example, &65! = 5 × 4 × 3 × 2 × 1 = 120&r."
+			"The factorial of a positive integer \"n\" is defined as the product of all positive integers from 1 to n. For example, &65! = 5 Ã— 4 Ã— 3 Ã— 2 Ã— 1 = 120&r."
 			]
 			id: "14CF5B44C7FF5F67"
 			subtitle: "5! != 5"
@@ -635,7 +635,7 @@
 			"Remainder operation returns the, well, remainder from division."
 			]
 			id: "1018568DF4291BDA"
-			subtitle: "Remain focussed"
+			subtitle: "Remain focused"
 			tasks: [{
 				id: "217F4A3C21B0A3C1"
 				item: "kubejs:remainder"
