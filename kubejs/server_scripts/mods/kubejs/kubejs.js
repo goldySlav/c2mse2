@@ -239,9 +239,9 @@ ServerEvents.recipes((event) => {
 	], {
 		B: KJ("witherproof_block"),
 	})
-	
-	
-	
+
+
+
 	//summoning doll
 	customRecipes.ae2.transform.fluid(event, `1x ${KJ("summoning_doll")}`, [
 		EXD("porcelain_clay_ball"),
@@ -259,11 +259,11 @@ ServerEvents.recipes((event) => {
 		EXD("porcelain_clay_ball"),
 		F("#gems/emerald"),
 	], F("witch_water"))
-	
-	
-	
+
+
+
 	//tools
-	
+
 	//saws
 	event.shaped(KJ('flint_saw'), [
 		'ABB',
@@ -289,7 +289,7 @@ ServerEvents.recipes((event) => {
 		B: CB_M('stone_rod'),
 		C: F('#gems/diamond'),
 	})
-	
+
 	//chromatic resonator
 	event.shaped(KJ('chromatic_resonator'), [
 		' R ',
@@ -300,7 +300,7 @@ ServerEvents.recipes((event) => {
 		L: F('#ingots/cobalt'),
 		S: EC('crystaltine_ingot')
 	})
-	
+
 	//calculator
 	event.shaped(KJ('calculator'), [
 		' A ',
@@ -311,10 +311,10 @@ ServerEvents.recipes((event) => {
 		C: AE2('logic_processor'),
 		D: AE2('engineering_processor'),
 	})
-	
+
 	//charged calculator
 	event.recipes.extendedcrafting.shapeless_flux_crafter(KJ("charged_calculator"), [KJ("calculator")], 400000).powerRate(400)
-	
+
 
 
     //unstable tools
@@ -413,15 +413,15 @@ ServerEvents.recipes((event) => {
         B: KJ('charged_calculator'),
         C: AE2('singularity'),
     }).id(KJ(`extended_crafting/unstable_charged_calculator`))
-	
-	
-	
+
+
+
 	//coke
 	event.smelting(KJ('coke'), MC('#coals')).xp(0.1).cookingTime(200)
 	event.blasting(KJ('coke'), MC('#coals')).xp(0.1).cookingTime(100)
-	
-	
-	
+
+
+
 	//algal blend chain
 	event.smelting(KJ('algal_brick'), KJ('algal_blend')).xp(0).cookingTime(200)
 
@@ -443,9 +443,9 @@ ServerEvents.recipes((event) => {
 	event.recipes.create.mixing(Item.of(KJ('algal_blend'), 2), [ MC('clay_ball'), MC('kelp') ])
 	event.recipes.mekanismCombining(Item.of(KJ('algal_blend'), 6), MC('clay_ball'), MC('kelp'))
 	event.recipes.mekanismCombining(Item.of(KJ('algal_blend'), 6), MC('kelp'), MC('clay_ball'))
-	
-	
-	
+
+
+
 	//polished coke chain
 	event.recipes.create.mixing(Item.of(KJ('nourished_coke'), 1), [ F("#gems/coke"), Fluid.of(MC("water"), 250) ])
 	event.custom({
@@ -472,15 +472,15 @@ ServerEvents.recipes((event) => {
 		}
 	})
 	event.recipes.mekanism.injecting(Item.of(KJ("nourished_coke"), 2), F("#gems/coke"), {gas: M("steam"), amount: 1})
-	
+
 	event.recipes.create.sandpaper_polishing(KJ('polished_coke'), KJ('nourished_coke'))
 	event.recipes.mekanism.enriching(KJ('polished_coke'), KJ('nourished_coke'))
-	
-	
-	
+
+
+
 	//silicon compound chain
 	event.recipes.create.splashing(KJ("sand_ball"), MC("sandstone"))
-	
+
 	let t = KJ('incomplete_coke_chunk')
 	event.recipes.create.sequenced_assembly([
 		KJ('coke_chunk'),
@@ -490,13 +490,13 @@ ServerEvents.recipes((event) => {
 	]).transitionalItem(t)
 		.loops(2)
 	event.recipes.mekanism.sawing(KJ('polished_coke'), Item.of(KJ('coke_chunk'), 2))
-	
+
 	event.recipes.create.emptying([KJ("rough_sand"), Fluid.of(KJ("fine_sand"), 500)], KJ("sand_ball"))
 	customRecipes.create.sifting(event, [KJ("purified_sand")], KJ("rough_sand"), 6)
 	event.recipes.create.compacting(KJ("silicon_compound"), [Fluid.of(KJ("fine_sand"), 500), KJ("purified_sand"), KJ("coke_chunk")])
-	
-	
-	
+
+
+
 	//preserved explosion
 	event.custom({
 		type: AE2_A("reaction"),
@@ -544,14 +544,14 @@ ServerEvents.recipes((event) => {
 			id: KJ("preserved_explosion"),
 		}
 	})
-	
-	
-	
+
+
+
 	//ae2-type seeds
 	event.stonecutting(Item.of(KJ('certus_seed'), 2), F('#gems/certus_quartz'))
 	event.stonecutting(Item.of(KJ('quartz_seed'), 2), F('#gems/quartz'))
 	event.stonecutting(Item.of(KJ('fluix_seed'), 2), F('#gems/fluix'))
-	
+
 	//grow ae2-type seeds
 	let grow = (from, via, to) => {
 		event.recipes.create.sequenced_assembly([to], from, [
@@ -572,8 +572,8 @@ ServerEvents.recipes((event) => {
 	grow(KJ("certus_seed_small"), KJ("certus_seed_small"), AE2('certus_quartz_crystal'))
 	grow(KJ("fluix_seed_small"), KJ("fluix_seed_small"), AE2('fluix_crystal'))
 	grow(KJ("quartz_seed_small"), KJ("quartz_seed_small"), MC('quartz'))
-	
-	const seedNames = [ 
+
+	const seedNames = [
 		{ idName: "certus", crystalID: AE2("certus_quartz_crystal") },
 		{ idName: "quartz", crystalID: MC("quartz") },
 		{ idName: "fluix", crystalID: AE2("fluix_crystal") },
@@ -581,9 +581,9 @@ ServerEvents.recipes((event) => {
 	seedNames.forEach(seedObj => {
 		event.recipes.mekanismEnriching(seedObj.crystalID, KJ(`${seedObj.idName}_seed`))
 	})
-	
-	
-	
+
+
+
 	//sky solution
 	event.recipes.create.mixing(Fluid.of(KJ("sky_solution"), 250), [Item.of(AE2('sky_dust'), 1), Fluid.of(MC('water'), 125)])
 	event.custom({
@@ -609,9 +609,9 @@ ServerEvents.recipes((event) => {
 			id: KJ("sky_solution"),
 		}
 	})
-	
-	
-	
+
+
+
 	//liquid redstone from charged certus
 	event.recipes.create.mixing([
 		AE2('certus_quartz_crystal'),
@@ -643,9 +643,9 @@ ServerEvents.recipes((event) => {
 			id: KJ("liquid_redstone"),
 		}
 	})
-	
-	
-	
+
+
+
 	//dye entangled singularity
 	dyes.forEach(dye => {
 		event.recipes.create.mixing(KJ("dye_entangled_singularity"), [dye, AE2('quantum_entangled_singularity')])
@@ -654,14 +654,14 @@ ServerEvents.recipes((event) => {
 	colours.forEach(color => {
 		customRecipes.mekanism.painting(event, KJ("dye_entangled_singularity"), AE2("quantum_entangled_singularity"), color)
 	})
-	
-	
-	
+
+
+
 	//toxic waste liquid fuel
 	customRecipes.create.liquidFuel(event, F("waste"), 1000, true)
-	
-	
-	
+
+
+
 	//custom infusions
 	customRecipes.mekanism.infusion_conversion(event, KJ("waste"), 10, AE2("magenta_paint_ball"))
 	customRecipes.mekanism.infusion_conversion(event, KJ("waste"), 20, AE2("blue_paint_ball"))
@@ -671,14 +671,14 @@ ServerEvents.recipes((event) => {
 	customRecipes.mekanism.infusion_conversion(event, KJ("waste"), 80, KJ("dye_entangled_singularity"))
 
 	customRecipes.mekanism.infusion_conversion(event, KJ("explosion_essence"), 80, KJ("preserved_explosion"))
-	
-	
-	
+
+
+
 	//custom steel in fission reactor
 	customRecipes.mekanism.fission(event, KJ("gaseous_iron_compound"), 1, KJ("gaseous_steel_compound"), 1, 0)
-	
-	
-	
+
+
+
 	//gaseous molten metals
 	customRecipes.mekanism.condensentrating(event, TCT("molten_iron"), 1, KJ("gaseous_iron_compound"), 1)
 	customRecipes.mekanism.condensentrating(event, TCT("molten_gold"), 1, KJ("gaseous_gold_compound"), 1)
@@ -690,76 +690,76 @@ ServerEvents.recipes((event) => {
 	customRecipes.mekanism.condensentrating(event, KJ("molten_ender_alloy"), 1, KJ("gaseous_ender_alloy_compound"), 1)
 	customRecipes.mekanism.condensentrating(event, KJ("molten_certus"), 1, KJ("gaseous_certus_compound"), 1)
 	customRecipes.mekanism.condensentrating(event, TCT("molten_diamond"), 1, KJ("gaseous_diamond_compound"), 1)
-	
-	
-	
+
+
+
 	//custom metal/gem melting in chemical oxidizer
 	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/iron"), KJ("gaseous_iron_compound"), 810)
 	customRecipes.mekanism.oxidizing(event, F("#ingots/iron"), KJ("gaseous_iron_compound"), 90)
 	customRecipes.mekanism.oxidizing(event, F("#nuggets/iron"), KJ("gaseous_iron_compound"), 10)
-	
+
 	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/gold"), KJ("gaseous_gold_compound"), 810)
 	customRecipes.mekanism.oxidizing(event, F("#ingots/gold"), KJ("gaseous_gold_compound"), 90)
 	customRecipes.mekanism.oxidizing(event, F("#nuggets/gold"), KJ("gaseous_gold_compound"), 10)
-	
+
 	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/copper"), KJ("gaseous_copper_compound"), 810)
 	customRecipes.mekanism.oxidizing(event, F("#ingots/copper"), KJ("gaseous_copper_compound"), 90)
 	customRecipes.mekanism.oxidizing(event, F("#nuggets/copper"), KJ("gaseous_copper_compound"), 10)
-	
+
 	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/zinc"), KJ("gaseous_zinc_compound"), 810)
 	customRecipes.mekanism.oxidizing(event, F("#ingots/zinc"), KJ("gaseous_zinc_compound"), 90)
 	customRecipes.mekanism.oxidizing(event, F("#nuggets/zinc"), KJ("gaseous_zinc_compound"), 10)
-	
+
 	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/brass"), KJ("gaseous_brass_compound"), 810)
 	customRecipes.mekanism.oxidizing(event, F("#ingots/brass"), KJ("gaseous_brass_compound"), 90)
 	customRecipes.mekanism.oxidizing(event, F("#nuggets/brass"), KJ("gaseous_brass_compound"), 10)
-	
+
 	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/cobalt"), KJ("gaseous_cobalt_compound"), 810)
 	customRecipes.mekanism.oxidizing(event, F("#ingots/cobalt"), KJ("gaseous_cobalt_compound"), 90)
 	customRecipes.mekanism.oxidizing(event, F("#nuggets/cobalt"), KJ("gaseous_cobalt_compound"), 10)
-	
+
 	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/steel"), KJ("gaseous_steel_compound"), 810)
 	customRecipes.mekanism.oxidizing(event, F("#ingots/steel"), KJ("gaseous_steel_compound"), 90)
 	customRecipes.mekanism.oxidizing(event, F("#nuggets/steel"), KJ("gaseous_steel_compound"), 10)
-	
+
 	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/ender_ingot"), KJ("gaseous_ender_alloy_compound"), 810)
 	customRecipes.mekanism.oxidizing(event, F("#ingots/ender_ingot"), KJ("gaseous_ender_alloy_compound"), 90)
 	customRecipes.mekanism.oxidizing(event, F("#nuggets/ender_ingot"), KJ("gaseous_ender_alloy_compound"), 10)
-	
+
 	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/certus_quartz"), KJ("gaseous_certus_compound"), 810)
 	customRecipes.mekanism.oxidizing(event, F("#gems/certus_quartz"), KJ("gaseous_certus_compound"), 90)
-	
+
 	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/diamond"), KJ("gaseous_diamond_compound"), 810)
 	customRecipes.mekanism.oxidizing(event, F("#gems/diamond"), KJ("gaseous_diamond_compound"), 90)
-	
-	
-	
+
+
+
 	//radiant sheet
 	event.recipes.create.pressing(KJ(`radiant_sheet`), CR("refined_radiance"))
 	customRecipes.ad_astra.compressing(event, KJ(`radiant_sheet`), CR("refined_radiance"))
-	
+
 	//radiant coil
 	event.recipes.create.mechanical_crafting(KJ("radiant_coil"), "A", { A: KJ('radiant_sheet') })
 	customRecipes.create.ifiniDeploying(event, KJ("radiant_coil"), KJ('radiant_sheet'), MC("nether_star"))
-	
-	
-	
+
+
+
 	//printed silicon wafer
 	customRecipes.create.ifiniDeploying(event, KJ("printed_silicon_wafer"), AE2_E("silicon_block"), KJ("silicon_press_wafer"))
-	
-	
-	
+
+
+
 	//molten certus
 	event.recipes.tconstruct.melting(Fluid.of(KJ("molten_certus"), 90), AE2("certus_quartz_crystal"), 1825, 40)
 	event.recipes.tconstruct.casting_table(AE2("certus_quartz_crystal"), Fluid.of(KJ("molten_certus"), 90), TCT("gem_cast"), false, 20)
-	
-	
-	
+
+
+
 	//molten ender alloy
 	event.recipes.tconstruct.alloy(Fluid.of(KJ("molten_ender_alloy"), 20), [Fluid.of(TCT("molten_iron"), 10), Fluid.of(TCT("molten_ender"), 10)], 1429)
-	
-	
-	
+
+
+
 	//brass casts
 	const customCastsBrass = ["three", "eight", "plus", "minus", "multiply", "divide", "factorial", "power", "remainder", "square_root", "equal"]
 	customCastsBrass.forEach(cast => {
@@ -769,9 +769,9 @@ ServerEvents.recipes((event) => {
 	customCastsGold.forEach(cast => {
 		event.recipes.tconstruct.casting_table(KJ(`${cast}_cast`), Fluid.of(TCT("molten_gold"), 90), F("#balls"), true, 57, true)
 	})
-	
-	
-	
+
+
+
 	//other math operators
 	event.shapeless(KJ("greater_than"), [KJ("power")])
 	event.shapeless(KJ("less_than"), [KJ("greater_than")])
@@ -783,15 +783,15 @@ ServerEvents.recipes((event) => {
 	event.recipes.create.deploying(KJ("greater_or_equal"), [KJ("equal"), KJ("greater_than")])
 	event.recipes.create.deploying(KJ("less_or_equal"), [KJ("less_than"), KJ("equal")])
 	event.recipes.create.deploying(KJ("less_or_equal"), [KJ("equal"), KJ("less_than")])
-	
+
 	event.recipes.create.deploying(KJ("false"), [KJ("true"), KJ("factorial")])
 	event.recipes.create.deploying(KJ("false"), [KJ("factorial"), KJ("true")])
-	
+
 	event.recipes.create.deploying(KJ("true"), [KJ("factorial"), KJ("false")])
 	event.recipes.create.deploying(KJ("true"), [KJ("false"), KJ("factorial")])
-	
-	
-	
+
+
+
 	//numbers
 	let numbers = ["three", "eight", "plus", "minus", "multiply", "divide", "factorial", "power", "remainder", "square_root", "equal"]
 	numbers.forEach(number => {
@@ -896,14 +896,14 @@ ServerEvents.recipes((event) => {
 					},
 					"acceptMirrored": false
 				})
-				event.recipes.extendedcrafting.shaped_table(output, ["AOB"], { A: KJ(nums[a]), O: KJ(opNames[op]), B: KJ(nums[b]) })
+				event.recipes.extendedcrafting.shaped_table(output, ["A","O","B"], { A: KJ(nums[a]), O: KJ(opNames[op]), B: KJ(nums[b]) })
 			}
 		}
 	}
-	
+
 	let comps = [(a, b) => a == b, (a, b) => a != b, (a, b) => a > b, (a, b) => a < b, (a, b) => a >= b, (a, b) => a <= b]
 	let compNames = ['equality', 'non_equality', 'greater_than', 'less_than', 'greater_or_equal', 'less_or_equal']
-	
+
 	//comparison math ops
 	for (var a = 0; a < 10; a++) {
 		for (var b = 0; b < 10; b++) {
@@ -933,30 +933,30 @@ ServerEvents.recipes((event) => {
 					},
 					"acceptMirrored": false
 				})
-				event.recipes.extendedcrafting.shaped_table(output, ["AOB"], { A: KJ(nums[a]), O: KJ(compNames[op]), B: KJ(nums[b]) })
+				event.recipes.extendedcrafting.shaped_table(output, ["A","O","B"], { A: KJ(nums[a]), O: KJ(compNames[op]), B: KJ(nums[b]) })
 			}
 		}
 	}
-	
+
 	//fibonacci sequence with calculator
 	event.recipes.create.deploying(KJ("one"), [KJ("zero"), F("#tools/calculators")])
 	event.recipes.create.deploying(KJ("two"), [KJ("one"), F("#tools/calculators")])
 	event.recipes.create.deploying(KJ("three"), [KJ("two"), F("#tools/calculators")])
 	event.recipes.create.deploying(KJ("five"), [KJ("three"), F("#tools/calculators")])
 	event.recipes.create.deploying(KJ("eight"), [KJ("five"), F("#tools/calculators")])
-	
+
 	//factorial
 	event.recipes.create.deploying(KJ("one"), [KJ("zero"), KJ("factorial")])
 	event.recipes.create.deploying(KJ("one"), [KJ("one"), KJ("factorial")])
 	event.recipes.create.deploying(KJ("two"), [KJ("two"), KJ("factorial")])
 	event.recipes.create.deploying(KJ("six"), [KJ("three"), KJ("factorial")])
-	
+
 	//square root
 	event.recipes.create.deploying(KJ("zero"), [KJ("zero"), KJ("square_root")])
 	event.recipes.create.deploying(KJ("one"), [KJ("one"), KJ("square_root")])
 	event.recipes.create.deploying(KJ("two"), [KJ("four"), KJ("square_root")])
 	event.recipes.create.deploying(KJ("three"), [KJ("nine"), KJ("square_root")])
-	
+
 	//COUNT NUMBERS IN JSFIDDLE FORMULAS
 /* const mechanismCost = 200,
 perCast = 25,
@@ -993,7 +993,7 @@ castsForNumber = {
  numForMatrix = numForAlloyPortion * (matrixBlockCost / alloyOutcomeFromNumbers),
  numForAbstruse = numForMatrix * 2,
  numForPity = numForAbstruse * 8,
- 
+
  mechForAlloyPortion = (unprocessedLogicToMakeOneOfEachNumbers * numForAlloyPortion) / mechanismCost,
  mechForMatrix = mechForAlloyPortion * (matrixBlockCost / alloyOutcomeFromNumbers),
  mechForAbstruse = mechForMatrix * 2,
@@ -1010,8 +1010,8 @@ castsForNumber = {
  console.log(`[numbers] alloy ${alloyOutcomeFromNumbers}mB: ${numForAlloyPortion}, matrix: ${numForMatrix}, abstruse: ${numForAbstruse}, pity: ${numForPity}`)
  console.log(`[casts] alloy ${alloyOutcomeFromNumbers}mB: ${castsForAlloy}, matrix: ${castsForMatrix}, abstruse: ${castsForAbstruse}, pity: ${castsForPity}`)
  */
-	
-	
+
+
 	//ether gem
 	customRecipes.industrialforegoing.dissolution(event, KJ(`ether_gem`), [MC("glass_pane")], IF("ether_gas"), 90, 20)
 	event.custom({
@@ -1052,11 +1052,11 @@ castsForNumber = {
 		input: { amount: 4, gas: M('plutonium') },
 		output: { amount: 1, gas: KJ('neutron_gas') }
 	});
-	
-	
-	
+
+
+
 	//mechanisms
-	
+
 	//kinetic mechanism
 	let tKinetic = KJ('incomplete_kinetic_mechanism')
 	event.recipes.create.sequenced_assembly([
@@ -1085,7 +1085,7 @@ castsForNumber = {
 		.damageIngredient(8)
 		.id(KJ("kinetic_mechanism_manual_only"))
 	event.recipes.mekanism.nucleosynthesizing(MC('#wooden_slabs'), `1x ${M("antimatter")}`, KJ('kinetic_mechanism'), 2)
-	
+
 	//sealed mechanism
 	let tSealed = KJ('incomplete_sealed_mechanism')
 	event.recipes.create.sequenced_assembly([
@@ -1097,7 +1097,7 @@ castsForNumber = {
 	]).transitionalItem(tSealed)
 		.loops(1)
 	event.recipes.mekanism.nucleosynthesizing(KJ('kinetic_mechanism'), `1x ${M("antimatter")}`, KJ('sealed_mechanism'), 2)
-	
+
 	//precision mechanism
 	let tPrecision = CR('incomplete_precision_mechanism')
 	event.recipes.create.sequenced_assembly([
@@ -1110,7 +1110,7 @@ castsForNumber = {
 		.loops(1)
 		.id(KJ(`${KJ()}/precision_mechanism`))
 	event.recipes.mekanism.nucleosynthesizing(KJ('sealed_mechanism'), `1x ${M("antimatter")}`, CR('precision_mechanism'), 2)
-	
+
 	//inductive mechanism
 	let tInductive = KJ('incomplete_inductive_mechanism')
 	event.recipes.create.sequenced_assembly([
@@ -1123,7 +1123,7 @@ castsForNumber = {
 		.loops(1)
 		.id(KJ('inductive_mechanism'))
 	event.recipes.mekanism.nucleosynthesizing(CR('precision_mechanism'), `1x ${M("antimatter")}`, KJ('inductive_mechanism'), 2)
-	
+
 	//calculation mechanism
 	let tCalculation = KJ('incomplete_calculation_mechanism')
 	event.recipes.create.sequenced_assembly([
@@ -1137,7 +1137,7 @@ castsForNumber = {
 		.loops(1)
 		.id(KJ('calculation_mechanism'))
 	event.recipes.mekanism.nucleosynthesizing(KJ('inductive_mechanism'), `1x ${M("antimatter")}`, KJ('calculation_mechanism'), 2)
-	
+
 	//abstruse mechanism
 	let tAbstruse = KJ('incomplete_abstruse_mechanism')
 	event.recipes.create.sequenced_assembly([
@@ -1150,7 +1150,7 @@ castsForNumber = {
 		.loops(1)
 		.id(KJ('abstruse_mechanism'))
 	event.recipes.mekanism.nucleosynthesizing(KJ('calculation_mechanism'), `1x ${M("antimatter")}`, KJ('abstruse_mechanism'), 2)
-	
+
 	//integrated mechanism
 	let tIntegrated = KJ('incomplete_integrated_mechanism')
 	event.recipes.create.sequenced_assembly([
@@ -1163,7 +1163,7 @@ castsForNumber = {
 		.loops(1)
 		.id(KJ('integrated_mechanism'))
 	event.recipes.mekanism.nucleosynthesizing(KJ('abstruse_mechanism'), `1x ${M("antimatter")}`, KJ('integrated_mechanism'), 2)
-	
+
 	//embedded mechanism
 	let tEmbedded = KJ('incomplete_embedded_mechanism')
 	event.recipes.create.sequenced_assembly([
@@ -1176,7 +1176,7 @@ castsForNumber = {
 		.loops(1)
 		.id(KJ('embedded_mechanism'))
 	event.recipes.mekanism.nucleosynthesizing(KJ('integrated_mechanism'), `1x ${M("antimatter")}`, KJ('embedded_mechanism'), 2)
-	
+
 	//portable mechanism
 	let tPortable = KJ('incomplete_portable_mechanism')
 	event.recipes.create.sequenced_assembly([
@@ -1189,7 +1189,7 @@ castsForNumber = {
 		.loops(1)
 		.id(KJ('portable_mechanism'))
 	event.recipes.mekanism.nucleosynthesizing(KJ('embedded_mechanism'), `1x ${M("antimatter")}`, KJ('portable_mechanism'), 2)
-	
+
 	//electric mechanism
 	let tElectric = KJ('incomplete_electric_mechanism')
 	event.recipes.create.sequenced_assembly([
@@ -1202,12 +1202,12 @@ castsForNumber = {
 		.loops(1)
 		.id(KJ('electric_mechanism'))
 	event.recipes.mekanism.nucleosynthesizing(KJ('portable_mechanism'), `1x ${M("antimatter")}`, KJ('electric_mechanism'), 2)
-	
-	
-	
-	
+
+
+
+
 	//machines
-	
+
 	//andesite machine
 	event.shaped(KJ('andesite_machine'), [
 		'SSS',
@@ -1217,7 +1217,7 @@ castsForNumber = {
 		C: CR('andesite_casing'),
 		S: KJ('kinetic_mechanism')
 	})
-	
+
 	let andesite_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
@@ -1253,7 +1253,7 @@ castsForNumber = {
 	andesite_machine(KJ('pipe_module_utility'), 4)
 	andesite_machine(SR('altar'), 1)
 	andesite_machine(CR_RC('mechanical_chisel'), 1, RC("chisel"))
-	
+
 	//copper machine
 	event.shaped(KJ('copper_machine'), [
 		'SSS',
@@ -1263,7 +1263,7 @@ castsForNumber = {
 		C: CR('copper_casing'),
 		S: KJ('sealed_mechanism')
 	})
-	
+
 	let copper_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
@@ -1299,7 +1299,7 @@ castsForNumber = {
 	copper_machine(EC('pedestal'), 1)
 	copper_machine(CR('steam_engine'), 1, CR('hand_crank'))
 	copper_machine(TCT('smeltery_controller'), 1, TCT("seared_melter"))
-	
+
 	//brass machine
 	event.shaped(KJ('brass_machine'), [
 		'SSS',
@@ -1353,7 +1353,7 @@ castsForNumber = {
 	brass_machine(P('energy_discharger_basic'), 1, P('energy_discharger_starter'))
 	brass_machine(CR_A('portable_energy_interface'), 2)
 	brass_machine(EIO('xp_obelisk'), 1, EIO('experience_rod'))
-	
+
 	//inductive machine
 	event.shaped(KJ('inductive_machine'), [
 		'SSS',
@@ -1363,7 +1363,7 @@ castsForNumber = {
 		C: KJ('inductive_casing'),
 		S: KJ('inductive_mechanism')
 	})
-	
+
 	let inductive_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
@@ -1409,7 +1409,7 @@ castsForNumber = {
 	inductive_machine(EIO("basic_capacitor"), 1, CR_A('capacitor'))
 	inductive_machine(AE2_E('circuit_cutter'), 1, CR('mechanical_saw'))
 	inductive_machine(AE2_E('ex_charger'), 1, CR_A("tesla_coil"))
-	
+
 	//calculation machine (ae2 not_so_misterious_cube)
 	removeRecipeByOutput(event, [
 		AE2('not_so_mysterious_cube'),
@@ -1422,7 +1422,7 @@ castsForNumber = {
 		C: KJ('fluix_casing'),
 		S: KJ('calculation_mechanism')
 	}).id(KJ(`${KJ()}/machines/calculation_machine`))
-	
+
 	let fluix_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
@@ -1452,7 +1452,7 @@ castsForNumber = {
 	fluix_machine(LIO('laser_node'), 2, LB("laser_source_block"))
 	fluix_machine(EIO("double_layer_capacitor"), 1, EIO('basic_capacitor'))
 	fluix_machine(KJ('blank_upgrade'), 2)
-	
+
 	//abstruse machine
 	event.shaped(KJ('abstruse_machine'), [
 		'SSS',
@@ -1462,7 +1462,7 @@ castsForNumber = {
 		C: KJ('abstruse_casing'),
 		S: KJ('abstruse_mechanism')
 	})
-	
+
 	let abstruse_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
@@ -1473,7 +1473,7 @@ castsForNumber = {
 		else
 			event.stonecutting(Item.of(id, amount), KJ('abstruse_machine'))
 	}
-	
+
 	abstruse_machine(P('energy_cell_niotic'), 1, P('battery_niotic'))
 	abstruse_machine(P('ender_cell_niotic'), 1, P('ender_cell_blazing'))
 	abstruse_machine(P('energizing_rod_niotic'), 1, P('energizing_rod_blazing'))
@@ -1486,7 +1486,7 @@ castsForNumber = {
 	abstruse_machine(P('energy_discharger_niotic'), 1, P('energy_discharger_blazing'))
 	abstruse_machine(IF('machine_frame_pity'), 1)
 	abstruse_machine(EIO("octadic_capacitor"), 1, EIO('double_layer_capacitor'))
-	
+
 	//integrated machine
 	event.shaped(KJ('integrated_machine'), [
 		'SSS',
@@ -1496,7 +1496,7 @@ castsForNumber = {
 		C: KJ('integrated_casing'),
 		S: KJ('integrated_mechanism')
 	})
-	
+
 	let integrated_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
@@ -1507,7 +1507,7 @@ castsForNumber = {
 		else
 			event.stonecutting(Item.of(id, amount), KJ('integrated_machine'))
 	}
-	
+
 	integrated_machine(P('energy_cell_spirited'), 1, P('battery_spirited'))
 	integrated_machine(P('ender_cell_spirited'), 1, P('ender_cell_niotic'))
 	integrated_machine(P('energizing_rod_spirited'), 1, P('energizing_rod_niotic'))
@@ -1519,7 +1519,7 @@ castsForNumber = {
 	integrated_machine(P('energy_hopper_spirited'), 1, P('energy_hopper_niotic'))
 	integrated_machine(P('energy_discharger_spirited'), 1, P('energy_discharger_niotic'))
 	integrated_machine(IF('machine_frame_simple'), 1)
-	
+
 	//embedded machine
 	removeRecipeByOutput(event, [
 		EC('frame'),
@@ -1532,7 +1532,7 @@ castsForNumber = {
 		C: KJ('embedded_casing'),
 		S: KJ('embedded_mechanism')
 	}).id(KJ(`${KJ()}/machines/embedded_machine`))
-	
+
 	let embedded_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
@@ -1543,7 +1543,7 @@ castsForNumber = {
 		else
 			event.stonecutting(Item.of(id, amount), EC('frame'))
 	}
-	
+
 	embedded_machine(P('energy_cell_nitro'), 1, P('battery_nitro'))
 	embedded_machine(P('ender_cell_nitro'), 1, P('ender_cell_spirited'))
 	embedded_machine(P('energizing_rod_nitro'), 1, P('energizing_rod_spirited'))
@@ -1555,7 +1555,7 @@ castsForNumber = {
 	embedded_machine(P('energy_hopper_nitro'), 1, P('energy_hopper_spirited'))
 	embedded_machine(P('energy_discharger_nitro'), 1, P('energy_discharger_spirited'))
 	embedded_machine(IF('machine_frame_advanced'), 1)
-	
+
 	//portable machine
 	event.shaped(KJ('portable_machine'), [
 		'SSS',
@@ -1565,7 +1565,7 @@ castsForNumber = {
 		C: KJ('portable_casing'),
 		S: KJ('portable_mechanism')
 	})
-	
+
 	let portable_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
@@ -1576,9 +1576,9 @@ castsForNumber = {
 		else
 			event.stonecutting(Item.of(id, amount), KJ('portable_machine'))
 	}
-	
+
 	portable_machine(IF('machine_frame_supreme'), 1)
-	
+
 	//electric machine
 	removeRecipeByOutput(event, [
 		M('steel_casing'),
@@ -1591,7 +1591,7 @@ castsForNumber = {
 		C: KJ('electric_casing'),
 		S: KJ('electric_mechanism')
 	}).id(KJ(`${KJ()}/machines/electric_machine`))
-	
+
 	let electric_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
@@ -1602,7 +1602,7 @@ castsForNumber = {
 		else
 			event.stonecutting(Item.of(id, amount), M('steel_casing'))
 	}
-	
+
 	electric_machine(X('controller'), 1, AE2('controller'))
 	electric_machine(X('router'), 1, PR_INT('comparator_gate'))
 	electric_machine(X('wireless_router'), 1, CR('redstone_link'))
