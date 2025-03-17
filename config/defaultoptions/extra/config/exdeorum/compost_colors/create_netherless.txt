@@ -1,5 +1,0 @@
-// Compost colors for create_netherless. You may add your own colors, change existing ones, or remove colors that aren't needed.
-coal_rod, #2f2932
-ectoplasm, #50ffff
-incomplete_blaze_rod, #8c5f3e
-netherite_fragment, #61362c
