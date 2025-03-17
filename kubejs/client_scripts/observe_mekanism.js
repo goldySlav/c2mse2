@@ -46,7 +46,7 @@ const mapMekanismGasToTaskID = {
 }
 
 const mapMekanismInfusionToTaskID = {
-	//"mekanism:carbon": "",
+	"mekanism:carbon": "41523167F224E4D0",
 	//"mekanism:redstone": "",
 }
 
