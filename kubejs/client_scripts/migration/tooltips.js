@@ -107,4 +107,19 @@ ItemEvents.tooltip(event => {
     addDeprecated('vintageimprovements:iron_spring')
 
     addDeprecated('vintageimprovements:redstone_module')
+	
+	//avaritia
+	addDeprecated('avaritia:diamond_lattice')
+	addDeprecated('avaritia:crystal_matrix_ingot')
+	addDeprecated('avaritia:pileof_neutrons')
+	addDeprecated('avaritia:neutronium_nugget')
+	addDeprecated('avaritia:neutronium_ingot')
+	addDeprecated('avaritia:infinity_catalyst')
+	addDeprecated('avaritia:compressed_crafting_table')
+	addDeprecated('avaritia:double_compressed_crafting_table')
+	addDeprecated('avaritia:neutronium_block')
+	addDeprecated('avaritia:crystal_matrix')
+	addDeprecated('avaritia:ultimate_stew')
+	addDeprecated('avaritia:cosmic_meatballs')
+	addDeprecated('avaritia:endest_pearl')
 })

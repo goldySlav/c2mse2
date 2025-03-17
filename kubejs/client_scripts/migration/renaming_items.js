@@ -82,5 +82,20 @@ ClientEvents.lang('en_us', event => {
 	event.renameItem('vintageimprovements:copper_spring', "Copper Spring §4(DEPRECATED)")
 	event.renameItem('vintageimprovements:iron_spring', "Iron Spring §4(DEPRECATED)")
 	event.renameItem('vintageimprovements:redstone_module', "Redstone Module §4(DEPRECATED)")
+	
+	//avaritia
+	event.renameItem('avaritia:diamond_lattice', "Diamond Lattice §4(DEPRECATED)")
+	event.renameItem('avaritia:crystal_matrix_ingot', "Crystal Matrix Ingot §4(DEPRECATED)")
+	event.renameItem('avaritia:pileof_neutrons', "Pile of Neutrons §4(DEPRECATED)")
+	event.renameItem('avaritia:neutronium_nugget', "Neutronium Nugget §4(DEPRECATED)")
+	event.renameItem('avaritia:neutronium_ingot', "Neutronium Ingot §4(DEPRECATED)")
+	event.renameItem('avaritia:infinity_catalyst', "The Ultimate Star §4(DEPRECATED)")
+	event.renameBlock('avaritia:compressed_crafting_table', "Compressed Crafting Table §4(DEPRECATED)")
+	event.renameBlock('avaritia:double_compressed_crafting_table', "Double Compressed Crafting Table §4(DEPRECATED)")
+	event.renameBlock('avaritia:neutronium_block', "Neutronium Block §4(DEPRECATED)")
+	event.renameBlock('avaritia:crystal_matrix', "Crystal Matrix §4(DEPRECATED)")
+	event.renameItem('avaritia:ultimate_stew', "Ultimate Stew §4(DEPRECATED)")
+	event.renameItem('avaritia:cosmic_meatballs', "Cosmic Meatballs §4(DEPRECATED)")
+	event.renameItem('avaritia:endest_pearl', "The Ultimate Pearl §4(DEPRECATED)")
 });
 
