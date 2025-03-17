@@ -313,4 +313,7 @@ ServerEvents.recipes((event) => {
         B: MC('soul_sand'),
         C: TCT('blaze_head'),
     })
+	
+	//speedometer from stressometer
+	event.shapeless(CR('speedometer'), [CR("stressometer")])
 })
