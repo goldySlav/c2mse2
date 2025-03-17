@@ -85,7 +85,8 @@
     "jadeaddons": true
   },
   "apotheosis": {
-    "adventure": true
+    "adventure": true,
+    "spawner": true
   },
   "lootr": {
     "info": true

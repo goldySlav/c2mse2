@@ -7,7 +7,7 @@
 
 	[blocks.brokenSpawner]
 		#The chance of a spawner dropping a broken spawner.
-		dropChance = 1.0
+		dropChance = 0.0
 
 [enchantments]
 
