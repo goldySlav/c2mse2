@@ -2,6 +2,7 @@
 
 ServerEvents.recipes((event) => {
 	removeRecipeByOutput(event, [
+		PEX("basic_crafter"),
 		PEX("advanced_crafter"),
 		PEX("elite_crafter"),
 		PEX("ultimate_crafter"),
@@ -13,6 +14,23 @@ ServerEvents.recipes((event) => {
 		PEX("flux_crafter"),
 	])
 
+	event.recipes.extendedcrafting.shaped_table(PEX('basic_crafter'), [
+		'AAAAAAAAAAA',
+		'ABBBBBBBBBA',
+		'ABAAAAAAABA',
+		'ABABBBBBABA',
+		'ABABAAABABA',
+		'ABABACABABA',
+		'ABABAAABABA',
+		'ABABBBBBABA',
+		'ABAAAAAAABA',
+		'ABBBBBBBBBA',
+		'AAAAAAAAAAA',
+	], {
+		A: CP('iron_1'),
+		B: AE2("molecular_assembler"),
+		C: EC("basic_auto_table"),
+	})
 	event.recipes.extendedcrafting.shaped_table(PEX('advanced_crafter'), [
 		'AAAAAAAAAAA',
 		'ABBBBBBBBBA',
