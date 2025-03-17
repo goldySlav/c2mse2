@@ -7,6 +7,16 @@ ServerEvents.recipes((event) => {
 		CR_A("compat/tconstruct/pig_iron"),
 		CR_A("compat/tconstruct/pig_iron_2"),
 	])
+	removeRecipeByOutput(event, [
+		CR_A("electrum_block"),
+		CR_A("electrum_ingot"),
+		CR_A("electrum_nugget"),
+		CR_A("electrum_amulet"),
+		CR_A("electrum_wire"),
+		CR_A("electrum_rod"),
+		CR_A("electrum_sheet"),
+		CR_A("electrum_spool"),
+	])
 	
 	event.recipes.create.pressing(CR_A("zinc_sheet"), F("#ingots/zinc"))
 	
