@@ -69,7 +69,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: CP('gold_1'),
 		B: AV("compressed_crafting_table"),
-		C: AE2("controller"),
+		C: EC('basic_table'),
 	})
 	event.recipes.extendedcrafting.shaped_table(EC('advanced_auto_table'), [
 		'AAAAA',
