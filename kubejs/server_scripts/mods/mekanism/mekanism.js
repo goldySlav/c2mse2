@@ -17,10 +17,20 @@ ServerEvents.recipes((event) => {
     event.replaceInput({ id: M("personal_barrel") }, F("#barrels/wooden"), MB("obsidian_barrel"))
 	
 	//dirty netherite scrap
-	event.recipes.mekanismEnriching(M("dirty_netherite_scrap"), CR_N("netherite_fragment"))
+	event.recipes.mekanism.enriching(M("dirty_netherite_scrap"), CR_N("netherite_fragment"))
 	
 	//steel block from ingot (absent for some reason)
 	event.shapeless(M("block_steel"), [Item.of(M("ingot_steel"), 9)])
+	
+	//carbon from coke
+	customRecipes.mekanism.infusion_conversion(event, M("carbon"), 30, KJ('coke'))
+	customRecipes.mekanism.infusion_conversion(event, M("carbon"), 40, KJ('nourished_coke'))
+	customRecipes.mekanism.infusion_conversion(event, M("carbon"), 50, KJ('polished_coke'))
+	
+	//enriched carbon from coke
+	event.recipes.mekanism.enriching(Item.of(M('enriched_carbon'), 2), KJ('coke'))
+	event.recipes.mekanism.enriching(Item.of(M('enriched_carbon'), 3), KJ('nourished_coke'))
+	event.recipes.mekanism.enriching(Item.of(M('enriched_carbon'), 4), KJ('polished_coke'))
 
     //metallurgic infuser
 	removeRecipeByOutput(event, [
