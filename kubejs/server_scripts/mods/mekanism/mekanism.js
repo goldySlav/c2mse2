@@ -2121,7 +2121,7 @@ ServerEvents.recipes((event) => {
 		`6x ${M("reprocessed_fissile_fragment")}`,
 	])
 	mekaUnit(event, M("module_locomotive_boosting_unit"), [
-		`3x ${CR_RW("remote_lens")}`,
+		`3x ${CR("track")}`,
 		`4x ${M("energy_tablet")}`,
 		`1x ${PET("emerald_netherite_armor_leggings")}`,
 		`4x ${M("hdpe_stick")}`,

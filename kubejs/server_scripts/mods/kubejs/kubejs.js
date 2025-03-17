@@ -1301,7 +1301,6 @@ castsForNumber = {
 	andesite_machine(EIO('enchanter'), 1, MC("enchanting_table"))
 	andesite_machine(KJ('pipe_module_utility'), 4)
 	andesite_machine(SR('altar'), 1)
-	andesite_machine(CR_RC('mechanical_chisel'), 1, RC("chisel"))
 	
 	//copper machine
 	event.shaped(KJ('copper_machine'), [

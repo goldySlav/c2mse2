@@ -405,8 +405,7 @@ ServerEvents.recipes((event) => {
 	quantumModule(event, AE2_A("reach_card"), [
 		`3x ${AE2_A("quantum_processor")}`,
 		`4x ${AE2_A("quantum_infused_dust")}`,
-		`3x ${EB("reach_upgrade3")}`,
-		`1x ${CR("extendo_grip")}`,
+		`4x ${CR("extendo_grip")}`,
 	])
 	quantumModule(event, AE2_A("swim_speed_card"), [
 		`3x ${AE2_A("quantum_processor")}`,
