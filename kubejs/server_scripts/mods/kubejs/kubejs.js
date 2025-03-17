@@ -740,6 +740,7 @@ ServerEvents.recipes((event) => {
 	
 	//radiant coil
 	event.recipes.create.mechanical_crafting(KJ("radiant_coil"), "A", { A: KJ('radiant_sheet') })
+	event.recipes.extendedcrafting.shapeless_table(KJ("radiant_coil"), [KJ('radiant_sheet')])
 	customRecipes.create.ifiniDeploying(event, KJ("radiant_coil"), KJ('radiant_sheet'), MC("nether_star"))
 	
 	
@@ -896,7 +897,7 @@ ServerEvents.recipes((event) => {
 					},
 					"acceptMirrored": false
 				})
-				event.recipes.extendedcrafting.shaped_table(output, ["AOB"], { A: KJ(nums[a]), O: KJ(opNames[op]), B: KJ(nums[b]) })
+				event.recipes.extendedcrafting.shaped_table(output, ["A", "O", "B"], { A: KJ(nums[a]), O: KJ(opNames[op]), B: KJ(nums[b]) })
 			}
 		}
 	}
@@ -933,7 +934,7 @@ ServerEvents.recipes((event) => {
 					},
 					"acceptMirrored": false
 				})
-				event.recipes.extendedcrafting.shaped_table(output, ["AOB"], { A: KJ(nums[a]), O: KJ(compNames[op]), B: KJ(nums[b]) })
+				event.recipes.extendedcrafting.shaped_table(output, ["A", "O", "B"], { A: KJ(nums[a]), O: KJ(compNames[op]), B: KJ(nums[b]) })
 			}
 		}
 	}

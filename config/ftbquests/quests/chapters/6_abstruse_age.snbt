@@ -44,9 +44,9 @@
 				"578CFA9452732B7E"
 			]
 			description: [
-			"I bet your factory is pretty big by now."
-			"If &6Preformance&r is starting to worsen, consider &6Spreading out&r your assembly lines a bit."
-			"Now you have plenty of options to transfer everything wirelessly."
+				"I bet your factory is pretty big by now."
+				"If &6Preformance&r is starting to worsen, consider &6Spreading out&r your assembly lines a bit."
+				"Now you have plenty of options to transfer everything wirelessly."
 			]
 			icon: "kubejs:abstruse_mechanism"
 			id: "576B2716D30C74CB"
@@ -135,7 +135,7 @@
 			]
 			icon: "kubejs:one"
 			id: "02BF2A9AA4214BA7"
-			subtitle: "\"Oh, don't fall! Ha-ha-ha, ONE\""
+			subtitle: "Oh, don't fall! Ha-ha-ha, ONE"
 			tasks: [
 				{
 					id: "5CCE4F5A3ED858E5"
@@ -579,7 +579,7 @@
 				"5B6CE05FFE16C9BE"
 				"2DC1819D10F9C676"
 			]
-			description: ["All math operations can be done also in &6Advanced Crafting Table&r &o(not shown in JEI for some reason)&r"]
+			description: ["All math operations can be done also in a &6Basic Crafting Table&r"]
 			id: "70D4D7DC1155F946"
 			subtitle: "Technical difficulties"
 			tasks: [{
@@ -594,8 +594,8 @@
 		{
 			dependencies: ["552F8C2C880166A7"]
 			description: [
-			"Factorial is a somewhat tricky operation."
-			"The factorial of a positive integer \"n\" is defined as the product of all positive integers from 1 to n. For example, &65! = 5 * 4 * 3 * 2 * 1 = 120&r."
+				"Factorial is a somewhat tricky operation."
+				"The factorial of a positive integer \"n\" is defined as the product of all positive integers from 1 to n. For example, &65! = 5 * 4 * 3 * 2 * 1 = 120&r."
 			]
 			id: "14CF5B44C7FF5F67"
 			subtitle: "5! != 5"
@@ -622,17 +622,17 @@
 		}
 		{
 			dependencies: ["552F8C2C880166A7"]
-			description:[
-			"Remainder is a quite funny operation actually."
-			"It's best seen on an example:"
-			"3:2 = 1.5"
-			"This equation can be also formed as follows:"
-			"3:2 = 1 r. 1"
-			"r stands for &6Remainder&r. Here, have some more examples:"
-			"5%2 = 1"
-			"16%6 = 4"
-			"19%20 = 19"
-			"Remainder operation returns the, well, remainder from division."
+			description: [
+				"Remainder is a quite funny operation actually."
+				"It's best seen on an example:"
+				"3:2 = 1.5"
+				"This equation can be also formed as follows:"
+				"3:2 = 1 r. 1"
+				"r stands for &6Remainder&r. Here, have some more examples:"
+				"5%2 = 1"
+				"16%6 = 4"
+				"19%20 = 19"
+				"Remainder operation returns the, well, remainder from division."
 			]
 			id: "1018568DF4291BDA"
 			subtitle: "Remain focused"
@@ -673,7 +673,6 @@
 		}
 		{
 			dependencies: ["2E8778D432B12A09"]
-			
 			description: ["Power Cast is used to cast a Power symbol."]
 			id: "46B2F134D5278D1E"
 			shape: "rsquare"
@@ -701,7 +700,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["2E8778D432B12A09
+			dependencies: ["2E8778D432B12A09"]
 			description: ["Square root Cast is used to cast a Square Root symbol."]
 			id: "06D2A8F8EEED2FD5"
 			shape: "rsquare"
@@ -717,8 +716,8 @@
 		{
 			dependencies: ["552F8C2C880166A7"]
 			description: [
-			"When you slap two = symbols together, you get an operator to compare two pieces of data, including numbers and expressions."
-			"A comparator, if you will."
+				"When you slap two = symbols together, you get an operator to compare two pieces of data, including numbers and expressions."
+				"A comparator, if you will."
 			]
 			id: "5B6CE05FFE16C9BE"
 			subtitle: "If you ever wrote any piece of code you will know this one!"

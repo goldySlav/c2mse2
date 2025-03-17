@@ -7,7 +7,6 @@ JEIEvents.removeCategories(event => {
   event.remove("ae2:attuneemnt")
   event.remove("ae2:entropy")
   event.remove("jumbofurnace:jumbo_smelting")
-  event.remove("extendedcrafting:basic_crafting")
   event.remove("ironfurnaces:generator_regular")
   event.remove("ironfurnaces:generator_blasting")
   event.remove("ironfurnaces:generator_smoking")

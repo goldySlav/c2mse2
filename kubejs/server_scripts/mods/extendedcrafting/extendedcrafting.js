@@ -44,6 +44,24 @@ ServerEvents.recipes((event) => {
 	event.recipes.tconstruct.melting(Fluid.of(KJ("molten_ender_alloy"), 10), EC("ender_nugget"), 1429, 20)
 	
 	//advanced crafting tables
+	event.shaped(EC('basic_table'), [
+		'ABA',
+		'BCB',
+		'ABA',
+	], {
+		A: CP('iron_1'),
+		B: AV("compressed_crafting_table"),
+		C: AE2("controller"),
+	})
+	event.recipes.extendedcrafting.shaped_table(EC('basic_auto_table'), [
+		'ABA',
+		'BCB',
+		'ABA',
+	], {
+		A: CP('iron_1'),
+		B: AV("double_compressed_crafting_table"),
+		C: EC("basic_table"),
+	})
 	event.shaped(EC('advanced_table'), [
 		'ABA',
 		'BCB',
