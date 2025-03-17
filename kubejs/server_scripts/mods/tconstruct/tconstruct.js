@@ -21,6 +21,10 @@ ServerEvents.recipes((event) => {
 	
 	removeRecipeByID(event, [
         /tconstruct:.*wire_gold_cast/,
+		"tconstruct:common/materials/steel_block_from_ingots",
+		"tconstruct:common/materials/steel_ingot_from_block",
+		"tconstruct:common/materials/steel_ingot_from_nuggets",
+		"tconstruct:common/materials/steel_nugget_from_ingot",
 	])
 	
 	reduntandCasts.forEach(cast => {

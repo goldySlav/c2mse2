@@ -18,6 +18,9 @@ ServerEvents.recipes((event) => {
 	
 	//dirty netherite scrap
 	event.recipes.mekanismEnriching(M("dirty_netherite_scrap"), CR_N("netherite_fragment"))
+	
+	//steel block from ingot (absent for some reason)
+	event.shapeless(M("block_steel"), [Item.of(M("ingot_steel"), 9)])
 
     //metallurgic infuser
 	removeRecipeByOutput(event, [
