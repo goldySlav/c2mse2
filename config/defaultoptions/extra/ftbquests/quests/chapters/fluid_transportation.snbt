@@ -1,0 +1,279 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "fluid_transportation"
+	group: "051AA46D917B6FBA"
+	icon: "create:smart_fluid_pipe"
+	id: "055DC4A8F0192B76"
+	order_index: 16
+	quest_links: [ ]
+	quests: [
+		{
+			disable_toast: true
+			icon: "create:fluid_pipe"
+			id: "64B39EE5BBB2DCC1"
+			size: 1.0d
+			tasks: [{
+				id: "039A92C5EF1F3D27"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["64B39EE5BBB2DCC1"]
+			disable_toast: true
+			icon: "create:smart_fluid_pipe"
+			id: "4D77514CA0E53C40"
+			size: 1.0d
+			tasks: [{
+				id: "259959E2780A1772"
+				item: "create:smart_fluid_pipe"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["05E2A70FEDF3E8A3"]
+			disable_toast: true
+			icon: "mekanism:basic_mechanical_pipe"
+			id: "0E919CF3F726D50E"
+			size: 1.0d
+			tasks: [{
+				id: "5D25FF70539A6312"
+				item: "mekanism:basic_mechanical_pipe"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0E919CF3F726D50E"]
+			disable_toast: true
+			icon: "mekanism:advanced_mechanical_pipe"
+			id: "2DD32484A04FF458"
+			size: 1.0d
+			tasks: [{
+				id: "09FA41B26A54DB00"
+				item: "mekanism:advanced_mechanical_pipe"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2DD32484A04FF458"]
+			disable_toast: true
+			icon: "mekanism:elite_mechanical_pipe"
+			id: "75C0B1F4C0651A6F"
+			size: 1.0d
+			tasks: [{
+				id: "158750D900374B9F"
+				item: "mekanism:elite_mechanical_pipe"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["75C0B1F4C0651A6F"]
+			disable_toast: true
+			icon: "mekanism:ultimate_mechanical_pipe"
+			id: "392E5BF9BDD147FC"
+			size: 1.0d
+			tasks: [{
+				id: "3B7AFB92668B6A17"
+				item: "mekanism:ultimate_mechanical_pipe"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 9.0d
+		}
+		{
+			disable_toast: true
+			icon: "xnet:controller"
+			id: "646501713F4FE4D5"
+			size: 1.0d
+			tasks: [{
+				id: "1576012D885939EB"
+				item: "xnet:controller"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 0.0d
+		}
+		{
+			disable_toast: true
+			icon: "create:portable_fluid_interface"
+			id: "26DA653FD9ECD3BF"
+			size: 1.0d
+			tasks: [{
+				id: "791A360025CF018D"
+				item: "create:portable_fluid_interface"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			disable_toast: true
+			icon: "industrialforegoing:fluid_transporter_type"
+			id: "47F8C45240440916"
+			size: 1.0d
+			tasks: [{
+				id: "3D6AC724F30243FA"
+				item: "industrialforegoing:fluid_transporter_type"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			disable_toast: true
+			icon: "flopper:flopper"
+			id: "390AA6D05075AC79"
+			size: 1.0d
+			tasks: [{
+				id: "171653D832FA9FD9"
+				item: "flopper:flopper"
+				type: "item"
+			}]
+			title: "Fluid Hopper"
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["16D0CEB000070BFC"]
+			id: "05E2A70FEDF3E8A3"
+			size: 1.0d
+			tasks: [{
+				id: "3DE9829FE1614303"
+				item: "pipez:fluid_pipe"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["05E2A70FEDF3E8A3"]
+			id: "6D2D900F2A0A1A3F"
+			size: 1.0d
+			tasks: [{
+				id: "1486803377896327"
+				item: "pipez:universal_pipe"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["64B39EE5BBB2DCC1"]
+			disable_toast: true
+			id: "16D0CEB000070BFC"
+			tasks: [{
+				id: "772C16EF7467A167"
+				item: "enderio:fluid_conduit"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["16D0CEB000070BFC"]
+			disable_toast: true
+			id: "4CE0D241659579FB"
+			tasks: [{
+				id: "1FA44B83E9100CA5"
+				item: "enderio:pressurized_fluid_conduit"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4CE0D241659579FB"]
+			disable_toast: true
+			id: "4E30AD0EE56A76AB"
+			tasks: [{
+				id: "6381690077723B19"
+				item: "enderio:ender_fluid_conduit"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["392E5BF9BDD147FC"]
+			disable_toast: true
+			id: "1AC37FF49CCB2671"
+			tasks: [{
+				id: "432F0734895DE122"
+				item: "mekanism_extras:absolute_mechanical_pipe"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1AC37FF49CCB2671"]
+			disable_toast: true
+			id: "49194262773305AC"
+			tasks: [{
+				id: "006257795BF89A96"
+				item: "mekanism_extras:supreme_mechanical_pipe"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["49194262773305AC"]
+			disable_toast: true
+			id: "07A59AE7F46026FF"
+			tasks: [{
+				id: "41CC7D36B9B44870"
+				item: "mekanism_extras:cosmic_mechanical_pipe"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["07A59AE7F46026FF"]
+			id: "18809BFB60995B76"
+			tasks: [{
+				id: "3E3BCB1BB4A4C23D"
+				item: "mekanism_extras:infinite_mechanical_pipe"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 15.0d
+		}
+		{
+			disable_toast: true
+			id: "5C2221B2380FF4BB"
+			tasks: [{
+				id: "120F9FC9099DF729"
+				item: "enderstorage:ender_tank"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			disable_toast: true
+			id: "3AEE11790335547D"
+			tasks: [{
+				id: "1B8A7A61899DEB08"
+				item: "createendertransmission:fluid_transmitter"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 0.0d
+		}
+	]
+	title: "Fluid Transportation"
+}

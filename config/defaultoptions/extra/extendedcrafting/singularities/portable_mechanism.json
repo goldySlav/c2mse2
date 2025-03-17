@@ -1,0 +1,10 @@
+{
+  "name": "Portable Mechanism",
+  "colors": [
+    "4a4540",
+    "8e1a"
+  ],
+  "ingredient": {
+    "item": "minecraft:emerald"
+  }
+}

@@ -1,0 +1,654 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1_andesite_age"
+	group: "2F6B1FE330B2219D"
+	icon: "kubejs:andesite_machine"
+	id: "301DC3C4A871BDD6"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["338E0D727FFD60DC"]
+			description: [
+				"This chapter will show you steps required to automate &6Kinetic Mechanism&r."
+				""
+				"You can think of &6Quests&r as singular machines."
+				"&6Quest Lines&r as assembly lines."
+				"&6Dependencies&r between quests as conveyor belts/pipes/conduits."
+			]
+			id: "3E2DC9403C0E6EFA"
+			subtitle: "The fun part begins!"
+			tasks: [{
+				id: "4BA76226490C4174"
+				title: "Start Chapter"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"122BB3418C4D5ED5"
+				"1F37785A2EB1702F"
+				"5A45B5E6F35CB178"
+			]
+			description: ["This is your final assembly for this chapter. Remember to take healthy breaks!"]
+			icon: "kubejs:kinetic_mechanism"
+			id: "739171B55D996DDC"
+			subtitle: "E = (mv^2):2"
+			tasks: [
+				{
+					id: "05C443CB47E22E13"
+					item: "kubejs:kinetic_mechanism"
+					type: "item"
+				}
+				{
+					id: "469647AE2C9D1CBC"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["4A9B54919E72FA35"]
+			description: ["Note: This and &6Clay&r can be created using the same machine, to save space."]
+			icon: "create:zinc_nugget"
+			id: "7DF7474895BF1A95"
+			subtitle: "Tiny bit of softness"
+			tasks: [
+				{
+					id: "343B4CEE55BC1F1C"
+					item: "create:zinc_nugget"
+					type: "item"
+				}
+				{
+					id: "5C479F8E9304517F"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["33BEFD296FDFA54A"]
+			description: ["I'd like to mention that &6Fan behind Lava&r is most broken form of smelting I've ever seen."]
+			icon: "kubejs:algal_brick"
+			id: "0DFFD83AEE19C056"
+			subtitle: "Cooler than clay"
+			tasks: [
+				{
+					id: "34DA41C67A95F32F"
+					item: "kubejs:algal_brick"
+					type: "item"
+				}
+				{
+					id: "0735B1CCD6D9F3E3"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"6A4CF765655D0B51"
+				"121330192A469576"
+			]
+			description: [
+				"It's possible you've already used this method, as it's more efficient than crafting by hand."
+				"If you haven't, check &6JEI&r and think how much EMC have you wasted by not using it as soon as you could."
+			]
+			icon: "kubejs:algal_blend"
+			id: "33BEFD296FDFA54A"
+			subtitle: "Nutrious..?"
+			tasks: [
+				{
+					id: "5667929F83350392"
+					item: "kubejs:algal_blend"
+					type: "item"
+				}
+				{
+					id: "1A77E5E167868830"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3E2DC9403C0E6EFA"]
+			description: ["[No Description For You, Andesite]"]
+			icon: "minecraft:andesite"
+			id: "0E2401C16A6796D2"
+			subtitle: "[No Subtitle For You, Andesite]"
+			tasks: [
+				{
+					id: "12CA9EC5EB5C4217"
+					item: "minecraft:andesite"
+					type: "item"
+				}
+				{
+					id: "3923823CC282BC13"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["25FE7279CD14331E"]
+			description: [
+				"I think name speaks for itself."
+				"If it doesn't, check &6JEI&r for instructions."
+			]
+			icon: "kubejs:crushed_diorite"
+			id: "4A9B54919E72FA35"
+			subtitle: "Are you proud of yourself now?"
+			tasks: [
+				{
+					id: "2DAE929FB49A93CC"
+					item: "kubejs:crushed_diorite"
+					type: "item"
+				}
+				{
+					id: "1C6BDB3613951083"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3E2DC9403C0E6EFA"]
+			description: [
+				"There is exactly one block of difference between the automatic &6Cobblestone&r, &6Andesite&r and &6Diorite&r setups."
+				"Remember about your ability to &6Ponder&r about all of the Create components, even items from some add-ons are able to be &6Pondered&r about."
+			]
+			icon: "minecraft:diorite"
+			id: "25FE7279CD14331E"
+			subtitle: "Well, you'll possibly crush it"
+			tasks: [
+				{
+					id: "5CBC0E36541CCDB9"
+					item: "minecraft:diorite"
+					type: "item"
+				}
+				{
+					id: "1EAD2445428342C1"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3E2DC9403C0E6EFA"]
+			description: ["If you are stuck on how to automate &6Kelp&r production, you can check &6JEI&r for instructions."]
+			icon: "minecraft:kelp"
+			id: "121330192A469576"
+			subtitle: "I like to grow it, grow it"
+			tasks: [
+				{
+					id: "1756A94DC1EC58BF"
+					item: "minecraft:kelp"
+					type: "item"
+				}
+				{
+					id: "5C41A6D8FA13A612"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["133C541CACD526F2"]
+			description: ["Hint: This and &6Zinc Nugget&r can be made using the same machine, if you don't care about aesthetics."]
+			icon: "minecraft:clay_ball"
+			id: "6A4CF765655D0B51"
+			subtitle: "Snowball, but clay"
+			tasks: [
+				{
+					id: "27845FB72A8C4ABC"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+				{
+					id: "3076216B89B1B989"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3C24483E939DA419"]
+			description: ["Just like &6Wood&r processing quest line, sometimes you need to use the same machine more than once to achieve desired effect."]
+			icon: "minecraft:sand"
+			id: "133C541CACD526F2"
+			subtitle: "Will you smash it?"
+			tasks: [
+				{
+					id: "76CBE20D3CD935FA"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "3629FD859CFDDFA1"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["579C9DA2168287E1"]
+			description: [
+				"Too early for crushing wheels."
+				"Too grindy to manually crush it."
+				"What's the perfect solution?"
+				"Explore &6JEI&r."
+			]
+			icon: "minecraft:gravel"
+			id: "3C24483E939DA419"
+			subtitle: "Will you crush it?"
+			tasks: [
+				{
+					id: "30D9AB5BC28B39A5"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					id: "28728DD43051F761"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3E2DC9403C0E6EFA"]
+			description: [
+				"&6JEI&r knows how to make &6Cobblestone&r."
+				""
+				"Note: &6Subtitle&r suggets a mod that will also be helpful."
+			]
+			icon: "minecraft:cobblestone"
+			id: "579C9DA2168287E1"
+			subtitle: "Cobble for days"
+			tasks: [
+				{
+					id: "299179631DF32600"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					id: "7FA2EDE7A7E3282A"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3E2DC9403C0E6EFA"]
+			description: [
+				"If you are stuck on how to automate &6Logs&r production, remember your best friend, &6JEI&r."
+				""
+				"Tip: You can also try &6Pondering&r about &6Mechanical Saw&r."
+			]
+			icon: "minecraft:oak_log"
+			id: "43508B0FFB023677"
+			subtitle: "Sleep like a log"
+			tasks: [
+				{
+					id: "6D2750B27BDEFACD"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					id: "3DF9389499E036B4"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["43508B0FFB023677"]
+			description: ["You probably guessed &6Mechanical Saw&r is your best friend in this questline."]
+			icon: "minecraft:oak_planks"
+			id: "4958CC1FF86F44E6"
+			subtitle: "Full block"
+			tasks: [
+				{
+					id: "10D0B7BAC472D6C2"
+					item: "minecraft:oak_planks"
+					type: "item"
+				}
+				{
+					id: "2E3EF417BAB02F80"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4958CC1FF86F44E6"]
+			description: ["Just like &6Cobblestone&r processing quest line, sometimes you need to use the same machine more than once to achieve desired effect."]
+			icon: "minecraft:oak_slab"
+			id: "5A45B5E6F35CB178"
+			subtitle: "Half a block"
+			tasks: [
+				{
+					id: "6FB29ECBD2A894EA"
+					item: "minecraft:oak_slab"
+					type: "item"
+				}
+				{
+					id: "22B39543665144F0"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -2.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["338E0D727FFD60DC"]
+			description: ["&6Diamond Saw&r has the most durability of all the Saws available to you at this point, which means you don't have to resupply the &6Deplyer&r as often."]
+			id: "122BB3418C4D5ED5"
+			shape: "rsquare"
+			subtitle: "For the lazy"
+			tasks: [{
+				id: "380C7CA0A2B0A883"
+				item: {
+					Count: 1
+					id: "kubejs:diamond_saw"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["739171B55D996DDC"]
+			description: [
+				"And off you go to the next chapter!"
+				"(I hope you're having fun so far :D)"
+			]
+			id: "7BB1CC985EDC3BEA"
+			shape: "rsquare"
+			subtitle: "You can't automate this one yet"
+			tasks: [{
+				id: "06877F5988510B20"
+				item: "kubejs:andesite_machine"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"0DFFD83AEE19C056"
+				"7DF7474895BF1A95"
+				"0E2401C16A6796D2"
+			]
+			description: [
+				"\"Guys, I think he wants us to check &6JEI&r for instructions. "
+				"I'm not sure though.\""
+			]
+			icon: "create:andesite_alloy"
+			id: "1F37785A2EB1702F"
+			subtitle: "Cold-blooded alloy"
+			tasks: [
+				{
+					id: "53135E04CE21121D"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "78A5A34DD60F6BF2"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["3E2DC9403C0E6EFA"]
+			description: ["Gather &6Useful Machines&r now, then you'll be able to create contraptions without being limited by materials"]
+			id: "49EC062582ABFE64"
+			rewards: [
+				{
+					count: 64
+					id: "2B7B8190D37A50E3"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "0F27760C002C9BD7"
+					item: "kubejs:kinetic_mechanism"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "The factory..."
+			tasks: [
+				{
+					id: "1DEFCC9F05756C4F"
+					item: "create:millstone"
+					type: "item"
+				}
+				{
+					id: "4C10A2B0081A4C29"
+					item: "create:encased_fan"
+					type: "item"
+				}
+				{
+					id: "7A4B1B4B517F0201"
+					item: "create:mechanical_drill"
+					type: "item"
+				}
+				{
+					id: "5D0C4A1A10D3E66E"
+					item: "create:mechanical_saw"
+					type: "item"
+				}
+				{
+					id: "43E114101441AF6E"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "7424F4FD9DB494CB"
+					item: "create:deployer"
+					type: "item"
+				}
+				{
+					id: "692A64CBF0EBA33A"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					id: "60A5BB931636A47E"
+					item: "create_mechanical_extruder:mechanical_extruder"
+					type: "item"
+				}
+			]
+			title: "Preparations: Part 1"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3E2DC9403C0E6EFA"]
+			description: ["Power has to be transmitted around somehow, doesn't it?"]
+			id: "01DC5D2DF6322077"
+			rewards: [
+				{
+					count: 16
+					id: "675E33B8ABB25AE0"
+					item: "create:belt_connector"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "438021A06A2AADDD"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "270079C507C5BBB7"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "27717361BC2630C2"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "60A7CD678FDF9E89"
+					item: "create:clutch"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "567A12DB3224DAEC"
+					item: "create:gearbox"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "347FE70CD0CB2EFD"
+					item: "create:vertical_gearbox"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "63ECBD51C1E37C07"
+					item: "create:encased_chain_drive"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0789FB551DF34707"
+					item: "create:gearshift"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "6936C6282B2CC1B2"
+					item: "create:depot"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "0DC4492E8FCE4068"
+					item: "create:andesite_funnel"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "...must grow."
+			tasks: [
+				{
+					count: 16L
+					id: "77C00C2AE33433A9"
+					item: "create:belt_connector"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "7571460D0ACF9B87"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "33E710C3C877113D"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "03E54036F36F1257"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "79A490F379DD5EE4"
+					item: "create:clutch"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "795E6502EFA9A75E"
+					item: { Count: 32, id: "create:gearbox" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "3D3B4036A3D8D784"
+					item: { Count: 32, id: "create:vertical_gearbox" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "0C59EFBE5FDDD31C"
+					item: { Count: 64, id: "create:encased_chain_drive" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5B8B5E0173719C18"
+					item: "create:gearshift"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "03850342C90E4C45"
+					item: { Count: 16, id: "create:depot" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "15B247E4313720F9"
+					item: { Count: 32, id: "create:andesite_funnel" }
+					type: "item"
+				}
+			]
+			title: "Preparations: Part 2"
+			x: 1.5d
+			y: -1.5d
+		}
+	]
+	subtitle: ["The automation begins"]
+	title: "1. Andesite Age"
+}

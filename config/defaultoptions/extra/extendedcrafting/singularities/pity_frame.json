@@ -1,0 +1,10 @@
+{
+  "name": "Pity Machine Frame",
+  "colors": [
+    "91815a",
+    "bc5430"
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/draconium"
+  }
+}

@@ -1,0 +1,121 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "backpacks"
+	group: "051AA46D917B6FBA"
+	icon: {
+		Count: 1
+		id: "industrialforegoing:infinity_backpack"
+		tag: {
+			CanCharge: 1b
+			Energy: 0L
+			Selected: "POOR"
+			Special: 0b
+		}
+	}
+	id: "4F396EDB3CF325CD"
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			disable_toast: true
+			icon: "sophisticatedbackpacks:backpack"
+			id: "784D6F0E8D6220AD"
+			size: 1.0d
+			tasks: [{
+				id: "349959E9EF451FED"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1FD6DFBD33EC190B"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "industrialforegoing:infinity_backpack"
+				tag: {
+					CanCharge: 1b
+					Energy: 0L
+					Selected: "POOR"
+					Special: 0b
+				}
+			}
+			id: "1EF1BC1703C60FFA"
+			size: 1.0d
+			tasks: [{
+				id: "45E07AFED3D49337"
+				item: {
+					Count: 1
+					id: "industrialforegoing:infinity_backpack"
+					tag: {
+						CanCharge: 1b
+						Energy: 0L
+						Selected: "POOR"
+						Special: 0b
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["784D6F0E8D6220AD"]
+			disable_toast: true
+			id: "58DA261AB55C2273"
+			size: 1.0d
+			tasks: [{
+				id: "4A0C6420E2EFF32D"
+				item: "sophisticatedbackpacks:iron_backpack"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["58DA261AB55C2273"]
+			disable_toast: true
+			id: "248AC7974BF405A2"
+			size: 1.0d
+			tasks: [{
+				id: "13E496665ADAD84D"
+				item: "sophisticatedbackpacks:gold_backpack"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["248AC7974BF405A2"]
+			disable_toast: true
+			icon: "sophisticatedbackpacks:diamond_backpack"
+			id: "075970A3E0E5BE7E"
+			size: 1.0d
+			tasks: [{
+				id: "7716672392013858"
+				item: "sophisticatedbackpacks:diamond_backpack"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["075970A3E0E5BE7E"]
+			disable_toast: true
+			id: "1FD6DFBD33EC190B"
+			size: 1.0d
+			tasks: [{
+				id: "505BF5916EECC4F4"
+				item: "sophisticatedbackpacks:netherite_backpack"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+	]
+	title: "Backpacks"
+}

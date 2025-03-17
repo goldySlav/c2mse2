@@ -1,0 +1,319 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	default_quest_size: 2.0d
+	filename: "14_god"
+	group: "2F6B1FE330B2219D"
+	icon: "witherstormmod:withered_nether_star"
+	id: "579CD52808117EBC"
+	order_index: 15
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["24D936254147E2C3"]
+			description: [
+				"Thank you for coming this far in the modpack!"
+				""
+				"At this point you've finished technical progression, but you still can spend some time and become a true GOD with creative items."
+			]
+			hide_until_deps_visible: true
+			icon: "extendedcrafting:ultimate_singularity"
+			id: "6C108DBDA6B2A44B"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "553F8541C58A530A"
+					item: "extendedcrafting:ultimate_singularity"
+					type: "item"
+				}
+				{
+					id: "6A82C4ABF8D31A58"
+					title: "Get Started"
+					type: "checkmark"
+				}
+			]
+			title: "Welcome, GOD!"
+			x: 9.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["6C108DBDA6B2A44B"]
+			id: "529296DAE5C78071"
+			optional: true
+			shape: "circle"
+			size: 2.0d
+			tasks: [{
+				id: "3F893A4F58F74B0A"
+				item: "ae2:creative_energy_cell"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6C108DBDA6B2A44B"]
+			id: "3F253606A121100B"
+			optional: true
+			shape: "circle"
+			size: 2.0d
+			tasks: [{
+				id: "48AB4467F7B22B0D"
+				item: "ae2:creative_item_cell"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6C108DBDA6B2A44B"]
+			id: "63416B36E05B7B62"
+			optional: true
+			shape: "circle"
+			size: 2.0d
+			tasks: [{
+				id: "1A437F52AB4ABD41"
+				item: "ae2:creative_fluid_cell"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6C108DBDA6B2A44B"]
+			id: "747C36357C392E42"
+			optional: true
+			shape: "circle"
+			size: 2.0d
+			tasks: [{
+				id: "24A75718FB3F073D"
+				item: "mekanism:creative_bin"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["6C108DBDA6B2A44B"]
+			id: "42260C659D3ACD60"
+			optional: true
+			shape: "circle"
+			size: 2.0d
+			tasks: [{
+				id: "0EB642F85267237F"
+				item: "mekanism:creative_fluid_tank"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["6C108DBDA6B2A44B"]
+			id: "4BC07194E8BE200F"
+			optional: true
+			shape: "circle"
+			size: 2.0d
+			tasks: [{
+				id: "710C747350544A88"
+				item: {
+					Count: 1
+					id: "mekanism:creative_energy_cube"
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "18446744073709551615.9999"
+							}]
+							componentConfig: {
+								config0: {
+									side0: 4
+									side1: 4
+									side2: 4
+									side3: 4
+									side4: 4
+									side5: 4
+								}
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6C108DBDA6B2A44B"]
+			id: "5A6F0CE9F47C0E78"
+			optional: true
+			shape: "circle"
+			size: 2.0d
+			tasks: [{
+				id: "4DACF3F8B20412CC"
+				item: "mekanism:creative_chemical_tank"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6C108DBDA6B2A44B"]
+			id: "176D1A3D8F36800A"
+			optional: true
+			shape: "circle"
+			size: 2.0d
+			tasks: [{
+				id: "5A1E34522F70C182"
+				item: "create:creative_motor"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6C108DBDA6B2A44B"]
+			id: "269F1F911E6A766F"
+			optional: true
+			shape: "circle"
+			size: 2.0d
+			tasks: [{
+				id: "15585AB0861F7E2E"
+				item: "create:creative_fluid_tank"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6C108DBDA6B2A44B"]
+			id: "773F7405CBACFC47"
+			optional: true
+			shape: "circle"
+			size: 2.0d
+			tasks: [{
+				id: "56F7790727CC8918"
+				item: "create:creative_blaze_cake"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6C108DBDA6B2A44B"]
+			id: "0E7F2716F1B983C2"
+			optional: true
+			shape: "circle"
+			size: 2.0d
+			tasks: [{
+				id: "5217D6D0BD6B8714"
+				item: "appmek:creative_chemical_cell"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6C108DBDA6B2A44B"]
+			id: "7BA65FB01B892930"
+			optional: true
+			shape: "circle"
+			size: 2.0d
+			tasks: [{
+				id: "7CE0C8A1259F1681"
+				item: "functionalstorage:creative_vending_upgrade"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6C108DBDA6B2A44B"]
+			description: [
+				"Can you resummon Wither Storm wherever you want with that?"
+				""
+				"I mean, if you're the GOD now..."
+			]
+			id: "7C32FAF55DDA9EDC"
+			invisible: true
+			shape: "diamond"
+			size: 5.0d
+			tasks: [{
+				id: "372E59C2B012595F"
+				item: "minecraft:command_block"
+				type: "item"
+			}]
+			title: "What The Hell Are You Plotting?"
+			x: 16.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["6C108DBDA6B2A44B"]
+			id: "2A1B369992F2BACC"
+			shape: "circle"
+			tasks: [{
+				id: "4A02FB7959B8273F"
+				item: {
+					Count: 1
+					id: "ironfurnaces:million_furnace"
+					tag: {
+						display: {
+							Name: "{\"extra\":[{\"color\":\"yellow\",\"text\":\"R\"},{\"color\":\"green\",\"text\":\"a\"},{\"color\":\"red\",\"text\":\"i\"},{\"color\":\"blue\",\"text\":\"n\"},{\"color\":\"yellow\",\"text\":\"b\"},{\"color\":\"green\",\"text\":\"o\"},{\"color\":\"red\",\"text\":\"w\"},{\"color\":\"light_purple\",\"text\":\" \"},{\"color\":\"red\",\"text\":\"F\"},{\"color\":\"light_purple\",\"text\":\"u\"},{\"color\":\"light_purple\",\"text\":\"r\"},{\"color\":\"red\",\"text\":\"n\"},{\"color\":\"yellow\",\"text\":\"a\"},{\"color\":\"aqua\",\"text\":\"c\"},{\"color\":\"red\",\"text\":\"e\"}],\"text\":\"\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["6C108DBDA6B2A44B"]
+			id: "4F94371DB82331FE"
+			shape: "circle"
+			tasks: [{
+				id: "5D3AE12AF62E2F75"
+				item: "cagedmobs:creative_upgrade"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["6C108DBDA6B2A44B"]
+			id: "626DE97A5F2EE45D"
+			shape: "circle"
+			tasks: [{
+				id: "07A53BD38B446F01"
+				item: "powah:energy_cell_creative"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6C108DBDA6B2A44B"]
+			id: "2C019AE6666302A1"
+			shape: "circle"
+			tasks: [{
+				id: "13902E024833873F"
+				item: "draconicevolution:creative_op_capacitor"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6C108DBDA6B2A44B"]
+			id: "487FD75522A99D1C"
+			shape: "circle"
+			tasks: [{
+				id: "4D0B5C4E6F94AF1F"
+				item: "pipez:infinity_upgrade"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 10.0d
+		}
+	]
+	title: "15. GOD"
+}

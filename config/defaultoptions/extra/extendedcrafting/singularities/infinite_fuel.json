@@ -1,0 +1,10 @@
+{
+  "name": "Infinite Fuel",
+  "colors": [
+    "97469e",
+    "bc5430"
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/draconium"
+  }
+}

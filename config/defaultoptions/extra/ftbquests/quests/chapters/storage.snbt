@@ -1,0 +1,281 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "storage"
+	group: "051AA46D917B6FBA"
+	icon: "mekanism_extras:infinite_bin"
+	id: "484AD78C89162C3A"
+	order_index: 13
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0826A148DAD0D37E"]
+			disable_toast: true
+			icon: "ironchest:diamond_chest"
+			id: "41AC6CD50DA48043"
+			size: 1.0d
+			tasks: [{
+				id: "66DEE6A3A9C1D85B"
+				item: "ironchest:diamond_chest"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0826A148DAD0D37E"]
+			disable_toast: true
+			icon: "minecraft:barrel"
+			id: "7FBD9CE1F53B85B8"
+			size: 1.0d
+			tasks: [{
+				id: "3230CC4DD845AD0A"
+				item: "minecraft:barrel"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7FBD9CE1F53B85B8"]
+			disable_toast: true
+			icon: "metalbarrels:diamond_barrel"
+			id: "286CA851F442D7FF"
+			size: 1.0d
+			tasks: [{
+				id: "10F155D378023887"
+				item: "metalbarrels:diamond_barrel"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0826A148DAD0D37E"]
+			disable_toast: true
+			icon: "quark:crate"
+			id: "0F0F59A467768D53"
+			size: 1.0d
+			tasks: [{
+				id: "2B03ECA4A20965D1"
+				item: "quark:crate"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			disable_toast: true
+			id: "0826A148DAD0D37E"
+			size: 1.0d
+			tasks: [{
+				id: "42BCFA4368C70F0E"
+				item: "minecraft:chest"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependency_requirement: "one_completed"
+			disable_toast: true
+			id: "3953D17011867993"
+			size: 1.0d
+			tasks: [{
+				id: "7ADAD8D3CEC2EC86"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0826A148DAD0D37E"]
+			disable_toast: true
+			icon: "storagedrawers:oak_full_drawers_4"
+			id: "7274C2FC470D49E8"
+			size: 1.0d
+			tasks: [{
+				id: "1131B4CFDA505C91"
+				item: "storagedrawers:oak_full_drawers_1"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3953D17011867993"]
+			disable_toast: true
+			id: "107544D0A5BC9F17"
+			size: 1.0d
+			tasks: [{
+				id: "2F2A586A699F6AE6"
+				item: "ae2:drive"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3953D17011867993"]
+			disable_toast: true
+			id: "48C7ED0A07C88590"
+			size: 1.0d
+			tasks: [{
+				id: "4692BA789FC5501F"
+				item: "ae2:chest"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"48C7ED0A07C88590"
+				"107544D0A5BC9F17"
+			]
+			dependency_requirement: "one_completed"
+			id: "52F96ABEDFAFE7D6"
+			size: 1.0d
+			tasks: [{
+				id: "7772A10EC6AD67AA"
+				item: "mekanism:qio_drive_array"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			disable_toast: true
+			id: "3FA855F947BB9738"
+			tasks: [{
+				id: "2698FD832C5E4FB6"
+				item: "mekanism:basic_bin"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3FA855F947BB9738"]
+			disable_toast: true
+			id: "1903A1BD205FA003"
+			tasks: [{
+				id: "0F939766931871F1"
+				item: "mekanism:advanced_bin"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1903A1BD205FA003"]
+			disable_toast: true
+			id: "07AFD36A4991046F"
+			tasks: [{
+				id: "4B2EE7EC21B5C3BA"
+				item: "mekanism:elite_bin"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["07AFD36A4991046F"]
+			disable_toast: true
+			id: "5B22AB5463C1AAA8"
+			tasks: [{
+				id: "41E9AF88D1C55255"
+				item: "mekanism:ultimate_bin"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B22AB5463C1AAA8"]
+			disable_toast: true
+			id: "2A4986455E2771AD"
+			tasks: [{
+				id: "78BEE5534C45EEDB"
+				item: "mekanism_extras:absolute_bin"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2A4986455E2771AD"]
+			disable_toast: true
+			id: "750B6FC2BEA21247"
+			tasks: [{
+				id: "5F0F835FF6C05A43"
+				item: "mekanism_extras:supreme_bin"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["750B6FC2BEA21247"]
+			disable_toast: true
+			id: "2FFA517B34C04A99"
+			tasks: [{
+				id: "5835DC130483B12D"
+				item: "mekanism_extras:cosmic_bin"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2FFA517B34C04A99"]
+			id: "20D2E9034257DBC7"
+			tasks: [{
+				id: "1567799079BA69C4"
+				item: "mekanism_extras:infinite_bin"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7274C2FC470D49E8"]
+			disable_toast: true
+			id: "58AC11520604BEBE"
+			tasks: [{
+				id: "70559B3795F68945"
+				item: "storagedrawers:compacting_drawers_2"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7274C2FC470D49E8"]
+			disable_toast: true
+			id: "31C27984A9B27443"
+			tasks: [{
+				id: "33B8B88CF7C59B76"
+				item: "storagedrawers:compacting_drawers_3"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0826A148DAD0D37E"]
+			disable_toast: true
+			id: "760A31B64FC90408"
+			tasks: [{
+				id: "338DB6405FEAEA20"
+				item: "enderstorage:ender_chest"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.5d
+		}
+	]
+	title: "Item Storage"
+}

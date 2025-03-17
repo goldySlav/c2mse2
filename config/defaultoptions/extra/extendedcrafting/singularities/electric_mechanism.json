@@ -1,0 +1,10 @@
+{
+  "name": "Electric Mechanism",
+  "colors": [
+    "4a4540",
+    "8e1a"
+  ],
+  "ingredient": {
+    "item": "minecraft:emerald"
+  }
+}

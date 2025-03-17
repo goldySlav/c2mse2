@@ -1,0 +1,10 @@
+{
+  "name": "Abstruse Mechanism",
+  "colors": [
+    "2e5252",
+    "8e1a"
+  ],
+  "ingredient": {
+    "item": "minecraft:emerald"
+  }
+}

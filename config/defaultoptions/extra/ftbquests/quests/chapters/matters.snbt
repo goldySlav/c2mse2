@@ -1,0 +1,205 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "matters"
+	group: "051AA46D917B6FBA"
+	icon: "projecte:red_matter"
+	id: "7135266017F2602C"
+	order_index: 20
+	quest_links: [ ]
+	quests: [
+		{
+			disable_toast: true
+			id: "45631209F54893CA"
+			size: 1.0d
+			tasks: [{
+				id: "45EAEEBDE5518DE2"
+				item: "projecte:dark_matter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["45631209F54893CA"]
+			disable_toast: true
+			id: "5D8FD04EC18FE3CA"
+			size: 1.0d
+			tasks: [{
+				id: "6C5A8FE2FBD87DB0"
+				item: "projecte:red_matter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5D8FD04EC18FE3CA"]
+			disable_toast: true
+			id: "6CE61EF0503EBB06"
+			size: 1.0d
+			tasks: [{
+				id: "1B41CD5BAF0A29DB"
+				item: "projectexpansion:magenta_matter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6CE61EF0503EBB06"]
+			disable_toast: true
+			id: "4E7376B5E4C36E8E"
+			size: 1.0d
+			tasks: [{
+				id: "61F7B83D4B2F93B1"
+				item: "projectexpansion:pink_matter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4E7376B5E4C36E8E"]
+			disable_toast: true
+			id: "5F691877DDD7E22E"
+			size: 1.0d
+			tasks: [{
+				id: "6E50EB93ACD1DA4B"
+				item: "projectexpansion:purple_matter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5F691877DDD7E22E"]
+			disable_toast: true
+			id: "745E072E82D49F66"
+			size: 1.0d
+			tasks: [{
+				id: "3095F1CFAF3A2ECB"
+				item: "projectexpansion:violet_matter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["745E072E82D49F66"]
+			disable_toast: true
+			id: "0C1D0744676D24DF"
+			size: 1.0d
+			tasks: [{
+				id: "027131AD59E89048"
+				item: "projectexpansion:blue_matter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0C1D0744676D24DF"]
+			disable_toast: true
+			id: "39AE10CAE166D311"
+			size: 1.0d
+			tasks: [{
+				id: "2EC6D80A5B1B462E"
+				item: "projectexpansion:cyan_matter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["39AE10CAE166D311"]
+			disable_toast: true
+			id: "4E2905F3F4D63852"
+			size: 1.0d
+			tasks: [{
+				id: "18AC499C0501A0A7"
+				item: "projectexpansion:green_matter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["4E2905F3F4D63852"]
+			disable_toast: true
+			id: "7C751DFF6836EB51"
+			size: 1.0d
+			tasks: [{
+				id: "22545E4341B63A82"
+				item: "projectexpansion:lime_matter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7C751DFF6836EB51"]
+			disable_toast: true
+			id: "3458AA027694A71A"
+			size: 1.0d
+			tasks: [{
+				id: "5B75401471E9D373"
+				item: "projectexpansion:yellow_matter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["3458AA027694A71A"]
+			disable_toast: true
+			id: "4577287F87A241E0"
+			size: 1.0d
+			tasks: [{
+				id: "51613438361DB129"
+				item: "projectexpansion:orange_matter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["4577287F87A241E0"]
+			id: "04A3E964B40E7893"
+			size: 1.0d
+			tasks: [{
+				id: "699771EC8F058260"
+				item: "projectexpansion:white_matter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["04A3E964B40E7893"]
+			disable_toast: true
+			id: "4267BDCA597A32EB"
+			size: 1.0d
+			tasks: [{
+				id: "613ACF5811F9C94D"
+				item: "projectexpansion:fading_matter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["4267BDCA597A32EB"]
+			id: "2AC680047EC64CFB"
+			tasks: [{
+				id: "785320BB4BBDFB06"
+				item: "kubejs:the_ultimate_matter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 16.5d
+		}
+	]
+	title: "Matters"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "The Final Opinium Core",
+  "colors": [
+    "ffffff",
+    "9c9c9c"
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/draconium"
+  }
+}

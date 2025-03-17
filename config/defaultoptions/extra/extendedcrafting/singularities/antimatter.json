@@ -1,0 +1,10 @@
+{
+  "name": "Antimatter Pellet",
+  "colors": [
+    "d303fc",
+    "8e1a"
+  ],
+  "ingredient": {
+    "item": "minecraft:emerald"
+  }
+}

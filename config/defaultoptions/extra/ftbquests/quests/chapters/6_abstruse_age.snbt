@@ -1,0 +1,798 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6_abstruse_age"
+	group: "2F6B1FE330B2219D"
+	icon: "kubejs:abstruse_machine"
+	id: "6264A218E2069DB9"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5BF4BD18436A015E"]
+			description: [
+				"In this chapter you have to perform some basic math operations as well as some BOOLEAN math!"
+				""
+				"Complete freedom of how you will do that, Have Fun!"
+			]
+			id: "2E8778D432B12A09"
+			tasks: [{
+				id: "374CE40934CB995D"
+				title: "Start Chapter"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["576B2716D30C74CB"]
+			description: ["These can be used to create the simplest of Industrial Machines."]
+			id: "2E6CE520086D8586"
+			shape: "rsquare"
+			subtitle: "Now the interesting part begins"
+			tasks: [{
+				id: "3B32476FCA9650B4"
+				item: "kubejs:abstruse_machine"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"093939204AD0D6C0"
+				"578CFA9452732B7E"
+			]
+			description: [
+				"I bet your factory is pretty big by now."
+				"If &6Preformance&r is starting to worsen, consider &6Spreading out&r your assembly lines a bit."
+				"Now you have plenty of options to transfer everything wirelessly."
+			]
+			icon: "kubejs:abstruse_mechanism"
+			id: "576B2716D30C74CB"
+			tasks: [
+				{
+					id: "5C9BCF7E5E58CD9B"
+					item: "kubejs:abstruse_mechanism"
+					type: "item"
+				}
+				{
+					id: "60F64F3B2DD09FCB"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 2.5d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"7B6ACD7ADD5DE33E"
+				"02BF2A9AA4214BA7"
+				"1310A3ECC10F5090"
+				"695C45867737D934"
+				"5E76742299D40DED"
+				"0FE9149C3B9186B1"
+				"41D1058AA0FDDC3A"
+				"17652A1E7B8B35FF"
+				"758349AB312334BE"
+				"316465E9167266FE"
+			]
+			description: [
+				"Create the &2Matrix Alloy&r by putting all of the previously created liquids into a single &6Smeltery&r."
+				""
+				"That's for you to figure out how to get the Matrix in the bucket."
+			]
+			icon: "kubejs:matrix_bucket"
+			id: "093939204AD0D6C0"
+			subtitle: "Don't drink the Matrix >:("
+			tasks: [
+				{
+					id: "6F50DA08B5FD63C4"
+					item: "kubejs:matrix_bucket"
+					type: "item"
+				}
+				{
+					id: "1F7DC34A9EDE4D9F"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 2.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["70D4D7DC1155F946"]
+			description: [
+				"Multiple ways to get &60&r."
+				""
+				"Pick the one you like!"
+			]
+			icon: "kubejs:zero"
+			id: "7B6ACD7ADD5DE33E"
+			subtitle: "Nothing represented by something"
+			tasks: [
+				{
+					id: "28FA409A989612A1"
+					item: "kubejs:zero"
+					type: "item"
+				}
+				{
+					id: "54A60EA8189BFA0A"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["70D4D7DC1155F946"]
+			description: [
+				"Multiple ways to get &61&r."
+				""
+				"Pick the one you like!"
+			]
+			icon: "kubejs:one"
+			id: "02BF2A9AA4214BA7"
+			subtitle: "Oh, don't fall! Ha-ha-ha, ONE"
+			tasks: [
+				{
+					id: "5CCE4F5A3ED858E5"
+					item: "kubejs:one"
+					type: "item"
+				}
+				{
+					id: "19B49A36CEA5BFC9"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["70D4D7DC1155F946"]
+			description: [
+				"Multiple ways to get &62&r."
+				""
+				"Pick the one you like!"
+			]
+			icon: "kubejs:two"
+			id: "1310A3ECC10F5090"
+			subtitle: "Take the trouble and make it double"
+			tasks: [
+				{
+					id: "2E130A43E4D3F300"
+					item: "kubejs:two"
+					type: "item"
+				}
+				{
+					id: "4AFD826BB7035299"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			description: [
+				"Multiple ways to get &63&r."
+				""
+				"Pick the one you like!"
+			]
+			icon: "kubejs:three"
+			id: "64BF76E7FA414649"
+			subtitle: "<&63&r"
+			tasks: [
+				{
+					id: "013A0D91B55E0307"
+					item: "kubejs:three"
+					type: "item"
+				}
+				{
+					id: "33EDCFC1C95750C7"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["70D4D7DC1155F946"]
+			description: [
+				"Multiple ways to get &64&r."
+				""
+				"Pick the one you like!"
+			]
+			icon: "kubejs:four"
+			id: "695C45867737D934"
+			subtitle: "That's right, it goes into the square hole"
+			tasks: [
+				{
+					id: "310DE8757E7C46C6"
+					item: "kubejs:four"
+					type: "item"
+				}
+				{
+					id: "5A9320B5384238FD"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["70D4D7DC1155F946"]
+			description: [
+				"Multiple ways to get &65&r."
+				""
+				"Pick the one you like!"
+			]
+			icon: "kubejs:five"
+			id: "5E76742299D40DED"
+			subtitle: "Five nights? Harr harr harr"
+			tasks: [
+				{
+					id: "79F2DD69AE8C9E23"
+					item: "kubejs:five"
+					type: "item"
+				}
+				{
+					id: "286210B22BEB441D"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["70D4D7DC1155F946"]
+			description: [
+				"Multiple ways to get &66&r."
+				""
+				"Pick the one you like!"
+			]
+			icon: "kubejs:six"
+			id: "0FE9149C3B9186B1"
+			subtitle: "Arguably the best number"
+			tasks: [
+				{
+					id: "4C735707FEB651F6"
+					item: "kubejs:six"
+					type: "item"
+				}
+				{
+					id: "58B8DEC7DD23302A"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["70D4D7DC1155F946"]
+			description: [
+				"Multiple ways to get &67&r."
+				""
+				"Pick the one you like!"
+			]
+			icon: "kubejs:seven"
+			id: "41D1058AA0FDDC3A"
+			subtitle: "Seven human souls are required to shatter the Barrier"
+			tasks: [
+				{
+					id: "4ECC8D069C089B83"
+					item: "kubejs:seven"
+					type: "item"
+				}
+				{
+					id: "7A69C70E73239978"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			description: [
+				"Multiple ways to get &68&r."
+				""
+				"Pick the one you like!"
+			]
+			icon: "kubejs:eight"
+			id: "5B4056D7CA4530C4"
+			subtitle: "Tilt your head and you'll see Infinity!"
+			tasks: [
+				{
+					id: "0FC770661DA03FC7"
+					item: "kubejs:eight"
+					type: "item"
+				}
+				{
+					id: "5152F9D40565B965"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["70D4D7DC1155F946"]
+			description: [
+				"Multiple ways to get &69&r."
+				""
+				"Pick the one you like!"
+			]
+			icon: "kubejs:nine"
+			id: "17652A1E7B8B35FF"
+			subtitle: "The largest single digit number"
+			tasks: [
+				{
+					id: "19C17AA8B0B09190"
+					item: "kubejs:nine"
+					type: "item"
+				}
+				{
+					id: "060BA1CD0D986B94"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 5.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["2E8778D432B12A09"]
+			description: [
+				"Blueprints for some of the casts got lost in the time-space continuum."
+				"You need to prove your capability of solving basic and intermediate math problems."
+			]
+			id: "0B12B976E0EBAE0A"
+			shape: "rsquare"
+			subtitle: "<&63&r"
+			tasks: [{
+				id: "61FC1D5595CDA091"
+				item: "kubejs:three_cast"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E8778D432B12A09"]
+			description: ["Now try to get 10 numbers and 2 boolean states out of 2 numbers and 15 symbols."]
+			id: "225891006A2AC89D"
+			shape: "rsquare"
+			subtitle: "The calculator can help you if you're stuck"
+			tasks: [{
+				id: "4BAFEE0440AD4E3F"
+				item: "kubejs:eight_cast"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E8778D432B12A09"]
+			description: ["Plus Cast is used to cast a Plus."]
+			id: "0F7DDA78A13D7FFC"
+			shape: "rsquare"
+			subtitle: "Stay positive!"
+			tasks: [{
+				id: "7ACC13B6EB028159"
+				item: "kubejs:plus_cast"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E8778D432B12A09"]
+			description: ["Minus Cast is used to cast a Minus."]
+			id: "7729657E979AE027"
+			shape: "rsquare"
+			subtitle: "Negative"
+			tasks: [{
+				id: "037A4F12EB6953E4"
+				item: "kubejs:minus_cast"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E8778D432B12A09"]
+			description: ["Divide Cast is used to cast a Sivision symbol."]
+			id: "5C13BA5CFC7A7908"
+			shape: "rsquare"
+			subtitle: "Divided by oceans, united by Minecraft"
+			tasks: [{
+				id: "1E3CCFC8F51DB31E"
+				item: "kubejs:divide_cast"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E8778D432B12A09"]
+			description: ["Multiply Cast is used to cast a Multiplication symbol."]
+			id: "60693DBE2262B78A"
+			shape: "rsquare"
+			subtitle: "Multiple hours of fun ahead of you"
+			tasks: [{
+				id: "2EB73829FDAE6AB7"
+				item: "kubejs:multiply_cast"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0B12B976E0EBAE0A"
+				"225891006A2AC89D"
+				"0F7DDA78A13D7FFC"
+				"7729657E979AE027"
+				"5C13BA5CFC7A7908"
+				"60693DBE2262B78A"
+				"0C356AEF65F9421E"
+				"15315D63C8875CE4"
+				"46B2F134D5278D1E"
+				"06D2A8F8EEED2FD5"
+				"7FDCA6288E7EA08D"
+			]
+			description: [
+				"This liquid is similar to Liquid Matrix in structure, but is missing some core elements."
+				"Your task is to make everything you can out of it to be able to complete the structure."
+			]
+			icon: "kubejs:raw_logic_bucket"
+			id: "552F8C2C880166A7"
+			subtitle: "Raw beauty of maths"
+			tasks: [
+				{
+					id: "2607C704CAB5C6FD"
+					item: "kubejs:raw_logic_bucket"
+					type: "item"
+				}
+				{
+					id: "254ABEBF39F0E77B"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5BF4BD18436A015E"]
+			description: ["I'm starting to think it's something more than just a magnet."]
+			id: "578CFA9452732B7E"
+			shape: "rsquare"
+			subtitle: "Resonate the Matrix"
+			tasks: [{
+				id: "104E8435778E96BA"
+				item: {
+					Count: 1
+					id: "kubejs:chromatic_resonator"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["093939204AD0D6C0"]
+			description: [
+				"Liquid Matrix uses a &6Calculation Mechanism&r as a catalyst to harden and take a solid form."
+				"Good thing is that process does not destroy your mechanism, meaning you can reuse it as much as you wish."
+			]
+			id: "26E19614D31B5F7F"
+			subtitle: "Now you're the one in control of the Matrix"
+			tasks: [{
+				id: "6DE3DF498A459C71"
+				item: "kubejs:computation_matrix"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			description: ["Remember that 9 is the highest number you can get."]
+			id: "3B811C618C88B679"
+			subtitle: "+1"
+			tasks: [{
+				id: "54B3F63CCC51FA2E"
+				item: "kubejs:plus"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			description: ["Substracting is safe, you can't go below 0 though."]
+			id: "24B852898662A844"
+			subtitle: "Not related to electrons"
+			tasks: [{
+				id: "571FBBB758B7CCA6"
+				item: "kubejs:minus"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			description: [
+				"Watch out!"
+				"Dividing by 0 can have &4Unforeseen consequences&r."
+			]
+			id: "7D55551FC4D093FB"
+			subtitle: "Divide and conquer"
+			tasks: [{
+				id: "3AFD5A47913000D9"
+				item: "kubejs:divide"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			description: ["Yeah, you can &6Multiply&r the numbers!"]
+			id: "71E947CAE871BF0E"
+			subtitle: "Like rabbits"
+			tasks: [{
+				id: "563781A38F5439AF"
+				item: "kubejs:multiply"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"64BF76E7FA414649"
+				"5B4056D7CA4530C4"
+				"3B811C618C88B679"
+				"24B852898662A844"
+				"7D55551FC4D093FB"
+				"71E947CAE871BF0E"
+				"1018568DF4291BDA"
+				"14CF5B44C7FF5F67"
+				"157DB63F2E8ADBD4"
+				"5B6CE05FFE16C9BE"
+				"2DC1819D10F9C676"
+			]
+			description: ["All math operations can be done also in a &6Basic Crafting Table&r"]
+			id: "70D4D7DC1155F946"
+			subtitle: "Technical difficulties"
+			tasks: [{
+				id: "47B2E6F38C2161CA"
+				title: "Understood"
+				type: "checkmark"
+			}]
+			title: "General Info"
+			x: 2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			description: [
+				"Factorial is a somewhat tricky operation."
+				"The factorial of a positive integer \"n\" is defined as the product of all positive integers from 1 to n. For example, &65! = 5 * 4 * 3 * 2 * 1 = 120&r."
+			]
+			id: "14CF5B44C7FF5F67"
+			subtitle: "5! != 5"
+			tasks: [{
+				id: "2859167322F50D71"
+				item: "kubejs:factorial"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			description: ["The power (or exponent) of a number says how many times to use the number in a multiplication."]
+			id: "157DB63F2E8ADBD4"
+			subtitle: "Go, go &6Power&rrangers"
+			tasks: [{
+				id: "3DD6FA18B64D0D6F"
+				item: "kubejs:power"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			description: [
+				"Remainder is a quite funny operation actually."
+				"It's best seen on an example:"
+				"3:2 = 1.5"
+				"This equation can be also formed as follows:"
+				"3:2 = 1 r. 1"
+				"r stands for &6Remainder&r. Here, have some more examples:"
+				"5%2 = 1"
+				"16%6 = 4"
+				"19%20 = 19"
+				"Remainder operation returns the, well, remainder from division."
+			]
+			id: "1018568DF4291BDA"
+			subtitle: "Remain focused"
+			tasks: [{
+				id: "217F4A3C21B0A3C1"
+				item: "kubejs:remainder"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			description: ["Square root actually means \"to the power of (1/2)\""]
+			id: "2DC1819D10F9C676"
+			subtitle: "It must be hard for plants to grow square roots"
+			tasks: [{
+				id: "127C8EBE1FA8E110"
+				item: "kubejs:square_root"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2E8778D432B12A09"]
+			description: ["Factorial Cast is used to cast a Factorial."]
+			id: "15315D63C8875CE4"
+			shape: "rsquare"
+			subtitle: "Is your factory growing?"
+			tasks: [{
+				id: "349747C12A7F5D98"
+				item: "kubejs:factorial_cast"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E8778D432B12A09"]
+			description: ["Power Cast is used to cast a Power symbol."]
+			id: "46B2F134D5278D1E"
+			shape: "rsquare"
+			subtitle: "Powah???"
+			tasks: [{
+				id: "5AB8DE2E0BD3DBF5"
+				item: "kubejs:power_cast"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E8778D432B12A09"]
+			description: ["Remainder Cast is used to cast a Remainder symbol."]
+			id: "0C356AEF65F9421E"
+			shape: "rsquare"
+			subtitle: "The stranger I remain"
+			tasks: [{
+				id: "00623EC453D488F3"
+				item: "kubejs:remainder_cast"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E8778D432B12A09"]
+			description: ["Square root Cast is used to cast a Square Root symbol."]
+			id: "06D2A8F8EEED2FD5"
+			shape: "rsquare"
+			subtitle: "In Minecraft even the roots are square!"
+			tasks: [{
+				id: "2022A7F7AC53B69D"
+				item: "kubejs:square_root_cast"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["552F8C2C880166A7"]
+			description: [
+				"When you slap two = symbols together, you get an operator to compare two pieces of data, including numbers and expressions."
+				"A comparator, if you will."
+			]
+			id: "5B6CE05FFE16C9BE"
+			subtitle: "If you ever wrote any piece of code you will know this one!"
+			tasks: [{
+				id: "4EDD985B3681B63C"
+				item: "kubejs:equal"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2E8778D432B12A09"]
+			description: ["Equal Cast is used to cast an Equality symbol."]
+			id: "7FDCA6288E7EA08D"
+			shape: "rsquare"
+			subtitle: "I write quest descriptions and you read them. We are not the same"
+			tasks: [{
+				id: "25F536A845A5DD8E"
+				item: "kubejs:equal_cast"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["70D4D7DC1155F946"]
+			description: [
+				"Multiple ways to get &6TRUE&r."
+				""
+				"Pick the one you like!"
+			]
+			icon: "kubejs:true"
+			id: "758349AB312334BE"
+			subtitle: "It is true that you enjoy this pack"
+			tasks: [
+				{
+					id: "11662822883BD5EA"
+					item: "kubejs:true"
+					type: "item"
+				}
+				{
+					id: "0F461B8CDE299349"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["70D4D7DC1155F946"]
+			description: [
+				"Multiple ways to get &6FALSE&r."
+				""
+				"Pick the one you like!"
+			]
+			icon: "kubejs:false"
+			id: "316465E9167266FE"
+			subtitle: "It is false that Fortnite is better than Minecraft"
+			tasks: [
+				{
+					id: "6FC8C578067137E8"
+					item: "kubejs:false"
+					type: "item"
+				}
+				{
+					id: "78D28324230CE986"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 7.0d
+			y: 9.0d
+		}
+	]
+	title: "6. Abstruse Age"
+}

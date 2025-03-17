@@ -1,0 +1,10 @@
+{
+  "name": "Inductive Mechanism",
+  "colors": [
+    "293d3d",
+    "8e1a"
+  ],
+  "ingredient": {
+    "item": "minecraft:emerald"
+  }
+}

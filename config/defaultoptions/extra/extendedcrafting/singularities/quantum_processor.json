@@ -1,0 +1,10 @@
+{
+  "name": "Quantum Processor",
+  "colors": [
+    "5c2475",
+    "1b53a7"
+  ],
+  "ingredient": {
+    "item": "minecraft:lapis_lazuli"
+  }
+}

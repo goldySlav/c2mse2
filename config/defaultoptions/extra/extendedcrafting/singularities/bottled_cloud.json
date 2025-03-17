@@ -1,0 +1,10 @@
+{
+  "name": "Cloud in a Bottle",
+  "colors": [
+    "999999",
+    "bc5430"
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/draconium"
+  }
+}

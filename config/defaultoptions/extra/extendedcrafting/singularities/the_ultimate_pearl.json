@@ -1,0 +1,10 @@
+{
+  "name": "The Ultimate Pearl",
+  "colors": [
+    "299637",
+    "99a828"
+  ],
+  "ingredient": {
+    "item": "kubejs:the_ultimate_pearl"
+  }
+}

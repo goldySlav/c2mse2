@@ -1,0 +1,313 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "pickaxes"
+	group: "051AA46D917B6FBA"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			Parent: {
+				energy: {
+					energy: 0
+				}
+				module_host: {
+					modules: [ ]
+					properties: {
+						mining_speed: {
+							hud: 1b
+							value: 1.0d
+						}
+					}
+					provider_id: [I;
+						-1412052433
+						1973833207
+						-1920494730
+						471978725
+					]
+				}
+			}
+		}
+		id: "draconicevolution:chaotic_pickaxe"
+	}
+	id: "3FD455C1E798EBD5"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["052CF805C3D0B247"]
+			disable_toast: true
+			icon: "miniutilities:destruction_pickaxe"
+			id: "25B371ABBCB77B5A"
+			size: 1.0d
+			tasks: [{
+				id: "28379EC82D64A51F"
+				item: "miniutilities:destruction_pickaxe"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["25B371ABBCB77B5A"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: { }
+				}
+				id: "projecte:dm_pick"
+				tag: { }
+			}
+			id: "772ECB8142FA2A60"
+			size: 1.0d
+			tasks: [{
+				id: "6345B956C0F59E43"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: { }
+					}
+					id: "projecte:dm_pick"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["772ECB8142FA2A60"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: { }
+				}
+				id: "projecte:rm_pick"
+				tag: { }
+			}
+			id: "20BAB715ADE9049D"
+			size: 1.0d
+			tasks: [{
+				id: "2424E20CB020425F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: { }
+					}
+					id: "projecte:rm_pick"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["20BAB715ADE9049D"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "industrialforegoing:infinity_drill"
+				tag: {
+					CanCharge: 1b
+					Energy: 0L
+					Fluid: {
+						Amount: 0
+						FluidName: "biofuel"
+					}
+					Selected: "POOR"
+					Special: 0b
+				}
+			}
+			id: "0897BCAA28A7F6A3"
+			size: 1.0d
+			tasks: [{
+				id: "0FF3EEF136D5B3BA"
+				item: {
+					Count: 1
+					id: "industrialforegoing:infinity_drill"
+					tag: {
+						CanCharge: 1b
+						Energy: 0L
+						Fluid: {
+							Amount: 0
+							FluidName: "biofuel"
+						}
+						Selected: "POOR"
+						Special: 0b
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0897BCAA28A7F6A3"]
+			disable_toast: true
+			id: "7821E1F3575C5A79"
+			tasks: [{
+				id: "592F5C013177C7F5"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+								provider_id: [I;
+									-989439038
+									1499023143
+									-1973777769
+									2119405658
+								]
+							}
+						}
+					}
+					id: "draconicevolution:wyvern_pickaxe"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["7821E1F3575C5A79"]
+			disable_toast: true
+			id: "4FC618B079C19ED4"
+			tasks: [{
+				id: "39E0265256B85473"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+								provider_id: [I;
+									392565993
+									-305183389
+									-1997520867
+									403869985
+								]
+							}
+						}
+					}
+					id: "draconicevolution:draconic_pickaxe"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["4FC618B079C19ED4"]
+			disable_toast: true
+			id: "72D308630366BB2F"
+			tasks: [{
+				id: "619A5CFF1715CB02"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+								provider_id: [I;
+									-61814947
+									-145797134
+									-1726122770
+									89925404
+								]
+							}
+						}
+					}
+					id: "draconicevolution:chaotic_pickaxe"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["7D7632A90705A7B5"]
+			disable_toast: true
+			id: "052CF805C3D0B247"
+			tasks: [{
+				id: "34B32BC920F6A246"
+				item: {
+					Count: 1
+					id: "pureemeraldtools:emerald_netherite_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			disable_toast: true
+			id: "534ACC531D65EF55"
+			tasks: [{
+				id: "2F392A42285DB61A"
+				item: {
+					Count: 1
+					id: "pureemeraldtools:pure_emerald_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["534ACC531D65EF55"]
+			disable_toast: true
+			id: "7D7632A90705A7B5"
+			tasks: [{
+				id: "11D7E9F4337ACA93"
+				item: {
+					Count: 1
+					id: "minecraft:netherite_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+	]
+	title: "Pickaxes"
+}

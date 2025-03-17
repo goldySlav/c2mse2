@@ -1,0 +1,10 @@
+{
+  "name": "Polished Coke",
+  "colors": [
+    "12100d",
+    "1b53a7"
+  ],
+  "ingredient": {
+    "item": "minecraft:lapis_lazuli"
+  }
+}

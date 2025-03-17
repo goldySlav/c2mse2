@@ -1,0 +1,506 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2_copper_age"
+	group: "2F6B1FE330B2219D"
+	icon: "kubejs:copper_machine"
+	id: "429BA020217DDAEB"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7BB1CC985EDC3BEA"]
+			description: ["This chapter gives you access to &6Copper&r and more."]
+			id: "069880B5BBFEDBA6"
+			subtitle: "The beginning."
+			tasks: [{
+				id: "23BD5FCB30E6BE14"
+				title: "Start Chapter"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"4657F5E790EDB92D"
+				"37E11FF4DB4A05A1"
+				"4C793E5E91461036"
+			]
+			description: [
+				"The final step for glory."
+				"You &6can't give up&r now, don't listen to chapter 1 and &6&lgrind more&r&r."
+				""
+				"&nTHE FACTORY NEEDS YOU!&r :smile:"
+			]
+			icon: "kubejs:sealed_mechanism"
+			id: "29DEAE2791EBFE7B"
+			subtitle: "Your fate is sealed! You will finish me!"
+			tasks: [
+				{
+					id: "7E73D49B24D1F8FF"
+					item: "kubejs:sealed_mechanism"
+					type: "item"
+				}
+				{
+					id: "043FD588FCF7D7EF"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["35B503F3B05BB324"]
+			description: [
+				"Charcoal can be made by &6Smelting&r any type of log."
+				""
+				"&6JEI&r is your friend."
+			]
+			icon: "minecraft:charcoal"
+			id: "1F421F089C39C2B3"
+			subtitle: "Smells nice... like BBQ"
+			tasks: [
+				{
+					id: "67EBB92A15F52B1C"
+					item: "minecraft:charcoal"
+					type: "item"
+				}
+				{
+					id: "2FE87515B9068544"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1F421F089C39C2B3"]
+			description: ["This bad boy is made by letting your &6Charcoal&r through your smelting setup once more."]
+			icon: "kubejs:coke"
+			id: "25BC9F6213430089"
+			subtitle: "No, not THAT coke"
+			tasks: [
+				{
+					id: "6448E4E65E822F5E"
+					item: "kubejs:coke"
+					type: "item"
+				}
+				{
+					id: "7A1E7C5EF38D5CF7"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["069880B5BBFEDBA6"]
+			description: [
+				"Granite can be generated infinitely using the &6Mechanical Extruder&r. &6JEI&r pls help!!"
+				""
+				"Another handy way is to sieve &6Gravel&r and combine Granite Pebbles in a 2x2 gird."
+			]
+			icon: "minecraft:granite"
+			id: "1F6E3C251067FE32"
+			subtitle: "As ugly as ever"
+			tasks: [
+				{
+					id: "21A9AC9FBAECB320"
+					item: "minecraft:granite"
+					type: "item"
+				}
+				{
+					id: "205078248E4B52A9"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1F6E3C251067FE32"]
+			description: [
+				"Kinda self explanatory."
+				"Check &6JEI&r if confused."
+			]
+			icon: "kubejs:crushed_granite"
+			id: "2409A2C0E77A7086"
+			subtitle: "The way all granite should be. Crushed."
+			tasks: [
+				{
+					id: "1C185F7C22CA66BF"
+					item: "kubejs:crushed_granite"
+					type: "item"
+				}
+				{
+					id: "28B3ED559427C534"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2409A2C0E77A7086"]
+			description: ["Copper nuggets are obtained by &6Washing&r Crushed Gratine."]
+			icon: "create:copper_nugget"
+			id: "1F93CEDBFF04CC3F"
+			subtitle: "Small, shiny and red ... what is it?"
+			tasks: [
+				{
+					id: "3EB877FBC171DF2B"
+					item: "create:copper_nugget"
+					type: "item"
+				}
+				{
+					id: "189C0EA1F0FF3DB8"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1F93CEDBFF04CC3F"]
+			description: ["Do I need to explain... :skull:"]
+			icon: "minecraft:copper_ingot"
+			id: "4FCC832C0601D256"
+			subtitle: "Like really do I need to?"
+			tasks: [
+				{
+					id: "798AA207670469D2"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "231E596C40056BCF"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4FCC832C0601D256"]
+			description: [
+				"Made by pressing Copper Ingots with &6Mechanical Press&r."
+				""
+				"&6JEI&r?"
+			]
+			icon: "create:copper_sheet"
+			id: "1B41E5301611D094"
+			subtitle: "Long and useful."
+			tasks: [
+				{
+					id: "24E9CC5F157F237D"
+					item: "create:copper_sheet"
+					type: "item"
+				}
+				{
+					id: "71008D05074B60BF"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1B41E5301611D094"]
+			description: [
+				"You can make those in pairs by using the &6Rolling Mill&r on our &6Sheets&r."
+				""
+				"Please note, later you will be able to use Tinkers Construct's casting of a Molten Copper as well!"
+			]
+			icon: "createaddition:copper_wire"
+			id: "4C793E5E91461036"
+			subtitle: "Conductive"
+			tasks: [
+				{
+					id: "6F31A95511A0857F"
+					item: "createaddition:copper_wire"
+					type: "item"
+				}
+				{
+					id: "298F6C348F51A5B8"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"6D7C1B46E000BDBA"
+				"7724D3FEA4626577"
+			]
+			description: ["Polished Coke is made by, well... Polishing it with a &6Sand Paper&r"]
+			icon: "kubejs:polished_coke"
+			id: "37E11FF4DB4A05A1"
+			subtitle: "Nice and shiny, just as if it was &6Polished&r"
+			tasks: [
+				{
+					id: "0F0B1C809259B860"
+					item: "kubejs:polished_coke"
+					type: "item"
+				}
+				{
+					id: "16939CA57F656C78"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["069880B5BBFEDBA6"]
+			description: ["Refer back to &6Chapter 1&r if you are confused."]
+			icon: "minecraft:oak_log"
+			id: "35B503F3B05BB324"
+			subtitle: "Morning Wood?"
+			tasks: [
+				{
+					id: "7195434399B727AF"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					id: "30DEC36511C7C62D"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7BB1CC985EDC3BEA"]
+			description: [
+				"&6Screwdriver&r is a tool used to make a few Mechanisms."
+				""
+				"TIP: Use a drawer to restock deployers less often."
+			]
+			id: "4657F5E790EDB92D"
+			shape: "rsquare"
+			subtitle: "Handy for electrical work"
+			tasks: [{
+				id: "6E450C16FFC406BE"
+				item: {
+					Count: 1
+					id: "projectred_core:screwdriver"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["29DEAE2791EBFE7B"]
+			description: [
+				"Off you go."
+				""
+				"We hope you don't leave :smile:"
+			]
+			id: "10AC4EE77F6CC3BC"
+			shape: "rsquare"
+			subtitle: "Make a few and chill."
+			tasks: [{
+				id: "4C1F650A36259645"
+				item: "kubejs:copper_machine"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["25BC9F6213430089"]
+			description: ["&6Nourished Coke&r is made by taking Coke for a bath in the &6Mixer&r."]
+			icon: "kubejs:nourished_coke"
+			id: "6D7C1B46E000BDBA"
+			subtitle: "Its art, not chemistry"
+			tasks: [
+				{
+					id: "2730CCBC62B8EC06"
+					item: "kubejs:nourished_coke"
+					type: "item"
+				}
+				{
+					id: "3207F550B896BEA3"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["069880B5BBFEDBA6"]
+			description: [
+				"Vanilla farm works pretty well."
+				"For convenience, you might want to use &6Botany Pots&r though."
+			]
+			icon: "minecraft:sugar_cane"
+			id: "2F91D141FA26B1F4"
+			subtitle: "Awww, sweet"
+			tasks: [
+				{
+					id: "17122C264B62C997"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+				{
+					id: "374B9096D480ADFD"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2F91D141FA26B1F4"]
+			description: [
+				"You could make paper in similar manner to how it is made in real life..."
+				"If you don't know how, check JEI and learn a new thing! :smile:"
+			]
+			icon: "minecraft:paper"
+			id: "2932906391CDEA37"
+			subtitle: "I really hope we won't have to put it together with Sand"
+			tasks: [
+				{
+					id: "73DD91A96AB8D948"
+					item: "minecraft:paper"
+					type: "item"
+				}
+				{
+					id: "1A32C72E0780C2BC"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["51E2D60A136A26BE"]
+			description: ["And then make Sand, you already know how."]
+			icon: "minecraft:sand"
+			id: "5B92B32743B113EF"
+			subtitle: "Maybe you'd get some beaches Franklin"
+			tasks: [
+				{
+					id: "66B8D7A61681C6A9"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "567E0C2444CA07DD"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"5B92B32743B113EF"
+				"2932906391CDEA37"
+			]
+			description: [
+				"Hint: It's a &6Shapeless&r recipe."
+				"If you are clever and have some spare EMC, soon you will be able use a more durable material for a better Sandpaper."
+			]
+			icon: {
+				Count: 1
+				id: "create:sand_paper"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7724D3FEA4626577"
+			subtitle: "Oh no"
+			tasks: [
+				{
+					id: "43126BFFBD82DD7D"
+					item: {
+						Count: 1
+						id: "create:sand_paper"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5A863123644E9EB4"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["069880B5BBFEDBA6"]
+			description: [
+				"> Be me."
+				"> Ask to automate Cobblestone."
+				"> Refuse to elaborate."
+				"> Leave."
+			]
+			icon: "minecraft:cobblestone"
+			id: "0CAA346BF2A2A07C"
+			subtitle: "Primary resource by now"
+			tasks: [
+				{
+					id: "40D018B026EDF50C"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					id: "13707B51FAE3FD16"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0CAA346BF2A2A07C"]
+			description: ["Mill your Wobble-Cobble down to Gravel."]
+			icon: "minecraft:gravel"
+			id: "51E2D60A136A26BE"
+			subtitle: "The same chain all over again..."
+			tasks: [
+				{
+					id: "4F2C09E722A911E0"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					id: "50FE01BB3E1B7917"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -5.0d
+			y: 0.0d
+		}
+	]
+	title: "2. Copper Age"
+}

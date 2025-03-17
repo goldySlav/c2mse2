@@ -1,0 +1,781 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5_calculation_age"
+	group: "2F6B1FE330B2219D"
+	icon: "ae2:not_so_mysterious_cube"
+	id: "239C921C4987A477"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["52257FDA80778223"]
+			description: ["I hope you are good at maths!"]
+			id: "325605BD444D4AB0"
+			subtitle: "There is still more."
+			tasks: [{
+				id: "49CF0E636ADEDD59"
+				title: "Start Chapter"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -12.5d
+		}
+		{
+			dependencies: [
+				"20E17925C8E01937"
+				"07B04478FDDFACAA"
+				"1DA27C8DD289D4F3"
+				"43AFCDFA7ACF7345"
+			]
+			description: ["You. You have to keep expanding the &nFACTORY&r."]
+			icon: "kubejs:calculation_mechanism"
+			id: "33021D172E8878E4"
+			tasks: [
+				{
+					id: "4A7B18F7EB9AEDE1"
+					item: "kubejs:calculation_mechanism"
+					type: "item"
+				}
+				{
+					id: "3F5A35C4F9DBB1F4"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["33021D172E8878E4"]
+			description: [
+				"Oh nice, you made it."
+				""
+				"Now you can make an &nME system&r."
+			]
+			id: "5BF4BD18436A015E"
+			shape: "rsquare"
+			tasks: [{
+				id: "7031EA90364F887B"
+				item: "ae2:not_so_mysterious_cube"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["52257FDA80778223"]
+			description: ["Same magnet, just like last time."]
+			id: "20E17925C8E01937"
+			shape: "rsquare"
+			tasks: [{
+				id: "773222AC52CBF314"
+				item: {
+					Count: 1
+					id: "kubejs:chromatic_resonator"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"1C09C4944CCD355E"
+				"2047ED5BC1025722"
+			]
+			description: ["Made by &6Filling&r the respective Broken Circuit with disgusting &6Waste&r using a Spout."]
+			icon: "ae2:logic_processor"
+			id: "43AFCDFA7ACF7345"
+			tasks: [
+				{
+					id: "7C8C1D452EBB9FB1"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+				{
+					id: "316E134F7D2FB12C"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"1C09C4944CCD355E"
+				"1AC724A44BF86C74"
+			]
+			description: ["Made by &6Filling&r the respective Broken Circuit with gross &6Waste&r using a Spout."]
+			icon: "ae2:calculation_processor"
+			id: "07B04478FDDFACAA"
+			tasks: [
+				{
+					id: "736AD8CA7C2CF787"
+					item: "ae2:calculation_processor"
+					type: "item"
+				}
+				{
+					id: "5556694A34969CE2"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"1C09C4944CCD355E"
+				"52B16095142EF424"
+			]
+			description: ["Made by &6Filling&r the respective Broken Circuit with revolting &6Waste&r using a Spout."]
+			icon: "ae2:engineering_processor"
+			id: "1DA27C8DD289D4F3"
+			tasks: [
+				{
+					id: "6D92E9874B259ACF"
+					item: "ae2:engineering_processor"
+					type: "item"
+				}
+				{
+					id: "0D8882323F42918C"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["61869729796C25AB"]
+			description: ["Made by casting &6Molten Certus Quartz&r in a casting table with an &6Inscriber Calculation Press&r."]
+			icon: "ae2:printed_calculation_processor"
+			id: "36C7C15C0AC39A62"
+			tasks: [
+				{
+					id: "69181E9A92C0042C"
+					item: "ae2:printed_calculation_processor"
+					type: "item"
+				}
+				{
+					id: "6318E4C788BD4E61"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E85CA8FECE54675"]
+			description: ["Made by casting &6Molten Gold&r in a casting table with an &6Inscriber Logic Press&r."]
+			icon: "ae2:printed_logic_processor"
+			id: "64735AB276DED681"
+			tasks: [
+				{
+					id: "13356E4A11FE1D56"
+					item: "ae2:printed_logic_processor"
+					type: "item"
+				}
+				{
+					id: "26CBA76D06CB49B1"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0DCD7F96839FB02B"]
+			description: ["Made by casting &6Molten Diamond&r in a casting table with an &6Inscriber Engineering Press&r."]
+			icon: "ae2:printed_engineering_processor"
+			id: "6875D32CBA0E015F"
+			tasks: [
+				{
+					id: "5817E223971FECD1"
+					item: "ae2:printed_engineering_processor"
+					type: "item"
+				}
+				{
+					id: "79A45A5296AAA65D"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3EF1C5A04B24E10E"]
+			description: ["Made by deploying an Inscriber Silicon Press onto Silicon."]
+			icon: "ae2:printed_silicon"
+			id: "6B2F8C0DC04DA057"
+			tasks: [
+				{
+					id: "363B03C3FB0BD713"
+					item: "ae2:printed_silicon"
+					type: "item"
+				}
+				{
+					id: "284E7DEE8A639924"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["52257FDA80778223"]
+			description: [
+				"We made this in &6Chapter 4&r remember."
+				"Well... probably. I don't know if you did."
+			]
+			icon: "kubejs:abstruse_waste_bucket"
+			id: "1C09C4944CCD355E"
+			subtitle: "So gross."
+			tasks: [
+				{
+					id: "310148036C5AE173"
+					item: "kubejs:abstruse_waste_bucket"
+					type: "item"
+				}
+				{
+					id: "3D0BE3D38DF3D2F0"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2D69A78F6D4F555E"]
+			description: ["Smelt the &6Silicon Compound&r to get this guy."]
+			icon: "ae2:silicon"
+			id: "3EF1C5A04B24E10E"
+			subtitle: "Silicon Valley"
+			tasks: [
+				{
+					id: "30234B2870E63DB2"
+					item: "ae2:silicon"
+					type: "item"
+				}
+				{
+					id: "773DFA16825725D3"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2EC7ECACA8C64880"]
+			description: [
+				"Melting."
+				""
+				"Yeah, melting."
+			]
+			icon: "kubejs:molten_certus_bucket"
+			id: "61869729796C25AB"
+			subtitle: "Supermelting"
+			tasks: [
+				{
+					id: "776F8EAF92D9F9A4"
+					item: "kubejs:molten_certus_bucket"
+					type: "item"
+				}
+				{
+					id: "1CEA3E17A7958BE4"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["78F0F6CE6BE3168B"]
+			description: ["This becomes your new basic."]
+			icon: "tconstruct:molten_gold_bucket"
+			id: "2E85CA8FECE54675"
+			subtitle: "Not so high temperatures"
+			tasks: [
+				{
+					id: "74BF602E574D0F2D"
+					item: "tconstruct:molten_gold_bucket"
+					type: "item"
+				}
+				{
+					id: "560CD35E2BE9E77E"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["201C1E972A7885EC"]
+			description: ["Melting &6Diamons&r."]
+			icon: "tconstruct:molten_diamond_bucket"
+			id: "0DCD7F96839FB02B"
+			subtitle: "They are high again. Are you?"
+			tasks: [
+				{
+					id: "7CA80B8C8954A8FD"
+					item: "tconstruct:molten_diamond_bucket"
+					type: "item"
+				}
+				{
+					id: "588F5E7B8087C033"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"36DFF3E3982944FD"
+				"1236C8AA793DCE6E"
+				"3BB8214617F3B855"
+			]
+			description: ["Combine Coke Chunks, Purified Sand and Fine Sand to make this."]
+			icon: "kubejs:silicon_compound"
+			id: "2D69A78F6D4F555E"
+			subtitle: "Compound butter?"
+			tasks: [
+				{
+					id: "7A9AB53061D722FF"
+					item: "kubejs:silicon_compound"
+					type: "item"
+				}
+				{
+					id: "27323786260180F6"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C905BBE99EAF556"]
+			description: ["Try sifting &6Sand Chunks&r in a Create Sifter with a &6Netherite Mesh&r."]
+			icon: "kubejs:purified_sand"
+			id: "36DFF3E3982944FD"
+			subtitle: "Now this is sand."
+			tasks: [
+				{
+					id: "1158DB228ADAB581"
+					item: "kubejs:purified_sand"
+					type: "item"
+				}
+				{
+					id: "3C86C8B68B93C1FA"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["792CCD66259F06BD"]
+			description: [
+				"Coke chunks are made with a short 2 step process, but it has to be repeated multiple times:"
+				""
+				"&6&l1.&r Saw the Polished Coke with a Mechanical Saw."
+				""
+				"&6&l2.&r Last is Spouting &6H2O&r(Water) on it."
+			]
+			icon: "kubejs:coke_chunk"
+			id: "3BB8214617F3B855"
+			subtitle: "Process so long"
+			tasks: [
+				{
+					id: "16E2F5795BB1DFA1"
+					item: "kubejs:coke_chunk"
+					type: "item"
+				}
+				{
+					id: "177CF6B7374867AC"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7037302B8C2694EE"]
+			description: ["A product of &6Draining&r balls of sand."]
+			icon: "kubejs:fine_sand_bucket"
+			id: "1236C8AA793DCE6E"
+			subtitle: "Substitution fow snow?"
+			tasks: [
+				{
+					id: "3F2238A29FB19B3B"
+					item: "kubejs:fine_sand_bucket"
+					type: "item"
+				}
+				{
+					id: "46A82AF1AC1F5B42"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["51A64DFC8F377F14"]
+			description: ["Made by &6Washing&r Sandstone."]
+			icon: "kubejs:sand_ball"
+			id: "7037302B8C2694EE"
+			subtitle: "Perfect substitution for snowballs"
+			tasks: [
+				{
+					id: "5759D7F2726CE28A"
+					item: "kubejs:sand_ball"
+					type: "item"
+				}
+				{
+					id: "17EF9D5FE88110FB"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["325605BD444D4AB0"]
+			description: ["If your Chapter 2 makes more Coke than it can use, you can use that here."]
+			icon: "kubejs:polished_coke"
+			id: "792CCD66259F06BD"
+			subtitle: "Best quality coke out there."
+			tasks: [
+				{
+					id: "0E6FD80A4B29C6FD"
+					item: "kubejs:polished_coke"
+					type: "item"
+				}
+				{
+					id: "42C82FB16DA45033"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["7037302B8C2694EE"]
+			description: [
+				"That's what remains from the Sandballs when you drain all the Fine Sand out of them."
+				""
+				""
+				""
+				"&7PS: Keep the fine sand&r"
+			]
+			icon: "kubejs:rough_sand"
+			id: "0C905BBE99EAF556"
+			subtitle: "Use instead of snowballs? That would hurt!"
+			tasks: [
+				{
+					id: "734CE1D9C83F5CC7"
+					item: "kubejs:rough_sand"
+					type: "item"
+				}
+				{
+					id: "40C2FF9E0584859D"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2B7780ADC68F3E8F"]
+			description: ["You know how to make Sandstone, do you?"]
+			icon: "minecraft:sandstone"
+			id: "51A64DFC8F377F14"
+			subtitle: "Packed tight."
+			tasks: [
+				{
+					id: "5CBC5C653D7391DB"
+					item: "minecraft:sandstone"
+					type: "item"
+				}
+				{
+					id: "04A5D20C9307D3B0"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["38F5E619902249C0"]
+			description: [
+				"Crush Gravel?"
+				""
+				""
+				"PRO TIP: If you &6still&r haven't started using &6EMC Links&r then you should. Like, &6Please!&r"
+			]
+			icon: "minecraft:sand"
+			id: "2B7780ADC68F3E8F"
+			subtitle: "This one has it too."
+			tasks: [
+				{
+					id: "74C43A78360D6890"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "59342ABCB2F2D08B"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["155318044955E7FB"]
+			description: ["Crush Cobblestone?"]
+			icon: "minecraft:gravel"
+			id: "38F5E619902249C0"
+			subtitle: "Why do you still have gravity?"
+			tasks: [
+				{
+					id: "20ADEE5D7EFB97E2"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					id: "312EE6C38AD601EC"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["325605BD444D4AB0"]
+			description: [
+				""
+				"                        ...."
+				""
+				"                       &6&lNO!&r"
+			]
+			icon: "minecraft:cobblestone"
+			id: "155318044955E7FB"
+			subtitle: "elbboC"
+			tasks: [
+				{
+					id: "195A139096DF6328"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					id: "10ED8ABC82BA7055"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["325605BD444D4AB0"]
+			description: ["If you want to automate this without EMC Links go for it."]
+			icon: "ae2:certus_quartz_crystal"
+			id: "2EC7ECACA8C64880"
+			subtitle: "Pointy."
+			tasks: [
+				{
+					id: "74791154787E3FAB"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+				{
+					id: "35BF90F42619FDD9"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["065CE6560F385C25"]
+			description: [
+				"Made by ... You guessed it - &6Washing&r Crushed Netherrack."
+				""
+				"Note:The &6Byproduct&r is crucial for production of Blaze Cakes."
+			]
+			icon: "minecraft:gold_nugget"
+			id: "78F0F6CE6BE3168B"
+			subtitle: "More nuggets? What for?"
+			tasks: [
+				{
+					id: "41BE4647034AFD9E"
+					item: "minecraft:gold_nugget"
+					type: "item"
+				}
+				{
+					id: "7700331A0CD64F55"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A7D10FED1E2F5CD"]
+			description: ["Crush some Netherrack."]
+			icon: "exdeorum:crushed_netherrack"
+			id: "065CE6560F385C25"
+			subtitle: "Oh this one has it too."
+			tasks: [
+				{
+					id: "6672510246A9ED39"
+					item: "exdeorum:crushed_netherrack"
+					type: "item"
+				}
+				{
+					id: "04FE21AEA8BCE603"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["325605BD444D4AB0"]
+			description: [
+				"Either go to the &6Nether&r or combine Witchwater and Lava in a &6Stone Barrel&r."
+				"Combining flowing Witchwater and flowing Lava in world also works, I guess."
+				"...Mechanical extruder would also work, I guess."
+			]
+			icon: "minecraft:netherrack"
+			id: "5A7D10FED1E2F5CD"
+			subtitle: "Straight from hell!"
+			tasks: [
+				{
+					id: "75E942C9BB94D8F2"
+					item: "minecraft:netherrack"
+					type: "item"
+				}
+				{
+					id: "0C0E744A5135B2D1"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["325605BD444D4AB0"]
+			description: ["You should have this guy by now."]
+			icon: "minecraft:diamond"
+			id: "201C1E972A7885EC"
+			subtitle: "Often overrated"
+			tasks: [
+				{
+					id: "51B4192A7FC0A239"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "48D7175A74E34E48"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["6B2F8C0DC04DA057"]
+			description: ["Combine 9 to make 1."]
+			id: "25158067E46CA06D"
+			shape: "rsquare"
+			subtitle: "Efficient?"
+			tasks: [{
+				id: "364D5757BE389840"
+				item: "kubejs:printed_silicon_wafer"
+				type: "item"
+			}]
+			title: "Alternative Way of Thinking"
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6B2F8C0DC04DA057"
+				"36C7C15C0AC39A62"
+			]
+			description: ["Made by deploying a &6Printed Calculation Circuit&r onto Pressed Silicon."]
+			id: "1AC724A44BF86C74"
+			subtitle: "Broken? So what now?"
+			tasks: [{
+				id: "469856BC31A191EC"
+				item: "kubejs:broken_calculation_processor"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"6B2F8C0DC04DA057"
+				"64735AB276DED681"
+			]
+			description: ["Made by deploying a &6Printed Logic Circuit&r onto Pressed Silicon."]
+			id: "2047ED5BC1025722"
+			subtitle: "Its broken? Its useless then."
+			tasks: [{
+				id: "6A8ACB2DEE5C1C88"
+				item: "kubejs:broken_logic_processor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"6B2F8C0DC04DA057"
+				"6875D32CBA0E015F"
+			]
+			description: ["Made by deploying a &6Printed Engineering Circuit&r onto Pressed Silicon."]
+			id: "52B16095142EF424"
+			subtitle: "You can fix it right?"
+			tasks: [{
+				id: "295C5F859DE7313D"
+				item: "kubejs:broken_engineering_processor"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.5d
+		}
+	]
+	title: "5. Calculation Age"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Calculation Processor",
+  "colors": [
+    "468cb3",
+    "1b53a7"
+  ],
+  "ingredient": {
+    "item": "minecraft:lapis_lazuli"
+  }
+}
