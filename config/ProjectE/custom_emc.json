@@ -170,7 +170,7 @@
     },
     {
       "item": "minecraft:blaze_rod",
-      "emc": 0
+      "emc": 8192
     },
     {
       "item": "minecraft:filled_map",

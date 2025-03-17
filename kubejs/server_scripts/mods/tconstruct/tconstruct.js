@@ -131,9 +131,6 @@ ServerEvents.recipes((event) => {
 		})
 	})
 	
-	//blazing blood from blaze powder
-	event.recipes.tconstruct.melting(Fluid.of(TCT("blazing_blood"), 250), MC("blaze_powder"), 1000, 40)
-	
 	//wires
 	const wiresCRA = ["copper", "iron", "gold"]
 	wiresCRA.forEach(wire => {
