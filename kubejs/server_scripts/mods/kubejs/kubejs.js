@@ -804,8 +804,8 @@ ServerEvents.recipes((event) => {
 	
 	
 	//molten ender alloy
-	event.recipes.tconstruct.alloy(Fluid.of(KJ("molten_ender_alloy"), 180), [Fluid.of(TCT("molten_iron"), 90), Fluid.of(TCT("molten_ender"), 90)], 1429)
-	event.recipes.create.mixing(Fluid.of(KJ("molten_ender_alloy"), 20), [Fluid.of(TCT("molten_iron"), 10), Fluid.of(TCT("molten_ender"), 10)]).heated()
+	event.recipes.tconstruct.alloy(Fluid.of(KJ("molten_ender_alloy"), 180), [Fluid.of(TCT("molten_iron"), 90), Fluid.of(TCT("molten_ender"), 250)], 1429)
+	event.recipes.create.mixing(Fluid.of(KJ("molten_ender_alloy"), 18), [Fluid.of(TCT("molten_iron"), 9), Fluid.of(TCT("molten_ender"), 25)]).heated()
 	
 	
 	
