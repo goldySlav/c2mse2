@@ -206,7 +206,7 @@ ServerEvents.recipes((event) => {
 			{
 				amount: 1,
 				ingredient: {
-					item: AV("infinity_catalyst")
+					item: KJ("the_ultimate_star")
 				}
 			},
 		],

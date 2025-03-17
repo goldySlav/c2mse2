@@ -24,6 +24,36 @@ StartupEvents.registry('item', event => {
 				.hunger(400)
 				.saturation(0.5)
 				.removeEffect('poison')
+				.effect('speed', 300, 0, 1)
+				.effect('regeneration', 300, 1, 1)
+				.effect('resistance', 3000, 1, 1)
+				.effect('fire_resistance', 3000, 1, 1)
+				.effect('absorption', 3000, 3, 1)
+		})
+	
+	event.create('cosmic_meatballs')
+		.glow(true)
+		.rarity("epic")
+		.displayName('Cosmic Meatballs')
+		.food(food => {
+			food
+				.hunger(400)
+				.saturation(0.5)
+				.effect('speed', 300, 0, 1)
+				.effect('regeneration', 300, 1, 1)
+				.effect('resistance', 3000, 1, 1)
+				.effect('fire_resistance', 3000, 1, 1)
+				.effect('absorption', 3000, 3, 1)
+		})
+	
+	event.create('ultimate_stew')
+		.glow(true)
+		.rarity("epic")
+		.displayName('Ultimate Stew')
+		.food(food => {
+			food
+				.hunger(800)
+				.saturation(1)
 				.effect('speed', 600, 0, 1)
 				.effect('regeneration', 600, 1, 1)
 				.effect('resistance', 6000, 1, 1)
@@ -203,4 +233,21 @@ StartupEvents.registry('item', event => {
 	
 	//preserved explosion
 	event.create('preserved_explosion').displayName('Preserved Explosion').rarity("epic")
+	
+	//The Ultimate Pearl
+	event.create('the_ultimate_pearl').displayName('The Ultimate Pearl').rarity("epic")
+	
+	//The Ultimate Pearl
+	event.create('the_ultimate_star').displayName('The Ultimate Star').rarity("epic")
+	
+	//Neutronium
+	event.create('pileof_neutrons').displayName('Pile of Neutrons').rarity("epic")
+	event.create('neutronium_nugget').displayName('Neutronium Nugget').rarity("epic")
+	event.create('neutronium_ingot').displayName('Neutronium Ingot').rarity("epic")
+	
+	//Diamond Lattice
+	event.create('diamond_lattice').displayName('Diamond Lattice').rarity("uncommon")
+	
+	//Crystal Matrix Ingot
+	event.create('crystal_matrix_ingot').displayName('Crystal Matrix Ingot').rarity("uncommon")
 });

@@ -262,6 +262,53 @@ ServerEvents.recipes((event) => {
 	
 	
 	
+	//diamond lattice
+	event.shaped(KJ('diamond_lattice'), [
+		'A A',
+		' A ',
+		'A A',
+	], {
+		A: F('#gems/diamond'),
+	})
+	
+	
+	
+	//crystal matrix ingot
+	event.shaped(KJ('crystal_matrix_ingot'), [
+		'ABA',
+		'ABA',
+	], {
+		A: KJ('diamond_lattice'),
+		B: MC("nether_star"),
+	})
+	
+	
+	
+	//neutron shapeless conversions
+	event.shapeless(Item.of(KJ("pileof_neutrons"), 9), [KJ("neutronium_nugget")])
+	event.shapeless(KJ("neutronium_nugget"), [Item.of(KJ("pileof_neutrons"), 9)])
+	
+	event.shapeless(Item.of(KJ("neutronium_nugget"), 9), [KJ("neutronium_ingot")])
+	event.shapeless(KJ("neutronium_ingot"), [Item.of(KJ("neutronium_nugget"), 9)])
+
+
+
+  	//neutron pile
+	event.custom({
+		type: M('crystallizing'),
+		chemicalType: 'gas',
+		input: { amount: 100, gas: KJ("neutron_gas") },
+		output: KJ("pileof_neutrons"),
+	})
+
+
+
+	//compressed crafting table
+	event.recipes.extendedcrafting.shapeless_ender_crafter(KJ('compressed_crafting_table'), Item.of(MC("crafting_table"), 9)).craftingTime(90)
+	event.recipes.extendedcrafting.shapeless_ender_crafter(KJ('double_compressed_crafting_table'), Item.of(KJ('compressed_crafting_table'), 9)).craftingTime(90)
+	
+	
+	
 	//tools
 	
 	//saws

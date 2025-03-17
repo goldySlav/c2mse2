@@ -56,7 +56,7 @@ ServerEvents.recipes(e => {
 	], {
 		A: EC("crystaltine_ingot"),
 		B: PREXP("basic_collector"),
-		C: AV("crystal_matrix_ingot"),
+		C: KJ("crystal_matrix_ingot"),
 	})
 
 	//opinium cores
@@ -77,7 +77,7 @@ ServerEvents.recipes(e => {
 	], {
 		A: CP("experience_2"),
 		B: MU("chorus_opinium_core"),
-		C: AV("crystal_matrix_ingot"),
+		C: KJ("crystal_matrix_ingot"),
 	})
 
   	e.shaped(Item.of(MU("nether_star_opinium_core"), 2), [

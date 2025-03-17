@@ -70,7 +70,7 @@ ServerEvents.recipes((event) => {
 		'CDC',
 		'ABA'
 	], {
-		A: AV('infinity_catalyst'),
+		A: KJ('the_ultimate_star'),
 		B: CM('star_infused_netherite_ingot'),
 		C: DE('chaotic_core'),
 		D: DE('item_draconic_shield_control'),

@@ -6,10 +6,24 @@
 	group: "051AA46D917B6FBA"
 	icon: {
 		Count: 1
-		id: "avaritia:swordofthe_cosmos"
-		tag: {
-			Damage: 0
+		ForgeCaps: {
+			Parent: {
+				energy: {
+					energy: 0
+				}
+				module_host: {
+					modules: [ ]
+					properties: { }
+					provider_id: [I;
+						284765437
+						-1469757112
+						-1196108906
+						-1558938815
+					]
+				}
+			}
 		}
+		id: "draconicevolution:chaotic_sword"
 	}
 	id: "081AF65A7955C64D"
 	order_index: 1
@@ -142,32 +156,6 @@
 			}]
 			x: 0.0d
 			y: 48.0d
-		}
-		{
-			dependencies: ["4D775686A66E9328"]
-			icon: {
-				Count: 1
-				id: "avaritia:swordofthe_cosmos"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "533CF52F0F781A9B"
-			size: 1.0d
-			tasks: [{
-				id: "2530ED1A52FA8FC1"
-				item: {
-					Count: 1
-					id: "avaritia:swordofthe_cosmos"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "&eArtifact: Sword Of The Cosmos"
-			x: 0.0d
-			y: 54.0d
 		}
 		{
 			dependencies: ["4504159D94ABD568"]

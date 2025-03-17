@@ -15,7 +15,6 @@ JEIEvents.removeCategories(event => {
   event.remove("packagedauto:fluid_package_filling")
   event.remove("packagedauto:fluid_package_contents")
   event.remove("enderio:alloy_smelting")
-  event.remove("avaritia:compressor")
   event.remove("tconstruct:severing")
   event.remove("tconstruct:modifiers")
   event.remove("tconstruct:tool_recipes")

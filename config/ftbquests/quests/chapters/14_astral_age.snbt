@@ -78,12 +78,12 @@
 		}
 		{
 			dependencies: ["5765BC3B238E7F7D"]
-			icon: "avaritia:pileof_neutrons"
+			icon: "kubejs:pileof_neutrons"
 			id: "031EFBF6364330ED"
 			size: 1.0d
 			tasks: [{
 				id: "1FF2CDA6BE6927D5"
-				item: "avaritia:pileof_neutrons"
+				item: "kubejs:pileof_neutrons"
 				type: "item"
 			}]
 			title: "Produce \"Pile of Neutrons\""

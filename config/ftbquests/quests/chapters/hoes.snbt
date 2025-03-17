@@ -6,10 +6,24 @@
 	group: "051AA46D917B6FBA"
 	icon: {
 		Count: 1
-		id: "avaritia:hoeofthe_green_earth"
-		tag: {
-			Damage: 0
+		ForgeCaps: {
+			Parent: {
+				energy: {
+					energy: 0
+				}
+				module_host: {
+					modules: [ ]
+					properties: { }
+					provider_id: [I;
+						864351689
+						1053902154
+						-1776832264
+						-742124147
+					]
+				}
+			}
 		}
+		id: "draconicevolution:chaotic_hoe"
 	}
 	id: "3DC517AF2C1CC304"
 	order_index: 7
@@ -84,32 +98,6 @@
 			}]
 			x: 0.0d
 			y: 9.0d
-		}
-		{
-			dependencies: ["27BE84B30C39E486"]
-			icon: {
-				Count: 1
-				id: "avaritia:hoeofthe_green_earth"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "5ED633E791593BF4"
-			size: 1.0d
-			tasks: [{
-				id: "2504CCE726566F88"
-				item: {
-					Count: 1
-					id: "avaritia:hoeofthe_green_earth"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "&eArtifact: Hoe Of The Green Earth"
-			x: 0.0d
-			y: 15.0d
 		}
 		{
 			dependencies: ["3640C5E77D2C175A"]

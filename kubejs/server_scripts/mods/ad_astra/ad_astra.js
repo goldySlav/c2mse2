@@ -463,7 +463,7 @@ ServerEvents.recipes((event) => {
 		M("dimensional_stabilizer"),
 		[
 			`2x ${CP("steel_3")}`, `2x ${DE("draconium_core")}`, `2x ${DE("small_chaos_frag")}`,
-			`2x ${AV("crystal_matrix")}`, 
+			`2x ${KJ("crystal_matrix_ingot")}`, 
 		]
 	)
 	customRecipes.draconicevolution.fusion_craft(
@@ -566,7 +566,7 @@ ServerEvents.recipes((event) => {
 	mekaUnit(event, AA_GA("module_gravity_normalizing_unit"), [
 		`2x ${AA("gravity_normalizer")}`,
 		`1x ${CR("netherite_diving_boots")}`,
-		`1x ${AV("neutronium_nugget")}`,
+		`1x ${KJ("neutronium_nugget")}`,
 		`3x ${M("hdpe_stick")}`,
 		`7x ${M("reprocessed_fissile_fragment")}`,
 	])

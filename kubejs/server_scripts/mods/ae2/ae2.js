@@ -447,7 +447,7 @@ ServerEvents.recipes((event) => {
 		'EA AE',
 		'CEBEC',
 	], {
-		A: AV("compressed_crafting_table"),
+		A: KJ("compressed_crafting_table"),
 		B: AE2('fluix_glass_cable'),
 		C: CP('iron_1'),
 		D: AE2('formation_core'),
@@ -469,7 +469,7 @@ ServerEvents.recipes((event) => {
 		A: MGC('mega_energy_cell'),
 		B: PR_INT('null_cell_gate'),
 		C: CP('iron_1'),
-		D: AV('double_compressed_crafting_table'),
+		D: KJ('double_compressed_crafting_table'),
 		E: AE2('fluix_pearl'),
 		F: F('#ingots/sky_steel'),
 	})

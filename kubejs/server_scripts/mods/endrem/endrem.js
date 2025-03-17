@@ -105,8 +105,8 @@ ServerEvents.recipes((event) => {
 	]) //ae2
 	combEye("wither", [
 		`2x ${KJ("ultimate_salad")}`,
-		`2x ${AV("cosmic_meatballs")}`,
-		`1x ${AV("ultimate_stew")}`,
+		`2x ${KJ("cosmic_meatballs")}`,
+		`1x ${KJ("ultimate_stew")}`,
 	]) //crop farming
 	combEye("witch", [
 		`1x ${MC("zombie_head")}`,

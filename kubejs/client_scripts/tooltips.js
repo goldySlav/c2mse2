@@ -248,4 +248,12 @@ ItemEvents.tooltip(event => {
 
 	//swiftwolf's rending gale
     event.add('projecte:swiftwolf_rending_gale', '§7Requires §6Mobius Fuel §7or a charged star for creative flight')
+	
+	
+	
+	//avaritia replacements
+    event.add('kubejs:crystal_matrix_ingot', "§8This isn't even its final form.")
+    event.add('kubejs:pileof_neutrons', "§8Try not to think about think.")
+    event.add('kubejs:neutronium_nugget', "§8About 35.6 million metric tons.")
+    event.add('kubejs:neutronium_ingot', "§8The dense heart of a star in convenient ingot form.")
 })

@@ -705,12 +705,12 @@ const componentSizes = {
 //singularities
 const singularities = [
 	{ id: "the_ultimate_dust", core: KJ("the_ultimate_dust") },
-	{ id: "the_ultimate_star", core: AV("infinity_catalyst") },
-	{ id: "the_ultimate_stew", core: AV("ultimate_stew") },
+	{ id: "the_ultimate_star", core: KJ("the_ultimate_star") },
+	{ id: "the_ultimate_stew", core: KJ("ultimate_stew") },
 	{ id: "the_ultimate_matter", core: KJ("the_ultimate_matter") },
 	{ id: "the_ultimate_fuel", core: IFC("rainbow_coal") },
 	{ id: "the_ultimate_ingot", core: EC("the_ultimate_ingot") },
-	{ id: "the_ultimate_pearl", core: AV("endest_pearl") },
+	{ id: "the_ultimate_pearl", core: KJ("the_ultimate_pearl") },
 	{ id: "emerald", core: F("#gems/emerald") },
 	{ id: "diamond", core: F("#gems/diamond") },
 	{ id: "lapis_lazuli", core: F("#gems/lapis") },
@@ -995,14 +995,6 @@ const tieredMaterials = {
 		launcher: Item.of(IF('infinity_launcher'), '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Plunger:0,Selected:"POOR",Special:0b}'),
 		nuke: Item.of(IF('infinity_nuke'), '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'),
 	}, //ch12
-	avaritia: {
-		block: EC('the_ultimate_block'),
-        //circuit: KJ('computational_super_matrix'),
-        collector: PREXP('final_collector'),
-        wafer: KJ("the_ultimate_matter"),
-        opinium: MU('the_final_opinium_core'),
-        star: EC("ultimate_singularity"),
-	},
 }
 
 const tieredItems = {

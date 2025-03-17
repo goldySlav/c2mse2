@@ -50,7 +50,7 @@ ServerEvents.recipes((event) => {
 		'ABA',
 	], {
 		A: CP('iron_1'),
-		B: AV("compressed_crafting_table"),
+		B: KJ("compressed_crafting_table"),
 		C: AE2("controller"),
 	})
 	event.recipes.extendedcrafting.shaped_table(EC('basic_auto_table'), [
@@ -59,7 +59,7 @@ ServerEvents.recipes((event) => {
 		'ABA',
 	], {
 		A: CP('iron_1'),
-		B: AV("double_compressed_crafting_table"),
+		B: KJ("double_compressed_crafting_table"),
 		C: EC("basic_table"),
 	})
 	event.shaped(EC('advanced_table'), [
@@ -68,7 +68,7 @@ ServerEvents.recipes((event) => {
 		'ABA',
 	], {
 		A: CP('gold_1'),
-		B: AV("compressed_crafting_table"),
+		B: KJ("compressed_crafting_table"),
 		C: EC('basic_table'),
 	})
 	event.recipes.extendedcrafting.shaped_table(EC('advanced_auto_table'), [
@@ -79,7 +79,7 @@ ServerEvents.recipes((event) => {
 		'AAAAA',
 	], {
 		A: CP('gold_1'),
-		B: AV("double_compressed_crafting_table"),
+		B: KJ("double_compressed_crafting_table"),
 		C: EC("advanced_table"),
 	})
 
@@ -92,7 +92,7 @@ ServerEvents.recipes((event) => {
 		'AAAAA',
 	], {
 		A: CP('diamond_1'),
-		B: AV("compressed_crafting_table"),
+		B: KJ("compressed_crafting_table"),
 		C: EC("advanced_table"),
 	})
 	event.recipes.extendedcrafting.shaped_table(EC('elite_auto_table'), [
@@ -105,7 +105,7 @@ ServerEvents.recipes((event) => {
 		'AAAAAAA',
 	], {
 		A: CP('diamond_1'),
-		B: AV("double_compressed_crafting_table"),
+		B: KJ("double_compressed_crafting_table"),
 		C: EC("elite_table"),
 	})
 	
@@ -120,7 +120,7 @@ ServerEvents.recipes((event) => {
 		'AAAAAAA',
 	], {
 		A: CP('emerald_1'),
-		B: AV("compressed_crafting_table"),
+		B: KJ("compressed_crafting_table"),
 		C: EC("elite_table"),
 	})
 	event.recipes.extendedcrafting.shaped_table(EC('ultimate_auto_table'), [
@@ -135,7 +135,7 @@ ServerEvents.recipes((event) => {
 		'AAAAAAAAA',
 	], {
 		A: CP('emerald_1'),
-		B: AV("double_compressed_crafting_table"),
+		B: KJ("double_compressed_crafting_table"),
 		C: EC("ultimate_table"),
 	})
 	
@@ -152,7 +152,7 @@ ServerEvents.recipes((event) => {
 		'AAAAAAAAA',
 	], {
 		A: PRE('dark_matter_block'),
-		B: AV("compressed_crafting_table"),
+		B: KJ("compressed_crafting_table"),
 		C: EC("ultimate_table"),
 	})
 	event.recipes.extendedcrafting.shaped_table(EC('epic_auto_table'), [
@@ -169,7 +169,7 @@ ServerEvents.recipes((event) => {
 		'AAAAAAAAAAA',
 	], {
 		A: PRE('red_matter_block'),
-		B: AV("double_compressed_crafting_table"),
+		B: KJ("double_compressed_crafting_table"),
 		C: EC("epic_table"),
 	})
 	event.recipes.extendedcrafting.shaped_table(EC('auto_ender_crafter'), [
@@ -186,7 +186,7 @@ ServerEvents.recipes((event) => {
 		'AAAAAAAAAAA',
 	], {
 		A: F('#storage_blocks/ender_ingot'),
-		B: AV("double_compressed_crafting_table"),
+		B: KJ("double_compressed_crafting_table"),
 		C: EC("ender_crafter"),
 	})
 	event.recipes.extendedcrafting.shaped_table(EC('auto_flux_crafter'), [
@@ -203,7 +203,7 @@ ServerEvents.recipes((event) => {
 		'AAAAAAAAAAA',
 	], {
 		A: F('#storage_blocks/red_alloy'),
-		B: AV("double_compressed_crafting_table"),
+		B: KJ("double_compressed_crafting_table"),
 		C: EC("flux_crafter"),
 	})
 	

@@ -38,6 +38,6 @@ ServerEvents.recipes(event => {
 	], {
 		A: WSM('tainted_glass'),
 		B: WSM('tainted_flesh_block'),
-		C: AV('infinity_catalyst'),
+		C: KJ('the_ultimate_star'),
 	})
 })
