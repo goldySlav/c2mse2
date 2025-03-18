@@ -31,6 +31,9 @@ ServerEvents.recipes((event) => {
 	event.recipes.mekanism.enriching(Item.of(M('enriched_carbon'), 2), KJ('coke'))
 	event.recipes.mekanism.enriching(Item.of(M('enriched_carbon'), 3), KJ('nourished_coke'))
 	event.recipes.mekanism.enriching(Item.of(M('enriched_carbon'), 4), KJ('polished_coke'))
+	
+	//cardboard box from create cardboard
+	event.shapeless(M("cardboard_box"), [CR("cardboard")])
 
     //metallurgic infuser
 	removeRecipeByOutput(event, [

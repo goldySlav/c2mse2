@@ -1286,10 +1286,15 @@ castsForNumber = {
 	andesite_machine(CR('mechanical_drill'), 1, KJ('drill_head'))
 	andesite_machine(CR('mechanical_saw'), 1, MC('stonecutter'))
 	andesite_machine(CR('deployer'), 1, CR('brass_hand'))
+	andesite_machine(CR('redstone_link'), 2, CR('transmitter'))
+	andesite_machine(CR('packager'), 1, CR('cardboard_block'))
+	andesite_machine(CR('chain_conveyor'), 2, CR('large_cogwheel'))
+	andesite_machine(CR('package_frogport'), 1, CR('redstone_requester'))
 	andesite_machine(CR('mechanical_harvester'), 2)
 	andesite_machine(CR('mechanical_plough'), 2)
 	andesite_machine(CR('andesite_funnel'), 4)
 	andesite_machine(CR('andesite_tunnel'), 4)
+	andesite_machine(CR('stock_ticker'), 1)
 	andesite_machine(CR('speedometer'), 1, MC("compass"))
 	andesite_machine(CR('mechanical_bearing'), 1, CR("turntable"))
 	andesite_machine(CR('mechanical_piston'), 1, MC("piston"))
@@ -1370,6 +1375,7 @@ castsForNumber = {
 	}
 
 	brass_machine(CR('mechanical_crafter'), 3, MC('crafting_table'))
+	brass_machine(CR('display_link'), 1, CR('transmitter'))
 	brass_machine(CR('sequenced_gearshift'), 2)
 	brass_machine(CR('rotation_speed_controller'), 1)
 	brass_machine(CR('mechanical_arm'), 1)

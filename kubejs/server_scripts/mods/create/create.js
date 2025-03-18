@@ -316,4 +316,21 @@ ServerEvents.recipes((event) => {
 	
 	//speedometer from stressometer
 	event.shapeless(CR('speedometer'), [CR("stressometer")])
+	
+	//packager from unpackager
+	event.shapeless(CR('packager'), [CR("repackager")])
+	
+	//item vault based
+	let item_vault_based = (id, other_ingredient, removeId) => {
+		event.remove({ id: removeId })
+		event.smithing(Item.of(id, 1), KJ('kinetic_mechanism'), CR('item_vault'), other_ingredient)
+		event.recipes.create.mechanical_crafting(Item.of(id, 1), "AB", { A: CR('item_vault'), B: other_ingredient })
+		event.recipes.extendedcrafting.shapeless_table(Item.of(id, 1), [CR('item_vault'), other_ingredient])
+	}
+	
+	item_vault_based(CR("stock_link"), CR("redstone_link"), CR("crafting/logistics/stock_link"))
+	item_vault_based(CR("redstone_requester"), CR("stock_link"), CR("crafting/logistics/redstone_requester"))
+	
+	//cardboard box from create cardboard
+	event.shapeless(CR("cardboard"), [M("cardboard_box")])
 })

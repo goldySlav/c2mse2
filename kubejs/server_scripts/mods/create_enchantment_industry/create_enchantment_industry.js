@@ -9,8 +9,8 @@ ServerEvents.recipes((event) => {
 	event.shapeless(CR_EI('disenchanter'), CR("item_drain"))
 	
 	//experience motor
-	removeRecipeByOutput(event, [
-		CR_EI('experience_motor'),
+	removeRecipeByID(event, [
+		CR_EI('crafting/experience_rotor'),
 	])
-    donutCraftFull(event, CR_EI("experience_rotor"), CR("propeller"), CR('experience_nugget'))
+    donutCraftFull(event, CR_EI("experience_rotor"), CR('experience_nugget'), CR("propeller"))
 })
