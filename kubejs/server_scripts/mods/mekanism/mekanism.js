@@ -219,8 +219,8 @@ ServerEvents.recipes((event) => {
 		F: CM('star_infused_netherite_block'),
 		G: F('#storage_blocks/steel'),
 		H: KJ('ether_gem'),
-		I: M('ultimate_control_circuit'),
-		J: F('#gears/diamond'),
+		I: M_E('absolute_control_circuit'),
+		J: F('#gears/netherite'),
 	}).id(KJ(`${M()}/extended_crafting/isotopic_centrifuge`))
 	
 	//energy tablet
