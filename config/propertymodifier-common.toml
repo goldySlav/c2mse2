@@ -136,7 +136,21 @@
 	#Set the repair material of an item. May be an item or a tag containing multiple items, with a # before the tag id. Example (without the leading #):
 	#"minecraft:wooden_.*" = "#minecraft:fishes"
 	[items.repair_material]
+		"morevanillashields:leather_shield" = "minecraft:leather"
 		"minecraft:shield" = "minecraft:iron_ingot"
+		"morevanillashields:gold_shield" = "minecraft:gold_ingot"
+		"morevanillashields:diamond_shield" = "minecraft:diamond"
+		"morevanillashields:emerald_shield" = "pureemeraldtools:pure_emerald"
+		"morevanillashields:netherite_shield" = "minecraft:netherite_ingot"
+		"pureemeraldtools:emerald_netherite_armor_helmet" = "compressium:emerald_1"
+		"pureemeraldtools:emerald_netherite_armor_chestplate" = "compressium:emerald_1"
+		"pureemeraldtools:emerald_netherite_armor_leggings" = "compressium:emerald_1"
+		"pureemeraldtools:emerald_netherite_armor_boots" = "compressium:emerald_1"
+		"pureemeraldtools:emerald_netherite_sword" = "compressium:emerald_1"
+		"pureemeraldtools:emerald_netherite_axe" = "compressium:emerald_1"
+		"pureemeraldtools:emerald_netherite_pickaxe" = "compressium:emerald_1"
+		"pureemeraldtools:emerald_netherite_hoe" = "compressium:emerald_1"
+		"pureemeraldtools:emerald_netherite_shovel" = "compressium:emerald_1"
 
 	#Set the values for armor.
 	[items.armor]
