@@ -19,9 +19,6 @@ ServerEvents.recipes((event) => {
 	//dirty netherite scrap
 	event.recipes.mekanism.enriching(M("dirty_netherite_scrap"), CR_N("netherite_fragment"))
 	
-	//steel block from ingot (absent for some reason)
-	event.shapeless(M("block_steel"), [Item.of(M("ingot_steel"), 9)])
-	
 	//carbon from coke
 	customRecipes.mekanism.infusion_conversion(event, M("carbon"), 30, KJ('coke'))
 	customRecipes.mekanism.infusion_conversion(event, M("carbon"), 40, KJ('nourished_coke'))
