@@ -5,9 +5,6 @@ ClientEvents.lang('en_us', event => {
 	event.renameBlock('cobblefordays:tier_4', "Cobblestone Generator (Tier 4)")
 	event.renameBlock('cobblefordays:tier_5', "Cobblestone Generator (Tier 5)")
 
-	event.renameItem('avaritia:endest_pearl', "The Ultimate Pearl")
-	event.renameItem('avaritia:ultimate_stew', "The Ultimate Stew")
-	event.renameItem('avaritia:infinity_catalyst', "The Ultimate Star")
 	event.renameItem('ironfurnaces:rainbow_coal', "The Ultimate Fuel")
 	event.renameItem('ad_astra:cheese', "Lunar Cheese")
 

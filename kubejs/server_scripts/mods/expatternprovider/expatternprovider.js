@@ -139,7 +139,7 @@ ServerEvents.recipes((event) => {
 		'EAGAE',
 		'CEBEC',
 	], {
-		A: AV("double_compressed_crafting_table"),
+		A: KJ("double_compressed_crafting_table"),
 		B: AE2('fluix_smart_cable'),
 		C: CP('iron_2'),
 		D: AE2('formation_plane'),
@@ -154,7 +154,7 @@ ServerEvents.recipes((event) => {
 		'EA AE',
 		'CEBEC',
 	], {
-		A: AV("double_compressed_crafting_table"),
+		A: KJ("double_compressed_crafting_table"),
 		B: AE2('fluix_smart_cable'),
 		C: CP('iron_2'),
 		D: AE2('formation_plane'),

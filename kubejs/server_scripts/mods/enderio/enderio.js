@@ -10,6 +10,8 @@ ServerEvents.recipes((event) => {
 		EIO("soulbinding/player_token"),
 		EIO("soulbinding/frank_n_zombie"),
 		EIO("soulbinding/sentient_ender"),
+		EIO("soulbinding/broken_spawner"),
+		EIO("soulbinding/powered_spawner"),
 		EIO("tank_fill/nutritious_stick"),
 		EIO("conduit_binder_composite"),
 	])
@@ -138,6 +140,8 @@ ServerEvents.recipes((event) => {
 		EIO("pressurized_chemical_conduit"),
 		EIO("ender_chemical_conduit"),
 		EIO("heat_conduit"),
+		EIO("broken_spawner"),
+		EIO("powered_spawner"),
 		/enderio:clear_glass*/,
 		/enderio:fused_quartz*/,
 		/enderio:clear_glass_(p|np|m|nm|a|na|d|dp|dnp|dm|dnm|da|dna|e|ep|enp|em|enm|ea|ena)*/,
@@ -334,34 +338,12 @@ ServerEvents.recipes((event) => {
 	//wrench
 	event.smithing(EIO("yeta_wrench"), tieredItems.ch2.circuit, FB("framed_wrench"), EIO("grains_of_infinity"))
 	
-	//powered spawner
-	event.custom({
-		type: EIO("shaped_entity_storage"),
-		category: "misc",
-		key: {
-			A: { tag: F("plates/cobalt") },
-			B: { item: EIO("broken_spawner") },
-			C: { item: tieredItems.ch4.machine },
-			D: { item: tieredItems.ch4.mat },
-			E: { item: tieredItems.ch4.circuit },
-	  },
-	  pattern: [
-		"ADA",
-		"EBE",
-		"ACA"
-	  ],
-	  result: {
-			item: EIO("powered_spawner")
-	  },
-	  show_notification: true
-	})
-	
 	//soul vial
 	customRecipes.ae2.transform.fluid(event, EIO("empty_soul_vial"), [MC("glass_bottle")], F("witch_water"))
 	
 	//coordinate selector
 	event.shaped(EIO("coordinate_selector"), ["ABA", " CA", "  A"], {
-		A: F("#plates/cobalt"),
+		A: F("#ingots/cobalt"),
 		B: MC("ender_pearl"),
 		C: MC("compass"),
 	})

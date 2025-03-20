@@ -4,6 +4,8 @@ ServerEvents.recipes((event) => {
 	removeRecipeByID(event, [
 		CR_A("mixing/netherrack"),
 		CR_A("liquid_burning/biofuel"),
+		CR_A("compat/tconstruct/pig_iron"),
+		CR_A("compat/tconstruct/pig_iron_2"),
 	])
 	
 	event.recipes.create.pressing(CR_A("zinc_sheet"), F("#ingots/zinc"))

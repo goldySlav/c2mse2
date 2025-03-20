@@ -6,10 +6,24 @@
 	group: "051AA46D917B6FBA"
 	icon: {
 		Count: 1
-		id: "avaritia:longbowofthe_heavens"
-		tag: {
-			Damage: 0
+		ForgeCaps: {
+			Parent: {
+				energy: {
+					energy: 0
+				}
+				module_host: {
+					modules: [ ]
+					properties: { }
+					provider_id: [I;
+						-1709389010
+						-893238805
+						-1696204608
+						-400892953
+					]
+				}
+			}
 		}
+		id: "draconicevolution:chaotic_bow"
 	}
 	id: "1CF312974105B0C3"
 	order_index: 2
@@ -33,32 +47,6 @@
 			title: "Poor: Tinker's Bow"
 			x: 0.0d
 			y: 1.5d
-		}
-		{
-			dependencies: ["4F749658C342AC52"]
-			icon: {
-				Count: 1
-				id: "avaritia:longbowofthe_heavens"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "5111B226985A7643"
-			size: 1.0d
-			tasks: [{
-				id: "2E9D37951F255C38"
-				item: {
-					Count: 1
-					id: "avaritia:longbowofthe_heavens"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "&eArtifact: Longbow Of The Heavens"
-			x: 0.0d
-			y: 9.0d
 		}
 		{
 			dependencies: ["70A44A329A04D65F"]

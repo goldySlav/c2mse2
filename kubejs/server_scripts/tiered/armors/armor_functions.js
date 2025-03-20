@@ -1,6 +1,6 @@
 //priority: 3004
 
-const { unstable, infused, dm, rm, gem, quantum, meka, avaritia } = tieredMaterials
+const { unstable, infused, dm, rm, gem, quantum, meka } = tieredMaterials
 
 const armorMats = {
     unstable: {
@@ -99,20 +99,6 @@ const armorMats = {
             chestplate: AE2_A('quantum_chestplate'),
             leggings: AE2_A('quantum_leggings'),
             boots: AE2_A('quantum_boots'),
-        },
-    },
-    avaritia: {
-        A: avaritia.block,
-		B: avaritia.circuit,
-		C: avaritia.collector,
-		D: avaritia.wafer,
-		F: avaritia.opinium,
-		G: avaritia.star,
-        base: {
-			helmet: M('mekasuit_helmet'),
-            chestplate: PRE('mekasuit_bodyarmor'),
-            leggings: PRE('mekasuit_pants'),
-            boots: PRE('mekasuit_boots'),
         },
     },
 }

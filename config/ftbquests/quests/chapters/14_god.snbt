@@ -48,8 +48,8 @@
 				item: "ae2:creative_energy_cell"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 16.0d
+			x: 8.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["6C108DBDA6B2A44B"]
@@ -62,8 +62,8 @@
 				item: "ae2:creative_item_cell"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 4.0d
+			x: 8.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["6C108DBDA6B2A44B"]
@@ -76,8 +76,8 @@
 				item: "ae2:creative_fluid_cell"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.0d
+			x: 6.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["6C108DBDA6B2A44B"]
@@ -90,8 +90,8 @@
 				item: "mekanism:creative_bin"
 				type: "item"
 			}]
-			x: 16.0d
-			y: 4.0d
+			x: 3.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["6C108DBDA6B2A44B"]
@@ -104,8 +104,8 @@
 				item: "mekanism:creative_fluid_tank"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 6.0d
+			x: 6.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["6C108DBDA6B2A44B"]
@@ -139,8 +139,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
-			y: 18.0d
+			x: 12.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["6C108DBDA6B2A44B"]
@@ -153,8 +153,8 @@
 				item: "mekanism:creative_chemical_tank"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 8.0d
+			x: 6.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["6C108DBDA6B2A44B"]
@@ -167,8 +167,8 @@
 				item: "create:creative_motor"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 18.0d
+			x: 10.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["6C108DBDA6B2A44B"]
@@ -181,7 +181,7 @@
 				item: "create:creative_fluid_tank"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 14.0d
 			y: 6.0d
 		}
 		{
@@ -195,7 +195,7 @@
 				item: "create:creative_blaze_cake"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 6.0d
 			y: 14.0d
 		}
 		{
@@ -209,8 +209,8 @@
 				item: "appmek:creative_chemical_cell"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 4.0d
+			x: 10.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["6C108DBDA6B2A44B"]
@@ -223,8 +223,8 @@
 				item: "functionalstorage:creative_vending_upgrade"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 4.0d
+			x: 4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6C108DBDA6B2A44B"]
@@ -248,186 +248,6 @@
 		}
 		{
 			dependencies: ["6C108DBDA6B2A44B"]
-			id: "25914AE905F6CA2B"
-			shape: "circle"
-			tasks: [{
-				id: "2BEF32421E876137"
-				item: {
-					Count: 1
-					id: "avaritia:swordofthe_cosmos"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 2.0d
-			y: 10.0d
-		}
-		{
-			dependencies: ["6C108DBDA6B2A44B"]
-			id: "1E92FEB26FB6B8C6"
-			shape: "circle"
-			tasks: [{
-				id: "11E47890781A25D3"
-				item: {
-					Count: 1
-					id: "avaritia:planet_eater"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 2.0d
-			y: 12.0d
-		}
-		{
-			dependencies: ["6C108DBDA6B2A44B"]
-			id: "6B247F4BE2D728C6"
-			shape: "circle"
-			tasks: [{
-				id: "6BCCEC7E78971B89"
-				item: {
-					Count: 1
-					id: "avaritia:natures_ruin"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 14.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["6C108DBDA6B2A44B"]
-			id: "1066707FB262BC11"
-			shape: "circle"
-			tasks: [{
-				id: "7AD00875D7299FD2"
-				item: {
-					Count: 1
-					id: "avaritia:hoeofthe_green_earth"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 10.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["6C108DBDA6B2A44B"]
-			id: "5CDAA923F269DDF7"
-			shape: "circle"
-			tasks: [{
-				id: "6EF392FE1FBB9399"
-				item: {
-					Count: 1
-					id: "avaritia:world_breaker"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 12.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["6C108DBDA6B2A44B"]
-			id: "0594101159955FD3"
-			shape: "circle"
-			tasks: [{
-				id: "42C4F39194C99CEB"
-				item: {
-					Count: 1
-					id: "avaritia:longbowofthe_heavens"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 2.0d
-			y: 18.0d
-		}
-		{
-			dependencies: ["6C108DBDA6B2A44B"]
-			id: "6AF6187AA35464E4"
-			shape: "circle"
-			tasks: [{
-				id: "7D750AB78FADBF9E"
-				item: {
-					Count: 1
-					id: "avaritia:infinity_armor_helmet"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 10.0d
-			y: 18.0d
-		}
-		{
-			dependencies: ["6C108DBDA6B2A44B"]
-			id: "349A08EEBA368120"
-			shape: "circle"
-			tasks: [{
-				id: "3217E58480009273"
-				item: {
-					Count: 1
-					id: "avaritia:infinity_armor_chestplate"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 8.0d
-			y: 18.0d
-		}
-		{
-			dependencies: ["6C108DBDA6B2A44B"]
-			id: "360DB0C87E58CEF1"
-			shape: "circle"
-			tasks: [{
-				id: "484059ECB529D5E6"
-				item: {
-					Count: 1
-					id: "avaritia:infinity_armor_leggings"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 12.0d
-			y: 18.0d
-		}
-		{
-			dependencies: ["6C108DBDA6B2A44B"]
-			id: "7758A1243A12A9F1"
-			shape: "circle"
-			tasks: [{
-				id: "3960770B04CBE9A7"
-				item: {
-					Count: 1
-					id: "avaritia:infinity_armor_boots"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 14.0d
-			y: 18.0d
-		}
-		{
-			dependencies: ["6C108DBDA6B2A44B"]
 			id: "2A1B369992F2BACC"
 			shape: "circle"
 			tasks: [{
@@ -443,8 +263,8 @@
 				}
 				type: "item"
 			}]
-			x: 16.0d
-			y: 18.0d
+			x: 4.0d
+			y: 16.0d
 		}
 		{
 			dependencies: ["6C108DBDA6B2A44B"]
@@ -455,7 +275,7 @@
 				item: "cagedmobs:creative_upgrade"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 14.0d
 			y: 16.0d
 		}
 		{
@@ -467,8 +287,8 @@
 				item: "powah:energy_cell_creative"
 				type: "item"
 			}]
-			x: 16.0d
-			y: 14.0d
+			x: 12.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["6C108DBDA6B2A44B"]
@@ -479,7 +299,7 @@
 				item: "draconicevolution:creative_op_capacitor"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 12.0d
 			y: 8.0d
 		}
 		{
@@ -491,8 +311,8 @@
 				item: "pipez:infinity_upgrade"
 				type: "item"
 			}]
-			x: 20.0d
-			y: 11.0d
+			x: 12.0d
+			y: 10.0d
 		}
 	]
 	title: "15. GOD"

@@ -6,10 +6,29 @@
 	group: "051AA46D917B6FBA"
 	icon: {
 		Count: 1
-		id: "avaritia:world_breaker"
-		tag: {
-			Damage: 0
+		ForgeCaps: {
+			Parent: {
+				energy: {
+					energy: 0
+				}
+				module_host: {
+					modules: [ ]
+					properties: {
+						mining_speed: {
+							hud: 1b
+							value: 1.0d
+						}
+					}
+					provider_id: [I;
+						-1412052433
+						1973833207
+						-1920494730
+						471978725
+					]
+				}
+			}
 		}
+		id: "draconicevolution:chaotic_pickaxe"
 	}
 	id: "3FD455C1E798EBD5"
 	order_index: 4
@@ -124,32 +143,6 @@
 			}]
 			x: 0.0d
 			y: 10.5d
-		}
-		{
-			dependencies: ["72D308630366BB2F"]
-			icon: {
-				Count: 1
-				id: "avaritia:world_breaker"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "277A8D80CA096679"
-			size: 1.0d
-			tasks: [{
-				id: "47087C1A2C28B601"
-				item: {
-					Count: 1
-					id: "avaritia:world_breaker"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "&eArtifact: World Breaker"
-			x: 0.0d
-			y: 16.5d
 		}
 		{
 			dependencies: ["0897BCAA28A7F6A3"]

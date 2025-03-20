@@ -4,7 +4,7 @@
 	disable_toast: true
 	filename: "food"
 	group: "051AA46D917B6FBA"
-	icon: "avaritia:ultimate_stew"
+	icon: "kubejs:ultimate_stew"
 	id: "21FB58C32051CD17"
 	order_index: 12
 	quest_links: [ ]
@@ -80,7 +80,7 @@
 			subtitle: "Meatballs from the outer space!"
 			tasks: [{
 				id: "7BF35E9BDA907868"
-				item: "avaritia:cosmic_meatballs"
+				item: "kubejs:cosmic_meatballs"
 				type: "item"
 			}]
 			x: -1.5d
@@ -141,7 +141,7 @@
 			subtitle: "I don't feel so good..."
 			tasks: [{
 				id: "779ED8F6B6523280"
-				item: "avaritia:ultimate_stew"
+				item: "kubejs:ultimate_stew"
 				type: "item"
 			}]
 			x: -2.5d

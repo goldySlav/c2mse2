@@ -178,4 +178,20 @@ StartupEvents.registry('block', event => {
 		.displayName("Electric Casing")
 		.notSolid()
 		.renderType("cutout")
+
+	event.create(`compressed_crafting_table`)
+		.displayName(`Compressed Crafting Table`)
+		.hardness(1.0)
+		.resistance(1)
+		.requiresTool(false)
+        .tagBlock("mineable/axe")
+		.textureAll(`kubejs:block/compressed_crafting_table`)
+
+	event.create(`double_compressed_crafting_table`)
+		.displayName(`Double Compressed Crafting Table`)
+		.hardness(1.0)
+		.resistance(1)
+		.requiresTool(false)
+        .tagBlock("mineable/axe")
+		.textureAll(`kubejs:block/double_compressed_crafting_table`)
 });

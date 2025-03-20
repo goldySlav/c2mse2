@@ -17,7 +17,20 @@ ServerEvents.recipes((event) => {
     event.replaceInput({ id: M("personal_barrel") }, F("#barrels/wooden"), MB("obsidian_barrel"))
 	
 	//dirty netherite scrap
-	event.recipes.mekanismEnriching(M("dirty_netherite_scrap"), CR_N("netherite_fragment"))
+	event.recipes.mekanism.enriching(M("dirty_netherite_scrap"), CR_N("netherite_fragment"))
+	
+	//steel block from ingot (absent for some reason)
+	event.shapeless(M("block_steel"), [Item.of(M("ingot_steel"), 9)])
+	
+	//carbon from coke
+	customRecipes.mekanism.infusion_conversion(event, M("carbon"), 30, KJ('coke'))
+	customRecipes.mekanism.infusion_conversion(event, M("carbon"), 40, KJ('nourished_coke'))
+	customRecipes.mekanism.infusion_conversion(event, M("carbon"), 50, KJ('polished_coke'))
+	
+	//enriched carbon from coke
+	event.recipes.mekanism.enriching(Item.of(M('enriched_carbon'), 2), KJ('coke'))
+	event.recipes.mekanism.enriching(Item.of(M('enriched_carbon'), 3), KJ('nourished_coke'))
+	event.recipes.mekanism.enriching(Item.of(M('enriched_carbon'), 4), KJ('polished_coke'))
 
     //metallurgic infuser
 	removeRecipeByOutput(event, [
@@ -1404,8 +1417,8 @@ ServerEvents.recipes((event) => {
 		H: M('alloy_atomic'),
 		M: M('ultimate_control_circuit'),
 		A: M('ultimate_chemical_tank'),
-		K: AV("neutronium_ingot"),
-		L: AV("neutronium_ingot"),
+		K: KJ("neutronium_ingot"),
+		L: KJ("neutronium_ingot"),
 	})
 
 	//modification station
@@ -1426,7 +1439,7 @@ ServerEvents.recipes((event) => {
 		B: CP('emerald_4'),
 		D: M('sps_casing'),
 		E: M('ultimate_induction_cell'),
-		F: AV('neutronium_nugget'),
+		F: KJ('neutronium_nugget'),
 		G: M('hdpe_sheet'),
 		H: M('alloy_atomic'),
 		M: M('ultimate_control_circuit'),
@@ -1457,8 +1470,8 @@ ServerEvents.recipes((event) => {
 		G: M('hdpe_stick'),
 		H: F('#storage_blocks/steel'),
 		E: M('hdpe_sheet'),
-		K: AV("pileof_neutrons"),
-		L: AV("pileof_neutrons"),
+		K: KJ("pileof_neutrons"),
+		L: KJ("pileof_neutrons"),
 	})
 
 	//reactor glass
@@ -1926,7 +1939,7 @@ ServerEvents.recipes((event) => {
 		C: CP("bronze_2"),
 		D: M("alloy_infused"),
 		E: M("alloy_reinforced"),
-		F: AV("crystal_matrix_ingot"),
+		F: KJ("crystal_matrix_ingot"),
 		G: M("alloy_atomic"),
 		H: KJ("computation_matrix"),
 	})

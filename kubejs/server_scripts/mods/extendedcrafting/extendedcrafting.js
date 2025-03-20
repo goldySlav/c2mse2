@@ -7,7 +7,12 @@ ServerEvents.recipes((event) => {
 		EC("enhanced_redstone_ingot"),
 		EC("flux_star"),
 	])
+	removeRecipeByInput(event, [
+		EC("luminessence"),
+	])
 	removeRecipeByOutput(event, [
+		EC('basic_table'),
+		EC('basic_auto_table'),
 		EC('advanced_table'),
 		EC('advanced_auto_table'),
 		EC('elite_table'),
@@ -34,18 +39,37 @@ ServerEvents.recipes((event) => {
 	
 	event.recipes.tconstruct.casting_table(EC("ender_ingot"), Fluid.of(KJ("molten_ender_alloy"), 90), TCT("ingot_cast"), false, 60)
 	event.recipes.tconstruct.casting_table(EC("ender_nugget"), Fluid.of(KJ("molten_ender_alloy"), 10), TCT("nugget_cast"), false, 20)
+	//event.recipes.tconstruct.casting_basin(EC("ender_ingot_block"), Fluid.of(KJ("molten_ender_alloy"), 810)) - can't be added for now, bugged and doesn't let cast in basin w/o a cast
 	event.recipes.tconstruct.melting(Fluid.of(KJ("molten_ender_alloy"), 90), EC("ender_ingot"), 1429, 60)
 	event.recipes.tconstruct.melting(Fluid.of(KJ("molten_ender_alloy"), 10), EC("ender_nugget"), 1429, 20)
 	
 	//advanced crafting tables
+	event.shaped(EC('basic_table'), [
+		'ABA',
+		'BCB',
+		'ABA',
+	], {
+		A: CP('iron_1'),
+		B: KJ("compressed_crafting_table"),
+		C: AE2("controller"),
+	})
+	event.recipes.extendedcrafting.shaped_table(EC('basic_auto_table'), [
+		'ABA',
+		'BCB',
+		'ABA',
+	], {
+		A: CP('iron_1'),
+		B: KJ("double_compressed_crafting_table"),
+		C: EC("basic_table"),
+	})
 	event.shaped(EC('advanced_table'), [
 		'ABA',
 		'BCB',
 		'ABA',
 	], {
 		A: CP('gold_1'),
-		B: AV("compressed_crafting_table"),
-		C: AE2("controller"),
+		B: KJ("compressed_crafting_table"),
+		C: EC('basic_table'),
 	})
 	event.recipes.extendedcrafting.shaped_table(EC('advanced_auto_table'), [
 		'AAAAA',
@@ -55,7 +79,7 @@ ServerEvents.recipes((event) => {
 		'AAAAA',
 	], {
 		A: CP('gold_1'),
-		B: AV("double_compressed_crafting_table"),
+		B: KJ("double_compressed_crafting_table"),
 		C: EC("advanced_table"),
 	})
 
@@ -68,7 +92,7 @@ ServerEvents.recipes((event) => {
 		'AAAAA',
 	], {
 		A: CP('diamond_1'),
-		B: AV("compressed_crafting_table"),
+		B: KJ("compressed_crafting_table"),
 		C: EC("advanced_table"),
 	})
 	event.recipes.extendedcrafting.shaped_table(EC('elite_auto_table'), [
@@ -81,7 +105,7 @@ ServerEvents.recipes((event) => {
 		'AAAAAAA',
 	], {
 		A: CP('diamond_1'),
-		B: AV("double_compressed_crafting_table"),
+		B: KJ("double_compressed_crafting_table"),
 		C: EC("elite_table"),
 	})
 	
@@ -96,7 +120,7 @@ ServerEvents.recipes((event) => {
 		'AAAAAAA',
 	], {
 		A: CP('emerald_1'),
-		B: AV("compressed_crafting_table"),
+		B: KJ("compressed_crafting_table"),
 		C: EC("elite_table"),
 	})
 	event.recipes.extendedcrafting.shaped_table(EC('ultimate_auto_table'), [
@@ -111,7 +135,7 @@ ServerEvents.recipes((event) => {
 		'AAAAAAAAA',
 	], {
 		A: CP('emerald_1'),
-		B: AV("double_compressed_crafting_table"),
+		B: KJ("double_compressed_crafting_table"),
 		C: EC("ultimate_table"),
 	})
 	
@@ -128,7 +152,7 @@ ServerEvents.recipes((event) => {
 		'AAAAAAAAA',
 	], {
 		A: PRE('dark_matter_block'),
-		B: AV("compressed_crafting_table"),
+		B: KJ("compressed_crafting_table"),
 		C: EC("ultimate_table"),
 	})
 	event.recipes.extendedcrafting.shaped_table(EC('epic_auto_table'), [
@@ -145,7 +169,7 @@ ServerEvents.recipes((event) => {
 		'AAAAAAAAAAA',
 	], {
 		A: PRE('red_matter_block'),
-		B: AV("double_compressed_crafting_table"),
+		B: KJ("double_compressed_crafting_table"),
 		C: EC("epic_table"),
 	})
 	event.recipes.extendedcrafting.shaped_table(EC('auto_ender_crafter'), [
@@ -162,7 +186,7 @@ ServerEvents.recipes((event) => {
 		'AAAAAAAAAAA',
 	], {
 		A: F('#storage_blocks/ender_ingot'),
-		B: AV("double_compressed_crafting_table"),
+		B: KJ("double_compressed_crafting_table"),
 		C: EC("ender_crafter"),
 	})
 	event.recipes.extendedcrafting.shaped_table(EC('auto_flux_crafter'), [
@@ -179,7 +203,7 @@ ServerEvents.recipes((event) => {
 		'AAAAAAAAAAA',
 	], {
 		A: F('#storage_blocks/red_alloy'),
-		B: AV("double_compressed_crafting_table"),
+		B: KJ("double_compressed_crafting_table"),
 		C: EC("flux_crafter"),
 	})
 	

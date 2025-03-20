@@ -6,10 +6,29 @@
 	group: "051AA46D917B6FBA"
 	icon: {
 		Count: 1
-		id: "avaritia:natures_ruin"
-		tag: {
-			Damage: 0
+		ForgeCaps: {
+			Parent: {
+				energy: {
+					energy: 0
+				}
+				module_host: {
+					modules: [ ]
+					properties: {
+						mining_speed: {
+							hud: 1b
+							value: 1.0d
+						}
+					}
+					provider_id: [I;
+						1301534154
+						-1651159488
+						-2035188766
+						2126647094
+					]
+				}
+			}
 		}
+		id: "draconicevolution:chaotic_axe"
 	}
 	id: "2B976D1E1B4D9F49"
 	order_index: 5
@@ -124,32 +143,6 @@
 			}]
 			x: 0.0d
 			y: 12.0d
-		}
-		{
-			dependencies: ["79F5495ADA18AC1E"]
-			icon: {
-				Count: 1
-				id: "avaritia:natures_ruin"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "0442BFACC8EE8BFD"
-			size: 1.0d
-			tasks: [{
-				id: "7C361D8705029237"
-				item: {
-					Count: 1
-					id: "avaritia:natures_ruin"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "&eArtifact: Nature's Ruin"
-			x: 0.0d
-			y: 18.0d
 		}
 		{
 			dependencies: ["39C65371AF627005"]

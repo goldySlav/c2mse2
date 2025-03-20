@@ -96,18 +96,11 @@
 			icon: "mekanism:hdpe_rod"
 			id: "017212DC3CBF89DB"
 			size: 1.0d
-			tasks: [
-				{
-					id: "03B213E5B8AA753D"
-					item: "mekanism:hdpe_rod"
-					type: "item"
-				}
-				{
-					id: "5F3C431B5669155E"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "03B213E5B8AA753D"
+				item: "mekanism:hdpe_rod"
+				type: "item"
+			}]
 			x: 2.0d
 			y: 9.0d
 		}
@@ -117,9 +110,10 @@
 			id: "7BC675380062B93D"
 			size: 1.0d
 			tasks: [{
-				id: "652439668D26CF23"
-				title: "Done"
-				type: "checkmark"
+				icon: "mekanism:sodium_bucket"
+				id: "0B886E2BF2D757A6"
+				title: "Produce \"Sodium\""
+				type: "custom"
 			}]
 			title: "Produce \"Sodium\""
 			x: 2.0d
@@ -133,18 +127,11 @@
 			icon: "mekanism:hdpe_pellet"
 			id: "08BFCEFC347A7317"
 			size: 1.0d
-			tasks: [
-				{
-					id: "655804117619DB93"
-					item: "mekanism:hdpe_pellet"
-					type: "item"
-				}
-				{
-					id: "3FF643005F24DE1C"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "655804117619DB93"
+				item: "mekanism:hdpe_pellet"
+				type: "item"
+			}]
 			title: "Produce \"HDPE Pellet\""
 			x: 0.0d
 			y: 7.5d
@@ -158,18 +145,11 @@
 			icon: "mekanism:substrate"
 			id: "1EECEDBAACB3E37B"
 			size: 1.0d
-			tasks: [
-				{
-					id: "30E36AB6EC1C5D35"
-					item: "mekanism:substrate"
-					type: "item"
-				}
-				{
-					id: "3229A28950513E6A"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "30E36AB6EC1C5D35"
+				item: "mekanism:substrate"
+				type: "item"
+			}]
 			title: "Produce \"Substrate\""
 			x: 1.0d
 			y: 4.5d
@@ -220,18 +200,12 @@
 			icon: "mekanism:ethene_bucket"
 			id: "1876479238DF6974"
 			size: 1.0d
-			tasks: [
-				{
-					id: "6CD2001EF3494B35"
-					item: "mekanism:ethene_bucket"
-					type: "item"
-				}
-				{
-					id: "3DB1D44FB96E6E89"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				icon: "mekanism:ethene_bucket"
+				id: "5EE383A466E56290"
+				title: "Produce \"Liquid Ethylene\""
+				type: "custom"
+			}]
 			title: "Produce \"Liquid Ethylene\""
 			x: 1.0d
 			y: 6.0d
@@ -241,18 +215,11 @@
 			icon: "mekanism:pellet_polonium"
 			id: "32A4E97073F5C8F2"
 			size: 1.0d
-			tasks: [
-				{
-					id: "695537D906225C4F"
-					item: "mekanism:pellet_polonium"
-					type: "item"
-				}
-				{
-					id: "494D1DFB485D89C9"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "695537D906225C4F"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
 			x: 0.0d
 			y: 13.5d
 		}
@@ -261,30 +228,24 @@
 			icon: "mekanism:pellet_plutonium"
 			id: "479437291F003EE3"
 			size: 1.0d
-			tasks: [
-				{
-					id: "726B1DA1199DE022"
-					item: "mekanism:pellet_plutonium"
-					type: "item"
-				}
-				{
-					id: "3CEE2009985E7C61"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "726B1DA1199DE022"
+				item: "mekanism:pellet_plutonium"
+				type: "item"
+			}]
 			x: -4.0d
 			y: 9.0d
 		}
 		{
 			dependencies: ["0BD39FE5A44D53F5"]
-			icon: "ad_astra:cryo_fuel_bucket"
+			icon: "mekanism_extras:polonium_containing_solution_bucket"
 			id: "0FC30BD64CCE995B"
 			size: 1.0d
 			tasks: [{
-				id: "75497EE75727BD3C"
-				title: "Done"
-				type: "checkmark"
+				icon: "mekanism_extras:polonium_containing_solution_bucket"
+				id: "30A7A275A47D1693"
+				title: "Produce \"Polonium Gas\""
+				type: "custom"
 			}]
 			title: "Produce \"Polonium Gas\""
 			x: 1.0d
@@ -296,9 +257,10 @@
 			id: "2AB5BEDC0843317D"
 			size: 1.0d
 			tasks: [{
-				id: "39E285CFFF8FA111"
-				title: "Done"
-				type: "checkmark"
+				icon: "kubejs:number_5_bucket"
+				id: "45AFB9EE6370D724"
+				title: "Produce \"Plutonium Gas\""
+				type: "custom"
 			}]
 			title: "Produce \"Plutonium Gas\""
 			x: -4.0d
@@ -312,23 +274,11 @@
 			icon: "mekanism:reprocessed_fissile_fragment"
 			id: "7F6C31C4697B1690"
 			size: 1.0d
-			tasks: [
-				{
-					id: "7E22AF0983950183"
-					item: "mekanism:combiner"
-					type: "item"
-				}
-				{
-					id: "06A68B843EB4330B"
-					item: "mekanism:reprocessed_fissile_fragment"
-					type: "item"
-				}
-				{
-					id: "5C5CBAA05027FACC"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "06A68B843EB4330B"
+				item: "mekanism:reprocessed_fissile_fragment"
+				type: "item"
+			}]
 			title: "Produce \"Irradiated Pellet\""
 			x: 0.0d
 			y: 15.0d
@@ -338,23 +288,12 @@
 			icon: "ad_astra:fuel_bucket"
 			id: "45EA4202DCAFE16A"
 			size: 1.0d
-			tasks: [
-				{
-					id: "3324571DA19FE59F"
-					item: "mekanism:rotary_condensentrator"
-					type: "item"
-				}
-				{
-					id: "5809A8F77C383874"
-					item: "ad_astra:fuel_bucket"
-					type: "item"
-				}
-				{
-					id: "57B309F785A2D10A"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				icon: "ad_astra:fuel_bucket"
+				id: "067A4B09D21FF720"
+				title: "Produce \"Engine Fuel\""
+				type: "custom"
+			}]
 			title: "Produce \"Engine Fuel\""
 			x: 0.0d
 			y: 18.0d
@@ -365,21 +304,15 @@
 				"31ADC17E4E2CBB30"
 				"0239D66416EC23E3"
 			]
-			icon: "enderio:rocket_fuel_bucket"
+			icon: "ad_astra:fuel_bucket"
 			id: "57F7FAE4053F3EBB"
 			size: 1.0d
-			tasks: [
-				{
-					id: "6355EC21BB3D4BAA"
-					item: "mekanism:pressurized_reaction_chamber"
-					type: "item"
-				}
-				{
-					id: "11D87B0ADB85B2C7"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				icon: "ad_astra:fuel_bucket"
+				id: "2F26286FCC885C6E"
+				title: "Produce \"Gaseous Fuel\""
+				type: "custom"
+			}]
 			title: "Produce \"Gaseous Fuel\""
 			x: 0.0d
 			y: 16.5d
@@ -390,9 +323,10 @@
 			id: "2B748A644A8EDAFC"
 			size: 1.0d
 			tasks: [{
-				id: "3D4074E4CB08D9CD"
-				title: "Done"
-				type: "checkmark"
+				icon: "ad_astra:oil_bucket"
+				id: "70EF78829BA2F066"
+				title: "Produce \"Gaseous Oil\""
+				type: "custom"
 			}]
 			title: "Produce \"Gaseous Oil\""
 			x: -5.5d
@@ -420,18 +354,12 @@
 			icon: "mekanismgenerators:fusion_fuel_bucket"
 			id: "31ADC17E4E2CBB30"
 			size: 1.0d
-			tasks: [
-				{
-					id: "287E5ABF817BE70D"
-					item: "mekanism:chemical_infuser"
-					type: "item"
-				}
-				{
-					id: "0914AB718196961F"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				icon: "mekanismgenerators:fusion_fuel_bucket"
+				id: "7915236F53138E9A"
+				title: "Produce \"D-T Fuel\""
+				type: "custom"
+			}]
 			title: "Produce \"D-T Fuel\""
 			x: 3.0d
 			y: 13.5d
@@ -441,18 +369,12 @@
 			icon: "mekanismgenerators:deuterium_bucket"
 			id: "6191E13C0C08BF23"
 			size: 1.0d
-			tasks: [
-				{
-					id: "329897C23306C7BC"
-					item: "mekanism:electrolytic_separator"
-					type: "item"
-				}
-				{
-					id: "090AC837FDEF7044"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				icon: "mekanismgenerators:deuterium_bucket"
+				id: "601204EF00EBD673"
+				title: "Produce \"Deuterium\""
+				type: "custom"
+			}]
 			title: "Produce \"Deuterium\""
 			x: 5.5d
 			y: 9.0d
@@ -488,18 +410,11 @@
 			icon: "mekanism:lithium_bucket"
 			id: "13F36467C09AFE1A"
 			size: 1.0d
-			tasks: [
-				{
-					id: "7AB4548C9DC018B0"
-					item: "mekanism:rotary_condensentrator"
-					type: "item"
-				}
-				{
-					id: "06AB7CD4287334F0"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "25CA09E37061E9F9"
+				title: "Done"
+				type: "checkmark"
+			}]
 			title: "Produce \"Lithium\""
 			x: 4.0d
 			y: 7.5d
@@ -513,9 +428,10 @@
 			id: "49216604D32F478B"
 			size: 1.0d
 			tasks: [{
-				id: "08FBCFE1CAC6C381"
-				title: "Done"
-				type: "checkmark"
+				icon: "mekanismgenerators:tritium_bucket"
+				id: "7A693D431F13C7B3"
+				title: "Produce \"Tritium\""
+				type: "custom"
 			}]
 			title: "Produce \"Tritium\""
 			x: 3.0d
@@ -523,31 +439,19 @@
 		}
 		{
 			dependencies: ["04692B30B6F5AFCD"]
+			description: [
+				"To produce Heavy Water you need to use &3Electric Pump&r with &5Filter Upgrade&r."
+				"Just pump water with it, and it will filter heavy water molecules out of regular water."
+			]
 			icon: "mekanism:heavy_water_bucket"
 			id: "38B43095B621C52F"
 			size: 1.0d
-			tasks: [
-				{
-					id: "1514EBEAE6653E80"
-					item: "mekanism:electric_pump"
-					type: "item"
-				}
-				{
-					id: "1FF2F619DF6806B2"
-					item: "mekanism:upgrade_filter"
-					type: "item"
-				}
-				{
-					id: "56B70043268ACAA4"
-					item: "mekanism:heavy_water_bucket"
-					type: "item"
-				}
-				{
-					id: "032E2D6A5CE9E4D3"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				icon: "mekanism:heavy_water_bucket"
+				id: "487C0FDEACB9FF14"
+				title: "Produce \"Heavy Water\""
+				type: "custom"
+			}]
 			title: "Produce \"Heavy Water\""
 			x: 5.5d
 			y: 1.5d
@@ -560,23 +464,12 @@
 			icon: "ad_astra:oil_bucket"
 			id: "0239D66416EC23E3"
 			size: 1.0d
-			tasks: [
-				{
-					id: "7A435A03DA4F3F18"
-					item: "mekanism:rotary_condensentrator"
-					type: "item"
-				}
-				{
-					id: "6309D15F12AC78A9"
-					item: "ad_astra:oil_bucket"
-					type: "item"
-				}
-				{
-					id: "2755565DD4B4C0F7"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				icon: "ad_astra:oil_bucket"
+				id: "4A38F7E6144862B4"
+				title: "Produce \"Oil\""
+				type: "custom"
+			}]
 			title: "Produce \"Oil\""
 			x: -5.5d
 			y: 9.0d

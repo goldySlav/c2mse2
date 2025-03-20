@@ -1,35 +1,6 @@
 // priority: 3900
 
 ItemEvents.modification(event => {
-	event.modify('avaritia:cosmic_meatballs', item => {
-		item.foodProperties = food => {
-			food.hunger(400)
-			food.saturation(0.5)
-			food.meat(true)
-			food.alwaysEdible(false)
-			food.fastToEat(false)
-			food.effect('speed', 600, 0, 1)
-			food.effect('regeneration', 600, 1, 1)
-			food.effect('resistance', 600, 1, 1)
-			food.effect('fire_resistance', 600, 1, 1)
-			food.effect('absorption', 600, 3, 1)
-		}
-	})
-
-	event.modify('avaritia:ultimate_stew', item => {
-		item.foodProperties = food => {
-			food.hunger(800)
-			food.saturation(0.75)
-			food.meat(true)
-			food.alwaysEdible(false)
-			food.fastToEat(false)
-			food.effect('speed', 600, 1, 1)
-			food.effect('regeneration', 600, 2, 1)
-			food.effect('resistance', 600, 1, 2)
-			food.effect('fire_resistance', 600, 2, 1)
-			food.effect('absorption', 600, 3, 1)
-		}
-	})
 	event.modify('mekanism:yellow_cake_uranium', item => {
 		item.foodProperties = food => {
 			food.hunger(-100)

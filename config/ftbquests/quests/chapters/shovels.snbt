@@ -6,10 +6,29 @@
 	group: "051AA46D917B6FBA"
 	icon: {
 		Count: 1
-		id: "avaritia:planet_eater"
-		tag: {
-			Damage: 0
+		ForgeCaps: {
+			Parent: {
+				energy: {
+					energy: 0
+				}
+				module_host: {
+					modules: [ ]
+					properties: {
+						mining_speed: {
+							hud: 1b
+							value: 1.0d
+						}
+					}
+					provider_id: [I;
+						-797917977
+						639650285
+						-1922314238
+						695145949
+					]
+				}
+			}
 		}
+		id: "draconicevolution:chaotic_shovel"
 	}
 	id: "78DBDF892ABB6816"
 	order_index: 6
@@ -85,32 +104,6 @@
 			}]
 			x: 0.0d
 			y: 9.0d
-		}
-		{
-			dependencies: ["574E1D1E01095AA5"]
-			icon: {
-				Count: 1
-				id: "avaritia:planet_eater"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "22F9328F1EED8926"
-			size: 1.0d
-			tasks: [{
-				id: "6C2A8D62D7E3F035"
-				item: {
-					Count: 1
-					id: "avaritia:planet_eater"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "&eArtifact: Planet Eater"
-			x: 0.0d
-			y: 15.0d
 		}
 		{
 			dependencies: ["2BE02AB830DA6188"]

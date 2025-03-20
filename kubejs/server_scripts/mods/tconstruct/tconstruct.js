@@ -21,6 +21,11 @@ ServerEvents.recipes((event) => {
 	
 	removeRecipeByID(event, [
         /tconstruct:.*wire_gold_cast/,
+		"tconstruct:common/materials/steel_block_from_ingots",
+		"tconstruct:common/materials/steel_ingot_from_block",
+		"tconstruct:common/materials/steel_ingot_from_nuggets",
+		"tconstruct:common/materials/steel_nugget_from_ingot",
+		"tconstruct:smeltery/alloys/molten_pewter",
 	])
 	
 	reduntandCasts.forEach(cast => {
@@ -131,9 +136,6 @@ ServerEvents.recipes((event) => {
 		})
 	})
 	
-	//blazing blood from blaze powder
-	event.recipes.tconstruct.melting(Fluid.of(TCT("blazing_blood"), 250), MC("blaze_powder"), 1000, 40)
-	
 	//wires
 	const wiresCRA = ["copper", "iron", "gold"]
 	wiresCRA.forEach(wire => {
@@ -145,4 +147,13 @@ ServerEvents.recipes((event) => {
 	event.shapeless(TCT("sky_slime_ball"), [PRE('philosophers_stone'), TCT("ichor_slime_ball")])
 	event.shapeless(TCT("ender_slime_ball"), [PRE('philosophers_stone'), TCT("sky_slime_ball")])
 	event.shapeless(MC("slime_ball"), [PRE('philosophers_stone'), TCT("ender_slime_ball")])
+	
+	//create compat alloying
+	event.recipes.create.mixing(Fluid.of(TCT("molten_amethyst_bronze"), 9), [Fluid.of(TCT("molten_copper"), 9), Fluid.of(TCT("molten_amethyst"), 10)]).heated()
+	event.recipes.create.mixing(Fluid.of(TCT("molten_brass"), 20), [Fluid.of(TCT("molten_copper"), 10), Fluid.of(TCT("molten_zinc"), 10)]).heated()
+	event.recipes.create.mixing(Fluid.of(TCT("molten_bronze"), 40), [Fluid.of(TCT("molten_copper"), 30), Fluid.of(TCT("molten_tin"), 10)]).heated()
+	event.recipes.create.mixing(Fluid.of(TCT("molten_manyullyn"), 40), [Fluid.of(TCT("molten_cobalt"), 30), Fluid.of(TCT("molten_debris"), 10)]).heated()
+	event.recipes.create.mixing(Fluid.of(TCT("molten_netherite"), 10), [Fluid.of(TCT("molten_debris"), 10), Fluid.of(TCT("molten_gold"), 10)]).heated()
+	event.recipes.create.mixing([Fluid.of(MC("water"), 10), Fluid.of(TCT("molten_obsidian"), 10)], [Fluid.of(MC("water"), 10), Fluid.of(MC("lava"), 10)]).heated()
+	event.recipes.create.mixing(Fluid.of(TCT("molten_rose_gold"), 20), [Fluid.of(TCT("molten_copper"), 10), Fluid.of(TCT("molten_gold"), 10)]).heated()
 })

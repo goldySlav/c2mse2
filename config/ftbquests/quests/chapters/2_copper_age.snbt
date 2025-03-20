@@ -191,7 +191,7 @@
 		{
 			dependencies: ["4FCC832C0601D256"]
 			description: [
-				"Made by presing &6Copper Ingots&r with Mechanical Press."
+				"Made by pressing Copper Ingots with &6Mechanical Press&r."
 				""
 				"&6JEI&r?"
 			]
@@ -216,7 +216,7 @@
 		{
 			dependencies: ["1B41E5301611D094"]
 			description: [
-				"You can make this one by using the &6Rolling Mill&r on our &6Rods&r once again."
+				"You can make those in pairs by using the &6Rolling Mill&r on our &6Sheets&r."
 				""
 				"Please note, later you will be able to use Tinkers Construct's casting of a Molten Copper as well!"
 			]

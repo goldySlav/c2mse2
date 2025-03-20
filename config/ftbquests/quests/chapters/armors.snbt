@@ -6,9 +6,14 @@
 	group: "051AA46D917B6FBA"
 	icon: {
 		Count: 1
-		id: "avaritia:infinity_armor_chestplate"
+		id: "mekanism:mekasuit_bodyarmor"
 		tag: {
-			Damage: 0
+			mekData: {
+				EnergyContainers: [{
+					Container: 0b
+					stored: "16000000"
+				}]
+			}
 		}
 	}
 	id: "33423C3BBD465222"
@@ -84,32 +89,6 @@
 			}]
 			x: 0.0d
 			y: 49.0d
-		}
-		{
-			dependencies: ["6E318FCC81913D49"]
-			icon: {
-				Count: 1
-				id: "avaritia:infinity_armor_chestplate"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "7AC8596A3C9D9279"
-			size: 1.0d
-			tasks: [{
-				id: "46590F78681DBFD4"
-				item: {
-					Count: 1
-					id: "avaritia:infinity_armor_chestplate"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "&eArtifact: Infinity Armor"
-			x: 0.0d
-			y: 58.0d
 		}
 		{
 			dependencies: ["131DF3C4AD872512"]
@@ -257,6 +236,7 @@
 		}
 		{
 			dependencies: ["2CE5C7F94CBDBF92"]
+			disable_toast: true
 			id: "6E318FCC81913D49"
 			tasks: [{
 				id: "6E1607A0E8492C84"
@@ -283,6 +263,101 @@
 			}]
 			x: 0.0d
 			y: 55.0d
+		}
+		{
+			dependencies: ["6E318FCC81913D49"]
+			disable_toast: true
+			id: "4A4CC2D2C3DA9288"
+			tasks: [{
+				id: "72F90DB0F6767CF0"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: { }
+								provider_id: [I;
+									-318813381
+									1898138693
+									-1930421088
+									1689568815
+								]
+							}
+						}
+					}
+					id: "draconicevolution:wyvern_chestpiece"
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 56.5d
+		}
+		{
+			dependencies: ["4A4CC2D2C3DA9288"]
+			disable_toast: true
+			id: "0E34974F96E073AD"
+			tasks: [{
+				id: "3DD048AA7DD32E57"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: { }
+								provider_id: [I;
+									-1834747816
+									909855573
+									-1685220097
+									-1211954841
+								]
+							}
+						}
+					}
+					id: "draconicevolution:draconic_chestpiece"
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 56.5d
+		}
+		{
+			dependencies: ["0E34974F96E073AD"]
+			id: "0993F2544B28F10B"
+			tasks: [{
+				id: "785A419984123D3A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: { }
+								provider_id: [I;
+									-419220070
+									1070220078
+									-1247676289
+									154234186
+								]
+							}
+						}
+					}
+					id: "draconicevolution:chaotic_chestpiece"
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 56.5d
 		}
 	]
 	title: "Armors"

@@ -258,7 +258,7 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["2D760C826C0A76BE"]
+			dependencies: ["0EBFD7B345796972"]
 			icon: "mekanism:enriched_iron"
 			id: "39CA6A0FADF91A70"
 			tasks: [
@@ -274,7 +274,7 @@
 				}
 			]
 			x: 2.0d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["7B21ED0F5A3F7445"]
@@ -344,6 +344,19 @@
 			}]
 			x: 0.0d
 			y: -7.5d
+		}
+		{
+			dependencies: ["2D760C826C0A76BE"]
+			description: ["Put a coal into &6Metallurgic Infuser&r to transform it into &0Carbon&r."]
+			id: "0EBFD7B345796972"
+			tasks: [{
+				icon: "tconstruct:molten_obsidian_bucket"
+				id: "41523167F224E4D0"
+				title: "Produce \"Carbon\""
+				type: "custom"
+			}]
+			x: 2.0d
+			y: -3.5d
 		}
 	]
 	title: "10. Electric Age"
