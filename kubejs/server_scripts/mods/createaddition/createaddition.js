@@ -86,7 +86,9 @@ ServerEvents.recipes((event) => {
 	
 	//rods compat TCT
 	const rods = ["copper", "gold", "brass"]
-	rods.forEach(rod => {
+	const temps = [500, 700, 605]
+	rods.forEach((rod, i) => {
 		event.recipes.tconstruct.casting_table(CR_A(`${rod}_rod`), Fluid.of(TCT(`molten_${rod}`), 45), TCT(`rod_cast`), false, 40)
+		event.recipes.tconstruct.melting(Fluid.of(TCT(`molten_${rod}`), 45), CR_A(`${rod}_rod`), temps[i], 60)
 	})
 })
