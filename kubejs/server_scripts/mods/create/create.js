@@ -332,5 +332,5 @@ ServerEvents.recipes((event) => {
 	item_vault_based(CR("redstone_requester"), CR("stock_link"), CR("crafting/logistics/redstone_requester"))
 	
 	//cardboard box from create cardboard
-	event.shapeless(CR("cardboard"), [M("cardboard_box")])
+	event.shapeless(Item.of(CR("cardboard"), 2), [M("cardboard_box")])
 })

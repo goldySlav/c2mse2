@@ -26,11 +26,21 @@ ServerEvents.recipes((event) => {
 	
 	//enriched carbon from coke
 	event.recipes.mekanism.enriching(Item.of(M('enriched_carbon'), 2), KJ('coke'))
-	event.recipes.mekanism.enriching(Item.of(M('enriched_carbon'), 3), KJ('nourished_coke'))
-	event.recipes.mekanism.enriching(Item.of(M('enriched_carbon'), 4), KJ('polished_coke'))
+	event.recipes.mekanism.enriching(Item.of(M('enriched_carbon'), 3), KJ('polished_coke'))
 	
 	//cardboard box from create cardboard
-	event.shapeless(M("cardboard_box"), [CR("cardboard")])
+	event.shaped(M("cardboard_box"), [
+		'ABA',
+	], {
+		A: CR("cardboard"),
+		B: MC("slime_ball"),
+	})
+	event.shaped(M("cardboard_box"), [
+		'ABA',
+	], {
+		A: CR("cardboard"),
+		B: CR("super_glue"),
+	}).damageIngredient(CR("super_glue"))
 
     //metallurgic infuser
 	removeRecipeByOutput(event, [
