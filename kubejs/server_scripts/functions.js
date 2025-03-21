@@ -98,6 +98,7 @@ const ES = (id, x) => MOD("enderstorage", id, x)
 const ENT = (id, x) => MOD("entangled", id, x)
 const TCT = (id, x) => MOD("tconstruct", id, x)
 const LB = (id, x) => MOD("laserbridges", id, x)
+const MBCK = (id, x) => MOD("morebuckets", id, x)
 
 
 const processingTimesDefault = {
