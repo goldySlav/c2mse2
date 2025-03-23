@@ -587,4 +587,19 @@ ServerEvents.recipes((event) => {
 	
 	//space painting
 	event.shapeless(AA("space_painting"), [MC("painting"), AE2("sky_dust")])
+	
+	//rods compat CR_A
+	const rods = ["steel"]
+	rods.forEach(rod => {
+		event.custom({
+			type: CR_A("rolling"),
+			input: {
+				tag: F("ingots/steel")
+			},
+			result: {
+				item: AA(`${rod}_rod`),
+				count: 2
+			},
+		})
+	})
 })
