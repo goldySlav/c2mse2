@@ -784,6 +784,7 @@ ServerEvents.recipes((event) => {
 	//radiant sheet
 	event.recipes.create.pressing(KJ(`radiant_sheet`), CR("refined_radiance"))
 	customRecipes.ad_astra.compressing(event, KJ(`radiant_sheet`), CR("refined_radiance"))
+	event.recipes.mekanism.sawing(CR("refined_radiance"), Item.of(KJ("radiant_sheet"), 2))
 	
 	//radiant coil
 	event.recipes.create.mechanical_crafting(KJ("radiant_coil"), "A", { A: KJ('radiant_sheet') })

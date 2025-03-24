@@ -79,9 +79,15 @@ ServerEvents.recipes((event) => {
 	})
 	
 	//sheets compat AA
-	const sheets = ["zinc"]
-	sheets.forEach(sheet => {
+	const sheetsAA = ["zinc"]
+	sheetsAA.forEach(sheet => {
 		customRecipes.ad_astra.compressing(event, CR_A(`${sheet}_sheet`), F(`#ingots/${sheet}`))
+	})
+	
+	//sheets compat Mekanism
+	const sheetsM = ["zinc"]
+	sheetsM.forEach(sheet => {
+		event.recipes.mekanism.sawing(F(`#ingots/${sheet}`), Item.of(CR_A(`${sheet}_sheet`), 2))
 	})
 	
 	//rods compat TCT

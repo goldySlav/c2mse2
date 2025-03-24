@@ -297,11 +297,18 @@ ServerEvents.recipes((event) => {
 	event.recipes.create.milling([Item.of(CR('wheat_flour'), 2)], F('#flour_plants')).processingTime(processingTimesDefault.milling)
 	
 	//sheets compat AA
-	const sheets = ["iron", "brass", "copper"]
-	sheets.forEach(sheet => {
+	const sheetsAA = ["iron", "brass", "copper"]
+	sheetsAA.forEach(sheet => {
 		customRecipes.ad_astra.compressing(event, CR(`${sheet}_sheet`), F(`#ingots/${sheet}`))
 	})
 	customRecipes.ad_astra.compressing(event, CR(`golden_sheet`), F(`#ingots/gold`))
+	
+	//sheets compat Mekanism
+	const sheetsM = ["iron", "brass", "copper"]
+	sheetsM.forEach(sheet => {
+		event.recipes.mekanism.sawing(F(`#ingots/${sheet}`), Item.of(CR(`${sheet}_sheet`), 2))
+	})
+	event.recipes.mekanism.sawing(F('#ingots/gold'), Item.of(CR("golden_sheet"), 2))
 	
 	//blaze burner from head
 	event.shaped(CR("blaze_burner"), [

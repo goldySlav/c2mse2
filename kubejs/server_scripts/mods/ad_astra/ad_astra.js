@@ -92,6 +92,12 @@ ServerEvents.recipes((event) => {
 		customRecipes.ad_astra.compressing(event, AA(`${sheet}_plate`), F(`#ingots/${sheet}`))
 	})
 	
+	//sheets compat Mekanism
+	const sheetsM = ["steel", "ostrum", "calorite", "desh"]
+	sheetsM.forEach(sheet => {
+		event.recipes.mekanism.sawing(F(`#ingots/${sheet}`), Item.of(AA(`${sheet}_plate`), 2))
+	})
+	
 	//oxygen gear
 	removeRecipeByOutput(event, [
 		AA("oxygen_gear"),
