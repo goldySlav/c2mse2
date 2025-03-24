@@ -21,8 +21,7 @@ ServerEvents.recipes((event) => {
 	
 	//carbon from coke
 	customRecipes.mekanism.infusion_conversion(event, M("carbon"), 30, KJ('coke'))
-	customRecipes.mekanism.infusion_conversion(event, M("carbon"), 40, KJ('nourished_coke'))
-	customRecipes.mekanism.infusion_conversion(event, M("carbon"), 50, KJ('polished_coke'))
+	customRecipes.mekanism.infusion_conversion(event, M("carbon"), 40, KJ('polished_coke'))
 	
 	//enriched carbon from coke
 	event.recipes.mekanism.enriching(Item.of(M('enriched_carbon'), 2), KJ('coke'))
