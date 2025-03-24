@@ -25,6 +25,7 @@ ServerEvents.recipes(event => {
 	event.remove({ id: CR("milling/granite") })
 	event.remove({ id: CR("crushing/granite") })
 	event.recipes.createMilling([KJ("crushed_granite")], MC("granite")).processingTime(processingTimesDefault.milling)
+	event.recipes.mekanism.crushing(KJ("crushed_granite"), MC("granite"))
 
 	event.recipes.createSplashing([
 		Item.of(CR("copper_nugget")).withChance(splashPrimaryChance),
@@ -38,6 +39,7 @@ ServerEvents.recipes(event => {
 	event.remove({ id: CR("crushing/diorite") })
 	event.remove({ id: CR("crushing/diorite_recycling") })
 	event.recipes.createMilling([KJ("crushed_diorite")], MC("diorite")).processingTime(processingTimesDefault.milling)
+	event.recipes.mekanism.crushing(KJ("crushed_diorite"), MC("diorite"))
 
 	event.recipes.createSplashing([
 		Item.of(CR("zinc_nugget")).withChance(splashPrimaryChance),
@@ -51,6 +53,7 @@ ServerEvents.recipes(event => {
 	event.remove({ id: CR("crushing/andesite") })
 	event.remove({ id: CR("crushing/andesite_recycling") })
 	event.recipes.createMilling([KJ("crushed_andesite")], MC("andesite")).processingTime(processingTimesDefault.milling)
+	event.recipes.mekanism.crushing(KJ("crushed_andesite"), MC("andesite"))
 
 	event.recipes.createSplashing([
 		Item.of(TCT("cobalt_nugget")).withChance(splashPrimaryChance),
@@ -61,6 +64,7 @@ ServerEvents.recipes(event => {
 	event.remove({ id: CR("milling/netherrack") })
 	event.remove({ id: CR("crushing/netherrack") })
 	event.recipes.createMilling([EXD("crushed_netherrack")], MC("netherrack")).processingTime(processingTimesDefault.milling)
+	event.recipes.mekanism.crushing(EXD("crushed_netherrack"), MC("netherrack"))
 	
 	event.remove({ id: CR("splashing/red_sand") })
 	event.recipes.createSplashing([
@@ -70,13 +74,17 @@ ServerEvents.recipes(event => {
 
     //soulSoilSand
 	event.recipes.createMilling([MC("soul_sand")], MC("soul_soil")).processingTime(processingTimesDefault.milling)
+	//mekanism recipe is there by default
 
     //endstone
 	event.recipes.createMilling([EXD("crushed_end_stone")], MC("end_stone")).processingTime(processingTimesDefault.milling)
+	event.recipes.mekanism.crushing(EXD("crushed_end_stone"), MC("end_stone"))
 
     //endstone
 	event.recipes.createMilling([EXD("crushed_deepslate")], MC("deepslate")).processingTime(processingTimesDefault.milling)
+	event.recipes.mekanism.crushing(EXD("crushed_deepslate"), MC("deepslate"))
 
     //blackstone
 	event.recipes.createMilling([EXD("crushed_blackstone")], MC("blackstone")).processingTime(processingTimesDefault.milling)
+	event.recipes.mekanism.crushing(EXD("crushed_blackstone"), MC("blackstone"))
 })
