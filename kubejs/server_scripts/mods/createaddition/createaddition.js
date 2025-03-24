@@ -90,6 +90,12 @@ ServerEvents.recipes((event) => {
 		event.recipes.mekanism.sawing(F(`#ingots/${sheet}`), Item.of(CR_A(`${sheet}_sheet`), 1))
 	})
 	
+	//wires compat Mekanism
+	const wiresM = ["copper", "iron", "gold"]
+	wiresM.forEach(wire => {
+		event.recipes.mekanism.sawing(F(`#plates/${wire}`), Item.of(CR_A(`${wire}_wire`), 2))
+	})
+	
 	//rods compat TCT
 	const rods = ["copper", "gold", "brass"]
 	const temps = [500, 700, 605]
