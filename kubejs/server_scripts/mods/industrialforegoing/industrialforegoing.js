@@ -76,6 +76,9 @@ ServerEvents.recipes((event) => {
 
 	  /industrialforegoing:conveyor/,
 
+	  IF("dissolution_chamber/speed_addon_2"),
+	  IF("dissolution_chamber/efficiency_addon_2"),
+	  IF("dissolution_chamber/processing_addon_2"),
   ])
   
   
