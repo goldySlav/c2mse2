@@ -581,19 +581,6 @@
 			y: 4.5d
 		}
 		{
-			description: ["Ores mined drop their smelted item instead."]
-			disable_toast: true
-			id: "6C02419FB9351160"
-			subtitle: "Ore autosmelt"
-			tasks: [{
-				id: "6D0602538B2DD861"
-				item: "artifacts:pickaxe_heater"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 4.5d
-		}
-		{
 			description: ["While &6Sprinting&r, water surface is solid for you."]
 			disable_toast: true
 			id: "75873D46BB7E16F2"
@@ -603,7 +590,7 @@
 				item: "artifacts:aqua_dashers"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 1.5d
 			y: 4.5d
 		}
 		{
@@ -616,8 +603,8 @@
 				item: "artifacts:bunny_hoppers"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 6.0d
+			x: 3.0d
+			y: 4.5d
 		}
 		{
 			description: ["Creepers think these cats are real and they're too afraid to come closer."]
@@ -629,7 +616,7 @@
 				item: "artifacts:kitty_slippers"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.5d
 			y: 6.0d
 		}
 		{
@@ -642,7 +629,7 @@
 				item: "artifacts:running_shoes"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -6.0d
 			y: 6.0d
 		}
 		{
@@ -653,7 +640,7 @@
 				item: "artifacts:snowshoes"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.5d
 			y: 6.0d
 		}
 		{
@@ -666,7 +653,7 @@
 				item: "artifacts:steadfast_spikes"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.0d
 			y: 6.0d
 		}
 		{
@@ -677,7 +664,7 @@
 				item: "artifacts:flippers"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.5d
 			y: 6.0d
 		}
 		{
@@ -690,7 +677,7 @@
 				item: "artifacts:rooted_boots"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 0.0d
 			y: 6.0d
 		}
 		{
@@ -703,7 +690,7 @@
 				item: "artifacts:whoopee_cushion"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 1.5d
 			y: 6.0d
 		}
 		{
@@ -714,8 +701,8 @@
 				item: "artifacts:thorn_pendant"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 7.5d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
 			description: ["Good old Elytra we all know and love!"]
@@ -733,7 +720,7 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.5d
 			y: 7.5d
 		}
 		{
@@ -752,7 +739,7 @@
 				}
 				type: "item"
 			}]
-			x: -4.5d
+			x: -6.0d
 			y: 7.5d
 		}
 		{
@@ -778,7 +765,7 @@
 				type: "item"
 			}]
 			title: "&eKlein Star Omega&r"
-			x: -3.0d
+			x: -4.5d
 			y: 7.5d
 		}
 		{
@@ -804,7 +791,7 @@
 				type: "item"
 			}]
 			title: "&1Magnum Star Omega&r"
-			x: -1.5d
+			x: -3.0d
 			y: 7.5d
 		}
 		{
@@ -832,7 +819,7 @@
 				type: "item"
 			}]
 			title: "&4Colossal Star Omega&r"
-			x: 0.0d
+			x: -1.5d
 			y: 7.5d
 		}
 		{
@@ -861,7 +848,7 @@
 				type: "item"
 			}]
 			title: "&2Gargantuan Star Omega&r"
-			x: 1.5d
+			x: 0.0d
 			y: 7.5d
 		}
 		{
@@ -876,7 +863,7 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
+			x: 1.5d
 			y: 7.5d
 		}
 		{
@@ -891,8 +878,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: 9.0d
+			x: 3.0d
+			y: 7.5d
 		}
 		{
 			description: [
@@ -912,7 +899,7 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
+			x: -4.5d
 			y: 9.0d
 		}
 		{
@@ -923,7 +910,7 @@
 				item: "draconicevolution:advanced_magnet"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -6.0d
 			y: 9.0d
 		}
 		{
@@ -976,7 +963,7 @@
 				type: "item"
 			}]
 			title: "&5Wyvern Capacitor"
-			x: -1.5d
+			x: -3.0d
 			y: 9.0d
 		}
 		{
@@ -1029,7 +1016,7 @@
 				type: "item"
 			}]
 			title: "&6Draconic Capacitor"
-			x: 0.0d
+			x: -1.5d
 			y: 9.0d
 		}
 		{
@@ -1082,7 +1069,7 @@
 				type: "item"
 			}]
 			title: "&0Chaotic Capacitor"
-			x: 1.5d
+			x: 0.0d
 			y: 9.0d
 		}
 		{
@@ -1093,7 +1080,7 @@
 				item: "draconicevolution:magnet"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -7.5d
 			y: 9.0d
 		}
 		{
@@ -1130,7 +1117,7 @@
 				type: "item"
 			}]
 			title: "&5Wyvern Chestpiece"
-			x: 3.0d
+			x: 1.5d
 			y: 9.0d
 		}
 		{
@@ -1167,8 +1154,8 @@
 				type: "item"
 			}]
 			title: "&6Draconic Chestpiece"
-			x: -7.5d
-			y: 10.5d
+			x: 3.0d
+			y: 9.0d
 		}
 		{
 			description: [
@@ -1204,7 +1191,7 @@
 				type: "item"
 			}]
 			title: "&0Chaotic Chestpiece"
-			x: -6.0d
+			x: 3.0d
 			y: 10.5d
 		}
 	]
