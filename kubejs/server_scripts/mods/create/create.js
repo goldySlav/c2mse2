@@ -306,9 +306,9 @@ ServerEvents.recipes((event) => {
 	//sheets compat Mekanism
 	const sheetsM = ["iron", "brass", "copper"]
 	sheetsM.forEach(sheet => {
-		event.recipes.mekanism.sawing(F(`#ingots/${sheet}`), Item.of(CR(`${sheet}_sheet`), 2))
+		event.recipes.mekanism.sawing(F(`#ingots/${sheet}`), Item.of(CR(`${sheet}_sheet`), 1))
 	})
-	event.recipes.mekanism.sawing(F('#ingots/gold'), Item.of(CR("golden_sheet"), 2))
+	event.recipes.mekanism.sawing(F('#ingots/gold'), Item.of(CR("golden_sheet"), 1))
 	
 	//blaze burner from head
 	event.shaped(CR("blaze_burner"), [

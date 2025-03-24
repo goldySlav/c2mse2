@@ -95,7 +95,7 @@ ServerEvents.recipes((event) => {
 	//sheets compat Mekanism
 	const sheetsM = ["steel", "ostrum", "calorite", "desh"]
 	sheetsM.forEach(sheet => {
-		event.recipes.mekanism.sawing(F(`#ingots/${sheet}`), Item.of(AA(`${sheet}_plate`), 2))
+		event.recipes.mekanism.sawing(F(`#ingots/${sheet}`), Item.of(AA(`${sheet}_plate`), 1))
 	})
 	
 	//oxygen gear

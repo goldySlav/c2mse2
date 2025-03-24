@@ -87,7 +87,7 @@ ServerEvents.recipes((event) => {
 	//sheets compat Mekanism
 	const sheetsM = ["zinc"]
 	sheetsM.forEach(sheet => {
-		event.recipes.mekanism.sawing(F(`#ingots/${sheet}`), Item.of(CR_A(`${sheet}_sheet`), 2))
+		event.recipes.mekanism.sawing(F(`#ingots/${sheet}`), Item.of(CR_A(`${sheet}_sheet`), 1))
 	})
 	
 	//rods compat TCT
