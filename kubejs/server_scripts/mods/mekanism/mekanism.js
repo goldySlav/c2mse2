@@ -19,18 +19,27 @@ ServerEvents.recipes((event) => {
 	//dirty netherite scrap
 	event.recipes.mekanism.enriching(M("dirty_netherite_scrap"), CR_N("netherite_fragment"))
 	
-	//steel block from ingot (absent for some reason)
-	event.shapeless(M("block_steel"), [Item.of(M("ingot_steel"), 9)])
-	
 	//carbon from coke
 	customRecipes.mekanism.infusion_conversion(event, M("carbon"), 30, KJ('coke'))
-	customRecipes.mekanism.infusion_conversion(event, M("carbon"), 40, KJ('nourished_coke'))
-	customRecipes.mekanism.infusion_conversion(event, M("carbon"), 50, KJ('polished_coke'))
+	customRecipes.mekanism.infusion_conversion(event, M("carbon"), 40, KJ('polished_coke'))
 	
 	//enriched carbon from coke
 	event.recipes.mekanism.enriching(Item.of(M('enriched_carbon'), 2), KJ('coke'))
-	event.recipes.mekanism.enriching(Item.of(M('enriched_carbon'), 3), KJ('nourished_coke'))
-	event.recipes.mekanism.enriching(Item.of(M('enriched_carbon'), 4), KJ('polished_coke'))
+	event.recipes.mekanism.enriching(Item.of(M('enriched_carbon'), 3), KJ('polished_coke'))
+	
+	//cardboard box from create cardboard
+	event.shaped(M("cardboard_box"), [
+		'ABA',
+	], {
+		A: CR("cardboard"),
+		B: MC("slime_ball"),
+	})
+	event.shaped(M("cardboard_box"), [
+		'ABA',
+	], {
+		A: CR("cardboard"),
+		B: CR("super_glue"),
+	}).damageIngredient(CR("super_glue"))
 
     //metallurgic infuser
 	removeRecipeByOutput(event, [
@@ -216,8 +225,8 @@ ServerEvents.recipes((event) => {
 		F: CM('star_infused_netherite_block'),
 		G: F('#storage_blocks/steel'),
 		H: KJ('ether_gem'),
-		I: M('ultimate_control_circuit'),
-		J: F('#gears/diamond'),
+		I: M_E('absolute_control_circuit'),
+		J: F('#gears/netherite'),
 	}).id(KJ(`${M()}/extended_crafting/isotopic_centrifuge`))
 	
 	//energy tablet
@@ -2121,7 +2130,7 @@ ServerEvents.recipes((event) => {
 		`6x ${M("reprocessed_fissile_fragment")}`,
 	])
 	mekaUnit(event, M("module_locomotive_boosting_unit"), [
-		`3x ${CR_RW("remote_lens")}`,
+		`3x ${CR("track")}`,
 		`4x ${M("energy_tablet")}`,
 		`1x ${PET("emerald_netherite_armor_leggings")}`,
 		`4x ${M("hdpe_stick")}`,

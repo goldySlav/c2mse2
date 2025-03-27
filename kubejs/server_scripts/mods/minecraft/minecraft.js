@@ -58,6 +58,9 @@ ServerEvents.recipes((event) => {
     ], {
         A: KJ('ether_gem'),
     })
+	
+	//enchanted apple TCT
+	event.recipes.tconstruct.casting_table(MC("enchanted_golden_apple"), Fluid.of(CR_EI("experience"), 1000), MC("golden_apple"), true, 40)
 
     //end portal
     event.recipes.create.mechanical_crafting(Item.of(MC("end_portal_frame"), 3), [

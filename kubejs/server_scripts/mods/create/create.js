@@ -297,11 +297,18 @@ ServerEvents.recipes((event) => {
 	event.recipes.create.milling([Item.of(CR('wheat_flour'), 2)], F('#flour_plants')).processingTime(processingTimesDefault.milling)
 	
 	//sheets compat AA
-	const sheets = ["iron", "brass", "copper"]
-	sheets.forEach(sheet => {
+	const sheetsAA = ["iron", "brass", "copper"]
+	sheetsAA.forEach(sheet => {
 		customRecipes.ad_astra.compressing(event, CR(`${sheet}_sheet`), F(`#ingots/${sheet}`))
 	})
 	customRecipes.ad_astra.compressing(event, CR(`golden_sheet`), F(`#ingots/gold`))
+	
+	//sheets compat Mekanism
+	const sheetsM = ["iron", "brass", "copper"]
+	sheetsM.forEach(sheet => {
+		event.recipes.mekanism.sawing(F(`#ingots/${sheet}`), Item.of(CR(`${sheet}_sheet`), 1))
+	})
+	event.recipes.mekanism.sawing(F('#ingots/gold'), Item.of(CR("golden_sheet"), 1))
 	
 	//blaze burner from head
 	event.shaped(CR("blaze_burner"), [
@@ -316,4 +323,21 @@ ServerEvents.recipes((event) => {
 	
 	//speedometer from stressometer
 	event.shapeless(CR('speedometer'), [CR("stressometer")])
+	
+	//packager from unpackager
+	event.shapeless(CR('packager'), [CR("repackager")])
+	
+	//item vault based
+	let item_vault_based = (id, other_ingredient, removeId) => {
+		event.remove({ id: removeId })
+		event.smithing(Item.of(id, 1), KJ('kinetic_mechanism'), CR('item_vault'), other_ingredient)
+		event.recipes.create.mechanical_crafting(Item.of(id, 1), "AB", { A: CR('item_vault'), B: other_ingredient })
+		event.recipes.extendedcrafting.shapeless_table(Item.of(id, 1), [CR('item_vault'), other_ingredient])
+	}
+	
+	item_vault_based(CR("stock_link"), CR("redstone_link"), CR("crafting/logistics/stock_link"))
+	item_vault_based(CR("redstone_requester"), CR("stock_link"), CR("crafting/logistics/redstone_requester"))
+	
+	//cardboard box from create cardboard
+	event.shapeless(Item.of(CR("cardboard"), 2), [M("cardboard_box")])
 })

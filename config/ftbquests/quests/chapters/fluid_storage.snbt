@@ -167,6 +167,78 @@
 			x: -12.0d
 			y: -3.0d
 		}
+		{
+			dependencies: ["254B1CE0803DA72D"]
+			disable_toast: true
+			id: "11481AD95015A51E"
+			tasks: [{
+				id: "75F0F6E31F921F69"
+				item: "industrialforegoing:common_black_hole_tank"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["11481AD95015A51E"]
+			disable_toast: true
+			id: "6BC3ABC229B73657"
+			tasks: [{
+				id: "33B71E230ABA8A0A"
+				item: "industrialforegoing:pity_black_hole_tank"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6BC3ABC229B73657"]
+			disable_toast: true
+			id: "4C61C4C9278F622F"
+			tasks: [{
+				id: "5A04F507B39E605D"
+				item: "industrialforegoing:simple_black_hole_tank"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4C61C4C9278F622F"]
+			disable_toast: true
+			id: "387C64DF9E281CF6"
+			tasks: [{
+				id: "1E0C5F66CAE365F4"
+				item: "industrialforegoing:advanced_black_hole_tank"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["387C64DF9E281CF6"]
+			disable_toast: true
+			id: "29501ADC550F5E49"
+			tasks: [{
+				id: "3B8FE9A49A9550CB"
+				item: "industrialforegoing:supreme_black_hole_tank"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["254B1CE0803DA72D"]
+			disable_toast: true
+			id: "321281E77DC6C399"
+			tasks: [{
+				id: "3DA51493701281DA"
+				item: "functionalstorage:fluid_1"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -1.5d
+		}
 	]
 	title: "Fluid Storage"
 }

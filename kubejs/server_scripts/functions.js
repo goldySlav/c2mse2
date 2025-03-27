@@ -69,10 +69,7 @@ const CR_EI = (id, x) => MOD("create_enchantment_industry", id, x)
 const CR_S = (id, x) => MOD("createsifter", id, x)
 const CR_ME = (id, x) => MOD("create_mechanical_extruder", id, x)
 const CR_ET = (id, x) => MOD("createendertransmission", id, x)
-const CR_CC = (id, x) => MOD("copycats", id, x)
-const CR_RC = (id, x) => MOD("rechiseledcreate", id, x)
 const CR_N = (id, x) => MOD("create_netherless", id, x)
-const CR_RW = (id, x) => MOD("railways", id, x)
 const PR_C = (id, x) => MOD("projectred_core", id, x)
 const PR_T = (id, x) => MOD("projectred_transmission", id, x)
 const PR_I = (id, x) => MOD("projectred_illumination", id, x)
@@ -88,7 +85,6 @@ const CB_M = (id, x) => MOD("cb_microblock", id, x)
 const P = (id, x) => MOD("powah", id, x)
 const AP = (id, x) => MOD("apotheosis", id, x)
 const MD = (id, x) => MOD("mining_dimension", id, x)
-const EB = (id, x) => MOD("effortlessbuilding", id, x)
 const C = (id, x) => MOD("curios", id, x)
 const HS = (id, x) => MOD("heartstone", id, x)
 const NMW = (id, x) => MOD("nomowanderer", id, x)
@@ -99,17 +95,10 @@ const SR = (id, x) => MOD("summoningrituals", id, x)
 const PET = (id, x) => MOD("pureemeraldtools", id, x)
 const RC = (id, x) => MOD("rechiseled", id, x)
 const ES = (id, x) => MOD("enderstorage", id, x)
-const AR = (id, x) => MOD("angelring", id, x)
 const ENT = (id, x) => MOD("entangled", id, x)
 const TCT = (id, x) => MOD("tconstruct", id, x)
 const LB = (id, x) => MOD("laserbridges", id, x)
-
-const AV = (id, x) => MOD("avaritia", id, x)
-const CR_DD = (id, x) => MOD("create_dd", id, x)
-const SD = (id, x) => MOD("storagedrawers", id, x)
-const FCD = (id, x) => MOD("framedcompactdrawers", id, x)
-const CR_M = (id, x) => MOD("createmetallurgy", id, x)
-const CR_V = (id, x) => MOD("vintageimprovements", id, x)
+const MBCK = (id, x) => MOD("morebuckets", id, x)
 
 
 const processingTimesDefault = {
@@ -774,7 +763,6 @@ const singularities = [
 	{ id: "experience_nugget", core: CR("experience_nugget") },
 	{ id: "experience_bottle", core: MC("experience_bottle") },
 	{ id: "hyper_experience_bottle", core: CR_EI("hyper_experience_bottle") },
-	{ id: "reach_upgrade", core: EB("reach_upgrade3") },
 	{ id: "cow_jar", core: CFB("cow_jar") },
 	{ id: "flux_core", core: FN("flux_core") },
 	{ id: "heartstone", core: HS("heartstone") },

@@ -7,6 +7,16 @@ ServerEvents.recipes((event) => {
 		CR_A("compat/tconstruct/pig_iron"),
 		CR_A("compat/tconstruct/pig_iron_2"),
 	])
+	removeRecipeByOutput(event, [
+		CR_A("electrum_block"),
+		CR_A("electrum_ingot"),
+		CR_A("electrum_nugget"),
+		CR_A("electrum_amulet"),
+		CR_A("electrum_wire"),
+		CR_A("electrum_rod"),
+		CR_A("electrum_sheet"),
+		CR_A("electrum_spool"),
+	])
 	
 	event.recipes.create.pressing(CR_A("zinc_sheet"), F("#ingots/zinc"))
 	
@@ -69,14 +79,28 @@ ServerEvents.recipes((event) => {
 	})
 	
 	//sheets compat AA
-	const sheets = ["zinc"]
-	sheets.forEach(sheet => {
+	const sheetsAA = ["zinc"]
+	sheetsAA.forEach(sheet => {
 		customRecipes.ad_astra.compressing(event, CR_A(`${sheet}_sheet`), F(`#ingots/${sheet}`))
+	})
+	
+	//sheets compat Mekanism
+	const sheetsM = ["zinc"]
+	sheetsM.forEach(sheet => {
+		event.recipes.mekanism.sawing(F(`#ingots/${sheet}`), Item.of(CR_A(`${sheet}_sheet`), 1))
+	})
+	
+	//wires compat Mekanism
+	const wiresM = ["copper", "iron", "gold"]
+	wiresM.forEach(wire => {
+		event.recipes.mekanism.sawing(F(`#plates/${wire}`), Item.of(CR_A(`${wire}_wire`), 2))
 	})
 	
 	//rods compat TCT
 	const rods = ["copper", "gold", "brass"]
-	rods.forEach(rod => {
+	const temps = [500, 700, 605]
+	rods.forEach((rod, i) => {
 		event.recipes.tconstruct.casting_table(CR_A(`${rod}_rod`), Fluid.of(TCT(`molten_${rod}`), 45), TCT(`rod_cast`), false, 40)
+		event.recipes.tconstruct.melting(Fluid.of(TCT(`molten_${rod}`), 45), CR_A(`${rod}_rod`), temps[i], 12)
 	})
 })

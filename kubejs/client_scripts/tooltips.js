@@ -256,4 +256,10 @@ ItemEvents.tooltip(event => {
     event.add('kubejs:pileof_neutrons', "§8Try not to think about think.")
     event.add('kubejs:neutronium_nugget', "§8About 35.6 million metric tons.")
     event.add('kubejs:neutronium_ingot', "§8The dense heart of a star in convenient ingot form.")
+
+
+
+	//chromatic compound transformations
+    event.add('create:refined_radiance', '§7Crafted from §5Chromatic Compound§7 by throwing it onto a §bdense light§7!')
+    event.add('create:shadow_steel', '§7Crafted from §5Chromatic Compound§7 by throwing it into a §8complete darkness§7!')
 })

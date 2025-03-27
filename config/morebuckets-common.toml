@@ -1,0 +1,99 @@
+
+#General settings.
+[General]
+	#Should the recipes with buckets be automatically updated to work with More Buckets buckets?
+	enableRecipeFixer = false
+
+#Individual options for each bucket.
+[Buckets]
+
+	[Buckets.Copper]
+		enabled = false
+		#Range: > 1
+		capacity = 1
+
+	[Buckets.Quartz]
+		enabled = false
+		#Range: > 1
+		capacity = 2
+
+	[Buckets.Obsidian]
+		enabled = true
+		#Range: > 1
+		capacity = 8
+
+	[Buckets.Gold]
+		enabled = true
+		#Range: > 1
+		capacity = 2
+
+	[Buckets.Emerald]
+		enabled = true
+		#Range: > 1
+		capacity = 6
+
+	[Buckets.Diamond]
+		enabled = true
+		#Range: > 1
+		capacity = 4
+
+	[Buckets.Aluminum]
+		enabled = false
+		#Range: > 1
+		capacity = 1
+
+	[Buckets.Tin]
+		enabled = false
+		#Range: > 1
+		capacity = 1
+
+	[Buckets.Rubber]
+		enabled = false
+		#Range: > 1
+		capacity = 1
+
+	[Buckets.Silver]
+		enabled = false
+		#Range: > 1
+		capacity = 3
+
+	[Buckets.Bronze]
+		enabled = false
+		#Range: > 1
+		capacity = 4
+
+	[Buckets.Steel]
+		enabled = false
+		#Range: > 1
+		capacity = 6
+
+	[Buckets.Inferium]
+		enabled = false
+		#Range: > 1
+		capacity = 2
+
+	[Buckets.Prudentium]
+		enabled = false
+		#Range: > 1
+		capacity = 4
+
+	[Buckets.Tertium]
+		enabled = false
+		#Range: > 1
+		capacity = 8
+
+	[Buckets.Imperium]
+		enabled = false
+		#Range: > 1
+		capacity = 16
+
+	[Buckets.Supremium]
+		enabled = false
+		#Range: > 1
+		capacity = 32
+
+	[Buckets.Insanium]
+		enabled = false
+		#Range: > 1
+		capacity = 64
+

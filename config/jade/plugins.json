@@ -69,6 +69,9 @@
     "crucible": true,
     "sieve": true
   },
+  "createsifter": {
+    "sifter_data": true
+  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -166,11 +169,5 @@
     "preservation_chamber": true,
     "milk_jar": true,
     "toaster": true
-  },
-  "storagedrawers": {
-    "display.stacklimit": true,
-    "main": true,
-    "display.content": true,
-    "display.status": true
   }
 }

@@ -1,7 +1,7 @@
 //priority: 1
 
 const reduntandCasts = [
-	"repair_kit", "wire", "pick_head", "small_axe_head", "small_blade", "adze_head", "hammer_head", "broad_axe_head",
+	"repair_kit", "pick_head", "small_axe_head", "small_blade", "adze_head", "hammer_head", "broad_axe_head",
 	"broad_blade", "large_plate", "tool_handle", "tool_binding", "tough_handle", "tough_binding", "bow_limb",
 	"bow_grip", "helmet_plating", "chestplate_plating", "leggings_plating", "boots_plating", "maille", "coin",
 ]

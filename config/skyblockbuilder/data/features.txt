@@ -31,7 +31,6 @@ artifacts:campsite
 create:striated_ores_nether
 create:striated_ores_overworld
 create:zinc_ore
-createmetallurgy:wolframite_ore
 draconicevolution:chaos_island
 draconicevolution:end_comet
 draconicevolution:end_draconium_ore

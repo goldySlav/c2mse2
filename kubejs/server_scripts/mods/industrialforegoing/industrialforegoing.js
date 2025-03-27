@@ -76,6 +76,9 @@ ServerEvents.recipes((event) => {
 
 	  /industrialforegoing:conveyor/,
 
+	  IF("dissolution_chamber/speed_addon_2"),
+	  IF("dissolution_chamber/efficiency_addon_2"),
+	  IF("dissolution_chamber/processing_addon_2"),
   ])
   
   
@@ -1506,4 +1509,142 @@ ServerEvents.recipes((event) => {
 		F: F('#gears/diamond'),
 		G: IF('plastic'),
 	})
+	
+	
+	
+  //range addons
+	removeRecipeByOutput(event, [
+		IF("range_addon0"),
+		IF("range_addon1"),
+		IF("range_addon2"),
+		IF("range_addon3"),
+		IF("range_addon4"),
+		IF("range_addon5"),
+		IF("range_addon6"),
+		IF("range_addon7"),
+		IF("range_addon8"),
+		IF("range_addon9"),
+		IF("range_addon10"),
+		IF("range_addon11"),
+	])
+	customRecipes.industrialforegoing.dissolution(event, IF("range_addon0"), [
+		MC("redstone"),
+		MC("cobblestone"),
+		MC("redstone"),
+		MC("glass_pane"),
+		MC("glass_pane"),
+		MC("cobblestone"),
+		MC("cobblestone"),
+		MC("cobblestone"),
+	], IF("latex"), 1000, 10)
+	customRecipes.industrialforegoing.dissolution(event, IF("range_addon1"), [
+		MC("redstone"),
+		IF("range_addon0"),
+		MC("redstone"),
+		MC("glass_pane"),
+		MC("glass_pane"),
+		MC("lapis_lazuli"),
+		MC("lapis_lazuli"),
+		MC("lapis_lazuli"),
+	], IF("latex"), 1000, 20)
+	customRecipes.industrialforegoing.dissolution(event, IF("range_addon2"), [
+		MC("redstone"),
+		IF("range_addon1"),
+		MC("redstone"),
+		MC("glass_pane"),
+		MC("glass_pane"),
+		MC("bone_meal"),
+		MC("bone_meal"),
+		MC("bone_meal"),
+	], IF("latex"), 1000, 30)
+	customRecipes.industrialforegoing.dissolution(event, IF("range_addon3"), [
+		MC("redstone"),
+		IF("range_addon2"),
+		MC("redstone"),
+		MC("glass_pane"),
+		MC("glass_pane"),
+		MC("iron_nugget"),
+		MC("iron_nugget"),
+		MC("iron_nugget"),
+	], IF("latex"), 1000, 40)
+	customRecipes.industrialforegoing.dissolution(event, IF("range_addon4"), [
+		MC("redstone"),
+		IF("range_addon3"),
+		MC("redstone"),
+		MC("glass_pane"),
+		MC("glass_pane"),
+		MC("copper_ingot"),
+		MC("copper_ingot"),
+		MC("copper_ingot"),
+	], IF("latex"), 1000, 50)
+	customRecipes.industrialforegoing.dissolution(event, IF("range_addon5"), [
+		MC("redstone"),
+		IF("range_addon4"),
+		MC("redstone"),
+		MC("glass_pane"),
+		MC("glass_pane"),
+		MC("gold_nugget"),
+		MC("gold_nugget"),
+		MC("gold_nugget"),
+	], IF("latex"), 1000, 60)
+	customRecipes.industrialforegoing.dissolution(event, IF("range_addon6"), [
+		MC("redstone"),
+		IF("range_addon5"),
+		MC("redstone"),
+		MC("glass_pane"),
+		MC("glass_pane"),
+		MC("iron_ingot"),
+		MC("iron_ingot"),
+		MC("iron_ingot"),
+	], IF("latex"), 1000, 70)
+	customRecipes.industrialforegoing.dissolution(event, IF("range_addon7"), [
+		MC("redstone"),
+		IF("range_addon6"),
+		MC("redstone"),
+		MC("glass_pane"),
+		MC("glass_pane"),
+		MC("gold_ingot"),
+		MC("gold_ingot"),
+		MC("gold_ingot"),
+	], IF("latex"), 1000, 80)
+	customRecipes.industrialforegoing.dissolution(event, IF("range_addon8"), [
+		MC("redstone"),
+		IF("range_addon7"),
+		MC("redstone"),
+		MC("glass_pane"),
+		MC("glass_pane"),
+		MC("quartz"),
+		MC("quartz"),
+		MC("quartz"),
+	], IF("latex"), 1000, 90)
+	customRecipes.industrialforegoing.dissolution(event, IF("range_addon9"), [
+		MC("redstone"),
+		IF("range_addon8"),
+		MC("redstone"),
+		MC("glass_pane"),
+		MC("glass_pane"),
+		MC("diamond"),
+		MC("diamond"),
+		MC("diamond"),
+	], IF("latex"), 1000, 100)
+	customRecipes.industrialforegoing.dissolution(event, IF("range_addon10"), [
+		MC("redstone"),
+		IF("range_addon9"),
+		MC("redstone"),
+		MC("glass_pane"),
+		MC("glass_pane"),
+		MC("popped_chorus_fruit"),
+		MC("popped_chorus_fruit"),
+		MC("popped_chorus_fruit"),
+	], IF("latex"), 1000, 110)
+	customRecipes.industrialforegoing.dissolution(event, IF("range_addon11"), [
+		MC("redstone"),
+		IF("range_addon10"),
+		MC("redstone"),
+		MC("glass_pane"),
+		MC("glass_pane"),
+		MC("emerald"),
+		MC("emerald"),
+		MC("emerald"),
+	], IF("latex"), 1000, 120)
 })

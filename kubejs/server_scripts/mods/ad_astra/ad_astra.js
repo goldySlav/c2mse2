@@ -92,6 +92,12 @@ ServerEvents.recipes((event) => {
 		customRecipes.ad_astra.compressing(event, AA(`${sheet}_plate`), F(`#ingots/${sheet}`))
 	})
 	
+	//sheets compat Mekanism
+	const sheetsM = ["steel", "ostrum", "calorite", "desh"]
+	sheetsM.forEach(sheet => {
+		event.recipes.mekanism.sawing(F(`#ingots/${sheet}`), Item.of(AA(`${sheet}_plate`), 1))
+	})
+	
 	//oxygen gear
 	removeRecipeByOutput(event, [
 		AA("oxygen_gear"),
@@ -587,4 +593,19 @@ ServerEvents.recipes((event) => {
 	
 	//space painting
 	event.shapeless(AA("space_painting"), [MC("painting"), AE2("sky_dust")])
+	
+	//rods compat CR_A
+	const rods = ["steel"]
+	rods.forEach(rod => {
+		event.custom({
+			type: CR_A("rolling"),
+			input: {
+				tag: F("ingots/steel")
+			},
+			result: {
+				item: AA(`${rod}_rod`),
+				count: 2
+			},
+		})
+	})
 })

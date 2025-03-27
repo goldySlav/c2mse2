@@ -64,6 +64,7 @@ ServerEvents.recipes((event) => {
 		Item.of(AE2('sky_dust'), 2),
 		AE2('sky_stone_block'),
 	], AE2('sky_stone_block')).processingTime(processingTimesDefault.crushing)
+	event.recipes.mekanism.crushing(Item.of(AE2('sky_dust'), 3), AE2('sky_stone_block'))
 	
 	//singularity
 	event.recipes.create.crushing([AE2("singularity")], CR('crushing_wheel')).processingTime(processingTimesDefault.crushing)

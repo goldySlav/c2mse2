@@ -62,7 +62,7 @@ ServerEvents.recipes((event) => {
 		B: KJ("double_compressed_crafting_table"),
 		C: EC("basic_table"),
 	})
-	event.shaped(EC('advanced_table'), [
+	event.recipes.extendedcrafting.shaped_table(EC('advanced_table'), [
 		'ABA',
 		'BCB',
 		'ABA',

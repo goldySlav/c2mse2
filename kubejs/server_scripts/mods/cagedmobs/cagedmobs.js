@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
     event.recipes.create.mechanical_crafting(Item.of(CM('honey_drop'), 4), "A", { A: MC('honeycomb') })
 	event.shapeless(MC('honeycomb'), Item.of(CM('honey_drop'), 4))
 	
-	event.shapeless(Item.of(CM('empty_spawn_egg'), 1), [MU("magical_egg"), EIO("broken_spawner")])
+	event.shapeless(Item.of(CM('empty_spawn_egg'), 1), [MU("magical_egg"), MC("spawner")])
 	
 	
 	

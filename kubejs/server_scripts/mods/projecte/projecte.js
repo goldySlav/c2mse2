@@ -144,6 +144,9 @@ ServerEvents.recipes((event) => {
     G: PREXP('violet_matter'),
     N: PRE('condenser_mk2'),
   }).id(KJ(`${PREXP()}/infinite_fuel`))
+  
+  //repair talisman
+  event.replaceInput({ id: PRE("repair_talisman_alt") }, MC("paper"), CP("experience_3"))
 
 
 
