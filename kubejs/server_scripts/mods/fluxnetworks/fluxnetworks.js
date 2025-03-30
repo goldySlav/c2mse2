@@ -103,7 +103,7 @@ ServerEvents.recipes((event) => {
 		F: KJ("wafer_component_64k"),
 		G: FN('flux_core'),
 	}).tier(5)
-	event.recipes.mekanism.nucleosynthesizing(M("ultimate_induction_cell"), `30x ${M("antimatter")}`, FN("basic_flux_storage"), 300)
+	event.recipes.mekanism.nucleosynthesizing(M("ultimate_induction_cell"), `300x ${M("antimatter")}`, FN("basic_flux_storage"), 300)
 
   //herculean_flux_storage
     removeRecipeByOutput(event, [
@@ -127,7 +127,7 @@ ServerEvents.recipes((event) => {
 		F: KJ("wafer_component_256k"),
 		G: FN('flux_core'),
 	}).tier(5)
-	event.recipes.mekanism.nucleosynthesizing(FN("basic_flux_storage"), `50x ${M("antimatter")}`, FN("herculean_flux_storage"), 500)
+	event.recipes.mekanism.nucleosynthesizing(FN("basic_flux_storage"), `500x ${M("antimatter")}`, FN("herculean_flux_storage"), 500)
 
   //gargantuan_flux_storage
     removeRecipeByOutput(event, [
@@ -151,5 +151,5 @@ ServerEvents.recipes((event) => {
 		F: KJ("wafer_component_1m"),
 		G: FN('flux_core'),
 	}).tier(5)
-	event.recipes.mekanism.nucleosynthesizing(FN("herculean_flux_storage"), `100x ${M("antimatter")}`, FN("gargantuan_flux_storage"), 1000)
+	event.recipes.mekanism.nucleosynthesizing(FN("herculean_flux_storage"), `1000x ${M("antimatter")}`, FN("gargantuan_flux_storage"), 1000)
 })
