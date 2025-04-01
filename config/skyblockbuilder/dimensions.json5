@@ -20,6 +20,6 @@
   "Overworld": {
   
     // Should overworld generate as in default world type? [default: false]
-    "Default": false
+    "Default": true
   }
 }

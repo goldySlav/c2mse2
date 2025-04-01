@@ -1,0 +1,216 @@
+{
+  "config_version": "1.0.11",
+  "general": {
+    "min_structure_distance_from_world_center": 0,
+    "disable_all_structures": false,
+    "enable_global_spacing_and_separation_modifier": false,
+    "global_spacing_and_separation_modifier": 1.0
+  },
+  "structures": [
+    {
+      "name": "minecraft:mineshaft",
+      "is_disabled": false,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 0,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 0,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": [
+        "minecraft:deep_frozen_ocean",
+        "minecraft:deep_cold_ocean",
+        "minecraft:deep_ocean",
+        "minecraft:deep_lukewarm_ocean",
+        "minecraft:frozen_ocean",
+        "minecraft:ocean",
+        "minecraft:cold_ocean",
+        "minecraft:lukewarm_ocean",
+        "minecraft:warm_ocean"
+      ]
+    },
+    {
+      "name": "minecraft:monument",
+      "is_disabled": true,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 0,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 0,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": []
+    },
+    {
+      "name": "minecraft:ocean_ruin_cold",
+      "is_disabled": true,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 0,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 0,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": []
+    },
+    {
+      "name": "minecraft:ocean_ruin_warm",
+      "is_disabled": true,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 0,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 0,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": []
+    },
+    {
+      "name": "minecraft:ruined_portal_ocean",
+      "is_disabled": true,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 0,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 0,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": []
+    },
+    {
+      "name": "minecraft:shipwreck",
+      "is_disabled": true,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 0,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 0,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": []
+    },
+    {
+      "name": "minecraft:stronghold",
+      "is_disabled": true,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 0,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 0,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": []
+    },
+    {
+      "name": "ad_astra:oil_well",
+      "is_disabled": true,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 80,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 80,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": []
+    },
+    {
+      "name": "ae2:meteorite",
+      "is_disabled": false,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 0,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 0,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": [
+        "minecraft:deep_frozen_ocean",
+        "minecraft:frozen_ocean",
+        "minecraft:deep_cold_ocean",
+        "minecraft:cold_ocean",
+        "minecraft:deep_ocean",
+        "minecraft:ocean",
+        "minecraft:deep_lukewarm_ocean",
+        "minecraft:lukewarm_ocean",
+        "minecraft:warm_ocean"
+      ]
+    },
+    {
+      "name": "tconstruct:clay_island",
+      "is_disabled": false,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 0,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 0,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": [
+        "minecraft:deep_frozen_ocean",
+        "minecraft:deep_cold_ocean",
+        "minecraft:deep_ocean",
+        "minecraft:deep_lukewarm_ocean",
+        "minecraft:frozen_ocean",
+        "minecraft:ocean",
+        "minecraft:cold_ocean",
+        "minecraft:lukewarm_ocean",
+        "minecraft:warm_ocean"
+      ]
+    },
+    {
+      "name": "tconstruct:earth_slime_island",
+      "is_disabled": true,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 0,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 0,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": []
+    },
+    {
+      "name": "tconstruct:sky_slime_island",
+      "is_disabled": false,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 0,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 0,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": [
+        "minecraft:deep_frozen_ocean",
+        "minecraft:deep_cold_ocean",
+        "minecraft:deep_ocean",
+        "minecraft:deep_lukewarm_ocean",
+        "minecraft:frozen_ocean",
+        "minecraft:ocean",
+        "minecraft:cold_ocean",
+        "minecraft:lukewarm_ocean",
+        "minecraft:warm_ocean"
+      ]
+    },
+    {
+      "name": "tombstone:abandoned_grave_land",
+      "is_disabled": false,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 80,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 80,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": [
+        "minecraft:deep_frozen_ocean",
+        "minecraft:frozen_ocean",
+        "minecraft:deep_cold_ocean",
+        "minecraft:cold_ocean",
+        "minecraft:deep_ocean",
+        "minecraft:ocean",
+        "minecraft:deep_lukewarm_ocean",
+        "minecraft:lukewarm_ocean",
+        "minecraft:warm_ocean"
+      ]
+    },
+    {
+      "name": "tombstone:abandoned_grave_ocean",
+      "is_disabled": true,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 80,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 80,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": []
+    }
+  ],
+  "structure_sets": []
+}

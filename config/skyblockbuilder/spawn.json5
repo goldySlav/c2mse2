@@ -1,6 +1,6 @@
 {
   // The dimension the islands will be generated in.
-  "dimension": "minecraft:overworld",
+  "dimension": "kubejs:crash_site",
   
   // The blocks which you can interact with within the spawn protection
   // This is a resource list. See https://moddingx.org/libx/org/moddingx/libx/util/data/ResourceList.html#use_resource_lists_in_configs
