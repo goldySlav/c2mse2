@@ -4,7 +4,7 @@
   
   // Force the check if the world is skyblock
   // This enables the commands in worlds without any skyblock dimension
-  "forceSkyblockCheck": false,
+  "forceSkyblockCheck": true,
   
   // Should players be able to leave their team or invite others? [default: true]
   "selfManage": true,

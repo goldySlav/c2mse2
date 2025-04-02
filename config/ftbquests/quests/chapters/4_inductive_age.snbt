@@ -523,7 +523,7 @@
 			description: [
 				"Made by exploding an &6Ender Pearl&r and a &6Sigularity&r together using &6TNT&r or &6Tiny TNT&r."
 				""
-				"Can be made by using &6Cispencers&r and &6Droppers&r on a Redstone Clock to drop the items and once the TNT explodes, filter the result into your system."
+				"Can be made by using &6Dispencers&r and &6Droppers&r on a Redstone Clock to drop the items and once the TNT explodes, filter the result into your system."
 				""
 				""
 				"{image:kubejs:textures/quests/entangled_singularity.png width:220 height:130 align:center}"

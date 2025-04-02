@@ -1,0 +1,12 @@
+{
+  "type": "kubejs:crash_site",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "minecraft:ocean"
+    },
+    "settings": "ad_astra:orbit",
+	"structures": []
+  }
+}
