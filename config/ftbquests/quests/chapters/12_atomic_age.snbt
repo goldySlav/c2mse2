@@ -82,14 +82,134 @@
 		}
 		{
 			dependencies: ["175194707CB6993D"]
-			description: ["Or any bio-source that can produce the Bio Fuel"]
+			description: [
+				"There's a whole lot more left to explore for you."
+				"Here are listed just simplest examples of what can be used."
+			]
 			icon: "minecraft:kelp"
 			id: "0F91FF745C6A6FE9"
 			size: 1.0d
+			subtitle: "The list goes on and on"
 			tasks: [
 				{
 					id: "5C020AAECAFDF528"
-					item: "minecraft:kelp"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:cactus"
+								}
+								{
+									Count: 1b
+									id: "minecraft:sugar_cane"
+								}
+								{
+									Count: 1b
+									id: "minecraft:bamboo"
+								}
+								{
+									Count: 1b
+									id: "minecraft:kelp"
+								}
+								{
+									Count: 1b
+									id: "minecraft:melon"
+								}
+								{
+									Count: 1b
+									id: "minecraft:carved_pumpkin"
+								}
+								{
+									Count: 1b
+									id: "minecraft:melon_slice"
+								}
+								{
+									Count: 1b
+									id: "minecraft:carrot"
+								}
+								{
+									Count: 1b
+									id: "minecraft:apple"
+								}
+								{
+									Count: 1b
+									id: "minecraft:beetroot"
+								}
+								{
+									Count: 1b
+									id: "minecraft:potato"
+								}
+								{
+									Count: 1b
+									id: "minecraft:cookie"
+								}
+								{
+									Count: 1b
+									id: "minecraft:oak_leaves"
+								}
+								{
+									Count: 1b
+									id: "minecraft:oak_sapling"
+								}
+								{
+									Count: 1b
+									id: "minecraft:nether_wart_block"
+								}
+								{
+									Count: 1b
+									id: "minecraft:brown_mushroom"
+								}
+								{
+									Count: 1b
+									id: "minecraft:azalea"
+								}
+								{
+									Count: 1b
+									id: "minecraft:glow_berries"
+								}
+								{
+									Count: 1b
+									id: "minecraft:sweet_berries"
+								}
+								{
+									Count: 1b
+									id: "minecraft:nether_wart"
+								}
+								{
+									Count: 1b
+									id: "minecraft:sea_pickle"
+								}
+								{
+									Count: 1b
+									id: "minecraft:grass"
+								}
+								{
+									Count: 1b
+									id: "minecraft:fern"
+								}
+								{
+									Count: 1b
+									id: "minecraft:red_tulip"
+								}
+								{
+									Count: 1b
+									id: "minecraft:torchflower"
+								}
+								{
+									Count: 1b
+									id: "minecraft:lilac"
+								}
+								{
+									Count: 1b
+									id: "minecraft:small_dripleaf"
+								}
+							]
+						}
+					}
+					title: "Anything that crushes into Bio-Fuel"
 					type: "item"
 				}
 				{

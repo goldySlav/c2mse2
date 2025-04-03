@@ -1,0 +1,15 @@
+{
+	id: "6F9D63E00FD582E0"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ count: 64, item: "minecraft:oak_sapling" }
+		{ count: 64, item: "minecraft:spruce_sapling" }
+		{ count: 64, item: "minecraft:birch_sapling" }
+		{ count: 64, item: "minecraft:jungle_sapling" }
+		{ count: 64, item: "minecraft:acacia_sapling" }
+		{ count: 64, item: "minecraft:dark_oak_sapling" }
+		{ count: 64, item: "minecraft:cherry_sapling" }
+	]
+	title: "Saplings"
+}

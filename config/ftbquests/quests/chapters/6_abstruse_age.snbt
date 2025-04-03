@@ -484,11 +484,12 @@
 				id: "104E8435778E96BA"
 				item: {
 					Count: 1
-					id: "kubejs:chromatic_resonator"
+					id: "itemfilters:tag"
 					tag: {
-						Damage: 0
+						value: "forge:tools/chromatic_resonators"
 					}
 				}
+				title: "Any Chromatic Resonator"
 				type: "item"
 			}]
 			x: 4.0d
