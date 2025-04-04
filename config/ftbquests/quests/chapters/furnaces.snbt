@@ -86,36 +86,34 @@
 		{
 			dependencies: ["406E040FE089E386"]
 			disable_toast: true
-			icon: "ironfurnaces:emerald_furnace"
 			id: "3704F233D95BADFE"
 			size: 1.0d
 			tasks: [{
 				id: "7EF5E6957ED0ACDD"
-				item: "ironfurnaces:emerald_furnace"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ironfurnaces:emerald_furnace"
+							}
+							{
+								Count: 1b
+								id: "ironfurnaces:crystal_furnace"
+							}
+						]
+					}
+				}
+				title: "Emerald Furnace or Crystal Furnace"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.0d
 			y: 7.5d
 		}
 		{
-			dependencies: ["406E040FE089E386"]
-			disable_toast: true
-			icon: "ironfurnaces:crystal_furnace"
-			id: "5BB2520F9F6E45FE"
-			size: 1.0d
-			tasks: [{
-				id: "51061ABC4F7CC1DC"
-				item: "ironfurnaces:crystal_furnace"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 7.5d
-		}
-		{
-			dependencies: [
-				"5BB2520F9F6E45FE"
-				"3704F233D95BADFE"
-			]
+			dependencies: ["3704F233D95BADFE"]
 			dependency_requirement: "one_completed"
 			disable_toast: true
 			icon: "ironfurnaces:obsidian_furnace"

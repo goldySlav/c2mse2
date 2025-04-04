@@ -62,11 +62,12 @@
 				id: "5EBC4388936E22E2"
 				item: {
 					Count: 1
-					id: "kubejs:charged_calculator"
+					id: "itemfilters:tag"
 					tag: {
-						Damage: 0
+						value: "forge:tools/calculators"
 					}
 				}
+				title: "Any Fibonacci Calculator"
 				type: "item"
 			}]
 			x: 1.5d

@@ -78,11 +78,12 @@
 				id: "424DF95817D1B773"
 				item: {
 					Count: 1
-					id: "projectred_core:screwdriver"
+					id: "itemfilters:tag"
 					tag: {
-						Damage: 0
+						value: "forge:tools/screwdrivers"
 					}
 				}
+				title: "Any Screwdriver"
 				type: "item"
 			}]
 			x: 2.0d
