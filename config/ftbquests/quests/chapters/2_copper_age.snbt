@@ -264,14 +264,65 @@
 		}
 		{
 			dependencies: ["069880B5BBFEDBA6"]
-			description: ["Refer back to &6Chapter 1&r if you are confused."]
+			description: [
+				"Refer back to &6Chapter 1&r if you are confused."
+				"&6Stripped Logs&r will do as well if you are wondering."
+			]
 			icon: "minecraft:oak_log"
 			id: "35B503F3B05BB324"
 			subtitle: "Morning Wood?"
 			tasks: [
 				{
 					id: "7195434399B727AF"
-					item: "minecraft:oak_log"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:oak_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:spruce_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:birch_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:jungle_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:acacia_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:dark_oak_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:mangrove_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:cherry_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:crimson_stem"
+								}
+								{
+									Count: 1b
+									id: "minecraft:warped_stem"
+								}
+							]
+						}
+					}
+					title: "Any Log"
 					type: "item"
 				}
 				{
@@ -297,11 +348,12 @@
 				id: "6E450C16FFC406BE"
 				item: {
 					Count: 1
-					id: "projectred_core:screwdriver"
+					id: "itemfilters:tag"
 					tag: {
-						Damage: 0
+						value: "forge:tools/screwdrivers"
 					}
 				}
+				title: "Any Screwdriver"
 				type: "item"
 			}]
 			x: -0.5d
@@ -438,11 +490,27 @@
 					id: "43126BFFBD82DD7D"
 					item: {
 						Count: 1
-						id: "create:sand_paper"
+						id: "itemfilters:or"
 						tag: {
-							Damage: 0
+							items: [
+								{
+									Count: 1b
+									id: "create:sand_paper"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "create:red_sand_paper"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
 						}
 					}
+					title: "Sandpaper"
 					type: "item"
 				}
 				{
@@ -500,6 +568,30 @@
 			]
 			x: -5.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["7724D3FEA4626577"]
+			description: [
+				"As mentioned before, a better version of &6Sandpaper&r exists."
+				"It's unavailable for you now."
+			]
+			id: "3ABB3D5B2E7176A9"
+			optional: true
+			shape: "circle"
+			subtitle: "8 uses is kinda bad"
+			tasks: [{
+				id: "43594D47FA337AF5"
+				item: {
+					Count: 1
+					id: "createaddition:diamond_grit_sandpaper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.5d
 		}
 	]
 	title: "2. Copper Age"
