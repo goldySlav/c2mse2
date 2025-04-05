@@ -899,7 +899,7 @@ ServerEvents.recipes((event) => {
 	meltNumber(KJ("true"), KJ("truthy"), 25)
 	meltNumber(KJ("false"), KJ("falsy"), 25)
 
-	event.recipes.tconstruct.casting_basin(KJ("computation_matrix"), Fluid.of(KJ("matrix"), 50), KJ("calculation_mechanism"), false, 20)
+	event.recipes.tconstruct.casting_basin(KJ("computation_matrix"), Fluid.of(KJ("matrix"), 50), KJ("crystal_matrix_ingot"), false, 20)
 	event.custom({
 		type: AE2_A("reaction"),
 		energy: 1500000,
@@ -911,9 +911,15 @@ ServerEvents.recipes((event) => {
 		},
 		input_items: [
 			{
-				amount: 16,
+				amount: 8,
 				ingredient: {
 					item: KJ("calculation_mechanism")
+				}
+			},
+			{
+				amount: 1,
+				ingredient: {
+					item: KJ("crystal_matrix_ingot")
 				}
 			},
 		],
