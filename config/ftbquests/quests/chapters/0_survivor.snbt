@@ -1298,10 +1298,10 @@
 			]
 			id: "4881E4CEAF220C99"
 			rewards: [{
-				count: 64
-				id: "11238FCA11DA860F"
-				item: "minecraft:oak_sapling"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "317B414370A812BA"
+				table_id: 8042694323543048928L
+				type: "choice"
 			}]
 			subtitle: "If Oak is not enough for you"
 			tasks: [
