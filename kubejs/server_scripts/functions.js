@@ -540,11 +540,34 @@ const customRecipes = {
 				}
 			})
 		},
+		gas_conversion: function(event, gasOutput, gasAmount, itemInput) {
+			event.custom({
+				type: M("gas_conversion"),
+			    input: {
+					ingredient: toRecipeJsonItem(itemInput)
+				},
+				output: {
+					amount: gasAmount,
+					gas: gasOutput
+			   }
+			})
+		},
 		activating: function(event, gasOutput, gasOutputAmount, gasInput, gasInputAmount) {
 			event.custom({
 				type: M('activating'),
 				input: { amount: 4, gas: M('plutonium') },
 				output: { amount: 1, gas: KJ('neutron_gas') }
+			})
+		},
+		compressing: function(event, itemOutput, itemInput, gasInput, gasInputAmount) {
+			gasInputAmount = gasInputAmount ? gasInputAmount : 1
+			event.custom({
+				type: M("compressing"),
+				chemicalInput: { amount: gasInputAmount, gas: gasInput },
+				itemInput: {
+					ingredient: toRecipeJsonItem(itemInput)
+				},
+				output: toRecipeJsonItem(itemOutput)
 			})
 		},
 	},
