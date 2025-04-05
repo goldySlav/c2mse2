@@ -88,6 +88,7 @@ ServerEvents.recipes((event) => {
 			continue;
 		event.recipes.create.emptying([AE2(colors[index + 1] + '_paint_ball'), Fluid.of(KJ('abstruse_waste'), 100)], AE2(element + '_paint_ball')).id(KJ(`ae2/draining_${colors[index]}_ball`))
 	}
+	event.recipes.mekanism.crushing(Item.of(AE2('magenta_paint_ball'), 3), KJ('dye_entangled_singularity'))
 	
 	//inscriber press from scrap
 	removeRecipeByOutput(event, [
