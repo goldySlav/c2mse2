@@ -803,10 +803,10 @@
 						value: "witherstormmod:command_block_tools"
 					}
 				}
-				title: "Any #witherstormmod:command_block_tools"
+				title: "Any Command Block Tool"
 				type: "item"
 			}]
-			title: "Wither Storm: Command Block Pickaxe"
+			title: "Wither Storm: Any Command Block Tool"
 			x: 0.0d
 			y: 43.5d
 		}
