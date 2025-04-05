@@ -70,13 +70,15 @@
 				id: "18CC1688A1D22ECC"
 				item: {
 					Count: 1
-					id: "kubejs:charged_calculator"
+					id: "itemfilters:tag"
 					tag: {
-						Damage: 0
+						value: "forge:tools/calculators"
 					}
 				}
+				title: "Any Calculator"
 				type: "item"
 			}]
+			title: "Any Fibonacci Calculator"
 			x: 1.0d
 			y: -3.0d
 		}
