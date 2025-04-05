@@ -260,6 +260,13 @@ const customRecipes = {
 				energy: nrg,
 			})
 		},
+		disenchanting: function(event, outputItemsFluidsFormattedToJson, inputItems) {
+			event.custom({
+				type: CR_EI("disenchanting"),
+				ingredients: toRecipeJsonItem(inputItems),
+				results: outputItemsFluidsFormattedToJson,
+			})
+		},
 	},
 	ae2: {
 		transform: {

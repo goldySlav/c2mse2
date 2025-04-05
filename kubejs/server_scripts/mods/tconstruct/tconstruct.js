@@ -156,4 +156,19 @@ ServerEvents.recipes((event) => {
 	event.recipes.create.mixing(Fluid.of(TCT("molten_netherite"), 10), [Fluid.of(TCT("molten_debris"), 10), Fluid.of(TCT("molten_gold"), 10)]).heated()
 	event.recipes.create.mixing([Fluid.of(MC("water"), 10), Fluid.of(TCT("molten_obsidian"), 10)], [Fluid.of(MC("water"), 10), Fluid.of(MC("lava"), 10)]).heated()
 	event.recipes.create.mixing(Fluid.of(TCT("molten_rose_gold"), 20), [Fluid.of(TCT("molten_copper"), 10), Fluid.of(TCT("molten_gold"), 10)]).heated()
+	
+	//PET compat
+	event.custom({
+		type: "tconstruct:melting",
+		byproducts: [
+			{ amount: 3, fluid: CR_EI("experience") },
+		],
+		ingredient: toRecipeJsonItem(PET("pure_emerald")),
+		result: {
+			amount: 100,
+			fluid: TCT("molten_emerald")
+		},
+		temperature: 934,
+		time: 68
+	})
 })

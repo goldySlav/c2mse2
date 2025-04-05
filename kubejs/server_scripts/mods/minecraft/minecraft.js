@@ -163,4 +163,7 @@ ServerEvents.recipes((event) => {
 	
 	//emerald dupe from diamond
 	customRecipes.create.ifiniDeploying(event, MC("emerald"), MC("diamond"), MC("nether_star"))
+	
+	//emerald compat PET + CR_EI
+	customRecipes.create.disenchanting(event, [toRecipeJsonFluid(`3x ${CR_EI("experience")}`), toRecipeJsonItem(MC("emerald"))], [PET("pure_emerald")])
 })
