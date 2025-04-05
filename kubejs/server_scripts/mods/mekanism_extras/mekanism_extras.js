@@ -33,6 +33,7 @@ ServerEvents.recipes((event) => {
 	
 	//tier upgrades
 	const alloyTierEq = [M_E("alloy_radiance"), M_E("alloy_thermonuclear"), M_E("alloy_shining"), M_E("alloy_spectrum")]
+	const liquidInfusionEq = [KJ("liquid_radiance"), KJ("liquid_thermonuclear"), KJ("liquid_shining"), KJ("liquid_spectrum")]
 	mekaExtrasTiers.forEach( (tier, i) => {
 		removeRecipeByOutput(event, [
 			M_E(`${tier}_tier_installer`),
@@ -51,7 +52,7 @@ ServerEvents.recipes((event) => {
 
 		event.custom({
 			input: inputArr,
-			inputFluid: `{FluidName:\"${IF("ether_gas")}\",Amount:10}`,
+			inputFluid: `{FluidName:\"${liquidInfusionEq[i]}\",Amount:10}`,
 			processingTime: 60,
 			output: {
 			  item: M_E(`${tier}_tier_installer`),
@@ -60,6 +61,12 @@ ServerEvents.recipes((event) => {
 			type: IF("dissolution_chamber")
 		})
 	})
+	
+	//enriched stuff
+	customRecipes.industrialforegoing.dissolution(event, M_E(`enriched_radiance`), [IF("dryrubber")], KJ("liquid_radiance"), 100, 60)
+	customRecipes.industrialforegoing.dissolution(event, M_E(`enriched_thermonuclear`), [IF("dryrubber")], KJ("liquid_thermonuclear"), 100, 60)
+	customRecipes.industrialforegoing.dissolution(event, M_E(`enriched_shining`), [IF("dryrubber")], KJ("liquid_shining"), 100, 60)
+	customRecipes.industrialforegoing.dissolution(event, M_E(`enriched_spectrum`), [IF("dryrubber")], KJ("liquid_spectrum"), 100, 60)
 	
 	//bins
 	removeRecipeByOutput(event, [

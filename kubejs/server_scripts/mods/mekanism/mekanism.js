@@ -481,6 +481,7 @@ ServerEvents.recipes((event) => {
 	
 	//tier upgrades
 	const alloyTierEq = [MC("redstone"), M("alloy_infused"), M("alloy_reinforced"), M("alloy_atomic")]
+	const liquidInfusionEq = [KJ("liquid_carbon"), KJ("liquid_redstone"), KJ("liquid_diamond"), KJ("liquid_refined_obsidian")]
 	mekaTiers.forEach( (tier, i) => {
 		removeRecipeByOutput(event, [
 			M(`${tier}_tier_installer`),
@@ -499,7 +500,7 @@ ServerEvents.recipes((event) => {
 
 		event.custom({
 			input: inputArr,
-			inputFluid: `{FluidName:\"${IF("ether_gas")}\",Amount:10}`,
+			inputFluid: `{FluidName:\"${liquidInfusionEq[i]}\",Amount:10}`,
 			processingTime: 60,
 			output: {
 			  item: M(`${tier}_tier_installer`),
@@ -508,6 +509,12 @@ ServerEvents.recipes((event) => {
 			type: IF("dissolution_chamber")
 		})
 	})
+	
+	//enriched stuff
+	customRecipes.industrialforegoing.dissolution(event, M(`enriched_carbon`), [IF("dryrubber")], KJ("liquid_carbon"), 100, 60)
+	customRecipes.industrialforegoing.dissolution(event, M(`enriched_redstone`), [IF("dryrubber")], KJ("liquid_redstone"), 100, 60)
+	customRecipes.industrialforegoing.dissolution(event, M(`enriched_diamond`), [IF("dryrubber")], KJ("liquid_diamond"), 100, 60)
+	customRecipes.industrialforegoing.dissolution(event, M(`enriched_refined_obsidian`), [IF("dryrubber")], KJ("liquid_refined_obsidian"), 100, 60)
 
 	//purification chamber
 	removeRecipeByOutput(event, [

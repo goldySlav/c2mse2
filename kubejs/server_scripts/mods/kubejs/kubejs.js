@@ -1091,6 +1091,90 @@ castsForNumber = {
 	
 	
 	
+	//liquid infusions
+	event.custom({
+		input: [
+			{ item: M("enriched_carbon") },
+		],
+		inputFluid: `{FluidName:\"${M("sulfuric_acid")}\",Amount:10}`,
+		processingTime: 60,
+		output: toRecipeJsonItem(IF("dryrubber")),
+		outputFluid: `{Amount:100,FluidName:\"${KJ("liquid_carbon")}\"}`,
+		type: IF("dissolution_chamber")
+	})
+	event.custom({
+		input: [
+			{ item: M("enriched_redstone") },
+		],
+		inputFluid: `{FluidName:\"${M("sulfuric_acid")}\",Amount:10}`,
+		processingTime: 60,
+		output: toRecipeJsonItem(IF("dryrubber")),
+		outputFluid: `{Amount:100,FluidName:\"${KJ("liquid_redstone")}\"}`,
+		type: IF("dissolution_chamber")
+	})
+	event.custom({
+		input: [
+			{ item: M("enriched_diamond") },
+		],
+		inputFluid: `{FluidName:\"${M("sulfuric_acid")}\",Amount:10}`,
+		processingTime: 60,
+		output: toRecipeJsonItem(IF("dryrubber")),
+		outputFluid: `{Amount:100,FluidName:\"${KJ("liquid_diamond")}\"}`,
+		type: IF("dissolution_chamber")
+	})
+	event.custom({
+		input: [
+			{ item: M("enriched_refined_obsidian") },
+		],
+		inputFluid: `{FluidName:\"${M("sulfuric_acid")}\",Amount:10}`,
+		processingTime: 60,
+		output: toRecipeJsonItem(IF("dryrubber")),
+		outputFluid: `{Amount:100,FluidName:\"${KJ("liquid_refined_obsidian")}\"}`,
+		type: IF("dissolution_chamber")
+	})
+	event.custom({
+		input: [
+			{ item: M_E("enriched_radiance") },
+		],
+		inputFluid: `{FluidName:\"${M("sulfuric_acid")}\",Amount:10}`,
+		processingTime: 60,
+		output: toRecipeJsonItem(IF("dryrubber")),
+		outputFluid: `{Amount:100,FluidName:\"${KJ("liquid_radiance")}\"}`,
+		type: IF("dissolution_chamber")
+	})
+	event.custom({
+		input: [
+			{ item: M_E("enriched_thermonuclear") },
+		],
+		inputFluid: `{FluidName:\"${M("sulfuric_acid")}\",Amount:10}`,
+		processingTime: 60,
+		output: toRecipeJsonItem(IF("dryrubber")),
+		outputFluid: `{Amount:100,FluidName:\"${KJ("liquid_thermonuclear")}\"}`,
+		type: IF("dissolution_chamber")
+	})
+	event.custom({
+		input: [
+			{ item: M_E("enriched_shining") },
+		],
+		inputFluid: `{FluidName:\"${M("sulfuric_acid")}\",Amount:10}`,
+		processingTime: 60,
+		output: toRecipeJsonItem(IF("dryrubber")),
+		outputFluid: `{Amount:100,FluidName:\"${KJ("liquid_shining")}\"}`,
+		type: IF("dissolution_chamber")
+	})
+	event.custom({
+		input: [
+			{ item: M_E("enriched_spectrum") },
+		],
+		inputFluid: `{FluidName:\"${M("sulfuric_acid")}\",Amount:10}`,
+		processingTime: 60,
+		output: toRecipeJsonItem(IF("dryrubber")),
+		outputFluid: `{Amount:100,FluidName:\"${KJ("liquid_spectrum")}\"}`,
+		type: IF("dissolution_chamber")
+	})
+	
+	
+	
 	//mechanisms
 	
 	//kinetic mechanism
