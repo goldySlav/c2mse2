@@ -1097,11 +1097,7 @@ castsForNumber = {
 
 
 	//neutron gas
-	event.custom({
-		type: M('activating'),
-		input: { amount: 4, gas: M('plutonium') },
-		output: { amount: 1, gas: KJ('neutron_gas') }
-	});
+	customRecipes.mekanism.activating(event, KJ("neutron_gas"), 1, M("plutonium"), 4)
 	
 	
 	
