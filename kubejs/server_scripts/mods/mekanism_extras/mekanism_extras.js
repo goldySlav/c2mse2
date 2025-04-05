@@ -8,6 +8,29 @@ ServerEvents.recipes((event) => {
 
 	const mekaExtrasTiers = ["absolute", "supreme", "cosmic", "infinite"]
 	
+	//tiered machines BULK
+	const tieredList = [
+		"smelting", "enriching", "crushing", "compressing", "combining",
+		"purifying", "injecting", "infusing", "sawing",
+	]
+
+	tieredList.forEach(tiered => {
+		mekaExtrasTiers.forEach((tier, i) => {
+			const id = M_E(`${tier}_${tiered}_factory`)
+			const prevIdStr = `${mekaExtrasTiers[i - 1]}_${tiered}_factory`
+			const ultStr = `ultimate_${tiered}_factory`
+			const tierId = M_E(`${tier}_tier_installer`)
+
+			removeRecipeByOutput(event, [
+				id,
+			])
+			event.shapeless(id, [i ? M_E(prevIdStr) : M(ultStr), tierId])
+			if (!i) {
+				event.recipes.create.item_application(M_E(`${mekaExtrasTiers[i]}_${tiered}_factory`), [M(ultStr), tierId])
+			}
+		})
+	})
+	
 	//tier upgrades
 	const alloyTierEq = [M_E("alloy_radiance"), M_E("alloy_thermonuclear"), M_E("alloy_shining"), M_E("alloy_spectrum")]
 	mekaExtrasTiers.forEach( (tier, i) => {
