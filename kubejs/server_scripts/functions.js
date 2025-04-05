@@ -570,6 +570,15 @@ const customRecipes = {
 				output: toRecipeJsonItem(itemOutput)
 			})
 		},
+		crystallizing: function(event, outputItem, inputGasFluid, inputGasFluidAmount, chemicalType) {
+			chemicalType = chemicalType ? chemicalType : 'gas'
+			event.custom({
+				type: M('crystallizing'),
+				chemicalType: chemicalType,
+				input: { amount: inputGasFluidAmount, gas: inputGasFluid },
+				output: outputItem,
+			})
+		},
 	},
 	tconstruct: {
 		

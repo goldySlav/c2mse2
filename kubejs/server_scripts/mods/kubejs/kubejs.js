@@ -294,12 +294,7 @@ ServerEvents.recipes((event) => {
 
 
   	//neutron pile
-	event.custom({
-		type: M('crystallizing'),
-		chemicalType: 'gas',
-		input: { amount: 100, gas: KJ("neutron_gas") },
-		output: KJ("pileof_neutrons"),
-	})
+	customRecipes.mekanism.crystallizing(event, KJ("pileof_neutrons"), KJ("neutron_gas"), 100)
 
 
 
@@ -1064,12 +1059,7 @@ castsForNumber = {
 	
 	//ether gem
 	customRecipes.industrialforegoing.dissolution(event, KJ(`ether_gem`), [MC("glass_pane")], IF("ether_gas"), 90, 20)
-	event.custom({
-		type: M('crystallizing'),
-		chemicalType: 'gas',
-		input: { amount: 10, gas: KJ("depleted_ether_gas") },
-		output: KJ(`ether_gem`),
-	})
+	customRecipes.mekanism.crystallizing(event, KJ(`ether_gem`), KJ("depleted_ether_gas"), 10)
 
 
 	//universe piece
