@@ -704,6 +704,33 @@ ServerEvents.recipes((event) => {
 	
 	
 	
+	//waste bulk
+	event.custom({
+		type: AE2_A("reaction"),
+		energy: 1500000,
+	    fluid: {
+			fluidStack: {
+				Amount: 16000,
+				FluidName: MC("water")
+			}
+		},
+		input_items: [
+			{
+				amount: 8,
+				ingredient: {
+					item: KJ("dye_entangled_singularity")
+				}
+			},
+		],
+		output: {
+			"#": 12800,
+			"#c": "ae2:f",
+			id: KJ("abstruse_waste"),
+		}
+	})
+	
+	
+	
 	//custom infusions
 	customRecipes.mekanism.infusion_conversion(event, KJ("waste"), 10, AE2("magenta_paint_ball"))
 	customRecipes.mekanism.infusion_conversion(event, KJ("waste"), 20, AE2("blue_paint_ball"))
