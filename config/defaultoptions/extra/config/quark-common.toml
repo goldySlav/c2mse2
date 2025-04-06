@@ -118,7 +118,7 @@
 	Hedges = false
 	"Hollow Logs" = true
 	"Industrial Palette" = true
-	"Japanese Palette" = false
+	"Japanese Palette" = true
 	"Leaf Carpet" = false
 	Midori = false
 	"More Brick Types" = false
@@ -1350,7 +1350,7 @@
 	Crabs = false
 	Forgotten = true
 	Foxhound = true
-	Shiba = false
+	Shiba = true
 	Stonelings = false
 	Toretoise = false
 	Wraith = false
