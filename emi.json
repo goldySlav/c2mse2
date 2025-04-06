@@ -1,0 +1,96 @@
+{
+  "favorites": [
+    {
+      "stack": "item:ae2:ender_dust",
+      "recipe": "jei:/create/milling/compat/ae2/ender_pearl"
+    },
+    {
+      "stack": "item:quark:iron_button"
+    },
+    {
+      "stack": "item:quark:gold_button"
+    },
+    {
+      "stack": "item:quark:shiba_spawn_egg"
+    },
+    {
+      "stack": "item:enderio:filled_soul_vial{BlockEntityTag:{EntityStorage:{Entity:{id:\"quark:shiba\"}}}}"
+    }
+  ],
+  "lookup_history": [
+    "#item:projecte:alchemical_bags",
+    "item:enderstorage:ender_pouch",
+    "item:quark:obsidian_pressure_plate",
+    "item:quark:paper_lantern_sakura",
+    "item:quark:paper_lantern",
+    "item:quark:bamboo_mat_carpet",
+    "item:quark:bamboo_mat",
+    "item:quark:shiba_spawn_egg",
+    "item:artifacts:chorus_totem",
+    "item:quark:redstone_randomizer",
+    "item:quark:matrix_enchanter",
+    "item:quark:crab_spawn_egg",
+    "item:pamhc2foodextended:imitationcrabsticksitem",
+    "item:quark:weathered_cut_copper_vertical_slab",
+    "item:quark:paper_wall",
+    "item:minecraft:iron_ingot",
+    "item:quark:iron_plate",
+    "item:quark:iron_plate_slab",
+    "item:quark:iron_pillar",
+    "item:quark:wraith_spawn_egg",
+    "item:quark:ender_watcher",
+    "item:quark:grate",
+    "item:quark:duskbound_block_slab",
+    "item:ae2:ender_dust",
+    "item:enderio:dark_steel_sword{Damage:0}",
+    "item:kubejs:dye_entangled_singularity",
+    "item:enderio:conduit_binder",
+    "item:enderio:conduit_binder_composite",
+    "item:enderio:resetting_lever_ten_inv",
+    "item:enderio:resetting_lever_ten",
+    "item:enderio:resetting_lever_five_inv",
+    "item:enderio:resetting_lever_five",
+    "item:quark:gold_button",
+    "item:quark:iron_button",
+    "item:quark:toretoise_spawn_egg",
+    "item:quark:soul_bead",
+    "item:quark:stoneling_spawn_egg",
+    "item:quark:slime_in_a_bucket",
+    "item:quark:blossom_door",
+    "item:quark:red_blossom_sapling",
+    "item:quark:yellow_blossom_sapling",
+    "item:quark:orange_blossom_sapling",
+    "item:quark:lavender_blossom_sapling",
+    "item:quark:blue_blossom_sapling",
+    "item:quark:ancient_ladder",
+    "item:quark:iron_ladder",
+    "item:quark:bamboo_ladder",
+    "item:quark:warped_ladder",
+    "item:quark:dark_oak_ladder",
+    "item:quark:jungle_ladder",
+    "item:quark:spruce_ladder",
+    "item:quark:crab_leg",
+    "item:quark:cherry_ladder",
+    "item:quark:birch_ladder",
+    "item:quark:mangrove_ladder",
+    "item:quark:crimson_ladder",
+    "item:quark:acacia_ladder",
+    "item:quark:foxhound_spawn_egg",
+    "item:quark:forgotten_spawn_egg",
+    "item:quark:forgotten_hat{Damage:0}",
+    "item:quark:oak_vertical_slab",
+    "item:quark:hollow_oak_log",
+    "item:packagedauto:proxy_marker",
+    "item:packagedauto:distributor_marker",
+    "item:enderio:loot_capacitor{CapacitorData:{Base:1.0f,Modifiers:{}}}",
+    "item:manyideas_core:mysterious_shears{Damage:0}"
+  ],
+  "craft_history": [],
+  "recipe_defaults": {
+    "added": [],
+    "tags": {},
+    "resolutions": {},
+    "disabled": []
+  },
+  "hidden_stacks": []
+}
