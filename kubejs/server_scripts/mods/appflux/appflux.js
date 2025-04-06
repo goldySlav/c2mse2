@@ -5,6 +5,7 @@ ServerEvents.recipes((event) => {
 		AF("charged_redstone"),
 		AF("insulating_resin"),
 		AF("harden_insulating_resin"),
+		AF("sky_harden_insulating_resin"),
 	])
 	
 	
@@ -19,6 +20,11 @@ ServerEvents.recipes((event) => {
 	
 	//harden insulating resin replace
 	event.replaceInput({}, AF("harden_insulating_resin"), F("#ingots/zinc"))
+	
+	
+	
+	//sky insulating resin replace
+	event.replaceInput({}, AF("sky_harden_insulating_resin"), F("#ingots/ender_ingot"))
 	
 	
 	
