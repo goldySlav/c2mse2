@@ -590,6 +590,21 @@ const customRecipes = {
 	tconstruct: {
 		
 	},
+	enderio: {
+		soulbinding: function(event, to, from, soul, energy, levels) {
+			const obj = {
+				type: EIO("soul_binding"),
+				energy: energy,
+				exp: levels,
+				input: {},
+				output: to
+			}
+			
+			from.substring(0, 1) === "#" ? obj.input.tag = from.slice(1) : obj.input.item = from
+			soul.includes(":") ? obj.entity_type = soul : obj.mob_category = soul
+			event.custom(obj)
+		},
+	},
 }
 
 const toRecipeJsonItem = (items) => {

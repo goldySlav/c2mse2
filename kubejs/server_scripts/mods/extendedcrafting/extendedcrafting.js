@@ -221,6 +221,9 @@ ServerEvents.recipes((event) => {
 		B: EC("flux_star"),
 	}, 800000).powerRate(400)
 	
+	//ender star (additional recipe)
+	customRecipes.enderio.soulbinding(event, EC("ender_star"), MC("nether_star"), MC("enderman"), 50000, 3)
+	
 	//flux star
 	event.recipes.extendedcrafting.shapeless_flux_crafter(EC("flux_star"), [EC("ender_star")], 400000).powerRate(400)
 	

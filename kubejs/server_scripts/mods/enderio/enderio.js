@@ -287,32 +287,13 @@ ServerEvents.recipes((event) => {
 		}
 	)
 	
-	//soulbinding
-	function soulbind(to, from, soul, energy, levels) {
-		const obj = {
-			type: EIO("soul_binding"),
-			energy: energy,
-			exp: levels,
-			input: {},
-			output: to
-		}
-		
-		from.substring(0, 1) === "#" ? obj.input.tag = from.slice(1) : obj.input.item = from
-		soul.includes(":") ? obj.entity_type = soul : obj.mob_category = soul
-		event.custom(obj)
-	}
-	soulbind(EC("ender_star"), MC("nether_star"), MC("enderman"), 50000, 3)
-	soulbind(MC("ender_chest"), F("#chests/wooden"), MC("enderman"), 24000, 1)
-	soulbind(EIO("dark_steel_sword"), PET("emerald_netherite_sword"), MC("enderman"), 24000, 1)
-	soulbind(EIO("monster_token"), EIO("soularium_grinding_ball"), "monster", 12800, 1)
-	soulbind(EIO("animal_token"), EIO("soularium_grinding_ball"), "creature", 12800, 1)
-	soulbind(EIO("player_token"), EIO("soularium_grinding_ball"), MC("villager"), 12800, 1)
+	//tokens
+	customRecipes.enderio.soulbinding(event, EIO("monster_token"), EIO("soularium_grinding_ball"), "monster", 12800, 1)
+	customRecipes.enderio.soulbinding(event, EIO("animal_token"), EIO("soularium_grinding_ball"), "creature", 12800, 1)
+	customRecipes.enderio.soulbinding(event, EIO("player_token"), EIO("soularium_grinding_ball"), MC("villager"), 12800, 1)
 	
-	souledEggedEntities.forEach(entity => {
-		const entitySplitted = entity.split(":")
-		//const spawnEggStr = entitySplitted[0] == AM() ? AM(`spawn_egg_${entitySplitted[1]}`) : `${entity}_spawn_egg`
-		soulbind(`${entity}_spawn_egg`, CM("empty_spawn_egg"), entity, 202000, 6)
-	})
+	//dark steel sword
+	customRecipes.enderio.soulbinding(event, EIO("dark_steel_sword"), PET("emerald_netherite_sword"), MC("enderman"), 24000, 1)
 	
 	//staff of travelling
 	event.shaped(EIO("staff_of_travelling"), ["  B", " A ", "A  "], {

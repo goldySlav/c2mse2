@@ -166,4 +166,14 @@ ServerEvents.recipes((event) => {
 	
 	//emerald compat PET + CR_EI
 	customRecipes.create.disenchanting(event, [toRecipeJsonFluid(`3x ${CR_EI("experience")}`), toRecipeJsonItem(MC("emerald"))], [PET("pure_emerald")])
+	
+	//spawn eggs
+	souledEggedEntities.forEach(entity => {
+		const entitySplitted = entity.split(":")
+		//const spawnEggStr = entitySplitted[0] == AM() ? AM(`spawn_egg_${entitySplitted[1]}`) : `${entity}_spawn_egg`
+		customRecipes.enderio.soulbinding(event, `${entity}_spawn_egg`, CM("empty_spawn_egg"), entity, 202000, 6)
+	})
+	
+	//ender chest
+	customRecipes.enderio.soulbinding(event, MC("ender_chest"), F("#chests/wooden"), MC("enderman"), 24000, 1)
 })
