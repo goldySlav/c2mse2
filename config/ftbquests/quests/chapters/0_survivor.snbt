@@ -725,7 +725,13 @@
 		}
 		{
 			dependencies: ["587E109D89450B8B"]
-			description: ["Note: To actually collect Obsidian, use a barrel"]
+			description: [
+				"Note: To actually collect Obsidian, use a barrel"
+				""
+				"Also you can note that building Nether Portal from Obsidian is &6no longer an option&r, please be patient and let quests guide you to the it."
+				""
+				"You will visit Nether in the &6Chapter 3&r!"
+			]
 			id: "19B3A861D2FAC002"
 			subtitle: "Ice Bucket Challenge"
 			tasks: [{

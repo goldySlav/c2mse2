@@ -162,7 +162,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 2.0d
+			x: 3.5d
 			y: 3.5d
 		}
 		{
@@ -702,6 +702,44 @@
 			title: "Craft Your First \"Sky Stone Dust\""
 			x: -1.0d
 			y: -5.5d
+		}
+		{
+			dependencies: ["0B16696302C3F3C5"]
+			description: [
+				"Now you unlocked \"The Nether\" dimension!"
+				""
+				"To join the dimension you need to builda frame from &cNetherrack&r and light it up with &6Blaze Powder&r!"
+				""
+				"{image:kubejs:textures/quests/netherrack_portal.png width:200 height:225 align:1}"
+				""
+				"Find hints about how to get Netherrack and Blaze Powder on the next page."
+				""
+				"{@pagebreak}"
+				""
+				"To make &cNetherrack&r:"
+				"1. Produce &5Witch Water&r in Stone Barrel"
+				"2. Pour &6Lava&r Bucket onto it"
+				"&o(other way around will produce Blackstone, you may also get it while you at it!)&r"
+				""
+				"To make &6Blaze Powder&r:"
+				"1. Craft a &7Coal&r Block"
+				"2. Polish it with Sandpaper to craft"
+				"   &7Coal Rod&r"
+				"3. Spout Lava onto Coal Rod and Press"
+				"   it as it is shown in the JEI"
+			]
+			id: "3F0D73D93442B7F1"
+			optional: true
+			shape: "circle"
+			subtitle: "&3Apotheosis Gems&r and &5Blazes&r inside"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "091DC372BB8775DE"
+				title: "Visit \"The Nether\" Dimension"
+				type: "dimension"
+			}]
+			x: 1.5d
+			y: -7.0d
 		}
 	]
 	title: "3. Brass Age"
