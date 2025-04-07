@@ -114,7 +114,7 @@ StartupEvents.registry('item', event => {
 		event.create(`broken_${e}_processor_wafer`).displayName(`Broken ${name} Processor Wafer`)
 	})
 
-	event.create('dye_entangled_singularity').unstackable().displayName('Chromatic Singularity').rarity("rare")
+	event.create('dye_entangled_singularity').maxStackSize(16).displayName('Chromatic Singularity').rarity("rare")
 	event.create('radiant_coil').glow(true).displayName('Radiant Induction Coil').rarity("uncommon")
 	event.create('circuit_scrap').displayName('Circuit Scrap').rarity("common")
 	event.create('missingno').texture("kubejs:item/missingno").glow(true).rarity("epic").displayName('∄')
