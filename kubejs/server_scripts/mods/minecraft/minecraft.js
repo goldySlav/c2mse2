@@ -35,6 +35,9 @@ ServerEvents.recipes((event) => {
     event.recipes.create.filling(MC('wet_sponge'), [MC('sponge'), Fluid.of(MC('water'), 1000)])
 	customRecipes.ae2.transform.fluid(event, MC('wet_sponge'), [MC('sponge')])
 	
+	//necrotic bone haunting
+	event.recipes.create.haunting(MC('wither_rose'), MC('poppy'))
+	
 	//concrete
 	colours.forEach(color => {
 		customRecipes.ae2.transform.fluid(event, MC(`${color}_concrete`), [MC(`${color}_concrete_powder`)])
