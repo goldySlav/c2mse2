@@ -1,0 +1,866 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "energy_storage"
+	group: "051AA46D917B6FBA"
+	icon: "mekanism_extras:infinite_induction_cell"
+	id: "22FAD188C07A39D1"
+	order_index: 15
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3A490D7D16A4BAD5"]
+			disable_toast: true
+			id: "602408A51D373712"
+			tasks: [{
+				id: "6A1D21444104B1BA"
+				item: "powah:energy_cell_starter"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"151F0EEFF96BAC81"
+				"602408A51D373712"
+			]
+			disable_toast: true
+			id: "79DC41EFCA2CDA41"
+			tasks: [{
+				id: "1B384B9F83166F0B"
+				item: "powah:energy_cell_basic"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"47C0E872D0563E23"
+				"79DC41EFCA2CDA41"
+			]
+			disable_toast: true
+			id: "47B7C80504B513A3"
+			tasks: [{
+				id: "30A70B186D2595CC"
+				item: "powah:energy_cell_hardened"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"55CA0241B355137D"
+				"47B7C80504B513A3"
+			]
+			disable_toast: true
+			id: "61F47A31CB59D2C7"
+			tasks: [{
+				id: "791EA845EF9CAED2"
+				item: "powah:energy_cell_blazing"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"694C150C2CA32C8E"
+				"61F47A31CB59D2C7"
+			]
+			disable_toast: true
+			id: "7C22F1454180D33C"
+			tasks: [{
+				id: "01D4F096ACE5224D"
+				item: "powah:energy_cell_niotic"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"7C22F1454180D33C"
+				"1F321E81C3AFE1FD"
+			]
+			disable_toast: true
+			id: "182597A35CF6089A"
+			tasks: [{
+				id: "19CF8964A166CC00"
+				item: "powah:energy_cell_spirited"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"378948F8FDD4A19D"
+				"182597A35CF6089A"
+			]
+			disable_toast: true
+			id: "7A2ABDB70E955873"
+			tasks: [{
+				id: "054519596179CE54"
+				item: "powah:energy_cell_nitro"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7A2ABDB70E955873"]
+			id: "186FD5E51915B554"
+			tasks: [{
+				id: "236E892C3D9B9C3D"
+				item: "powah:energy_cell_creative"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["70B3C8D5F1A0048D"]
+			disable_toast: true
+			id: "655C7BBC8EC3462E"
+			tasks: [{
+				id: "01F3F129AE5BC849"
+				item: "mekanism:basic_energy_cube"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["655C7BBC8EC3462E"]
+			disable_toast: true
+			id: "4B8F6E1701E56859"
+			tasks: [{
+				id: "215B82643C08ADDF"
+				item: "mekanism:advanced_energy_cube"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4B8F6E1701E56859"]
+			disable_toast: true
+			id: "0951FAEC0350644C"
+			tasks: [{
+				id: "400CFC4A40AA2FA9"
+				item: "mekanism:elite_energy_cube"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0951FAEC0350644C"]
+			disable_toast: true
+			id: "07D84A54BC7A745B"
+			tasks: [{
+				id: "3F1B74079EDE4164"
+				item: "mekanism:ultimate_energy_cube"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["07D84A54BC7A745B"]
+			disable_toast: true
+			id: "1384A933ED338CD8"
+			tasks: [{
+				id: "60E8114605852505"
+				item: "mekanism_extras:absolute_energy_cube"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1384A933ED338CD8"]
+			disable_toast: true
+			id: "5B31E969DCAE4429"
+			tasks: [{
+				id: "37E057516753BFBB"
+				item: "mekanism_extras:supreme_energy_cube"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["5B31E969DCAE4429"]
+			disable_toast: true
+			id: "161B4EB69A806C68"
+			tasks: [{
+				id: "4CB97E8832D10C06"
+				item: "mekanism_extras:cosmic_energy_cube"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["161B4EB69A806C68"]
+			disable_toast: true
+			id: "24D382F419AF35B0"
+			tasks: [{
+				id: "26F3C97BB76C7201"
+				item: "mekanism_extras:infinite_energy_cube"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["24D382F419AF35B0"]
+			id: "049CF4A0B7A09632"
+			tasks: [{
+				id: "08EFA91BC81DF466"
+				item: {
+					Count: 1
+					id: "mekanism:creative_energy_cube"
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "18446744073709551615.9999"
+							}]
+							componentConfig: {
+								config0: {
+									side0: 4
+									side1: 4
+									side2: 4
+									side3: 4
+									side4: 4
+									side5: 4
+								}
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: 14.5d
+		}
+		{
+			disable_toast: true
+			id: "0FD0362FCF1E8761"
+			tasks: [{
+				id: "20EE2DB97CEFC53B"
+				item: {
+					Count: 1
+					id: "ae2:energy_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0FD0362FCF1E8761"]
+			disable_toast: true
+			id: "5E1E1BB87E3F047A"
+			tasks: [{
+				id: "39942FDC7EB4DC71"
+				item: {
+					Count: 1
+					id: "ae2:dense_energy_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5E1E1BB87E3F047A"]
+			disable_toast: true
+			id: "70B3C8D5F1A0048D"
+			tasks: [{
+				id: "5973AEC1DDD71167"
+				item: {
+					Count: 1
+					id: "megacells:mega_energy_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["70B3C8D5F1A0048D"]
+			disable_toast: true
+			id: "705E33C55670E141"
+			tasks: [{
+				id: "43B103374843620B"
+				item: "ae2:creative_energy_cell"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"655C7BBC8EC3462E"
+				"63EC4F39046BCDC9"
+			]
+			disable_toast: true
+			id: "3A5D06E39C135761"
+			tasks: [{
+				id: "20D4D93EAF5A4D29"
+				item: "mekanism:basic_induction_cell"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"3A5D06E39C135761"
+				"4B8F6E1701E56859"
+			]
+			disable_toast: true
+			id: "4ECDD3666A9E56A1"
+			tasks: [{
+				id: "20D15351B5CE25FC"
+				item: "mekanism:advanced_induction_cell"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"4ECDD3666A9E56A1"
+				"0951FAEC0350644C"
+			]
+			disable_toast: true
+			id: "56084D719866F103"
+			tasks: [{
+				id: "2DFCEDD71A37B8C5"
+				item: "mekanism:elite_induction_cell"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"56084D719866F103"
+				"07D84A54BC7A745B"
+			]
+			disable_toast: true
+			id: "3FC60E3A340A485E"
+			tasks: [{
+				id: "02D782C07FAE163A"
+				item: "mekanism:ultimate_induction_cell"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"3FC60E3A340A485E"
+				"1384A933ED338CD8"
+			]
+			disable_toast: true
+			id: "0A6D2DE57B2A3C75"
+			tasks: [{
+				id: "3DBE8786AFD22C37"
+				item: "mekanism_extras:absolute_induction_cell"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"0A6D2DE57B2A3C75"
+				"5B31E969DCAE4429"
+			]
+			disable_toast: true
+			id: "75774CBAAE05A0E2"
+			tasks: [{
+				id: "3D4BFA458429D171"
+				item: "mekanism_extras:supreme_induction_cell"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"75774CBAAE05A0E2"
+				"161B4EB69A806C68"
+			]
+			disable_toast: true
+			id: "3D24633D8D4901BC"
+			tasks: [{
+				id: "34A76C7E70F27DA2"
+				item: "mekanism_extras:cosmic_induction_cell"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"3D24633D8D4901BC"
+				"24D382F419AF35B0"
+			]
+			disable_toast: true
+			id: "4AC6D18BCBA1FFAF"
+			tasks: [{
+				id: "3AB0EE3F6ACD9979"
+				item: "mekanism_extras:infinite_induction_cell"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 13.0d
+		}
+		{
+			id: "3A490D7D16A4BAD5"
+			tasks: [{
+				id: "3888FF31BF8DBC90"
+				item: {
+					Count: 1
+					id: "powah:battery_starter"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3A490D7D16A4BAD5"]
+			id: "151F0EEFF96BAC81"
+			tasks: [{
+				id: "5447694E66284924"
+				item: {
+					Count: 1
+					id: "powah:battery_basic"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["151F0EEFF96BAC81"]
+			id: "47C0E872D0563E23"
+			tasks: [{
+				id: "707DF7ADD5AD1282"
+				item: {
+					Count: 1
+					id: "powah:battery_hardened"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["47C0E872D0563E23"]
+			id: "55CA0241B355137D"
+			tasks: [{
+				id: "67D551B768C56D10"
+				item: {
+					Count: 1
+					id: "powah:battery_blazing"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["55CA0241B355137D"]
+			id: "694C150C2CA32C8E"
+			tasks: [{
+				id: "2ABD4D7D17FD1AE8"
+				item: {
+					Count: 1
+					id: "powah:battery_niotic"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["694C150C2CA32C8E"]
+			id: "1F321E81C3AFE1FD"
+			tasks: [{
+				id: "341A7B9AA22B1256"
+				item: {
+					Count: 1
+					id: "powah:battery_spirited"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1F321E81C3AFE1FD"]
+			id: "378948F8FDD4A19D"
+			tasks: [{
+				id: "2467F1F45D82CE73"
+				item: {
+					Count: 1
+					id: "powah:battery_nitro"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0FD0362FCF1E8761"]
+			disable_toast: true
+			id: "5B0498C1C634ADF9"
+			tasks: [{
+				id: "3F4A8567446335B7"
+				item: {
+					Count: 1
+					id: "appflux:fe_1k_portable_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5B0498C1C634ADF9"]
+			disable_toast: true
+			id: "73F41757A2CF6527"
+			tasks: [{
+				id: "0EA843D4D6617A31"
+				item: {
+					Count: 1
+					id: "appflux:fe_4k_portable_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["73F41757A2CF6527"]
+			disable_toast: true
+			id: "22215C1DB1A8C52E"
+			tasks: [{
+				id: "08E93F915E005731"
+				item: {
+					Count: 1
+					id: "appflux:fe_16k_portable_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["22215C1DB1A8C52E"]
+			disable_toast: true
+			id: "4DB514B0B77F7B68"
+			tasks: [{
+				id: "77AA188E3B4B791E"
+				item: {
+					Count: 1
+					id: "appflux:fe_64k_portable_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4DB514B0B77F7B68"]
+			disable_toast: true
+			id: "29E92CC0900B20AC"
+			tasks: [{
+				id: "6E2C59524E4B69DD"
+				item: {
+					Count: 1
+					id: "appflux:fe_256k_portable_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["29E92CC0900B20AC"]
+			disable_toast: true
+			id: "1AC69EFCBEEB1A42"
+			tasks: [{
+				id: "6B7285B1A2F3B280"
+				item: {
+					Count: 1
+					id: "appflux:fe_1m_portable_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["1AC69EFCBEEB1A42"]
+			disable_toast: true
+			id: "1ADF8937BD3D12FA"
+			tasks: [{
+				id: "1BC68C898E2A71A1"
+				item: {
+					Count: 1
+					id: "appflux:fe_4m_portable_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1ADF8937BD3D12FA"]
+			disable_toast: true
+			id: "173422E68B7DBEDC"
+			tasks: [{
+				id: "47C0489A905CDBF0"
+				item: {
+					Count: 1
+					id: "appflux:fe_16m_portable_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["173422E68B7DBEDC"]
+			disable_toast: true
+			id: "4802E4605D198209"
+			tasks: [{
+				id: "3F6160492D6F0AD2"
+				item: {
+					Count: 1
+					id: "appflux:fe_64m_portable_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["4802E4605D198209"]
+			disable_toast: true
+			id: "4F841AAD74E12016"
+			tasks: [{
+				id: "47F19D34B1B94B7A"
+				item: {
+					Count: 1
+					id: "appflux:fe_256m_portable_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 13.0d
+		}
+		{
+			id: "025419B5A518ABD1"
+			tasks: [{
+				id: "73719DE6CBD8E394"
+				item: {
+					Count: 1
+					id: "appflux:fe_1k_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["025419B5A518ABD1"]
+			disable_toast: true
+			id: "731CB11DC414ECD6"
+			tasks: [{
+				id: "0140F9019477DE81"
+				item: {
+					Count: 1
+					id: "appflux:fe_4k_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["731CB11DC414ECD6"]
+			disable_toast: true
+			id: "1C220F06B33C0BF5"
+			tasks: [{
+				id: "072DC2E80DC2F769"
+				item: {
+					Count: 1
+					id: "appflux:fe_16k_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1C220F06B33C0BF5"]
+			disable_toast: true
+			id: "41B9277021DC62E9"
+			tasks: [{
+				id: "52BB30735625B27A"
+				item: {
+					Count: 1
+					id: "appflux:fe_64k_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["41B9277021DC62E9"]
+			disable_toast: true
+			id: "2023AD60D81A3313"
+			tasks: [{
+				id: "2AB32B432F36D542"
+				item: {
+					Count: 1
+					id: "appflux:fe_256k_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2023AD60D81A3313"]
+			disable_toast: true
+			id: "0E53C197DA17D37E"
+			tasks: [{
+				id: "6BEA6A15002495CE"
+				item: {
+					Count: 1
+					id: "appflux:fe_1m_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0E53C197DA17D37E"]
+			disable_toast: true
+			id: "68A3685C619ACD82"
+			tasks: [{
+				id: "4E91C7C9D19515BB"
+				item: {
+					Count: 1
+					id: "appflux:fe_4m_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["68A3685C619ACD82"]
+			disable_toast: true
+			id: "62A6E9D476A9E734"
+			tasks: [{
+				id: "2A50BA2809182184"
+				item: {
+					Count: 1
+					id: "appflux:fe_16m_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["62A6E9D476A9E734"]
+			disable_toast: true
+			id: "0475AA80E7EB1F92"
+			tasks: [{
+				id: "7BA0A25610AB9B63"
+				item: {
+					Count: 1
+					id: "appflux:fe_64m_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0475AA80E7EB1F92"]
+			disable_toast: true
+			id: "319ECFBEDB9D7BC2"
+			tasks: [{
+				id: "0616DA703C41B76C"
+				item: {
+					Count: 1
+					id: "appflux:fe_256m_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 11.5d
+		}
+		{
+			disable_toast: true
+			id: "63EC4F39046BCDC9"
+			tasks: [{
+				id: "13A335EDCE083A5B"
+				item: "mekanism:energy_tablet"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.0d
+		}
+	]
+	title: "Energy Storage"
+}

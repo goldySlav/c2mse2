@@ -6,7 +6,7 @@
 	group: "051AA46D917B6FBA"
 	icon: "create:smart_fluid_pipe"
 	id: "055DC4A8F0192B76"
-	order_index: 16
+	order_index: 17
 	quest_links: [ ]
 	quests: [
 		{
