@@ -332,6 +332,18 @@ ServerEvents.recipes((event) => {
 		C: F('#gems/diamond'),
 	})
 	
+	//screwdrivers
+	event.shaped(KJ('industrial_screwdriver'), [
+		'ABC',
+		' DC',
+		'  C',
+	], {
+		A: F('#rods/cast_iron'),
+		B: F('#gears/diamond'),
+		C: F('#ingots/cast_iron'),
+		D: F('#dyes/orange'),
+	})
+	
 	//chromatic resonator
 	event.shaped(KJ('chromatic_resonator'), [
 		' R ',
@@ -368,7 +380,7 @@ ServerEvents.recipes((event) => {
         'CCCCC',
     ], {
         A: Item.of(MU("unstable_ingot")),
-        B: PR_C('screwdriver'),
+        B: KJ('industrial_screwdriver'),
         C: AE2('singularity'),
     }).id(KJ(`mechanical_crafting/unstable_screwdriver`))
 
@@ -380,7 +392,7 @@ ServerEvents.recipes((event) => {
         'CCCCC',
     ], {
         A: Item.of(MU("unstable_ingot")),
-        B: PR_C('screwdriver'),
+        B: KJ('industrial_screwdriver'),
         C: AE2('singularity'),
     }).id(KJ(`extended_crafting/unstable_screwdriver`))
 
