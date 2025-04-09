@@ -100,6 +100,7 @@ const ENT = (id, x) => MOD("entangled", id, x)
 const TCT = (id, x) => MOD("tconstruct", id, x)
 const LB = (id, x) => MOD("laserbridges", id, x)
 const MBCK = (id, x) => MOD("morebuckets", id, x)
+const IR = (id, x) => MOD("industrialrenewal", id, x)
 
 
 const processingTimesDefault = {
@@ -820,6 +821,8 @@ const singularities = [
 	{ id: "screwdriver", core: KJ("unstable_screwdriver") },
 	{ id: "saw", core: KJ("unstable_saw") },
 	{ id: "chromatic_resonator", core: KJ("unstable_chromatic_resonator") },
+	{ id: "battery", core: IR("battery") },
+	{ id: "industrial_battery", core: IR("battery_lithium") },
 	{ id: "calculator", core: KJ("unstable_charged_calculator") },
 	{ id: "cobblestone_generator", core: CG("tier_5") },
 	{ id: "experience_nugget", core: CR("experience_nugget") },

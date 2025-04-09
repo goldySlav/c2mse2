@@ -1468,6 +1468,10 @@ castsForNumber = {
 	copper_machine(EC('pedestal'), 1)
 	copper_machine(CR('steam_engine'), 1, CR('hand_crank'))
 	copper_machine(TCT('smeltery_controller'), 1, TCT("seared_melter"))
+	copper_machine(IR('battery_bank'), 1, IR("battery"))
+	copper_machine(IR('energy_level'), 2)
+	copper_machine(IR('fluid_gauge'), 2)
+	copper_machine(IR('energy_switch'), 1, MC("lever"))
 	
 	//brass machine
 	event.shaped(KJ('brass_machine'), [

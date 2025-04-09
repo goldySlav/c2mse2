@@ -557,6 +557,18 @@
 			x: -6.0d
 			y: 10.5d
 		}
+		{
+			dependencies: ["254B1CE0803DA72D"]
+			disable_toast: true
+			id: "2D7D72477FCDFD5B"
+			tasks: [{
+				id: "3B924870B5FE8E94"
+				item: "industrialrenewal:fluid_tank"
+				type: "item"
+			}]
+			x: -13.5d
+			y: -1.5d
+		}
 	]
 	title: "Fluid Storage"
 }

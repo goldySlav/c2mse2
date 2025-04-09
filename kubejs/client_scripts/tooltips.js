@@ -262,4 +262,15 @@ ItemEvents.tooltip(event => {
 	//chromatic compound transformations
     event.add('create:refined_radiance', '§7Crafted from §5Chromatic Compound§7 by throwing it onto a §bdense light§7!')
     event.add('create:shadow_steel', '§7Crafted from §5Chromatic Compound§7 by throwing it into a §8complete darkness§7!')
+
+
+
+	//industrial fluid tank
+    event.add('industrialrenewal:fluid_tank', '§7Can store up to §61K B§7 of liquid. Can act as a §6multiblock§7.')
+
+
+
+	//industrial battery & its bank
+    event.add('industrialrenewal:battery_lithium', '§7Can store up to §66.5M FE§7.')
+    event.add('industrialrenewal:ind_battery_bank', '§7Can store up to §624§7 Industrial Batteries. Can act as a §6multiblock§7.')
 })

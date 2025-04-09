@@ -861,6 +861,43 @@
 			x: 7.0d
 			y: -2.0d
 		}
+		{
+			disable_toast: true
+			id: "0928FF4BA880D0D4"
+			tasks: [{
+				id: "1B69C92014F6203D"
+				item: "industrialrenewal:battery_bank"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"5A098FF5F9DE94E1"
+				"0928FF4BA880D0D4"
+			]
+			disable_toast: true
+			id: "5F10B3314F7EDDA3"
+			tasks: [{
+				id: "23C8F61869A2E3F3"
+				item: "industrialrenewal:ind_battery_bank"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			disable_toast: true
+			id: "5A098FF5F9DE94E1"
+			tasks: [{
+				id: "3C927B69ACCAE704"
+				item: "industrialrenewal:battery_lithium"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -0.5d
+		}
 	]
 	title: "Energy Storage"
 }

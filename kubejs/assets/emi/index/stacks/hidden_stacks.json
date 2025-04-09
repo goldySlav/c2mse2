@@ -158,6 +158,7 @@
 		"item:mekanism:creative_fluid_tank{mekData:{FluidTanks:[{Tank:0b,stored:{Amount:2147483647,FluidName:\"tconstruct:seared_stone\"}}]}}",
 		"item:mekanism:creative_fluid_tank{mekData:{FluidTanks:[{Tank:0b,stored:{Amount:2147483647,FluidName:\"tconstruct:sky_slime\"}}]}}",
 		"item:mekanism:creative_fluid_tank{mekData:{FluidTanks:[{Tank:0b,stored:{Amount:2147483647,FluidName:\"tconstruct:venom\"}}]}}",
+		"item:mekanism:creative_fluid_tank{mekData:{FluidTanks:[{Tank:0b,stored:{Amount:2147483647,FluidName:\"industrialrenewal:steam_still\"}}]}}",
 		"item:mekanism:creative_chemical_tank{mekData:{GasTanks:[{Tank:0b,stored:{amount:9223372036854775807L,gasName:\"kubejs:depleted_ether_gas\"}}]}}",
 		"item:mekanism:creative_chemical_tank{mekData:{GasTanks:[{Tank:0b,stored:{amount:9223372036854775807L,gasName:\"kubejs:gaseous_brass_compound\"}}]}}",
 		"item:mekanism:creative_chemical_tank{mekData:{GasTanks:[{Tank:0b,stored:{amount:9223372036854775807L,gasName:\"kubejs:gaseous_certus_compound\"}}]}}",
