@@ -338,7 +338,7 @@
 		"Animation Time" = 7.0
 
 [tools]
-	Abacus = false
+	Abacus = true
 	"Ambient Discs" = false
 	"Ancient Tomes" = false
 	"Beacon Redirection" = false
