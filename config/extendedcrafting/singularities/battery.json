@@ -1,0 +1,10 @@
+{
+  "name": "Battery",
+  "colors": [
+    "737373",
+    "8e1a"
+  ],
+  "ingredient": {
+    "item": "minecraft:emerald"
+  }
+}

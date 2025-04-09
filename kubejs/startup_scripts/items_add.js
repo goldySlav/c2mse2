@@ -114,7 +114,7 @@ StartupEvents.registry('item', event => {
 		event.create(`broken_${e}_processor_wafer`).displayName(`Broken ${name} Processor Wafer`)
 	})
 
-	event.create('dye_entangled_singularity').unstackable().displayName('Chromatic Singularity').rarity("rare")
+	event.create('dye_entangled_singularity').maxStackSize(16).displayName('Chromatic Singularity').rarity("rare")
 	event.create('radiant_coil').glow(true).displayName('Radiant Induction Coil').rarity("uncommon")
 	event.create('circuit_scrap').displayName('Circuit Scrap').rarity("common")
 	event.create('missingno').texture("kubejs:item/missingno").glow(true).rarity("epic").displayName('∄')
@@ -199,7 +199,8 @@ StartupEvents.registry('item', event => {
 	event.create('unstable_saw').displayName('Unstable Saw').glow(true).rarity("epic").maxDamage(32000).texture("kubejs:item/diamond_saw")
 	
 	//screwdriver
-	event.create('unstable_screwdriver').displayName('Unstable Screwdriver').glow(true).rarity("epic").maxDamage(128000).texture("projectred_core:item/screwdriver")
+	event.create('industrial_screwdriver').parentModel("kubejs:item/industrial_screwdriver").maxDamage(1024).displayName('Industrial Screwdriver').rarity('uncommon')
+	event.create('unstable_screwdriver').parentModel("kubejs:item/industrial_screwdriver").maxDamage(128000).displayName('Unstable Screwdriver').rarity("epic").glow(true)
 	
 	//chromatic resonator
 	event.create('chromatic_resonator').displayName('Chromatic Resonator').maxDamage(512)

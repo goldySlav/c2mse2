@@ -9,6 +9,7 @@ ServerEvents.recipes((event) => {
 		AE2_A("adv_pattern_provider_capacity_upgrade"),
 		AE2_A("adv_pattern_encoder"),
 		AE2_A("shattered_singularity"),
+		AE2_A("small_adv_pattern_provider"),
 	])
 	
 	//inscriber press from scrap

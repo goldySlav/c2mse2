@@ -294,12 +294,7 @@ ServerEvents.recipes((event) => {
 
 
   	//neutron pile
-	event.custom({
-		type: M('crystallizing'),
-		chemicalType: 'gas',
-		input: { amount: 100, gas: KJ("neutron_gas") },
-		output: KJ("pileof_neutrons"),
-	})
+	customRecipes.mekanism.crystallizing(event, KJ("pileof_neutrons"), KJ("neutron_gas"), 100)
 
 
 
@@ -335,6 +330,18 @@ ServerEvents.recipes((event) => {
 		A: MC('stick'),
 		B: CB_M('stone_rod'),
 		C: F('#gems/diamond'),
+	})
+	
+	//screwdrivers
+	event.shaped(KJ('industrial_screwdriver'), [
+		'ABC',
+		' DC',
+		'  C',
+	], {
+		A: F('#rods/cast_iron'),
+		B: F('#gears/diamond'),
+		C: F('#ingots/cast_iron'),
+		D: F('#dyes/orange'),
 	})
 	
 	//chromatic resonator
@@ -373,7 +380,7 @@ ServerEvents.recipes((event) => {
         'CCCCC',
     ], {
         A: Item.of(MU("unstable_ingot")),
-        B: PR_C('screwdriver'),
+        B: KJ('industrial_screwdriver'),
         C: AE2('singularity'),
     }).id(KJ(`mechanical_crafting/unstable_screwdriver`))
 
@@ -385,7 +392,7 @@ ServerEvents.recipes((event) => {
         'CCCCC',
     ], {
         A: Item.of(MU("unstable_ingot")),
-        B: PR_C('screwdriver'),
+        B: KJ('industrial_screwdriver'),
         C: AE2('singularity'),
     }).id(KJ(`extended_crafting/unstable_screwdriver`))
 
@@ -709,6 +716,33 @@ ServerEvents.recipes((event) => {
 	
 	
 	
+	//waste bulk
+	event.custom({
+		type: AE2_A("reaction"),
+		energy: 1500000,
+	    fluid: {
+			fluidStack: {
+				Amount: 16000,
+				FluidName: MC("water")
+			}
+		},
+		input_items: [
+			{
+				amount: 8,
+				ingredient: {
+					item: KJ("dye_entangled_singularity")
+				}
+			},
+		],
+		output: {
+			"#": 12800,
+			"#c": "ae2:f",
+			id: KJ("abstruse_waste"),
+		}
+	})
+	
+	
+	
 	//custom infusions
 	customRecipes.mekanism.infusion_conversion(event, KJ("waste"), 10, AE2("magenta_paint_ball"))
 	customRecipes.mekanism.infusion_conversion(event, KJ("waste"), 20, AE2("blue_paint_ball"))
@@ -877,7 +911,7 @@ ServerEvents.recipes((event) => {
 	meltNumber(KJ("true"), KJ("truthy"), 25)
 	meltNumber(KJ("false"), KJ("falsy"), 25)
 
-	event.recipes.tconstruct.casting_basin(KJ("computation_matrix"), Fluid.of(KJ("matrix"), 50), KJ("calculation_mechanism"), false, 20)
+	event.recipes.tconstruct.casting_basin(KJ("computation_matrix"), Fluid.of(KJ("matrix"), 50), KJ("crystal_matrix_ingot"), false, 20)
 	event.custom({
 		type: AE2_A("reaction"),
 		energy: 1500000,
@@ -889,9 +923,15 @@ ServerEvents.recipes((event) => {
 		},
 		input_items: [
 			{
-				amount: 16,
+				amount: 8,
 				ingredient: {
 					item: KJ("calculation_mechanism")
+				}
+			},
+			{
+				amount: 1,
+				ingredient: {
+					item: KJ("crystal_matrix_ingot")
 				}
 			},
 		],
@@ -1064,12 +1104,7 @@ castsForNumber = {
 	
 	//ether gem
 	customRecipes.industrialforegoing.dissolution(event, KJ(`ether_gem`), [MC("glass_pane")], IF("ether_gas"), 90, 20)
-	event.custom({
-		type: M('crystallizing'),
-		chemicalType: 'gas',
-		input: { amount: 10, gas: KJ("depleted_ether_gas") },
-		output: KJ(`ether_gem`),
-	})
+	customRecipes.mekanism.crystallizing(event, KJ(`ether_gem`), KJ("depleted_ether_gas"), 10)
 
 
 	//universe piece
@@ -1097,11 +1132,91 @@ castsForNumber = {
 
 
 	//neutron gas
+	customRecipes.mekanism.activating(event, KJ("neutron_gas"), 1, M("plutonium"), 4)
+	
+	
+	
+	//liquid infusions
 	event.custom({
-		type: M('activating'),
-		input: { amount: 4, gas: M('plutonium') },
-		output: { amount: 1, gas: KJ('neutron_gas') }
-	});
+		input: [
+			{ item: M("enriched_carbon") },
+		],
+		inputFluid: `{FluidName:\"${M("sulfuric_acid")}\",Amount:10}`,
+		processingTime: 60,
+		output: toRecipeJsonItem(IF("dryrubber")),
+		outputFluid: `{Amount:100,FluidName:\"${KJ("liquid_carbon")}\"}`,
+		type: IF("dissolution_chamber")
+	})
+	event.custom({
+		input: [
+			{ item: M("enriched_redstone") },
+		],
+		inputFluid: `{FluidName:\"${M("sulfuric_acid")}\",Amount:10}`,
+		processingTime: 60,
+		output: toRecipeJsonItem(IF("dryrubber")),
+		outputFluid: `{Amount:100,FluidName:\"${KJ("liquid_redstone")}\"}`,
+		type: IF("dissolution_chamber")
+	})
+	event.custom({
+		input: [
+			{ item: M("enriched_diamond") },
+		],
+		inputFluid: `{FluidName:\"${M("sulfuric_acid")}\",Amount:10}`,
+		processingTime: 60,
+		output: toRecipeJsonItem(IF("dryrubber")),
+		outputFluid: `{Amount:100,FluidName:\"${KJ("liquid_diamond")}\"}`,
+		type: IF("dissolution_chamber")
+	})
+	event.custom({
+		input: [
+			{ item: M("enriched_refined_obsidian") },
+		],
+		inputFluid: `{FluidName:\"${M("sulfuric_acid")}\",Amount:10}`,
+		processingTime: 60,
+		output: toRecipeJsonItem(IF("dryrubber")),
+		outputFluid: `{Amount:100,FluidName:\"${KJ("liquid_refined_obsidian")}\"}`,
+		type: IF("dissolution_chamber")
+	})
+	event.custom({
+		input: [
+			{ item: M_E("enriched_radiance") },
+		],
+		inputFluid: `{FluidName:\"${M("sulfuric_acid")}\",Amount:10}`,
+		processingTime: 60,
+		output: toRecipeJsonItem(IF("dryrubber")),
+		outputFluid: `{Amount:100,FluidName:\"${KJ("liquid_radiance")}\"}`,
+		type: IF("dissolution_chamber")
+	})
+	event.custom({
+		input: [
+			{ item: M_E("enriched_thermonuclear") },
+		],
+		inputFluid: `{FluidName:\"${M("sulfuric_acid")}\",Amount:10}`,
+		processingTime: 60,
+		output: toRecipeJsonItem(IF("dryrubber")),
+		outputFluid: `{Amount:100,FluidName:\"${KJ("liquid_thermonuclear")}\"}`,
+		type: IF("dissolution_chamber")
+	})
+	event.custom({
+		input: [
+			{ item: M_E("enriched_shining") },
+		],
+		inputFluid: `{FluidName:\"${M("sulfuric_acid")}\",Amount:10}`,
+		processingTime: 60,
+		output: toRecipeJsonItem(IF("dryrubber")),
+		outputFluid: `{Amount:100,FluidName:\"${KJ("liquid_shining")}\"}`,
+		type: IF("dissolution_chamber")
+	})
+	event.custom({
+		input: [
+			{ item: M_E("enriched_spectrum") },
+		],
+		inputFluid: `{FluidName:\"${M("sulfuric_acid")}\",Amount:10}`,
+		processingTime: 60,
+		output: toRecipeJsonItem(IF("dryrubber")),
+		outputFluid: `{Amount:100,FluidName:\"${KJ("liquid_spectrum")}\"}`,
+		type: IF("dissolution_chamber")
+	})
 	
 	
 	
@@ -1353,6 +1468,10 @@ castsForNumber = {
 	copper_machine(EC('pedestal'), 1)
 	copper_machine(CR('steam_engine'), 1, CR('hand_crank'))
 	copper_machine(TCT('smeltery_controller'), 1, TCT("seared_melter"))
+	copper_machine(IR('battery_bank'), 1, IR("battery"))
+	copper_machine(IR('energy_level'), 2)
+	copper_machine(IR('fluid_gauge'), 2)
+	copper_machine(IR('energy_switch'), 1, MC("lever"))
 	
 	//brass machine
 	event.shaped(KJ('brass_machine'), [

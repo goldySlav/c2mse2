@@ -16,6 +16,7 @@ ServerEvents.recipes((event) => {
 		CR_A("electrum_rod"),
 		CR_A("electrum_sheet"),
 		CR_A("electrum_spool"),
+		CR_A("barbed_wire"),
 	])
 	
 	event.recipes.create.pressing(CR_A("zinc_sheet"), F("#ingots/zinc"))

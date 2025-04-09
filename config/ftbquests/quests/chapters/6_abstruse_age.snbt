@@ -484,11 +484,12 @@
 				id: "104E8435778E96BA"
 				item: {
 					Count: 1
-					id: "kubejs:chromatic_resonator"
+					id: "itemfilters:tag"
 					tag: {
-						Damage: 0
+						value: "forge:tools/chromatic_resonators"
 					}
 				}
+				title: "Any Chromatic Resonator"
 				type: "item"
 			}]
 			x: 4.0d
@@ -497,8 +498,8 @@
 		{
 			dependencies: ["093939204AD0D6C0"]
 			description: [
-				"Liquid Matrix uses a &6Calculation Mechanism&r as a catalyst to harden and take a solid form."
-				"Good thing is that process does not destroy your mechanism, meaning you can reuse it as much as you wish."
+				"Liquid Matrix uses a &6Crystal Matrix Ingot&r as a catalyst to harden and take a solid form."
+				"Good thing is that process does not destroy your ingot, meaning you can reuse it as much as you wish."
 			]
 			id: "26E19614D31B5F7F"
 			subtitle: "Now you're the one in control of the Matrix"

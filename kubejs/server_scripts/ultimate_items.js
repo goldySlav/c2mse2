@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
 		F("#ingots/desh"), F("#ingots/refined_radiance"), F("#ingots/shadow_steel"), AE2_A("quantum_alloy"),
 		F("#ingots/ostrum"), F("#ingots/calorite"), CM("#ingots/star_infused_netherite"), F("#ingots/cobalt"), F("#ingots/slimesteel"),
 		F("#ingots/amethyst_bronze"), F("#ingots/brass"), F("#ingots/rose_gold"), F("#ingots/pig_iron"), F("#ingots/cinderslime"),
-		F("#ingots/queens_slime"), F("#ingots/manyullyn"), F("#ingots/hepatizon"), 
+		F("#ingots/queens_slime"), F("#ingots/manyullyn"), F("#ingots/hepatizon"), F("#ingots/cast_iron"),
 		F("#ingots/draconium_awakened"), F("#ingots/draconium"), F("#ingots/enhanced_redstone_ingot"), F("#ingots/ender_ingot"), 
 		F("#ingots/enhanced_ender_ingot"), IF("pink_slime_ingot"), F("#ingots/sky_steel"), F("#ingots/bronze"), F("#ingots/steel"), 
 		F("#ingots/refined_obsidian"), F("#ingots/refined_glowstone"), F("#ingots/osmium"), F("#ingots/tin"), F("#ingots/lead"), 

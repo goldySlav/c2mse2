@@ -74,11 +74,12 @@
 				id: "60599694322A6F8C"
 				item: {
 					Count: 1
-					id: "kubejs:chromatic_resonator"
+					id: "itemfilters:tag"
 					tag: {
-						Damage: 0
+						value: "forge:tools/chromatic_resonators"
 					}
 				}
+				title: "Any Chromatic Resonator"
 				type: "item"
 			}]
 			x: 1.0d
@@ -450,8 +451,8 @@
 				"7DE4880FCD6D8720"
 			]
 			description: [
-				"We now use our &6Entangled Singularitys&r and &6Any Dye&r to make a &6Chromatic Singularity&r."
-				"Made by &6mixing&r the two together."
+				"We now use our &6Entangled Singularities&r and &6Any Dye&r to make a &6Chromatic Singularity&r."
+				"Made by &6Mixing&r the two together."
 			]
 			icon: "kubejs:dye_entangled_singularity"
 			id: "0DB134BA7AC6B87F"
@@ -473,19 +474,118 @@
 		}
 		{
 			dependencies: ["57D09DE864191C39"]
-			description: [
-				"Cactus is recommended by this guidebook, but if you really wish, uou could use Cocoa Beans for example, or any other way to automatically get dyes."
-				""
-				"There are multiple ways to go about getting your first &6Cactus&r but the best one is to sift some &6Sand&r."
-				"Once you have one cactus just &6USE EMC links&r, like you should have been doing this for a &6while now&r."
-			]
+			description: ["There are a lot of different ways to get your hands on the dyes, pick the one that suits you!"]
 			icon: "minecraft:cactus"
 			id: "4F740B2BF0374ECA"
-			subtitle: "It hurts to touch"
+			subtitle: "So many colors"
 			tasks: [
 				{
 					id: "0A8E5CF3D273ADA2"
-					item: "minecraft:cactus"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:dandelion"
+								}
+								{
+									Count: 1b
+									id: "minecraft:poppy"
+								}
+								{
+									Count: 1b
+									id: "minecraft:blue_orchid"
+								}
+								{
+									Count: 1b
+									id: "minecraft:allium"
+								}
+								{
+									Count: 1b
+									id: "minecraft:azure_bluet"
+								}
+								{
+									Count: 1b
+									id: "minecraft:red_tulip"
+								}
+								{
+									Count: 1b
+									id: "minecraft:orange_tulip"
+								}
+								{
+									Count: 1b
+									id: "minecraft:white_tulip"
+								}
+								{
+									Count: 1b
+									id: "minecraft:pink_tulip"
+								}
+								{
+									Count: 1b
+									id: "minecraft:oxeye_daisy"
+								}
+								{
+									Count: 1b
+									id: "minecraft:cornflower"
+								}
+								{
+									Count: 1b
+									id: "minecraft:lily_of_the_valley"
+								}
+								{
+									Count: 1b
+									id: "minecraft:wither_rose"
+								}
+								{
+									Count: 1b
+									id: "minecraft:pink_petals"
+								}
+								{
+									Count: 1b
+									id: "minecraft:sunflower"
+								}
+								{
+									Count: 1b
+									id: "minecraft:lilac"
+								}
+								{
+									Count: 1b
+									id: "minecraft:rose_bush"
+								}
+								{
+									Count: 1b
+									id: "minecraft:peony"
+								}
+								{
+									Count: 1b
+									id: "minecraft:lapis_lazuli"
+								}
+								{
+									Count: 1b
+									id: "minecraft:cactus"
+								}
+								{
+									Count: 1b
+									id: "minecraft:cocoa_beans"
+								}
+								{
+									Count: 1b
+									id: "minecraft:charcoal"
+								}
+								{
+									Count: 1b
+									id: "minecraft:coal"
+								}
+								{
+									Count: 1b
+									id: "minecraft:beetroot"
+								}
+							]
+						}
+					}
+					title: "Anything that can be turned into dye"
 					type: "item"
 				}
 				{
@@ -499,14 +599,24 @@
 		}
 		{
 			dependencies: ["4F740B2BF0374ECA"]
-			description: ["Pretty s1mple actually. Just cook or crush the spiky plant."]
+			description: [
+				"Pretty s1mple actually."
+				"&dT&5A&4S&cT&6E &eT&aH&2E &1R&9A&bI&fN&dB&5O&4W&r."
+			]
 			icon: "minecraft:green_dye"
 			id: "664AEADF35125B8E"
 			subtitle: "Smells good"
 			tasks: [
 				{
 					id: "484FF50AC87E3A4C"
-					item: "minecraft:green_dye"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:dyes"
+						}
+					}
+					title: "Any Dye"
 					type: "item"
 				}
 				{
@@ -637,7 +747,47 @@
 			tasks: [
 				{
 					id: "6B29B996C713F8B1"
-					item: "minecraft:oak_planks"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:oak_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:spruce_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:birch_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:jungle_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:acacia_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:dark_oak_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:mangrove_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:cherry_planks"
+								}
+							]
+						}
+					}
+					title: "Any Planks"
 					type: "item"
 				}
 				{
@@ -646,6 +796,7 @@
 					type: "checkmark"
 				}
 			]
+			title: "Any Planks"
 			x: -2.0d
 			y: -15.5d
 		}
@@ -658,7 +809,47 @@
 			tasks: [
 				{
 					id: "3178CEB2076D8C75"
-					item: "minecraft:oak_log"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:oak_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:spruce_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:birch_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:jungle_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:acacia_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:dark_oak_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:mangrove_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:cherry_log"
+								}
+							]
+						}
+					}
+					title: "Any Log"
 					type: "item"
 				}
 				{

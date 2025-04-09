@@ -14,6 +14,12 @@ ItemEvents.modification(event => {
 	event.modify(`create:chromatic_compound`, item => {
 		item.maxStackSize = 64
 	})
+	event.modify(`industrialrenewal:battery`, item => {
+		item.maxStackSize = 64
+	})
+	event.modify(`industrialrenewal:battery_lithium`, item => {
+		item.maxStackSize = 64
+	})
 	
 	const tools = ["shovel", "axe", "pickaxe", "sword", "hoe"]
 	tools.forEach(tool => {

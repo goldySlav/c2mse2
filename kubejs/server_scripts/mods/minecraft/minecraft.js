@@ -35,6 +35,9 @@ ServerEvents.recipes((event) => {
     event.recipes.create.filling(MC('wet_sponge'), [MC('sponge'), Fluid.of(MC('water'), 1000)])
 	customRecipes.ae2.transform.fluid(event, MC('wet_sponge'), [MC('sponge')])
 	
+	//necrotic bone haunting
+	event.recipes.create.haunting(MC('wither_rose'), MC('poppy'))
+	
 	//concrete
 	colours.forEach(color => {
 		customRecipes.ae2.transform.fluid(event, MC(`${color}_concrete`), [MC(`${color}_concrete_powder`)])
@@ -144,66 +147,16 @@ ServerEvents.recipes((event) => {
 	})
 	
 	//ingots from gas
-	event.custom({
-		type: M('crystallizing'),
-		chemicalType: 'gas',
-		input: { amount: 90, gas: KJ("gaseous_iron_compound") },
-		output: MC(`iron_ingot`),
-	}).id(`${MC()}/iron_ingot_from_gas`)
-	event.custom({
-		type: M('crystallizing'),
-		chemicalType: 'gas',
-		input: { amount: 90, gas: KJ("gaseous_gold_compound") },
-		output: MC(`gold_ingot`),
-	}).id(`${MC()}/gold_ingot_from_gas`)
-	event.custom({
-		type: M('crystallizing'),
-		chemicalType: 'gas',
-		input: { amount: 90, gas: KJ("gaseous_copper_compound") },
-		output: MC(`copper_ingot`),
-	}).id(`${MC()}/copper_ingot_from_gas`)
-	event.custom({
-		type: M('crystallizing'),
-		chemicalType: 'gas',
-		input: { amount: 90, gas: KJ("gaseous_zinc_compound") },
-		output: CR(`zinc_ingot`),
-	}).id(`${MC()}/zinc_ingot_from_gas`)
-	event.custom({
-		type: M('crystallizing'),
-		chemicalType: 'gas',
-		input: { amount: 90, gas: KJ("gaseous_brass_compound") },
-		output: CR(`brass_ingot`),
-	}).id(`${MC()}/brass_ingot_from_gas`)
-	event.custom({
-		type: M('crystallizing'),
-		chemicalType: 'gas',
-		input: { amount: 90, gas: KJ("gaseous_cobalt_compound") },
-		output: TCT(`cobalt_ingot`),
-	}).id(`${MC()}/cobalt_ingot_from_gas`)
-	event.custom({
-		type: M('crystallizing'),
-		chemicalType: 'gas',
-		input: { amount: 90, gas: KJ("gaseous_steel_compound") },
-		output: M(`ingot_steel`),
-	}).id(`${MC()}/steel_ingot_from_gas`)
-	event.custom({
-		type: M('crystallizing'),
-		chemicalType: 'gas',
-		input: { amount: 90, gas: KJ("gaseous_ender_alloy_compound") },
-		output: EC(`ender_ingot`),
-	}).id(`${MC()}/ender_alloy_ingot_from_gas`)
-	event.custom({
-		type: M('crystallizing'),
-		chemicalType: 'gas',
-		input: { amount: 90, gas: KJ("gaseous_certus_compound") },
-		output: AE2(`certus_quartz_crystal`),
-	}).id(`${MC()}/certus_quartz_crystal_from_gas`)
-	event.custom({
-		type: M('crystallizing'),
-		chemicalType: 'gas',
-		input: { amount: 90, gas: KJ("gaseous_diamond_compound") },
-		output: MC(`diamond`),
-	}).id(`${MC()}/diamond_from_gas`)
+	customRecipes.mekanism.crystallizing(event, MC(`iron_ingot`), KJ("gaseous_iron_compound"), 90)
+	customRecipes.mekanism.crystallizing(event, MC(`gold_ingot`), KJ("gaseous_gold_compound"), 90)
+	customRecipes.mekanism.crystallizing(event, MC(`copper_ingot`), KJ("gaseous_copper_compound"), 90)
+	customRecipes.mekanism.crystallizing(event, CR(`zinc_ingot`), KJ("gaseous_zinc_compound"), 90)
+	customRecipes.mekanism.crystallizing(event, CR(`brass_ingot`), KJ("gaseous_brass_compound"), 90)
+	customRecipes.mekanism.crystallizing(event, TCT(`cobalt_ingot`), KJ("gaseous_cobalt_compound"), 90)
+	customRecipes.mekanism.crystallizing(event, M(`ingot_steel`), KJ("gaseous_steel_compound"), 90)
+	customRecipes.mekanism.crystallizing(event, EC(`ender_ingot`), KJ("gaseous_ender_alloy_compound"), 90)
+	customRecipes.mekanism.crystallizing(event, AE2(`certus_quartz_crystal`), KJ("gaseous_certus_compound"), 90)
+	customRecipes.mekanism.crystallizing(event, MC(`diamond`), KJ("gaseous_diamond_compound"), 90)
 	
 	//mycelium
 	event.recipes.create.deploying(MC("mycelium"), [MC("dirt"), EXD(`mycelium_spores`)])
@@ -213,4 +166,17 @@ ServerEvents.recipes((event) => {
 	
 	//emerald dupe from diamond
 	customRecipes.create.ifiniDeploying(event, MC("emerald"), MC("diamond"), MC("nether_star"))
+	
+	//emerald compat PET + CR_EI
+	customRecipes.create.disenchanting(event, [toRecipeJsonFluid(`3x ${CR_EI("experience")}`), toRecipeJsonItem(MC("emerald"))], [PET("pure_emerald")])
+	
+	//spawn eggs
+	souledEggedEntities.forEach(entity => {
+		const entitySplitted = entity.split(":")
+		//const spawnEggStr = entitySplitted[0] == AM() ? AM(`spawn_egg_${entitySplitted[1]}`) : `${entity}_spawn_egg`
+		customRecipes.enderio.soulbinding(event, `${entity}_spawn_egg`, CM("empty_spawn_egg"), entity, 202000, 6)
+	})
+	
+	//ender chest
+	customRecipes.enderio.soulbinding(event, MC("ender_chest"), F("#chests/wooden"), MC("enderman"), 24000, 1)
 })

@@ -785,7 +785,7 @@
 		{
 			dependencies: ["1BCF86D8555FF92E"]
 			description: [
-				"Craft &6Command Block Pickaxe&r, tool immune to the Command Block powers."
+				"Craft any &6Command Block Tool&r, immune to the Command Block powers."
 				""
 				"It has infinite durability and has powers to destroy Wither Storm's Command Block."
 				""
@@ -796,10 +796,17 @@
 			size: 1.0d
 			tasks: [{
 				id: "59895D55CDB914CF"
-				item: "witherstormmod:command_block_pickaxe"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "witherstormmod:command_block_tools"
+					}
+				}
+				title: "Any Command Block Tool"
 				type: "item"
 			}]
-			title: "Wither Storm: Command Block Pickaxe"
+			title: "Wither Storm: Any Command Block Tool"
 			x: 0.0d
 			y: 43.5d
 		}

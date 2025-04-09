@@ -317,7 +317,55 @@
 			tasks: [
 				{
 					id: "6D2750B27BDEFACD"
-					item: "minecraft:oak_log"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:oak_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:spruce_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:birch_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:jungle_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:acacia_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:dark_oak_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:mangrove_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:cherry_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:crimson_stem"
+								}
+								{
+									Count: 1b
+									id: "minecraft:warped_stem"
+								}
+							]
+						}
+					}
+					title: "Any Log"
 					type: "item"
 				}
 				{
@@ -330,7 +378,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["43508B0FFB023677"]
+			dependencies: ["615A1BC6A403AED1"]
 			description: ["You probably guessed &6Mechanical Saw&r is your best friend in this questline."]
 			icon: "minecraft:oak_planks"
 			id: "4958CC1FF86F44E6"
@@ -338,7 +386,55 @@
 			tasks: [
 				{
 					id: "10D0B7BAC472D6C2"
-					item: "minecraft:oak_planks"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:oak_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:spruce_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:birch_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:jungle_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:acacia_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:dark_oak_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:mangrove_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:cherry_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:crimson_planks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:warped_planks"
+								}
+							]
+						}
+					}
+					title: "Any Wooden Planks"
 					type: "item"
 				}
 				{
@@ -359,7 +455,55 @@
 			tasks: [
 				{
 					id: "6FB29ECBD2A894EA"
-					item: "minecraft:oak_slab"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:oak_slab"
+								}
+								{
+									Count: 1b
+									id: "minecraft:spruce_slab"
+								}
+								{
+									Count: 1b
+									id: "minecraft:birch_slab"
+								}
+								{
+									Count: 1b
+									id: "minecraft:jungle_slab"
+								}
+								{
+									Count: 1b
+									id: "minecraft:acacia_slab"
+								}
+								{
+									Count: 1b
+									id: "minecraft:dark_oak_slab"
+								}
+								{
+									Count: 1b
+									id: "minecraft:mangrove_slab"
+								}
+								{
+									Count: 1b
+									id: "minecraft:cherry_slab"
+								}
+								{
+									Count: 1b
+									id: "minecraft:crimson_slab"
+								}
+								{
+									Count: 1b
+									id: "minecraft:warped_slab"
+								}
+							]
+						}
+					}
+					title: "Any Wooden Slab"
 					type: "item"
 				}
 				{
@@ -376,16 +520,17 @@
 			description: ["&6Diamond Saw&r has the most durability of all the Saws available to you at this point, which means you don't have to resupply the &6Deplyer&r as often."]
 			id: "122BB3418C4D5ED5"
 			shape: "rsquare"
-			subtitle: "For the lazy"
+			subtitle: "See Saw Seen"
 			tasks: [{
 				id: "380C7CA0A2B0A883"
 				item: {
 					Count: 1
-					id: "kubejs:diamond_saw"
+					id: "itemfilters:tag"
 					tag: {
-						Damage: 0
+						value: "forge:tools/saws"
 					}
 				}
+				title: "Any Saw"
 				type: "item"
 			}]
 			x: 1.5d
@@ -647,6 +792,75 @@
 			title: "Preparations: Part 2"
 			x: 1.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["43508B0FFB023677"]
+			description: ["These have many more uses beyond this one."]
+			icon: "minecraft:stripped_oak_log"
+			id: "615A1BC6A403AED1"
+			subtitle: "A step we need to take"
+			tasks: [
+				{
+					id: "198D5376B49CB4CF"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:stripped_oak_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:stripped_spruce_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:stripped_birch_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:stripped_jungle_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:stripped_acacia_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:stripped_dark_oak_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:stripped_mangrove_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:stripped_cherry_log"
+								}
+								{
+									Count: 1b
+									id: "minecraft:stripped_crimson_stem"
+								}
+								{
+									Count: 1b
+									id: "minecraft:stripped_warped_stem"
+								}
+							]
+						}
+					}
+					title: "Any Stripped Log"
+					type: "item"
+				}
+				{
+					id: "05A80F1E34DE7674"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -3.0d
+			y: 2.5d
 		}
 	]
 	subtitle: ["The automation begins"]

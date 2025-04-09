@@ -6,7 +6,7 @@
 	group: "051AA46D917B6FBA"
 	icon: "mekanism_extras:infinite_logistical_transporter"
 	id: "2528B69526F831C6"
-	order_index: 15
+	order_index: 16
 	quest_links: [ ]
 	quests: [
 		{

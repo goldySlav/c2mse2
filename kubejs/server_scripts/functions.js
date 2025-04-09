@@ -100,6 +100,7 @@ const ENT = (id, x) => MOD("entangled", id, x)
 const TCT = (id, x) => MOD("tconstruct", id, x)
 const LB = (id, x) => MOD("laserbridges", id, x)
 const MBCK = (id, x) => MOD("morebuckets", id, x)
+const IR = (id, x) => MOD("industrialrenewal", id, x)
 
 
 const processingTimesDefault = {
@@ -258,6 +259,13 @@ const customRecipes = {
 				input: toRecipeJsonItem(input),
 				result: toRecipeJsonItem(output),
 				energy: nrg,
+			})
+		},
+		disenchanting: function(event, outputItemsFluidsFormattedToJson, inputItems) {
+			event.custom({
+				type: CR_EI("disenchanting"),
+				ingredients: toRecipeJsonItem(inputItems),
+				results: outputItemsFluidsFormattedToJson,
 			})
 		},
 	},
@@ -540,9 +548,63 @@ const customRecipes = {
 				}
 			})
 		},
+		gas_conversion: function(event, gasOutput, gasAmount, itemInput) {
+			event.custom({
+				type: M("gas_conversion"),
+			    input: {
+					ingredient: toRecipeJsonItem(itemInput)
+				},
+				output: {
+					amount: gasAmount,
+					gas: gasOutput
+			   }
+			})
+		},
+		activating: function(event, gasOutput, gasOutputAmount, gasInput, gasInputAmount) {
+			event.custom({
+				type: M('activating'),
+				input: { amount: 4, gas: M('plutonium') },
+				output: { amount: 1, gas: KJ('neutron_gas') }
+			})
+		},
+		compressing: function(event, itemOutput, itemInput, gasInput, gasInputAmount) {
+			gasInputAmount = gasInputAmount ? gasInputAmount : 1
+			event.custom({
+				type: M("compressing"),
+				chemicalInput: { amount: gasInputAmount, gas: gasInput },
+				itemInput: {
+					ingredient: toRecipeJsonItem(itemInput)
+				},
+				output: toRecipeJsonItem(itemOutput)
+			})
+		},
+		crystallizing: function(event, outputItem, inputGasFluid, inputGasFluidAmount, chemicalType) {
+			chemicalType = chemicalType ? chemicalType : 'gas'
+			event.custom({
+				type: M('crystallizing'),
+				chemicalType: chemicalType,
+				input: { amount: inputGasFluidAmount, gas: inputGasFluid },
+				output: outputItem,
+			})
+		},
 	},
 	tconstruct: {
 		
+	},
+	enderio: {
+		soulbinding: function(event, to, from, soul, energy, levels) {
+			const obj = {
+				type: EIO("soul_binding"),
+				energy: energy,
+				exp: levels,
+				input: {},
+				output: to
+			}
+			
+			from.substring(0, 1) === "#" ? obj.input.tag = from.slice(1) : obj.input.item = from
+			soul.includes(":") ? obj.entity_type = soul : obj.mob_category = soul
+			event.custom(obj)
+		},
 	},
 }
 
@@ -759,6 +821,8 @@ const singularities = [
 	{ id: "screwdriver", core: KJ("unstable_screwdriver") },
 	{ id: "saw", core: KJ("unstable_saw") },
 	{ id: "chromatic_resonator", core: KJ("unstable_chromatic_resonator") },
+	{ id: "battery", core: IR("battery") },
+	{ id: "industrial_battery", core: IR("battery_lithium") },
 	{ id: "calculator", core: KJ("unstable_charged_calculator") },
 	{ id: "cobblestone_generator", core: CG("tier_5") },
 	{ id: "experience_nugget", core: CR("experience_nugget") },
@@ -831,8 +895,8 @@ const souledEggedEntities = [
 	MC("squid"), MC("stray"), MC("strider"), MC("tadpole"), MC("trader_llama"), MC("tropical_fish"), 
 	MC("turtle"), MC("vex"), MC("villager"), MC("vindicator"), MC("wandering_trader"), MC("witch"), MC("wolf"), 
 	MC("wither_skeleton"), MC("zoglin"), MC("zombie"), MC("zombie_horse"), MC("zombie_villager"), 
-	MC("zombified_piglin"), Q("forgotten"), Q("foxhound"), AA("lunarian"), AA("corrupted_lunarian"),
-	AA("lunarian_wandering_trader"), AA("star_crawler"), AA("martian_raptor"), AA("pygro"),
+	MC("zombified_piglin"), Q("forgotten"), Q("foxhound"), Q("shiba"), AA("corrupted_lunarian"),
+	AA("star_crawler"), AA("martian_raptor"), AA("pygro"),
 	AA("zombified_pygro"), AA("pygro_brute"), AA("mogler"), AA("zombified_mogler"), AA("sulfur_creeper"),
 	AA("glacian_ram"), ART("mimic"), WSM("sickened_bee"), WSM("sickened_cat"), 
 	WSM("sickened_chicken"), WSM("sickened_cow"), WSM("sickened_creeper"), WSM("sickened_iron_golem"), 

@@ -4,12 +4,51 @@ ServerEvents.recipes((event) => {
 	removeRecipeByID(event, [
 		M_E("processing/naquadah/ore/end_from_raw"),
 		M_E("expand_radioactive_waste_barrel"),
+		M_E("rotary/polonium_containing"),
+		M_E("rotary/polonium-208"),
 	])
+
+
+	// make it so the naquadah reactor doesn't need  absurd amounts of rotary condensers to fully handle it's output of polonium containing steam
+
+
+	// this one is for steam to solution, normally it goes at 1mb/tick , this would mean you would need 1,500,000 rotary condensers to keep up with the naquadah reactor, and that is absurd
+	// this adjusts it to 5000mb/tick per machine, this lowers it to only needing 300 , this is still a lot but a lot more manageable , also this is assuming max level machines, 16 speed and 16 energy upgrades
+	// no watch of flowing time is taken into account for this , not sure if it affect condensors but it might
+	customRecipes.mekanism.condensentrating(event,"mekanism_extras:polonium_containing_solution",5000,"mekanism_extras:polonium_containing_steam",5000)
+
+	// this is for going from the liquid polonium 208 to the gas form, this is after the evaporation chamber machine thingy, normally this is again at 1mb/tick per machine
+	// but with a flow rate of 15,000 mb/tick needed, well, 15,000 condensers is again insane, so adjusting them to 300mb/tick per machine means you only need 50 of them for full flow
+	customRecipes.mekanism.condensentrating(event,"mekanism_extras:polonium-208",300,"mekanism_extras:polonium-208",300)
 
 	const mekaExtrasTiers = ["absolute", "supreme", "cosmic", "infinite"]
 	
+	//tiered machines BULK
+	const tieredList = [
+		"smelting", "enriching", "crushing", "compressing", "combining",
+		"purifying", "injecting", "infusing", "sawing",
+	]
+
+	tieredList.forEach(tiered => {
+		mekaExtrasTiers.forEach((tier, i) => {
+			const id = M_E(`${tier}_${tiered}_factory`)
+			const prevIdStr = `${mekaExtrasTiers[i - 1]}_${tiered}_factory`
+			const ultStr = `ultimate_${tiered}_factory`
+			const tierId = M_E(`${tier}_tier_installer`)
+
+			removeRecipeByOutput(event, [
+				id,
+			])
+			event.shapeless(id, [i ? M_E(prevIdStr) : M(ultStr), tierId])
+			if (!i) {
+				event.recipes.create.item_application(M_E(`${mekaExtrasTiers[i]}_${tiered}_factory`), [M(ultStr), tierId])
+			}
+		})
+	})
+	
 	//tier upgrades
 	const alloyTierEq = [M_E("alloy_radiance"), M_E("alloy_thermonuclear"), M_E("alloy_shining"), M_E("alloy_spectrum")]
+	const liquidInfusionEq = [KJ("liquid_radiance"), KJ("liquid_thermonuclear"), KJ("liquid_shining"), KJ("liquid_spectrum")]
 	mekaExtrasTiers.forEach( (tier, i) => {
 		removeRecipeByOutput(event, [
 			M_E(`${tier}_tier_installer`),
@@ -28,7 +67,7 @@ ServerEvents.recipes((event) => {
 
 		event.custom({
 			input: inputArr,
-			inputFluid: `{FluidName:\"${IF("ether_gas")}\",Amount:10}`,
+			inputFluid: `{FluidName:\"${liquidInfusionEq[i]}\",Amount:10}`,
 			processingTime: 60,
 			output: {
 			  item: M_E(`${tier}_tier_installer`),
@@ -37,6 +76,12 @@ ServerEvents.recipes((event) => {
 			type: IF("dissolution_chamber")
 		})
 	})
+	
+	//enriched stuff
+	customRecipes.industrialforegoing.dissolution(event, M_E(`enriched_radiance`), [IF("dryrubber")], KJ("liquid_radiance"), 100, 60)
+	customRecipes.industrialforegoing.dissolution(event, M_E(`enriched_thermonuclear`), [IF("dryrubber")], KJ("liquid_thermonuclear"), 100, 60)
+	customRecipes.industrialforegoing.dissolution(event, M_E(`enriched_shining`), [IF("dryrubber")], KJ("liquid_shining"), 100, 60)
+	customRecipes.industrialforegoing.dissolution(event, M_E(`enriched_spectrum`), [IF("dryrubber")], KJ("liquid_spectrum"), 100, 60)
 	
 	//bins
 	removeRecipeByOutput(event, [

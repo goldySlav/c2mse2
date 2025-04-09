@@ -340,4 +340,7 @@ ServerEvents.recipes((event) => {
 	
 	//cardboard box from create cardboard
 	event.shapeless(Item.of(CR("cardboard"), 2), [M("cardboard_box")])
+	
+	//refined radiance from M_E radiance
+	event.recipes.mekanism.metallurgic_infusing(Item.of(CR("refined_radiance"), 2), CR("chromatic_compound"), `20x ${M_E("radiance")}`)
 })

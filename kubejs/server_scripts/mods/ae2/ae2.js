@@ -66,6 +66,9 @@ ServerEvents.recipes((event) => {
 	], AE2('sky_stone_block')).processingTime(processingTimesDefault.crushing)
 	event.recipes.mekanism.crushing(Item.of(AE2('sky_dust'), 3), AE2('sky_stone_block'))
 	
+	//ender dust
+	event.recipes.mekanism.crushing(Item.of(AE2('ender_dust'), 2), MC('ender_pearl'))
+	
 	//singularity
 	event.recipes.create.crushing([AE2("singularity")], CR('crushing_wheel')).processingTime(processingTimesDefault.crushing)
 	event.recipes.mekanism.crushing(AE2("singularity"), CR('crushing_wheel'))
@@ -88,6 +91,7 @@ ServerEvents.recipes((event) => {
 			continue;
 		event.recipes.create.emptying([AE2(colors[index + 1] + '_paint_ball'), Fluid.of(KJ('abstruse_waste'), 100)], AE2(element + '_paint_ball')).id(KJ(`ae2/draining_${colors[index]}_ball`))
 	}
+	event.recipes.mekanism.crushing(Item.of(AE2('magenta_paint_ball'), 3), KJ('dye_entangled_singularity'))
 	
 	//inscriber press from scrap
 	removeRecipeByOutput(event, [

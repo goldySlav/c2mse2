@@ -106,7 +106,7 @@ ServerEvents.recipes((event) => {
 		removeRecipeByOutput(event, [
 			P(`battery_${level}`),
 		])
-		const batteryCenter = i == 0 ? P("dielectric_casing") : P(`battery_${levels[i - 1]}`)
+		const batteryCenter = i == 0 ? IR("battery") : P(`battery_${levels[i - 1]}`)
 		event.recipes.create.compacting(P(`battery_${level}`), [`16x ${P('dielectric_paste')}`, `8x ${leveledCircuit}`, batteryCenter])
 		event.recipes.create.mechanical_crafting(P(`battery_${level}`), [
 			'AAAAA',

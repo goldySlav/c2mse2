@@ -67,7 +67,6 @@ ServerEvents.recipes((event) => {
 		filterTypes[type].forEach(typeObj => {
 			event.recipes.create.mixing(Item.of(DU(`filter_${typeObj.id}`), 1), [DU(`filter_${type}`), typeObj.add])
 			event.recipes.mekanismCombining(Item.of(DU(`filter_${typeObj.id}`), 1), DU(`filter_${type}`), typeObj.add)
-			event.recipes.mekanismCombining(Item.of(DU(`filter_${typeObj.id}`), 1), typeObj.add, DU(`filter_${type}`))
 		})
 	})
 })

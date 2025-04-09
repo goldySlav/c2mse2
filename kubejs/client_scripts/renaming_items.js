@@ -78,5 +78,21 @@ ClientEvents.lang('en_us', event => {
 	event.renameItem('projecte:swiftwolf_rending_gale', "Switfwolf's Rending Gale (Advanced Angel Ring)")
 	
 	event.renameBlock('enderio:enderman_head', "Suspicious Enderman Head")
+	
+	event.renameItem('industrialrenewal:ingot_steel', "Cast Iron Ingot")
+	event.renameItem('industrialrenewal:stick_steel', "Cast Iron Rod")
+	event.renameItem('industrialrenewal:drill_steel', "Cast Iron Drill")
+	event.renameBlock('industrialrenewal:catwalk_steel_pillar', "Cast Iron Pillar")
+	event.renameBlock('industrialrenewal:catwalk_steel', "Cast Iron Catwalk")
+	event.renameBlock('industrialrenewal:catwalk_stair_steel', "Cast Iron Stair")
+	event.renameBlock('industrialrenewal:catwalk_ladder_steel', "Caged Cast Iron Ladder")
+	event.renameBlock('industrialrenewal:block_steel', "Cast Iron Block")
+	event.renameBlock('industrialrenewal:brace_steel', "Cast Iron Brace Beam")
+	event.renameBlock('industrialrenewal:catwalk_column_steel', "Cast Iron Column")
+	event.renameBlock('industrialrenewal:handrail_steel', "Cast Iron Handrail")
+	event.renameBlock('industrialrenewal:razor_wire', "Barbed Wire")
+	event.renameItem('industrialrenewal:battery_lithium', "Industrial Battery")
+	event.renameBlock('industrialrenewal:fluid_tank', "Industrial Fluid Tank")
+	event.renameBlock('industrialrenewal:concrete', "Industrial Concrete")
 });
 
