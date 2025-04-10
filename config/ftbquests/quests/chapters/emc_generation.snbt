@@ -1,0 +1,477 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "emc_generation"
+	group: "051AA46D917B6FBA"
+	icon: "projecte:condenser_mk2"
+	id: "6D3F69E89440D884"
+	order_index: 22
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["717DBB5C0E84A4C1"]
+			disable_toast: true
+			id: "78C6A43A07801340"
+			tasks: [{
+				id: "2C893F4700D1F9CE"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3BEFC529E2FFF030"]
+			description: [
+				"&9Bulk Haunting&r is a great way of generating EMC."
+				""
+				"Place &9Soul Campfire&r in front of a working &6Fan&r to haunt items."
+			]
+			disable_toast: true
+			icon: "minecraft:soul_campfire"
+			id: "717DBB5C0E84A4C1"
+			tasks: [
+				{
+					id: "058D097772BFC5A9"
+					item: "create:encased_fan"
+					type: "item"
+				}
+				{
+					id: "6D3F6ADD7CDB4074"
+					item: "minecraft:soul_campfire"
+					type: "item"
+				}
+			]
+			title: "Bulk Haunting"
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["78C6A43A07801340"]
+			disable_toast: true
+			id: "65FD7B55865F32BD"
+			tasks: [{
+				id: "6593B05285E09805"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["717DBB5C0E84A4C1"]
+			disable_toast: true
+			id: "2044C63096770A6D"
+			tasks: [{
+				id: "33F2DA51B47DABF2"
+				item: "minecraft:ink_sac"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2044C63096770A6D"]
+			disable_toast: true
+			id: "3BFAC8C84FDBA444"
+			tasks: [{
+				id: "64295F63D4396AFC"
+				item: "minecraft:glow_ink_sac"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["717DBB5C0E84A4C1"]
+			disable_toast: true
+			id: "55C4A8161FF04D58"
+			tasks: [{
+				id: "7491EE6B76A30AF6"
+				item: "minecraft:slime_ball"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["55C4A8161FF04D58"]
+			description: ["Please note: output chance is only 25%!"]
+			disable_toast: true
+			id: "307F3720FC03E80C"
+			tasks: [{
+				id: "3ACCB3E550459EBB"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["717DBB5C0E84A4C1"]
+			disable_toast: true
+			id: "2E6983510573C540"
+			tasks: [{
+				id: "1A4F2F70FB6A9762"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2E6983510573C540"]
+			disable_toast: true
+			id: "2996BA5D5832F599"
+			tasks: [{
+				id: "12DD5D9175E6A4B0"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3BEFC529E2FFF030"]
+			description: [
+				"Equip &6Deployer&r with a &bNether Star&r and hit an item with it to transform it!"
+				""
+				"&bNether Star&r is &anot consumed&r in the process!"
+			]
+			disable_toast: true
+			icon: "minecraft:nether_star"
+			id: "2568549C723AF9FC"
+			tasks: [
+				{
+					id: "093AC64FFD105733"
+					item: "create:deployer"
+					type: "item"
+				}
+				{
+					id: "704B7E5FAEE16E2D"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+			]
+			title: "Nether Star Transformation"
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2568549C723AF9FC"]
+			disable_toast: true
+			id: "4EC1DC671EB1B33B"
+			tasks: [{
+				id: "6DFC4709E01288D6"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4EC1DC671EB1B33B"]
+			disable_toast: true
+			id: "6C0446057DBBC8FD"
+			tasks: [{
+				id: "1F32F81D94810AAD"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Not all options may be present here, so feel free to learn all options via &aJEI/EMI&r."
+				""
+				"To automate the EMC Generation process use &3EMC Links&r to import/export items directly from/to your EMC Storage!"
+			]
+			disable_toast: true
+			id: "3BEFC529E2FFF030"
+			tasks: [{
+				icon: "ftbquests:book"
+				id: "414CF988A4A3202A"
+				stat: "minecraft:play_time"
+				title: "Read Carefully"
+				type: "stat"
+				value: 1
+			}]
+			title: "EMC Generation Info"
+			x: 5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3BEFC529E2FFF030"]
+			disable_toast: true
+			id: "5E5F7A25E3492C81"
+			tasks: [{
+				id: "70F7EA1EB41694A7"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "cagedmobs:cages"
+					}
+				}
+				title: "Mob Cage"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5E5F7A25E3492C81"]
+			description: [
+				"Obtainable from:"
+				"- Villager"
+				"- Vindicator"
+				"- Evoker"
+			]
+			disable_toast: true
+			id: "0655C4F1FD50E475"
+			tasks: [{
+				id: "6BFF7D8B074E88FA"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3BEFC529E2FFF030"]
+			disable_toast: true
+			id: "17C6C26A79F10BBD"
+			tasks: [{
+				id: "4D8665A8254B170E"
+				item: "industrialforegoing:ore_laser_base"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["17C6C26A79F10BBD"]
+			disable_toast: true
+			id: "2ED86ED704DCA9E9"
+			tasks: [{
+				id: "415ED27A705AAC2C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ores/draconium"
+					}
+				}
+				title: "Draconium Ore"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2ED86ED704DCA9E9"]
+			disable_toast: true
+			id: "7C93CB7864C979CD"
+			tasks: [{
+				id: "33A49F61CE7983D5"
+				item: "draconicevolution:draconium_dust"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3BEFC529E2FFF030"]
+			disable_toast: true
+			id: "35F2574DDA4794FE"
+			tasks: [{
+				id: "3E7D95F96A8D5EAC"
+				item: "projectexpansion:basic_power_flower"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["35F2574DDA4794FE"]
+			disable_toast: true
+			id: "2F018A87E9BBE202"
+			tasks: [{
+				id: "7B8EC27B67A90E56"
+				item: "projectexpansion:dark_power_flower"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2F018A87E9BBE202"]
+			disable_toast: true
+			id: "20A6E8ABA49DC9FA"
+			tasks: [{
+				id: "2C464E36B9D72832"
+				item: "projectexpansion:red_power_flower"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["20A6E8ABA49DC9FA"]
+			disable_toast: true
+			id: "0873DAD3709854DB"
+			tasks: [{
+				id: "00739EDA4F81F5FA"
+				item: "projectexpansion:magenta_power_flower"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0873DAD3709854DB"]
+			disable_toast: true
+			id: "5E3571F9A2B32E0A"
+			tasks: [{
+				id: "0B1438A0A9A05343"
+				item: "projectexpansion:pink_power_flower"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5E3571F9A2B32E0A"]
+			disable_toast: true
+			id: "22C64747C3BDA8D5"
+			tasks: [{
+				id: "39B9FB5A6859844D"
+				item: "projectexpansion:purple_power_flower"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["22C64747C3BDA8D5"]
+			disable_toast: true
+			id: "638568A35C9FA88A"
+			tasks: [{
+				id: "46C02AD93223434F"
+				item: "projectexpansion:violet_power_flower"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["638568A35C9FA88A"]
+			disable_toast: true
+			id: "09BAC239DE83989A"
+			tasks: [{
+				id: "1B0E0FBED8250781"
+				item: "projectexpansion:blue_power_flower"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["09BAC239DE83989A"]
+			disable_toast: true
+			id: "4A15B07C1FD2EF33"
+			tasks: [{
+				id: "02F2F1EC7A7124EC"
+				item: "projectexpansion:cyan_power_flower"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["4A15B07C1FD2EF33"]
+			disable_toast: true
+			id: "055BB88319F105DC"
+			tasks: [{
+				id: "36379CBEBE068210"
+				item: "projectexpansion:green_power_flower"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["055BB88319F105DC"]
+			disable_toast: true
+			id: "123292D4B7172B24"
+			tasks: [{
+				id: "6FEE66199157A204"
+				item: "projectexpansion:lime_power_flower"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["123292D4B7172B24"]
+			disable_toast: true
+			id: "658814B461921B68"
+			tasks: [{
+				id: "68A155063153C596"
+				item: "projectexpansion:yellow_power_flower"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["658814B461921B68"]
+			disable_toast: true
+			id: "510A4D646ECCD75C"
+			tasks: [{
+				id: "73B02EB2EBD214D5"
+				item: "projectexpansion:orange_power_flower"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["510A4D646ECCD75C"]
+			disable_toast: true
+			id: "46E22C69C92E10E6"
+			tasks: [{
+				id: "07E5F6DE5EE68369"
+				item: "projectexpansion:white_power_flower"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["46E22C69C92E10E6"]
+			disable_toast: true
+			id: "167F118B6161CB0B"
+			tasks: [{
+				id: "745B3CA509A4ED74"
+				item: "projectexpansion:fading_power_flower"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["167F118B6161CB0B"]
+			id: "4BA3961375FB2A5F"
+			tasks: [{
+				id: "139A8298A62721DD"
+				item: "projectexpansion:final_power_flower"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 18.5d
+		}
+	]
+	title: "EMC Generation"
+}
