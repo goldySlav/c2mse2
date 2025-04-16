@@ -6,7 +6,7 @@ ItemEvents.tooltip(e => {
             if (property.method == "itemstack"){
                 ChangeTooltip(e, property);
             } else if (property.method == "group"){
-                property.ids.forEach(id => {
+                property.id.forEach(id => {
                     ChangeTooltip(e, id);
                 })
             }
