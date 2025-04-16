@@ -473,4 +473,15 @@ ServerEvents.recipes(event => {
 		.input(Item.of(MC("pink_dye"), 1))
 		.recipeTime(200)
 		.dayTime('night')
+	//phantom
+    event.recipes.summoningrituals.altar(KJ("summoning_doll"))
+		.mobOutput('phantom')
+		.input(Item.of(MC("stone"), 8))
+		.input(Item.of(CR("experience_nugget"), 3))
+		.input(Item.of(MC("gold_ingot"), 2))
+		.input(Item.of(MC("quartz"), 4))
+		.input(Item.of(MC("leather"), 3))
+		.input(Item.of(MC("black_dye"), 1))
+		.recipeTime(200)
+		.dayTime('night')
 });

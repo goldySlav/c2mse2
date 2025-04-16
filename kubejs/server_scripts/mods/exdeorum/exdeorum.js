@@ -55,6 +55,8 @@ ServerEvents.recipes(event => {
 	event.remove({ input: EXD("stone_pebble") })
     event.shapeless(Item.of(MC("stone"), 1), [Item.of(EXD("stone_pebble"), 4)])
 	
+    event.shapeless(EXD("string_mesh"), [CR_S("string_mesh")])
+	
 	event.remove({ output: EXD("flint_mesh") })
 	event.shaped(EXD("flint_mesh"), [
 		'A A',
@@ -74,6 +76,7 @@ ServerEvents.recipes(event => {
 		A: MC("iron_ingot"),
 		B: EXD("flint_mesh"),
 	})
+    event.shapeless(EXD("iron_mesh"), [CR_S("zinc_mesh")])
 	
 	event.remove({ output: EXD("golden_mesh") })
 	event.shaped(EXD("golden_mesh"), [
@@ -84,6 +87,7 @@ ServerEvents.recipes(event => {
 		A: MC("gold_ingot"),
 		B: EXD("iron_mesh"),
 	})
+    event.shapeless(EXD("golden_mesh"), [CR_S("brass_mesh")])
 	
 	event.remove({ output: EXD("diamond_mesh") })
 	event.shaped(EXD("diamond_mesh"), [
@@ -94,6 +98,9 @@ ServerEvents.recipes(event => {
 		A: MC("diamond"),
 		B: EXD("golden_mesh"),
 	})
+    event.shapeless(EXD("diamond_mesh"), [CR_S("custom_mesh")])
+	
+    event.shapeless(EXD("netherite_mesh"), [CR_S("andesite_mesh")])
 	
 	//dust
     event.shapeless(Item.of(EXD("dust"), 1), [PHC_FC("grinderitem"), MC("sand")]).id(KJ("dust_manual_only"))
