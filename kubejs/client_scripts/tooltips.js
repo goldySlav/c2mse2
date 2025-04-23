@@ -273,4 +273,9 @@ ItemEvents.tooltip(event => {
 	//industrial battery & its bank
     event.add('industrialrenewal:battery_lithium', '§7Can store up to §66.5M FE§7.')
     event.add('industrialrenewal:ind_battery_bank', '§7Can store up to §624§7 Industrial Batteries. Can act as a §6multiblock§7.')
+	
+	
+	
+	//mining dimension teleporter
+    event.add('mining_dimension:teleporter', '§7Legacy teleporter for OGs, §6will be removed§7 in the future!')
 })

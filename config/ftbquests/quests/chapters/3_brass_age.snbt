@@ -708,7 +708,7 @@
 			description: [
 				"Now you unlocked \"The Nether\" dimension!"
 				""
-				"To join the dimension you need to builda frame from &cNetherrack&r and light it up with &6Blaze Powder&r!"
+				"To join the dimension you need to build a vertical frame from &cNetherrack&r and light it up with &6Blaze Powder&r!"
 				""
 				"{image:kubejs:textures/quests/netherrack_portal.png width:200 height:225 align:1}"
 				""

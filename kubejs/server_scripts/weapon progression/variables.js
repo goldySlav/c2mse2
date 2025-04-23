@@ -68,13 +68,6 @@ global.weapons = {
                     count: 250,
                     reward: "random_enchant"
                 },
-            ]
-        },
-        {
-            method: "itemstack",
-            id: MC("diamond_sword"),
-            progress: true,
-            progress_list: [
                 {
                     task: "kill",
                     title: "Piglin Kills",

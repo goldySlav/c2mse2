@@ -75,12 +75,27 @@
 		}
 		{
 			dependencies: ["7B21ED0F5A3F7445"]
+			description: [
+				"Now you unlocked the \"Mining\" dimension!"
+				""
+				"To join the dimension you need to build a horizontal frame (at least 2x2) from &6Portable Machine&r and light it up with &dEther Gem&r!"
+				""
+				"{image:kubejs:textures/quests/mining_dim_portal.png width:200 height:200 align:1}"
+				""
+				"{@pagebreak}"
+				""
+				"Please pay attention that the frame is strictly horizontal, like the end portal!"
+				""
+				"{image:kubejs:textures/quests/mining_dim_portal_compare.png width:200 height:100 align:1}"
+			]
 			id: "66D4449924C2F39C"
 			shape: "rsquare"
+			subtitle: "Infinite &3Caves&r and &5Ores&r inside"
 			tasks: [{
-				id: "76E0E47F721495AA"
-				item: "mining_dimension:teleporter"
-				type: "item"
+				dimension: "mining_dimension:mining"
+				id: "060FCAD008887EBA"
+				title: "Visit \"Mining\" Dimension"
+				type: "dimension"
 			}]
 			x: 2.0d
 			y: -7.5d
