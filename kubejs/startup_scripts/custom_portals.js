@@ -7,7 +7,7 @@ const $Item = Java.loadClass('net.minecraft.world.item.Item')
 const $Block = Java.loadClass('net.minecraft.world.level.block.Block')
 
 StartupEvents.postInit(event => {
-	function customPortal(frameBlockId, lightItemId, dimDestination, dimReturn, tintColorObj) {
+	function customPortal(frameBlockId, lightItemId, dimDestination, dimReturn, tintColorObj, flat) {
 		
 		const frameBlock = $ForgeRegistries.BLOCKS.getValue(new $ResourceLocation(frameBlockId))
 		const lightItem = $ForgeRegistries.ITEMS.getValue(new $ResourceLocation(lightItemId))
@@ -24,6 +24,10 @@ StartupEvents.postInit(event => {
 		builder.getClass().getMethod("lightWithItem", $Item).invoke(builder, lightItem)
 		
 		const { R, G, B } = tintColorObj
+		
+		if (flat) {
+			builder.flatPortal()
+		}
 
 		builder
 			.destDimID(new $ResourceLocation(dimDestination))
@@ -39,6 +43,16 @@ StartupEvents.postInit(event => {
 		"minecraft:blaze_powder",
 		"minecraft:the_nether",
 		"kubejs:crash_site", 
-		{ R: 255, G: 0, B: 0 }
+		{ R: 255, G: 0, B: 0 },
+		false
+	)
+	
+	customPortal(
+		"kubejs:portable_machine",
+		"kubejs:ether_gem",
+		"mining_dimension:mining",
+		"kubejs:crash_site", 
+		{ R: 128, G: 128, B: 128 },
+		true
 	)
 })
