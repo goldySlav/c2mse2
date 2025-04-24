@@ -14,4 +14,7 @@ ServerEvents.tags("item", (event) => {
   event.add(MI_D("doors_big/iron"), AA("iron_sliding_door"));
   
   event.add(MI_D("doors_iron"), AA("steel_door"));
+
+  event.remove(F("storage_blocks/steel"), AA("steel_block"));
+  event.remove(F("ingots/steel"), AA("steel_ingot"));
 });
