@@ -1626,6 +1626,7 @@ castsForNumber = {
 	fluix_machine(LIO('laser_node'), 2, LB("laser_source_block"))
 	fluix_machine(EIO("double_layer_capacitor"), 1, EIO('basic_capacitor'))
 	fluix_machine(KJ('blank_upgrade'), 2)
+	fluix_machine(AE2_NA('network_analyser'), 1)
 	
 	//abstruse machine
 	event.shaped(KJ('abstruse_machine'), [
