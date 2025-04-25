@@ -169,6 +169,18 @@
       "emc": 0
     },
     {
+      "item": "minecraft:music_disc_5",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:music_disc_otherside",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:music_disc_relic",
+      "emc": 0
+    },
+    {
       "item": "minecraft:blaze_rod",
       "emc": 8192
     },
