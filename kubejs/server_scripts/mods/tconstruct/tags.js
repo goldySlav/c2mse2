@@ -20,4 +20,7 @@ ServerEvents.tags("item", (event) => {
 	event.add(F("balls"), TCT("ichor_slime_ball"));
 	event.add(F("balls"), TCT("ender_slime_ball"));
 	event.add(F("balls"), TCT("glow_ball"));
+
+	event.remove(F("storage_blocks/steel"), TCT("steel_block"));
+	event.remove(F("ingots/steel"), TCT("steel_ingot"));
 });
