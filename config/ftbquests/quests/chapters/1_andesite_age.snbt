@@ -718,6 +718,48 @@
 					item: "create:andesite_funnel"
 					type: "item"
 				}
+				{
+					count: 32
+					id: "622C59CCE3801083"
+					item: "create_connected:encased_chain_cogwheel"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7988C62EAC5EF2D0"
+					item: "create_connected:inverted_clutch"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3BDD184C1B831987"
+					item: "create_connected:inverted_gearshift"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "695680B21C11C450"
+					item: "create_connected:parallel_gearbox"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "1E1DC210354C7ABD"
+					item: "create_connected:vertical_parallel_gearbox"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2341852E214E0373"
+					item: "create_connected:six_way_gearbox"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "77E0B46A3CB80A67"
+					item: "create_connected:vertical_six_way_gearbox"
+					type: "item"
+				}
 			]
 			shape: "rsquare"
 			subtitle: "...must grow."
@@ -786,6 +828,48 @@
 					count: 32L
 					id: "15B247E4313720F9"
 					item: { Count: 32, id: "create:andesite_funnel" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "56AB4819E1EC469C"
+					item: "create_connected:encased_chain_cogwheel"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "40413AF60FCDD22B"
+					item: "create_connected:inverted_clutch"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "390F52C1FF0B83CA"
+					item: "create_connected:inverted_gearshift"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "6135DD12985D8BFE"
+					item: "create_connected:parallel_gearbox"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "4908D366CD458C40"
+					item: "create_connected:vertical_parallel_gearbox"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1356C9505687AF2D"
+					item: { Count: 8, id: "create_connected:six_way_gearbox" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1FB651117240C810"
+					item: { Count: 8, id: "create_connected:vertical_six_way_gearbox" }
 					type: "item"
 				}
 			]

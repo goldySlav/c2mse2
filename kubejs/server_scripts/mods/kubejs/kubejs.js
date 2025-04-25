@@ -1527,6 +1527,8 @@ castsForNumber = {
 	brass_machine(P('energy_discharger_basic'), 1, P('energy_discharger_starter'))
 	brass_machine(CR_A('portable_energy_interface'), 2)
 	brass_machine(EIO('xp_obelisk'), 1, EIO('experience_rod'))
+	brass_machine(CR_C('inventory_access_port'), 2)
+	brass_machine(CR_C('inventory_bridge'), 1)
 	
 	//inductive machine
 	event.shaped(KJ('inductive_machine'), [

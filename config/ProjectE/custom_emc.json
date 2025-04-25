@@ -779,6 +779,14 @@
     {
       "item": "tconstruct:ender_slime_ball",
       "emc": 32
+    },
+    {
+      "item": "create_connected:music_disc_elevator",
+      "emc": 0
+    },
+    {
+      "item": "create_connected:music_disc_interlude",
+      "emc": 0
     }
   ]
 }
