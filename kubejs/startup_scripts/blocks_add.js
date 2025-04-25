@@ -6,6 +6,8 @@ StartupEvents.registry('block', event => {
 			.model(`kubejs:block/${id}_machine`)
 			.soundType('lantern')
 			.hardness(3.0)
+			.requiresTool(true)
+			.tagBlock("mineable/pickaxe")
 			.displayName(`${name} Machine`)
 			.notSolid()
 			.renderType(layer)
