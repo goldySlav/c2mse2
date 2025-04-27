@@ -85,9 +85,13 @@ ServerEvents.recipes((event) => {
 	
 	//cobweb from spider
 	addLoot(MC("spider"), MC("cobweb"), 0.1)
+	addLoot(MC("cave_spider"), MC("cobweb"), 0.1)
 	
 	//sponge fragments from guardian
 	addLoot(MC("guardian"), CM("sponge_fragment"), 0.1)
+	
+	//sponge fragments from guardian
+	addLoot(MC("ender_dragon"), MC("dragon_egg"), 0.05)
 	
 	//TConstruct & EIO heads
 	addLoot(MC("blaze"), TCT("blaze_head"), 0.05, 1, 1, true)
@@ -113,14 +117,14 @@ ServerEvents.recipes((event) => {
 		MC("pufferfish"), MC("rabbit"), MC("salmon"), MC("sheep"), MC("silverfish"), MC("sniffer"),
 		MC("squid"), MC("strider"), MC("tadpole"), MC("trader_llama"), MC("tropical_fish"), MC("turtle"), 
 		MC("villager"), MC("wandering_trader"), MC("wolf"), Q("crab"), Q("toretoise"), Q("stoneling"),
-		TCT("sky_slime"), TCT("ender_slime"),
+		TCT("sky_slime"), TCT("ender_slime"), MC("slime"), MC("magma_cube"),
 	]
 
 	const midEntities = [
 		MC("blaze"), MC("cave_spider"), MC("creeper"), MC("drowned"), MC("enderman"), MC("illusioner"),
 		MC("endermite"), MC("evoker"), MC("ghast"), MC("guardian"), MC("hoglin"), MC("husk"), MC("iron_golem"), 
-		MC("magma_cube"), MC("phantom"), MC("piglin"), MC("piglin_brute"), MC("pillager"), MC("ravager"), 
-		MC("shulker"), MC("skeleton"), MC("skeleton_horse"), MC("slime"), MC("snow_golem"), 
+		MC("phantom"), MC("piglin"), MC("piglin_brute"), MC("pillager"), MC("ravager"), 
+		MC("shulker"), MC("skeleton"), MC("skeleton_horse"), MC("snow_golem"), 
 		MC("spider"), MC("stray"), MC("vex"), MC("vindicator"), MC("witch"), MC("wither_skeleton"), 
 		MC("zoglin"), MC("zombie"), MC("zombie_horse"), MC("zombie_villager"), MC("zombified_piglin"),
 		Q("forgotten"), Q("foxhound"), Q("wraith"), ART("mimic"),
