@@ -1,0 +1,36 @@
+{
+    "entity": "quark:forgotten",
+    "variants": [],
+    "name": "entity.quark.forgotten",
+    "name_color": "#BCBCBC",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 1024,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.forgotten",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:arrow",
+            "count": 32
+        },
+        {
+            "item": "minecraft:bone",
+            "count": 32
+        },
+        {
+            "item": "quark:forgotten_hat",
+            "count": 1
+        },
+        {
+            "item": "create:experience_nugget",
+            "count": 16
+        }
+    ]
+}

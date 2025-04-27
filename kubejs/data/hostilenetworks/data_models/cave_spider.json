@@ -1,0 +1,50 @@
+{
+    "entity": "minecraft:cave_spider",
+    "variants": [],
+    "name": "entity.minecraft.cave_spider",
+    "name_color": "#293629",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 1024,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.cave_spider",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:string",
+            "count": 32
+        },
+        {
+            "item": "minecraft:spider_eye",
+            "count": 32
+        },
+        {
+            "item": "minecraft:cobweb",
+            "count": 32
+        },
+        {
+            "optional": "true",
+            "item": "silentgear:fine_silk",
+            "count": 3
+        },
+        {
+            "optional": "true",
+            "item": "reliquary:chelicerae",
+            "count": 2
+        },
+        {
+            "item": "tconstruct:cave_spider_head",
+            "count": 1
+        },
+        {
+            "item": "create:experience_nugget",
+            "count": 16
+        }
+    ]
+}

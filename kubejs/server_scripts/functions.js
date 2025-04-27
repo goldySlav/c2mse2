@@ -103,6 +103,7 @@ const TCT = (id, x) => MOD("tconstruct", id, x)
 const LB = (id, x) => MOD("laserbridges", id, x)
 const MBCK = (id, x) => MOD("morebuckets", id, x)
 const IR = (id, x) => MOD("industrialrenewal", id, x)
+const HNN = (id, x) => MOD("hostilenetworks", id, x)
 
 
 const processingTimesDefault = {

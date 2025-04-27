@@ -1,0 +1,67 @@
+{
+    "entity": "minecraft:elder_guardian",
+    "variants": [],
+    "name": "entity.minecraft.elder_guardian",
+    "name_color": "#CBB1A5",
+    "gui_scale": 0.5,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0.5,
+    "gui_z_offset": 0,
+    "sim_cost": 32768,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.elder_guardian",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:cod",
+            "count": 64
+        },
+        {
+            "item": "minecraft:salmon",
+            "count": 64
+        },
+        {
+            "item": "minecraft:tropical_fish",
+            "count": 64
+        },
+        {
+            "item": "minecraft:pufferfish",
+            "count": 64
+        },
+        {
+            "item": "minecraft:sponge",
+            "count": 64
+        },
+        {
+            "item": "minecraft:wet_sponge",
+            "count": 64
+        },
+        {
+            "item": "minecraft:prismarine_crystals",
+            "count": 64
+        },
+        {
+            "item": "minecraft:prismarine_shard",
+            "count": 64
+        },
+        {
+            "optional": true,
+            "item": "reliquary:guardian_spike",
+            "count": 16
+        },
+        {
+            "item": "create:experience_nugget",
+            "count": 64
+        }
+    ],
+    "data_per_kill": [
+        3,
+        12,
+        30,
+        45
+    ]
+}

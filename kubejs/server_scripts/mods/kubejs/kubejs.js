@@ -1585,6 +1585,10 @@ castsForNumber = {
 	inductive_machine(EIO("basic_capacitor"), 1, CR_A('capacitor'))
 	inductive_machine(AE2_E('circuit_cutter'), 1, CR('mechanical_saw'))
 	inductive_machine(AE2_E('ex_charger'), 1, CR_A("tesla_coil"))
+	inductive_machine(HNN('sim_chamber'), 1, CM("hopping_mob_cage"))
+	inductive_machine(HNN('loot_fabricator'), 1)
+	inductive_machine(HNN('deep_learner'), 1, Q("ender_watcher"))
+	inductive_machine(HNN('blank_data_model'), 1, CM("diamond_dna_sampler"))
 	
 	//calculation machine (ae2 not_so_misterious_cube)
 	removeRecipeByOutput(event, [
