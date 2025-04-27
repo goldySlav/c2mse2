@@ -46,7 +46,11 @@
     },
     {
       "item": "draconicevolution:dragon_heart",
-      "emc": 422212465065984
+      "emc": 103079215104
+    },
+    {
+      "item": "minecraft:dragon_egg",
+      "emc": 262144
     },
     {
       "item": "create:limestone_cobblestone",
