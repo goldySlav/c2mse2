@@ -90,8 +90,12 @@ ServerEvents.recipes((event) => {
 	//sponge fragments from guardian
 	addLoot(MC("guardian"), CM("sponge_fragment"), 0.1)
 	
-	//sponge fragments from guardian
+	//dragon egg from dragon
 	addLoot(MC("ender_dragon"), MC("dragon_egg"), 0.05)
+	
+	//emerald and NMW stuff from wandering trader
+	addLoot(MC("wandering_trader"), MC("emerald"), 0.1)
+	addLoot(MC("wandering_trader"), NMW("trader_cloth_piece"), 0.5, 1, 3)
 	
 	//TConstruct & EIO heads
 	addLoot(MC("blaze"), TCT("blaze_head"), 0.05, 1, 1, true)
