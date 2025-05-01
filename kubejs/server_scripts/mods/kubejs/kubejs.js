@@ -1527,6 +1527,8 @@ castsForNumber = {
 	brass_machine(P('energy_discharger_basic'), 1, P('energy_discharger_starter'))
 	brass_machine(CR_A('portable_energy_interface'), 2)
 	brass_machine(EIO('xp_obelisk'), 1, EIO('experience_rod'))
+	brass_machine(CR_C('inventory_access_port'), 2)
+	brass_machine(CR_C('inventory_bridge'), 1)
 	
 	//inductive machine
 	event.shaped(KJ('inductive_machine'), [
@@ -1583,6 +1585,10 @@ castsForNumber = {
 	inductive_machine(EIO("basic_capacitor"), 1, CR_A('capacitor'))
 	inductive_machine(AE2_E('circuit_cutter'), 1, CR('mechanical_saw'))
 	inductive_machine(AE2_E('ex_charger'), 1, CR_A("tesla_coil"))
+	inductive_machine(HNN('sim_chamber'), 1, CM("hopping_mob_cage"))
+	inductive_machine(HNN('loot_fabricator'), 1)
+	inductive_machine(HNN('deep_learner'), 1, Q("ender_watcher"))
+	inductive_machine(HNN('blank_data_model'), 1, CM("diamond_dna_sampler"))
 	
 	//calculation machine (ae2 not_so_misterious_cube)
 	removeRecipeByOutput(event, [
@@ -1626,6 +1632,7 @@ castsForNumber = {
 	fluix_machine(LIO('laser_node'), 2, LB("laser_source_block"))
 	fluix_machine(EIO("double_layer_capacitor"), 1, EIO('basic_capacitor'))
 	fluix_machine(KJ('blank_upgrade'), 2)
+	fluix_machine(AE2_NA('network_analyser'), 1)
 	
 	//abstruse machine
 	event.shaped(KJ('abstruse_machine'), [

@@ -1,0 +1,45 @@
+{
+    "entity": "minecraft:stray",
+    "variants": [],
+    "name": "entity.minecraft.stray",
+    "name_color": "#BCBCBC",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 1024,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.stray",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:arrow",
+            "count": 32
+        },
+        {
+            "item": "minecraft:bone",
+            "count": 32
+        },
+        {
+            "item": "minecraft:bow",
+            "count": 1
+        },
+        {
+            "item": "tconstruct:stray_head",
+            "count": 1
+        },
+        {
+            "optional": true,
+            "item": "reliquary:rib_bone",
+            "count": 2
+        },
+        {
+            "item": "create:experience_nugget",
+            "count": 16
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "entity": "tconstruct:sky_slime",
+    "variants": [],
+    "name": "entity.tconstruct.sky_slime",
+    "name_color": "#6ebaac",
+    "gui_scale": 2,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 512,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:nether_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.sky_slime",
+    "fabricator_drops": [
+        {
+            "item": "tcosntruct:sky_slime_ball",
+            "count": 32
+        },
+        {
+            "item": "tconstruct:sky_slime",
+            "count": 8
+        },
+        {
+            "item": "create:experience_nugget",
+            "count": 8
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "entity": "minecraft:witch",
+    "variants": [],
+    "name": "entity.minecraft.witch",
+    "name_color": "#361758",
+    "gui_scale": 0.8,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 1024,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.witch",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:redstone",
+            "count": 32
+        },
+        {
+            "item": "minecraft:glowstone_dust",
+            "count": 32
+        },
+        {
+            "item": "minecraft:sugar",
+            "count": 32
+        },
+        {
+            "item": "minecraft:gunpowder",
+            "count": 32
+        },
+        {
+            "item": "minecraft:stick",
+            "count": 32
+        },
+        {
+            "item": "minecraft:spider_eye",
+            "count": 32
+        },
+        {
+            "item": "minecraft:glass_bottle",
+            "count": 16
+        },
+        {
+            "optional": true,
+            "item": "reliquary:witch_hat",
+            "count": 2
+        },
+        {
+            "item": "create:experience_nugget",
+            "count": 16
+        }
+    ]
+}

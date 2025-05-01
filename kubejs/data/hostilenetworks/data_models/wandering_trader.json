@@ -1,0 +1,50 @@
+{
+    "entity": "minecraft:wandering_trader",
+    "variants": [],
+    "name": "entity.minecraft.wandering_trader",
+    "name_color": "#a36041",
+    "gui_scale": 1.0,
+    "gui_x_offset": 0.0,
+    "gui_y_offset": 0.0,
+    "gui_z_offset": 0.0,
+    "sim_cost": 512,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.wandering_trader",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:emerald",
+            "count": 4
+        },
+        {
+            "item": "nomowanderer:trader_cloth_piece",
+            "count": 32
+        },
+        {
+            "item": "nomowanderer:trader_rug",
+            "count": 8
+        },
+        {
+            "item": "create:experience_nugget",
+            "count": 8
+        }
+    ],
+    "tier_data": [
+        6,
+        54,
+        354,
+        1254
+    ],
+    "data_per_kill": [
+        1,
+        4,
+        10,
+        18
+    ]
+}

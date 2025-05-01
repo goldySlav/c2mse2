@@ -70,6 +70,7 @@ ServerEvents.recipes((event) => {
 	circuit(CR("pulse_timer"), true)
 	circuit(CR("powered_latch"), true)
 	circuit(CR("powered_toggle_latch"), true)
+	circuit(CR_C("sequenced_pulse_generator"), true)
 	circuit(Q("redstone_randomizer"), true)
 	circuit(DE("rain_sensor"), true)
 	circuit(DE("potentiometer"), true)

@@ -30,6 +30,7 @@ ClientEvents.lang('en_us', event => {
 	event.renameItem('create:brass_hand', "Golden Hand")
 	event.renameBlock('create:item_vault', "Item Vault (Horizontal)")
 	event.renameBlock('create:fluid_tank', "Fluid Tank (Vertical)")
+	event.renameBlock('create:creative_fluid_tank', "Creative Fluid Tank (Vertical)")
 	
 	event.renameItem('minecraft:shield', "Iron Shield")
 	
@@ -94,5 +95,9 @@ ClientEvents.lang('en_us', event => {
 	event.renameItem('industrialrenewal:battery_lithium', "Industrial Battery")
 	event.renameBlock('industrialrenewal:fluid_tank', "Industrial Fluid Tank")
 	event.renameBlock('industrialrenewal:concrete', "Industrial Concrete")
+	
+	event.renameBlock('create_connected:fluid_vessel', "Fluid Tank (Horizontal)")
+	event.renameBlock('create_connected:creative_fluid_vessel', "Creative Fluid Tank (Horizontal)")
+	event.renameBlock('create_connected:item_silo', "Item Vault (Vertical)")
 });
 

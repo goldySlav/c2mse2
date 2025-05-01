@@ -1,0 +1,28 @@
+{
+    "entity": "minecraft:ravager",
+    "variants": [],
+    "name": "entity.minecraft.ravager",
+    "name_color": "#9e9795",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 1024,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:nether_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.ravager",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:saddle",
+            "count": 1
+        },
+        {
+            "item": "create:experience_nugget",
+            "count": 16
+        }
+    ]
+}

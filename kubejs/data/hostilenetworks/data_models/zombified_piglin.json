@@ -1,0 +1,36 @@
+{
+    "entity": "minecraft:zombified_piglin",
+    "variants": [],
+    "name": "entity.minecraft.zombified_piglin",
+    "name_color": "#c48c7a",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 1024,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:nether_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.zombified_piglin",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:rotten_flesh",
+            "count": 32
+        },
+        {
+            "item": "minecraft:gold_ingot",
+            "count": 32
+        },
+        {
+            "item": "tconstruct:zombified_piglin_head",
+            "count": 1
+        },
+        {
+            "item": "create:experience_nugget",
+            "count": 16
+        }
+    ]
+}

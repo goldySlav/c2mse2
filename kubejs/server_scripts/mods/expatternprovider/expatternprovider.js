@@ -97,35 +97,6 @@ ServerEvents.recipes((event) => {
 		AE2_E("ex_emc_interface"),
 		AE2_E("ex_emc_interface_upgrade"),
 	])
-	event.recipes.extendedcrafting.shaped_table(AE2_E('ex_emc_interface'), [
-		'CEBEC',
-		'EGGGE',
-		'BDAFB',
-		'EGGGE',
-		'CEBEC',
-	], {
-		A: AE2_PRE('emc_interface'),
-		B: AE2('fluix_glass_cable'),
-		C: CP('iron_2'),
-		D: AE2('formation_core'),
-		E: MGC('accumulation_processor'),
-		F: AE2('annihilation_core'),
-		G: PREXP('purple_matter'),
-	})
-	event.recipes.extendedcrafting.shaped_table(AE2_E('emc_interface_upgrade'), [
-		'CEBEC',
-		'EGGGE',
-		'BD FB',
-		'EGGGE',
-		'CEBEC',
-	], {
-		B: AE2('fluix_glass_cable'),
-		C: CP('iron_2'),
-		D: AE2('formation_core'),
-		E: MGC('accumulation_processor'),
-		F: AE2('annihilation_core'),
-		G: PREXP('purple_matter'),
-	})
 
 	//extended pattern provider & upgrade
 	removeRecipeByID(event, [

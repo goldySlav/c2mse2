@@ -1,0 +1,56 @@
+{
+    "entity": "minecraft:piglin",
+    "variants": [],
+    "name": "entity.minecraft.piglin",
+    "name_color": "#c77c63",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 1024,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:nether_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.piglin",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:gold_ingot",
+            "count": 32
+        },
+        {
+            "item": "minecraft:piglin_head",
+            "count": 1
+        },
+        {
+            "item": "minecraft:crossbow",
+            "count": 1
+        },
+        {
+            "item": "minecraft:golden_sword",
+            "count": 1
+        },
+        {
+            "item": "minecraft:golden_helmet",
+            "count": 1
+        },
+        {
+            "item": "minecraft:golden_chestplate",
+            "count": 1
+        },
+        {
+            "item": "minecraft:golden_leggings",
+            "count": 1
+        },
+        {
+            "item": "minecraft:golden_boots",
+            "count": 1
+        },
+        {
+            "item": "create:experience_nugget",
+            "count": 16
+        }
+    ]
+}

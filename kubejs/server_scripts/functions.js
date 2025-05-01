@@ -5,12 +5,12 @@ const MOD = (domain, id, x) => (x ? `${x}x ` : "") + (id ? (id.startsWith('#') ?
 const AA = (id, x) => MOD("ad_astra", id, x)
 const AA_GA = (id, x) => MOD("ad_astra_giselle_addon", id, x)
 const AE2 = (id, x) => MOD("ae2", id, x)
-const AE2_PRE = (id, x) => MOD("appliede", id, x)
 const AE2_R = (id, x) => MOD("merequester", id, x)
 const AE2_M = (id, x) => MOD("appmek", id, x)
 const AE2_C = (id, x) => MOD("appliedcooking", id, x)
 const AE2_A = (id, x) => MOD("advanced_ae", id, x)
 const AE2_E = (id, x) => MOD("expatternprovider", id, x)
+const AE2_NA = (id, x) => MOD("ae2netanalyser", id, x)
 const AF = (id, x) => MOD("appflux", id, x)
 const AE = (id, x) => MOD("appliede", id, x)
 const ART = (id, x) => MOD("artifacts", id, x)
@@ -70,6 +70,7 @@ const CR_S = (id, x) => MOD("createsifter", id, x)
 const CR_ME = (id, x) => MOD("create_mechanical_extruder", id, x)
 const CR_ET = (id, x) => MOD("createendertransmission", id, x)
 const CR_N = (id, x) => MOD("create_netherless", id, x)
+const CR_C = (id, x) => MOD("create_connected", id, x)
 const PR_C = (id, x) => MOD("projectred_core", id, x)
 const PR_T = (id, x) => MOD("projectred_transmission", id, x)
 const PR_I = (id, x) => MOD("projectred_illumination", id, x)
@@ -101,6 +102,7 @@ const TCT = (id, x) => MOD("tconstruct", id, x)
 const LB = (id, x) => MOD("laserbridges", id, x)
 const MBCK = (id, x) => MOD("morebuckets", id, x)
 const IR = (id, x) => MOD("industrialrenewal", id, x)
+const HNN = (id, x) => MOD("hostilenetworks", id, x)
 
 
 const processingTimesDefault = {
@@ -811,8 +813,7 @@ const singularities = [
 	{ id: "storage_256k", core: KJ("wafer_component_256k") },
 	{ id: "storage_256m", core: KJ("wafer_component_256m") },
 	{ id: "core_256k", core: KJ("core_256k_wafer") },
-	{ id: "transmutation_interface", core: AE2_PRE("emc_interface") },
-	{ id: "ex_transmutation_interface", core: AE2_E("ex_emc_interface") },
+	{ id: "transmutation_interface", core: PREXP("transmutation_interface") },
 	{ id: "klein_star", core: PRE("klein_star_ein") },
 	{ id: "magnum_star", core: PREXP("magnum_star_ein") },
 	{ id: "colossal_star", core: PREXP("colossal_star_ein") },

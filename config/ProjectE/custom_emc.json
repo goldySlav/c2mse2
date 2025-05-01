@@ -46,7 +46,11 @@
     },
     {
       "item": "draconicevolution:dragon_heart",
-      "emc": 422212465065984
+      "emc": 103079215104
+    },
+    {
+      "item": "minecraft:dragon_egg",
+      "emc": 262144
     },
     {
       "item": "create:limestone_cobblestone",
@@ -169,6 +173,18 @@
       "emc": 0
     },
     {
+      "item": "minecraft:music_disc_5",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:music_disc_otherside",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:music_disc_relic",
+      "emc": 0
+    },
+    {
       "item": "minecraft:blaze_rod",
       "emc": 8192
     },
@@ -230,10 +246,6 @@
     },
     {
       "item": "minecraft:turtle_egg",
-      "emc": 0
-    },
-    {
-      "item": "minecraft:dragon_egg",
       "emc": 0
     },
     {
@@ -779,6 +791,14 @@
     {
       "item": "tconstruct:ender_slime_ball",
       "emc": 32
+    },
+    {
+      "item": "create_connected:music_disc_elevator",
+      "emc": 0
+    },
+    {
+      "item": "create_connected:music_disc_interlude",
+      "emc": 0
     }
   ]
 }

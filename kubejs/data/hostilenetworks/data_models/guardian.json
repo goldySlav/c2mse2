@@ -1,0 +1,57 @@
+{
+    "entity": "minecraft:guardian",
+    "variants": [],
+    "name": "entity.minecraft.guardian",
+    "name_color": "#6A9583",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 1024,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.guardian",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:cod",
+            "count": 32
+        },
+        {
+            "item": "minecraft:salmon",
+            "count": 32
+        },
+        {
+            "item": "minecraft:tropical_fish",
+            "count": 32
+        },
+        {
+            "item": "minecraft:pufferfish",
+            "count": 32
+        },
+        {
+            "item": "minecraft:sponge",
+            "count": 32
+        },
+        {
+            "item": "minecraft:prismarine_crystals",
+            "count": 32
+        },
+        {
+            "item": "minecraft:prismarine_shard",
+            "count": 32
+        },
+        {
+            "optional": true,
+            "item": "reliquary:guardian_spike",
+            "count": 8
+        },
+        {
+            "item": "create:experience_nugget",
+            "count": 16
+        }
+    ]
+}

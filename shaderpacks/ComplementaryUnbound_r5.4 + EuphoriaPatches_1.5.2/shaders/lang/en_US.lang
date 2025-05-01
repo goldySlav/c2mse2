@@ -92,7 +92,7 @@ value.info18.0=
 option.info18.comment=Thank you for Installing Euphoria Patches :)
 
 option.info19=Â§aNEW UPDATE
-value.info19.0=Â§cX.Y.Z Â§r->Â§a X.Y.Z
+value.info19.0=§c1.5.2 §r->§a 1.6.1
 option.info19.comment=A new version of the EuphoriaPatcher Mod is available. Download it from Modrinth: https://euphoriapatches.com/download.
 
 option.info20=
