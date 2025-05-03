@@ -133,5 +133,19 @@ global.weapons = {
                 },
             ]
         },
+        {
+            method: "itemstack",
+            id: DD("warden_sword"),
+            progress: true,
+            progress_list: [
+                {
+                    task: "kill",
+                    title: "Shattered Kills",
+                    target: "deeperdarker:shattered",
+                    count: 600,
+                    reward: "random_enchant"
+                },
+            ]
+        },
     ]
 }

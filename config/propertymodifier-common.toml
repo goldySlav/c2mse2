@@ -111,6 +111,15 @@
 		"pureemeraldtools:emerald_netherite_pickaxe" = 2893
 		"pureemeraldtools:emerald_netherite_hoe" = 2893
 		"pureemeraldtools:emerald_netherite_shovel" = 2893
+		"deeperdarker:warden_sword" = 3359
+		"deeperdarker:warden_axe" = 3359
+		"deeperdarker:warden_pickaxe" = 3359
+		"deeperdarker:warden_hoe" = 3359
+		"deeperdarker:warden_shovel" = 3359
+		"deeperdarker:warden_helmet" = 621
+		"deeperdarker:warden_chestplate" = 855
+		"deeperdarker:warden_leggings" = 798
+		"deeperdarker:warden_boots" = 677
 
 	#Set the max stack size of an item. Only values between 2 and 64 are supported. Items that have durability cannot have this value altered. Example (without the leading #):
 	#"minecraft:ender_pearl" = 64
@@ -194,6 +203,10 @@
 			"minecraft:diamond_chestplate" = 1
 			"minecraft:diamond_leggings" = 1
 			"minecraft:diamond_boots" = 1
+			"deeperdarker:warden_helmet" = 3
+			"deeperdarker:warden_chestplate" = 3
+			"deeperdarker:warden_leggings" = 3
+			"deeperdarker:warden_boots" = 3
 			"miniutilities:unstable_helmet" = 3
 			"miniutilities:unstable_chestplate" = 3
 			"miniutilities:unstable_leggings" = 3
@@ -267,6 +280,7 @@
 			"pureemeraldtools:pure_emerald_sword" = 9
 			"minecraft:netherite_sword" = 10
 			"pureemeraldtools:emerald_netherite_sword" = 11
+			"deeperdarker:warden_sword" = 12
 			"enderio:dark_steel_sword" = 15
 			"miniutilities:etheric_sword" = 30
 			"miniutilities:kikoku" = 35
@@ -281,6 +295,7 @@
 			"pureemeraldtools:pure_emerald_axe" = 12
 			"minecraft:netherite_axe" = 13
 			"pureemeraldtools:emerald_netherite_axe" = 14
+			"deeperdarker:warden_axe" = 15
 			"minecraft:golden_pickaxe" = 4.5
 			"pureemeraldtools:pure_emerald_pickaxe" = 5.5
 			"pureemeraldtools:emerald_netherite_pickaxe" = 6.5

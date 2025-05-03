@@ -609,10 +609,12 @@ const sieving = {
 		diamond: {
 			"minecraft:chorus_fruit": 0.175,
 			"minecraft:ender_pearl": 0.15,
+			"minecraft:sculk": 0.1,
 		},
 		netherite: {
 			"minecraft:chorus_fruit": 0.25,
 			"minecraft:ender_pearl": 0.2,
+			"minecraft:sculk": 0.25,
 			"minecraft:echo_shard": 0.03,
 			"minecraft:chorus_flower": 0.025,
 			"minecraft:sculk_shrieker": 0.01,

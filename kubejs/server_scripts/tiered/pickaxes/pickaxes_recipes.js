@@ -15,7 +15,7 @@ ServerEvents.recipes(e => {
 		A: unstable.star,
 		B: unstable.opinium,
 		C: unstable.circuit,
-		D: PET("emerald_netherite_pickaxe"),
+		D: DD("warden_pickaxe"),
 		E: unstable.block,
 		F: unstable.wafer,
 		G: unstable.collector,

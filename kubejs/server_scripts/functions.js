@@ -103,6 +103,7 @@ const LB = (id, x) => MOD("laserbridges", id, x)
 const MBCK = (id, x) => MOD("morebuckets", id, x)
 const IR = (id, x) => MOD("industrialrenewal", id, x)
 const HNN = (id, x) => MOD("hostilenetworks", id, x)
+const DD = (id, x) => MOD("deeperdarker", id, x)
 
 
 const processingTimesDefault = {
@@ -904,7 +905,9 @@ const souledEggedEntities = [
 	WSM("sickened_mushroom_cow"), WSM("sickened_parrot"), WSM("sickened_phantom"), WSM("sickened_pig"), 
 	WSM("sickened_pillager"), WSM("sickened_skeleton"), WSM("sickened_snow_golem"), WSM("sickened_spider"), 
 	WSM("sickened_villager"), WSM("sickened_vindicator"), WSM("sickened_wolf"), WSM("sickened_zombie"), 
-	WSM("tentacle"), WSM("withered_symbiont"), TCT("sky_slime"), TCT("ender_slime"),
+	WSM("tentacle"), WSM("withered_symbiont"), TCT("sky_slime"), TCT("ender_slime"), DD("angler_fish"),
+	DD("sculk_centipede"), DD("sculk_leech"), DD("sculk_snapper"), DD("shattered"), DD("shriek_worm"),
+	DD("sludge"), DD("stalker"), 
 	//AM("grizzly_bear"), AM("roadrunner"), AM("bone_serpent"),
 	//AM("gazelle"), AM("crocodile"), AM("fly"), AM("hummingbird"), AM("orca"), AM("sunbird"), AM("gorilla"),
 	//AM("crimson_mosquito"), AM("rattlesnake"), AM("endergrade"), AM("hammerhead_shark"), AM("lobster"),

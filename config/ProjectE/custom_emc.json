@@ -799,6 +799,22 @@
     {
       "item": "create_connected:music_disc_interlude",
       "emc": 0
+    },
+    {
+      "item": "deeperdarker:resonarium",
+      "emc": 8192
+    },
+    {
+      "item": "deeperdarker:warden_upgrade_smithing_template",
+      "emc": 7497
+    },
+    {
+      "item": "deeperdarker:sculk_bone",
+      "emc": 288
+    },
+    {
+      "item": "deeperdarker:heart_of_the_deep",
+      "emc": 32768
     }
   ]
 }

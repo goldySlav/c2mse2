@@ -37,7 +37,18 @@ ServerEvents.recipes((event) => {
 		})
 	}
 	
+	//ART
 	grow(ART("mimic"), 3, ["cave"])
+	
+	//DD
+	grow(DD("angler_fish"), 1, ["sculk"], 1800, true)
+	grow(DD("sculk_centipede"), 2, ["sculk"])
+	grow(DD("sculk_leech"), 1, ["sculk"])
+	grow(DD("sculk_snapper"), 1, ["sculk"])
+	grow(DD("shattered"), 2, ["sculk"])
+	grow(DD("shriek_worm"), 3, ["sculk"])
+	grow(DD("sludge"), 2, ["sculk"])
+	grow(DD("stalker"), 3, ["sculk"])
 	
 	function addLoot(entity, item, chance, minAmount, maxAmount, lightning) {
 		chance = chance ? chance : 1.0
@@ -107,6 +118,20 @@ ServerEvents.recipes((event) => {
 	addLoot(MC("piglin_brute"), TCT("piglin_brute_head"), 0.05, 1, 1, true)
 	addLoot(MC("zombified_piglin"), TCT("zombified_piglin_head"), 0.05, 1, 1, true)
 	
+	//DD mobs
+	addLoot(DD("sculk_centipede"), MC("string"), 0.75)
+	addLoot(DD("sculk_leech"), DD("soul_dust"), 0.25)
+	addLoot(DD("sculk_snapper"), DD("soul_dust"), 0.5)
+	addLoot(DD("shattered"), DD("sculk_bone"), 0.75, 1, 3)
+	addLoot(DD("shattered"), CM("warden_receptor"), 0.05, 1, 1, true)
+	addLoot(DD("sludge"), DD("resonarium"), 0.5)
+	addLoot(DD("shriek_worm"), CM("warden_receptor"), 0.1)
+	addLoot(DD("stalker"), DD("soul_crystal"), 0.1)
+	
+	//warden
+	addLoot(MC("warden"), DD("heart_of_the_deep"), 0.025)
+	addLoot(MC("warden"), DD("warden_carapace"), 0.05)
+	
 	//warden receptor
 	event.recipes.create.crushing([
 		Item.of(CM('warden_receptor')).withChance(0.01)
@@ -121,7 +146,8 @@ ServerEvents.recipes((event) => {
 		MC("pufferfish"), MC("rabbit"), MC("salmon"), MC("sheep"), MC("silverfish"), MC("sniffer"),
 		MC("squid"), MC("strider"), MC("tadpole"), MC("trader_llama"), MC("tropical_fish"), MC("turtle"), 
 		MC("villager"), MC("wandering_trader"), MC("wolf"), Q("crab"), Q("toretoise"), Q("stoneling"),
-		TCT("sky_slime"), TCT("ender_slime"), MC("slime"), MC("magma_cube"),
+		TCT("sky_slime"), TCT("ender_slime"), MC("slime"), MC("magma_cube"), DD("angler_fish"), 
+		DD("sculk_leech"), DD("sculk_snapper"), DD("sludge"), 
 	]
 
 	const midEntities = [
@@ -131,12 +157,12 @@ ServerEvents.recipes((event) => {
 		MC("shulker"), MC("skeleton"), MC("skeleton_horse"), MC("snow_golem"), 
 		MC("spider"), MC("stray"), MC("vex"), MC("vindicator"), MC("witch"), MC("wither_skeleton"), 
 		MC("zoglin"), MC("zombie"), MC("zombie_horse"), MC("zombie_villager"), MC("zombified_piglin"),
-		Q("forgotten"), Q("foxhound"), Q("wraith"), ART("mimic"),
+		Q("forgotten"), Q("foxhound"), Q("wraith"), ART("mimic"), DD("sculk_centipede"), DD("shattered"),
+		
 	]
 	
 	const bigEntities = [
-		MC("ender_dragon"), MC("wither"), MC("elder_guardian"), MC("warden"),
-		//AM("void_worm"),  
+		MC("ender_dragon"), MC("wither"), MC("elder_guardian"), MC("warden"), DD("shriek_worm"), DD("stalker"),
 		
 	]
 	

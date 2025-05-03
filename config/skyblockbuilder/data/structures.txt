@@ -12,6 +12,7 @@ apotheosis:tower_main
 apotheosis:tower_sand
 apotheosis:tower_spruce
 betterfortresses:fortress
+deeperdarker:ancient_temple
 minecraft:ancient_city
 minecraft:bastion_remnant
 minecraft:buried_treasure

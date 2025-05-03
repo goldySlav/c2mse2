@@ -11,10 +11,10 @@ const armorMats = {
 		F: unstable.opinium,
 		G: unstable.star,
         base: {
-            helmet: PET("emerald_netherite_armor_helmet"),
-            chestplate: PET("emerald_netherite_armor_chestplate"),
-            leggings: PET("emerald_netherite_armor_leggings"),
-            boots: PET("emerald_netherite_armor_boots"),
+            helmet: DD("warden_helmet"),
+            chestplate: DD("warden_chestplate"),
+            leggings: DD("warden_leggings"),
+            boots: DD("warden_boots"),
         }
     },
     infused: {

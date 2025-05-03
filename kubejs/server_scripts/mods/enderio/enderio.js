@@ -190,6 +190,8 @@ ServerEvents.recipes((event) => {
 	enchBook(AA_GA("acid_rain_proof"), AA("calorite_plate"), 64)
 	enchBook(AA_GA("gravity_normalizing"), AA("gravity_normalizer"), 1)
 	enchBook(AA_GA("space_fire_proof"), AA("ostrum_plate"), 64)
+	enchBook(DD("sculk_smite"), DD("soul_crystal"), 3)
+	enchBook(DD("catalysis"), DD("soul_dust"), 16)
 	//enchBook(AM("straddle_jump"), MC("slime_block"), 16)
 	//enchBook(AM("lavawax"), MC("blue_ice"), 8)
 	//enchBook(AM("serpentfriend"), KJ("necrotic_bone"), 16)
