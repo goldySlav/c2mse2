@@ -171,4 +171,8 @@ ServerEvents.recipes((event) => {
 		temperature: 934,
 		time: 68
 	})
+	
+	//missing netherite scrap recipe compat
+	event.shapeless(MC("netherite_scrap"), Item.of(TCT("debris_nugget"), 9))
+	event.shapeless(Item.of(TCT("debris_nugget"), 9), MC("netherite_scrap"))
 })
