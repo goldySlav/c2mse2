@@ -55,4 +55,13 @@ StartupEvents.postInit(event => {
 		{ R: 128, G: 128, B: 128 },
 		true
 	)
+	
+	customPortal(
+		"minecraft:sculk_shrieker",
+		"minecraft:echo_shard",
+		"deeperdarker:otherside",
+		"kubejs:crash_site", 
+		{ R: 5, G: 1, B: 74 },
+		true
+	)
 })

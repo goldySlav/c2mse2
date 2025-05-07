@@ -70,5 +70,12 @@ ServerEvents.recipes((event) => {
 	removeRecipeByOutput(event, [
 		MVS("netherite_shield"),
     ])
-	event.smithing(MVS("netherite_shield"), MVS("emerald_shield"), MC("netherite_ingot"))
+	shapedSaveNBT(event, MVS("netherite_shield"), [
+		'BBB',
+		'BAB',
+		'BBB',
+	], {
+		A: MVS("emerald_shield"),
+		B: F("#ingots/netherite"),
+	})
 })

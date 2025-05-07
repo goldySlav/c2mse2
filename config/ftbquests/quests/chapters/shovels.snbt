@@ -35,7 +35,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["091CABE61E125844"]
+			dependencies: ["04D331DC1C47744C"]
 			disable_toast: true
 			icon: "miniutilities:erosion_shovel"
 			id: "6CC05EB096845CCA"
@@ -46,7 +46,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 6.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["6CC05EB096845CCA"]
@@ -74,7 +74,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 7.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["166C2DACFF8448F7"]
@@ -103,7 +103,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 9.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["2BE02AB830DA6188"]
@@ -140,7 +140,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 10.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["05BBAC5B1EC0942A"]
@@ -177,7 +177,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 12.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["01F8A8C1BF45F093"]
@@ -214,7 +214,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 13.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["263AA4FDE6BBB410"]
@@ -235,6 +235,7 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["4767CB41AB3BA3F5"]
 			disable_toast: true
 			id: "6335E82EA0D32D0C"
 			tasks: [{
@@ -268,6 +269,113 @@
 			}]
 			x: 0.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["091CABE61E125844"]
+			disable_toast: true
+			id: "04D331DC1C47744C"
+			tasks: [{
+				id: "57E8A0FE245ED766"
+				item: {
+					Count: 1
+					id: "deeperdarker:warden_shovel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["41E5FC66EA072859"]
+			disable_toast: true
+			id: "4767CB41AB3BA3F5"
+			tasks: [{
+				id: "3525F84913FA2CD5"
+				item: {
+					Count: 1
+					id: "minecraft:diamond_shovel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2E389CBB37108BC2"]
+			disable_toast: true
+			id: "41E5FC66EA072859"
+			tasks: [{
+				id: "349ACB54149BF867"
+				item: {
+					Count: 1
+					id: "minecraft:golden_shovel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4F1F9651B776F040"]
+			disable_toast: true
+			id: "2E389CBB37108BC2"
+			tasks: [{
+				id: "1B2E84CA3B31BCE9"
+				item: {
+					Count: 1
+					id: "minecraft:iron_shovel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["367170E1A210B51E"]
+			disable_toast: true
+			id: "4F1F9651B776F040"
+			tasks: [{
+				id: "4B54A61C4B9E69FF"
+				item: {
+					Count: 1
+					id: "minecraft:stone_shovel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			disable_toast: true
+			id: "367170E1A210B51E"
+			tasks: [{
+				id: "5FB28D82F5A5F31F"
+				item: {
+					Count: 1
+					id: "minecraft:wooden_shovel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
 		}
 	]
 	title: "Shovels"

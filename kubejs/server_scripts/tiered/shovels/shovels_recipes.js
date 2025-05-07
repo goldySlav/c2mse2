@@ -13,7 +13,7 @@ ServerEvents.recipes(e => {
 		A: unstable.star,
 		B: unstable.opinium,
 		C: unstable.wafer,
-		D: PET("emerald_netherite_shovel"),
+		D: DD("warden_shovel"),
 		E: unstable.block,
 		F: unstable.circuit,
 		G: unstable.collector,

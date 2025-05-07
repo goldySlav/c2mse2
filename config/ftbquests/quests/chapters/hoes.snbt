@@ -30,7 +30,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["678DD5352F16C858"]
+			dependencies: ["6E960FC17E67A657"]
 			disable_toast: true
 			icon: "miniutilities:reversing_hoe"
 			id: "232074EA39E15BC1"
@@ -41,7 +41,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 6.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["232074EA39E15BC1"]
@@ -69,7 +69,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 7.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["2A64E6B89DE0940A"]
@@ -97,7 +97,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 9.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["3640C5E77D2C175A"]
@@ -129,7 +129,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 10.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["6A762DD7E0166798"]
@@ -161,7 +161,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 12.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["661ACFCF046AD767"]
@@ -193,9 +193,10 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 13.5d
+			y: 15.0d
 		}
 		{
+			dependencies: ["37FD6165EF1EBF42"]
 			disable_toast: true
 			id: "088116FA5AD03B9B"
 			tasks: [{
@@ -247,6 +248,113 @@
 			}]
 			x: 0.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["678DD5352F16C858"]
+			disable_toast: true
+			id: "6E960FC17E67A657"
+			tasks: [{
+				id: "7553B6F0E0ED6ADD"
+				item: {
+					Count: 1
+					id: "deeperdarker:warden_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["13703E7D1EF9A11B"]
+			disable_toast: true
+			id: "37FD6165EF1EBF42"
+			tasks: [{
+				id: "750158ECDEE3C535"
+				item: {
+					Count: 1
+					id: "minecraft:diamond_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4513E084EEA7AE62"]
+			disable_toast: true
+			id: "13703E7D1EF9A11B"
+			tasks: [{
+				id: "548AB46AD198D81D"
+				item: {
+					Count: 1
+					id: "minecraft:golden_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6C21E7225DFB3914"]
+			disable_toast: true
+			id: "4513E084EEA7AE62"
+			tasks: [{
+				id: "798359C961C88CD5"
+				item: {
+					Count: 1
+					id: "minecraft:iron_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["19F16F805725CDAD"]
+			disable_toast: true
+			id: "6C21E7225DFB3914"
+			tasks: [{
+				id: "6269BA0EBB60C707"
+				item: {
+					Count: 1
+					id: "minecraft:stone_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			disable_toast: true
+			id: "19F16F805725CDAD"
+			tasks: [{
+				id: "6CC6F8B973BDFF17"
+				item: {
+					Count: 1
+					id: "minecraft:wooden_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
 		}
 	]
 	title: "Hoes"

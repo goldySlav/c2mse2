@@ -21,7 +21,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["174A6FD2C720F1B1"]
+			dependencies: ["76EC87FECBCAA920"]
 			disable_toast: true
 			icon: "miniutilities:unstable_chestplate"
 			id: "1C75DA712C4FB16E"
@@ -32,7 +32,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 47.5d
+			y: 49.0d
 		}
 		{
 			dependencies: ["0D55B5DA27BB9AB1"]
@@ -46,7 +46,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 50.5d
+			y: 52.0d
 		}
 		{
 			dependencies: ["6BA3F3AA3FDA1F56"]
@@ -60,7 +60,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 52.0d
+			y: 53.5d
 		}
 		{
 			dependencies: ["2CD2CFBF6279F1FA"]
@@ -74,7 +74,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 53.5d
+			y: 55.0d
 		}
 		{
 			dependencies: ["1C75DA712C4FB16E"]
@@ -88,7 +88,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 49.0d
+			y: 50.5d
 		}
 		{
 			dependencies: ["131DF3C4AD872512"]
@@ -244,7 +244,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 56.5d
+			y: 58.0d
 		}
 		{
 			dependencies: ["203B50CCC158582B"]
@@ -262,7 +262,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 55.0d
+			y: 56.5d
 		}
 		{
 			dependencies: ["6E318FCC81913D49"]
@@ -294,7 +294,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 56.5d
+			y: 58.0d
 		}
 		{
 			dependencies: ["4A4CC2D2C3DA9288"]
@@ -326,7 +326,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 56.5d
+			y: 58.0d
 		}
 		{
 			dependencies: ["0E34974F96E073AD"]
@@ -357,7 +357,25 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 56.5d
+			y: 58.0d
+		}
+		{
+			dependencies: ["174A6FD2C720F1B1"]
+			disable_toast: true
+			id: "76EC87FECBCAA920"
+			tasks: [{
+				id: "4C11005B00D0F3AC"
+				item: {
+					Count: 1
+					id: "deeperdarker:warden_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 47.5d
 		}
 	]
 	title: "Armors"

@@ -102,7 +102,7 @@ ServerEvents.recipes(event => {
 		B: AA("ice_shard"),
 		C: MC("amethyst_shard"),
 		D: MC("prismarine_shard"),
-		E: MC("echo_shard"),
+		E: DD("reinforced_echo_shard"),
 		F: RTB("dimensionalshard"),
 	})
 

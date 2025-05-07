@@ -9,6 +9,10 @@ ad_astra:mercury_deltas
 ad_astra:orbit
 ad_astra:venus_wastelands
 ae2:spatial_storage
+deeperdarker:blooming_caverns
+deeperdarker:deeplands
+deeperdarker:echoing_forest
+deeperdarker:overcast_columns
 minecraft:badlands
 minecraft:bamboo_jungle
 minecraft:basalt_deltas

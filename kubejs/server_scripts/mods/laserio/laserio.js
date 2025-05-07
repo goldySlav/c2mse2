@@ -1,8 +1,9 @@
 // priority: 0
 
 ServerEvents.recipes((event) => {
-	removeRecipeByID(event, [
-		
+	removeRecipeByOutput(event, [
+		LIO("logic_chip_raw"),
+		LIO("logic_chip"),
 	])
 	
 	//wrench
@@ -13,4 +14,7 @@ ServerEvents.recipes((event) => {
 	
 	//charging recipes compat
 	event.replaceInput({}, LIO("logic_chip"), tieredItems.ch5.circuit)
+	
+	//charging recipes compat
+	event.replaceInput({ id: LIO("laser_connector_advanced") }, MC("diamond"), tieredItems.ch7.circuit)
 })

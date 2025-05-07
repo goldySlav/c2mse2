@@ -57,6 +57,16 @@
   "cagedmobs": {
     "cagedmobs_jade": true
   },
+  "jadeaddons.create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "goggles.detailed": false,
+    "placard": true
+  },
   "tombstone": {
     "graves": true
   },
@@ -68,6 +78,9 @@
     "barrel": true,
     "crucible": true,
     "sieve": true
+  },
+  "jadeaddons.mcjtylib": {
+    "jadeaddons": true
   },
   "createsifter": {
     "sifter_data": true
@@ -84,15 +97,9 @@
     "jade_chamber": true,
     "jade_wireless": true
   },
-  "mcjtylib": {
-    "jadeaddons": true
-  },
   "apotheosis": {
     "adventure": true,
     "spawner": true
-  },
-  "lootr": {
-    "info": true
   },
   "balm": {
     "jade": true
@@ -129,6 +136,9 @@
   "jadeaddons": {
     "equipment_requirement": ""
   },
+  "jadeaddons.lootr": {
+    "info": true
+  },
   "projecte": {
     "emc_provider": true
   },
@@ -150,17 +160,6 @@
   },
   "appliedcooking": {
     "kitchen_station": true
-  },
-  "create": {
-    "filter": true,
-    "backtank_capacity": true,
-    "goggles.requires_goggles": true,
-    "goggles": false,
-    "blaze_burner": true,
-    "exact_block": true,
-    "crafting_blueprint": true,
-    "goggles.detailed": false,
-    "placard": true
   },
   "cookingforblockheads": {
     "fridge": true,

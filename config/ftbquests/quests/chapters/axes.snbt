@@ -35,7 +35,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["3856CA52A8EA55D4"]
+			dependencies: ["576DEBCDBF42D21A"]
 			disable_toast: true
 			icon: "miniutilities:healing_axe"
 			id: "45197B77CA0CEAD9"
@@ -46,7 +46,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 7.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["45197B77CA0CEAD9"]
@@ -74,7 +74,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 9.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["1969ACF260521F10"]
@@ -102,7 +102,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 10.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["11A1C343DBBD9FAA"]
@@ -142,7 +142,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 12.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["39C65371AF627005"]
@@ -179,7 +179,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 13.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["727500952AE90904"]
@@ -216,7 +216,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 15.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["06E876288105A79C"]
@@ -253,7 +253,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 16.5d
+			y: 18.0d
 		}
 		{
 			dependencies: ["1E6AC6BF753DE997"]
@@ -292,6 +292,7 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["11C03877A4F4FD23"]
 			disable_toast: true
 			id: "0823F2ABF8D54D41"
 			tasks: [{
@@ -307,6 +308,108 @@
 			}]
 			x: 0.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["3856CA52A8EA55D4"]
+			disable_toast: true
+			id: "576DEBCDBF42D21A"
+			tasks: [{
+				id: "29F61694583F4326"
+				item: {
+					Count: 1
+					id: "deeperdarker:warden_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["607A3E29C9ED39BA"]
+			id: "11C03877A4F4FD23"
+			tasks: [{
+				id: "3198F1F96E6ACB87"
+				item: {
+					Count: 1
+					id: "minecraft:diamond_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["09780D90EA4CBF85"]
+			id: "607A3E29C9ED39BA"
+			tasks: [{
+				id: "7AD58A45D92CF05E"
+				item: {
+					Count: 1
+					id: "minecraft:golden_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3977FC50A889631F"]
+			id: "09780D90EA4CBF85"
+			tasks: [{
+				id: "06331B0603490398"
+				item: {
+					Count: 1
+					id: "minecraft:iron_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["47D642331D73E96E"]
+			id: "3977FC50A889631F"
+			tasks: [{
+				id: "0E63155CB75851BF"
+				item: {
+					Count: 1
+					id: "minecraft:stone_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			id: "47D642331D73E96E"
+			tasks: [{
+				id: "53DB9BFB6847E9FD"
+				item: {
+					Count: 1
+					id: "minecraft:wooden_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
 		}
 	]
 	title: "Axes"

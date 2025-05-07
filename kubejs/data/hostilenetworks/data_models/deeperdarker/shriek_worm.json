@@ -1,0 +1,42 @@
+{
+    "entity": "deeperdarker:shriek_worm",
+    "variants": [],
+    "name": "entity.deeperdarker.shriek_worm",
+    "name_color": "#658a85",
+    "gui_scale": 0.65,
+    "gui_x_offset": 0.0,
+    "gui_y_offset": -0.15,
+    "gui_z_offset": 0.0,
+    "sim_cost": 16384,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "hostilenetworks:nether_prediction",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.shriek_worm",
+    "fabricator_drops": [
+        {
+            "item": "cagedmobs:warden_receptor",
+            "count": 8
+        },
+        {
+            "item": "create:experience_nugget",
+            "count": 32
+        }
+    ],
+    "tier_data": [
+        6,
+        54,
+        354,
+        1254
+    ],
+    "data_per_kill": [
+        1,
+        4,
+        10,
+        18
+    ]
+}

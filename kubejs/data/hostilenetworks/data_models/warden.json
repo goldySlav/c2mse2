@@ -21,12 +21,12 @@
         {
             "optional": true,
             "item": "deeperdarker:heart_of_the_deep",
-            "count": 1
+            "count": 64
         },
         {
             "optional": true,
             "item": "deeperdarker:warden_carapace",
-            "count": 1
+            "count": 64
         },
         {
             "optional": true,

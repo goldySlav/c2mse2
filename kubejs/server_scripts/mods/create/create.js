@@ -9,6 +9,9 @@ ServerEvents.recipes((event) => {
 	removeRecipeByID(event, [
 		CR("mixing/brass_ingot"),
 		/create:milling\/compat\/botania/,
+		CR("crafting/appliances/netherite_diving_helmet"),
+		CR("crafting/appliances/netherite_diving_boots"),
+		CR("crafting/appliances/netherite_backtank"),
 	])
 	
 	//andesite alloy chain 

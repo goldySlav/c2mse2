@@ -125,4 +125,48 @@ ServerEvents.recipes(e => {
         A: Q('sturdy_stone'),
         B: MC('redstone'),
     })
+
+	//spikes
+	removeRecipeByOutput(e, [
+		MU("iron_spikes"),
+		MU("gold_spikes"),
+		MU("diamond_spikes"),
+		MU("netherite_spikes"),
+	])
+	e.shaped(MU("iron_spikes"), [
+		' A ',
+		'ABA',
+		'BCB'
+	], {
+		A: MC("iron_sword"),
+		B: F("#ingots/iron"),
+		C: MU("wooden_spikes"),
+	})
+	e.shaped(MU("gold_spikes"), [
+		' A ',
+		'ABA',
+		'BCB'
+	], {
+		A: MC("golden_sword"),
+		B: F("#ingots/gold"),
+		C: MU("iron_spikes"),
+	})
+	e.shaped(MU("diamond_spikes"), [
+		' A ',
+		'ABA',
+		'BCB'
+	], {
+		A: MC("diamond_sword"),
+		B: F("#gems/diamond"),
+		C: MU("gold_spikes"),
+	})
+	e.shaped(MU("netherite_spikes"), [
+		' A ',
+		'ABA',
+		'BCB'
+	], {
+		A: MC("netherite_sword"),
+		B: F("#ingots/netherite"),
+		C: MU("diamond_spikes"),
+	})
 })

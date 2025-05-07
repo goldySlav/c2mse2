@@ -19,20 +19,4 @@ ServerEvents.recipes((event) => {
 	event.recipes.create.milling([MC("emerald"), Item.of(CR("experience_nugget")).withChance(0.25)], PET("pure_emerald")).processingTime(processingTimesDefault.milling).id(KJ(`${PET()}/pure_emerald_milling`))
 	event.recipes.tconstruct.casting_table(PET("pure_emerald"), Fluid.of(CR_EI("experience"), 3), MC("emerald"), true, 20)
 	event.recipes.tconstruct.casting_table(PET("pure_emerald"), Fluid.of(TCT("molten_emerald"), 100), CR("experience_nugget"), true, 20)
-	
-	//tools
-	toolTypes.forEach(tool => {
-		removeRecipeByID(event, [
-			PET(`emerald_netherite_${tool}_smith`)
-		])
-		event.smithing(PET(`emerald_netherite_${tool}`), MC(`netherite_${tool}`), CP("emerald_1"))
-	})
-	
-	//armors
-	armorPieces.vanilla.forEach(piece => {
-		removeRecipeByID(event, [
-			PET(`emerald_netherite_${piece}_smith`)
-		])
-		event.smithing(PET(`emerald_netherite_armor_${piece}`), MC(`netherite_${piece}`), CP("emerald_1"))
-	})
 })

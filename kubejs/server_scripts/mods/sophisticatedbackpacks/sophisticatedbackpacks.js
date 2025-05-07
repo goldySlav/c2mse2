@@ -70,6 +70,19 @@ ServerEvents.recipes((event) => {
 		B: PET("pure_emerald"),
 	})
 	
+	//netherite
+	removeRecipeByOutput(event, [
+		SBP("netherite_backpack"),
+	])
+	shapedSaveNBTBackpack(event, SBP("netherite_backpack"), [
+		'BBB',
+		'BAB',
+		'BBB',
+	], {
+		A: SBP("diamond_backpack"),
+		B: F("#ingots/netherite"),
+	})
+	
 	
 	
 	//magnet upgrade
