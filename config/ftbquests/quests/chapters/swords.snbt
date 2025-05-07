@@ -30,7 +30,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["2686FB8D6643937E"]
+			dependencies: ["45110DE6427A2AAF"]
 			disable_toast: true
 			icon: "miniutilities:etheric_sword"
 			id: "3C6059C35C6ED020"
@@ -42,7 +42,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 42.0d
+			y: 43.5d
 		}
 		{
 			dependencies: ["69CA6DFFE0587024"]
@@ -71,7 +71,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 45.0d
+			y: 46.5d
 		}
 		{
 			dependencies: ["3C6059C35C6ED020"]
@@ -85,7 +85,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 43.5d
+			y: 45.0d
 		}
 		{
 			dependencies: ["2E349D9B83C7EE5D"]
@@ -113,7 +113,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 46.5d
+			y: 48.0d
 		}
 		{
 			dependencies: ["0143C71C3A306534"]
@@ -155,7 +155,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 48.0d
+			y: 49.5d
 		}
 		{
 			dependencies: ["4504159D94ABD568"]
@@ -187,7 +187,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 49.5d
+			y: 51.0d
 		}
 		{
 			dependencies: ["4A4117FDCC5B3EFE"]
@@ -219,7 +219,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 51.0d
+			y: 52.5d
 		}
 		{
 			dependencies: ["396243DD9063C871"]
@@ -251,7 +251,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 52.5d
+			y: 54.0d
 		}
 		{
 			dependencies: ["689936AEB45F336B"]
@@ -290,6 +290,7 @@
 			y: 39.0d
 		}
 		{
+			dependencies: ["6FBF0E4CFB117D95"]
 			disable_toast: true
 			id: "095605239F45867F"
 			tasks: [{
@@ -305,6 +306,113 @@
 			}]
 			x: 0.0d
 			y: 37.5d
+		}
+		{
+			dependencies: ["2686FB8D6643937E"]
+			disable_toast: true
+			id: "45110DE6427A2AAF"
+			tasks: [{
+				id: "41D5C9053764DBE8"
+				item: {
+					Count: 1
+					id: "deeperdarker:warden_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 42.0d
+		}
+		{
+			dependencies: ["45381312EE220DCB"]
+			disable_toast: true
+			id: "6FBF0E4CFB117D95"
+			tasks: [{
+				id: "1F548976AF6C8148"
+				item: {
+					Count: 1
+					id: "minecraft:diamond_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 36.0d
+		}
+		{
+			dependencies: ["6BE99DF69C49692C"]
+			disable_toast: true
+			id: "45381312EE220DCB"
+			tasks: [{
+				id: "03B484218344DF01"
+				item: {
+					Count: 1
+					id: "minecraft:golden_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 34.5d
+		}
+		{
+			dependencies: ["11EC20DEBDCA0B3C"]
+			disable_toast: true
+			id: "6BE99DF69C49692C"
+			tasks: [{
+				id: "7745F73AD5255CFD"
+				item: {
+					Count: 1
+					id: "minecraft:iron_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 33.0d
+		}
+		{
+			dependencies: ["30FF5007E3469FBB"]
+			disable_toast: true
+			id: "11EC20DEBDCA0B3C"
+			tasks: [{
+				id: "6D676EC457883B46"
+				item: {
+					Count: 1
+					id: "minecraft:stone_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 31.5d
+		}
+		{
+			disable_toast: true
+			id: "30FF5007E3469FBB"
+			tasks: [{
+				id: "0FF33D61F3A9BCC9"
+				item: {
+					Count: 1
+					id: "minecraft:wooden_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 30.0d
 		}
 	]
 	title: "Swords"
