@@ -19,6 +19,10 @@
     "trivia": "hostilenetworks.trivia.angler_fish",
     "fabricator_drops": [
         {
+            "item": "deeperdarker:warden_carapace",
+            "count": 32
+        },
+        {
             "item": "create:experience_nugget",
             "count": 8
         }

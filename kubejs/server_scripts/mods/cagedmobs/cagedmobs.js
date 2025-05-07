@@ -119,6 +119,7 @@ ServerEvents.recipes((event) => {
 	addLoot(MC("zombified_piglin"), TCT("zombified_piglin_head"), 0.05, 1, 1, true)
 	
 	//DD mobs
+	addLoot(DD("angler_fish"), DD("warden_carapace"), 0.05)
 	addLoot(DD("sculk_centipede"), MC("string"), 0.75)
 	addLoot(DD("sculk_leech"), DD("soul_dust"), 0.25)
 	addLoot(DD("sculk_snapper"), DD("soul_dust"), 0.5)
@@ -129,8 +130,8 @@ ServerEvents.recipes((event) => {
 	addLoot(DD("stalker"), DD("soul_crystal"), 0.1)
 	
 	//warden
-	addLoot(MC("warden"), DD("heart_of_the_deep"), 0.025)
-	addLoot(MC("warden"), DD("warden_carapace"), 0.05)
+	addLoot(MC("warden"), DD("heart_of_the_deep"), 0.5)
+	addLoot(MC("warden"), DD("warden_carapace"), 0.25)
 	
 	//warden receptor
 	event.recipes.create.crushing([
