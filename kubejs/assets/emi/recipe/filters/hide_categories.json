@@ -19,6 +19,7 @@
     { "category": "tconstruct:tool_recipes" },
     { "category": "tconstruct:part_builder" },
     { "category": "tconstruct:worktable" },
-    { "category": "tconstruct:molding" }
+    { "category": "tconstruct:molding" },
+    { "category": "emi:grinding" }
   ]
 }
