@@ -3,7 +3,7 @@
     { "category": "jei:information" },
     { "category": "ae2:certus_growth" },
     { "category": "ae2:condenser" },
-    { "category": "ae2:attuneemnt" },
+    { "category": "ae2:attunement" },
     { "category": "ae2:entropy" },
     { "category": "jumbofurnace:jumbo_smelting" },
     { "category": "ironfurnaces:generator_regular" },
@@ -20,6 +20,7 @@
     { "category": "tconstruct:part_builder" },
     { "category": "tconstruct:worktable" },
     { "category": "tconstruct:molding" },
-    { "category": "emi:grinding" }
+    { "category": "emi:grinding" },
+    { "category": "emi:info" }
   ]
 }
