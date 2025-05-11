@@ -13,7 +13,7 @@ ServerEvents.recipes(e => {
 		'A',
 	], {
 		A: PET('pure_emerald_shovel'),
-		B: F("#ingots/netherite"),
+		B: MU("netherite_opinium_core"),
 	})
 
 	//pickaxe
@@ -22,7 +22,7 @@ ServerEvents.recipes(e => {
 		' A ',
 	], {
 		A: PET('pure_emerald_pickaxe'),
-		B: F("#ingots/netherite"),
+		B: MU("netherite_opinium_core"),
 	})
 
 	//axe
@@ -31,7 +31,7 @@ ServerEvents.recipes(e => {
 		'BA',
 	], {
 		A: PET('pure_emerald_axe'),
-		B: F("#ingots/netherite"),
+		B: MU("netherite_opinium_core"),
 	})
 
 	//sword
@@ -41,7 +41,7 @@ ServerEvents.recipes(e => {
 		'A',
 	], {
 		A: PET('pure_emerald_sword'),
-		B: F("#ingots/netherite"),
+		B: MU("netherite_opinium_core"),
 	})
 
 	//hoe
@@ -50,6 +50,6 @@ ServerEvents.recipes(e => {
 		'A ',
 	], {
 		A: PET('pure_emerald_hoe'),
-		B: F("#ingots/netherite"),
+		B: MU("netherite_opinium_core"),
 	})
 })

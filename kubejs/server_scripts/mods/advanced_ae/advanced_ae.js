@@ -400,7 +400,7 @@ ServerEvents.recipes((event) => {
 	quantumModule(event, AE2_A("luck_card"), [
 		`3x ${AE2_A("quantum_processor")}`,
 		`4x ${AE2_A("quantum_infused_dust")}`,
-		`3x ${MU("experience_opinium_core")}`,
+		`3x ${MU("the_final_opinium_core")}`,
 		`1x ${EIO("experience_rod")}`,
 	])
 	quantumModule(event, AE2_A("reach_card"), [

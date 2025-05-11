@@ -13,7 +13,7 @@ ServerEvents.recipes(e => {
 		'BAB',
 	], {
 		A: PET('pure_emerald_armor_helmet'),
-		B: F("#ingots/netherite"),
+		B: MU("netherite_opinium_core"),
 	})
 
 	//chestplate
@@ -23,7 +23,7 @@ ServerEvents.recipes(e => {
 		'BBB',
 	], {
 		A: PET('pure_emerald_armor_chestplate'),
-		B: F("#ingots/netherite"),
+		B: MU("netherite_opinium_core"),
 	})
 
 	//leggings
@@ -33,7 +33,7 @@ ServerEvents.recipes(e => {
 		'B B'
 	], {
 		A: PET('pure_emerald_armor_leggings'),
-		B: F("#ingots/netherite"),
+		B: MU("netherite_opinium_core"),
 	})
 
 	//boots
@@ -42,6 +42,6 @@ ServerEvents.recipes(e => {
 		'B B'
 	], {
 		A: PET('pure_emerald_armor_boots'),
-		B: F("#ingots/netherite"),
+		B: MU("netherite_opinium_core"),
 	})
 })

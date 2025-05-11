@@ -13,7 +13,7 @@ ServerEvents.recipes(e => {
 		'A',
 	], {
 		A: MC('netherite_shovel'),
-		B: MU("emerald_opinium_core"),
+		B: MU("experience_infused_emerald_opinium_core"),
 	})
 
 	//pickaxe
@@ -22,7 +22,7 @@ ServerEvents.recipes(e => {
 		' A ',
 	], {
 		A: MC('netherite_pickaxe'),
-		B: MU("emerald_opinium_core"),
+		B: MU("experience_infused_emerald_opinium_core"),
 	})
 
 	//axe
@@ -31,7 +31,7 @@ ServerEvents.recipes(e => {
 		'BA',
 	], {
 		A: MC('netherite_axe'),
-		B: MU("emerald_opinium_core"),
+		B: MU("experience_infused_emerald_opinium_core"),
 	})
 
 	//sword
@@ -41,7 +41,7 @@ ServerEvents.recipes(e => {
 		'A',
 	], {
 		A: MC('netherite_sword'),
-		B: MU("emerald_opinium_core"),
+		B: MU("experience_infused_emerald_opinium_core"),
 	})
 
 	//hoe
@@ -50,6 +50,6 @@ ServerEvents.recipes(e => {
 		'A ',
 	], {
 		A: MC('netherite_hoe'),
-		B: MU("emerald_opinium_core"),
+		B: MU("experience_infused_emerald_opinium_core"),
 	})
 })

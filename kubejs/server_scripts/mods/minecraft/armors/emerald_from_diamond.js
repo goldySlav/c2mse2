@@ -13,7 +13,7 @@ ServerEvents.recipes(e => {
 		'BAB'
 	], {
 		A: MC('diamond_helmet'),
-		B: PET("pure_emerald"),
+		B: MU("emerald_opinium_core"),
 	})
 
 	//chestplate
@@ -23,7 +23,7 @@ ServerEvents.recipes(e => {
 		'BBB',
 	], {
 		A: MC('diamond_chestplate'),
-		B: PET("pure_emerald"),
+		B: MU("emerald_opinium_core"),
 	})
 
 	//leggings
@@ -33,7 +33,7 @@ ServerEvents.recipes(e => {
 		'B B'
 	], {
 		A: MC('diamond_leggings'),
-		B: PET("pure_emerald"),
+		B: MU("emerald_opinium_core"),
 	})
 
 	//boots
@@ -42,6 +42,6 @@ ServerEvents.recipes(e => {
 		'B B'
 	], {
 		A: MC('diamond_boots'),
-		B: PET("pure_emerald"),
+		B: MU("emerald_opinium_core"),
 	})
 })

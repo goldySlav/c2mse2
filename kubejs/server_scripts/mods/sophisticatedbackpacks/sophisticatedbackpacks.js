@@ -28,7 +28,7 @@ ServerEvents.recipes((event) => {
 		'BBB',
 	], {
 		A: SBP("backpack"),
-		B: F("#ingots/iron"),
+		B: MU("iron_opinium_core"),
 	})
 	
 	//iron (new gold)
@@ -41,7 +41,7 @@ ServerEvents.recipes((event) => {
 		'BBB',
 	], {
 		A: SBP("copper_backpack"),
-		B: F("#ingots/gold"),
+		B: MU("gold_opinium_core"),
 	})
 	
 	//gold (new diamond)
@@ -54,7 +54,7 @@ ServerEvents.recipes((event) => {
 		'BBB',
 	], {
 		A: SBP("iron_backpack"),
-		B: F("#gems/diamond"),
+		B: MU("diamond_opinium_core"),
 	})
 	
 	//diamond (new emerald)
@@ -67,7 +67,7 @@ ServerEvents.recipes((event) => {
 		'BBB',
 	], {
 		A: SBP("gold_backpack"),
-		B: PET("pure_emerald"),
+		B: MU("emerald_opinium_core"),
 	})
 	
 	//netherite
@@ -80,7 +80,7 @@ ServerEvents.recipes((event) => {
 		'BBB',
 	], {
 		A: SBP("diamond_backpack"),
-		B: F("#ingots/netherite"),
+		B: MU("netherite_opinium_core"),
 	})
 	
 	

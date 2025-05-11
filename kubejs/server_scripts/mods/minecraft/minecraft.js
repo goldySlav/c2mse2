@@ -143,7 +143,7 @@ ServerEvents.recipes((event) => {
 		'BBB',
 	], {
 		A: MVS("leather_shield"),
-		B: F("#ingots/iron"),
+		B: MU("iron_opinium_core"),
 	})
 	
 	//ingots from gas
@@ -179,4 +179,19 @@ ServerEvents.recipes((event) => {
 	
 	//ender chest
 	customRecipes.enderio.soulbinding(event, MC("ender_chest"), F("#chests/wooden"), MC("enderman"), 24000, 1)
+
+    //bucket
+	removeRecipeByID(event, [
+		MC("bucket"),
+	])
+    event.shaped(MC("bucket"), [
+        'BAB',
+        ' B '
+    ], {
+        A: EXD('porcelain_bucket'),
+        B: MU('iron_opinium_core'),
+    })
+	
+	//rabbit hide from leather
+	event.shapeless(Item.of(MC('rabbit_hide'), 4), MC('leather'))
 })

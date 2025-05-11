@@ -99,5 +99,7 @@ ClientEvents.lang('en_us', event => {
 	event.renameBlock('create_connected:fluid_vessel', "Fluid Tank (Horizontal)")
 	event.renameBlock('create_connected:creative_fluid_vessel', "Creative Fluid Tank (Horizontal)")
 	event.renameBlock('create_connected:item_silo', "Item Vault (Vertical)")
+	
+	event.renameItem('morebuckets:obsidian_bucket', "Netherite Bucket")
 });
 

@@ -14,7 +14,7 @@ ServerEvents.recipes(e => {
 		'BAB',
 	], {
 		A: PET('emerald_netherite_armor_helmet'),
-		B: DD("reinforced_echo_shard"),
+		B: MU("reinforced_echo_shard_opinium_core"),
 		C: CM("warden_receptor"),
 	})
 
@@ -25,7 +25,7 @@ ServerEvents.recipes(e => {
 		'BBB',
 	], {
 		A: PET('emerald_netherite_armor_chestplate'),
-		B: DD("reinforced_echo_shard"),
+		B: MU("reinforced_echo_shard_opinium_core"),
 	})
 
 	//leggings
@@ -35,7 +35,7 @@ ServerEvents.recipes(e => {
 		'B B'
 	], {
 		A: PET('emerald_netherite_armor_leggings'),
-		B: DD("reinforced_echo_shard"),
+		B: MU("reinforced_echo_shard_opinium_core"),
 	})
 
 	//boots
@@ -44,6 +44,6 @@ ServerEvents.recipes(e => {
 		'B B'
 	], {
 		A: PET('emerald_netherite_armor_boots'),
-		B: DD("reinforced_echo_shard"),
+		B: MU("reinforced_echo_shard_opinium_core"),
 	})
 })

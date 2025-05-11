@@ -251,4 +251,17 @@ StartupEvents.registry('item', event => {
 	
 	//Crystal Matrix Ingot
 	event.create('crystal_matrix_ingot').displayName('Crystal Matrix Ingot').rarity("uncommon")
+	
+	//Custom Opinium Cores
+	event.create('miniutilities:wooden_opinium_core').displayName('Wooden Opinium Core')
+	event.create('miniutilities:leather_opinium_core').displayName('Leather Opinium Core')
+	event.create('miniutilities:stone_opinium_core').displayName('Stone Opinium Core')
+	event.create('miniutilities:chain_opinium_core').displayName('Chain Opinium Core')
+	event.create('miniutilities:experience_infused_emerald_opinium_core').displayName('Experience Infused Emerald Opinium Core')
+	event.create('miniutilities:reinforced_echo_shard_opinium_core').displayName('Reinforced Echo Shard Opinium Core')
+	event.create('miniutilities:unstable_opinium_core').displayName('Unstable Opinium Core')
+	event.create('miniutilities:ender_star_opinium_core').displayName('Ender Star Opinium Core')
+	event.create('miniutilities:flux_star_opinium_core').displayName('Flux Star Opinium Core')
+	event.create('miniutilities:dark_matter_opinium_core').displayName('Dark Matter Opinium Core')
+	event.create('miniutilities:red_matter_opinium_core').displayName('Red Matter Opinium Core')
 });

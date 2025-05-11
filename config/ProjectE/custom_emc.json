@@ -805,6 +805,10 @@
       "emc": 8192
     },
     {
+      "item": "deeperdarker:warden_carapace",
+      "emc": 8192
+    },
+    {
       "item": "deeperdarker:warden_upgrade_smithing_template",
       "emc": 7497
     },

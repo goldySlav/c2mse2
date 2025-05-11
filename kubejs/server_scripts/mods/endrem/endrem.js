@@ -84,7 +84,6 @@ ServerEvents.recipes((event) => {
 		`2x ${CP("experience_2")}`,
 		`1x ${CP("experience_3")}`,
 		`2x ${CR_EI("hyper_experience_bottle")}`,
-		`2x ${MU("experience_opinium_core")}`,
 		`1x ${EIO("experience_rod")}`,
 	]) //exp
 	combEye("guardian", [

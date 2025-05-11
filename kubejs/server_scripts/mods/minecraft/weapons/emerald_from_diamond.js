@@ -13,7 +13,7 @@ ServerEvents.recipes(e => {
 		'A',
 	], {
 		A: MC('diamond_shovel'),
-		B: PET("pure_emerald"),
+		B: MU("emerald_opinium_core"),
 	})
 
 	//pickaxe
@@ -22,7 +22,7 @@ ServerEvents.recipes(e => {
 		' A ',
 	], {
 		A: MC('diamond_pickaxe'),
-		B: PET("pure_emerald"),
+		B: MU("emerald_opinium_core"),
 	})
 
 	//axe
@@ -31,7 +31,7 @@ ServerEvents.recipes(e => {
 		'BA',
 	], {
 		A: MC('diamond_axe'),
-		B: PET("pure_emerald"),
+		B: MU("emerald_opinium_core"),
 	})
 
 	//sword
@@ -41,7 +41,7 @@ ServerEvents.recipes(e => {
 		'A',
 	], {
 		A: MC('diamond_sword'),
-		B: PET("pure_emerald"),
+		B: MU("emerald_opinium_core"),
 	})
 
 	//hoe
@@ -50,6 +50,6 @@ ServerEvents.recipes(e => {
 		'A ',
 	], {
 		A: MC('diamond_hoe'),
-		B: PET("pure_emerald"),
+		B: MU("emerald_opinium_core"),
 	})
 })

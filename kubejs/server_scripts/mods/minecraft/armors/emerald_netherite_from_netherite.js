@@ -13,7 +13,7 @@ ServerEvents.recipes(e => {
 		'BAB',
 	], {
 		A: MC('netherite_helmet'),
-		B: MU("emerald_opinium_core"),
+		B: MU("experience_infused_emerald_opinium_core"),
 	})
 
 	//chestplate
@@ -23,7 +23,7 @@ ServerEvents.recipes(e => {
 		'BBB',
 	], {
 		A: MC('netherite_chestplate'),
-		B: MU("emerald_opinium_core"),
+		B: MU("experience_infused_emerald_opinium_core"),
 	})
 
 	//leggings
@@ -33,7 +33,7 @@ ServerEvents.recipes(e => {
 		'B B'
 	], {
 		A: MC('netherite_leggings'),
-		B: MU("emerald_opinium_core"),
+		B: MU("experience_infused_emerald_opinium_core"),
 	})
 
 	//boots
@@ -42,6 +42,6 @@ ServerEvents.recipes(e => {
 		'B B'
 	], {
 		A: MC('netherite_boots'),
-		B: MU("emerald_opinium_core"),
+		B: MU("experience_infused_emerald_opinium_core"),
 	})
 })

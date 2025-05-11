@@ -25,7 +25,7 @@ ServerEvents.recipes((event) => {
 	removeRecipeByOutput(event, [
 		MVS("leather_shield"),
     ])
-	donutCraftFull(event, MVS("leather_shield"), MC("leather"), MC("#planks"))
+	donutCraftFull(event, MVS("leather_shield"), MU("leather_opinium_core"), MC("#planks"))
 	
 	//gold shield
 	removeRecipeByOutput(event, [
@@ -37,7 +37,7 @@ ServerEvents.recipes((event) => {
 		'BBB',
 	], {
 		A: MC("shield"),
-		B: F("#ingots/gold"),
+		B: MU("gold_opinium_core"),
 	})
 	
 	//diamond shield
@@ -50,7 +50,7 @@ ServerEvents.recipes((event) => {
 		'BBB',
 	], {
 		A: MVS("gold_shield"),
-		B: F("#gems/diamond"),
+		B: MU("diamond_opinium_core"),
 	})
 	
 	//emerald shield
@@ -63,7 +63,7 @@ ServerEvents.recipes((event) => {
 		'BBB',
 	], {
 		A: MVS("diamond_shield"),
-		B: PET("pure_emerald"),
+		B: MU("emerald_opinium_core"),
 	})
 	
 	//netherite shield
@@ -76,6 +76,6 @@ ServerEvents.recipes((event) => {
 		'BBB',
 	], {
 		A: MVS("emerald_shield"),
-		B: F("#ingots/netherite"),
+		B: MU("netherite_opinium_core"),
 	})
 })

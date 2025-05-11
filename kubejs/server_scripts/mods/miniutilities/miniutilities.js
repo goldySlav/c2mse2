@@ -20,10 +20,6 @@ ServerEvents.recipes(e => {
 		MU("laser_hub"),
 		MU("laser_port"),
 		MU("unstable_ingot"),
-		MU("chorus_opinium_core"),
-		MU("experience_opinium_core"),
-		MU("nether_star_opinium_core"),
-		MU("the_final_opinium_core"),
 		MU("ender_dust_to_ender_pearl"),
 		MU("mechanical_miner"),
 		MU("mechanical_placer"),
@@ -60,24 +56,114 @@ ServerEvents.recipes(e => {
 	})
 
 	//opinium cores
-	e.shaped(Item.of(MU("chorus_opinium_core"), 2), [
+	removeRecipeByID(e, [
+		MU("iron_opinium_core"),
+		MU("emerald_opinium_core"),
+		MU("netherite_opinium_core"),
+		MU("chorus_opinium_core"),
+		MU("experience_opinium_core"),
+		MU("nether_star_opinium_core"),
+		MU("the_final_opinium_core"),
+	])
+	e.shaped(Item.of(MU("wooden_opinium_core"), 2), [
+		'ABA',
+		'B B',
+		'ABA'
+	], {
+		A: MC("#logs"),
+		B: MC("#planks"),
+	})
+	
+	e.shaped(Item.of(MU("leather_opinium_core"), 2), [
+		'ABA',
+		'B B',
+		'ABA'
+	], {
+		A: MC("leather"),
+		B: MC("rabbit_hide"),
+	})
+	
+	e.shaped(Item.of(MU("stone_opinium_core"), 2), [
+		'ABA',
+		'B B',
+		'ABA'
+	], {
+		A: MC("stone"),
+		B: MU("wooden_opinium_core"),
+	})
+	
+	e.shaped(Item.of(MU("chain_opinium_core"), 2), [
+		'ABA',
+		'B B',
+		'ABA'
+	], {
+		A: MC("chain"),
+		B: MU("leather_opinium_core"),
+	})
+	
+	e.shaped(Item.of(MU("iron_opinium_core"), 2), [
+		'ABA',
+		'B B',
+		'ABA'
+	], {
+		A: F("#ingots/iron"),
+		B: MU("stone_opinium_core"),
+	})
+	
+	e.shaped(Item.of(MU("iron_opinium_core"), 2), [
+		'ABA',
+		'B B',
+		'ABA'
+	], {
+		A: F("#ingots/iron"),
+		B: MU("chain_opinium_core"),
+	})
+	
+	e.shaped(Item.of(MU("emerald_opinium_core"), 2), [
+		'ABA',
+		'B B',
+		'ABA'
+	], {
+		A: F("#gems/emerald"),
+		B: MU("diamond_opinium_core"),
+	})
+	
+	e.shaped(Item.of(MU("netherite_opinium_core"), 2), [
+		'ABA',
+		'B B',
+		'ABA'
+	], {
+		A: F("#ingots/netherite"),
+		B: MU("emerald_opinium_core"),
+	})
+	
+	e.shaped(Item.of(MU("experience_infused_emerald_opinium_core"), 2), [
+		'ABA',
+		'B B',
+		'ABA'
+	], {
+		A: PET("pure_emerald"),
+		B: MU("netherite_opinium_core"),
+	})
+	
+	e.shaped(Item.of(MU("reinforced_echo_shard_opinium_core"), 2), [
 		'ABA',
 		'BCB',
 		'ABA'
 	], {
-		A: MC("chorus_flower"),
-		B: MU("emerald_opinium_core"),
-		C: AE2("singularity"),
+		A: DD("reinforced_echo_shard"),
+		B: MU("experience_infused_emerald_opinium_core"),
+		C: DD("heart_of_the_deep"),
 	})
 
-  	e.shaped(Item.of(MU("experience_opinium_core"), 2), [
+  	e.shaped(Item.of(MU("unstable_opinium_core"), 2), [
 		'ABA',
 		'BCB',
 		'ABA'
 	], {
-		A: CP("experience_2"),
-		B: MU("chorus_opinium_core"),
-		C: KJ("crystal_matrix_ingot"),
+		A: MU("unstable_ingot"),
+		B: MU("reinforced_echo_shard_opinium_core"),
+		C: AE2("singularity"),
 	})
 
   	e.shaped(Item.of(MU("nether_star_opinium_core"), 2), [
@@ -86,8 +172,48 @@ ServerEvents.recipes(e => {
 		'ABA'
 	], {
 		A: MC("nether_star"),
-		B: MU("experience_opinium_core"),
-		C: EC("crystaltine_ingot"),
+		B: MU("unstable_opinium_core"),
+		C: KJ("crystal_matrix_ingot"),
+	})
+
+  	e.shaped(Item.of(MU("ender_star_opinium_core"), 2), [
+		'ABA',
+		'BCB',
+		'ABA'
+	], {
+		A: EC("ender_star"),
+		B: MU("nether_star_opinium_core"),
+		C: KJ("crystal_matrix_ingot"),
+	})
+
+  	e.shaped(Item.of(MU("flux_star_opinium_core"), 2), [
+		'ABA',
+		'BCB',
+		'ABA'
+	], {
+		A: EC("flux_star"),
+		B: MU("ender_star_opinium_core"),
+		C: KJ("crystal_matrix_ingot"),
+	})
+
+  	e.shaped(Item.of(MU("dark_matter_opinium_core"), 2), [
+		'ABA',
+		'BCB',
+		'ABA'
+	], {
+		A: PRE("dark_matter"),
+		B: MU("flux_star_opinium_core"),
+		C: F("#ingots/crystaltine"),
+	})
+
+  	e.shaped(Item.of(MU("red_matter_opinium_core"), 2), [
+		'ABA',
+		'BCB',
+		'ABA'
+	], {
+		A: PRE("red_matter"),
+		B: MU("dark_matter_opinium_core"),
+		C: F("#ingots/crystaltine"),
 	})
 
   	e.shaped(Item.of(MU("the_final_opinium_core"), 2), [
@@ -96,7 +222,7 @@ ServerEvents.recipes(e => {
 		'ABA'
 	], {
 		A: CR("refined_radiance"),
-		B: MU("nether_star_opinium_core"),
+		B: MU("red_matter_opinium_core"),
 		C: Item.of(MU("unstable_ingot")),
 	})
 	

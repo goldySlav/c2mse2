@@ -13,7 +13,7 @@ ServerEvents.recipes(e => {
 		'A',
 	], {
 		A: PET('emerald_netherite_shovel'),
-		B: DD("reinforced_echo_shard"),
+		B: MU("reinforced_echo_shard_opinium_core"),
 	})
 
 	//pickaxe
@@ -22,7 +22,7 @@ ServerEvents.recipes(e => {
 		' A ',
 	], {
 		A: PET('emerald_netherite_pickaxe'),
-		B: DD("reinforced_echo_shard"),
+		B: MU("reinforced_echo_shard_opinium_core"),
 	})
 
 	//axe
@@ -31,7 +31,7 @@ ServerEvents.recipes(e => {
 		'BA',
 	], {
 		A: PET('emerald_netherite_axe'),
-		B: DD("reinforced_echo_shard"),
+		B: MU("reinforced_echo_shard_opinium_core"),
 	})
 
 	//sword
@@ -41,7 +41,7 @@ ServerEvents.recipes(e => {
 		'A',
 	], {
 		A: PET('emerald_netherite_sword'),
-		B: DD("reinforced_echo_shard"),
+		B: MU("reinforced_echo_shard_opinium_core"),
 	})
 
 	//hoe
@@ -50,6 +50,6 @@ ServerEvents.recipes(e => {
 		'A ',
 	], {
 		A: PET('emerald_netherite_hoe'),
-		B: DD("reinforced_echo_shard"),
+		B: MU("reinforced_echo_shard_opinium_core"),
 	})
 })
