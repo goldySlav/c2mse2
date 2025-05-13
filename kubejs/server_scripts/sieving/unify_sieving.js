@@ -426,7 +426,7 @@ const sieving = {
 			"exdeorum:basalt_pebble": 1,
 			"minecraft:gunpowder": 0.2,
 			"minecraft:black_dye": 0.2,
-			"create_netherless:netherite_fragment": 0.075,
+			"create_netherless:netherite_fragment": 0.15,
 		},
 	},
 	"minecraft:moss_block": {

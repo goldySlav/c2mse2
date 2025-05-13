@@ -159,7 +159,7 @@ ServerEvents.recipes((event) => {
 		'ABBBBBBBA',
 		'AAAAAAAAA',
 	], {
-		A: PRE('dark_matter_block'),
+		A: CP('netherite_1'),
 		B: KJ("compressed_crafting_table"),
 		C: EC("ultimate_table"),
 	})
@@ -176,7 +176,7 @@ ServerEvents.recipes((event) => {
 		'ABBBBBBBBBA',
 		'AAAAAAAAAAA',
 	], {
-		A: PRE('red_matter_block'),
+		A: CP('netherite_1'),
 		B: KJ("double_compressed_crafting_table"),
 		C: EC("epic_table"),
 	})
