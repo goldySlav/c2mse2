@@ -5,8 +5,35 @@ ServerEvents.recipes((event) => {
 		MBCK(),
 	])
 	
-	donutCraftFull(event, MBCK("golden_bucket"), F("#ingots/gold"), MC("bucket"))
-	donutCraftFull(event, MBCK("diamond_bucket"), F("#gems/diamond"), MBCK("golden_bucket"))
-	donutCraftFull(event, MBCK("emerald_bucket"), PET("pure_emerald"), MBCK("diamond_bucket"))
-	donutCraftFull(event, MBCK("obsidian_bucket"), MC("obsidian"), MBCK("emerald_bucket"))
+	event.shaped(MBCK("golden_bucket"), [
+		'BAB',
+		' B ',
+	], {
+		A: MC("bucket"),
+		B: MU("gold_opinium_core"),
+	})
+	
+	event.shaped(MBCK("diamond_bucket"), [
+		'BAB',
+		' B ',
+	], {
+		A: MBCK("golden_bucket"),
+		B: MU("diamond_opinium_core"),
+	})
+	
+	event.shaped(MBCK("emerald_bucket"), [
+		'BAB',
+		' B ',
+	], {
+		A: MBCK("diamond_bucket"),
+		B: MU("emerald_opinium_core"),
+	})
+	
+	event.shaped(MBCK("obsidian_bucket"), [
+		'BAB',
+		' B ',
+	], {
+		A: MBCK("emerald_bucket"),
+		B: MU("netherite_opinium_core"),
+	})
 })

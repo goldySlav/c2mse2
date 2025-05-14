@@ -1,0 +1,26 @@
+{
+  "filters": [
+    { "category": "jei:information" },
+    { "category": "ae2:certus_growth" },
+    { "category": "ae2:condenser" },
+    { "category": "ae2:attunement" },
+    { "category": "ae2:entropy" },
+    { "category": "jumbofurnace:jumbo_smelting" },
+    { "category": "ironfurnaces:generator_regular" },
+    { "category": "ironfurnaces:generator_blasting" },
+    { "category": "ironfurnaces:generator_smoking" },
+    { "category": "jeresources:villager" },
+    { "category": "tombstone:combine" },
+    { "category": "packagedauto:fluid_package_filling" },
+    { "category": "packagedauto:fluid_package_contents" },
+    { "category": "enderio:alloy_smelting" },
+    { "category": "tconstruct:severing" },
+    { "category": "tconstruct:modifiers" },
+    { "category": "tconstruct:tool_recipes" },
+    { "category": "tconstruct:part_builder" },
+    { "category": "tconstruct:worktable" },
+    { "category": "tconstruct:molding" },
+    { "category": "emi:grinding" },
+    { "category": "emi:info" }
+  ]
+}

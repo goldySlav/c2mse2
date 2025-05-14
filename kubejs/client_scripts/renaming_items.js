@@ -33,6 +33,7 @@ ClientEvents.lang('en_us', event => {
 	event.renameBlock('create:creative_fluid_tank', "Creative Fluid Tank (Vertical)")
 	
 	event.renameItem('minecraft:shield', "Iron Shield")
+	event.renameItem('minecraft:bucket', "Iron Bucket")
 	
 	event.renameBlock('createsifter:crushed_end_stone', "Crushed End Stone")
 	event.renameBlock('createsifter:dust', "Dust Block")
@@ -99,5 +100,7 @@ ClientEvents.lang('en_us', event => {
 	event.renameBlock('create_connected:fluid_vessel', "Fluid Tank (Horizontal)")
 	event.renameBlock('create_connected:creative_fluid_vessel', "Creative Fluid Tank (Horizontal)")
 	event.renameBlock('create_connected:item_silo', "Item Vault (Vertical)")
+	
+	event.renameItem('morebuckets:obsidian_bucket', "Netherite Bucket")
 });
 

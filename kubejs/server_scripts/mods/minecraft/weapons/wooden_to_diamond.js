@@ -7,20 +7,11 @@ ServerEvents.recipes(e => {
 		let craftMat
 
 		switch (mat) {
-			case "wooden":
-				craftMat = MC("#planks");
-				break;
-			case "stone":
-				craftMat = F("#stone");
-				break;
-			case "iron":
-				craftMat = F(`#ingots/${mat}`);
-				break;
 			case "golden":
-				craftMat = F(`#ingots/gold`);
+				craftMat = MU("gold_opinium_core");
 				break;
 			default:
-				craftMat = MC(mat);
+				craftMat = MU(`${mat}_opinium_core`);
 				break;
 		}
 		return craftMat

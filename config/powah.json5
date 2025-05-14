@@ -23,7 +23,8 @@
 		// List of coolant fluids used in the Reactor and the Thermo Generator.
 		"coolant_fluids": {
 			"minecraft:water": 1,
-			"gtceu:ice": 10
+			"kubejs:sky_solution": 5,
+			"kubejs:abstruse_waste": 10
 		},
 		// List of heat source blocks used under Thermo Generator.
 		"heat_blocks": {

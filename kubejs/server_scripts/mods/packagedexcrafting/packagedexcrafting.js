@@ -95,7 +95,7 @@ ServerEvents.recipes((event) => {
 		'ABBBBBBBBBA',
 		'AAAAAAAAAAA',
 	], {
-		A: PREXP('magenta_matter_block'),
+		A: CP('netherite_1'),
 		B: AE2("molecular_assembler"),
 		C: EC("epic_auto_table"),
 	})

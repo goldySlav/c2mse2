@@ -12,7 +12,6 @@ const AE2_A = (id, x) => MOD("advanced_ae", id, x)
 const AE2_E = (id, x) => MOD("expatternprovider", id, x)
 const AE2_NA = (id, x) => MOD("ae2netanalyser", id, x)
 const AF = (id, x) => MOD("appflux", id, x)
-const AE = (id, x) => MOD("appliede", id, x)
 const ART = (id, x) => MOD("artifacts", id, x)
 const MER = (id, x) => MOD("merequester", id, x)
 const CF = (id, x) => MOD("comforts", id, x)
@@ -986,7 +985,7 @@ const tieredMaterials = {
 		circuit: KJ("inductive_mechanism"),
 		collector: PREXP("basic_collector"),
 		wafer: KJ('radiant_coil'),
-		opinium: MU("diamond_opinium_core"),
+		opinium: MU("unstable_opinium_core"),
 		star: PRE('klein_star_omega'),
 	}, //ch4
 	infused: {
@@ -994,7 +993,7 @@ const tieredMaterials = {
 		circuit: KJ("calculation_mechanism"),
 		collector: PREXP("basic_compressed_collector"),
 		wafer: KJ('wafer_component_1k'),
-		opinium: MU("netherite_opinium_core"),
+		opinium: MU("flux_star_opinium_core"),
 		star: PREXP('magnum_star_ein'),
 	}, //ch5
 	dm: {
@@ -1002,7 +1001,7 @@ const tieredMaterials = {
 		circuit: KJ("abstruse_mechanism"),
 		collector: PREXP("basic_compressed_collector"),
 		wafer: KJ('wafer_component_4k'),
-		opinium: MU("emerald_opinium_core"),
+		opinium: MU("dark_matter_opinium_core"),
 		star: PREXP('magnum_star_ein'),
 	}, //ch6
 	rm: {
@@ -1010,7 +1009,7 @@ const tieredMaterials = {
 		circuit: KJ("integrated_mechanism"),
 		collector: PREXP("dark_collector"),
 		wafer: KJ('wafer_component_16k'),
-		opinium: MU("emerald_opinium_core"),
+		opinium: MU("red_matter_opinium_core"),
 		star: PREXP('magnum_star_zwei'),
 	}, //ch7
 	gem: {
@@ -1018,7 +1017,7 @@ const tieredMaterials = {
 		circuit: KJ("electric_mechanism"),
 		collector: PREXP("dark_compressed_collector"),
 		wafer: KJ('wafer_component_64k'),
-		opinium: MU("experience_opinium_core"),
+		opinium: MU("the_final_opinium_core"),
 		star: PREXP('magnum_star_drei'),
 	}, //ch10
 	quantum: {
@@ -1026,7 +1025,7 @@ const tieredMaterials = {
 		circuit: FN("flux_core"),
 		collector: PREXP("magenta_compressed_collector"),
 		wafer: KJ('wafer_component_256k'),
-		opinium: MU("nether_star_opinium_core"),
+		opinium: MU("the_final_opinium_core"),
 		star: PREXP('magnum_star_omega'),
 	}, //ch12 + quantum stuff
 	meka: {
@@ -1042,7 +1041,7 @@ const tieredMaterials = {
 		circuit: M("dust_lithium"),
 		collector: PREXP("red_collector"),
 		wafer: KJ('wafer_component_256k'),
-		opinium: MU("nether_star_opinium_core"),
+		opinium: MU("the_final_opinium_core"),
 		star: PREXP('magnum_star_drei'),
 		hammer: Item.of(IF('infinity_hammer'), '{Beheading:0,CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'),
 		drill: Item.of(IF('infinity_drill'), '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'),

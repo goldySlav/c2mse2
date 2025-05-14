@@ -84,7 +84,6 @@ ServerEvents.recipes((event) => {
 		`2x ${CP("experience_2")}`,
 		`1x ${CP("experience_3")}`,
 		`2x ${CR_EI("hyper_experience_bottle")}`,
-		`2x ${MU("experience_opinium_core")}`,
 		`1x ${EIO("experience_rod")}`,
 	]) //exp
 	combEye("guardian", [
@@ -99,7 +98,7 @@ ServerEvents.recipes((event) => {
 		`1x ${KJ("energy_processor_wafer")}`,
 		`1x ${KJ("accumulation_processor_wafer")}`,
 		`1x ${KJ("quantum_processor_wafer")}`,
-		`1x ${AE2_E("ex_emc_interface")}`,
+		`1x ${PREXP("transmutation_interface")}`,
 		`1x ${AE2_C("kitchen_station")}`,
 		`2x ${AE2("spatial_cell_component_128")}`,
 	]) //ae2

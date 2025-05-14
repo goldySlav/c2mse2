@@ -74,7 +74,7 @@ ServerEvents.recipes((event) => {
 		A: PREXP('magnum_star_drei'), // 1.6 bil
 		B: PREXP("magenta_compressed_collector"),
 		C: FN('flux_block'),
-		D: MU('chorus_opinium_core'),
+		D: MU('the_final_opinium_core'),
 		E: F("#dusts/lithium"),
 		F: KJ("wafer_component_64k"),
 		G: FN('flux_core'),
@@ -98,7 +98,7 @@ ServerEvents.recipes((event) => {
 		A: M('ultimate_induction_provider'),
 		B: PREXP('magnum_star_drei'),
 		C: FN('flux_block'),
-		D: MU('chorus_opinium_core'),
+		D: MU('the_final_opinium_core'),
 		E: M('ultimate_induction_cell'),
 		F: KJ("wafer_component_64k"),
 		G: FN('flux_core'),
@@ -122,7 +122,7 @@ ServerEvents.recipes((event) => {
 	], {
 		B: PREXP('magnum_star_vier'),
 		C: FN('flux_block'),
-		D: MU('experience_opinium_core'),
+		D: MU('the_final_opinium_core'),
 		E: FN("basic_flux_storage"),
 		F: KJ("wafer_component_256k"),
 		G: FN('flux_core'),
@@ -146,7 +146,7 @@ ServerEvents.recipes((event) => {
 	], {
 		B: PREXP('magnum_star_sphere'),
 		C: FN('flux_block'),
-		D: MU('nether_star_opinium_core'),
+		D: MU('the_final_opinium_core'),
 		E: FN("herculean_flux_storage"),
 		F: KJ("wafer_component_1m"),
 		G: FN('flux_core'),

@@ -145,7 +145,8 @@ ServerEvents.recipes((event) => {
 PowahEvents.registerCoolants(event => {
     // .addFluid(fluid, coolness)
     // .addSolid(item, coolness)
-	event.addFluid(KJ("sky_solution"), 50);
+	event.addFluid(KJ("sky_solution"), 5);
+	event.addFluid(KJ("abstruse_waste"), 10);
 })
 
 PowahEvents.registerHeatSource(event => {

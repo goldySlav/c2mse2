@@ -8,16 +8,13 @@ ServerEvents.recipes(e => {
 
 		switch (mat) {
 			case "chainmail":
-				craftMat = MC("chain");
-				break;
-			case "iron":
-				craftMat = F(`#ingots/${mat}`);
+				craftMat = MU("chain_opinium_core");
 				break;
 			case "golden":
-				craftMat = F(`#ingots/gold`);
+				craftMat = MU("gold_opinium_core");
 				break;
 			default:
-				craftMat = MC(mat);
+				craftMat = MU(`${mat}_opinium_core`);
 				break;
 		}
 		return craftMat

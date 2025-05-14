@@ -92,7 +92,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: singularityId("experience_infused_emerald"),
 		B: DE("draconium_ingot"),
-		C: MU("experience_opinium_core"),
+		C: MU("the_final_opinium_core"),
 		D: M("hdpe_stick"),
 		E: F("#ingots/unstable"),
 		F: M("reprocessed_fissile_fragment"),
@@ -115,7 +115,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: singularityId("experience_infused_emerald"),
 		B: DE("draconium_ingot"),
-		C: MU("experience_opinium_core"),
+		C: MU("the_final_opinium_core"),
 		D: M("hdpe_stick"),
 		E: F("#ingots/unstable"),
 		F: M("reprocessed_fissile_fragment"),
@@ -152,7 +152,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: CP("iron_3"),
 		B: DE("draconium_core"),
-		C: MU("experience_opinium_core"),
+		C: MU("the_final_opinium_core"),
 		D: F("#storage_blocks/unstable"),
 		E: M("reprocessed_fissile_fragment"),
 		F: DE("small_chaos_frag"),

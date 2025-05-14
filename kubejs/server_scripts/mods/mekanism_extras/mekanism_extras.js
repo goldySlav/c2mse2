@@ -40,9 +40,6 @@ ServerEvents.recipes((event) => {
 				id,
 			])
 			event.shapeless(id, [i ? M_E(prevIdStr) : M(ultStr), tierId])
-			if (!i) {
-				event.recipes.create.item_application(M_E(`${mekaExtrasTiers[i]}_${tiered}_factory`), [M(ultStr), tierId])
-			}
 		})
 	})
 	
@@ -90,7 +87,6 @@ ServerEvents.recipes((event) => {
 		M_E("cosmic_bin"),
 		M_E("infinite_bin"),
 	])
-	event.recipes.create.item_application(M_E("absolute_bin"), [M("ultimate_bin"), M_E(`absolute_tier_installer`)])
 	event.shapeless(M_E("absolute_bin"), [M("ultimate_bin"), M_E(`absolute_tier_installer`)])
 	event.shapeless(M_E("supreme_bin"), [M_E("absolute_bin"), M_E(`supreme_tier_installer`)])
 	event.shapeless(M_E("cosmic_bin"), [M_E("supreme_bin"), M_E(`cosmic_tier_installer`)])
@@ -103,7 +99,6 @@ ServerEvents.recipes((event) => {
 		M_E("cosmic_fluid_tank"),
 		M_E("infinite_fluid_tank"),
 	])
-	event.recipes.create.item_application(M_E("absolute_fluid_tank"), [M("ultimate_fluid_tank"), M_E(`absolute_tier_installer`)])
 	event.shapeless(M_E("absolute_fluid_tank"), [M("ultimate_fluid_tank"), M_E(`absolute_tier_installer`)])
 	event.shapeless(M_E("supreme_fluid_tank"), [M_E("absolute_fluid_tank"), M_E(`supreme_tier_installer`)])
 	event.shapeless(M_E("cosmic_fluid_tank"), [M_E("supreme_fluid_tank"), M_E(`cosmic_tier_installer`)])
@@ -116,7 +111,6 @@ ServerEvents.recipes((event) => {
 		M_E("cosmic_chemical_tank"),
 		M_E("infinite_chemical_tank"),
 	])
-	event.recipes.create.item_application(M_E("absolute_chemical_tank"), [M("ultimate_chemical_tank"), M_E(`absolute_tier_installer`)])
 	event.shapeless(M_E("absolute_chemical_tank"), [M("ultimate_chemical_tank"), M_E(`absolute_tier_installer`)])
 	event.shapeless(M_E("supreme_chemical_tank"), [M_E("absolute_chemical_tank"), M_E(`supreme_tier_installer`)])
 	event.shapeless(M_E("cosmic_chemical_tank"), [M_E("supreme_chemical_tank"), M_E(`cosmic_tier_installer`)])
@@ -129,7 +123,6 @@ ServerEvents.recipes((event) => {
 		M_E("cosmic_energy_cube"),
 		M_E("infinite_energy_cube"),
 	])
-	event.recipes.create.item_application(M_E("absolute_energy_cube"), [M("ultimate_energy_cube"), M_E(`absolute_tier_installer`)])
 	event.shapeless(M_E("absolute_energy_cube"), [M("ultimate_energy_cube"), M_E(`absolute_tier_installer`)])
 	event.shapeless(M_E("supreme_energy_cube"), [M_E("absolute_energy_cube"), M_E(`supreme_tier_installer`)])
 	event.shapeless(M_E("cosmic_energy_cube"), [M_E("supreme_energy_cube"), M_E(`cosmic_tier_installer`)])
