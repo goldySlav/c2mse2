@@ -2,8 +2,6 @@
 
 ServerEvents.recipes((event) => {
 	removeRecipeByID(event, [
-		P("crafting/energized_steel_block"),
-		P("crafting/steel_energized"),
 		P("crafting/blazing_crystal_block"),
 		P("crafting/crystal_blazing"),
 		P("crafting/niotic_crystal_block"),
@@ -17,8 +15,6 @@ ServerEvents.recipes((event) => {
 	removeRecipeByOutput(event, [
 		P("uraninite"),
 		P("uraninite_block"),
-		P("steel_energized"),
-		P("energized_steel_block"),
 		P("crystal_blazing"),
 		P("blazing_crystal_block"),
 		P("crystal_niotic"),
@@ -140,6 +136,41 @@ ServerEvents.recipes((event) => {
 		const cableCenter = i == 0 ? F("#wires/copper") : P(`energy_cable_${levels[i - 1]}`)
 		donutCraftFull(event, Item.of(P(`energy_cable_${level}`), 8), cableCenter, leveledCircuit)
 	})
+	
+	//energized alloy
+	removeRecipeByID(event, [
+		P("energizing/energized_steel"),
+	])
+	event.recipes.powah.energizing([F("#ingots/gold"), F("#silicon"), IF("dryrubber")], P('steel_energized'), 100000)
+	event.custom({
+	type: AE2_A("reaction"),
+	energy: 3200000,
+	fluid: {
+		fluidStack: {
+			Amount: 16000,
+			FluidName: IF("latex")
+		}
+	},
+	input_items: [
+		{
+			amount: 64,
+			ingredient: {
+				tag: F("ingots/gold")
+			}
+		},
+		{
+			amount: 64,
+			ingredient: {
+				tag: F("silicon")
+			}
+		},
+	],
+	output: {
+		"#": 64,
+		"#c": "ae2:i",
+		id: P("steel_energized"),
+	}
+})
 })
 
 PowahEvents.registerCoolants(event => {

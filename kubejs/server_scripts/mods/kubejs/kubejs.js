@@ -1321,7 +1321,7 @@ castsForNumber = {
 	event.recipes.create.sequenced_assembly([
 		KJ('integrated_mechanism'),
 	], KJ('abstruse_mechanism'), [
-		event.recipes.create.deploying(tIntegrated, [tIntegrated, IF('plastic')]),
+		event.recipes.create.deploying(tIntegrated, [tIntegrated, P('steel_energized')]),
 		event.recipes.create.deploying(tIntegrated, [tIntegrated, IF('plastic')]),
 		event.recipes.create.deploying(tIntegrated, [tIntegrated, F("#tools/calculators")])
 	]).transitionalItem(tIntegrated)

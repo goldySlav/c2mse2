@@ -18,7 +18,7 @@
 				item: "kubejs:integrated_machine"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 1.5d
 			y: -1.5d
 		}
 		{
@@ -31,13 +31,14 @@
 				title: "Start Chapter"
 				type: "checkmark"
 			}]
-			x: -0.5d
+			x: 1.5d
 			y: -10.5d
 		}
 		{
 			dependencies: [
 				"4FB684E7281BF230"
 				"5DF8DBD5A4EE1943"
+				"20317A92BD9A8AC5"
 			]
 			description: ["EXPAND EXPAND EXPAND EXPAND!!!!"]
 			icon: "kubejs:integrated_mechanism"
@@ -54,7 +55,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -0.5d
+			x: 1.5d
 			y: -3.0d
 		}
 		{
@@ -79,7 +80,7 @@
 				type: "item"
 			}]
 			title: "Any Fibonacci Calculator"
-			x: 1.0d
+			x: 3.0d
 			y: -3.0d
 		}
 		{
@@ -100,7 +101,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -0.5d
+			x: 2.5d
 			y: -4.5d
 		}
 		{
@@ -129,7 +130,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -0.5d
+			x: 2.5d
 			y: -6.0d
 		}
 		{
@@ -143,8 +144,8 @@
 				item: "industrialforegoing:latex_processing_unit"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -8.5d
+			x: 2.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["5E0D79B5243A491C"]
@@ -170,7 +171,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -1.5d
+			x: 4.0d
 			y: -7.5d
 		}
 		{
@@ -184,8 +185,49 @@
 				item: "industrialforegoing:fluid_extractor"
 				type: "item"
 			}]
-			x: -1.5d
+			x: 4.0d
 			y: -9.0d
+		}
+		{
+			dependencies: ["342C68B775AAD6FC"]
+			icon: "ae2:silicon"
+			id: "715B3CC054C30644"
+			tasks: [{
+				id: "4C84E9A71E2DA489"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Silicon"
+			x: 0.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["342C68B775AAD6FC"]
+			icon: "minecraft:gold_ingot"
+			id: "187931ED0018D27C"
+			tasks: [{
+				id: "20D83831CF22A22A"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Gold Ingot"
+			x: -1.0d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"715B3CC054C30644"
+				"187931ED0018D27C"
+				"4C846C447750DDC2"
+			]
+			id: "20317A92BD9A8AC5"
+			tasks: [{
+				id: "253133F9FEC2EC9E"
+				item: "powah:steel_energized"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
 		}
 	]
 	title: "7. Integrated Age"

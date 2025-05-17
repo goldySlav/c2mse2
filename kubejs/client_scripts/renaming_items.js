@@ -102,5 +102,8 @@ ClientEvents.lang('en_us', event => {
 	event.renameBlock('create_connected:item_silo', "Item Vault (Vertical)")
 	
 	event.renameItem('morebuckets:obsidian_bucket', "Netherite Bucket")
+	
+	event.renameItem('powah:steel_energized', "Energized Alloy Ingot")
+	event.renameBlock('powah:energized_steel_block', "Block of Energized Alloy")
 });
 
