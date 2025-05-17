@@ -243,10 +243,13 @@ ServerEvents.recipes((event) => {
 	
 	
 	//summoning doll
-	event.recipes.ae2.transform(Item.of(KJ("summoning_doll"), 1), [EXD("porcelain_clay_ball"), F("#ingots/iron")]).circumstance({ type: 'fluid', tag: F('witch_water') })
-	event.recipes.ae2.transform(Item.of(KJ("summoning_doll"), 2), [EXD("porcelain_clay_ball"), F("#ingots/gold")]).circumstance({ type: 'fluid', tag: F('witch_water') })
-	event.recipes.ae2.transform(Item.of(KJ("summoning_doll"), 4), [EXD("porcelain_clay_ball"), F("#gems/diamond")]).circumstance({ type: 'fluid', tag: F('witch_water') })
-	event.recipes.ae2.transform(Item.of(KJ("summoning_doll"), 6), [EXD("porcelain_clay_ball"), F("#gems/emerald")]).circumstance({ type: 'fluid', tag: F('witch_water') })
+	event.recipes.ae2.transform(Item.of(KJ("summoning_doll"), 1), [EXD("porcelain_clay_ball"), MU("iron_opinium_core")]).circumstance({ type: 'explosion' })
+	event.recipes.ae2.transform(Item.of(KJ("summoning_doll"), 2), [EXD("porcelain_clay_ball"), MU("gold_opinium_core")]).circumstance({ type: 'explosion' })
+	event.recipes.ae2.transform(Item.of(KJ("summoning_doll"), 4), [EXD("porcelain_clay_ball"), MU("diamond_opinium_core")]).circumstance({ type: 'explosion' })
+	event.recipes.ae2.transform(Item.of(KJ("summoning_doll"), 8), [EXD("porcelain_clay_ball"), MU("emerald_opinium_core")]).circumstance({ type: 'explosion' })
+	event.recipes.ae2.transform(Item.of(KJ("summoning_doll"), 16), [EXD("porcelain_clay_ball"), MU("netherite_opinium_core")]).circumstance({ type: 'explosion' })
+	event.recipes.ae2.transform(Item.of(KJ("summoning_doll"), 32), [EXD("porcelain_clay_ball"), MU("experience_infused_emerald_opinium_core")]).circumstance({ type: 'explosion' })
+	event.recipes.ae2.transform(Item.of(KJ("summoning_doll"), 64), [EXD("porcelain_clay_ball"), MU("reinforced_echo_shard_opinium_core")]).circumstance({ type: 'explosion' })
 	
 	
 	
