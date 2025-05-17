@@ -8,8 +8,6 @@ ServerEvents.recipes((event) => {
 		P("crafting/crystal_niotic"),
 		P("crafting/spirited_crystal_block"),
 		P("crafting/crystal_spirited"),
-		P("crafting/nitro_crystal_block"),
-		P("crafting/crystal_nitro"),
 	])
 	
 	removeRecipeByOutput(event, [
@@ -21,8 +19,6 @@ ServerEvents.recipes((event) => {
 		P("niotic_crystal_block"),
 		P("crystal_spirited"),
 		P("spirited_crystal_block"),
-		P("crystal_nitro"),
-		P("nitro_crystal_block"),
 		P("capacitor_basic_tiny"),
 		P("capacitor_basic"),
 		P("capacitor_basic_large"),
@@ -138,40 +134,50 @@ ServerEvents.recipes((event) => {
 		donutCraftFull(event, Item.of(P(`energy_cable_${level}`), 8), cableCenter, leveledCircuit)
 	})
 	
+	//overcharged fluix crystal
+	removeRecipeByID(event, [
+		P("energizing/nitro_crystal"),
+	])
+	event.recipes.ae2.charger(P('crystal_nitro'), F("#gems/fluix"))
+	customRecipes.create.charge(event, P('crystal_nitro'), F("#gems/fluix"), 100000)
+	customRecipes.create.charge(event, P('nitro_crystal_block'), AE2("fluix_block"), 600000)
+	event.recipes.powah.energizing([F("#gems/fluix")], P('crystal_nitro'), 100000)
+	event.recipes.powah.energizing([AE2("fluix_block")], P('nitro_crystal_block'), 600000)
+	
 	//energized alloy
 	removeRecipeByID(event, [
 		P("energizing/energized_steel"),
 	])
-	event.recipes.powah.energizing([F("#ingots/gold"), F("#silicon"), IF("dryrubber")], P('steel_energized'), 100000)
+	event.recipes.powah.energizing([F("#ingots/rose_gold"), P('crystal_nitro'), KJ("ether_gem")], P('steel_energized'), 100000)
 	event.custom({
-	type: AE2_A("reaction"),
-	energy: 3200000,
-	fluid: {
-		fluidStack: {
-			Amount: 16000,
-			FluidName: IF("latex")
+		type: AE2_A("reaction"),
+		energy: 3200000,
+		fluid: {
+			fluidStack: {
+				Amount: 2500,
+				FluidName: IF("ether_gas")
+			}
+		},
+		input_items: [
+			{
+				amount: 64,
+				ingredient: {
+					tag: F("ingots/rose_gold")
+				}
+			},
+			{
+				amount: 64,
+				ingredient: {
+					item: P('crystal_nitro')
+				}
+			},
+		],
+		output: {
+			"#": 64,
+			"#c": "ae2:i",
+			id: P("steel_energized"),
 		}
-	},
-	input_items: [
-		{
-			amount: 64,
-			ingredient: {
-				tag: F("ingots/gold")
-			}
-		},
-		{
-			amount: 64,
-			ingredient: {
-				tag: F("silicon")
-			}
-		},
-	],
-	output: {
-		"#": 64,
-		"#c": "ae2:i",
-		id: P("steel_energized"),
-	}
-})
+	})
 })
 
 PowahEvents.registerCoolants(event => {

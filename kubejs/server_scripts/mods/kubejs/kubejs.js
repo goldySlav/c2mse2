@@ -1312,8 +1312,8 @@ castsForNumber = {
 	event.recipes.create.sequenced_assembly([
 		KJ('integrated_mechanism'),
 	], KJ('abstruse_mechanism'), [
-		event.recipes.create.deploying(tIntegrated, [tIntegrated, P('steel_energized')]),
 		event.recipes.create.deploying(tIntegrated, [tIntegrated, IF('plastic')]),
+		event.recipes.create.deploying(tIntegrated, [tIntegrated, P('crystal_nitro')]),
 		event.recipes.create.deploying(tIntegrated, [tIntegrated, F("#tools/calculators")])
 	]).transitionalItem(tIntegrated)
 		.loops(1)
@@ -1338,7 +1338,7 @@ castsForNumber = {
 	event.recipes.create.sequenced_assembly([
 		KJ('portable_mechanism'),
 	], KJ('embedded_mechanism'), [
-		event.recipes.create.deploying(tPortable, [tPortable, KJ('ether_gem')]),
+		event.recipes.create.deploying(tPortable, [tPortable, P('steel_energized')]),
 		event.recipes.create.deploying(tPortable, [tPortable, KJ('ether_gem')]),
 		event.recipes.create.deploying(tPortable, [tPortable, F("#tools/calculators")])
 	]).transitionalItem(tPortable)

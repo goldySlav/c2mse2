@@ -103,6 +103,8 @@ ClientEvents.lang('en_us', event => {
 	
 	event.renameItem('morebuckets:obsidian_bucket', "Netherite Bucket")
 	
+	event.renameItem('powah:crystal_nitro', "Overcharged Fluix Crystal")
+	event.renameBlock('powah:nitro_crystal_block', "Overcharged Fluix Crystal Block")
 	event.renameItem('powah:steel_energized', "Energized Alloy Ingot")
 	event.renameBlock('powah:energized_steel_block', "Block of Energized Alloy")
 });

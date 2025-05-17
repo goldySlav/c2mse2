@@ -16,8 +16,8 @@
 				title: "Start Chapter"
 				type: "checkmark"
 			}]
-			x: -1.0d
-			y: 0.0d
+			x: 1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["187A152AC9970C0D"]
@@ -28,13 +28,14 @@
 				item: "kubejs:portable_machine"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 9.0d
+			x: 1.5d
+			y: 10.5d
 		}
 		{
 			dependencies: [
 				"4C9260BC970B7A9D"
 				"24941E080AC8910B"
+				"0E14E11986747181"
 			]
 			icon: "kubejs:portable_mechanism"
 			id: "187A152AC9970C0D"
@@ -50,8 +51,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -1.0d
-			y: 7.5d
+			x: 1.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["7BE5C82FC38BDE8C"]
@@ -69,8 +70,8 @@
 				title: "Any Fibonacci Calculator"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 7.5d
+			x: 3.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["1DA790BD014CAC25"]
@@ -88,7 +89,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -1.0d
+			x: 2.5d
 			y: 6.0d
 		}
 		{
@@ -107,7 +108,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -1.0d
+			x: 4.0d
 			y: 4.5d
 		}
 		{
@@ -119,7 +120,7 @@
 				item: "industrialforegoing:fluid_laser_base"
 				type: "item"
 			}]
-			x: -2.5d
+			x: 2.5d
 			y: 1.5d
 		}
 		{
@@ -131,7 +132,7 @@
 				item: "industrialforegoing:laser_drill"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 5.5d
 			y: 1.5d
 		}
 		{
@@ -143,7 +144,7 @@
 				item: "industrialforegoing:stasis_chamber"
 				type: "item"
 			}]
-			x: -1.0d
+			x: 4.0d
 			y: 1.5d
 		}
 		{
@@ -169,8 +170,92 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
+			x: 4.0d
 			y: 3.0d
+		}
+		{
+			dependencies: [
+				"24941E080AC8910B"
+				"107385A5EC742AA3"
+				"4756BD8096F70AA6"
+			]
+			icon: "powah:steel_energized"
+			id: "0E14E11986747181"
+			tasks: [
+				{
+					id: "6546B55A5F46B685"
+					item: "powah:steel_energized"
+					type: "item"
+				}
+				{
+					id: "148A78345B0063EE"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["750A4EAD3721D89A"]
+			icon: "powah:crystal_nitro"
+			id: "107385A5EC742AA3"
+			tasks: [{
+				id: "117C9EFCB5255C91"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Overcharged Fluix Crystal"
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["750A4EAD3721D89A"]
+			icon: "minecraft:gold_ingot"
+			id: "5EAC61A48F345634"
+			tasks: [{
+				id: "00626895E6EFC4FD"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Gold Ingot"
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5EAC61A48F345634"
+				"5B9798E74A21196A"
+			]
+			icon: "tconstruct:rose_gold_ingot"
+			id: "4756BD8096F70AA6"
+			tasks: [
+				{
+					id: "35CE74842A36BA6E"
+					item: "tconstruct:rose_gold_ingot"
+					type: "item"
+				}
+				{
+					id: "789D867BD9368024"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["750A4EAD3721D89A"]
+			icon: "minecraft:copper_ingot"
+			id: "5B9798E74A21196A"
+			tasks: [{
+				id: "36A77C4F760A57AE"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Copper Ingot"
+			x: -1.0d
+			y: 1.5d
 		}
 	]
 	title: "9. Portable Age"

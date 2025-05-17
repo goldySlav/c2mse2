@@ -101,7 +101,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 2.5d
+			x: 1.0d
 			y: -4.5d
 		}
 		{
@@ -130,7 +130,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 2.5d
+			x: 0.0d
 			y: -6.0d
 		}
 		{
@@ -144,7 +144,7 @@
 				item: "industrialforegoing:latex_processing_unit"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 1.5d
 			y: -9.0d
 		}
 		{
@@ -171,7 +171,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.0d
+			x: -0.5d
 			y: -7.5d
 		}
 		{
@@ -185,49 +185,46 @@
 				item: "industrialforegoing:fluid_extractor"
 				type: "item"
 			}]
-			x: 4.0d
+			x: -0.5d
 			y: -9.0d
 		}
 		{
-			dependencies: ["342C68B775AAD6FC"]
-			icon: "ae2:silicon"
-			id: "715B3CC054C30644"
-			tasks: [{
-				id: "4C84E9A71E2DA489"
-				title: "Automated"
-				type: "checkmark"
-			}]
-			title: "Silicon"
-			x: 0.5d
-			y: -9.0d
-		}
-		{
-			dependencies: ["342C68B775AAD6FC"]
-			icon: "minecraft:gold_ingot"
-			id: "187931ED0018D27C"
-			tasks: [{
-				id: "20D83831CF22A22A"
-				title: "Automated"
-				type: "checkmark"
-			}]
-			title: "Gold Ingot"
-			x: -1.0d
-			y: -9.0d
-		}
-		{
-			dependencies: [
-				"715B3CC054C30644"
-				"187931ED0018D27C"
-				"4C846C447750DDC2"
-			]
+			dependencies: ["431301D20ABE6ABD"]
+			icon: "powah:crystal_nitro"
 			id: "20317A92BD9A8AC5"
-			tasks: [{
-				id: "253133F9FEC2EC9E"
-				item: "powah:steel_energized"
-				type: "item"
-			}]
-			x: 0.5d
-			y: -4.5d
+			tasks: [
+				{
+					id: "253133F9FEC2EC9E"
+					item: "powah:crystal_nitro"
+					type: "item"
+				}
+				{
+					id: "0B9CD7A2B88C24FA"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["342C68B775AAD6FC"]
+			icon: "ae2:fluix_crystal"
+			id: "431301D20ABE6ABD"
+			tasks: [
+				{
+					id: "7852013DEB889D5F"
+					item: "ae2:fluix_crystal"
+					type: "item"
+				}
+				{
+					id: "7677CD27CAB37D46"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: -9.0d
 		}
 	]
 	title: "7. Integrated Age"
