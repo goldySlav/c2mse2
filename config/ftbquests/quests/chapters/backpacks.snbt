@@ -60,8 +60,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 7.5d
+			x: 1.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["784D6F0E8D6220AD"]

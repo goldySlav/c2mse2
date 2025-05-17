@@ -140,8 +140,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.5d
+			x: 1.5d
+			y: 3.0d
 		}
 	]
 	title: "Tridents"

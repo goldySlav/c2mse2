@@ -348,7 +348,7 @@ ServerEvents.recipes((event) => {
 	customRecipes.draconicevolution.fusion_craft(
 		event,
 		DE("wyvern_pickaxe"),
-		IF("infinity_drill"),
+		PRE("rm_pick"),
 		[
 			`2x ${DE("wyvern_core")}`, `2x ${DE("draconium_ingot")}`, `2x ${DE("basic_relay_crystal")}`,
 			`2x ${DE("wyvern_energy_core")}`, `2x ${DE("medium_chaos_frag")}`
@@ -360,7 +360,7 @@ ServerEvents.recipes((event) => {
 	customRecipes.draconicevolution.fusion_craft(
 		event,
 		DE("wyvern_axe"),
-		IF("infinity_saw"),
+		PRE("rm_axe"),
 		[
 			`2x ${DE("wyvern_core")}`, `2x ${DE("draconium_ingot")}`, `2x ${DE("basic_relay_crystal")}`,
 			`2x ${DE("wyvern_energy_core")}`, `2x ${DE("medium_chaos_frag")}`
@@ -372,7 +372,7 @@ ServerEvents.recipes((event) => {
 	customRecipes.draconicevolution.fusion_craft(
 		event,
 		DE("wyvern_bow"),
-		IF("infinity_launcher"),
+		MC("bow"),
 		[
 			`2x ${DE("wyvern_core")}`, `2x ${DE("draconium_ingot")}`, `2x ${DE("basic_relay_crystal")}`,
 			`2x ${DE("wyvern_energy_core")}`, `2x ${DE("medium_chaos_frag")}`
@@ -384,7 +384,7 @@ ServerEvents.recipes((event) => {
 	customRecipes.draconicevolution.fusion_craft(
 		event,
 		DE("wyvern_sword"),
-		IF("infinity_hammer"),
+		PRE("rm_sword"),
 		[
 			`2x ${DE("wyvern_core")}`, `2x ${DE("draconium_ingot")}`, `2x ${DE("basic_relay_crystal")}`,
 			`2x ${DE("wyvern_energy_core")}`, `2x ${DE("medium_chaos_frag")}`
