@@ -230,7 +230,7 @@ ServerEvents.recipes((event) => {
 		' A ',
 	], {
 		A: TCT("necrotic_bone"),
-		B: CP("obsidian_2"),
+		B: MC("obsidian"),
 	})
 
     event.shaped(Item.of(KJ("witherproof_bricks"), 4), [
