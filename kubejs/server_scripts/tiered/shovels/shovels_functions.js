@@ -19,4 +19,12 @@ const shovelTemplates = {
 		' B       ',
 		'A        ',
 	],
+    part: [
+		'    G    ',
+		'  EEEEE  ',
+		' EEFFFEE ',
+		'EEFFFFFEE',
+		'EAFFFFFCE',
+		'EEEEEEEEE',
+	],
 }

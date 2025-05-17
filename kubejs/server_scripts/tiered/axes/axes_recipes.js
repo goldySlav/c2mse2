@@ -1,53 +1,42 @@
 //priority: 0
 
 ServerEvents.recipes(e => {
-
-    removeRecipeByOutput(e, [
-		MU('healing_axe'),
-		PRE("dm_axe"),
-		PRE("rm_axe"),
-		IF("infinity_saw"),
-    ])
-	
 	const { unstable, dm, rm, infinity } = tieredMaterials
 
 	//unstable
-	e.recipes.extendedcrafting.shaped_table(MU('healing_axe'), axeTemplates.ultimate, {
+	e.recipes.extendedcrafting.shaped_table(MU('unstable_axe_part'), axeTemplates.part, {
 		A: unstable.star,
-		B: unstable.opinium,
 		C: unstable.wafer,
-		D: DD("warden_axe"),
-		E: unstable.block,
+		E: unstable.opinium,
 		F: unstable.circuit,
 		G: unstable.collector,
 	})
 
 
 	//dm axe
-	e.recipes.extendedcrafting.shaped_table(PRE('dm_axe'), axeTemplates.ultimate, {
+	e.recipes.extendedcrafting.shaped_table(PRE('dm_axe_part'), axeTemplates.part, {
 		A: dm.star,
-		B: dm.opinium,
+		E: dm.opinium,
 		C: dm.wafer,
-		D: MU("healing_axe"),
-		E: dm.block,
 		F: dm.circuit,
 		G: dm.collector,
 	})
 
 
     //rm axe
-	e.recipes.extendedcrafting.shaped_table(PRE('rm_axe'), axeTemplates.ultimate, {
+	e.recipes.extendedcrafting.shaped_table(PRE('rm_axe_part'), axeTemplates.part, {
 		A: rm.star,
-		B: rm.opinium,
+		E: rm.opinium,
 		C: rm.wafer,
-		D: PRE("dm_axe"),
-		E: rm.block,
 		F: rm.circuit,
 		G: rm.collector,
 	})
 
 
     //infinity axe
+    removeRecipeByOutput(e, [
+		IF('infinity_saw'),
+    ])
 	e.recipes.extendedcrafting.shaped_table(infinity.saw, axeTemplates.ultimate, {
 		A: infinity.star,
 		B: infinity.opinium,

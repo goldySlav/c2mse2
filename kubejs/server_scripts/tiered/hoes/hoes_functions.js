@@ -19,4 +19,11 @@ const hoeTemplates = {
 		'       B ',
 		'       A ',
 	],
+    part: [
+		'       G ',
+		' EEEEEEEE',
+		'EAFFFFFCE',
+		'EAEEEEEEE',
+		'EE       ',
+	],
 }

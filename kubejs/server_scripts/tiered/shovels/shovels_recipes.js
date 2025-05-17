@@ -1,43 +1,31 @@
 //priority: 0
 
 ServerEvents.recipes(e => {
-    removeRecipeByOutput(e, [
-		MU('erosion_shovel'),
-		PRE("dm_shovel"),
-		PRE("rm_shovel"),
-    ])
 	const { unstable, dm, rm } = tieredMaterials
 
 	//unstable
-	e.recipes.extendedcrafting.shaped_table(MU('erosion_shovel'), shovelTemplates.ultimate, {
+	e.recipes.extendedcrafting.shaped_table(MU('unstable_shovel_part'), shovelTemplates.part, {
 		A: unstable.star,
-		B: unstable.opinium,
 		C: unstable.wafer,
-		D: DD("warden_shovel"),
-		E: unstable.block,
+		E: unstable.opinium,
 		F: unstable.circuit,
 		G: unstable.collector,
 	})
 
 	//dm
-	e.recipes.extendedcrafting.shaped_table(PRE('dm_shovel'), shovelTemplates.ultimate, {
+	e.recipes.extendedcrafting.shaped_table(PRE('dm_shovel_part'), shovelTemplates.part, {
 		A: dm.star,
-		B: dm.opinium,
 		C: dm.wafer,
-		D: MU("erosion_shovel"),
-		E: dm.block,
+		E: dm.opinium,
 		F: dm.circuit,
 		G: dm.collector,
 	})
 
-
     //rm
-	e.recipes.extendedcrafting.shaped_table(PRE('rm_shovel'), shovelTemplates.ultimate, {
+	e.recipes.extendedcrafting.shaped_table(PRE('rm_shovel_part'), shovelTemplates.part, {
 		A: rm.star,
-		B: rm.opinium,
 		C: rm.wafer,
-		D: PRE('dm_shovel'),
-		E: rm.block,
+		E: rm.opinium,
 		F: rm.circuit,
 		G: rm.collector,
 	})

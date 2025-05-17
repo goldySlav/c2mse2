@@ -264,4 +264,22 @@ StartupEvents.registry('item', event => {
 	event.create('miniutilities:flux_star_opinium_core').displayName('Flux Star Opinium Core')
 	event.create('miniutilities:dark_matter_opinium_core').displayName('Dark Matter Opinium Core')
 	event.create('miniutilities:red_matter_opinium_core').displayName('Red Matter Opinium Core')
+	
+	//Tool Parts
+	event.create('miniutilities:unstable_sword_part').displayName('Unstable Sword Part').rarity("epic").glow(true)
+	event.create('miniutilities:kikoku_sword_part').displayName('Kikoku Sword Part').rarity("epic").glow(true)
+	event.create('projecte:dm_sword_part').displayName('Dark Matter Sword Part').rarity("epic").glow(true)
+	event.create('projecte:rm_sword_part').displayName('Red Matter Sword Part').rarity("epic").glow(true)
+	event.create('miniutilities:unstable_pickaxe_part').displayName('Unstable Pickaxe Part').rarity("epic").glow(true)
+	event.create('projecte:dm_pickaxe_part').displayName('Dark Matter Pickaxe Part').rarity("epic").glow(true)
+	event.create('projecte:rm_pickaxe_part').displayName('Red Matter Pickaxe Part').rarity("epic").glow(true)
+	event.create('miniutilities:unstable_axe_part').displayName('Unstable Axe Part').rarity("epic").glow(true)
+	event.create('projecte:dm_axe_part').displayName('Dark Matter Axe Part').rarity("epic").glow(true)
+	event.create('projecte:rm_axe_part').displayName('Red Matter Axe Part').rarity("epic").glow(true)
+	event.create('miniutilities:unstable_shovel_part').displayName('Unstable Shovel Part').rarity("epic").glow(true)
+	event.create('projecte:dm_shovel_part').displayName('Dark Matter Shovel Part').rarity("epic").glow(true)
+	event.create('projecte:rm_shovel_part').displayName('Red Matter Shovel Part').rarity("epic").glow(true)
+	event.create('miniutilities:unstable_hoe_part').displayName('Unstable Hoe Part').rarity("epic").glow(true)
+	event.create('projecte:dm_hoe_part').displayName('Dark Matter Hoe Part').rarity("epic").glow(true)
+	event.create('projecte:rm_hoe_part').displayName('Red Matter Hoe Part').rarity("epic").glow(true)
 });

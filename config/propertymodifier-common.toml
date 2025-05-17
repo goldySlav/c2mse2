@@ -354,20 +354,24 @@
 			"pureemeraldtools:emerald_netherite_sword" = 11
 			"deeperdarker:warden_sword" = 12
 			"enderio:dark_steel_sword" = 15
-			"miniutilities:etheric_sword" = 30
-			"miniutilities:kikoku" = 35
-			"projecte:dm_sword" = 40
-			"projecte:rm_sword" = 45
-			"projecte:rm_katar" = 50
+			"miniutilities:etheric_sword" = 15
+			"miniutilities:kikoku" = 20
+			"projecte:dm_sword" = 25
+			"projecte:rm_sword" = 30
+			"projecte:rm_katar" = 35
 			"minecraft:golden_shovel" = 5
 			"pureemeraldtools:pure_emerald_shovel" = 6
 			"pureemeraldtools:emerald_netherite_shovel" = 7
+			"minecraft:stone_axe" = 8
 			"minecraft:golden_axe" = 10
 			"minecraft:diamond_axe" = 11
 			"pureemeraldtools:pure_emerald_axe" = 12
 			"minecraft:netherite_axe" = 13
 			"pureemeraldtools:emerald_netherite_axe" = 14
 			"deeperdarker:warden_axe" = 15
+			"miniutilities:healing_axe" = 20
+			"projecte:dm_axe" = 30
+			"projecte:rm_axe" = 35
 			"minecraft:golden_pickaxe" = 4.5
 			"pureemeraldtools:pure_emerald_pickaxe" = 5.5
 			"pureemeraldtools:emerald_netherite_pickaxe" = 6.5
@@ -380,8 +384,8 @@
 			"miniutilities:etheric_sword" = 2
 			"miniutilities:kikoku" = 2.2
 			"projecte:dm_sword" = 2.5
-			"projecte:rm_sword" = 3.0
-			"projecte:rm_katar" = 3.5
+			"projecte:rm_sword" = 3
+			"projecte:rm_katar" = 3
 
 #Set the values for enchantments.
 [enchantments]

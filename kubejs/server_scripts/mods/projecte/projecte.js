@@ -769,5 +769,104 @@ ServerEvents.recipes((event) => {
 	F: AE2('annihilation_core'),
 	G: PREXP('pink_matter'),
   })
-
+	
+	//dm & rm axes
+    removeRecipeByOutput(event, [
+		PRE("dm_axe"),
+		PRE("rm_axe"),
+    ])
+	shapedSaveNBT(event, PRE("dm_axe"), [
+		'B',
+		'A',
+	], {
+		A: MU("healing_axe"),
+		B: PRE("dm_axe_part"),
+	})
+	shapedSaveNBT(event, PRE("rm_axe"), [
+		'B',
+		'A',
+	], {
+		A: PRE("dm_axe"),
+		B: PRE("rm_axe_part"),
+	})
+	
+	//dm & rm hoes
+    removeRecipeByOutput(event, [
+		PRE("dm_hoe"),
+		PRE("rm_hoe"),
+    ])
+	shapedSaveNBT(event, PRE("dm_hoe"), [
+		'B',
+		'A',
+	], {
+		A: MU("reversing_hoe"),
+		B: PRE("dm_hoe_part"),
+	})
+	shapedSaveNBT(event, PRE("rm_hoe"), [
+		'B',
+		'A',
+	], {
+		A: PRE("dm_hoe"),
+		B: PRE("rm_hoe_part"),
+	})
+	
+	//dm & rm pickaxes
+    removeRecipeByOutput(event, [
+		PRE("dm_pick"),
+		PRE("rm_pick"),
+    ])
+	shapedSaveNBT(event, PRE("dm_pick"), [
+		'B',
+		'A',
+	], {
+		A: MU("destruction_pickaxe"),
+		B: PRE("dm_pickaxe_part"),
+	})
+	shapedSaveNBT(event, PRE("rm_pick"), [
+		'B',
+		'A',
+	], {
+		A: PRE("dm_pick"),
+		B: PRE("rm_pickaxe_part"),
+	})
+	
+	//dm & rm shovels
+    removeRecipeByOutput(event, [
+		PRE("dm_shovel"),
+		PRE("rm_shovel"),
+    ])
+	shapedSaveNBT(event, PRE("dm_shovel"), [
+		'B',
+		'A',
+	], {
+		A: MU("erosion_shovel"),
+		B: PRE("dm_shovel_part"),
+	})
+	shapedSaveNBT(event, PRE("rm_shovel"), [
+		'B',
+		'A',
+	], {
+		A: PRE("dm_shovel"),
+		B: PRE("rm_shovel_part"),
+	})
+	
+	//dm & rm swords
+    removeRecipeByOutput(event, [
+		PRE("dm_sword"),
+		PRE("rm_sword"),
+    ])
+	shapedSaveNBT(event, PRE("dm_sword"), [
+		'B',
+		'A',
+	], {
+		A: MU("kikoku"),
+		B: PRE("dm_sword_part"),
+	})
+	shapedSaveNBT(event, PRE("rm_sword"), [
+		'B',
+		'A',
+	], {
+		A: PRE("dm_sword"),
+		B: PRE("rm_sword_part"),
+	})
 })

@@ -28,4 +28,11 @@ const pickaxeTemplates = {
 		'    B    ',
 		'    A    ',
 	],
+    part: [
+		'    G    ',
+		' EEEEEEE ',
+		'EAFFFFFCE',
+		'EFEEEEEFE',
+		' E     E ',
+	],
 }
