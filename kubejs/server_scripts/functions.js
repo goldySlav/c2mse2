@@ -103,6 +103,7 @@ const MBCK = (id, x) => MOD("morebuckets", id, x)
 const IR = (id, x) => MOD("industrialrenewal", id, x)
 const HNN = (id, x) => MOD("hostilenetworks", id, x)
 const DD = (id, x) => MOD("deeperdarker", id, x)
+const BG = (id, x) => MOD("buildinggadgets2", id, x)
 
 
 const processingTimesDefault = {

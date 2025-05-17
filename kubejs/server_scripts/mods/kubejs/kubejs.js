@@ -1589,6 +1589,12 @@ castsForNumber = {
 	inductive_machine(HNN('loot_fabricator'), 1)
 	inductive_machine(HNN('deep_learner'), 1, Q("ender_watcher"))
 	inductive_machine(HNN('blank_data_model'), 1, CM("diamond_dna_sampler"))
+	inductive_machine(BG('template_manager'), 1, MC("paper"))
+	inductive_machine(BG('gadget_building'), 1, F("#gems/diamond"))
+	inductive_machine(BG('gadget_exchanging'), 1, F("#ingots/gold"))
+	inductive_machine(BG('gadget_copy_paste'), 1, F("#gems/emerald"))
+	inductive_machine(BG('gadget_cut_paste'), 1, MC("shears"))
+	inductive_machine(BG('gadget_destruction'), 1, MC("ender_pearl"))
 	
 	//calculation machine (ae2 not_so_misterious_cube)
 	removeRecipeByOutput(event, [
