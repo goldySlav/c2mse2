@@ -243,22 +243,10 @@ ServerEvents.recipes((event) => {
 	
 	
 	//summoning doll
-	customRecipes.ae2.transform.fluid(event, `1x ${KJ("summoning_doll")}`, [
-		EXD("porcelain_clay_ball"),
-		F("#ingots/iron"),
-	], F("witch_water"))
-	customRecipes.ae2.transform.fluid(event, `2x ${KJ("summoning_doll")}`, [
-		EXD("porcelain_clay_ball"),
-		F("#ingots/gold"),
-	], F("witch_water"))
-	customRecipes.ae2.transform.fluid(event, `4x ${KJ("summoning_doll")}`, [
-		EXD("porcelain_clay_ball"),
-		F("#gems/diamond"),
-	], F("witch_water"))
-	customRecipes.ae2.transform.fluid(event, `6x ${KJ("summoning_doll")}`, [
-		EXD("porcelain_clay_ball"),
-		F("#gems/emerald"),
-	], F("witch_water"))
+	event.recipes.ae2.transform(Item.of(KJ("summoning_doll"), 1), [EXD("porcelain_clay_ball"), F("#ingots/iron")]).circumstance({ type: 'fluid', tag: F('witch_water') })
+	event.recipes.ae2.transform(Item.of(KJ("summoning_doll"), 2), [EXD("porcelain_clay_ball"), F("#ingots/gold")]).circumstance({ type: 'fluid', tag: F('witch_water') })
+	event.recipes.ae2.transform(Item.of(KJ("summoning_doll"), 4), [EXD("porcelain_clay_ball"), F("#gems/diamond")]).circumstance({ type: 'fluid', tag: F('witch_water') })
+	event.recipes.ae2.transform(Item.of(KJ("summoning_doll"), 6), [EXD("porcelain_clay_ball"), F("#gems/emerald")]).circumstance({ type: 'fluid', tag: F('witch_water') })
 	
 	
 	

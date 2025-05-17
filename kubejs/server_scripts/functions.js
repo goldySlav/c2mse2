@@ -272,42 +272,6 @@ const customRecipes = {
 			})
 		},
 	},
-	ae2: {
-		transform: {
-			fluid: function (e, output, inputArr, fluidTag) {
-			if (!fluidTag) {
-				fluidTag = MC("water")
-			}
-
-			e.custom({
-				type: AE2("transform"),
-				circumstance: {
-					type: "fluid",
-					tag: fluidTag
-				},
-				ingredients: toRecipeJsonItem(inputArr),
-				result: toRecipeJsonItem(output)
-			})
-		},
-			explosion: function (e, output, inputArr) {
-				e.custom({
-					type: AE2("transform"),
-					circumstance: {
-						type: "explosion"
-					},
-					ingredients: toRecipeJsonItem(inputArr),
-					result: toRecipeJsonItem(output)
-				})
-			},
-		},
-		charge: function (e, output, input) {
-			e.custom({
-				type: AE2("charger"),
-				ingredient: toRecipeJsonItem(input),
-				result: toRecipeJsonItem(output)
-			})
-		},
-	},
 	ad_astra: {
 		compressing: function (e, output, input, energy, ticks) {
 			ticks = ticks ? ticks : 20

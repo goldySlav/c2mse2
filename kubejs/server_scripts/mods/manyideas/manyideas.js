@@ -161,6 +161,6 @@ ServerEvents.recipes(event => {
 		B: MC("iron_bars"),
 	});
 	
-	//rainbow concrete transform(e, output, inputArr, fluid)
-	customRecipes.ae2.transform.fluid(event, MI_C('rainbow_concrete'), [MI_C('rainbow_concrete_powder')])
+	//rainbow concrete transform
+	event.recipes.ae2.transform(MI_C("rainbow_concrete"), [MI_C("rainbow_concrete_powder")]).circumstance({ type: 'fluid', tag: F('water') })
 });

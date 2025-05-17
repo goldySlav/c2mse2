@@ -198,7 +198,7 @@ ServerEvents.recipes((event) => {
 	//enchBook(AM("board_return"), KJ("chromatic_resonator"), 1)
 	
 	//infinity grains & rod
-	customRecipes.ae2.transform.fluid(event, EIO("grains_of_infinity"), [AE2("sky_dust"), CM("nether_star_fragment")], F("redstone"))
+	event.recipes.ae2.transform(EIO("grains_of_infinity"), [AE2("sky_dust"), CM("nether_star_fragment")]).circumstance({ type: 'fluid', tag: F('redstone') })
 	event.recipes.create.mixing(EIO("grains_of_infinity"), [AE2("sky_dust"), CM("nether_star_fragment"), Fluid.of(KJ("liquid_redstone"), 10)])
 	event.shaped(EIO("infinity_rod"), [
 		" AB",
@@ -322,7 +322,7 @@ ServerEvents.recipes((event) => {
 	event.smithing(EIO("yeta_wrench"), tieredItems.ch2.circuit, FB("framed_wrench"), EIO("grains_of_infinity"))
 	
 	//soul vial
-	customRecipes.ae2.transform.fluid(event, EIO("empty_soul_vial"), [MC("glass_bottle")], F("witch_water"))
+	event.recipes.ae2.transform(EIO("empty_soul_vial"), [MC("glass_bottle")]).circumstance({ type: 'fluid', tag: F('witch_water') })
 	
 	//coordinate selector
 	event.shaped(EIO("coordinate_selector"), ["ABA", " CA", "  A"], {
