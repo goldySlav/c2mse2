@@ -869,4 +869,51 @@ ServerEvents.recipes((event) => {
 		A: PRE("dm_sword"),
 		B: PRE("rm_sword_part"),
 	})
+
+    removeRecipeByOutput(event, [
+		PREXP("basic_alchemical_book"),
+		PREXP("advanced_alchemical_book"),
+		PREXP("master_alchemical_book"),
+		PREXP("arcane_alchemical_book"),
+    ])
+	event.shaped(PREXP('basic_alchemical_book'), [
+		'ADA',
+		'BCB',
+		'ADA'
+	], {
+		A: PRE('klein_star_drei'),
+		B: MC("ender_pearl"),
+		C: MC("book"),
+		D: KJ("kinetic_mechanism"),
+	})
+	event.shaped(PREXP('advanced_alchemical_book'), [
+		'ADA',
+		'BCB',
+		'ADA'
+	], {
+		A: PRE('klein_star_omega'),
+		B: M("teleportation_core"),
+		C: PREXP('basic_alchemical_book'),
+		D: CR("precision_mechanism"),
+	})
+	event.shaped(PREXP('master_alchemical_book'), [
+		'ADA',
+		'BCB',
+		'ADA'
+	], {
+		A: PREXP('magnum_star_drei'),
+		B: KJ("the_ultimate_pearl"),
+		C: PREXP('advanced_alchemical_book'),
+		D: KJ("integrated_mechanism"),
+	})
+	event.shaped(PREXP('arcane_alchemical_book'), [
+		'ADA',
+		'BCB',
+		'ADA'
+	], {
+		A: PREXP('magnum_star_omega'),
+		B: singularityId("the_ultimate_pearl"),
+		C: PREXP('master_alchemical_book'),
+		D: KJ("electric_mechanism"),
+	})
 })
