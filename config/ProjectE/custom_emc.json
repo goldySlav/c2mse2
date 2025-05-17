@@ -33,6 +33,10 @@
       "emc": 0
     },
     {
+      "item": "ae2:certus_quartz_crystal",
+      "emc": 256
+    },
+    {
       "item": "minecraft:flint",
       "emc": 0
     },
