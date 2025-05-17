@@ -278,11 +278,7 @@
 				"2DCAABDF526C9332"
 				"7EFA012B9C2A157C"
 			]
-			description: [
-				"Pressurize some of our &6Liqiud Redstone&r with &6Nether Quartz&r in a compressor."
-				""
-				"TIP: It has more modes. Try using your wrench."
-			]
+			description: ["Mix a &6Quartz Crystal&r with some &6Liqiud Redstone&r in a basin."]
 			icon: "create:polished_rose_quartz"
 			id: "6A440498F22DB5B5"
 			subtitle: "Made with love and pressure"
