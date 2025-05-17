@@ -89,8 +89,9 @@ ServerEvents.recipes((event) => {
 	removeRecipeByID(event, [
 		P("energizing/charged_snowball"),
 	])
-	event.recipes.powah.energizing([MC("snowball")], P('charged_snowball'), 200000)
+	event.recipes.ae2.charger(P('charged_snowball'), MC("snowball"))
 	customRecipes.create.charge(event, P('charged_snowball'), MC("snowball"), 100000)
+	event.recipes.powah.energizing([MC("snowball")], P('charged_snowball'), 200000)
 	
 
 
