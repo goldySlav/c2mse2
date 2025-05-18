@@ -594,8 +594,11 @@ ServerEvents.recipes((event) => {
 	
 	//ae2-type seeds
 	event.stonecutting(Item.of(KJ('certus_seed'), 2), F('#gems/certus_quartz'))
+	event.recipes.mekanism.sawing(F('#gems/certus_quartz'), Item.of(KJ('certus_seed'), 2))
 	event.stonecutting(Item.of(KJ('quartz_seed'), 2), F('#gems/quartz'))
+	event.recipes.mekanism.sawing(F('#gems/quartz'), Item.of(KJ('quartz_seed'), 2))
 	event.stonecutting(Item.of(KJ('fluix_seed'), 2), F('#gems/fluix'))
+	event.recipes.mekanism.sawing(F('#gems/fluix'), Item.of(KJ('fluix_seed'), 2))
 	
 	//grow ae2-type seeds
 	let grow = (from, via, to) => {
