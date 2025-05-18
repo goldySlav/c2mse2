@@ -2,8 +2,6 @@
 
 // Mod shortcuts
 const MOD = (domain, id, x) => (x ? `${x}x ` : "") + (id ? (id.startsWith('#') ? '#' : "") : "") + domain + (id ? ":" : "") + (id ? id.replace('#', '') : "")
-const AA = (id, x) => MOD("ad_astra", id, x)
-const AA_GA = (id, x) => MOD("ad_astra_giselle_addon", id, x)
 const AE2 = (id, x) => MOD("ae2", id, x)
 const AE2_R = (id, x) => MOD("merequester", id, x)
 const AE2_M = (id, x) => MOD("appmek", id, x)
@@ -104,6 +102,7 @@ const IR = (id, x) => MOD("industrialrenewal", id, x)
 const HNN = (id, x) => MOD("hostilenetworks", id, x)
 const DD = (id, x) => MOD("deeperdarker", id, x)
 const BG = (id, x) => MOD("buildinggadgets2", id, x)
+const CH = (id, x) => MOD("cosmos", id, x)
 
 
 const processingTimesDefault = {
@@ -269,21 +268,6 @@ const customRecipes = {
 				type: CR_EI("disenchanting"),
 				ingredients: toRecipeJsonItem(inputItems),
 				results: outputItemsFluidsFormattedToJson,
-			})
-		},
-	},
-	ad_astra: {
-		compressing: function (e, output, input, energy, ticks) {
-			ticks = ticks ? ticks : 20
-			energy = energy ? energy : 20
-			e.custom({
-				type: AA("compressing"),
-			    cookingtime: ticks,
-			    energy: energy,
-				ingredient: toRecipeJsonItem(input),
-				result: {
-					id: output
-				}
 			})
 		},
 	},
@@ -683,15 +667,6 @@ const woodTypes = {
 			"bamboo",
 		],
 	},
-	ad_astra: {
-		log: [
-			"glacian",
-		],
-		stem: [
-			"aeronos",
-			"strophar",
-		],
-	},
 	witherstormmod: {
 		log: [
 			"tainted",
@@ -861,33 +836,14 @@ const souledEggedEntities = [
 	MC("squid"), MC("stray"), MC("strider"), MC("tadpole"), MC("trader_llama"), MC("tropical_fish"), 
 	MC("turtle"), MC("vex"), MC("villager"), MC("vindicator"), MC("wandering_trader"), MC("witch"), MC("wolf"), 
 	MC("wither_skeleton"), MC("zoglin"), MC("zombie"), MC("zombie_horse"), MC("zombie_villager"), 
-	MC("zombified_piglin"), Q("forgotten"), Q("foxhound"), Q("shiba"), AA("corrupted_lunarian"),
-	AA("star_crawler"), AA("martian_raptor"), AA("pygro"),
-	AA("zombified_pygro"), AA("pygro_brute"), AA("mogler"), AA("zombified_mogler"), AA("sulfur_creeper"),
-	AA("glacian_ram"), ART("mimic"), WSM("sickened_bee"), WSM("sickened_cat"), 
-	WSM("sickened_chicken"), WSM("sickened_cow"), WSM("sickened_creeper"), WSM("sickened_iron_golem"), 
-	WSM("sickened_mushroom_cow"), WSM("sickened_parrot"), WSM("sickened_phantom"), WSM("sickened_pig"), 
-	WSM("sickened_pillager"), WSM("sickened_skeleton"), WSM("sickened_snow_golem"), WSM("sickened_spider"), 
-	WSM("sickened_villager"), WSM("sickened_vindicator"), WSM("sickened_wolf"), WSM("sickened_zombie"), 
-	WSM("tentacle"), WSM("withered_symbiont"), TCT("sky_slime"), TCT("ender_slime"), DD("angler_fish"),
-	DD("sculk_centipede"), DD("sculk_leech"), DD("sculk_snapper"), DD("shattered"), DD("shriek_worm"),
-	DD("sludge"), DD("stalker"), 
-	//AM("grizzly_bear"), AM("roadrunner"), AM("bone_serpent"),
-	//AM("gazelle"), AM("crocodile"), AM("fly"), AM("hummingbird"), AM("orca"), AM("sunbird"), AM("gorilla"),
-	//AM("crimson_mosquito"), AM("rattlesnake"), AM("endergrade"), AM("hammerhead_shark"), AM("lobster"),
-	//AM("komodo_dragon"), AM("capuchin_monkey"), AM("centipede"), AM("warped_toad"), AM("moose"), AM("mimicube"),
-	//AM("raccoon"), AM("blobfish"), AM("seal"), AM("cockroach"), AM("shoebill"), AM("elephant"),
-	//AM("soul_vulture"), AM("snow_leopard"), AM("spectre"), AM("crow"), AM("alligator_snapping_turtle"), 
-	//AM("mungus"), AM("mantis_shrimp"), AM("guster"), AM("warped_mosco"), AM("straddler"), AM("stradpole"),
-	//AM("emu"), AM("platypus"), AM("dropbear"), AM("tasmanian_devil"), AM("kangaroo"), AM("cachalot_whale"), 
-	//AM("leafcutter_ant"), AM("enderiophage"), AM("bald_eagle"), AM("tiger"), AM("tarantula_hawk"), AM("void_worm"), 
-	//AM("frilled_shark"), AM("mimic_octopus"), AM("seagull"), AM("froststalker"), AM("tusklin"), AM("laviathan"), 
-	//AM("cosmaw"), AM("toucan"), AM("maned_wolf"), AM("anaconda"), AM("anteater"), AM("rocky_roller"),
-	//AM("flutter"), AM("gelada_monkey"), AM("jerboa"), AM("terrapin"), AM("comb_jelly"), AM("cosmic_cod"),
-	//AM("bunfungus"), AM("bison"), AM("giant_squid"), AM("devils_hole_pupfish"), AM("catfish"), AM("flying_fish"), 
-	//AM("skelewag"), AM("rain_frog"), AM("potoo"), AM("mudskipper"), AM("rhinoceros"), AM("sugar_glider"), 
-	//AM("farseer"), AM("skreecher"), AM("underminer"), AM("murmur"), AM("skunk"), AM("banana_slug"), 
-	//AM("blue_jay"), AM("caiman"), AM("triops"), 
+	MC("zombified_piglin"), Q("forgotten"), Q("foxhound"), Q("shiba"), ART("mimic"), WSM("sickened_bee"),
+	WSM("sickened_cat"), WSM("sickened_chicken"), WSM("sickened_cow"), WSM("sickened_creeper"),
+	WSM("sickened_iron_golem"), WSM("sickened_mushroom_cow"), WSM("sickened_parrot"), WSM("sickened_phantom"),
+	WSM("sickened_pig"), WSM("sickened_pillager"), WSM("sickened_skeleton"), WSM("sickened_snow_golem"),
+	WSM("sickened_spider"), WSM("sickened_villager"), WSM("sickened_vindicator"), WSM("sickened_wolf"),
+	WSM("sickened_zombie"), WSM("tentacle"), WSM("withered_symbiont"), TCT("sky_slime"), TCT("ender_slime"),
+	DD("angler_fish"),DD("sculk_centipede"), DD("sculk_leech"), DD("sculk_snapper"), DD("shattered"),
+	DD("shriek_worm"), DD("sludge"), DD("stalker"),
 ]
 	
 function shuffleArray(array) {

@@ -107,5 +107,9 @@ ClientEvents.lang('en_us', event => {
 	event.renameBlock('powah:nitro_crystal_block', "Overcharged Fluix Crystal Block")
 	event.renameItem('powah:steel_energized', "Energized Alloy Ingot")
 	event.renameBlock('powah:energized_steel_block', "Block of Energized Alloy")
+	
+	event.renameItem('cosmos:steel_space_nodule', "Tier 1 Nodule")
+	event.renameItem('cosmos:titanium_space_nodule', "Tier 2 Nodule")
+	event.renameItem('cosmos:nickel_space_nodule', "Tier 3 Nodule")
 });
 

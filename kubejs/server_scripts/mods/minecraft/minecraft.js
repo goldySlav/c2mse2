@@ -94,8 +94,8 @@ ServerEvents.recipes((event) => {
     })
 
     //ice
-    event.shapeless(MC("ice"), [Item.of(AA("ice_shard"), 4)]).id(KJ(`${MC()}/ice_from_shard`))
-    event.shapeless(Item.of(AA("ice_shard"), 4), [MC("ice")]).id(KJ(`${MC()}/shard_from_ice`))
+    event.shapeless(MC("ice"), [Item.of(KJ("ice_shard"), 4)]).id(KJ(`${MC()}/ice_from_shard`))
+    event.shapeless(Item.of(KJ("ice_shard"), 4), [MC("ice")]).id(KJ(`${MC()}/shard_from_ice`))
 
     event.recipes.create.deploying(
         MC('farmland'), [ MC("dirt"), [
@@ -120,7 +120,7 @@ ServerEvents.recipes((event) => {
 
     //water mixing
 	event.recipes.create.mixing([Fluid.of(MC("water"), 1000)], [MC("ice")])
-	event.recipes.create.mixing([Fluid.of(MC("water"), 250)], [AA("ice_shard")])
+	event.recipes.create.mixing([Fluid.of(MC("water"), 250)], [KJ("ice_shard")])
 	event.recipes.create.mixing([Fluid.of(MC("water"), 500)], [MC("snow_block")])
 	event.recipes.create.mixing([Fluid.of(MC("water"), 125)], [MC("snow")])
 	event.recipes.create.mixing([Fluid.of(MC("water"), 125)], [MC("snowball")])

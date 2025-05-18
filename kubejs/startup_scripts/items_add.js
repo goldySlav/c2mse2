@@ -252,6 +252,21 @@ StartupEvents.registry('item', event => {
 	//Crystal Matrix Ingot
 	event.create('crystal_matrix_ingot').displayName('Crystal Matrix Ingot').rarity("uncommon")
 	
+	//Ice Shard
+	event.create('ice_shard').displayName('Ice Shard')
+	
+	//Nodule Parts
+	event.create('engine_frame').displayName('Engine Frame')
+	event.create('engine_fan').displayName('Engine Fan')
+	event.create('nodule_fin').displayName('Nodule Fin')
+	event.create('nodule_nose_cone').displayName('Nodule Nose Cone')
+	event.create('steel_engine').displayName('Steel Engine')
+	event.create('steel_tank').displayName('Steel Tank')
+	event.create('osmium_engine').displayName('Osmium Engine')
+	event.create('osmium_tank').displayName('Osmium Tank')
+	event.create('naquadah_engine').displayName('Naquadah Engine')
+	event.create('naquadah_tank').displayName('Naquadah Tank')
+	
 	//Custom Opinium Cores
 	event.create('miniutilities:wooden_opinium_core').displayName('Wooden Opinium Core')
 	event.create('miniutilities:leather_opinium_core').displayName('Leather Opinium Core')
