@@ -213,18 +213,11 @@
 			icon: "create:copper_nugget"
 			id: "4E4478825579AB53"
 			subtitle: "Yea you already did this"
-			tasks: [
-				{
-					id: "0744B5C74ADA9CB0"
-					item: "create:copper_nugget"
-					type: "item"
-				}
-				{
-					id: "1EF6C91A8773C60B"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "1EF6C91A8773C60B"
+				title: "Automated"
+				type: "checkmark"
+			}]
 			x: 3.5d
 			y: -2.5d
 		}
@@ -456,18 +449,12 @@
 			icon: "minecraft:gravel"
 			id: "0C9B71DD7A9DEEB7"
 			subtitle: "Gravelity?"
-			tasks: [
-				{
-					id: "0E3686EB1E75F7A0"
-					item: "minecraft:gravel"
-					type: "item"
-				}
-				{
-					id: "4AE2A1E1C69E64E6"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "4AE2A1E1C69E64E6"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Gravel"
 			x: 0.5d
 			y: -4.0d
 		}
@@ -496,18 +483,12 @@
 			icon: "kubejs:crushed_granite"
 			id: "44C3247A6B4D844E"
 			subtitle: "More gravity?"
-			tasks: [
-				{
-					id: "0EA4E236673E0666"
-					item: "kubejs:crushed_granite"
-					type: "item"
-				}
-				{
-					id: "167BB11576B55BD7"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "167BB11576B55BD7"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Crushed Granite"
 			x: 3.5d
 			y: -4.0d
 		}
@@ -517,18 +498,12 @@
 			icon: "minecraft:cobblestone"
 			id: "2F7B52A729167B69"
 			subtitle: "Cobble for life"
-			tasks: [
-				{
-					id: "78F6AE476836236A"
-					item: "minecraft:cobblestone"
-					type: "item"
-				}
-				{
-					id: "5EA4354D15BA3F9D"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "5EA4354D15BA3F9D"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Cobblestone"
 			x: 0.5d
 			y: -5.5d
 		}
@@ -559,18 +534,12 @@
 			icon: "minecraft:granite"
 			id: "47B0F53E35B9511F"
 			subtitle: "Ugly"
-			tasks: [
-				{
-					id: "6BA2B6F08392B380"
-					item: "minecraft:granite"
-					type: "item"
-				}
-				{
-					id: "474D9A82DECBF58F"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "474D9A82DECBF58F"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Granite"
 			x: 3.5d
 			y: -5.5d
 		}

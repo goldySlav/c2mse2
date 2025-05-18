@@ -39,18 +39,12 @@
 			icon: "minecraft:water_bucket"
 			id: "71AA119CC2E59E5C"
 			size: 1.0d
-			tasks: [
-				{
-					id: "0EDA4F66FC879466"
-					item: "minecraft:water_bucket"
-					type: "item"
-				}
-				{
-					id: "3DEC97ED94EB29CA"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "3DEC97ED94EB29CA"
+				title: "Done"
+				type: "checkmark"
+			}]
+			title: "Produce \"Water\""
 			x: -1.0d
 			y: 1.5d
 		}
@@ -59,18 +53,12 @@
 			icon: "mekanism:brine_bucket"
 			id: "29F8C84780757CC1"
 			size: 1.0d
-			tasks: [
-				{
-					id: "46371AE2F28C4D83"
-					item: "mekanism:brine_bucket"
-					type: "item"
-				}
-				{
-					id: "02ABA88DBCE8553F"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "02ABA88DBCE8553F"
+				title: "Done"
+				type: "checkmark"
+			}]
+			title: "Produce \"Brine\""
 			x: 3.0d
 			y: 1.5d
 		}

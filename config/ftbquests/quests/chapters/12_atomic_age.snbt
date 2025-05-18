@@ -346,18 +346,11 @@
 			icon: "minecraft:water_bucket"
 			id: "13C8E26649A1A4A8"
 			size: 1.0d
-			tasks: [
-				{
-					id: "54346952776E4BE6"
-					item: "minecraft:water_bucket"
-					type: "item"
-				}
-				{
-					id: "2EB30C3EEC8FF325"
-					title: "Done"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "2EB30C3EEC8FF325"
+				title: "Done"
+				type: "checkmark"
+			}]
 			title: "Produce \"Water\""
 			x: 4.5d
 			y: 6.0d
@@ -370,7 +363,14 @@
 			tasks: [
 				{
 					id: "62D4C6F41EFB0E80"
-					item: "minecraft:coal"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:coals"
+						}
+					}
+					title: "Any Coal"
 					type: "item"
 				}
 				{

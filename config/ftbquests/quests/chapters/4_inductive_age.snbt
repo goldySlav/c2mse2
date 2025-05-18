@@ -262,18 +262,12 @@
 			icon: "minecraft:gravel"
 			id: "4A1625B6EFBE3B31"
 			subtitle: "I got bored of Gravel and Gravity puns"
-			tasks: [
-				{
-					id: "373753A40CE63C74"
-					item: "minecraft:gravel"
-					type: "item"
-				}
-				{
-					id: "6B5B8CB183A07F3B"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "6B5B8CB183A07F3B"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Gravel"
 			x: 1.0d
 			y: -4.0d
 		}
@@ -283,18 +277,12 @@
 			icon: "minecraft:cobblestone"
 			id: "09DC92D492782F92"
 			subtitle: "Cobble wobble"
-			tasks: [
-				{
-					id: "15332C34C0B40681"
-					item: "minecraft:cobblestone"
-					type: "item"
-				}
-				{
-					id: "7DBAC6DD0DCD279E"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "7DBAC6DD0DCD279E"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Cobblestone"
 			x: 1.0d
 			y: -17.0d
 		}
@@ -744,58 +732,11 @@
 			icon: "minecraft:oak_planks"
 			id: "1EB45C5AAABC5DA4"
 			subtitle: "Worked on wood"
-			tasks: [
-				{
-					id: "6B29B996C713F8B1"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "minecraft:oak_planks"
-								}
-								{
-									Count: 1b
-									id: "minecraft:spruce_planks"
-								}
-								{
-									Count: 1b
-									id: "minecraft:birch_planks"
-								}
-								{
-									Count: 1b
-									id: "minecraft:jungle_planks"
-								}
-								{
-									Count: 1b
-									id: "minecraft:acacia_planks"
-								}
-								{
-									Count: 1b
-									id: "minecraft:dark_oak_planks"
-								}
-								{
-									Count: 1b
-									id: "minecraft:mangrove_planks"
-								}
-								{
-									Count: 1b
-									id: "minecraft:cherry_planks"
-								}
-							]
-						}
-					}
-					title: "Any Planks"
-					type: "item"
-				}
-				{
-					id: "113A4D0B974297B6"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "113A4D0B974297B6"
+				title: "Automated"
+				type: "checkmark"
+			}]
 			title: "Any Planks"
 			x: -2.0d
 			y: -15.5d
@@ -806,58 +747,12 @@
 			icon: "minecraft:oak_log"
 			id: "3249DB80C35AA038"
 			subtitle: "No longer wood?"
-			tasks: [
-				{
-					id: "3178CEB2076D8C75"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "minecraft:oak_log"
-								}
-								{
-									Count: 1b
-									id: "minecraft:spruce_log"
-								}
-								{
-									Count: 1b
-									id: "minecraft:birch_log"
-								}
-								{
-									Count: 1b
-									id: "minecraft:jungle_log"
-								}
-								{
-									Count: 1b
-									id: "minecraft:acacia_log"
-								}
-								{
-									Count: 1b
-									id: "minecraft:dark_oak_log"
-								}
-								{
-									Count: 1b
-									id: "minecraft:mangrove_log"
-								}
-								{
-									Count: 1b
-									id: "minecraft:cherry_log"
-								}
-							]
-						}
-					}
-					title: "Any Log"
-					type: "item"
-				}
-				{
-					id: "21C31BC09F1713CB"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "21C31BC09F1713CB"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Any Log"
 			x: -2.0d
 			y: -17.0d
 		}

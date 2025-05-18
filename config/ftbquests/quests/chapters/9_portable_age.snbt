@@ -213,11 +213,18 @@
 			dependencies: ["750A4EAD3721D89A"]
 			icon: "minecraft:gold_ingot"
 			id: "5EAC61A48F345634"
-			tasks: [{
-				id: "00626895E6EFC4FD"
-				title: "Automated"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "506EDE0F2EC880A8"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "286691C2C67E9DCC"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			title: "Gold Ingot"
 			x: -2.5d
 			y: 1.5d
