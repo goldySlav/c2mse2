@@ -1,7 +1,6 @@
 {
-	"ctm": {
-		"ctm_version": 1,
-		"type": "ctm",
-		"textures": [ "kubejs:block/portable_casing_ctm" ]
+	"fusion": {
+		"type": "connecting",
+		"layout": "full"
 	}
 }

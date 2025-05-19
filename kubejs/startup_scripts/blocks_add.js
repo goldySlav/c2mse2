@@ -112,12 +112,8 @@ StartupEvents.registry('block', event => {
 		.requiresTool(false)
         .tagBlock("mineable/pickaxe")
 		.soundType('lantern')
-		.texture('up', `kubejs:block/inductive_casing_top`)
-		.texture('down', `kubejs:block/inductive_casing_top`)
-		.texture('north', `kubejs:block/inductive_casing`)
-		.texture('south', `kubejs:block/inductive_casing`)
-		.texture('east', `kubejs:block/inductive_casing`)
-		.texture('west', `kubejs:block/inductive_casing`)
+		.textureAll(`kubejs:block/inductive_casing`)
+		.model(`kubejs:block/inductive_casing`)
 
 	event.create(`fluix_casing`)
 		.displayName(`Fluix Casing`)
@@ -127,6 +123,7 @@ StartupEvents.registry('block', event => {
         .tagBlock("mineable/pickaxe")
 		.soundType('lantern')
 		.textureAll(`kubejs:block/fluix_casing`)
+		.model(`kubejs:block/fluix_casing`)
 
 	event.create(`abstruse_casing`)
 		.displayName(`Abstruse Casing`)
@@ -135,12 +132,8 @@ StartupEvents.registry('block', event => {
 		.requiresTool(false)
         .tagBlock("mineable/pickaxe")
 		.soundType('lantern')
-		.texture('up', `kubejs:block/abstruse_casing_top`)
-		.texture('down', `kubejs:block/abstruse_casing_bottom`)
-		.texture('north', `kubejs:block/abstruse_casing`)
-		.texture('south', `kubejs:block/abstruse_casing`)
-		.texture('east', `kubejs:block/abstruse_casing`)
-		.texture('west', `kubejs:block/abstruse_casing`)
+		.textureAll('kubejs:block/abstruse_casing')
+		.model('kubejs:block/abstruse_casing')
 
 	event.create(`portable_casing`)
 		.displayName(`Portable Casing`)
@@ -150,6 +143,7 @@ StartupEvents.registry('block', event => {
         .tagBlock("mineable/pickaxe")
 		.soundType('lantern')
 		.textureAll(`kubejs:block/portable_casing`)
+		.model(`kubejs:block/portable_casing`)
 
 	event.create(`integrated_casing`)
 		.displayName(`Integrated Casing`)
@@ -158,7 +152,8 @@ StartupEvents.registry('block', event => {
 		.requiresTool(false)
         .tagBlock("mineable/pickaxe")
 		.soundType('lantern')
-		.textureAll(`kubejs:block/integrated_casing`)
+		.textureAll('kubejs:block/integrated_casing')
+		.model('kubejs:block/integrated_casing')
 
 	event.create(`embedded_casing`)
 		.displayName(`Embedded Casing`)
@@ -168,6 +163,7 @@ StartupEvents.registry('block', event => {
         .tagBlock("mineable/pickaxe")
 		.soundType('lantern')
 		.textureAll(`kubejs:block/embedded_casing`)
+		.model(`kubejs:block/embedded_casing`)
 		
 	event.create("electric_casing")
 		.model(`kubejs:block/electric_casing`)
