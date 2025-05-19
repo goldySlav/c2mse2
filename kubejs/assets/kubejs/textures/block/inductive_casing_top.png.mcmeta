@@ -1,7 +1,6 @@
 {
-	"ctm": {
-		"ctm_version": 1,
-		"type": "ctm",
-		"textures": [ "kubejs:block/inductive_casing_top_ctm" ]
+	"fusion": {
+		"type": "connecting",
+		"layout": "pieced"
 	}
 }

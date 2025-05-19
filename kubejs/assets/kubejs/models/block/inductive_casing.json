@@ -1,0 +1,27 @@
+{
+  "loader": "fusion:model",
+  "type": "fusion:connecting",
+  "connections": [
+    {
+      "type": "and",
+      "predicates": [
+        {
+          "type": "is_same_block"
+        },
+        {
+          "type": "is_face_visible"
+        }
+      ]
+    }
+  ],
+  "parent": "block/cube_all",
+  "textures": {
+    "up": "kubejs:block/inductive_casing_top",
+    "down": "kubejs:block/inductive_casing_top",
+    "north": "kubejs:block/inductive_casing",
+    "south": "kubejs:block/inductive_casing",
+    "east": "kubejs:block/inductive_casing",
+    "west": "kubejs:block/inductive_casing",
+    "particle": "kubejs:block/inductive_casing"
+  }
+}
