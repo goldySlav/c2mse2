@@ -213,7 +213,7 @@
 				"7DB66F1A0165564A"
 				"6E6E24468D9F6CF1"
 			]
-			description: ["Bed is important, but seems you have insomnia after the horrible rocket crash you survived."]
+			description: ["Bed allows you to set a respawn point, but seems that air in the Space is so Thin that you start to choke in your sleep."]
 			id: "797AD3EEB528F028"
 			rewards: [{
 				id: "4DC8576EA06F2EDC"

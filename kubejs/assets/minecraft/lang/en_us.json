@@ -77,6 +77,8 @@
   "enchantment.level.17":"\u00a7f17",
   "enchantment.level.18":"\u00a7f18",
   "enchantment.level.19":"\u00a7f19",
-  "enchantment.level.20":"\u00a7f20"
+  "enchantment.level.20":"\u00a7f20",
+  "advancements.adventure.sleep_in_bed.title": "Insomnia",
+  "advancements.adventure.sleep_in_bed.description": "You can lay on a Bed to change your respawn point, but you can't sleep well in Space"
 }
 
