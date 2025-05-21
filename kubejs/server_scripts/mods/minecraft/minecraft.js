@@ -33,14 +33,14 @@ ServerEvents.recipes((event) => {
     //wet sponge
     event.shapeless(MC('wet_sponge'), [MC('sponge'), MC('water_bucket')])
     event.recipes.create.filling(MC('wet_sponge'), [MC('sponge'), Fluid.of(MC('water'), 1000)])
-	customRecipes.ae2.transform.fluid(event, MC('wet_sponge'), [MC('sponge')])
+	event.recipes.ae2.transform(MC("wet_sponge"), [MC("sponge")]).circumstance({ type: 'fluid', tag: F('water') })
 	
 	//necrotic bone haunting
 	event.recipes.create.haunting(MC('wither_rose'), MC('poppy'))
 	
 	//concrete
 	colours.forEach(color => {
-		customRecipes.ae2.transform.fluid(event, MC(`${color}_concrete`), [MC(`${color}_concrete_powder`)])
+		event.recipes.ae2.transform(MC(`${color}_concrete`), [MC(`${color}_concrete_powder`)]).circumstance({ type: 'fluid', tag: F('water') })
 	})
 
     //flint
@@ -94,8 +94,8 @@ ServerEvents.recipes((event) => {
     })
 
     //ice
-    event.shapeless(MC("ice"), [Item.of(AA("ice_shard"), 4)]).id(KJ(`${MC()}/ice_from_shard`))
-    event.shapeless(Item.of(AA("ice_shard"), 4), [MC("ice")]).id(KJ(`${MC()}/shard_from_ice`))
+    event.shapeless(MC("ice"), [Item.of(KJ("ice_shard"), 4)]).id(KJ(`${MC()}/ice_from_shard`))
+    event.shapeless(Item.of(KJ("ice_shard"), 4), [MC("ice")]).id(KJ(`${MC()}/shard_from_ice`))
 
     event.recipes.create.deploying(
         MC('farmland'), [ MC("dirt"), [
@@ -120,7 +120,7 @@ ServerEvents.recipes((event) => {
 
     //water mixing
 	event.recipes.create.mixing([Fluid.of(MC("water"), 1000)], [MC("ice")])
-	event.recipes.create.mixing([Fluid.of(MC("water"), 250)], [AA("ice_shard")])
+	event.recipes.create.mixing([Fluid.of(MC("water"), 250)], [KJ("ice_shard")])
 	event.recipes.create.mixing([Fluid.of(MC("water"), 500)], [MC("snow_block")])
 	event.recipes.create.mixing([Fluid.of(MC("water"), 125)], [MC("snow")])
 	event.recipes.create.mixing([Fluid.of(MC("water"), 125)], [MC("snowball")])

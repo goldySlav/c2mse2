@@ -33,5 +33,11 @@
             "item": "create:experience_nugget",
             "count": 16
         }
+    ],
+    "data_per_kill": [
+        1,
+        2,
+        3,
+        4
     ]
 }

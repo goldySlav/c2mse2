@@ -1504,7 +1504,7 @@ ServerEvents.recipes((event) => {
 		A: IF("machine_frame_advanced"),
 		B: CP('gold_2'),
 		C: LB("laser_source_block"),
-		D: MC('sculk_catalyst'),
+		D: DD('soul_dust'),
 		E: P('dielectric_casing'),
 		F: F('#gears/diamond'),
 		G: IF('plastic'),

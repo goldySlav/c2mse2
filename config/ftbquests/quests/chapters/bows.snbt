@@ -44,7 +44,6 @@
 				}
 				type: "item"
 			}]
-			title: "Poor: Tinker's Bow"
 			x: 0.0d
 			y: 1.5d
 		}
@@ -72,8 +71,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 3.0d
+			x: 1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["792F545280B18F9A"]
@@ -106,7 +105,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6865AC259351CD42"]
@@ -139,10 +138,10 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 7.5d
+			y: 6.0d
 		}
 		{
-			dependencies: ["09BD0715E880C4EE"]
+			dependencies: ["70A44A329A04D65F"]
 			disable_toast: true
 			id: "792F545280B18F9A"
 			size: 1.0d
@@ -172,7 +171,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 4.5d
+			y: 3.0d
 		}
 	]
 	title: "Bows"

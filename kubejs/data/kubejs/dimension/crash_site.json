@@ -1,12 +1,18 @@
 {
   "type": "kubejs:crash_site",
   "generator": {
-    "type": "minecraft:noise",
-    "biome_source": {
-      "type": "minecraft:fixed",
-      "biome": "minecraft:ocean"
-    },
-    "settings": "ad_astra:orbit",
-	"structures": []
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:ocean",
+      "lakes": false,
+      "features": false,
+      "layers": [
+        {
+          "block": "minecraft:air",
+          "height": 250
+        }
+      ],
+      "structure_overrides": ""
+    }
   }
 }

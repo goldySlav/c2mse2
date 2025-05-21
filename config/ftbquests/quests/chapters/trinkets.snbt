@@ -852,36 +852,6 @@
 			y: 7.5d
 		}
 		{
-			disable_toast: true
-			id: "4A82DAF9072399CF"
-			tasks: [{
-				id: "062B034092B18C3F"
-				item: {
-					Count: 1
-					id: "ad_astra_giselle_addon:oxygen_can"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 1.5d
-			y: 7.5d
-		}
-		{
-			disable_toast: true
-			id: "4C2A661E19668873"
-			tasks: [{
-				id: "279BA419FCCD6F57"
-				item: {
-					Count: 1
-					id: "ad_astra_giselle_addon:netherite_oxygen_can"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 3.0d
-			y: 7.5d
-		}
-		{
 			description: [
 				"It is the enhanced version of the &6Dislocator&r. "
 				"Can store up to 100 different waypoints, which can additionally be used &6across dimensions&r. "
@@ -899,7 +869,7 @@
 				}
 				type: "item"
 			}]
-			x: -4.5d
+			x: -7.5d
 			y: 9.0d
 		}
 		{
@@ -910,8 +880,8 @@
 				item: "draconicevolution:advanced_magnet"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 9.0d
+			x: 3.0d
+			y: 7.5d
 		}
 		{
 			description: [
@@ -963,7 +933,7 @@
 				type: "item"
 			}]
 			title: "&5Wyvern Capacitor"
-			x: -3.0d
+			x: -6.0d
 			y: 9.0d
 		}
 		{
@@ -1016,7 +986,7 @@
 				type: "item"
 			}]
 			title: "&6Draconic Capacitor"
-			x: -1.5d
+			x: -4.5d
 			y: 9.0d
 		}
 		{
@@ -1069,7 +1039,7 @@
 				type: "item"
 			}]
 			title: "&0Chaotic Capacitor"
-			x: 0.0d
+			x: -3.0d
 			y: 9.0d
 		}
 		{
@@ -1080,8 +1050,8 @@
 				item: "draconicevolution:magnet"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 9.0d
+			x: 1.5d
+			y: 7.5d
 		}
 		{
 			description: [
@@ -1117,7 +1087,7 @@
 				type: "item"
 			}]
 			title: "&5Wyvern Chestpiece"
-			x: 1.5d
+			x: -1.5d
 			y: 9.0d
 		}
 		{
@@ -1154,7 +1124,7 @@
 				type: "item"
 			}]
 			title: "&6Draconic Chestpiece"
-			x: 3.0d
+			x: 0.0d
 			y: 9.0d
 		}
 		{
@@ -1191,8 +1161,8 @@
 				type: "item"
 			}]
 			title: "&0Chaotic Chestpiece"
-			x: 3.0d
-			y: 10.5d
+			x: 1.5d
+			y: 9.0d
 		}
 	]
 	title: "Trinkets"

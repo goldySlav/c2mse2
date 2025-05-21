@@ -1,0 +1,27 @@
+{
+  "loader": "fusion:model",
+  "type": "fusion:connecting",
+  "connections": [
+    {
+      "type": "and",
+      "predicates": [
+        {
+          "type": "is_same_block"
+        },
+        {
+          "type": "is_face_visible"
+        }
+      ]
+    }
+  ],
+  "parent": "block/cube_all",
+  "textures": {
+    "up": "kubejs:block/abstruse_casing_bottom",
+    "down": "kubejs:block/abstruse_casing_bottom",
+    "north": "kubejs:block/abstruse_casing",
+    "south": "kubejs:block/abstruse_casing",
+    "east": "kubejs:block/abstruse_casing",
+    "west": "kubejs:block/abstruse_casing",
+    "particle": "kubejs:block/abstruse_casing"
+  }
+}

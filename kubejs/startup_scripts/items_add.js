@@ -252,6 +252,21 @@ StartupEvents.registry('item', event => {
 	//Crystal Matrix Ingot
 	event.create('crystal_matrix_ingot').displayName('Crystal Matrix Ingot').rarity("uncommon")
 	
+	//Ice Shard
+	event.create('ice_shard').displayName('Ice Shard')
+	
+	//Nodule Parts
+	event.create('engine_frame').displayName('Engine Frame')
+	event.create('engine_fan').displayName('Engine Fan')
+	event.create('nodule_fin').displayName('Nodule Fin')
+	event.create('nodule_nose_cone').displayName('Nodule Nose Cone')
+	event.create('steel_engine').displayName('Steel Engine')
+	event.create('steel_tank').displayName('Steel Tank')
+	event.create('osmium_engine').displayName('Osmium Engine')
+	event.create('osmium_tank').displayName('Osmium Tank')
+	event.create('naquadah_engine').displayName('Naquadah Engine')
+	event.create('naquadah_tank').displayName('Naquadah Tank')
+	
 	//Custom Opinium Cores
 	event.create('miniutilities:wooden_opinium_core').displayName('Wooden Opinium Core')
 	event.create('miniutilities:leather_opinium_core').displayName('Leather Opinium Core')
@@ -264,4 +279,22 @@ StartupEvents.registry('item', event => {
 	event.create('miniutilities:flux_star_opinium_core').displayName('Flux Star Opinium Core')
 	event.create('miniutilities:dark_matter_opinium_core').displayName('Dark Matter Opinium Core')
 	event.create('miniutilities:red_matter_opinium_core').displayName('Red Matter Opinium Core')
+	
+	//Tool Parts
+	event.create('miniutilities:unstable_sword_part').displayName('Unstable Sword Part').rarity("epic").glow(true)
+	event.create('miniutilities:kikoku_sword_part').displayName('Kikoku Sword Part').rarity("epic").glow(true)
+	event.create('projecte:dm_sword_part').displayName('Dark Matter Sword Part').rarity("epic").glow(true)
+	event.create('projecte:rm_sword_part').displayName('Red Matter Sword Part').rarity("epic").glow(true)
+	event.create('miniutilities:unstable_pickaxe_part').displayName('Unstable Pickaxe Part').rarity("epic").glow(true)
+	event.create('projecte:dm_pickaxe_part').displayName('Dark Matter Pickaxe Part').rarity("epic").glow(true)
+	event.create('projecte:rm_pickaxe_part').displayName('Red Matter Pickaxe Part').rarity("epic").glow(true)
+	event.create('miniutilities:unstable_axe_part').displayName('Unstable Axe Part').rarity("epic").glow(true)
+	event.create('projecte:dm_axe_part').displayName('Dark Matter Axe Part').rarity("epic").glow(true)
+	event.create('projecte:rm_axe_part').displayName('Red Matter Axe Part').rarity("epic").glow(true)
+	event.create('miniutilities:unstable_shovel_part').displayName('Unstable Shovel Part').rarity("epic").glow(true)
+	event.create('projecte:dm_shovel_part').displayName('Dark Matter Shovel Part').rarity("epic").glow(true)
+	event.create('projecte:rm_shovel_part').displayName('Red Matter Shovel Part').rarity("epic").glow(true)
+	event.create('miniutilities:unstable_hoe_part').displayName('Unstable Hoe Part').rarity("epic").glow(true)
+	event.create('projecte:dm_hoe_part').displayName('Dark Matter Hoe Part').rarity("epic").glow(true)
+	event.create('projecte:rm_hoe_part').displayName('Red Matter Hoe Part').rarity("epic").glow(true)
 });

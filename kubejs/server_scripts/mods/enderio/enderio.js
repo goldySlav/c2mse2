@@ -186,19 +186,11 @@ ServerEvents.recipes((event) => {
 	enchBook(CR("capacity"), MC("copper_block"), 16)
 	enchBook(CR("potato_recovery"), MC("potato"), 16)
 	enchBook(MU("shotgun"), KJ("plus"), 1)
-	enchBook(AA_GA("space_breathing"), AA_GA("oxygen_can"), 1)
-	enchBook(AA_GA("acid_rain_proof"), AA("calorite_plate"), 64)
-	enchBook(AA_GA("gravity_normalizing"), AA("gravity_normalizer"), 1)
-	enchBook(AA_GA("space_fire_proof"), AA("ostrum_plate"), 64)
 	enchBook(DD("sculk_smite"), DD("soul_crystal"), 3)
 	enchBook(DD("catalysis"), DD("soul_dust"), 16)
-	//enchBook(AM("straddle_jump"), MC("slime_block"), 16)
-	//enchBook(AM("lavawax"), MC("blue_ice"), 8)
-	//enchBook(AM("serpentfriend"), KJ("necrotic_bone"), 16)
-	//enchBook(AM("board_return"), KJ("chromatic_resonator"), 1)
 	
 	//infinity grains & rod
-	customRecipes.ae2.transform.fluid(event, EIO("grains_of_infinity"), [AE2("sky_dust"), CM("nether_star_fragment")], F("redstone"))
+	event.recipes.ae2.transform(EIO("grains_of_infinity"), [AE2("sky_dust"), CM("nether_star_fragment")]).circumstance({ type: 'fluid', tag: F('redstone') })
 	event.recipes.create.mixing(EIO("grains_of_infinity"), [AE2("sky_dust"), CM("nether_star_fragment"), Fluid.of(KJ("liquid_redstone"), 10)])
 	event.shaped(EIO("infinity_rod"), [
 		" AB",
@@ -322,7 +314,7 @@ ServerEvents.recipes((event) => {
 	event.smithing(EIO("yeta_wrench"), tieredItems.ch2.circuit, FB("framed_wrench"), EIO("grains_of_infinity"))
 	
 	//soul vial
-	customRecipes.ae2.transform.fluid(event, EIO("empty_soul_vial"), [MC("glass_bottle")], F("witch_water"))
+	event.recipes.ae2.transform(EIO("empty_soul_vial"), [MC("glass_bottle")]).circumstance({ type: 'fluid', tag: F('witch_water') })
 	
 	//coordinate selector
 	event.shaped(EIO("coordinate_selector"), ["ABA", " CA", "  A"], {

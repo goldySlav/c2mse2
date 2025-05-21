@@ -1,49 +1,39 @@
 //priority: 0
 
 ServerEvents.recipes(e => {
-    removeRecipeByOutput(e, [
-		MU('destruction_pickaxe'),
-		PRE('dm_pick'),
-		PRE('rm_pick'),
-		IF('infinity_drill'),
-    ])
 	const { unstable, dm, rm, infinity } = tieredMaterials
 
-
 	//unstable
-	e.recipes.extendedcrafting.shaped_table(MU('destruction_pickaxe'), pickaxeTemplates.ultimate, {
+	e.recipes.extendedcrafting.shaped_table(MU('unstable_pickaxe_part'), pickaxeTemplates.part, {
 		A: unstable.star,
-		B: unstable.opinium,
-		C: unstable.circuit,
-		D: DD("warden_pickaxe"),
-		E: unstable.block,
-		F: unstable.wafer,
+		C: unstable.wafer,
+		E: unstable.opinium,
+		F: unstable.circuit,
 		G: unstable.collector,
 	})
 
 	//dm pick
-	e.recipes.extendedcrafting.shaped_table(PRE('dm_pick'), pickaxeTemplates.ultimate, {
+	e.recipes.extendedcrafting.shaped_table(PRE('dm_pickaxe_part'), pickaxeTemplates.part, {
 		A: dm.star,
-		B: dm.opinium,
-		C: dm.circuit,
-		D: MU('destruction_pickaxe'),
-		E: dm.block,
-		F: dm.wafer,
+		C: dm.wafer,
+		E: dm.opinium,
+		F: dm.circuit,
 		G: dm.collector,
 	})
 
     //rm pick
-	e.recipes.extendedcrafting.shaped_table(PRE('rm_pick'), pickaxeTemplates.ultimate, {
+	e.recipes.extendedcrafting.shaped_table(PRE('rm_pickaxe_part'), pickaxeTemplates.part, {
 		A: rm.star,
-		B: rm.opinium,
-		C: rm.circuit,
-		D: PRE('dm_pick'),
-		E: rm.block,
-		F: rm.wafer,
+		C: rm.wafer,
+		E: rm.opinium,
+		F: rm.circuit,
 		G: rm.collector,
 	})
 
     //infinity pick
+    removeRecipeByOutput(e, [
+		IF('infinity_drill'),
+    ])
 	e.recipes.extendedcrafting.shaped_table(infinity.drill, pickaxeTemplates.ultimate, {
 		A: infinity.star,
 		B: infinity.opinium,

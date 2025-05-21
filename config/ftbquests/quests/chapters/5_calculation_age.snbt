@@ -635,18 +635,12 @@
 			icon: "minecraft:sand"
 			id: "2B7780ADC68F3E8F"
 			subtitle: "This one has it too."
-			tasks: [
-				{
-					id: "74C43A78360D6890"
-					item: "minecraft:sand"
-					type: "item"
-				}
-				{
-					id: "59342ABCB2F2D08B"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "59342ABCB2F2D08B"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Sand"
 			x: -1.0d
 			y: -7.5d
 		}
@@ -656,18 +650,12 @@
 			icon: "minecraft:gravel"
 			id: "38F5E619902249C0"
 			subtitle: "Why do you still have gravity?"
-			tasks: [
-				{
-					id: "20ADEE5D7EFB97E2"
-					item: "minecraft:gravel"
-					type: "item"
-				}
-				{
-					id: "312EE6C38AD601EC"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "312EE6C38AD601EC"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Gravel"
 			x: -1.0d
 			y: -9.0d
 		}
@@ -682,18 +670,12 @@
 			icon: "minecraft:cobblestone"
 			id: "155318044955E7FB"
 			subtitle: "elbboC"
-			tasks: [
-				{
-					id: "195A139096DF6328"
-					item: "minecraft:cobblestone"
-					type: "item"
-				}
-				{
-					id: "10ED8ABC82BA7055"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "10ED8ABC82BA7055"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Cobblestone"
 			x: -1.0d
 			y: -10.5d
 		}
@@ -703,18 +685,12 @@
 			icon: "ae2:certus_quartz_crystal"
 			id: "2EC7ECACA8C64880"
 			subtitle: "Pointy."
-			tasks: [
-				{
-					id: "74791154787E3FAB"
-					item: "ae2:certus_quartz_crystal"
-					type: "item"
-				}
-				{
-					id: "35BF90F42619FDD9"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "35BF90F42619FDD9"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Certus Quartz Crystal"
 			x: 0.5d
 			y: -10.5d
 		}

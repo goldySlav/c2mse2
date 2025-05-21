@@ -3,22 +3,14 @@
 	default_quest_shape: ""
 	filename: "14_astral_age"
 	group: "2F6B1FE330B2219D"
-	icon: {
-		Count: 1
-		id: "ad_astra:tier_4_rocket"
-		tag: { }
-	}
+	icon: "cosmos:steel_space_nodule"
 	id: "1EDC38CFA8DC59B3"
 	order_index: 14
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["6874BB0479BD8602"]
-			icon: {
-				Count: 1
-				id: "ad_astra:tier_4_rocket"
-				tag: { }
-			}
+			dependencies: ["7F6C31C4697B1690"]
+			icon: "cosmos:steel_space_nodule"
 			id: "5A1BCAD3FA42E967"
 			size: 1.0d
 			tasks: [{
@@ -121,14 +113,16 @@
 		{
 			dependencies: ["5A1BCAD3FA42E967"]
 			id: "53BC21C23EFEDF4E"
+			optional: true
+			shape: "circle"
 			size: 1.0d
 			tasks: [{
 				id: "2D2490715F39DF9E"
 				item: "mekanism:mekasuit_bodyarmor"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 1.5d
+			x: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5A1BCAD3FA42E967"]
@@ -237,28 +231,28 @@
 		}
 		{
 			dependencies: ["5A1BCAD3FA42E967"]
-			icon: "ad_astra:rocket_nose_cone"
+			icon: "kubejs:nodule_nose_cone"
 			id: "662C1D64AC40E533"
 			size: 1.0d
 			tasks: [
 				{
 					id: "5FB9B1E92C2D299D"
-					item: "ad_astra:rocket_nose_cone"
+					item: "kubejs:nodule_nose_cone"
 					type: "item"
 				}
 				{
 					id: "7E3E696D3E0048C2"
-					item: "ad_astra:steel_tank"
+					item: "kubejs:steel_tank"
 					type: "item"
 				}
 				{
 					id: "09582BC01ADE1AC1"
-					item: "ad_astra:rocket_fin"
+					item: "kubejs:nodule_fin"
 					type: "item"
 				}
 				{
 					id: "25D523CC5A1F00F9"
-					item: "ad_astra:steel_engine"
+					item: "kubejs:steel_engine"
 					type: "item"
 				}
 			]
@@ -276,77 +270,42 @@
 			size: 1.0d
 			tasks: [{
 				id: "4FDE9DAA2C5ECD9F"
-				item: {
-					Count: 1
-					id: "ad_astra:tier_1_rocket"
-					tag: { }
-				}
+				item: "cosmos:steel_space_nodule"
 				type: "item"
 			}]
-			title: "Craft \"Tier 1 Rocket\""
-			x: 0.0d
-			y: 12.0d
-		}
-		{
-			dependencies: [
-				"633F86A905E9CEAA"
-				"6BE1CDFEC8C23099"
-			]
-			id: "1BA31EE01089AD95"
-			size: 1.0d
-			tasks: [{
-				id: "1D0849487D4C7EA9"
-				item: "ad_astra:desh_ingot"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 13.5d
+			title: "Craft \"Tier 1 Nodule\""
+			x: 1.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["624C1DB7BD3F9CB4"]
 			id: "70601EBFBC9E5CBE"
+			optional: true
+			shape: "circle"
 			size: 1.0d
 			tasks: [{
 				id: "3D771783C2B49096"
-				item: {
-					Count: 1
-					id: "ad_astra:tier_2_rocket"
-					tag: { }
-				}
+				item: "cosmos:titanium_space_nodule"
 				type: "item"
 			}]
-			title: "Craft \"Tier 2 Rocket\""
-			x: 0.0d
-			y: 16.5d
-		}
-		{
-			dependencies: ["70601EBFBC9E5CBE"]
-			id: "2FFE08FB6E1DCFE6"
-			size: 1.0d
-			tasks: [{
-				id: "78235027213216BC"
-				item: "ad_astra:ostrum_ingot"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 18.0d
+			title: "Craft \"Tier 2 Nodule\""
+			x: 9.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["058E8C20B0F3B3EC"]
 			id: "5B9FFEBB6F0E89A0"
+			optional: true
+			shape: "circle"
 			size: 1.0d
 			tasks: [{
 				id: "58F5A5620DCBA77E"
-				item: {
-					Count: 1
-					id: "ad_astra:tier_3_rocket"
-					tag: { }
-				}
+				item: "cosmos:nickel_space_nodule"
 				type: "item"
 			}]
-			title: "Craft \"Tier 3 Rocket\""
-			x: 0.0d
-			y: 21.0d
+			title: "Craft \"Tier 3 Nodule\""
+			x: 9.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["663540E7D7B057E3"]
@@ -480,48 +439,13 @@
 			y: 11.0d
 		}
 		{
-			dependencies: ["5B9FFEBB6F0E89A0"]
-			id: "17792A9AAFEB7C09"
-			tasks: [{
-				id: "06B2F6DE030CFE08"
-				item: "ad_astra:calorite_ingot"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 22.5d
-		}
-		{
-			dependencies: ["2C0240F524F244D0"]
-			id: "58DB076FA8890F5B"
-			tasks: [{
-				id: "2D0B300BE6B9E558"
-				item: {
-					Count: 1
-					id: "ad_astra:tier_4_rocket"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 0.0d
-			y: 25.5d
-		}
-		{
-			dependencies: ["2D2571C44314A2A2"]
-			id: "03D0934C45782224"
-			tasks: [{
-				dimension: "ad_astra:glacio"
-				id: "0006D0DD6B71D371"
-				type: "dimension"
-			}]
-			x: 0.0d
-			y: 28.5d
-		}
-		{
-			dependencies: ["58DB076FA8890F5B"]
+			dependencies: ["3ACD95BD8A264E2D"]
 			description: [
+				"Highly recommended to progress to &6Chaotic Fusion Crafting Injector&r first, it will be hard to do under Wither Storm's attack!"
+				""
 				"Consider building yourself a safeplace as deep underground as possible."
 				""
-				"There are rumors that &5Wither Storm&r is living somewhere on the surface."
+				"There are rumors that &5Wither Storm&r lives somewhere on the surface."
 			]
 			id: "2D2571C44314A2A2"
 			shape: "octagon"
@@ -532,8 +456,8 @@
 				type: "checkmark"
 			}]
 			title: "Wither Storm: Prepare For Battle"
-			x: 0.0d
-			y: 27.0d
+			x: -0.5d
+			y: 15.5d
 		}
 		{
 			dependencies: ["2D2571C44314A2A2"]
@@ -555,16 +479,18 @@
 			}]
 			title: "Wither Storm: How To Win"
 			x: 1.0d
-			y: 27.0d
+			y: 15.5d
 		}
 		{
-			dependencies: ["03D0934C45782224"]
+			dependencies: ["2D2571C44314A2A2"]
 			description: [
 				"&5Wither Storm&r a.k.a Planet Destroyer is a terrifying monster that got its hands on the almighty &6Command Block&r. "
 				""
-				"Wither Storm destroyed a lot of planets and now it's moving to our homeplanet Earth!"
+				"Wither Storm destroyed a lot of planets and now it's threatening your homeplanet Earth!"
 				""
-				"What a luck to meet him somewhere far from home."
+				"Humanity thought they're too weak to fight the Wither Storm, but what you've experienced made you a lot stronger."
+				""
+				"Now you understand that it's better to protect your home and you have nowhere to run..."
 				""
 				"Find monster's restplace and summon the monster!"
 				""
@@ -582,8 +508,8 @@
 				type: "advancement"
 			}]
 			title: "Wither Storm: Find And Summon Wither Storm"
-			x: 0.0d
-			y: 30.0d
+			x: -0.5d
+			y: 17.0d
 		}
 		{
 			dependencies: ["14376CC7348DCC32"]
@@ -643,8 +569,8 @@
 				type: "advancement"
 			}]
 			title: "Wither Storm: Let Him Grow \\& Summon Symbiont"
-			x: 0.0d
-			y: 31.5d
+			x: -0.5d
+			y: 18.5d
 		}
 		{
 			dependencies: ["20C9E21912BE32A6"]
@@ -658,41 +584,11 @@
 				type: "advancement"
 			}]
 			title: "Wither Storm: Kill Withered Symbiont \\& Obtain Command Block Book"
-			x: 0.0d
-			y: 33.0d
+			x: -0.5d
+			y: 20.0d
 		}
 		{
-			dependencies: ["508F4C96C9822691"]
-			description: ["Finish Glacio explorations and &6return back to Earth&r for the last pieces of your journey."]
-			icon: "ad_astra:earth_globe"
-			id: "27E8CB1CFD0354BE"
-			shape: "pentagon"
-			size: 1.0d
-			tasks: [{
-				id: "6F392138D189AA40"
-				title: "Done"
-				type: "checkmark"
-			}]
-			title: "Glacio Exploration: Return To Earth"
-			x: 0.0d
-			y: 34.5d
-		}
-		{
-			dependencies: ["27E8CB1CFD0354BE"]
-			id: "793158AE158A989E"
-			shape: "octagon"
-			size: 1.0d
-			tasks: [{
-				id: "7C231F30C399E36B"
-				title: "Done"
-				type: "checkmark"
-			}]
-			title: "Wither Storm: Prepare For Second Encounter"
-			x: 0.0d
-			y: 36.0d
-		}
-		{
-			dependencies: ["793158AE158A989E"]
+			dependencies: ["20C9E21912BE32A6"]
 			description: ["If you found yourself having a &5Wither Sickness&r - don't worry, you can master a cure for it."]
 			id: "3C4A21BCE337DE06"
 			optional: true
@@ -705,10 +601,13 @@
 			}]
 			title: "Wither Storm: Wither Sickness"
 			x: 1.0d
-			y: 36.0d
+			y: 18.5d
 		}
 		{
-			dependencies: ["793158AE158A989E"]
+			dependencies: [
+				"508F4C96C9822691"
+				"2C0240F524F244D0"
+			]
 			id: "747550CC700AE6F3"
 			shape: "rsquare"
 			size: 1.0d
@@ -722,8 +621,8 @@
 				type: "item"
 			}]
 			title: "Wither Storm: Craft Formidibomb"
-			x: 0.0d
-			y: 37.5d
+			x: -0.5d
+			y: 21.5d
 		}
 		{
 			dependencies: ["747550CC700AE6F3"]
@@ -738,8 +637,8 @@
 				type: "advancement"
 			}]
 			title: "Wither Storm: Blow Wither Storm Up"
-			x: 0.0d
-			y: 39.0d
+			x: -0.5d
+			y: 23.0d
 		}
 		{
 			dependencies: ["4758AB4ABDB6D3AB"]
@@ -764,8 +663,8 @@
 				type: "advancement"
 			}]
 			title: "Wither Storm: Observe Wither Storm Arise Once Again"
-			x: 0.0d
-			y: 40.5d
+			x: -0.5d
+			y: 24.5d
 		}
 		{
 			dependencies: ["636ED1EA4F171BDF"]
@@ -779,8 +678,8 @@
 				type: "item"
 			}]
 			title: "Wither Storm: Defeat Symbiont Once Again"
-			x: 0.0d
-			y: 42.0d
+			x: -0.5d
+			y: 26.0d
 		}
 		{
 			dependencies: ["1BCF86D8555FF92E"]
@@ -807,8 +706,8 @@
 				type: "item"
 			}]
 			title: "Wither Storm: Any Command Block Tool"
-			x: 0.0d
-			y: 43.5d
+			x: -0.5d
+			y: 27.5d
 		}
 		{
 			dependencies: ["0A488ACF1BB52EE6"]
@@ -831,8 +730,8 @@
 				type: "advancement"
 			}]
 			title: "Wither Storm: Enter Wither Storm's Belly"
-			x: 0.0d
-			y: 45.0d
+			x: -0.5d
+			y: 29.0d
 		}
 		{
 			dependencies: ["71B07D5BC3A6EF58"]
@@ -853,8 +752,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 0.0d
-			y: 47.5d
+			x: -0.5d
+			y: 31.5d
 		}
 		{
 			dependencies: ["5A1BCAD3FA42E967"]
@@ -877,48 +776,37 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["53BC21C23EFEDF4E"]
-			id: "6BE1CDFEC8C23099"
-			tasks: [{
-				id: "6828863BD60F28CD"
-				item: "ad_astra_giselle_addon:module_space_breathing_unit"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["1BA31EE01089AD95"]
+			dependencies: ["2342785886A6462D"]
 			id: "624C1DB7BD3F9CB4"
 			tasks: [{
 				id: "24BE516539E99289"
 				item: "draconicevolution:wyvern_crafting_injector"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 15.0d
+			x: 7.5d
+			y: 11.5d
 		}
 		{
-			dependencies: ["2FFE08FB6E1DCFE6"]
+			dependencies: ["624C1DB7BD3F9CB4"]
 			id: "058E8C20B0F3B3EC"
 			tasks: [{
 				id: "2A05D3328636FE4A"
 				item: "draconicevolution:awakened_crafting_injector"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 19.5d
+			x: 7.5d
+			y: 13.0d
 		}
 		{
-			dependencies: ["17792A9AAFEB7C09"]
+			dependencies: ["058E8C20B0F3B3EC"]
 			id: "2C0240F524F244D0"
 			tasks: [{
 				id: "41CA5DB82CD10D6F"
 				item: "draconicevolution:chaotic_crafting_injector"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 24.0d
+			x: 7.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["6AB76FDE0D3060DC"]
@@ -954,6 +842,187 @@
 			]
 			x: -5.5d
 			y: 11.5d
+		}
+		{
+			dependencies: ["4EDEA95EFE2594A2"]
+			description: [
+				"It's time to fight the monster you tried to run from before."
+				""
+				"Humanity thought they're too weak to fight the Wither Storm, but what you've experienced made you a lot stronger."
+				""
+				"Now you understand that it's better to protect your home and you have nowhere to run..."
+			]
+			id: "3ACD95BD8A264E2D"
+			subtitle: "Third Planet From Sun And Your Home"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "773F4F5E6367BEE0"
+				type: "dimension"
+			}]
+			title: "Return to Earth"
+			x: -0.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["4EDEA95EFE2594A2"]
+			id: "75FC422CCBE66CC5"
+			optional: true
+			shape: "circle"
+			subtitle: "Earth's Satellite"
+			tasks: [{
+				dimension: "cosmos:earth_moon"
+				id: "3BBDCA469D3558A4"
+				type: "dimension"
+			}]
+			title: "Visit Moon"
+			x: -0.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["4EDEA95EFE2594A2"]
+			id: "6F15A16A98E68243"
+			optional: true
+			shape: "circle"
+			subtitle: "Fourth Planet From Sun"
+			tasks: [{
+				dimension: "cosmos:marslands"
+				id: "06B687E921F35D4F"
+				type: "dimension"
+			}]
+			title: "Visit Mars"
+			x: 0.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["4EDEA95EFE2594A2"]
+			id: "7852AFBFAA92094B"
+			optional: true
+			shape: "circle"
+			subtitle: "Fifth Planet From Sun"
+			tasks: [{
+				dimension: "cosmos:jupiterlands"
+				id: "4FE301237A2DF7EA"
+				type: "dimension"
+			}]
+			title: "Visit Jupiter"
+			x: 1.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["4EDEA95EFE2594A2"]
+			id: "72831BC26A55B73E"
+			optional: true
+			shape: "circle"
+			subtitle: "First Planet From Sun"
+			tasks: [{
+				dimension: "cosmos:mercury_wasteland"
+				id: "2C0BA9E9DA562665"
+				type: "dimension"
+			}]
+			title: "Visit Mercury"
+			x: -2.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["4EDEA95EFE2594A2"]
+			id: "00A169E5DEBD5D80"
+			optional: true
+			shape: "circle"
+			subtitle: "Eighth Planet From Sun"
+			tasks: [{
+				dimension: "cosmos:neptune_lands"
+				id: "042574FF530A4F7E"
+				type: "dimension"
+			}]
+			title: "Visit Neptune"
+			x: 4.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["4EDEA95EFE2594A2"]
+			id: "6E79FD6B373C7305"
+			optional: true
+			shape: "circle"
+			subtitle: "Not a Planet Anymore"
+			tasks: [{
+				dimension: "cosmos:plutowastelands"
+				id: "3C15361787553118"
+				type: "dimension"
+			}]
+			title: "Visit Pluto"
+			x: 6.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["4EDEA95EFE2594A2"]
+			id: "696568A6330AB190"
+			optional: true
+			shape: "circle"
+			subtitle: "Sixth Planet From Sun"
+			tasks: [{
+				dimension: "cosmos:saturn_lands"
+				id: "7E80D9B7441B00FC"
+				type: "dimension"
+			}]
+			title: "Visit Saturn"
+			x: 2.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["4EDEA95EFE2594A2"]
+			id: "72AB3F304D616C0B"
+			optional: true
+			shape: "circle"
+			subtitle: "Seventh Planet From Sun"
+			tasks: [{
+				dimension: "cosmos:uranus_lands"
+				id: "1C88C2BE3073918B"
+				type: "dimension"
+			}]
+			title: "Visit Uranus"
+			x: 3.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["4EDEA95EFE2594A2"]
+			id: "18E54A022E6861F6"
+			optional: true
+			shape: "circle"
+			subtitle: "Second Planet From Sun"
+			tasks: [{
+				dimension: "cosmos:venuslands"
+				id: "33C6D6EBF7A6A50C"
+				type: "dimension"
+			}]
+			title: "Visit Venus"
+			x: -1.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["633F86A905E9CEAA"]
+			id: "4EDEA95EFE2594A2"
+			tasks: [{
+				dimension: "cosmos:solar_system"
+				id: "31FB930A10938560"
+				type: "dimension"
+			}]
+			title: "Enter Solar System"
+			x: 1.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["4EDEA95EFE2594A2"]
+			id: "46166A85FED5630A"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				dimension: "cosmos:europa_lands"
+				id: "024B0A6A05724CE8"
+				type: "dimension"
+			}]
+			title: "Visite Europa"
+			x: 1.5d
+			y: 14.0d
 		}
 	]
 	title: "14. Astral Age"

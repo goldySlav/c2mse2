@@ -3,7 +3,7 @@ const $CompoundTag = Java.loadClass('net.minecraft.nbt.CompoundTag')
 //find transmutation table
 FTBQuestsEvents.completed('40D115852A0164D5', event => {
 	let tag = new $CompoundTag
-	tag.putString('message', "...Hey?... do you copy? The rocket... it’s gone. I barely made it. Are you alive?")
+	tag.putString('message', "...Hey?... do you copy? The nodule... it’s gone. I barely made it. Are you alive?")
 	event.player.sendData('textTask', tag)
 })
 
@@ -24,7 +24,7 @@ FTBQuestsEvents.completed('5055909CC3C8048D', event => {
 //coal
 FTBQuestsEvents.completed('5569DED57157B576', event => {
 	let tag = new $CompoundTag
-	tag.putString('message', "There’s still hope. If you can build a new rocket... maybe you make it back. Earth is waiting.")
+	tag.putString('message', "There’s still hope. If you can build a new nodule... maybe you make it back. Defeat him...")
 	event.player.sendData('textTask', tag)
 })
 
@@ -38,6 +38,6 @@ FTBQuestsEvents.completed('1CED050B23075E82', event => {
 //emerald
 FTBQuestsEvents.completed('28780B6E562030B4', event => {
 	let tag = new $CompoundTag
-	tag.putString('message', "My journey ends here. Yours doesn’t. Survive, rebuild, return. For both of us. Goodbye...")
+	tag.putString('message', "My journey ends here. Yours doesn’t. Survive, rebuild, return, and defeat him. For both of us. Goodbye...")
 	event.player.sendData('textTask', tag)
 })

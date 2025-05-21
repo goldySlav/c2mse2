@@ -213,14 +213,14 @@
 				"7DB66F1A0165564A"
 				"6E6E24468D9F6CF1"
 			]
-			description: ["Bed is important, we don't want Phantoms interrupting you in creating your factory."]
+			description: ["Bed allows you to set a respawn point, but seems that air in the Space is so Thin that you start to choke in your sleep."]
 			id: "797AD3EEB528F028"
 			rewards: [{
 				id: "4DC8576EA06F2EDC"
-				item: "ad_astra:ice_shard"
+				item: "kubejs:ice_shard"
 				type: "item"
 			}]
-			subtitle: "Good night"
+			subtitle: "No good night"
 			tasks: [{
 				id: "74EC8F755AA5D512"
 				item: "minecraft:white_bed"
@@ -366,7 +366,7 @@
 				}
 				{
 					id: "0687B30F472E5C43"
-					item: "ad_astra:ice_shard"
+					item: "kubejs:ice_shard"
 					type: "item"
 				}
 			]
@@ -398,7 +398,7 @@
 				}
 				{
 					id: "72457494F5F8DB8E"
-					item: "ad_astra:ice_shard"
+					item: "kubejs:ice_shard"
 					type: "item"
 				}
 			]
@@ -1173,7 +1173,7 @@
 			id: "05565AD3061BA165"
 			rewards: [{
 				id: "160C7127CA17A9BD"
-				item: "ad_astra:ice_shard"
+				item: "kubejs:ice_shard"
 				type: "item"
 			}]
 			subtitle: "Rotational force!"

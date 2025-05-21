@@ -1,2 +1,0 @@
-// Compost colors for woodenhopper. You may add your own colors, change existing ones, or remove colors that aren't needed.
-wooden_hopper, #7f6134

@@ -251,7 +251,7 @@ ServerEvents.recipes((event) => {
 		DE("wyvern_core"),
 		DE("draconium_core"),
 		[
-			`4x ${DE("draconium_core")}`, `4x ${DE("small_chaos_frag")}`, `2x ${F('#storage_blocks/desh')}`,
+			`4x ${DE("draconium_core")}`, `4x ${DE("small_chaos_frag")}`, `2x ${CP('osmium_5')}`,
 		]
 	)
 
@@ -261,7 +261,7 @@ ServerEvents.recipes((event) => {
 		DE("awakened_core"),
 		DE("wyvern_core"),
 		[
-			`2x ${DE("wyvern_core")}`, `4x ${DE("awakened_draconium_ingot")}`, `4x ${DE("medium_chaos_frag")}`, `2x ${F('#storage_blocks/ostrum')}`,
+			`2x ${DE("wyvern_core")}`, `4x ${DE("awakened_draconium_ingot")}`, `4x ${DE("medium_chaos_frag")}`, `2x ${CP('naquadah_5')}`,
 		],
 		2
 	)
@@ -272,7 +272,7 @@ ServerEvents.recipes((event) => {
 		DE("chaotic_core"),
 		DE("awakened_core"),
 		[
-			`6x ${DE("awakened_core")}`, `2x ${DE("awakened_draconium_block")}`, `4x ${DE("large_chaos_frag")}`, `2x ${F('#storage_blocks/calorite')}`,
+			`6x ${DE("awakened_core")}`, `2x ${DE("awakened_draconium_block")}`, `4x ${DE("large_chaos_frag")}`, `2x ${CP('flux_star_5')}`,
 		],
 		3
 	)
@@ -348,7 +348,7 @@ ServerEvents.recipes((event) => {
 	customRecipes.draconicevolution.fusion_craft(
 		event,
 		DE("wyvern_pickaxe"),
-		IF("infinity_drill"),
+		PRE("rm_pick"),
 		[
 			`2x ${DE("wyvern_core")}`, `2x ${DE("draconium_ingot")}`, `2x ${DE("basic_relay_crystal")}`,
 			`2x ${DE("wyvern_energy_core")}`, `2x ${DE("medium_chaos_frag")}`
@@ -360,7 +360,7 @@ ServerEvents.recipes((event) => {
 	customRecipes.draconicevolution.fusion_craft(
 		event,
 		DE("wyvern_axe"),
-		IF("infinity_saw"),
+		PRE("rm_axe"),
 		[
 			`2x ${DE("wyvern_core")}`, `2x ${DE("draconium_ingot")}`, `2x ${DE("basic_relay_crystal")}`,
 			`2x ${DE("wyvern_energy_core")}`, `2x ${DE("medium_chaos_frag")}`
@@ -372,7 +372,7 @@ ServerEvents.recipes((event) => {
 	customRecipes.draconicevolution.fusion_craft(
 		event,
 		DE("wyvern_bow"),
-		IF("infinity_launcher"),
+		MC("bow"),
 		[
 			`2x ${DE("wyvern_core")}`, `2x ${DE("draconium_ingot")}`, `2x ${DE("basic_relay_crystal")}`,
 			`2x ${DE("wyvern_energy_core")}`, `2x ${DE("medium_chaos_frag")}`
@@ -384,7 +384,7 @@ ServerEvents.recipes((event) => {
 	customRecipes.draconicevolution.fusion_craft(
 		event,
 		DE("wyvern_sword"),
-		IF("infinity_hammer"),
+		PRE("rm_sword"),
 		[
 			`2x ${DE("wyvern_core")}`, `2x ${DE("draconium_ingot")}`, `2x ${DE("basic_relay_crystal")}`,
 			`2x ${DE("wyvern_energy_core")}`, `2x ${DE("medium_chaos_frag")}`

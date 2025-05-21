@@ -153,7 +153,7 @@ ServerEvents.recipes((event) => {
 	event.recipes.create.mixing(Fluid.of(TCT("molten_brass"), 20), [Fluid.of(TCT("molten_copper"), 10), Fluid.of(TCT("molten_zinc"), 10)]).heated()
 	event.recipes.create.mixing(Fluid.of(TCT("molten_bronze"), 40), [Fluid.of(TCT("molten_copper"), 30), Fluid.of(TCT("molten_tin"), 10)]).heated()
 	event.recipes.create.mixing(Fluid.of(TCT("molten_manyullyn"), 40), [Fluid.of(TCT("molten_cobalt"), 30), Fluid.of(TCT("molten_debris"), 10)]).heated()
-	event.recipes.create.mixing(Fluid.of(TCT("molten_netherite"), 10), [Fluid.of(TCT("molten_debris"), 10), Fluid.of(TCT("molten_gold"), 10)]).heated()
+	event.recipes.create.mixing(Fluid.of(TCT("molten_netherite"), 10), [Fluid.of(TCT("molten_debris"), 30), Fluid.of(TCT("molten_gold"), 30)]).heated()
 	event.recipes.create.mixing([Fluid.of(MC("water"), 10), Fluid.of(TCT("molten_obsidian"), 10)], [Fluid.of(MC("water"), 10), Fluid.of(MC("lava"), 10)]).heated()
 	event.recipes.create.mixing(Fluid.of(TCT("molten_rose_gold"), 20), [Fluid.of(TCT("molten_copper"), 10), Fluid.of(TCT("molten_gold"), 10)]).heated()
 	

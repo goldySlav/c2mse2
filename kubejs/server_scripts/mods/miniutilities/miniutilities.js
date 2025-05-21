@@ -295,4 +295,76 @@ ServerEvents.recipes(e => {
 		B: F("#ingots/netherite"),
 		C: MU("diamond_spikes"),
 	})
+	
+	//unstable axe
+    removeRecipeByOutput(e, [
+		MU("healing_axe"),
+    ])
+	shapedSaveNBT(e, MU("healing_axe"), [
+		'B',
+		'A',
+	], {
+		A: DD("warden_axe"),
+		B: MU("unstable_axe_part"),
+	})
+	
+	//unstable hoe
+    removeRecipeByOutput(e, [
+		MU("reversing_hoe"),
+    ])
+	shapedSaveNBT(e, MU("reversing_hoe"), [
+		'B',
+		'A',
+	], {
+		A: DD("warden_hoe"),
+		B: MU("unstable_hoe_part"),
+	})
+	
+	//unstable pickaxe
+    removeRecipeByOutput(e, [
+		MU("destruction_pickaxe"),
+    ])
+	shapedSaveNBT(e, MU("destruction_pickaxe"), [
+		'B',
+		'A',
+	], {
+		A: DD("warden_pickaxe"),
+		B: MU("unstable_pickaxe_part"),
+	})
+	
+	//unstable shovel
+    removeRecipeByOutput(e, [
+		MU("erosion_shovel"),
+    ])
+	shapedSaveNBT(e, MU("erosion_shovel"), [
+		'B',
+		'A',
+	], {
+		A: DD("warden_shovel"),
+		B: MU("unstable_shovel_part"),
+	})
+	
+	//unstable sword
+    removeRecipeByOutput(e, [
+		MU("etheric_sword"),
+    ])
+	shapedSaveNBT(e, MU("etheric_sword"), [
+		'B',
+		'A',
+	], {
+		A: DD("warden_sword"),
+		B: MU("unstable_sword_part"),
+	})
+	
+	//unstable sword
+    removeRecipeByOutput(e, [
+		MU("kikoku"),
+    ])
+	shapedSaveNBT(e, MU("kikoku"), [
+		'B',
+		'A',
+	], {
+		A: MU("etheric_sword"),
+		B: MU("kikoku_sword_part"),
+	})
 })

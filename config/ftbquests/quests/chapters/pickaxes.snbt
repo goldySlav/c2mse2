@@ -141,11 +141,11 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 12.0d
+			x: 1.5d
+			y: 10.5d
 		}
 		{
-			dependencies: ["0897BCAA28A7F6A3"]
+			dependencies: ["20BAB715ADE9049D"]
 			disable_toast: true
 			id: "7821E1F3575C5A79"
 			tasks: [{
@@ -179,7 +179,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 13.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["7821E1F3575C5A79"]
@@ -216,7 +216,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 15.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["4FC618B079C19ED4"]
@@ -253,7 +253,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 16.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["7D7632A90705A7B5"]

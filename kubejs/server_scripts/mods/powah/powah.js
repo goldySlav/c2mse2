@@ -2,31 +2,23 @@
 
 ServerEvents.recipes((event) => {
 	removeRecipeByID(event, [
-		P("crafting/energized_steel_block"),
-		P("crafting/steel_energized"),
 		P("crafting/blazing_crystal_block"),
 		P("crafting/crystal_blazing"),
 		P("crafting/niotic_crystal_block"),
 		P("crafting/crystal_niotic"),
 		P("crafting/spirited_crystal_block"),
 		P("crafting/crystal_spirited"),
-		P("crafting/nitro_crystal_block"),
-		P("crafting/crystal_nitro"),
 	])
 	
 	removeRecipeByOutput(event, [
 		P("uraninite"),
 		P("uraninite_block"),
-		P("steel_energized"),
-		P("energized_steel_block"),
 		P("crystal_blazing"),
 		P("blazing_crystal_block"),
 		P("crystal_niotic"),
 		P("niotic_crystal_block"),
 		P("crystal_spirited"),
 		P("spirited_crystal_block"),
-		P("crystal_nitro"),
-		P("nitro_crystal_block"),
 		P("capacitor_basic_tiny"),
 		P("capacitor_basic"),
 		P("capacitor_basic_large"),
@@ -93,8 +85,9 @@ ServerEvents.recipes((event) => {
 	removeRecipeByID(event, [
 		P("energizing/charged_snowball"),
 	])
-	event.recipes.powah.energizing([MC("snowball")], P('charged_snowball'), 200000)
+	event.recipes.ae2.charger(P('charged_snowball'), MC("snowball"))
 	customRecipes.create.charge(event, P('charged_snowball'), MC("snowball"), 100000)
+	event.recipes.powah.energizing([MC("snowball")], P('charged_snowball'), 200000)
 	
 
 
@@ -139,6 +132,51 @@ ServerEvents.recipes((event) => {
 		])
 		const cableCenter = i == 0 ? F("#wires/copper") : P(`energy_cable_${levels[i - 1]}`)
 		donutCraftFull(event, Item.of(P(`energy_cable_${level}`), 8), cableCenter, leveledCircuit)
+	})
+	
+	//overcharged fluix crystal
+	removeRecipeByID(event, [
+		P("energizing/nitro_crystal"),
+	])
+	event.recipes.ae2.charger(P('crystal_nitro'), F("#gems/fluix"))
+	customRecipes.create.charge(event, P('crystal_nitro'), F("#gems/fluix"), 100000)
+	customRecipes.create.charge(event, P('nitro_crystal_block'), AE2("fluix_block"), 600000)
+	event.recipes.powah.energizing([F("#gems/fluix")], P('crystal_nitro'), 100000)
+	event.recipes.powah.energizing([AE2("fluix_block")], P('nitro_crystal_block'), 600000)
+	
+	//energized alloy
+	removeRecipeByID(event, [
+		P("energizing/energized_steel"),
+	])
+	event.recipes.powah.energizing([F("#ingots/rose_gold"), P('crystal_nitro'), KJ("ether_gem")], P('steel_energized'), 100000)
+	event.custom({
+		type: AE2_A("reaction"),
+		energy: 3200000,
+		fluid: {
+			fluidStack: {
+				Amount: 2500,
+				FluidName: IF("ether_gas")
+			}
+		},
+		input_items: [
+			{
+				amount: 64,
+				ingredient: {
+					tag: F("ingots/rose_gold")
+				}
+			},
+			{
+				amount: 64,
+				ingredient: {
+					item: P('crystal_nitro')
+				}
+			},
+		],
+		output: {
+			"#": 64,
+			"#c": "ae2:i",
+			id: P("steel_energized"),
+		}
 	})
 })
 

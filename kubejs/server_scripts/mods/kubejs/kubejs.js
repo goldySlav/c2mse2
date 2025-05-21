@@ -230,7 +230,7 @@ ServerEvents.recipes((event) => {
 		' A ',
 	], {
 		A: TCT("necrotic_bone"),
-		B: CP("obsidian_2"),
+		B: MC("obsidian"),
 	})
 
     event.shaped(Item.of(KJ("witherproof_bricks"), 4), [
@@ -243,22 +243,13 @@ ServerEvents.recipes((event) => {
 	
 	
 	//summoning doll
-	customRecipes.ae2.transform.fluid(event, `1x ${KJ("summoning_doll")}`, [
-		EXD("porcelain_clay_ball"),
-		F("#ingots/iron"),
-	], F("witch_water"))
-	customRecipes.ae2.transform.fluid(event, `2x ${KJ("summoning_doll")}`, [
-		EXD("porcelain_clay_ball"),
-		F("#ingots/gold"),
-	], F("witch_water"))
-	customRecipes.ae2.transform.fluid(event, `4x ${KJ("summoning_doll")}`, [
-		EXD("porcelain_clay_ball"),
-		F("#gems/diamond"),
-	], F("witch_water"))
-	customRecipes.ae2.transform.fluid(event, `6x ${KJ("summoning_doll")}`, [
-		EXD("porcelain_clay_ball"),
-		F("#gems/emerald"),
-	], F("witch_water"))
+	event.recipes.ae2.transform(Item.of(KJ("summoning_doll"), 1), [EXD("porcelain_clay_ball"), MU("iron_opinium_core")]).circumstance({ type: 'explosion' })
+	event.recipes.ae2.transform(Item.of(KJ("summoning_doll"), 2), [EXD("porcelain_clay_ball"), MU("gold_opinium_core")]).circumstance({ type: 'explosion' })
+	event.recipes.ae2.transform(Item.of(KJ("summoning_doll"), 4), [EXD("porcelain_clay_ball"), MU("diamond_opinium_core")]).circumstance({ type: 'explosion' })
+	event.recipes.ae2.transform(Item.of(KJ("summoning_doll"), 8), [EXD("porcelain_clay_ball"), MU("emerald_opinium_core")]).circumstance({ type: 'explosion' })
+	event.recipes.ae2.transform(Item.of(KJ("summoning_doll"), 16), [EXD("porcelain_clay_ball"), MU("netherite_opinium_core")]).circumstance({ type: 'explosion' })
+	event.recipes.ae2.transform(Item.of(KJ("summoning_doll"), 32), [EXD("porcelain_clay_ball"), MU("experience_infused_emerald_opinium_core")]).circumstance({ type: 'explosion' })
+	event.recipes.ae2.transform(Item.of(KJ("summoning_doll"), 64), [EXD("porcelain_clay_ball"), MU("reinforced_echo_shard_opinium_core")]).circumstance({ type: 'explosion' })
 	
 	
 	
@@ -603,8 +594,11 @@ ServerEvents.recipes((event) => {
 	
 	//ae2-type seeds
 	event.stonecutting(Item.of(KJ('certus_seed'), 2), F('#gems/certus_quartz'))
+	event.recipes.mekanism.sawing(F('#gems/certus_quartz'), Item.of(KJ('certus_seed'), 2))
 	event.stonecutting(Item.of(KJ('quartz_seed'), 2), F('#gems/quartz'))
+	event.recipes.mekanism.sawing(F('#gems/quartz'), Item.of(KJ('quartz_seed'), 2))
 	event.stonecutting(Item.of(KJ('fluix_seed'), 2), F('#gems/fluix'))
+	event.recipes.mekanism.sawing(F('#gems/fluix'), Item.of(KJ('fluix_seed'), 2))
 	
 	//grow ae2-type seeds
 	let grow = (from, via, to) => {
@@ -817,7 +811,6 @@ ServerEvents.recipes((event) => {
 	
 	//radiant sheet
 	event.recipes.create.pressing(KJ(`radiant_sheet`), CR("refined_radiance"))
-	customRecipes.ad_astra.compressing(event, KJ(`radiant_sheet`), CR("refined_radiance"))
 	event.recipes.mekanism.sawing(CR("refined_radiance"), Item.of(KJ("radiant_sheet"), 2))
 	
 	//radiant coil
@@ -841,6 +834,137 @@ ServerEvents.recipes((event) => {
 	//molten ender alloy
 	event.recipes.tconstruct.alloy(Fluid.of(KJ("molten_ender_alloy"), 180), [Fluid.of(TCT("molten_iron"), 90), Fluid.of(TCT("molten_ender"), 250)], 1429)
 	event.recipes.create.mixing(Fluid.of(KJ("molten_ender_alloy"), 18), [Fluid.of(TCT("molten_iron"), 9), Fluid.of(TCT("molten_ender"), 25)]).heated()
+	
+	
+	
+	//nodule parts
+	
+	//engine frame
+	event.recipes.extendedcrafting.shaped_table(KJ(`engine_frame`), [
+		'  AAAAAAAAA',
+		' BA      BA',
+		'AAAAAAAAA A',
+		'A A     A A',
+		'A A     A A',
+		'A A     A A',
+		'A A     A A',
+		'A A     A A',
+		'A AAAAAAAAA',
+		'AB      AB ',
+		'AAAAAAAAA  ',
+	], {
+		A: CP("steel_3"),
+		B: F("#ingots/steel"),
+	})
+
+	//engine fan
+	event.recipes.extendedcrafting.shaped_table(KJ(`engine_fan`), [
+		'  BBB    ',
+		'  BCCB   ',
+		'   BCB BB',
+		' BBBCBBCB',
+		'BCCCACCCB',
+		'BCBBCBBB ',
+		'BB BCB   ',
+		'   BCCB  ',
+		'    BBB  ',
+	], {
+		A: MG("turbine_rotor"),
+		B: MG("turbine_blade"),
+		C: CR("propeller"),
+	}).tier(5)
+
+	//nodule fin
+	event.recipes.extendedcrafting.shaped_table(KJ(`nodule_fin`), [
+		'     A     ',
+		'    ABA    ',
+		'   ABBBA   ',
+		'  ABBCBBA  ',
+		' ACCCACCCA ',
+		'ACCCA ACCCA',
+		'ACCA   ACCA',
+		'ACA     ACA',
+		'AA       AA',
+	], {
+		A: F("#ingots/steel"),
+		B: CP("steel_3"),
+		C: CP("iron_4"),
+	})
+
+	//nodule nose cone
+	event.recipes.extendedcrafting.shaped_table(KJ(`nodule_nose_cone`), [
+		'     A     ',
+		'     B     ',
+		'     C     ',
+		'    CDC    ',
+		'   CDEDC   ',
+		'  CDEEEDC  ',
+		' CDEEEEEDC ',
+		'CDDDDDDDDDC',
+		' CCCCCCCCC ',
+	], {
+		A: PREXP("magnum_star_omega"),
+		B: MC("end_rod"),
+		C: F("#ingots/steel"),
+		D: CP("steel_3"),
+		E: CP("iron_4"),
+	})
+	
+	//tanks & engines
+	const spaceMats = {
+		steel: { A: CP("gold_4"), B: CP("steel_3"), C: PREXP("green_matter"), D: PREXP("red_power_flower") },
+		osmium: { A: CP("diamond_4"), B: CP("osmium_3"), C: PREXP("lime_matter"), D: PREXP("magenta_power_flower") },
+		naquadah: { A: CP("emerald_4"), B: CP("naquadah_3"), C: PREXP("yellow_matter"), D: PREXP("pink_power_flower") },
+	}
+
+	for (let mat in spaceMats) {
+		//tanks
+		event.recipes.extendedcrafting.shaped_table(KJ(`${mat}_tank`), [
+			'AAAAAAA  ',
+			'ABBBBBA  ',
+			'ABGCGBA  ',
+			'ABCDCBA  ',
+			'ABCFCBAE ',
+			'ABCDCBAEE',
+			'ABGCGBAE ',
+			'ABBBBBA  ',
+			'AAAAAAA  ',
+		], {
+			A: spaceMats[mat].A,
+			B: spaceMats[mat].B,
+			C: M("ultimate_chemical_tank"),
+			D: M("electrolytic_core"),
+			E: singularityId("reprocessed_fissile_fragment"),
+			F: spaceMats[mat].C,
+			G: singularityId("ultimate_chemical_tank"),
+		})
+		
+		//engines
+		event.recipes.extendedcrafting.shaped_table(KJ(`${mat}_engine`), [
+			' AAAAAAAAAA',
+			'ABBBBBBBBBA',
+			'ABEEEEEEEBA',
+			'ABEEEJEEEBA',
+			'ABBBBKBBBBA',
+			'AAAAAIAAAAA',
+			'    DHD    ',
+			'   DFGFD   ',
+			' DCCCCCCCD ',
+			'AAAAAAAAAAA',
+		], {
+			A: spaceMats[mat].A,
+			B: spaceMats[mat].B,
+			C: KJ("engine_fan"),
+			D: KJ("engine_frame"),
+			E: singularityId("reprocessed_fissile_fragment"),
+			F: spaceMats[mat].D,
+			G: spaceMats[mat].C,
+			H: PREXP("infinite_fuel"),
+			I: singularityId("antimatter"),
+			J: singularityId("ultimate_chemical_tank"),
+			K: singularityId("ultimate_fluid_tank"),
+		})
+	}
 	
 	
 	
@@ -1322,7 +1446,7 @@ castsForNumber = {
 		KJ('integrated_mechanism'),
 	], KJ('abstruse_mechanism'), [
 		event.recipes.create.deploying(tIntegrated, [tIntegrated, IF('plastic')]),
-		event.recipes.create.deploying(tIntegrated, [tIntegrated, IF('plastic')]),
+		event.recipes.create.deploying(tIntegrated, [tIntegrated, P('crystal_nitro')]),
 		event.recipes.create.deploying(tIntegrated, [tIntegrated, F("#tools/calculators")])
 	]).transitionalItem(tIntegrated)
 		.loops(1)
@@ -1347,7 +1471,7 @@ castsForNumber = {
 	event.recipes.create.sequenced_assembly([
 		KJ('portable_mechanism'),
 	], KJ('embedded_mechanism'), [
-		event.recipes.create.deploying(tPortable, [tPortable, KJ('ether_gem')]),
+		event.recipes.create.deploying(tPortable, [tPortable, P('steel_energized')]),
 		event.recipes.create.deploying(tPortable, [tPortable, KJ('ether_gem')]),
 		event.recipes.create.deploying(tPortable, [tPortable, F("#tools/calculators")])
 	]).transitionalItem(tPortable)
@@ -1414,7 +1538,7 @@ castsForNumber = {
 	andesite_machine(CR('speedometer'), 1, MC("compass"))
 	andesite_machine(CR('mechanical_bearing'), 1, CR("turntable"))
 	andesite_machine(CR('mechanical_piston'), 1, MC("piston"))
-	andesite_machine(CR('rope_pulley'), 1, CF("rope_and_nail"))
+	andesite_machine(CR('rope_pulley'), 1, Q("rope"))
 	andesite_machine(IF('water_condensator'), 1, MC("water_bucket"))
 	andesite_machine(CR_A('rolling_mill'), 1, CR("shaft"))
 	andesite_machine(CR_ME('mechanical_extruder'), 1, F("#cobblestone_generators"))
@@ -1514,7 +1638,6 @@ castsForNumber = {
 	brass_machine(PP('crafting_terminal'), 1, PP('item_terminal'))
 	brass_machine(PP('pressurizer'), 1, CR('propeller'))
 	brass_machine(CR_A("tesla_coil"), 1, AE2("charger"))
-	brass_machine(AA("compressor"), 1, CR('mechanical_press'))
 	brass_machine(P('energy_cell_basic'), 1, P('battery_basic'))
 	brass_machine(P('ender_cell_basic'), 1, P('ender_cell_starter'))
 	brass_machine(P('energizing_rod_basic'), 1, P('energizing_rod_starter'))
@@ -1589,6 +1712,12 @@ castsForNumber = {
 	inductive_machine(HNN('loot_fabricator'), 1)
 	inductive_machine(HNN('deep_learner'), 1, Q("ender_watcher"))
 	inductive_machine(HNN('blank_data_model'), 1, CM("diamond_dna_sampler"))
+	inductive_machine(BG('template_manager'), 1, MC("paper"))
+	inductive_machine(BG('gadget_building'), 1, F("#gems/diamond"))
+	inductive_machine(BG('gadget_exchanging'), 1, F("#ingots/gold"))
+	inductive_machine(BG('gadget_copy_paste'), 1, F("#gems/emerald"))
+	inductive_machine(BG('gadget_cut_paste'), 1, MC("shears"))
+	inductive_machine(BG('gadget_destruction'), 1, MC("ender_pearl"))
 	
 	//calculation machine (ae2 not_so_misterious_cube)
 	removeRecipeByOutput(event, [
@@ -1626,8 +1755,6 @@ castsForNumber = {
 	fluix_machine(P('player_transmitter_blazing'), 1, P('player_transmitter_hardened'))
 	fluix_machine(P('energy_hopper_blazing'), 1, P('energy_hopper_hardened'))
 	fluix_machine(P('energy_discharger_blazing'), 1, P('energy_discharger_hardened'))
-	fluix_machine(AA('radio'), 1, X('antenna_base'))
-	fluix_machine(AA('ti_69'), 1)
 	fluix_machine(AE2('controller'), 1)
 	fluix_machine(LIO('laser_node'), 2, LB("laser_source_block"))
 	fluix_machine(EIO("double_layer_capacitor"), 1, EIO('basic_capacitor'))
@@ -1667,6 +1794,7 @@ castsForNumber = {
 	abstruse_machine(P('energy_discharger_niotic'), 1, P('energy_discharger_blazing'))
 	abstruse_machine(IF('machine_frame_pity'), 1)
 	abstruse_machine(EIO("octadic_capacitor"), 1, EIO('double_layer_capacitor'))
+	abstruse_machine(CH("projector_table"), 1)
 	
 	//integrated machine
 	event.shaped(KJ('integrated_machine'), [

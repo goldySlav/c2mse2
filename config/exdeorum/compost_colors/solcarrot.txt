@@ -1,2 +1,0 @@
-// Compost colors for solcarrot. You may add your own colors, change existing ones, or remove colors that aren't needed.
-food_book, #835a15

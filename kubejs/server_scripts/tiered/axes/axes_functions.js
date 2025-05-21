@@ -19,4 +19,12 @@ const axeTemplates = {
 		'    B    ',
 		'    A    ',
 	],
+    part: [
+		'    G    ',
+		' EEEEEEE ',
+		'EAFFFFFCE',
+		'EAFFFFFE ',
+		'EAFEEEE  ',
+		'EEE      ',
+	],
 }

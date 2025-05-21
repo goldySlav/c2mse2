@@ -1,0 +1,22 @@
+{
+  "parent": "minecraft:block/block",
+  "children": {
+    "Solid": {
+      "parent": "mekanism_extras:item/block_naquadah"
+    },
+    "Translucent": {
+      "parent": "minecraft:block/cube_all",
+      "textures": {
+        "all": "compressium:block/layer_2"
+      }
+    }
+  },
+  "item_render_order": [
+    "Solid",
+    "Translucent"
+  ],
+  "loader": "forge:composite",
+  "textures": {
+    "particle": "mekanism_extras:block/block_naquadah"
+  }
+}

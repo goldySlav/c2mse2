@@ -111,18 +111,12 @@
 			dependencies: ["0414A7F9A9C83DD9"]
 			icon: "kubejs:liquid_redstone_bucket"
 			id: "330E314088AEBB44"
-			tasks: [
-				{
-					id: "6388562528233562"
-					item: "kubejs:liquid_redstone_bucket"
-					type: "item"
-				}
-				{
-					id: "071D1F95B725D524"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "071D1F95B725D524"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Liquid Redstone Infusion"
 			x: -3.0d
 			y: -4.5d
 		}
@@ -225,18 +219,12 @@
 			dependencies: ["0414A7F9A9C83DD9"]
 			icon: "minecraft:sand"
 			id: "6EA615DD933C1060"
-			tasks: [
-				{
-					id: "0293F02A536ED74B"
-					item: "minecraft:sand"
-					type: "item"
-				}
-				{
-					id: "48B9EFD9DFE36E78"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "48B9EFD9DFE36E78"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Sand"
 			x: 3.0d
 			y: -4.5d
 		}
