@@ -39,8 +39,8 @@ StartupEvents.postInit(event => {
 	}
 	
 	customPortal(
-		"minecraft:netherrack",
-		"minecraft:blaze_powder",
+		"compressium:netherrack_1",
+		"create:polished_rose_quartz",
 		"minecraft:the_nether",
 		"kubejs:crash_site", 
 		{ R: 255, G: 0, B: 0 },

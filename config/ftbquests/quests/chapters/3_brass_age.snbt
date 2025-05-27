@@ -669,15 +669,15 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["0B16696302C3F3C5"]
+			dependencies: ["6A440498F22DB5B5"]
 			description: [
 				"Now you unlocked \"The Nether\" dimension!"
 				""
-				"To join the dimension you need to build a vertical frame from &cNetherrack&r and light it up with &6Blaze Powder&r!"
+				"To join the dimension you need to build a vertical frame from &cCompressed Netherrack (1x)&r and light it up with &6Polished Rose Quartz&r!"
 				""
 				"{image:kubejs:textures/quests/netherrack_portal.png width:200 height:225 align:1}"
 				""
-				"Find hints about how to get Netherrack and Blaze Powder on the next page."
+				"Find hints about how to get Netherrack on the next page."
 				""
 				"{@pagebreak}"
 				""
@@ -685,15 +685,6 @@
 				"1. Produce &5Witch Water&r in Stone Barrel"
 				"2. Pour &6Lava&r Bucket onto it"
 				"&o(other way around will produce Blackstone, you may also get it while you at it!)&r"
-				""
-				"To make &6Blaze Powder&r:"
-				"1. Craft a &7Coal&r Block"
-				"2. Polish it with a &eSand Paper&r to craft"
-				"   &7Coal Rod&r"
-				"3. Spout &6Lava&r onto &7Coal Rod&r and Press"
-				"   it as it is shown in the &9JEI&r"
-				"4. Craft &6Blaze Powder&r from &6Blaze Rod&r"
-				"   &o&7(don't forget to learn it first)&r&r"
 			]
 			id: "3F0D73D93442B7F1"
 			optional: true
@@ -705,8 +696,8 @@
 				title: "Visit \"The Nether\" Dimension"
 				type: "dimension"
 			}]
-			x: 1.5d
-			y: -7.0d
+			x: -2.0d
+			y: 4.0d
 		}
 	]
 	title: "3. Brass Age"
