@@ -11,64 +11,86 @@
 	quests: [
 		{
 			dependencies: ["0826A148DAD0D37E"]
+			description: [
+				"Stores up to &6108&r stacks of any items!`"
+				""
+				"&6When a full block is above chest, it still won't open.&r"
+			]
 			disable_toast: true
 			icon: "ironchest:diamond_chest"
 			id: "41AC6CD50DA48043"
 			size: 1.0d
+			subtitle: "Big &oChest&r."
 			tasks: [{
 				id: "66DEE6A3A9C1D85B"
 				item: "ironchest:diamond_chest"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["0826A148DAD0D37E"]
+			description: ["Barrels don't connect to each other, but they can be opened even if it has a full block above itself."]
 			disable_toast: true
 			icon: "minecraft:barrel"
 			id: "7FBD9CE1F53B85B8"
 			size: 1.0d
+			subtitle: "Chest with a twist"
 			tasks: [{
 				id: "3230CC4DD845AD0A"
 				item: "minecraft:barrel"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["7FBD9CE1F53B85B8"]
+			description: ["This barrel stores &6108&r stacks of items."]
 			disable_toast: true
 			icon: "metalbarrels:diamond_barrel"
 			id: "286CA851F442D7FF"
 			size: 1.0d
+			subtitle: "Big &oBarrel&r"
 			tasks: [{
 				id: "10F155D378023887"
 				item: "metalbarrels:diamond_barrel"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["0826A148DAD0D37E"]
+			description: [
+				"Storage Crate doesn't care about maximum stack sizes."
+				"It simply stores up to 640 items, whether it's 10 stacks of Dirt or 640 tools or armor pieces."
+			]
 			disable_toast: true
 			icon: "quark:crate"
 			id: "0F0F59A467768D53"
 			size: 1.0d
+			subtitle: "Stationary bundle"
 			tasks: [{
 				id: "2B03ECA4A20965D1"
 				item: "quark:crate"
 				type: "item"
 			}]
 			x: -3.0d
-			y: -3.0d
+			y: -4.5d
 		}
 		{
+			description: [
+				"Stores up to 27 stacks of any items."
+				"Can be connected horizontally to another chest to make a double chest, making you able to access both at the same time."
+				""
+				"&6When a full block is above chest, it won't open.&r"
+			]
 			disable_toast: true
 			id: "0826A148DAD0D37E"
 			size: 1.0d
+			subtitle: "&oChest.&r"
 			tasks: [{
 				id: "42BCFA4368C70F0E"
 				item: "minecraft:chest"
@@ -79,9 +101,17 @@
 		}
 		{
 			dependency_requirement: "one_completed"
+			description: [
+				"Brain of your digital storage."
+				""
+				"Each face provides you with 32 &6Channels&r."
+				"Also acts as an Energy Acceptor for your network."
+				"For more info, refer to AE2 Ingame wiki (Hold \"G\" by default while hovering over any ME component)."
+			]
 			disable_toast: true
 			id: "3953D17011867993"
 			size: 1.0d
+			subtitle: "Controls ME Network"
 			tasks: [{
 				id: "7ADAD8D3CEC2EC86"
 				item: "ae2:controller"
@@ -92,22 +122,86 @@
 		}
 		{
 			dependencies: ["0826A148DAD0D37E"]
+			description: [
+				"Can store &62048 items&r (or &6128 stacks&r) of a single type."
+				""
+				"Can be upgraded with various upgrades."
+			]
 			disable_toast: true
+			icon: "functionalstorage:oak_1"
 			id: "7274C2FC470D49E8"
 			size: 1.0d
+			subtitle: "Early bulk storage"
 			tasks: [{
 				id: "1131B4CFDA505C91"
-				item: "functionalstorage:oak_1"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "functionalstorage:oak_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:spruce_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:birch_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:jungle_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:acacia_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:dark_oak_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:crimson_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:warped_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:mangrove_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:cherry_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:framed_1"
+							}
+						]
+					}
+				}
+				title: "Drawer (1x1)"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -4.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["3953D17011867993"]
+			description: [
+				"Holds 10 ME Drives of any kind."
+				"Can be upgraded into Extended version, which holds 20 drives."
+			]
 			disable_toast: true
 			id: "107544D0A5BC9F17"
 			size: 1.0d
+			subtitle: "Drive rack"
 			tasks: [{
 				id: "2F2A586A699F6AE6"
 				item: "ae2:drive"
@@ -118,9 +212,11 @@
 		}
 		{
 			dependencies: ["3953D17011867993"]
+			description: ["This block has enough space to fit one ME Drive, and also has a Crafting Interface built in to interact with this one drive."]
 			disable_toast: true
 			id: "48C7ED0A07C88590"
 			size: 1.0d
+			subtitle: "Some-in-one block"
 			tasks: [{
 				id: "4692BA789FC5501F"
 				item: "ae2:chest"
@@ -135,13 +231,42 @@
 				"107544D0A5BC9F17"
 			]
 			dependency_requirement: "one_completed"
+			description: [
+				"No Channels, no cables, much less restrictive types system."
+				"But no native autocrafting."
+			]
+			icon: "mekanism:qio_drive_array"
 			id: "52F96ABEDFAFE7D6"
 			size: 1.0d
-			tasks: [{
-				id: "7772A10EC6AD67AA"
-				item: "mekanism:qio_drive_array"
-				type: "item"
-			}]
+			subtitle: "Improved digitalization"
+			tasks: [
+				{
+					id: "7772A10EC6AD67AA"
+					item: "mekanism:qio_drive_array"
+					type: "item"
+				}
+				{
+					id: "77AEC8C60668EFC2"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:qio_dashboard"
+								}
+								{
+									Count: 1b
+									id: "mekanism:portable_qio_dashboard"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Quantum Item Orchestration system"
 			x: -1.0d
 			y: -1.5d
 		}
@@ -241,32 +366,78 @@
 		}
 		{
 			dependencies: ["7274C2FC470D49E8"]
+			description: ["This drawer can automatically compact or de-compact resources, one tier at a time."]
 			disable_toast: true
+			icon: "functionalstorage:simple_compacting_drawer"
 			id: "58AC11520604BEBE"
+			subtitle: "Slightly less compact storage"
 			tasks: [{
 				id: "70559B3795F68945"
-				item: "functionalstorage:simple_compacting_drawer"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "functionalstorage:simple_compacting_drawer"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:framed_simple_compacting_drawer"
+							}
+						]
+					}
+				}
+				title: "Any Simple Compacting Drawer"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["7274C2FC470D49E8"]
-			disable_toast: true
-			id: "31C27984A9B27443"
-			tasks: [{
-				id: "33B8B88CF7C59B76"
-				item: "functionalstorage:compacting_drawer"
-				type: "item"
-			}]
+			title: "Simple Compacting Drawer"
 			x: -3.5d
 			y: -1.5d
 		}
 		{
+			dependencies: ["7274C2FC470D49E8"]
+			description: ["This drawer can automatically compact or de-compact resources, two tiers at a time."]
+			disable_toast: true
+			icon: "functionalstorage:compacting_drawer"
+			id: "31C27984A9B27443"
+			subtitle: "Compact storage"
+			tasks: [{
+				id: "33B8B88CF7C59B76"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "functionalstorage:compacting_drawer"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:compacting_framed_drawer"
+							}
+						]
+					}
+				}
+				title: "Any Compacting Drawer"
+				type: "item"
+			}]
+			title: "Compacting drawer"
+			x: -5.5d
+			y: -1.5d
+		}
+		{
 			dependencies: ["0826A148DAD0D37E"]
+			description: [
+				"Ender Chests all share the same inventory, but different for each player."
+				""
+				"Here's the improved Ender Chest! It can be configured by dyeing wool pads on the lid. Each configuration has separate inventory, giving you access to a total of 4096 possible combinations. All Ender Chests and Ender Pouches with the same configuration share their inventory, allowing instant item transport over any range."
+			]
 			disable_toast: true
 			id: "760A31B64FC90408"
+			subtitle: "Better than you remember!"
 			tasks: [{
 				id: "338DB6405FEAEA20"
 				item: "enderstorage:ender_chest"
@@ -651,6 +822,136 @@
 			}]
 			x: 5.5d
 			y: 9.0d
+		}
+		{
+			dependencies: [
+				"7274C2FC470D49E8"
+				"31C27984A9B27443"
+				"58AC11520604BEBE"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Storage Controller allows you to link all kinds of drawers but Ender Drawers to itself, allowing to interact with all drawers at the same time, from the same block."]
+			disable_toast: true
+			icon: "functionalstorage:storage_controller"
+			id: "1E7C3D46B2CE70EB"
+			subtitle: "Interact with all your drawers from one point!"
+			tasks: [
+				{
+					id: "7531F2173BBAB021"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "functionalstorage:storage_controller"
+								}
+								{
+									Count: 1b
+									id: "functionalstorage:framed_storage_controller"
+								}
+							]
+						}
+					}
+					title: "Any Storage Controller"
+					type: "item"
+				}
+				{
+					id: "35397EFA072DFEED"
+					item: {
+						Count: 1
+						id: "functionalstorage:linking_tool"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Storage Controller"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E7C3D46B2CE70EB"]
+			description: ["Storage Access Point exists because each drawer can only be linked to one Controller. Access Points are, well... Access points that behave the same way as Controllers."]
+			disable_toast: true
+			icon: "functionalstorage:controller_extension"
+			id: "27B1F33604B8D199"
+			subtitle: "Interact with all your drawers from many points!"
+			tasks: [{
+				id: "3E4F9A0C9D2AB00F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "functionalstorage:controller_extension"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:framed_controller_extension"
+							}
+						]
+					}
+				}
+				title: "Any Controller Access Point"
+				type: "item"
+			}]
+			title: "Controller Access Point"
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E7C3D46B2CE70EB"]
+			description: [
+				"Armory Cabinet can store a crazy amount of &64096&r items."
+				"The twist is, only items that can't be stacked with anything else can go in there."
+				""
+				"On top of that, &6You can't directly interact with it.&r"
+				"External storage solution is needed like Create's &6Stock Link&r or &6ME Storage Bus&r."
+			]
+			disable_toast: true
+			id: "6D71F5C9787D5E2D"
+			subtitle: "For the non-stackables"
+			tasks: [{
+				id: "0E2A2A32CDB73065"
+				item: "functionalstorage:armory_cabinet"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7274C2FC470D49E8"]
+			description: [
+				"Can store &68192 items&r (or &6512 stacks&r) of a single type."
+				""
+				"Can be upgraded only with \"Utility\" upgrades, but multiple Ender Drawers can be connected to synchronize contents, acting like an Ender Chest for single item type."
+			]
+			disable_toast: true
+			icon: "functionalstorage:ender_drawer"
+			id: "61E68BF64E4BE205"
+			subtitle: "Quantum drawer"
+			tasks: [
+				{
+					id: "264BAE1071CBFB76"
+					item: "functionalstorage:ender_drawer"
+					type: "item"
+				}
+				{
+					id: "0DAEFE48D093549A"
+					item: {
+						Count: 1
+						id: "functionalstorage:linking_tool"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: -3.0d
 		}
 	]
 	title: "Item Storage"
