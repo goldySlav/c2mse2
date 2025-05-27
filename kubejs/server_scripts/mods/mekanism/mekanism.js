@@ -26,6 +26,11 @@ ServerEvents.recipes((event) => {
 	//enriched carbon from coke
 	event.recipes.mekanism.enriching(Item.of(M('enriched_carbon'), 2), KJ('coke'))
 	event.recipes.mekanism.enriching(Item.of(M('enriched_carbon'), 3), KJ('polished_coke'))
+
+	//ingots crystallizing
+	customRecipes.mekanism.crystallizing(event, F(`#ingots/bronze`), KJ("gaseous_bronze_compound"), 90)
+	customRecipes.mekanism.crystallizing(event, M(`ingot_steel`), KJ("gaseous_steel_compound"), 90)
+	customRecipes.mekanism.crystallizing(event, F(`#ingots/tin`), KJ("gaseous_tin_compound"), 90)
 	
 	//cardboard box from create cardboard
 	event.shaped(M("cardboard_box"), [

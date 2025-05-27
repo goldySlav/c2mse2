@@ -156,6 +156,12 @@ ServerEvents.recipes((event) => {
 	event.recipes.create.mixing(Fluid.of(TCT("molten_netherite"), 10), [Fluid.of(TCT("molten_debris"), 30), Fluid.of(TCT("molten_gold"), 30)]).heated()
 	event.recipes.create.mixing([Fluid.of(MC("water"), 10), Fluid.of(TCT("molten_obsidian"), 10)], [Fluid.of(MC("water"), 10), Fluid.of(MC("lava"), 10)]).heated()
 	event.recipes.create.mixing(Fluid.of(TCT("molten_rose_gold"), 20), [Fluid.of(TCT("molten_copper"), 10), Fluid.of(TCT("molten_gold"), 10)]).heated()
+
+	//Ingots from gases
+	customRecipes.mekanism.crystallizing(event, TCT(`manyullyn_ingot`), KJ("gaseous_manyullyn_compound"), 90)
+	customRecipes.mekanism.crystallizing(event, TCT(`rose_gold_ingot`), KJ("gaseous_rose_gold_compound"), 90)
+	customRecipes.mekanism.crystallizing(event, TCT(`cobalt_ingot`), KJ("gaseous_cobalt_compound"), 90)
+	customRecipes.mekanism.crystallizing(event, TCT(`amethyst_bronze_ingot`), KJ("gaseous_amethyst_bronze_compound"), 90)
 	
 	//PET compat
 	event.custom({
