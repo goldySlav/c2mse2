@@ -1297,7 +1297,7 @@ castsForNumber = {
 
 
 	//c2m guide book
-	event.shapeless(Item.of("patchouli:guide_book").withNBT({"patchouli:book": "patchouli:c2m_guide_book"}), [MC("book"), KJ("electric_mechanism"), PRE("klein_star_omega")])
+	event.shapeless(Item.of("patchouli:guide_book").withNBT({"patchouli:book": "patchouli:c2m_guide_book"}), [MC("book"), tieredItems.ch10.circuit, PRE("klein_star_omega")])
 
 
 
@@ -1487,9 +1487,9 @@ castsForNumber = {
 	event.recipes.mekanism.nucleosynthesizing(KJ('calculation_mechanism'), `1x ${M("antimatter")}`, KJ('abstruse_mechanism'), 2)
 	
 	//integrated mechanism
-	let tIntegrated = KJ('incomplete_integrated_mechanism')
+	let tIntegrated = CR_DD('incomplete_integrated_mechanism')
 	event.recipes.create.sequenced_assembly([
-		KJ('integrated_mechanism'),
+		CR_DD('integrated_mechanism'),
 	], KJ('abstruse_mechanism'), [
 		event.recipes.create.deploying(tIntegrated, [tIntegrated, IF('plastic')]),
 		event.recipes.create.deploying(tIntegrated, [tIntegrated, P('crystal_nitro')]),
@@ -1497,46 +1497,46 @@ castsForNumber = {
 	]).transitionalItem(tIntegrated)
 		.loops(1)
 		.id(KJ('integrated_mechanism'))
-	event.recipes.mekanism.nucleosynthesizing(KJ('abstruse_mechanism'), `1x ${M("antimatter")}`, KJ('integrated_mechanism'), 2)
+	event.recipes.mekanism.nucleosynthesizing(KJ('abstruse_mechanism'), `1x ${M("antimatter")}`, CR_DD('integrated_mechanism'), 2)
 	
 	//embedded mechanism
-	let tEmbedded = KJ('incomplete_embedded_mechanism')
+	let tEmbedded = CR_DD('incomplete_embedded_mechanism')
 	event.recipes.create.sequenced_assembly([
-		KJ('embedded_mechanism'),
-	], KJ('integrated_mechanism'), [
+		CR_DD('embedded_mechanism'),
+	], CR_DD('integrated_mechanism'), [
 		event.recipes.create.deploying(tEmbedded, [tEmbedded, FN('flux_dust')]),
 		event.recipes.create.deploying(tEmbedded, [tEmbedded, IF('pink_slime')]),
 		event.recipes.create.deploying(tEmbedded, [tEmbedded, F("#tools/calculators")])
 	]).transitionalItem(tEmbedded)
 		.loops(1)
 		.id(KJ('embedded_mechanism'))
-	event.recipes.mekanism.nucleosynthesizing(KJ('integrated_mechanism'), `1x ${M("antimatter")}`, KJ('embedded_mechanism'), 2)
+	event.recipes.mekanism.nucleosynthesizing(CR_DD('integrated_mechanism'), `1x ${M("antimatter")}`, CR_DD('embedded_mechanism'), 2)
 	
 	//portable mechanism
-	let tPortable = KJ('incomplete_portable_mechanism')
+	let tPortable = CR_DD('incomplete_portable_mechanism')
 	event.recipes.create.sequenced_assembly([
-		KJ('portable_mechanism'),
-	], KJ('embedded_mechanism'), [
+		CR_DD('portable_mechanism'),
+	], CR_DD('embedded_mechanism'), [
 		event.recipes.create.deploying(tPortable, [tPortable, P('steel_energized')]),
 		event.recipes.create.deploying(tPortable, [tPortable, KJ('ether_gem')]),
 		event.recipes.create.deploying(tPortable, [tPortable, F("#tools/calculators")])
 	]).transitionalItem(tPortable)
 		.loops(1)
 		.id(KJ('portable_mechanism'))
-	event.recipes.mekanism.nucleosynthesizing(KJ('embedded_mechanism'), `1x ${M("antimatter")}`, KJ('portable_mechanism'), 2)
+	event.recipes.mekanism.nucleosynthesizing(CR_DD('embedded_mechanism'), `1x ${M("antimatter")}`, CR_DD('portable_mechanism'), 2)
 	
 	//electric mechanism
-	let tElectric = KJ('incomplete_electric_mechanism')
+	let tElectric = CR_DD('incomplete_electric_mechanism')
 	event.recipes.create.sequenced_assembly([
-		KJ('electric_mechanism'),
-	], KJ('portable_mechanism'), [
+		CR_DD('electric_mechanism'),
+	], CR_DD('portable_mechanism'), [
 		event.recipes.create.deploying(tElectric, [tElectric, F('#dusts/steel')]),
 		event.recipes.create.deploying(tElectric, [tElectric, F('#nuggets/enhanced_redstone_ingot')]),
 		event.recipes.create.deploying(tElectric, [tElectric, F("#tools/calculators")])
 	]).transitionalItem(tElectric)
 		.loops(1)
 		.id(KJ('electric_mechanism'))
-	event.recipes.mekanism.nucleosynthesizing(KJ('portable_mechanism'), `1x ${M("antimatter")}`, KJ('electric_mechanism'), 2)
+	event.recipes.mekanism.nucleosynthesizing(CR_DD('portable_mechanism'), `1x ${M("antimatter")}`, CR_DD('electric_mechanism'), 2)
 	
 	
 	
@@ -1849,13 +1849,13 @@ castsForNumber = {
 		'SSS'
 	], {
 		C: KJ('integrated_casing'),
-		S: KJ('integrated_mechanism')
+		S: CR_DD('integrated_mechanism')
 	})
 	
 	let integrated_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
-			event.smithing(Item.of(id, amount), KJ('integrated_mechanism'), KJ('integrated_machine'), other_ingredient)
+			event.smithing(Item.of(id, amount), CR_DD('integrated_mechanism'), KJ('integrated_machine'), other_ingredient)
 			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: KJ('integrated_machine'), B: other_ingredient })
 			event.recipes.extendedcrafting.shapeless_table(Item.of(id, amount), [KJ('integrated_machine'), other_ingredient])
 		}
@@ -1885,13 +1885,13 @@ castsForNumber = {
 		'SSS'
 	], {
 		C: KJ('embedded_casing'),
-		S: KJ('embedded_mechanism')
+		S: CR_DD('embedded_mechanism')
 	}).id(KJ(`${KJ()}/machines/embedded_machine`))
 	
 	let embedded_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
-			event.smithing(Item.of(id, amount), KJ('embedded_mechanism'), EC('frame'), other_ingredient)
+			event.smithing(Item.of(id, amount), CR_DD('embedded_mechanism'), EC('frame'), other_ingredient)
 			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: EC('frame'), B: other_ingredient })
 			event.recipes.extendedcrafting.shapeless_table(Item.of(id, amount), [EC('frame'), other_ingredient])
 		}
@@ -1918,13 +1918,13 @@ castsForNumber = {
 		'SSS'
 	], {
 		C: KJ('portable_casing'),
-		S: KJ('portable_mechanism')
+		S: CR_DD('portable_mechanism')
 	})
 	
 	let portable_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
-			event.smithing(Item.of(id, amount), KJ('portable_mechanism'), KJ('portable_machine'), other_ingredient)
+			event.smithing(Item.of(id, amount), CR_DD('portable_mechanism'), KJ('portable_machine'), other_ingredient)
 			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: KJ('portable_machine'), B: other_ingredient })
 			event.recipes.extendedcrafting.shapeless_table(Item.of(id, amount), [KJ('portable_machine'), other_ingredient])
 		}
@@ -1944,13 +1944,13 @@ castsForNumber = {
 		'SSS'
 	], {
 		C: KJ('electric_casing'),
-		S: KJ('electric_mechanism')
+		S: CR_DD('electric_mechanism')
 	}).id(KJ(`${KJ()}/machines/electric_machine`))
 	
 	let electric_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
-			event.smithing(Item.of(id, amount), KJ('electric_mechanism'), M('steel_casing'), other_ingredient)
+			event.smithing(Item.of(id, amount), CR_DD('electric_mechanism'), M('steel_casing'), other_ingredient)
 			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: M('steel_casing'), B: other_ingredient })
 			event.recipes.extendedcrafting.shapeless_table(Item.of(id, amount), [M('steel_casing'), other_ingredient])
 		}

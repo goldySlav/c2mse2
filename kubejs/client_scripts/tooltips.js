@@ -139,6 +139,12 @@ ItemEvents.tooltip(event => {
     [Text.of('Gas:').darkGray(), ' ', Text.of('40,000').gray(), ' ', Text.of('mB/t').darkGray()],
     [Text.of('Energy:').darkGray(), ' ', Text.of('131,072').gray(), ' ', Text.of('FE/t').darkGray()],
   ])
+  
+    //create_dd tooltip note
+	event.add('create_dreams_and_desires:integrated_mechanism', '§8Art is respectfully taken from mod: "Create: Dreams & Desires"')
+	event.add('create_dreams_and_desires:embedded_mechanism', '§8Art is respectfully taken from mod: "Create: Dreams & Desires"')
+	event.add('create_dreams_and_desires:portable_mechanism', '§8Art is respectfully taken from mod: "Create: Dreams & Desires"')
+	event.add('create_dreams_and_desires:electric_mechanism', '§8Art is respectfully taken from mod: "Create: Dreams & Desires"')
 
 	//mechanisms
 	let main_assembly = (id, stage) => event.add(id, [`§7Main Assembly: §6Chapter ${stage}`, '§8Consider automating this item'])
@@ -148,10 +154,10 @@ ItemEvents.tooltip(event => {
 	main_assembly('kubejs:inductive_mechanism', "4")
 	main_assembly('kubejs:calculation_mechanism', "5")
 	main_assembly('kubejs:abstruse_mechanism', "6")
-	main_assembly('kubejs:integrated_mechanism', "7")
-	main_assembly('kubejs:embedded_mechanism', "8")
-	main_assembly('kubejs:portable_mechanism', "9")
-	main_assembly('kubejs:electric_mechanism', "10")
+	main_assembly('create_dreams_and_desires:integrated_mechanism', "7")
+	main_assembly('create_dreams_and_desires:embedded_mechanism', "8")
+	main_assembly('create_dreams_and_desires:portable_mechanism', "9")
+	main_assembly('create_dreams_and_desires:electric_mechanism', "10")
 
 	//machines
 	let machineTooltip = (id, stage) => event.add(id, [`§7Age closing machine from §6Chapter ${stage}`])

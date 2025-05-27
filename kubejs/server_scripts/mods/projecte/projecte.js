@@ -884,7 +884,7 @@ ServerEvents.recipes((event) => {
 		A: PRE('klein_star_drei'),
 		B: MC("ender_pearl"),
 		C: MC("book"),
-		D: KJ("kinetic_mechanism"),
+		D: tieredItems.ch1.circuit,
 	})
 	event.shaped(PREXP('advanced_alchemical_book'), [
 		'ADA',
@@ -894,7 +894,7 @@ ServerEvents.recipes((event) => {
 		A: PRE('klein_star_omega'),
 		B: M("teleportation_core"),
 		C: PREXP('basic_alchemical_book'),
-		D: CR("precision_mechanism"),
+		D: tieredItems.ch3.circuit,
 	})
 	event.shaped(PREXP('master_alchemical_book'), [
 		'ADA',
@@ -904,7 +904,7 @@ ServerEvents.recipes((event) => {
 		A: PREXP('magnum_star_drei'),
 		B: KJ("the_ultimate_pearl"),
 		C: PREXP('advanced_alchemical_book'),
-		D: KJ("integrated_mechanism"),
+		D: tieredItems.ch7.circuit,
 	})
 	event.shaped(PREXP('arcane_alchemical_book'), [
 		'ADA',
@@ -914,6 +914,6 @@ ServerEvents.recipes((event) => {
 		A: PREXP('magnum_star_omega'),
 		B: singularityId("the_ultimate_pearl"),
 		C: PREXP('master_alchemical_book'),
-		D: KJ("electric_mechanism"),
+		D: tieredItems.ch10.circuit,
 	})
 })

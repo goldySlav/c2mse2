@@ -224,10 +224,16 @@ StartupEvents.registry('item', event => {
 	mechanism("Inductive", true)
 	mechanism("Calculation", true)
 	mechanism("Abstruse", true)
-	mechanism("Integrated", true)
-	mechanism("Embedded", true)
-	mechanism("Portable", true)
-	mechanism("Electric", true)
+	
+	const create_dd_mechanism = (name) => {
+		let id = name.toLowerCase()
+		event.create(`create_dreams_and_desires:${id}_mechanism`).glow(true).displayName(`${name} Mechanism`)
+		event.create(`create_dreams_and_desires:incomplete_${id}_mechanism`, 'create:sequenced_assembly').displayName(`Incomplete ${name} Mechanism`)
+	}
+	create_dd_mechanism("Integrated")
+	create_dd_mechanism("Embedded")
+	create_dd_mechanism("Portable")
+	create_dd_mechanism("Electric")
 	
 	//summoning doll
 	event.create('summoning_doll').displayName('Summoning Doll').rarity("uncommon")
