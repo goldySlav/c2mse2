@@ -484,4 +484,7 @@ ServerEvents.recipes((event) => {
 		if (i !== componentsLength - 1)
 			event.recipes.mekanism.nucleosynthesizing(AE2(`cell_component_${componentSizes[AE2()][i]}`), `${i + 1}x ${M("antimatter")}`, AE2(`cell_component_${componentSizes[AE2()][i + 1]}`), (i + 1) * 10)
 	}
+
+	//Certus crystallizing
+	customRecipes.mekanism.crystallizing(event, AE2(`certus_quartz_crystal`), KJ("gaseous_certus_compound"), 90)
 })

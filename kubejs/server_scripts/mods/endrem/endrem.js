@@ -11,7 +11,7 @@ ServerEvents.recipes((event) => {
 		event.recipes.extendedcrafting.combination(ER(`${eyeName}_eye`), MC('ender_eye'), shuffleArray(separate(inputArr)), nrg).powerRate(rate);
 	}
 	combEye("black", [
-		`3x ${KJ("sealed_mechanism")}`,
+		`3x ${tieredItems.ch2.circuit}`,
 		`2x ${KJ("polished_coke")}`,
 		PRE("black_alchemical_bag"),
 		`2x ${PRE("dark_matter")}`,
@@ -19,14 +19,14 @@ ServerEvents.recipes((event) => {
 	combEye("cold", [
 		`3x ${AE2("charged_certus_quartz_crystal")}`,
 		`2x ${CR("electron_tube")}`,
-		`2x ${CR("precision_mechanism")}`,
+		`2x ${tieredItems.ch3.circuit}`,
 		`4x ${PRE("red_matter")}`,
 		MC("blue_ice"),
 	]) //ch3
 	combEye("lost", [
 		`3x ${AE2("singularity")}`,
 		`3x ${KJ("radiant_coil")}`,
-		`2x ${KJ("inductive_mechanism")}`,
+		`2x ${tieredItems.ch4.circuit}`,
 		`3x ${PREXP("magenta_matter")}`,
 		CR("shadow_steel"),
 		MC("compass"),
@@ -36,38 +36,38 @@ ServerEvents.recipes((event) => {
 		`3x ${AE2("controller")}`,
 		`2x ${EC("ender_star")}`,
 		`6x ${PREXP("pink_matter")}`,
-		`2x ${KJ("calculation_mechanism")}`,
+		`2x ${tieredItems.ch5.circuit}`,
 		KJ("unstable_chromatic_resonator"),
 	]) //ch5
 	combEye("rogue", [
 		`7x ${KJ("computation_matrix")}`,
 		`1x ${EC("flux_star")}`,
 		`4x ${PREXP("purple_matter")}`,
-		`2x ${KJ("abstruse_mechanism")}`,
+		`2x ${tieredItems.ch6.circuit}`,
 	]) //ch6
 	combEye("cursed", [
 		`4x ${IF("plastic")}`,
 		`2x ${EC("flux_star")}`,
 		`1x ${KJ("unstable_charged_calculator")}`,
-		`3x ${KJ("integrated_mechanism")}`,
+		`3x ${tieredItems.ch7.circuit}`,
 		`4x ${PREXP("violet_matter")}`,
 	]) //ch7
 	combEye("exotic", [
-		`4x ${KJ("embedded_mechanism")}`,
+		`4x ${tieredItems.ch8.circuit}`,
 		`4x ${F("#dusts/flux")}`,
 		`2x ${PREXP("blue_matter")}`,
 		`3x ${IF("pink_slime_ingot")}`,
 	]) //ch8
 	combEye("evil", [
 		`3x ${KJ("ether_gem")}`,
-		`4x ${KJ("portable_mechanism")}`,
+		`4x ${tieredItems.ch9.circuit}`,
 		`3x ${KJ("unstable_charged_calculator")}`,
 		`3x ${PREXP("cyan_matter")}`,
 	]) //ch9
 	combEye("corrupted", [
 		`3x ${CP("steel_2")}`,
 		`1x ${EC("flux_star")}`,
-		`5x ${KJ("electric_mechanism")}`,
+		`5x ${tieredItems.ch10.circuit}`,
 		`2x ${PREXP("green_matter")}`,
 	]) //ch10
 	combEye("magical", [

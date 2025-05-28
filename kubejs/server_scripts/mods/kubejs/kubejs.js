@@ -755,17 +755,30 @@ ServerEvents.recipes((event) => {
 	
 	
 	//gaseous molten metals
-	customRecipes.mekanism.condensentrating(event, TCT("molten_iron"), 1, KJ("gaseous_iron_compound"), 1)
-	customRecipes.mekanism.condensentrating(event, TCT("molten_gold"), 1, KJ("gaseous_gold_compound"), 1)
-	customRecipes.mekanism.condensentrating(event, TCT("molten_copper"), 1, KJ("gaseous_copper_compound"), 1)
-	customRecipes.mekanism.condensentrating(event, TCT("molten_zinc"), 1, KJ("gaseous_zinc_compound"), 1)
-	customRecipes.mekanism.condensentrating(event, TCT("molten_brass"), 1, KJ("gaseous_brass_compound"), 1)
-	customRecipes.mekanism.condensentrating(event, TCT("molten_cobalt"), 1, KJ("gaseous_cobalt_compound"), 1)
-	customRecipes.mekanism.condensentrating(event, TCT("molten_steel"), 1, KJ("gaseous_steel_compound"), 1)
-	customRecipes.mekanism.condensentrating(event, KJ("molten_ender_alloy"), 1, KJ("gaseous_ender_alloy_compound"), 1)
-	customRecipes.mekanism.condensentrating(event, KJ("molten_certus"), 1, KJ("gaseous_certus_compound"), 1)
-	customRecipes.mekanism.condensentrating(event, TCT("molten_diamond"), 1, KJ("gaseous_diamond_compound"), 1)
-	
+	function CustomCondensentrating(material) {
+		customRecipes.mekanism.condensentrating(event, TCT(`molten_${material}`), 1, KJ(`gaseous_${material}_compound`), 1)
+	}
+
+	CustomCondensentrating("iron")
+	CustomCondensentrating("gold")
+	CustomCondensentrating("zinc")
+	CustomCondensentrating("copper")
+	CustomCondensentrating("tin")
+	CustomCondensentrating("brass")
+	CustomCondensentrating("bronze")
+	CustomCondensentrating("amethyst_bronze")
+	CustomCondensentrating("cobalt")
+	CustomCondensentrating("steel")
+	CustomCondensentrating("ender") //ender pearls
+	CustomCondensentrating("diamond")
+	CustomCondensentrating("rose_gold")
+	CustomCondensentrating("manyullyn")
+	CustomCondensentrating("netherite")
+
+	customRecipes.mekanism.condensentrating(event, TCT("molten_amethyst"), 1, KJ("gaseous_amethyst"), 1)
+	customRecipes.mekanism.condensentrating(event, TCT("molten_debris"), 1, KJ("gaseous_debris"), 1)
+	customRecipes.mekanism.condensentrating(event, KJ(`molten_certus`), 1, KJ(`gaseous_certus_compound`), 1)
+	customRecipes.mekanism.condensentrating(event, KJ(`molten_ender_alloy`), 1, KJ(`gaseous_ender_alloy_compound`), 1)
 	
 	
 	//custom metal/gem melting in chemical oxidizer
@@ -785,9 +798,21 @@ ServerEvents.recipes((event) => {
 	customRecipes.mekanism.oxidizing(event, F("#ingots/zinc"), KJ("gaseous_zinc_compound"), 90)
 	customRecipes.mekanism.oxidizing(event, F("#nuggets/zinc"), KJ("gaseous_zinc_compound"), 10)
 	
+	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/tin"), KJ("gaseous_tin_compound"), 810)
+	customRecipes.mekanism.oxidizing(event, F("#ingots/tin"), KJ("gaseous_tin_compound"), 90)
+	customRecipes.mekanism.oxidizing(event, F("#nuggets/tin"), KJ("gaseous_tin_compound"), 10)
+	
 	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/brass"), KJ("gaseous_brass_compound"), 810)
 	customRecipes.mekanism.oxidizing(event, F("#ingots/brass"), KJ("gaseous_brass_compound"), 90)
 	customRecipes.mekanism.oxidizing(event, F("#nuggets/brass"), KJ("gaseous_brass_compound"), 10)
+	
+	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/bronze"), KJ("gaseous_bronze_compound"), 810)
+	customRecipes.mekanism.oxidizing(event, F("#ingots/bronze"), KJ("gaseous_bronze_compound"), 90)
+	customRecipes.mekanism.oxidizing(event, F("#nuggets/bronze"), KJ("gaseous_bronze_compound"), 10)
+	
+	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/amethyst_bronze"), KJ("gaseous_amethyst_bronze_compound"), 810)
+	customRecipes.mekanism.oxidizing(event, F("#ingots/amethust_bronze"), KJ("gaseous_amethyst_bronze_compound"), 90)
+	customRecipes.mekanism.oxidizing(event, F("#nuggets/amethyst_bronze"), KJ("gaseous_amethyst_bronze_compound"), 10)
 	
 	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/cobalt"), KJ("gaseous_cobalt_compound"), 810)
 	customRecipes.mekanism.oxidizing(event, F("#ingots/cobalt"), KJ("gaseous_cobalt_compound"), 90)
@@ -796,6 +821,9 @@ ServerEvents.recipes((event) => {
 	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/steel"), KJ("gaseous_steel_compound"), 810)
 	customRecipes.mekanism.oxidizing(event, F("#ingots/steel"), KJ("gaseous_steel_compound"), 90)
 	customRecipes.mekanism.oxidizing(event, F("#nuggets/steel"), KJ("gaseous_steel_compound"), 10)
+	
+	customRecipes.mekanism.oxidizing(event, F("#ender_pearls"), KJ("gaseous_ender_compound"), 250)
+	customRecipes.mekanism.oxidizing(event, MC("ender_eye"), KJ("gaseous_ender_compound"), 250)
 	
 	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/ender_ingot"), KJ("gaseous_ender_alloy_compound"), 810)
 	customRecipes.mekanism.oxidizing(event, F("#ingots/ender_ingot"), KJ("gaseous_ender_alloy_compound"), 90)
@@ -806,6 +834,24 @@ ServerEvents.recipes((event) => {
 	
 	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/diamond"), KJ("gaseous_diamond_compound"), 810)
 	customRecipes.mekanism.oxidizing(event, F("#gems/diamond"), KJ("gaseous_diamond_compound"), 90)
+
+	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/rose_gold"), KJ("gaseous_rose_gold_compound"), 810)
+	customRecipes.mekanism.oxidizing(event, F("#ingots/rose_gold"), KJ("gaseous_rose_gold_compound"), 90)
+	customRecipes.mekanism.oxidizing(event, F("#nuggets/rose_gold"), KJ("gaseous_rose_gold_compound"), 10)
+
+	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/manyullyn"), KJ("gaseous_manyullyn_compound"), 810)
+	customRecipes.mekanism.oxidizing(event, F("#ingots/manyullyn"), KJ("gaseous_manyullyn_compound"), 90)
+	customRecipes.mekanism.oxidizing(event, F("#nuggets/manyullyn"), KJ("gaseous_manyullyn_compound"), 10)
+
+	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/netherite"), KJ("gaseous_netherite_compound"), 810)
+	customRecipes.mekanism.oxidizing(event, F("#ingots/nwtherite"), KJ("gaseous_netherite_compound"), 90)
+	customRecipes.mekanism.oxidizing(event, F("#nuggets/netherite"), KJ("gaseous_netherite_compound"), 10)
+
+	customRecipes.mekanism.oxidizing(event, F("#ingots/netherite_scrap"), KJ("gaseous_debris"), 90)
+	customRecipes.mekanism.oxidizing(event, F("#nuggets/netherite_scrap"), KJ("gaseous_debris"), 10)
+
+	customRecipes.mekanism.oxidizing(event, F("#storage_blocks/amethyst"), KJ("gaseous_amethyst"), 400)
+	customRecipes.mekanism.oxidizing(event, F("#gems/amethyst"), KJ("gaseous_amethyst"), 100)
 	
 	
 	
@@ -1180,11 +1226,11 @@ matrixBlockCost = 100,
 castsForNumber = {
  zero: 3, //8-8
  one: 3, //8/8
- two: 5, //6/3
+ two: 4, //6/3
  three: 1,
  four: 5, //3+1
- five: 3, //8-3
- six: 3, //3+3
+ five: 1, //3, #tools/calculators
+ six: 2, //3!
  seven: 5, //8-1
  eight: 1,
  nine: 3, //3*3
@@ -1251,7 +1297,7 @@ castsForNumber = {
 
 
 	//c2m guide book
-	event.shapeless(Item.of("patchouli:guide_book").withNBT({"patchouli:book": "patchouli:c2m_guide_book"}), [MC("book"), KJ("electric_mechanism"), PRE("klein_star_omega")])
+	event.shapeless(Item.of("patchouli:guide_book").withNBT({"patchouli:book": "patchouli:c2m_guide_book"}), [MC("book"), tieredItems.ch10.circuit, PRE("klein_star_omega")])
 
 
 
@@ -1441,9 +1487,9 @@ castsForNumber = {
 	event.recipes.mekanism.nucleosynthesizing(KJ('calculation_mechanism'), `1x ${M("antimatter")}`, KJ('abstruse_mechanism'), 2)
 	
 	//integrated mechanism
-	let tIntegrated = KJ('incomplete_integrated_mechanism')
+	let tIntegrated = CR_DD('incomplete_integrated_mechanism')
 	event.recipes.create.sequenced_assembly([
-		KJ('integrated_mechanism'),
+		CR_DD('integrated_mechanism'),
 	], KJ('abstruse_mechanism'), [
 		event.recipes.create.deploying(tIntegrated, [tIntegrated, IF('plastic')]),
 		event.recipes.create.deploying(tIntegrated, [tIntegrated, P('crystal_nitro')]),
@@ -1451,46 +1497,46 @@ castsForNumber = {
 	]).transitionalItem(tIntegrated)
 		.loops(1)
 		.id(KJ('integrated_mechanism'))
-	event.recipes.mekanism.nucleosynthesizing(KJ('abstruse_mechanism'), `1x ${M("antimatter")}`, KJ('integrated_mechanism'), 2)
+	event.recipes.mekanism.nucleosynthesizing(KJ('abstruse_mechanism'), `1x ${M("antimatter")}`, CR_DD('integrated_mechanism'), 2)
 	
 	//embedded mechanism
-	let tEmbedded = KJ('incomplete_embedded_mechanism')
+	let tEmbedded = CR_DD('incomplete_embedded_mechanism')
 	event.recipes.create.sequenced_assembly([
-		KJ('embedded_mechanism'),
-	], KJ('integrated_mechanism'), [
+		CR_DD('embedded_mechanism'),
+	], CR_DD('integrated_mechanism'), [
 		event.recipes.create.deploying(tEmbedded, [tEmbedded, FN('flux_dust')]),
 		event.recipes.create.deploying(tEmbedded, [tEmbedded, IF('pink_slime')]),
 		event.recipes.create.deploying(tEmbedded, [tEmbedded, F("#tools/calculators")])
 	]).transitionalItem(tEmbedded)
 		.loops(1)
 		.id(KJ('embedded_mechanism'))
-	event.recipes.mekanism.nucleosynthesizing(KJ('integrated_mechanism'), `1x ${M("antimatter")}`, KJ('embedded_mechanism'), 2)
+	event.recipes.mekanism.nucleosynthesizing(CR_DD('integrated_mechanism'), `1x ${M("antimatter")}`, CR_DD('embedded_mechanism'), 2)
 	
 	//portable mechanism
-	let tPortable = KJ('incomplete_portable_mechanism')
+	let tPortable = CR_DD('incomplete_portable_mechanism')
 	event.recipes.create.sequenced_assembly([
-		KJ('portable_mechanism'),
-	], KJ('embedded_mechanism'), [
+		CR_DD('portable_mechanism'),
+	], CR_DD('embedded_mechanism'), [
 		event.recipes.create.deploying(tPortable, [tPortable, P('steel_energized')]),
 		event.recipes.create.deploying(tPortable, [tPortable, KJ('ether_gem')]),
 		event.recipes.create.deploying(tPortable, [tPortable, F("#tools/calculators")])
 	]).transitionalItem(tPortable)
 		.loops(1)
 		.id(KJ('portable_mechanism'))
-	event.recipes.mekanism.nucleosynthesizing(KJ('embedded_mechanism'), `1x ${M("antimatter")}`, KJ('portable_mechanism'), 2)
+	event.recipes.mekanism.nucleosynthesizing(CR_DD('embedded_mechanism'), `1x ${M("antimatter")}`, CR_DD('portable_mechanism'), 2)
 	
 	//electric mechanism
-	let tElectric = KJ('incomplete_electric_mechanism')
+	let tElectric = CR_DD('incomplete_electric_mechanism')
 	event.recipes.create.sequenced_assembly([
-		KJ('electric_mechanism'),
-	], KJ('portable_mechanism'), [
+		CR_DD('electric_mechanism'),
+	], CR_DD('portable_mechanism'), [
 		event.recipes.create.deploying(tElectric, [tElectric, F('#dusts/steel')]),
 		event.recipes.create.deploying(tElectric, [tElectric, F('#nuggets/enhanced_redstone_ingot')]),
 		event.recipes.create.deploying(tElectric, [tElectric, F("#tools/calculators")])
 	]).transitionalItem(tElectric)
 		.loops(1)
 		.id(KJ('electric_mechanism'))
-	event.recipes.mekanism.nucleosynthesizing(KJ('portable_mechanism'), `1x ${M("antimatter")}`, KJ('electric_mechanism'), 2)
+	event.recipes.mekanism.nucleosynthesizing(CR_DD('portable_mechanism'), `1x ${M("antimatter")}`, CR_DD('electric_mechanism'), 2)
 	
 	
 	
@@ -1803,13 +1849,13 @@ castsForNumber = {
 		'SSS'
 	], {
 		C: KJ('integrated_casing'),
-		S: KJ('integrated_mechanism')
+		S: CR_DD('integrated_mechanism')
 	})
 	
 	let integrated_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
-			event.smithing(Item.of(id, amount), KJ('integrated_mechanism'), KJ('integrated_machine'), other_ingredient)
+			event.smithing(Item.of(id, amount), CR_DD('integrated_mechanism'), KJ('integrated_machine'), other_ingredient)
 			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: KJ('integrated_machine'), B: other_ingredient })
 			event.recipes.extendedcrafting.shapeless_table(Item.of(id, amount), [KJ('integrated_machine'), other_ingredient])
 		}
@@ -1839,13 +1885,13 @@ castsForNumber = {
 		'SSS'
 	], {
 		C: KJ('embedded_casing'),
-		S: KJ('embedded_mechanism')
+		S: CR_DD('embedded_mechanism')
 	}).id(KJ(`${KJ()}/machines/embedded_machine`))
 	
 	let embedded_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
-			event.smithing(Item.of(id, amount), KJ('embedded_mechanism'), EC('frame'), other_ingredient)
+			event.smithing(Item.of(id, amount), CR_DD('embedded_mechanism'), EC('frame'), other_ingredient)
 			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: EC('frame'), B: other_ingredient })
 			event.recipes.extendedcrafting.shapeless_table(Item.of(id, amount), [EC('frame'), other_ingredient])
 		}
@@ -1872,13 +1918,13 @@ castsForNumber = {
 		'SSS'
 	], {
 		C: KJ('portable_casing'),
-		S: KJ('portable_mechanism')
+		S: CR_DD('portable_mechanism')
 	})
 	
 	let portable_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
-			event.smithing(Item.of(id, amount), KJ('portable_mechanism'), KJ('portable_machine'), other_ingredient)
+			event.smithing(Item.of(id, amount), CR_DD('portable_mechanism'), KJ('portable_machine'), other_ingredient)
 			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: KJ('portable_machine'), B: other_ingredient })
 			event.recipes.extendedcrafting.shapeless_table(Item.of(id, amount), [KJ('portable_machine'), other_ingredient])
 		}
@@ -1898,13 +1944,13 @@ castsForNumber = {
 		'SSS'
 	], {
 		C: KJ('electric_casing'),
-		S: KJ('electric_mechanism')
+		S: CR_DD('electric_mechanism')
 	}).id(KJ(`${KJ()}/machines/electric_machine`))
 	
 	let electric_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
-			event.smithing(Item.of(id, amount), KJ('electric_mechanism'), M('steel_casing'), other_ingredient)
+			event.smithing(Item.of(id, amount), CR_DD('electric_mechanism'), M('steel_casing'), other_ingredient)
 			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: M('steel_casing'), B: other_ingredient })
 			event.recipes.extendedcrafting.shapeless_table(Item.of(id, amount), [M('steel_casing'), other_ingredient])
 		}
@@ -1919,4 +1965,13 @@ castsForNumber = {
 	electric_machine(X('redstone_proxy_upd'), 1, PR_T('red_alloy_wire'))
 	electric_machine(M('laser'), 1, LB("laser_source_block"))
 	electric_machine(IF("infinity_charger"), 1, AE2_E('ex_charger'))
+
+	//Gas "alloying"
+	event.recipes.mekanism.chemical_infusing({ gas: KJ("gaseous_brass_compound"), amount: 2 }, { gas: KJ("gaseous_copper_compound"), amount: 1 }, { gas: KJ("gaseous_zinc_compound"), amount: 1 })
+	event.recipes.mekanism.chemical_infusing({ gas: KJ("gaseous_rose_gold_compound"), amount: 2 }, { gas: KJ("gaseous_copper_compound"), amount: 1 }, { gas: KJ("gaseous_gold_compound"), amount: 1 })
+	event.recipes.mekanism.chemical_infusing({ gas: KJ("gaseous_bronze_compound"), amount: 4 }, { gas: KJ("gaseous_copper_compound"), amount: 3 }, { gas: KJ("gaseous_tin_compound"), amount: 1 })
+	event.recipes.mekanism.chemical_infusing({ gas: KJ("gaseous_amethyst_bronze_compound"), amount: 9 }, { gas: KJ("gaseous_copper_compound"), amount: 9 }, { gas: KJ("gaseous_amethyst"), amount: 10 })
+	event.recipes.mekanism.chemical_infusing({ gas: KJ("gaseous_ender_alloy_compound"), amount: 18 }, { gas: KJ("gaseous_iron_compound"), amount: 9 }, { gas: KJ("gaseous_ender_compound"), amount: 25 })
+	event.recipes.mekanism.chemical_infusing({ gas: KJ("gaseous_manyullyn_compound"), amount: 4 }, { gas: KJ("gaseous_cobalt_compound"), amount: 3 }, { gas: KJ("gaseous_debris"), amount: 1 })
+	event.recipes.mekanism.chemical_infusing({ gas: KJ("gaseous_netherite_compound"), amount: 1 }, { gas: KJ("gaseous_debris"), amount: 1 }, { gas: KJ("gaseous_gold_compound"), amount: 1 })
 })

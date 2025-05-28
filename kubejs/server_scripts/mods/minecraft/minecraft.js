@@ -150,13 +150,12 @@ ServerEvents.recipes((event) => {
 	customRecipes.mekanism.crystallizing(event, MC(`iron_ingot`), KJ("gaseous_iron_compound"), 90)
 	customRecipes.mekanism.crystallizing(event, MC(`gold_ingot`), KJ("gaseous_gold_compound"), 90)
 	customRecipes.mekanism.crystallizing(event, MC(`copper_ingot`), KJ("gaseous_copper_compound"), 90)
-	customRecipes.mekanism.crystallizing(event, CR(`zinc_ingot`), KJ("gaseous_zinc_compound"), 90)
-	customRecipes.mekanism.crystallizing(event, CR(`brass_ingot`), KJ("gaseous_brass_compound"), 90)
-	customRecipes.mekanism.crystallizing(event, TCT(`cobalt_ingot`), KJ("gaseous_cobalt_compound"), 90)
-	customRecipes.mekanism.crystallizing(event, M(`ingot_steel`), KJ("gaseous_steel_compound"), 90)
 	customRecipes.mekanism.crystallizing(event, EC(`ender_ingot`), KJ("gaseous_ender_alloy_compound"), 90)
-	customRecipes.mekanism.crystallizing(event, AE2(`certus_quartz_crystal`), KJ("gaseous_certus_compound"), 90)
 	customRecipes.mekanism.crystallizing(event, MC(`diamond`), KJ("gaseous_diamond_compound"), 90)
+	customRecipes.mekanism.crystallizing(event, MC(`netherite_scrap`), KJ("gaseous_debris"), 90)
+	customRecipes.mekanism.crystallizing(event, MC(`netherite_ingot`), KJ("gaseous_netherite_compound"), 90)
+	customRecipes.mekanism.crystallizing(event, MC(`ender_pearl`), KJ("gaseous_ender_compound"), 250)
+	customRecipes.mekanism.crystallizing(event, MC(`amethyst_shard`), KJ("gaseous_amethyst"), 100)
 	
 	//mycelium
 	event.recipes.create.deploying(MC("mycelium"), [MC("dirt"), EXD(`mycelium_spores`)])

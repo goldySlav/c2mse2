@@ -29,7 +29,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1FD6DFBD33EC190B"]
@@ -64,7 +64,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["784D6F0E8D6220AD"]
+			dependencies: ["6C4FB71DCD05D62B"]
 			disable_toast: true
 			id: "58DA261AB55C2273"
 			size: 1.0d
@@ -115,6 +115,18 @@
 			}]
 			x: 0.0d
 			y: 6.0d
+		}
+		{
+			dependencies: ["784D6F0E8D6220AD"]
+			disable_toast: true
+			id: "6C4FB71DCD05D62B"
+			tasks: [{
+				id: "12F16080DA05D985"
+				item: "sophisticatedbackpacks:copper_backpack"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 	title: "Backpacks"

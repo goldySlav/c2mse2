@@ -1360,7 +1360,7 @@
 				""
 				"{image:kubejs:textures/quests/otherside_portal.png width:200 height:200 align:1}"
 				""
-				"To find ingredients for the portal you need to sieve End Stone through a Netherite Mesh!"
+				"To find ingredients for the portal you need to sieve Crushed End Stone through a Netherite Mesh!"
 			]
 			id: "7D2BC05D221AECFE"
 			rewards: [{

@@ -68,6 +68,7 @@ const CR_ME = (id, x) => MOD("create_mechanical_extruder", id, x)
 const CR_ET = (id, x) => MOD("createendertransmission", id, x)
 const CR_N = (id, x) => MOD("create_netherless", id, x)
 const CR_C = (id, x) => MOD("create_connected", id, x)
+const CR_DD = (id, x) => MOD("create_dreams_and_desires", id, x)
 const PR_C = (id, x) => MOD("projectred_core", id, x)
 const PR_T = (id, x) => MOD("projectred_transmission", id, x)
 const PR_I = (id, x) => MOD("projectred_illumination", id, x)
@@ -721,10 +722,10 @@ const singularities = [
 	{ id: "inductive_mechanism", core: KJ("inductive_mechanism") },
 	{ id: "calculation_mechanism", core: KJ("calculation_mechanism") },
 	{ id: "abstruse_mechanism", core: KJ("abstruse_mechanism") },
-	{ id: "integrated_mechanism", core: KJ("integrated_mechanism") },
-	{ id: "embedded_mechanism", core: KJ("embedded_mechanism") },
-	{ id: "portable_mechanism", core: KJ("portable_mechanism") },
-	{ id: "electric_mechanism", core: KJ("electric_mechanism") },
+	{ id: "integrated_mechanism", core: CR_DD("integrated_mechanism") },
+	{ id: "embedded_mechanism", core: CR_DD("embedded_mechanism") },
+	{ id: "portable_mechanism", core: CR_DD("portable_mechanism") },
+	{ id: "electric_mechanism", core: CR_DD("electric_mechanism") },
 	{ id: "polished_coke", core: KJ("polished_coke") },
 	{ id: "electron_tube", core: CR("electron_tube") },
 	{ id: "ae2", core: AE2("singularity") },
@@ -900,80 +901,6 @@ const quantumModule = (e, id, inputArr, nrg, rate) => {
 	e.recipes.extendedcrafting.combination(id, AE2_A('quantum_upgrade_base'), shuffleArray(separate(inputArr)), nrg).powerRate(rate);
 }
 
-const tieredMaterials = {
-	unstable: {
-		block: MU('unstable_ingot'),
-		circuit: KJ("inductive_mechanism"),
-		collector: PREXP("basic_collector"),
-		wafer: KJ('radiant_coil'),
-		opinium: MU("unstable_opinium_core"),
-		star: PRE('klein_star_omega'),
-	}, //ch4
-	infused: {
-		block: EC('flux_star'),
-		circuit: KJ("calculation_mechanism"),
-		collector: PREXP("basic_compressed_collector"),
-		wafer: KJ('wafer_component_1k'),
-		opinium: MU("flux_star_opinium_core"),
-		star: PREXP('magnum_star_ein'),
-	}, //ch5
-	dm: {
-		block: PRE('dark_matter_block'),
-		circuit: KJ("abstruse_mechanism"),
-		collector: PREXP("basic_compressed_collector"),
-		wafer: KJ('wafer_component_4k'),
-		opinium: MU("dark_matter_opinium_core"),
-		star: PREXP('magnum_star_ein'),
-	}, //ch6
-	rm: {
-		block: PRE('red_matter_block'),
-		circuit: KJ("integrated_mechanism"),
-		collector: PREXP("dark_collector"),
-		wafer: KJ('wafer_component_16k'),
-		opinium: MU("red_matter_opinium_core"),
-		star: PREXP('magnum_star_zwei'),
-	}, //ch7
-	gem: {
-		block: PREXP('violet_matter'),
-		circuit: KJ("electric_mechanism"),
-		collector: PREXP("dark_compressed_collector"),
-		wafer: KJ('wafer_component_64k'),
-		opinium: MU("the_final_opinium_core"),
-		star: PREXP('magnum_star_drei'),
-	}, //ch10
-	quantum: {
-		block: AE2_A('quantum_alloy_plate'),
-		circuit: FN("flux_core"),
-		collector: PREXP("magenta_compressed_collector"),
-		wafer: KJ('wafer_component_256k'),
-		opinium: MU("the_final_opinium_core"),
-		star: PREXP('magnum_star_omega'),
-	}, //ch12 + quantum stuff
-	meka: {
-		block: PREXP('cyan_matter'),
-		circuit: M("reprocessed_fissile_fragment"),
-		collector: PREXP("cyan_compressed_collector"),
-		wafer: KJ('wafer_component_1m'),
-		opinium: MU("the_final_opinium_core"),
-		star: PREXP('gargantuan_star_zwei'),
-	}, //ch14
-	infinity: {
-		block: PREXP('blue_matter'),
-		circuit: M("dust_lithium"),
-		collector: PREXP("red_collector"),
-		wafer: KJ('wafer_component_256k'),
-		opinium: MU("the_final_opinium_core"),
-		star: PREXP('magnum_star_drei'),
-		hammer: Item.of(IF('infinity_hammer'), '{Beheading:0,CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'),
-		drill: Item.of(IF('infinity_drill'), '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'),
-		saw: Item.of(IF('infinity_saw'), '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'),
-		trident: Item.of(IF('infinity_trident'), '{CanCharge:1b,Channeling:0b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Loyalty:0,Riptide:0,Selected:"POOR",Special:0b}'),
-		backpack: Item.of(IF('infinity_backpack'), '{CanCharge:1b,Energy:0L,Selected:"POOR",Special:0b}'),
-		launcher: Item.of(IF('infinity_launcher'), '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Plunger:0,Selected:"POOR",Special:0b}'),
-		nuke: Item.of(IF('infinity_nuke'), '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'),
-	}, //ch12
-}
-
 const tieredItems = {
 	ch1: {
 		mat: CR("andesite_alloy"),
@@ -1013,26 +940,100 @@ const tieredItems = {
 	},
 	ch7: {
 		mat: IF("plastic"),
-		circuit: KJ("integrated_mechanism"),
+		circuit: CR_DD("integrated_mechanism"),
 		machine: KJ("integrated_machine"),
 		casing: KJ("integrated_casing"),
 	},
 	ch8: {
 		mat: IF('pink_slime'),
-		circuit: KJ("embedded_mechanism"),
+		circuit: CR_DD("embedded_mechanism"),
 		machine: EC("frame"),
 		casing: KJ("embedded_casing"),
 	},
 	ch9: {
 		mat: KJ("ether_gem"),
-		circuit: KJ("portable_mechanism"),
+		circuit: CR_DD("portable_mechanism"),
 		machine: KJ("portable_machine"),
 		casing: KJ("portable_casing"),
 	},
 	ch10: {
 		mat: M("ingot_steel"),
-		circuit: KJ("electric_mechanism"),
+		circuit: CR_DD("electric_mechanism"),
 		machine: M("steel_casing"),
 		casing: KJ("electric_casing"),
 	},
+}
+
+const tieredMaterials = {
+	unstable: {
+		block: MU('unstable_ingot'),
+		circuit: tieredItems.ch4.circuit,
+		collector: PREXP("basic_collector"),
+		wafer: KJ('radiant_coil'),
+		opinium: MU("unstable_opinium_core"),
+		star: PRE('klein_star_omega'),
+	}, //ch4
+	infused: {
+		block: EC('flux_star'),
+		circuit: tieredItems.ch5.circuit,
+		collector: PREXP("basic_compressed_collector"),
+		wafer: KJ('wafer_component_1k'),
+		opinium: MU("flux_star_opinium_core"),
+		star: PREXP('magnum_star_ein'),
+	}, //ch5
+	dm: {
+		block: PRE('dark_matter_block'),
+		circuit: tieredItems.ch6.circuit,
+		collector: PREXP("basic_compressed_collector"),
+		wafer: KJ('wafer_component_4k'),
+		opinium: MU("dark_matter_opinium_core"),
+		star: PREXP('magnum_star_ein'),
+	}, //ch6
+	rm: {
+		block: PRE('red_matter_block'),
+		circuit: tieredItems.ch7.circuit,
+		collector: PREXP("dark_collector"),
+		wafer: KJ('wafer_component_16k'),
+		opinium: MU("red_matter_opinium_core"),
+		star: PREXP('magnum_star_zwei'),
+	}, //ch7
+	gem: {
+		block: PREXP('violet_matter'),
+		circuit: tieredItems.ch10.circuit,
+		collector: PREXP("dark_compressed_collector"),
+		wafer: KJ('wafer_component_64k'),
+		opinium: MU("the_final_opinium_core"),
+		star: PREXP('magnum_star_drei'),
+	}, //ch10
+	quantum: {
+		block: AE2_A('quantum_alloy_plate'),
+		circuit: FN("flux_core"),
+		collector: PREXP("magenta_compressed_collector"),
+		wafer: KJ('wafer_component_256k'),
+		opinium: MU("the_final_opinium_core"),
+		star: PREXP('magnum_star_omega'),
+	}, //ch12 + quantum stuff
+	meka: {
+		block: PREXP('cyan_matter'),
+		circuit: M("reprocessed_fissile_fragment"),
+		collector: PREXP("cyan_compressed_collector"),
+		wafer: KJ('wafer_component_1m'),
+		opinium: MU("the_final_opinium_core"),
+		star: PREXP('gargantuan_star_zwei'),
+	}, //ch14
+	infinity: {
+		block: PREXP('blue_matter'),
+		circuit: M("dust_lithium"),
+		collector: PREXP("red_collector"),
+		wafer: KJ('wafer_component_256k'),
+		opinium: MU("the_final_opinium_core"),
+		star: PREXP('magnum_star_drei'),
+		hammer: Item.of(IF('infinity_hammer'), '{Beheading:0,CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'),
+		drill: Item.of(IF('infinity_drill'), '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'),
+		saw: Item.of(IF('infinity_saw'), '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'),
+		trident: Item.of(IF('infinity_trident'), '{CanCharge:1b,Channeling:0b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Loyalty:0,Riptide:0,Selected:"POOR",Special:0b}'),
+		backpack: Item.of(IF('infinity_backpack'), '{CanCharge:1b,Energy:0L,Selected:"POOR",Special:0b}'),
+		launcher: Item.of(IF('infinity_launcher'), '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Plunger:0,Selected:"POOR",Special:0b}'),
+		nuke: Item.of(IF('infinity_nuke'), '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'),
+	}, //ch12
 }
