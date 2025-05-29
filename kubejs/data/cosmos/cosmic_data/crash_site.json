@@ -24,7 +24,7 @@
     "atmospheric_data": {
       "atmosphere_y": 560,
       "travel_to": "cosmos:solar_system",
-      "origin_x": -25500,
+      "origin_x": -22500,
       "origin_y": 850,
       "origin_z": 4650,
       "overlay_texture_id": "moon_bar",
@@ -70,7 +70,13 @@
       "yaw_speed": 0.5,
       "pitch_speed": 0,
       "roll_speed": 1,
-      "scale": 0.014
+      "scale": 0.014,
+      "atmosphere_color": {
+        "r": 255,
+        "g": 153,
+        "b": 153,
+        "alpha": 30
+      }
     },
     "venus": {
       "type": "object",
@@ -85,13 +91,30 @@
       "yaw_speed": 0.5,
       "pitch_speed": 0,
       "roll_speed": 1,
-      "scale": 0.015
+      "scale": 0.015,
+      "cloud_data": {
+        "animation_folder": "clouds/thick/",
+        "tick_delay": 40,
+        "frames": 6,
+        "cloud_color": {
+          "r": 255,
+          "g": 117,
+          "b": 20,
+          "alpha": 100
+        }
+      },
+      "atmosphere_color": {
+        "r": 255,
+        "g": 178,
+        "b": 102,
+        "alpha": 33
+      }
     },
     "earth": {
       "type": "object",
       "phased": true,
       "texture_id": "earth",
-      "object_yaw": 40,
+      "object_yaw": 20,
       "object_pitch": 15,
       "object_roll": 15,
       "yaw": 0,
@@ -99,13 +122,13 @@
       "roll": 180,
       "yaw_speed": 0,
       "pitch_speed": 0,
-      "roll_speed": 1,
-      "scale": 0.8,
+      "roll_speed": 0.72,
+      "scale": 0.52,
       "atmosphere_color": {
         "r": 102,
         "g": 178,
         "b": 255,
-        "alpha": 18
+        "alpha": 38
       },
       "cloud_data": {
         "animation_folder": "clouds/high/",
@@ -118,6 +141,21 @@
           "alpha": 255
         }
       }
+    },
+    "moon": {
+      "type": "object",
+      "phased": true,
+      "texture_id": "moon",
+      "object_yaw": 65,
+      "object_pitch": 80,
+      "object_roll": 95,
+      "yaw": 0,
+      "pitch": 0,
+      "roll": 180,
+      "yaw_speed": 0,
+      "pitch_speed": 0,
+      "roll_speed": 0.2,
+      "scale": 0.4
     }
   }
 }
