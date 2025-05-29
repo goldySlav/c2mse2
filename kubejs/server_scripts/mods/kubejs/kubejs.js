@@ -1454,7 +1454,7 @@ castsForNumber = {
 	andesite_machine(CR('speedometer'), 1, MC("compass"))
 	andesite_machine(CR('mechanical_bearing'), 1, CR("turntable"))
 	andesite_machine(CR('mechanical_piston'), 1, MC("piston"))
-	andesite_machine(CR('rope_pulley'), 1, Q("rope"))
+	andesite_machine(CR('rope_pulley'), 1, CF("rope_and_nail"))
 	andesite_machine(IF('water_condensator'), 1, MC("water_bucket"))
 	andesite_machine(CR_A('rolling_mill'), 1, CR("shaft"))
 	andesite_machine(CR_ME('mechanical_extruder'), 1, F("#cobblestone_generators"))
