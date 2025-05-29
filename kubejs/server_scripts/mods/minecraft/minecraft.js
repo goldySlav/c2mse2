@@ -188,7 +188,7 @@ ServerEvents.recipes((event) => {
         ' B '
     ], {
         A: EXD('porcelain_bucket'),
-        B: MU('iron_opinium_core'),
+        B: F('#ingots/iron'),
     })
 	
 	//rabbit hide from leather

@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
 		' B ',
 	], {
 		A: MC("bucket"),
-		B: MU("gold_opinium_core"),
+		B: F("#ingots/gold"),
 	})
 	
 	event.shaped(MBCK("diamond_bucket"), [
@@ -18,7 +18,7 @@ ServerEvents.recipes((event) => {
 		' B ',
 	], {
 		A: MBCK("golden_bucket"),
-		B: MU("diamond_opinium_core"),
+		B: F("#gems/diamond"),
 	})
 	
 	event.shaped(MBCK("emerald_bucket"), [
@@ -26,7 +26,7 @@ ServerEvents.recipes((event) => {
 		' B ',
 	], {
 		A: MBCK("diamond_bucket"),
-		B: MU("emerald_opinium_core"),
+		B: F("#gems/emerald"),
 	})
 	
 	event.shaped(MBCK("obsidian_bucket"), [
@@ -34,6 +34,6 @@ ServerEvents.recipes((event) => {
 		' B ',
 	], {
 		A: MBCK("emerald_bucket"),
-		B: MU("netherite_opinium_core"),
+		B: F("#ingots/netherite"),
 	})
 })
