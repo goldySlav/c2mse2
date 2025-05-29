@@ -45,90 +45,10 @@ ServerEvents.recipes((event) => {
 		IR("barrel"),
 	])
 	
-	//mass replace steel tag >> cast iron item
+	//mass replace steel tag >> conductive iron item
 	event.replaceInput({ mod: IR() }, F("#ingots/steel"), IR("ingot_steel"))
 	event.replaceInput({ mod: IR() }, F("#storage_blocks/steel"), IR("block_steel"))
-	event.replaceInput({ mod: IR() }, F("#rods/steel"), F("#rods/cast_iron"))
-	
-	//manual replace F("#rods/steel") >> IR("stick_steel")
-	removeRecipeByOutput(event, [
-		IR("catwalk_steel_pillar"),
-		IR("catwalk_steel"),
-		IR("catwalk_stair_steel"),
-		IR("catwalk_ladder_steel"),
-		IR("brace_steel"),
-		IR("catwalk_column_steel"),
-		IR("handrail_steel"),
-		IR("electric_fence"),
-		IR("electric_gate"),
-	])
-	event.shaped(Item.of(IR('catwalk_steel_pillar'), 16), [
-		'ABA',
-		'ABA',
-		'ABA'
-	], {
-		A: F("#rods/cast_iron"),
-		B: F('#ingots/cast_iron'),
-	})
-	event.shaped(Item.of(IR('catwalk_steel'), 6), [
-		'A A',
-		'BBB',
-	], {
-		A: F("#rods/cast_iron"),
-		B: MC('iron_bars'),
-	})
-	event.shaped(Item.of(IR('catwalk_stair_steel'), 6), [
-		'BAA',
-		' BA',
-		'  B',
-	], {
-		A: F("#rods/cast_iron"),
-		B: MC('iron_bars'),
-	})
-	event.shaped(Item.of(IR('catwalk_ladder_steel'), 6), [
-		'A A',
-		'ABA',
-		'A A',
-	], {
-		A: F("#rods/cast_iron"),
-		B: MC('ladder'),
-	})
-	event.shaped(Item.of(IR('brace_steel'), 16), [
-		'BA ',
-		'ABA',
-		' AB',
-	], {
-		A: F("#rods/cast_iron"),
-		B: F('#ingots/cast_iron'),
-	})
-	event.shaped(Item.of(IR('catwalk_column_steel'), 16), [
-		'AAA',
-		'BBB',
-		'AAA',
-	], {
-		A: F("#rods/cast_iron"),
-		B: F('#ingots/cast_iron'),
-	})
-	event.shaped(Item.of(IR('handrail_steel'), 4), [
-		'AA',
-		'AA',
-	], {
-		A: F("#rods/cast_iron"),
-	})
-	event.shaped(Item.of(IR('electric_fence'), 6), [
-		'BAB',
-		'BAB',
-	], {
-		A: F("#rods/cast_iron"),
-		B: F('#rods/iron'),
-	})
-	event.shaped(Item.of(IR('electric_gate'), 4), [
-		'ABA',
-		'ABA',
-	], {
-		A: F("#rods/cast_iron"),
-		B: F('#ingots/iron'),
-	})
+	event.replaceInput({ mod: IR() }, F("#rods/steel"), IR("stick_steel"))
 	
 	//rod compat CR_A
 	event.custom({

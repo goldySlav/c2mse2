@@ -360,12 +360,39 @@
     "type": "block"
   },
   {
-    "name": "naquadah",
+    "name": "cheese",
     "nestedDepth": 9,
     "isBlockOf": true,
-    "baseResourceLocation": "mekanism_extras:block_naquadah",
-    "particlePath": "mekanism_extras:block/block_naquadah",
-    "baseBlockModel": "mekanism_extras:item/block_naquadah",
+    "baseResourceLocation": "ad_astra:cheese_block",
+    "particlePath": "ad_astra:block/cheese_block",
+    "baseBlockModel": "ad_astra:block/cheese_block",
+    "type": "block"
+  },
+  {
+    "name": "desh",
+    "nestedDepth": 9,
+    "isBlockOf": true,
+    "baseResourceLocation": "ad_astra:desh_block",
+    "particlePath": "ad_astra:block/desh_block",
+    "baseBlockModel": "ad_astra:block/desh_block",
+    "type": "block"
+  },
+  {
+    "name": "ostrum",
+    "nestedDepth": 9,
+    "isBlockOf": true,
+    "baseResourceLocation": "ad_astra:ostrum_block",
+    "particlePath": "ad_astra:block/ostrum_block",
+    "baseBlockModel": "ad_astra:block/ostrum_block",
+    "type": "block"
+  },
+  {
+    "name": "calorite",
+    "nestedDepth": 9,
+    "isBlockOf": true,
+    "baseResourceLocation": "ad_astra:calorite_block",
+    "particlePath": "ad_astra:block/calorite_block",
+    "baseBlockModel": "ad_astra:block/calorite_block",
     "type": "block"
   },
   {

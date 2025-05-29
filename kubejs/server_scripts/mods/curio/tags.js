@@ -20,6 +20,8 @@ ServerEvents.tags("item", (event) => {
 		event.add(C("belt"), item);
 	}
 	
+	curioToBelt(AA_GA("netherite_oxygen_can"))
+	curioToBelt(AA_GA("oxygen_can"))
 	curioToBelt(DE("advanced_dislocator"))
 	curioToBelt(DE("advanced_magnet"))
 	curioToBelt(DE("chaotic_capacitor"))

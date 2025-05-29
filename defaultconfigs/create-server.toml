@@ -15,7 +15,7 @@
 	#.
 	#.
 	#Allow the Mechanical Press to process entire stacks at a time.
-	bulkPressing = true
+	bulkPressing = false
 	#.
 	#Allow the Mechanical Saw to process entire stacks at a time.
 	bulkCutting = false

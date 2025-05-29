@@ -636,7 +636,7 @@ ServerEvents.recipes((event) => {
 		I: F('#storage_blocks/osmium'),
 		J: F('#storage_blocks/steel'),
 		M: M('ultimate_control_circuit'),
-		A: CR('mechanical_press'),
+		A: AA('compressor'),
 		K: F('#storage_blocks/osmium'),
 		L: F('#storage_blocks/osmium'),
 	})
@@ -666,7 +666,7 @@ ServerEvents.recipes((event) => {
 		I: F('#storage_blocks/osmium'),
 		J: F('#storage_blocks/steel'),
 		M: M('ultimate_control_circuit'),
-		A: CR('mechanical_press'),
+		A: AA('compressor'),
 		K: CP('stone_3'),
 		L: CP('stone_3'),
 	})
@@ -1614,7 +1614,7 @@ ServerEvents.recipes((event) => {
 		'D  CBC  D',
 		'DDDDBDDDD',
 	], {
-		A: IR("block_hazard"),
+		A: AA("marked_iron_pillar"),
 		B: MG("turbine_rotor"),
 		C: MG("turbine_blade"),
 		D: F("#storage_blocks/steel"),

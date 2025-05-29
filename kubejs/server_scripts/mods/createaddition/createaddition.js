@@ -79,6 +79,12 @@ ServerEvents.recipes((event) => {
 		E: F('#rods/iron'),
 	})
 	
+	//sheets compat AA
+	const sheetsAA = ["zinc"]
+	sheetsAA.forEach(sheet => {
+		customRecipes.ad_astra.compressing(event, CR_A(`${sheet}_sheet`), F(`#ingots/${sheet}`))
+	})
+	
 	//sheets compat Mekanism
 	const sheetsM = ["zinc"]
 	sheetsM.forEach(sheet => {
