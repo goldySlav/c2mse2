@@ -1487,7 +1487,6 @@ castsForNumber = {
 	copper_machine(CR('copper_backtank'), 1, F("#storage_blocks/copper"))
 	copper_machine(CR('portable_fluid_interface'), 2)
 	copper_machine(CR('spout'), 1, FH('flopper'))
-	copper_machine(CR('hose_pulley'), 1)
 	copper_machine(CR('item_drain'), 1, Q("grate"))
 	copper_machine(CR('smart_fluid_pipe'), 1, CR("fluid_pipe"))
 	copper_machine(CR_EI('printer'), 1, MC("dried_kelp"))
@@ -1512,6 +1511,7 @@ castsForNumber = {
 	copper_machine(IR('energy_level'), 2)
 	copper_machine(IR('fluid_gauge'), 2)
 	copper_machine(IR('energy_switch'), 1, MC("lever"))
+	copper_machine(CR('hose_pulley'), 1, CR('rope_pulley'))
 	
 	//brass machine
 	event.shaped(KJ('brass_machine'), [
@@ -1569,7 +1569,7 @@ castsForNumber = {
 	brass_machine(EIO('xp_obelisk'), 1, EIO('experience_rod'))
 	brass_machine(CR_C('inventory_access_port'), 2)
 	brass_machine(CR_C('inventory_bridge'), 1)
-	brass_machine(CR('elevator_pulley'), 1, CR('rope_pulley'))
+	brass_machine(CR('elevator_pulley'), 1, CR('hose_pulley'))
 	
 	//inductive machine
 	event.shaped(KJ('inductive_machine'), [
