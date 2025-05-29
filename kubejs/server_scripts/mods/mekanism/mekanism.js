@@ -16,9 +16,6 @@ ServerEvents.recipes((event) => {
     event.replaceInput({ id: M("personal_chest") }, F("#chests/wooden"), IC("obsidian_chest"))
     event.replaceInput({ id: M("personal_barrel") }, F("#barrels/wooden"), MB("obsidian_barrel"))
 	
-	//dirty netherite scrap
-	event.recipes.mekanism.enriching(M("dirty_netherite_scrap"), CR_N("netherite_fragment"))
-	
 	//carbon from coke
 	customRecipes.mekanism.infusion_conversion(event, M("carbon"), 30, KJ('coke'))
 	customRecipes.mekanism.infusion_conversion(event, M("carbon"), 40, KJ('polished_coke'))
