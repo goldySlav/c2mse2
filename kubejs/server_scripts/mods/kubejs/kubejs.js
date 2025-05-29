@@ -1569,6 +1569,7 @@ castsForNumber = {
 	brass_machine(EIO('xp_obelisk'), 1, EIO('experience_rod'))
 	brass_machine(CR_C('inventory_access_port'), 2)
 	brass_machine(CR_C('inventory_bridge'), 1)
+	brass_machine(CR('elevator_pulley'), 1, CR('rope_pulley'))
 	
 	//inductive machine
 	event.shaped(KJ('inductive_machine'), [
