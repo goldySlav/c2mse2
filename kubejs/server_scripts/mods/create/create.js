@@ -346,4 +346,8 @@ ServerEvents.recipes((event) => {
 	
 	//refined radiance from M_E radiance
 	event.recipes.mekanism.metallurgic_infusing(Item.of(CR("refined_radiance"), 2), CR("chromatic_compound"), `20x ${M_E("radiance")}`)
+
+	//Create ingots crystallizing
+	customRecipes.mekanism.crystallizing(event, CR(`zinc_ingot`), KJ("gaseous_zinc_compound"), 90)
+	customRecipes.mekanism.crystallizing(event, CR(`brass_ingot`), KJ("gaseous_brass_compound"), 90)
 })

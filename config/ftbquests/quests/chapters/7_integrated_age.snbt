@@ -41,12 +41,12 @@
 				"20317A92BD9A8AC5"
 			]
 			description: ["EXPAND EXPAND EXPAND EXPAND!!!!"]
-			icon: "kubejs:integrated_mechanism"
+			icon: "create_dreams_and_desires:integrated_mechanism"
 			id: "39DA9F7639D6AD78"
 			tasks: [
 				{
 					id: "7AF607AE0F20C39D"
-					item: "kubejs:integrated_mechanism"
+					item: "create_dreams_and_desires:integrated_mechanism"
 					type: "item"
 				}
 				{
