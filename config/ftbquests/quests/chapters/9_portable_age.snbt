@@ -37,12 +37,12 @@
 				"24941E080AC8910B"
 				"0E14E11986747181"
 			]
-			icon: "kubejs:portable_mechanism"
+			icon: "create_dreams_and_desires:portable_mechanism"
 			id: "187A152AC9970C0D"
 			tasks: [
 				{
 					id: "5666EB4CE1C2D4FA"
-					item: "kubejs:portable_mechanism"
+					item: "create_dreams_and_desires:portable_mechanism"
 					type: "item"
 				}
 				{

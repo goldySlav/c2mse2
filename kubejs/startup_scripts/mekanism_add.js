@@ -3,6 +3,9 @@ const $GasBuilder = Java.loadClass('mekanism.api.chemical.gas.GasBuilder')
 
 StartupEvents.registry('mekanism:gas', event => {
     event.createCustom('kubejs:neutron_gas', () => new $Gas($GasBuilder.builder().tint(0x000000)))
+    event.createCustom('kubejs:gaseous_oil', () => new $Gas($GasBuilder.builder().tint(0x525252)))
+    event.createCustom('kubejs:gaseous_fuel', () => new $Gas($GasBuilder.builder().tint(0x91553f)))
+    event.createCustom('kubejs:gaseous_cryo_fuel', () => new $Gas($GasBuilder.builder().tint(0x4b8a9c)))
     event.createCustom('kubejs:depleted_ether_gas', () => new $Gas($GasBuilder.builder().tint(0x7bada3)))
     event.createCustom('kubejs:gaseous_iron_compound', () => new $Gas($GasBuilder.builder().tint(0xbababa)))
     event.createCustom('kubejs:gaseous_gold_compound', () => new $Gas($GasBuilder.builder().tint(0xc4c03b)))

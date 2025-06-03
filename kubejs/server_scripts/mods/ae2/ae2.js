@@ -53,6 +53,7 @@ ServerEvents.recipes((event) => {
 	removeRecipeByID(event, [
 		CR("milling/compat/ae2/sky_stone_block"),
 		M("compat/ae2/sky_stone_to_dust"),
+		AA_GA("compat/mekanism/crushing/to_sky_dust"),
 	])
 	event.recipes.create.milling([
 		AE2('sky_dust'),

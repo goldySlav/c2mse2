@@ -16,9 +16,6 @@ ServerEvents.recipes((event) => {
     event.replaceInput({ id: M("personal_chest") }, F("#chests/wooden"), IC("obsidian_chest"))
     event.replaceInput({ id: M("personal_barrel") }, F("#barrels/wooden"), MB("obsidian_barrel"))
 	
-	//dirty netherite scrap
-	event.recipes.mekanism.enriching(M("dirty_netherite_scrap"), CR_N("netherite_fragment"))
-	
 	//carbon from coke
 	customRecipes.mekanism.infusion_conversion(event, M("carbon"), 30, KJ('coke'))
 	customRecipes.mekanism.infusion_conversion(event, M("carbon"), 40, KJ('polished_coke'))
@@ -636,7 +633,7 @@ ServerEvents.recipes((event) => {
 		I: F('#storage_blocks/osmium'),
 		J: F('#storage_blocks/steel'),
 		M: M('ultimate_control_circuit'),
-		A: CR('mechanical_press'),
+		A: AA('compressor'),
 		K: F('#storage_blocks/osmium'),
 		L: F('#storage_blocks/osmium'),
 	})
@@ -666,7 +663,7 @@ ServerEvents.recipes((event) => {
 		I: F('#storage_blocks/osmium'),
 		J: F('#storage_blocks/steel'),
 		M: M('ultimate_control_circuit'),
-		A: CR('mechanical_press'),
+		A: AA('compressor'),
 		K: CP('stone_3'),
 		L: CP('stone_3'),
 	})
@@ -1614,7 +1611,7 @@ ServerEvents.recipes((event) => {
 		'D  CBC  D',
 		'DDDDBDDDD',
 	], {
-		A: IR("block_hazard"),
+		A: AA("marked_iron_pillar"),
 		B: MG("turbine_rotor"),
 		C: MG("turbine_blade"),
 		D: F("#storage_blocks/steel"),

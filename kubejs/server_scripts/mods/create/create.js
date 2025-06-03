@@ -299,6 +299,13 @@ ServerEvents.recipes((event) => {
 	])
 	event.recipes.create.milling([Item.of(CR('wheat_flour'), 2)], F('#flour_plants')).processingTime(processingTimesDefault.milling)
 	
+	//sheets compat AA
+	const sheetsAA = ["iron", "brass", "copper"]
+	sheetsAA.forEach(sheet => {
+		customRecipes.ad_astra.compressing(event, CR(`${sheet}_sheet`), F(`#ingots/${sheet}`))
+	})
+	customRecipes.ad_astra.compressing(event, CR(`golden_sheet`), F(`#ingots/gold`))
+	
 	//sheets compat Mekanism
 	const sheetsM = ["iron", "brass", "copper"]
 	sheetsM.forEach(sheet => {
@@ -339,4 +346,8 @@ ServerEvents.recipes((event) => {
 	
 	//refined radiance from M_E radiance
 	event.recipes.mekanism.metallurgic_infusing(Item.of(CR("refined_radiance"), 2), CR("chromatic_compound"), `20x ${M_E("radiance")}`)
+
+	//Create ingots crystallizing
+	customRecipes.mekanism.crystallizing(event, CR(`zinc_ingot`), KJ("gaseous_zinc_compound"), 90)
+	customRecipes.mekanism.crystallizing(event, CR(`brass_ingot`), KJ("gaseous_brass_compound"), 90)
 })

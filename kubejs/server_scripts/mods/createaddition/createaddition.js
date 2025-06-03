@@ -6,6 +6,12 @@ ServerEvents.recipes((event) => {
 		CR_A("liquid_burning/biofuel"),
 		CR_A("compat/tconstruct/pig_iron"),
 		CR_A("compat/tconstruct/pig_iron_2"),
+		CR_A("compat/tconstruct/slimesteel"),
+		CR_A("compat/tconstruct/amethyst_bronze"),
+		CR_A("compat/tconstruct/rose_gold"),
+		CR_A("compat/tconstruct/queens_slime"),
+		CR_A("compat/tconstruct/manyullyn"),
+		CR_A("compat/tconstruct/hepatizon"),
 	])
 	removeRecipeByOutput(event, [
 		CR_A("electrum_block"),
@@ -18,8 +24,6 @@ ServerEvents.recipes((event) => {
 		CR_A("electrum_spool"),
 		CR_A("barbed_wire"),
 	])
-	
-	event.recipes.create.pressing(CR_A("zinc_sheet"), F("#ingots/zinc"))
 	
 	//electric motor
 	removeRecipeByOutput(event, [
@@ -77,6 +81,12 @@ ServerEvents.recipes((event) => {
 		C: CR_A('copper_spool'),
 		D: CR_A('capacitor'),
 		E: F('#rods/iron'),
+	})
+	
+	//sheets compat AA
+	const sheetsAA = ["zinc"]
+	sheetsAA.forEach(sheet => {
+		customRecipes.ad_astra.compressing(event, CR_A(`${sheet}_sheet`), F(`#ingots/${sheet}`))
 	})
 	
 	//sheets compat Mekanism

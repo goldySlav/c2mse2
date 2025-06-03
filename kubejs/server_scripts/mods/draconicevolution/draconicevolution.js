@@ -251,7 +251,7 @@ ServerEvents.recipes((event) => {
 		DE("wyvern_core"),
 		DE("draconium_core"),
 		[
-			`4x ${DE("draconium_core")}`, `4x ${DE("small_chaos_frag")}`, `2x ${CP('osmium_5')}`,
+			`4x ${DE("draconium_core")}`, `4x ${DE("small_chaos_frag")}`, `2x ${F('#storage_blocks/desh')}`,
 		]
 	)
 
@@ -261,7 +261,7 @@ ServerEvents.recipes((event) => {
 		DE("awakened_core"),
 		DE("wyvern_core"),
 		[
-			`2x ${DE("wyvern_core")}`, `4x ${DE("awakened_draconium_ingot")}`, `4x ${DE("medium_chaos_frag")}`, `2x ${CP('naquadah_5')}`,
+			`2x ${DE("wyvern_core")}`, `4x ${DE("awakened_draconium_ingot")}`, `4x ${DE("medium_chaos_frag")}`, `2x ${F('#storage_blocks/ostrum')}`,
 		],
 		2
 	)
@@ -272,7 +272,7 @@ ServerEvents.recipes((event) => {
 		DE("chaotic_core"),
 		DE("awakened_core"),
 		[
-			`6x ${DE("awakened_core")}`, `2x ${DE("awakened_draconium_block")}`, `4x ${DE("large_chaos_frag")}`, `2x ${CP('flux_star_5')}`,
+			`6x ${DE("awakened_core")}`, `2x ${DE("awakened_draconium_block")}`, `4x ${DE("large_chaos_frag")}`, `2x ${F('#storage_blocks/calorite')}`,
 		],
 		3
 	)

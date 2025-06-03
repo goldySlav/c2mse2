@@ -22,6 +22,19 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["45EA4202DCAFE16A"]
+			icon: "mekanism:reprocessed_fissile_fragment"
+			id: "6874BB0479BD8602"
+			size: 1.0d
+			tasks: [{
+				id: "547AA116BE147ED5"
+				title: "End Chapter"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 19.5d
+		}
+		{
 			dependencies: ["04692B30B6F5AFCD"]
 			icon: "minecraft:water_bucket"
 			id: "71AA119CC2E59E5C"
@@ -76,7 +89,7 @@
 				item: "mekanism:hdpe_rod"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.0d
 			y: 9.0d
 		}
 		{
@@ -91,8 +104,8 @@
 				type: "custom"
 			}]
 			title: "Produce \"Sodium\""
-			x: 3.0d
-			y: 4.5d
+			x: 2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -167,7 +180,7 @@
 				item: "mekanism:solar_neutron_activator"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.0d
 			y: 10.5d
 		}
 		{
@@ -195,7 +208,7 @@
 				item: "mekanism:pellet_polonium"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.0d
 			y: 13.5d
 		}
 		{
@@ -208,7 +221,7 @@
 				item: "mekanism:pellet_plutonium"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.0d
 			y: 9.0d
 		}
 		{
@@ -223,7 +236,7 @@
 				type: "custom"
 			}]
 			title: "Produce \"Polonium Gas\""
-			x: 2.0d
+			x: 1.0d
 			y: 12.0d
 		}
 		{
@@ -238,7 +251,7 @@
 				type: "custom"
 			}]
 			title: "Produce \"Plutonium Gas\""
-			x: -3.0d
+			x: -4.0d
 			y: 6.0d
 		}
 		{
@@ -249,21 +262,205 @@
 			icon: "mekanism:reprocessed_fissile_fragment"
 			id: "7F6C31C4697B1690"
 			size: 1.0d
+			tasks: [{
+				id: "06A68B843EB4330B"
+				item: "mekanism:reprocessed_fissile_fragment"
+				type: "item"
+			}]
+			title: "Produce \"Irradiated Pellet\""
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["57F7FAE4053F3EBB"]
+			icon: "ad_astra:fuel_bucket"
+			id: "45EA4202DCAFE16A"
+			size: 1.0d
+			tasks: [{
+				icon: "ad_astra:fuel_bucket"
+				id: "067A4B09D21FF720"
+				title: "Produce \"Engine Fuel\""
+				type: "custom"
+			}]
+			title: "Produce \"Engine Fuel\""
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"7F6C31C4697B1690"
+				"31ADC17E4E2CBB30"
+				"0239D66416EC23E3"
+			]
+			icon: "ad_astra:fuel_bucket"
+			id: "57F7FAE4053F3EBB"
+			size: 1.0d
+			tasks: [{
+				icon: "ad_astra:fuel_bucket"
+				id: "2F26286FCC885C6E"
+				title: "Produce \"Gaseous Fuel\""
+				type: "custom"
+			}]
+			title: "Produce \"Gaseous Fuel\""
+			x: 0.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["6A3DD695F4522228"]
+			icon: "ad_astra:oil_bucket"
+			id: "2B748A644A8EDAFC"
+			size: 1.0d
+			tasks: [{
+				icon: "ad_astra:oil_bucket"
+				id: "70EF78829BA2F066"
+				title: "Produce \"Gaseous Oil\""
+				type: "custom"
+			}]
+			title: "Produce \"Gaseous Oil\""
+			x: -5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["04692B30B6F5AFCD"]
+			icon: "mekanism:heavy_water_bucket"
+			id: "6A3DD695F4522228"
+			size: 1.0d
+			tasks: [{
+				id: "1AF88D961A7D52E6"
+				title: "Done"
+				type: "checkmark"
+			}]
+			title: "Produce \"Fissile Fuel\""
+			x: -5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"49216604D32F478B"
+				"6191E13C0C08BF23"
+			]
+			icon: "mekanismgenerators:fusion_fuel_bucket"
+			id: "31ADC17E4E2CBB30"
+			size: 1.0d
+			tasks: [{
+				icon: "mekanismgenerators:fusion_fuel_bucket"
+				id: "7915236F53138E9A"
+				title: "Produce \"D-T Fuel\""
+				type: "custom"
+			}]
+			title: "Produce \"D-T Fuel\""
+			x: 3.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["38B43095B621C52F"]
+			icon: "mekanismgenerators:deuterium_bucket"
+			id: "6191E13C0C08BF23"
+			size: 1.0d
+			tasks: [{
+				icon: "mekanismgenerators:deuterium_bucket"
+				id: "601204EF00EBD673"
+				title: "Produce \"Deuterium\""
+				type: "custom"
+			}]
+			title: "Produce \"Deuterium\""
+			x: 5.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["29F8C84780757CC1"]
+			icon: "mekanism:lithium_bucket"
+			id: "1478542C8B8B1CDD"
+			size: 1.0d
 			tasks: [
 				{
-					id: "06A68B843EB4330B"
-					item: "mekanism:reprocessed_fissile_fragment"
+					id: "72DF7D3BFF3012DF"
+					item: "mekanism:thermal_evaporation_controller"
 					type: "item"
 				}
 				{
-					id: "30FF0CDB5FEBB7C8"
-					title: "End Chapter"
+					id: "6BAAFB5824E67F6E"
+					item: "mekanism:lithium_bucket"
+					type: "item"
+				}
+				{
+					id: "137B7574A7A0401F"
+					title: "Done"
 					type: "checkmark"
 				}
 			]
-			title: "End Chapter"
-			x: 0.0d
-			y: 15.0d
+			title: "Produce \"Liquid Lithium\""
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1478542C8B8B1CDD"]
+			icon: "mekanism:lithium_bucket"
+			id: "13F36467C09AFE1A"
+			size: 1.0d
+			tasks: [{
+				id: "25CA09E37061E9F9"
+				title: "Done"
+				type: "checkmark"
+			}]
+			title: "Produce \"Lithium\""
+			x: 4.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"0BD39FE5A44D53F5"
+				"13F36467C09AFE1A"
+			]
+			icon: "mekanismgenerators:tritium_bucket"
+			id: "49216604D32F478B"
+			size: 1.0d
+			tasks: [{
+				icon: "mekanismgenerators:tritium_bucket"
+				id: "7A693D431F13C7B3"
+				title: "Produce \"Tritium\""
+				type: "custom"
+			}]
+			title: "Produce \"Tritium\""
+			x: 3.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["04692B30B6F5AFCD"]
+			description: [
+				"To produce Heavy Water you need to use &3Electric Pump&r with &5Filter Upgrade&r."
+				"Just pump water with it, and it will filter heavy water molecules out of regular water."
+			]
+			icon: "mekanism:heavy_water_bucket"
+			id: "38B43095B621C52F"
+			size: 1.0d
+			tasks: [{
+				icon: "mekanism:heavy_water_bucket"
+				id: "487C0FDEACB9FF14"
+				title: "Produce \"Heavy Water\""
+				type: "custom"
+			}]
+			title: "Produce \"Heavy Water\""
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2B748A644A8EDAFC"
+				"6FCEC59EACDCED5B"
+			]
+			icon: "ad_astra:oil_bucket"
+			id: "0239D66416EC23E3"
+			size: 1.0d
+			tasks: [{
+				icon: "ad_astra:oil_bucket"
+				id: "4A38F7E6144862B4"
+				title: "Produce \"Oil\""
+				type: "custom"
+			}]
+			title: "Produce \"Oil\""
+			x: -5.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["04692B30B6F5AFCD"]
@@ -274,7 +471,7 @@
 				item: "mekanism:isotopic_centrifuge"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.0d
 			y: 1.5d
 		}
 	]

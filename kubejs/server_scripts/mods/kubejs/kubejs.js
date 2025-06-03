@@ -857,6 +857,7 @@ ServerEvents.recipes((event) => {
 	
 	//radiant sheet
 	event.recipes.create.pressing(KJ(`radiant_sheet`), CR("refined_radiance"))
+	customRecipes.ad_astra.compressing(event, KJ(`radiant_sheet`), CR("refined_radiance"))
 	event.recipes.mekanism.sawing(CR("refined_radiance"), Item.of(KJ("radiant_sheet"), 2))
 	
 	//radiant coil
@@ -880,137 +881,6 @@ ServerEvents.recipes((event) => {
 	//molten ender alloy
 	event.recipes.tconstruct.alloy(Fluid.of(KJ("molten_ender_alloy"), 180), [Fluid.of(TCT("molten_iron"), 90), Fluid.of(TCT("molten_ender"), 250)], 1429)
 	event.recipes.create.mixing(Fluid.of(KJ("molten_ender_alloy"), 18), [Fluid.of(TCT("molten_iron"), 9), Fluid.of(TCT("molten_ender"), 25)]).heated()
-	
-	
-	
-	//nodule parts
-	
-	//engine frame
-	event.recipes.extendedcrafting.shaped_table(KJ(`engine_frame`), [
-		'  AAAAAAAAA',
-		' BA      BA',
-		'AAAAAAAAA A',
-		'A A     A A',
-		'A A     A A',
-		'A A     A A',
-		'A A     A A',
-		'A A     A A',
-		'A AAAAAAAAA',
-		'AB      AB ',
-		'AAAAAAAAA  ',
-	], {
-		A: CP("steel_3"),
-		B: F("#ingots/steel"),
-	})
-
-	//engine fan
-	event.recipes.extendedcrafting.shaped_table(KJ(`engine_fan`), [
-		'  BBB    ',
-		'  BCCB   ',
-		'   BCB BB',
-		' BBBCBBCB',
-		'BCCCACCCB',
-		'BCBBCBBB ',
-		'BB BCB   ',
-		'   BCCB  ',
-		'    BBB  ',
-	], {
-		A: MG("turbine_rotor"),
-		B: MG("turbine_blade"),
-		C: CR("propeller"),
-	}).tier(5)
-
-	//nodule fin
-	event.recipes.extendedcrafting.shaped_table(KJ(`nodule_fin`), [
-		'     A     ',
-		'    ABA    ',
-		'   ABBBA   ',
-		'  ABBCBBA  ',
-		' ACCCACCCA ',
-		'ACCCA ACCCA',
-		'ACCA   ACCA',
-		'ACA     ACA',
-		'AA       AA',
-	], {
-		A: F("#ingots/steel"),
-		B: CP("steel_3"),
-		C: CP("iron_4"),
-	})
-
-	//nodule nose cone
-	event.recipes.extendedcrafting.shaped_table(KJ(`nodule_nose_cone`), [
-		'     A     ',
-		'     B     ',
-		'     C     ',
-		'    CDC    ',
-		'   CDEDC   ',
-		'  CDEEEDC  ',
-		' CDEEEEEDC ',
-		'CDDDDDDDDDC',
-		' CCCCCCCCC ',
-	], {
-		A: PREXP("magnum_star_omega"),
-		B: MC("end_rod"),
-		C: F("#ingots/steel"),
-		D: CP("steel_3"),
-		E: CP("iron_4"),
-	})
-	
-	//tanks & engines
-	const spaceMats = {
-		steel: { A: CP("gold_4"), B: CP("steel_3"), C: PREXP("green_matter"), D: PREXP("red_power_flower") },
-		osmium: { A: CP("diamond_4"), B: CP("osmium_3"), C: PREXP("lime_matter"), D: PREXP("magenta_power_flower") },
-		naquadah: { A: CP("emerald_4"), B: CP("naquadah_3"), C: PREXP("yellow_matter"), D: PREXP("pink_power_flower") },
-	}
-
-	for (let mat in spaceMats) {
-		//tanks
-		event.recipes.extendedcrafting.shaped_table(KJ(`${mat}_tank`), [
-			'AAAAAAA  ',
-			'ABBBBBA  ',
-			'ABGCGBA  ',
-			'ABCDCBA  ',
-			'ABCFCBAE ',
-			'ABCDCBAEE',
-			'ABGCGBAE ',
-			'ABBBBBA  ',
-			'AAAAAAA  ',
-		], {
-			A: spaceMats[mat].A,
-			B: spaceMats[mat].B,
-			C: M("ultimate_chemical_tank"),
-			D: M("electrolytic_core"),
-			E: singularityId("reprocessed_fissile_fragment"),
-			F: spaceMats[mat].C,
-			G: singularityId("ultimate_chemical_tank"),
-		})
-		
-		//engines
-		event.recipes.extendedcrafting.shaped_table(KJ(`${mat}_engine`), [
-			' AAAAAAAAAA',
-			'ABBBBBBBBBA',
-			'ABEEEEEEEBA',
-			'ABEEEJEEEBA',
-			'ABBBBKBBBBA',
-			'AAAAAIAAAAA',
-			'    DHD    ',
-			'   DFGFD   ',
-			' DCCCCCCCD ',
-			'AAAAAAAAAAA',
-		], {
-			A: spaceMats[mat].A,
-			B: spaceMats[mat].B,
-			C: KJ("engine_fan"),
-			D: KJ("engine_frame"),
-			E: singularityId("reprocessed_fissile_fragment"),
-			F: spaceMats[mat].D,
-			G: spaceMats[mat].C,
-			H: PREXP("infinite_fuel"),
-			I: singularityId("antimatter"),
-			J: singularityId("ultimate_chemical_tank"),
-			K: singularityId("ultimate_fluid_tank"),
-		})
-	}
 	
 	
 	
@@ -1156,7 +1026,7 @@ ServerEvents.recipes((event) => {
 					},
 					"acceptMirrored": false
 				})
-				event.recipes.extendedcrafting.shaped_table(output, ["A", "O", "B"], { A: KJ(nums[a]), O: KJ(opNames[op]), B: KJ(nums[b]) })
+				event.recipes.extendedcrafting.shaped_table(output, ["A", "O", "B"], { A: KJ(nums[a]), O: KJ(opNames[op]), B: KJ(nums[b]) }).tier(1)
 			}
 		}
 	}
@@ -1193,7 +1063,7 @@ ServerEvents.recipes((event) => {
 					},
 					"acceptMirrored": false
 				})
-				event.recipes.extendedcrafting.shaped_table(output, ["A", "O", "B"], { A: KJ(nums[a]), O: KJ(compNames[op]), B: KJ(nums[b]) })
+				event.recipes.extendedcrafting.shaped_table(output, ["A", "O", "B"], { A: KJ(nums[a]), O: KJ(compNames[op]), B: KJ(nums[b]) }).tier(1)
 			}
 		}
 	}
@@ -1584,14 +1454,14 @@ castsForNumber = {
 	andesite_machine(CR('speedometer'), 1, MC("compass"))
 	andesite_machine(CR('mechanical_bearing'), 1, CR("turntable"))
 	andesite_machine(CR('mechanical_piston'), 1, MC("piston"))
-	andesite_machine(CR('rope_pulley'), 1, Q("rope"))
+	andesite_machine(CR('rope_pulley'), 1, CF("rope_and_nail"))
 	andesite_machine(IF('water_condensator'), 1, MC("water_bucket"))
 	andesite_machine(CR_A('rolling_mill'), 1, CR("shaft"))
 	andesite_machine(CR_ME('mechanical_extruder'), 1, F("#cobblestone_generators"))
 	andesite_machine(CR_S('sifter'), 1, EXD("#sieves"))
 	andesite_machine(EIO('enchanter'), 1, MC("enchanting_table"))
 	andesite_machine(KJ('pipe_module_utility'), 4)
-	andesite_machine(SR('altar'), 1)
+	andesite_machine(SR('altar'), 1, MC("wither_skeleton_skull"))
 	
 	//copper machine
 	event.shaped(KJ('copper_machine'), [
@@ -1617,7 +1487,6 @@ castsForNumber = {
 	copper_machine(CR('copper_backtank'), 1, F("#storage_blocks/copper"))
 	copper_machine(CR('portable_fluid_interface'), 2)
 	copper_machine(CR('spout'), 1, FH('flopper'))
-	copper_machine(CR('hose_pulley'), 1)
 	copper_machine(CR('item_drain'), 1, Q("grate"))
 	copper_machine(CR('smart_fluid_pipe'), 1, CR("fluid_pipe"))
 	copper_machine(CR_EI('printer'), 1, MC("dried_kelp"))
@@ -1642,6 +1511,7 @@ castsForNumber = {
 	copper_machine(IR('energy_level'), 2)
 	copper_machine(IR('fluid_gauge'), 2)
 	copper_machine(IR('energy_switch'), 1, MC("lever"))
+	copper_machine(CR('hose_pulley'), 1, CR('rope_pulley'))
 	
 	//brass machine
 	event.shaped(KJ('brass_machine'), [
@@ -1684,6 +1554,7 @@ castsForNumber = {
 	brass_machine(PP('crafting_terminal'), 1, PP('item_terminal'))
 	brass_machine(PP('pressurizer'), 1, CR('propeller'))
 	brass_machine(CR_A("tesla_coil"), 1, AE2("charger"))
+	brass_machine(AA("compressor"), 1, CR('mechanical_press'))
 	brass_machine(P('energy_cell_basic'), 1, P('battery_basic'))
 	brass_machine(P('ender_cell_basic'), 1, P('ender_cell_starter'))
 	brass_machine(P('energizing_rod_basic'), 1, P('energizing_rod_starter'))
@@ -1698,6 +1569,7 @@ castsForNumber = {
 	brass_machine(EIO('xp_obelisk'), 1, EIO('experience_rod'))
 	brass_machine(CR_C('inventory_access_port'), 2)
 	brass_machine(CR_C('inventory_bridge'), 1)
+	brass_machine(CR('elevator_pulley'), 1, CR('hose_pulley'))
 	
 	//inductive machine
 	event.shaped(KJ('inductive_machine'), [
@@ -1801,6 +1673,8 @@ castsForNumber = {
 	fluix_machine(P('player_transmitter_blazing'), 1, P('player_transmitter_hardened'))
 	fluix_machine(P('energy_hopper_blazing'), 1, P('energy_hopper_hardened'))
 	fluix_machine(P('energy_discharger_blazing'), 1, P('energy_discharger_hardened'))
+	fluix_machine(AA('radio'), 1, X('antenna_base'))
+	fluix_machine(AA('ti_69'), 1)
 	fluix_machine(AE2('controller'), 1)
 	fluix_machine(LIO('laser_node'), 2, LB("laser_source_block"))
 	fluix_machine(EIO("double_layer_capacitor"), 1, EIO('basic_capacitor'))
@@ -1840,7 +1714,6 @@ castsForNumber = {
 	abstruse_machine(P('energy_discharger_niotic'), 1, P('energy_discharger_blazing'))
 	abstruse_machine(IF('machine_frame_pity'), 1)
 	abstruse_machine(EIO("octadic_capacitor"), 1, EIO('double_layer_capacitor'))
-	abstruse_machine(CH("projector_table"), 1)
 	
 	//integrated machine
 	event.shaped(KJ('integrated_machine'), [
