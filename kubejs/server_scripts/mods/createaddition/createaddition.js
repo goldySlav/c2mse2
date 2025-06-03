@@ -6,6 +6,12 @@ ServerEvents.recipes((event) => {
 		CR_A("liquid_burning/biofuel"),
 		CR_A("compat/tconstruct/pig_iron"),
 		CR_A("compat/tconstruct/pig_iron_2"),
+		CR_A("compat/tconstruct/slimesteel"),
+		CR_A("compat/tconstruct/amethyst_bronze"),
+		CR_A("compat/tconstruct/rose_gold"),
+		CR_A("compat/tconstruct/queens_slime"),
+		CR_A("compat/tconstruct/manyullyn"),
+		CR_A("compat/tconstruct/hepatizon"),
 	])
 	removeRecipeByOutput(event, [
 		CR_A("electrum_block"),
