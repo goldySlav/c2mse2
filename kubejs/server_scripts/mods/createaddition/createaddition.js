@@ -19,8 +19,6 @@ ServerEvents.recipes((event) => {
 		CR_A("barbed_wire"),
 	])
 	
-	event.recipes.create.pressing(CR_A("zinc_sheet"), F("#ingots/zinc"))
-	
 	//electric motor
 	removeRecipeByOutput(event, [
 		CR_A("electric_motor"),
