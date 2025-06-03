@@ -1026,7 +1026,7 @@ ServerEvents.recipes((event) => {
 					},
 					"acceptMirrored": false
 				})
-				event.recipes.extendedcrafting.shaped_table(output, ["A", "O", "B"], { A: KJ(nums[a]), O: KJ(opNames[op]), B: KJ(nums[b]) })
+				event.recipes.extendedcrafting.shaped_table(output, ["A", "O", "B"], { A: KJ(nums[a]), O: KJ(opNames[op]), B: KJ(nums[b]) }).tier(1)
 			}
 		}
 	}
@@ -1063,7 +1063,7 @@ ServerEvents.recipes((event) => {
 					},
 					"acceptMirrored": false
 				})
-				event.recipes.extendedcrafting.shaped_table(output, ["A", "O", "B"], { A: KJ(nums[a]), O: KJ(compNames[op]), B: KJ(nums[b]) })
+				event.recipes.extendedcrafting.shaped_table(output, ["A", "O", "B"], { A: KJ(nums[a]), O: KJ(compNames[op]), B: KJ(nums[b]) }).tier(1)
 			}
 		}
 	}
