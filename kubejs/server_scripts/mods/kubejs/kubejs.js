@@ -694,16 +694,14 @@ ServerEvents.recipes((event) => {
 	
 	
 	//dye entangled singularity
-	dyes.forEach(dye => {
-		event.recipes.create.mixing(KJ("dye_entangled_singularity"), [dye, AE2('quantum_entangled_singularity')])
-		event.recipes.mekanism.combining(KJ("dye_entangled_singularity"), AE2('quantum_entangled_singularity'), dye)
-	})
+	event.recipes.create.mixing(KJ("dye_entangled_singularity"), [F("#dyes"), AE2('quantum_entangled_singularity')])
+	event.recipes.mekanism.combining(KJ("dye_entangled_singularity"), AE2('quantum_entangled_singularity'), F("#dyes"))
 	colours.forEach(color => {
 		customRecipes.mekanism.painting(event, KJ("dye_entangled_singularity"), AE2("quantum_entangled_singularity"), color)
 	})
+
 	
-	
-	
+
 	//toxic waste liquid fuel
 	customRecipes.create.liquidFuel(event, F("waste"), 1000, true)
 	
