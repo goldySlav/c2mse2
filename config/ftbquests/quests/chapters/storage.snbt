@@ -837,6 +837,7 @@
 			subtitle: "Interact with all your drawers from one point!"
 			tasks: [
 				{
+					disable_toast: true
 					id: "7531F2173BBAB021"
 					item: {
 						Count: 1
@@ -858,6 +859,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "35397EFA072DFEED"
 					item: {
 						Count: 1
@@ -936,11 +938,13 @@
 			subtitle: "Quantum drawer"
 			tasks: [
 				{
+					disable_toast: true
 					id: "264BAE1071CBFB76"
 					item: "functionalstorage:ender_drawer"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "0DAEFE48D093549A"
 					item: {
 						Count: 1
