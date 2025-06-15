@@ -1,8 +1,8 @@
 {
-  "name": "Radiant Induction Coil",
+  "name": "Unstable Compound",
   "colors": [
     "cdced1",
-    "bc5430"
+    "262423"
   ],
   "ingredient": {
     "tag": "forge:ingots/draconium"

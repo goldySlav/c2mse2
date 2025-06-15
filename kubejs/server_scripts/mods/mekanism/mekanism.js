@@ -905,9 +905,9 @@ ServerEvents.recipes((event) => {
 		I: F('#storage_blocks/osmium'),
 		J: F('#storage_blocks/steel'),
 		M: M('advanced_control_circuit'),
-		A: KJ('radiant_coil'),
-		K: KJ('radiant_coil'),
-		L: KJ('radiant_coil'),
+		A: KJ('unstable_compound'),
+		K: KJ('unstable_compound'),
+		L: KJ('unstable_compound'),
 	})
 
 	//fuelwood heater
@@ -1633,8 +1633,8 @@ ServerEvents.recipes((event) => {
 		'HHHHBHHHH',
 	], {
 		H: CP('obsidian_3'),
-		D: KJ("radiant_coil"),
-		E: KJ("radiant_coil"),
+		D: KJ("unstable_compound"),
+		E: KJ("unstable_compound"),
 		F: KJ("ether_gem"),
 		G: M("hdpe_sheet"),
 		B: CP('gold_3'),
@@ -1868,7 +1868,7 @@ ServerEvents.recipes((event) => {
 	], {
 		D: M('steel_casing'),
 		E: M('hdpe_pellet'),
-		F: KJ("radiant_coil"),
+		F: KJ("unstable_compound"),
 		G: F('#storage_blocks/steel'),
 		B: CP("copper_3"),
 		A: KJ('computation_matrix'),

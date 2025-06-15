@@ -855,15 +855,10 @@ ServerEvents.recipes((event) => {
 	
 	
 	
-	//radiant sheet
-	event.recipes.create.pressing(KJ(`radiant_sheet`), CR("refined_radiance"))
-	customRecipes.ad_astra.compressing(event, KJ(`radiant_sheet`), CR("refined_radiance"))
-	event.recipes.mekanism.sawing(CR("refined_radiance"), Item.of(KJ("radiant_sheet"), 2))
-	
-	//radiant coil
-	event.recipes.create.mechanical_crafting(KJ("radiant_coil"), "A", { A: KJ('radiant_sheet') })
-	event.recipes.extendedcrafting.shapeless_table(KJ("radiant_coil"), [KJ('radiant_sheet')])
-	customRecipes.create.ifiniDeploying(event, KJ("radiant_coil"), KJ('radiant_sheet'), MC("nether_star"))
+	//unstable compound
+	event.recipes.create.deploying(Item.of(KJ('unstable_compound'), 2), [CR("refined_radiance"), CR("shadow_steel")])
+	event.recipes.create.deploying(Item.of(KJ('unstable_compound'), 2), [CR("shadow_steel"), CR("refined_radiance")])
+	event.recipes.mekanismCombining(Item.of(KJ('unstable_compound'), 4), CR('refined_radiance'), CR('shadow_steel'))
 	
 	
 	
@@ -1321,7 +1316,7 @@ castsForNumber = {
 	event.recipes.create.sequenced_assembly([
 		KJ('inductive_mechanism'),
 	], CR('precision_mechanism'), [
-		event.recipes.create.deploying(tInductive, [tInductive, KJ('radiant_coil')]),
+		event.recipes.create.deploying(tInductive, [tInductive, KJ('unstable_compound')]),
 		event.recipes.create.deploying(tInductive, [tInductive, EC('ender_nugget')]),
 		event.recipes.create.deploying(tInductive, [tInductive, F("#tools/chromatic_resonators")])
 	]).transitionalItem(tInductive)

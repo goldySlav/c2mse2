@@ -36,14 +36,14 @@
 				item: "kubejs:inductive_machine"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 7.0d
+			x: -1.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
 				"50036BDE7951A561"
-				"1467542289484994"
 				"561E1DCEDCA82076"
+				"37ADBC9349F7DFD9"
 			]
 			description: ["&n&lYOU&r&n and only &lYOU&r&n can make this factory &6great&r."]
 			icon: "kubejs:inductive_mechanism"
@@ -61,8 +61,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -0.5d
-			y: 5.5d
+			x: -1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["48753F8B4874A9F9"]
@@ -82,33 +82,8 @@
 				title: "Any Chromatic Resonator"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 5.5d
-		}
-		{
-			dependencies: ["108E9D3231FAC5D2"]
-			description: [
-				"This one is made either by folding a Radiant Sheet using a &6Mechanical Crafter&r OR by imprinting it with &6Nether Star&r."
-				""
-				"Up to you which way to choose, and please note that &6Nether Star will not be consumed&r in the process."
-			]
-			icon: "kubejs:radiant_coil"
-			id: "1467542289484994"
-			subtitle: "Oh now its a coil"
-			tasks: [
-				{
-					id: "68FB1FB93123A59F"
-					item: "kubejs:radiant_coil"
-					type: "item"
-				}
-				{
-					id: "3744D3C5EBFAFA69"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			x: -1.5d
-			y: 3.5d
+			x: 0.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["19EEAF629AE72C2A"]
@@ -133,7 +108,7 @@
 				}
 			]
 			x: 0.5d
-			y: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -157,28 +132,7 @@
 				}
 			]
 			x: 0.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["3322460DD120C633"]
-			description: ["Just &6Flatten&r it. Use a &6Mechanical Press&r."]
-			icon: "kubejs:radiant_sheet"
-			id: "108E9D3231FAC5D2"
-			subtitle: "Flat shiny"
-			tasks: [
-				{
-					id: "2AC7E4CE3CE1D42E"
-					item: "kubejs:radiant_sheet"
-					type: "item"
-				}
-				{
-					id: "36378D5842F17521"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			x: -1.5d
-			y: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["12D6ACC2191CB67C"]
@@ -337,8 +291,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -1.5d
-			y: -1.0d
+			x: -2.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["18B527C2EA8919A3"]
@@ -767,13 +721,13 @@
 				item: "kubejs:abstruse_waste_bucket"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -1.0d
+			x: -4.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3D7634CDF66F9B4F"]
 			description: [
-				"&6Chromatic Compound&r is known to absorb light and darkness."
+				"&6Chromatic Compound&r is known to absorb light."
 				""
 				"Create a &6light beam&r powerful enough to convert Chromatic Compound into Refined Radiance."
 				""
@@ -804,8 +758,56 @@
 					type: "checkmark"
 				}
 			]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3D7634CDF66F9B4F"]
+			description: [
+				"&6Chromatic Compound&r is known to absorb darkness."
+				""
+				"Throw the Chromatic Compound into &6dark place&r, dark enough to convert Chromatic Compound into Shadow Steel."
+				""
+				"HINT on the next page if needed..."
+				""
+				"{@pagebreak}"
+				""
+				"The darkness needed for you - is all around you."
+				""
+				"Another HINT on the next page..."
+				""
+				"{@pagebreak}"
+				""
+				"It's a &6Void&r, you dumbass..."
+				""
+				"Just throw it into the void, it will transform and fly back!"
+			]
+			icon: "create:shadow_steel"
+			id: "74A24C995BFB12FB"
+			subtitle: "Dark and heavy"
+			tasks: [{
+				id: "4D76F4C05BE670F8"
+				item: "create:shadow_steel"
+				type: "item"
+			}]
 			x: -1.5d
-			y: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"3322460DD120C633"
+				"74A24C995BFB12FB"
+			]
+			description: ["Key component for unstable ingots and more!"]
+			id: "37ADBC9349F7DFD9"
+			subtitle: "Unstable color"
+			tasks: [{
+				id: "7E6300E59642B43F"
+				item: "kubejs:unstable_compound"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
 		}
 	]
 	title: "4. Inductive Age"

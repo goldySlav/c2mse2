@@ -86,7 +86,6 @@ StartupEvents.registry('item', event => {
 	event.create('nourished_coke').displayName('Nourished Coke')
 	event.create('polished_coke').displayName('Polished Coke')
 	event.create('blank_upgrade').displayName('Blank Pipe Upgrade')
-	event.create('radiant_sheet').displayName('Radiant Sheet').rarity("uncommon").glow(true)
 	event.create('ender_star_fragment').displayName('Ender Star Fragment').rarity("uncommon").glow(true)
 	event.create('flux_star_fragment').displayName('Flux Star Fragment').rarity("uncommon").glow(true)
 	event.create('universe_piece').displayName('Piece of Universe').glow(true).rarity("epic")
@@ -115,7 +114,7 @@ StartupEvents.registry('item', event => {
 	})
 
 	event.create('dye_entangled_singularity').maxStackSize(16).displayName('Chromatic Singularity').rarity("rare")
-	event.create('radiant_coil').glow(true).displayName('Radiant Induction Coil').rarity("uncommon")
+	event.create('unstable_compound').displayName('Unstable Compound').rarity("epic").glow(true)
 	event.create('circuit_scrap').displayName('Circuit Scrap').rarity("common")
 	event.create('missingno').texture("kubejs:item/missingno").glow(true).rarity("epic").displayName('∄')
 	
