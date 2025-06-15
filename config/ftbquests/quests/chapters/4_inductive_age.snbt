@@ -169,18 +169,12 @@
 			icon: "tconstruct:molten_iron_bucket"
 			id: "7821FDEDDD684DD1"
 			subtitle: "Yup, molten again. Still hot!"
-			tasks: [
-				{
-					id: "2D46276700A38059"
-					item: "tconstruct:molten_iron_bucket"
-					type: "item"
-				}
-				{
-					id: "23F17B9EFFA4F857"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "23F17B9EFFA4F857"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Molten Iron Bucket"
 			x: 0.5d
 			y: -1.0d
 		}
@@ -195,18 +189,12 @@
 			]
 			icon: "minecraft:iron_nugget"
 			id: "14F9B5367649B1B4"
-			tasks: [
-				{
-					id: "6422C52A5EDC948F"
-					item: "minecraft:iron_nugget"
-					type: "item"
-				}
-				{
-					id: "0964006088E25269"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "0964006088E25269"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Iron Nugget"
 			x: 0.5d
 			y: -2.5d
 		}

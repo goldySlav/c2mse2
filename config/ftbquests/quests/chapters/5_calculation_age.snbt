@@ -561,18 +561,12 @@
 			icon: "kubejs:polished_coke"
 			id: "792CCD66259F06BD"
 			subtitle: "Best quality coke out there."
-			tasks: [
-				{
-					id: "0E6FD80A4B29C6FD"
-					item: "kubejs:polished_coke"
-					type: "item"
-				}
-				{
-					id: "42C82FB16DA45033"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "42C82FB16DA45033"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Polished Coke"
 			x: -4.0d
 			y: -10.5d
 		}
