@@ -359,6 +359,17 @@ ServerEvents.recipes(event => {
 		.recipeTime(200)
 		.blockBelow(MC('dirt'))
 		.dayTime('day')
+	//wandering trader
+    event.recipes.summoningrituals.altar(KJ("summoning_doll"))
+		.mobOutput('wandering_trader')
+		.input(Item.of(MC("water_bucket"), 1))
+		.input(Item.of(CR("experience_nugget"), 16))
+		.input(Item.of(PET("pure_emerald"), 8))
+		.input(Item.of(MC("dirt"), 1))
+		.input(Item.of(MC("blue_dye"), 1))
+		.recipeTime(200)
+		.blockBelow(MC('dirt'))
+		.dayTime('day')
 	//evoker
     event.recipes.summoningrituals.altar(KJ("summoning_doll"))
 		.mobOutput('evoker')
