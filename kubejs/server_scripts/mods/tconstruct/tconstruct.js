@@ -181,4 +181,10 @@ ServerEvents.recipes((event) => {
 	//missing netherite scrap recipe compat
 	event.shapeless(MC("netherite_scrap"), Item.of(TCT("debris_nugget"), 9))
 	event.shapeless(Item.of(TCT("debris_nugget"), 9), MC("netherite_scrap"))
+	
+	//ender chest
+	removeRecipeByID(event, [
+		TCT("smeltery/casting/obsidian/chest"),
+	])
+	event.recipes.tconstruct.casting_basin(MC("ender_chest"), Fluid.of(TCT("molten_obsidian"), 8000), M("teleportation_core"), true, 625)
 })

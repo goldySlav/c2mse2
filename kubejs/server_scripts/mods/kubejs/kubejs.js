@@ -1611,7 +1611,7 @@ castsForNumber = {
 	inductive_machine(CR_ET('fluid_transmitter'), 1, CR('mechanical_pump'))
 	inductive_machine(EIO("soul_binder"), 1, MC('soul_sand'))
 	inductive_machine(EIO("impulse_hopper"), 1, P('energy_hopper_hardened'))
-	inductive_machine(ES('ender_chest'), 1, IC('obsidian_chest'))
+	inductive_machine(ES('ender_chest'), 1, MC('ender_chest'))
 	inductive_machine(ES('ender_tank'), 1, CR('fluid_tank'))
 	inductive_machine(ES('ender_pouch'), 1, PRE('#alchemical_bags'))
 	inductive_machine(EIO("xp_vacuum"), 1, EIO('xp_obelisk'))

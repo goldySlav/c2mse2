@@ -177,6 +177,10 @@ ServerEvents.recipes((event) => {
 	})
 	
 	//ender chest
+	removeRecipeByID(event, [
+		MC("ender_chest"),
+	])
+	donutCraftFull(event, MC("ender_chest"), MC("obsidian"), M("teleportation_core"))
 	customRecipes.enderio.soulbinding(event, MC("ender_chest"), F("#chests/wooden"), MC("enderman"), 24000, 1)
 
     //bucket
