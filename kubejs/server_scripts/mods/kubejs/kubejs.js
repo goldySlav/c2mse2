@@ -487,7 +487,6 @@ ServerEvents.recipes((event) => {
 
 	event.recipes.create.mixing(Item.of(KJ('algal_blend'), 2), [ MC('clay_ball'), MC('kelp') ])
 	event.recipes.mekanismCombining(Item.of(KJ('algal_blend'), 6), MC('clay_ball'), MC('kelp'))
-	event.recipes.mekanismCombining(Item.of(KJ('algal_blend'), 6), MC('kelp'), MC('clay_ball'))
 	
 	
 	
