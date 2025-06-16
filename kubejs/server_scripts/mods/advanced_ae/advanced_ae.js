@@ -386,10 +386,7 @@ ServerEvents.recipes((event) => {
 	quantumModule(event, AE2_A("strength_card"), [
 		`3x ${AE2_A("quantum_processor")}`,
 		`4x ${AE2_A("quantum_infused_dust")}`,
-		`1x ${PET("emerald_netherite_sword")}`,
-		`1x ${AE2("certus_quartz_sword")}`,
-		`1x ${AE2("fluix_sword")}`,
-		`1x ${AE2("nether_quartz_sword")}`,
+		`2x ${PET("emerald_netherite_sword")}`,
 	])
 	quantumModule(event, AE2_A("attack_speed_card"), [
 		`3x ${AE2_A("quantum_processor")}`,
