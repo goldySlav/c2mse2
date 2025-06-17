@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
 	//the ultimate ingot
 	event.recipes.extendedcrafting.shapeless_table(EC("the_ultimate_ingot"), [
 		F("#ingots/iron"), F("#ingots/copper"), F("#ingots/zinc"), CR("andesite_alloy"), F("#ingots/gold"), F("#ingots/netherite"),
-		F("#ingots/desh"), F("#ingots/refined_radiance"), F("#ingots/shadow_steel"), AE2_A("quantum_alloy"),
+		F("#ingots/desh"), F("#ingots/refined_radiance"), F("#ingots/shadow_steel"), KJ("unstable_compound"), AE2_A("quantum_alloy"),
 		F("#ingots/ostrum"), F("#ingots/calorite"), CM("#ingots/star_infused_netherite"), F("#ingots/cobalt"), F("#ingots/slimesteel"),
 		F("#ingots/amethyst_bronze"), F("#ingots/brass"), F("#ingots/rose_gold"), F("#ingots/pig_iron"), F("#ingots/cinderslime"),
 		F("#ingots/queens_slime"), F("#ingots/manyullyn"), F("#ingots/hepatizon"), F("#ingots/cast_iron"),

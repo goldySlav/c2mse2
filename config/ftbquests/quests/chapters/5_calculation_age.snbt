@@ -443,7 +443,6 @@
 		{
 			dependencies: [
 				"36DFF3E3982944FD"
-				"1236C8AA793DCE6E"
 				"3BB8214617F3B855"
 			]
 			description: ["Combine Coke Chunks, Purified Sand and Fine Sand to make this."]
@@ -483,7 +482,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -2.5d
+			x: -1.0d
 			y: -1.5d
 		}
 		{
@@ -514,27 +513,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["7037302B8C2694EE"]
-			description: ["A product of &6Draining&r balls of sand."]
-			icon: "kubejs:fine_sand_bucket"
-			id: "1236C8AA793DCE6E"
-			subtitle: "Substitution fow snow?"
-			tasks: [
-				{
-					id: "3F2238A29FB19B3B"
-					item: "kubejs:fine_sand_bucket"
-					type: "item"
-				}
-				{
-					id: "46A82AF1AC1F5B42"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			x: -1.0d
-			y: -1.5d
-		}
-		{
 			dependencies: ["51A64DFC8F377F14"]
 			description: ["Made by &6Washing&r Sandstone."]
 			icon: "kubejs:sand_ball"
@@ -561,30 +539,18 @@
 			icon: "kubejs:polished_coke"
 			id: "792CCD66259F06BD"
 			subtitle: "Best quality coke out there."
-			tasks: [
-				{
-					id: "0E6FD80A4B29C6FD"
-					item: "kubejs:polished_coke"
-					type: "item"
-				}
-				{
-					id: "42C82FB16DA45033"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "42C82FB16DA45033"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Polished Coke"
 			x: -4.0d
 			y: -10.5d
 		}
 		{
 			dependencies: ["7037302B8C2694EE"]
-			description: [
-				"That's what remains from the Sandballs when you drain all the Fine Sand out of them."
-				""
-				""
-				""
-				"&7PS: Keep the fine sand&r"
-			]
+			description: ["Ball of Sand can be sawed into &6Sand Chunks&r."]
 			icon: "kubejs:rough_sand"
 			id: "0C905BBE99EAF556"
 			subtitle: "Use instead of snowballs? That would hurt!"
@@ -600,7 +566,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -2.5d
+			x: -1.0d
 			y: -3.0d
 		}
 		{

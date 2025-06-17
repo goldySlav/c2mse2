@@ -1,0 +1,10 @@
+{
+  "name": "Unstable Compound",
+  "colors": [
+    "cdced1",
+    "262423"
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/draconium"
+  }
+}

@@ -14,13 +14,6 @@ StartupEvents.registry("fluid", event => {
 		.bucketColor(0xB22222)
 	
 	event
-		.create('fine_sand')
-		.displayName(`Fine Sand`)
-		.stillTexture('kubejs:fluid/fine_sand_still')
-		.flowingTexture('kubejs:fluid/fine_sand_flow')
-		.bucketColor(0xE3DBB0)
-	
-	event
 		.create('abstruse_waste')
 		.displayName(`Abstruse Waste`)
 		.stillTexture('kubejs:fluid/waste_still')

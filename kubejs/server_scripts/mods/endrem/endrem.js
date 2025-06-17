@@ -25,9 +25,10 @@ ServerEvents.recipes((event) => {
 	]) //ch3
 	combEye("lost", [
 		`3x ${AE2("singularity")}`,
-		`3x ${KJ("radiant_coil")}`,
+		`3x ${KJ("unstable_compound")}`,
 		`2x ${tieredItems.ch4.circuit}`,
 		`3x ${PREXP("magenta_matter")}`,
+		CR("refined_radiance"),
 		CR("shadow_steel"),
 		MC("compass"),
 	]) //ch4

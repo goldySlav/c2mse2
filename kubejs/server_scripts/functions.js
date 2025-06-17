@@ -754,7 +754,7 @@ const singularities = [
 	{ id: "polished_coke", core: KJ("polished_coke") },
 	{ id: "electron_tube", core: CR("electron_tube") },
 	{ id: "ae2", core: AE2("singularity") },
-	{ id: "coil", core: KJ("radiant_coil") },
+	{ id: "unstable_compound", core: KJ("unstable_compound") },
 	{ id: "silicon", core: AE2("silicon") },
 	{ id: "calculation_processor", core: KJ("calculation_processor_wafer") },
 	{ id: "engineering_processor", core: KJ("engineering_processor_wafer") },
@@ -1013,7 +1013,7 @@ const tieredMaterials = {
 		block: MU('unstable_ingot'),
 		circuit: tieredItems.ch4.circuit,
 		collector: PREXP("basic_collector"),
-		wafer: KJ('radiant_coil'),
+		wafer: KJ('unstable_compound'),
 		opinium: MU("unstable_opinium_core"),
 		star: PRE('klein_star_omega'),
 	}, //ch4

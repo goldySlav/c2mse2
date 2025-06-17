@@ -22,6 +22,21 @@ ServerEvents.recipes((event) => {
 		AE2("meteorite_compass"),
 		AE2("color_applicator"),
 		AE2("vibration_chamber"),
+		AE2("nether_quartz_hoe"),
+		AE2("nether_quartz_axe"),
+		AE2("nether_quartz_pickaxe"),
+		AE2("nether_quartz_shovel"),
+		AE2("nether_quartz_sword"),
+		AE2("certus_quartz_hoe"),
+		AE2("certus_quartz_axe"),
+		AE2("certus_quartz_pickaxe"),
+		AE2("certus_quartz_shovel"),
+		AE2("certus_quartz_sword"),
+		AE2("fluix_hoe"),
+		AE2("fluix_axe"),
+		AE2("fluix_pickaxe"),
+		AE2("fluix_shovel"),
+		AE2("fluix_sword"),
 	])
 	
 	//delete matter balls

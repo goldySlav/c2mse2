@@ -45,15 +45,30 @@ ServerEvents.recipes(e => {
 	e.replaceInput({ id: MU("ender_dragon_angel_ring") }, MC("black_dye"), F("#scales/dragon_scale"))
 
 	//unstable ingot
-	e.shaped(MU("unstable_ingot"), [
-		'AAA',
-		'BBB',
-		'CCC'
+	e.recipes.create.mechanical_crafting(MU("unstable_ingot"), [
+		"AAAAA",
+		"ABBBA",
+		"ACCCA",
+		"ADDDA",
+		"AAAAA",
 	], {
-		A: EC("crystaltine_ingot"),
-		B: PREXP("basic_collector"),
-		C: KJ("crystal_matrix_ingot"),
+		A: KJ('unstable_compound'),
+		B: EC("crystaltine_ingot"),
+		C: PREXP("basic_collector"),
+		D: KJ("crystal_matrix_ingot"),
 	})
+	e.recipes.extendedcrafting.shaped_table(MU("unstable_ingot"), [
+		"AAAAA",
+		"ABBBA",
+		"ACCCA",
+		"ADDDA",
+		"AAAAA",
+    ], {
+		A: KJ('unstable_compound'),
+		B: EC("crystaltine_ingot"),
+		C: PREXP("basic_collector"),
+		D: KJ("crystal_matrix_ingot"),
+    })
 
 	//opinium cores
 	removeRecipeByID(e, [

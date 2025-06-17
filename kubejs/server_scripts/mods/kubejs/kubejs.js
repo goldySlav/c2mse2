@@ -487,7 +487,6 @@ ServerEvents.recipes((event) => {
 
 	event.recipes.create.mixing(Item.of(KJ('algal_blend'), 2), [ MC('clay_ball'), MC('kelp') ])
 	event.recipes.mekanismCombining(Item.of(KJ('algal_blend'), 6), MC('clay_ball'), MC('kelp'))
-	event.recipes.mekanismCombining(Item.of(KJ('algal_blend'), 6), MC('kelp'), MC('clay_ball'))
 	
 	
 	
@@ -536,9 +535,17 @@ ServerEvents.recipes((event) => {
 		.loops(2)
 	event.recipes.mekanism.sawing(KJ('polished_coke'), Item.of(KJ('coke_chunk'), 2))
 	
-	event.recipes.create.emptying([KJ("rough_sand"), Fluid.of(KJ("fine_sand"), 500)], KJ("sand_ball"))
-	customRecipes.create.sifting(event, [KJ("purified_sand")], KJ("rough_sand"), 6)
-	event.recipes.create.compacting(KJ("silicon_compound"), [Fluid.of(KJ("fine_sand"), 500), KJ("purified_sand"), KJ("coke_chunk")])
+	//rough sand (sand chunks)
+	event.recipes.create.cutting(KJ("rough_sand"), KJ("sand_ball"))
+	event.recipes.mekanism.sawing(KJ("sand_ball"), Item.of(KJ('rough_sand'), 2))
+	
+	//purified sand
+	customRecipes.exdeorum.sieving(event, KJ("purified_sand"), KJ("rough_sand"), 6, 1)
+	customRecipes.create.sifting(event, [`2x ${KJ("purified_sand")}`], KJ("rough_sand"), 6)
+	
+	//silicon compound
+	event.recipes.create.compacting(KJ("silicon_compound"), [KJ("purified_sand"), KJ("coke_chunk")])
+	event.recipes.mekanism.combining(KJ("silicon_compound"), KJ('purified_sand'), KJ("coke_chunk"))
 	
 	
 	
@@ -695,16 +702,14 @@ ServerEvents.recipes((event) => {
 	
 	
 	//dye entangled singularity
-	dyes.forEach(dye => {
-		event.recipes.create.mixing(KJ("dye_entangled_singularity"), [dye, AE2('quantum_entangled_singularity')])
-		event.recipes.mekanism.combining(KJ("dye_entangled_singularity"), AE2('quantum_entangled_singularity'), dye)
-	})
+	event.recipes.create.mixing(KJ("dye_entangled_singularity"), [F("#dyes"), AE2('quantum_entangled_singularity')])
+	event.recipes.mekanism.combining(KJ("dye_entangled_singularity"), AE2('quantum_entangled_singularity'), F("#dyes"))
 	colours.forEach(color => {
 		customRecipes.mekanism.painting(event, KJ("dye_entangled_singularity"), AE2("quantum_entangled_singularity"), color)
 	})
+
 	
-	
-	
+
 	//toxic waste liquid fuel
 	customRecipes.create.liquidFuel(event, F("waste"), 1000, true)
 	
@@ -855,15 +860,10 @@ ServerEvents.recipes((event) => {
 	
 	
 	
-	//radiant sheet
-	event.recipes.create.pressing(KJ(`radiant_sheet`), CR("refined_radiance"))
-	customRecipes.ad_astra.compressing(event, KJ(`radiant_sheet`), CR("refined_radiance"))
-	event.recipes.mekanism.sawing(CR("refined_radiance"), Item.of(KJ("radiant_sheet"), 2))
-	
-	//radiant coil
-	event.recipes.create.mechanical_crafting(KJ("radiant_coil"), "A", { A: KJ('radiant_sheet') })
-	event.recipes.extendedcrafting.shapeless_table(KJ("radiant_coil"), [KJ('radiant_sheet')])
-	customRecipes.create.ifiniDeploying(event, KJ("radiant_coil"), KJ('radiant_sheet'), MC("nether_star"))
+	//unstable compound
+	event.recipes.create.deploying(Item.of(KJ('unstable_compound'), 2), [CR("refined_radiance"), CR("shadow_steel")])
+	event.recipes.create.deploying(Item.of(KJ('unstable_compound'), 2), [CR("shadow_steel"), CR("refined_radiance")])
+	event.recipes.mekanismCombining(Item.of(KJ('unstable_compound'), 4), CR('refined_radiance'), CR('shadow_steel'))
 	
 	
 	
@@ -1321,7 +1321,7 @@ castsForNumber = {
 	event.recipes.create.sequenced_assembly([
 		KJ('inductive_mechanism'),
 	], CR('precision_mechanism'), [
-		event.recipes.create.deploying(tInductive, [tInductive, KJ('radiant_coil')]),
+		event.recipes.create.deploying(tInductive, [tInductive, KJ('unstable_compound')]),
 		event.recipes.create.deploying(tInductive, [tInductive, EC('ender_nugget')]),
 		event.recipes.create.deploying(tInductive, [tInductive, F("#tools/chromatic_resonators")])
 	]).transitionalItem(tInductive)
@@ -1617,7 +1617,7 @@ castsForNumber = {
 	inductive_machine(CR_ET('fluid_transmitter'), 1, CR('mechanical_pump'))
 	inductive_machine(EIO("soul_binder"), 1, MC('soul_sand'))
 	inductive_machine(EIO("impulse_hopper"), 1, P('energy_hopper_hardened'))
-	inductive_machine(ES('ender_chest'), 1, IC('obsidian_chest'))
+	inductive_machine(ES('ender_chest'), 1, MC('ender_chest'))
 	inductive_machine(ES('ender_tank'), 1, CR('fluid_tank'))
 	inductive_machine(ES('ender_pouch'), 1, PRE('#alchemical_bags'))
 	inductive_machine(EIO("xp_vacuum"), 1, EIO('xp_obelisk'))
