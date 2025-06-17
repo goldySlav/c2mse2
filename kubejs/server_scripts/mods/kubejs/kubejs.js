@@ -535,9 +535,17 @@ ServerEvents.recipes((event) => {
 		.loops(2)
 	event.recipes.mekanism.sawing(KJ('polished_coke'), Item.of(KJ('coke_chunk'), 2))
 	
-	event.recipes.create.emptying([KJ("rough_sand"), Fluid.of(KJ("fine_sand"), 500)], KJ("sand_ball"))
-	customRecipes.create.sifting(event, [KJ("purified_sand")], KJ("rough_sand"), 6)
-	event.recipes.create.compacting(KJ("silicon_compound"), [Fluid.of(KJ("fine_sand"), 500), KJ("purified_sand"), KJ("coke_chunk")])
+	//rough sand (sand chunks)
+	event.recipes.create.cutting(KJ("rough_sand"), KJ("sand_ball"))
+	event.recipes.mekanism.sawing(KJ("sand_ball"), Item.of(KJ('rough_sand'), 2))
+	
+	//purified sand
+	customRecipes.exdeorum.sieving(event, KJ("purified_sand"), KJ("rough_sand"), 6, 1)
+	customRecipes.create.sifting(event, [`2x ${KJ("purified_sand")}`], KJ("rough_sand"), 6)
+	
+	//silicon compound
+	event.recipes.create.compacting(KJ("silicon_compound"), [KJ("purified_sand"), KJ("coke_chunk")])
+	event.recipes.mekanism.combining(KJ("silicon_compound"), KJ('purified_sand'), KJ("coke_chunk"))
 	
 	
 	
