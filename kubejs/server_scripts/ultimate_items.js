@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
 		F("#dusts/netherite"), F("#dusts/charcoal"), F("#dusts/sulfur"), F("#dusts/bronze"), F("#dusts/lapis"), F("#dusts/quartz"), F("#dusts/emerald"),
 		F("#dusts/steel"), F("#dusts/refined_obsidian"), F("#dusts/iron"), F("#dusts/gold"), F("#dusts/osmium"), F("#dusts/copper"), F("#dusts/tin"),
 		F("#dusts/lead"), F("#dusts/uranium"), F("#dusts/naquadah"), F("#dusts/radiance"), F("#dusts/lithium"), PRE("low_covalence_dust"),
-		PRE("medium_covalence_dust"), PRE("high_covalence_dust"), AP("gem_dust"),
+		PRE("medium_covalence_dust"), PRE("high_covalence_dust"), AP("gem_dust"), F("#dusts/void"), 
 	]).tier(5).id(KJ('the_ultimate_dust'))
 
 	//the ultimate shard

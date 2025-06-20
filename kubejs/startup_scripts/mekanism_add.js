@@ -26,6 +26,7 @@ StartupEvents.registry('mekanism:gas', event => {
     event.createCustom('kubejs:gaseous_netherite_compound', () => new $Gas($GasBuilder.builder().tint(0x4D494D)))
     event.createCustom('kubejs:gaseous_debris', () => new $Gas($GasBuilder.builder().tint(0x654740)))
     event.createCustom('kubejs:gaseous_amethyst', () => new $Gas($GasBuilder.builder().tint(0xCC6CE7)))
+    event.createCustom('kubejs:void_essence', () => new $Gas($GasBuilder.builder().tint(0x19001c)))
 })
 
 
@@ -48,6 +49,7 @@ const $InfuseTypeBuilder = Java.loadClass('mekanism.api.chemical.infuse.InfuseTy
 StartupEvents.registry('mekanism:infuse_type', event => {
     event.createCustom('kubejs:waste', () => new $InfuseType($InfuseTypeBuilder.builder().tint(0x295e20)))
     event.createCustom('kubejs:explosion_essence', () => new $InfuseType($InfuseTypeBuilder.builder().tint(0x4f4f4f)))
+    event.createCustom('kubejs:void', () => new $InfuseType($InfuseTypeBuilder.builder().tint(0x19001c)))
 })
 
 

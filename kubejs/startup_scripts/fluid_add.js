@@ -124,4 +124,11 @@ StartupEvents.registry("fluid", event => {
 		.flowingTexture('kubejs:fluid/matrix_flow')
 		.color(0x808080)
 		.bucketColor(0x808080)
+		
+	event
+		.create('liquid_void')
+		.displayName('Liquid Void Infusion')
+		.thickTexture(0x19001c)
+		.color(0x19001c)
+		.bucketColor(0x19001c)
 })

@@ -715,6 +715,41 @@ ServerEvents.recipes((event) => {
 	
 	
 	
+	//void essence
+	event.custom({
+		"type": M("rotary"),
+		"fluidInput": {
+			"amount": 1,
+			"fluid": KJ("liquid_void")
+		},
+		"fluidOutput": {
+			"amount": 1,
+			"fluid": KJ("liquid_void")
+		},
+		"gasInput": {
+			"amount": 1,
+			"gas": KJ("void_essence")
+		},
+		"gasOutput": {
+			"amount": 1,
+			"gas": KJ("void_essence")
+		}
+	})
+	customRecipes.mekanism.oxidizing(event, PRE("dark_matter"), KJ("void_essence"), 250)
+	
+	
+	
+	//void dust
+	customRecipes.mekanism.compressing(event, KJ("void_dust"), F("#dusts/grains_of_infinity"), KJ("void_essence"))
+	
+	
+	
+	//enriched void
+	event.recipes.mekanism.enriching(KJ('enriched_void'), KJ('void_dust'))
+	customRecipes.industrialforegoing.dissolution(event, KJ(`enriched_void`), [IF("dryrubber")], KJ("liquid_void"), 100, 60)
+	
+	
+	
 	//waste bulk
 	event.custom({
 		type: AE2_A("reaction"),
@@ -751,6 +786,9 @@ ServerEvents.recipes((event) => {
 	customRecipes.mekanism.infusion_conversion(event, KJ("waste"), 80, KJ("dye_entangled_singularity"))
 
 	customRecipes.mekanism.infusion_conversion(event, KJ("explosion_essence"), 80, KJ("preserved_explosion"))
+	
+	customRecipes.mekanism.infusion_conversion(event, KJ("void"), 10, KJ("void_dust"))
+	customRecipes.mekanism.infusion_conversion(event, KJ("void"), 80, KJ("enriched_void"))
 	
 	
 	
@@ -1255,6 +1293,16 @@ castsForNumber = {
 		processingTime: 60,
 		output: toRecipeJsonItem(IF("dryrubber")),
 		outputFluid: `{Amount:100,FluidName:\"${KJ("liquid_spectrum")}\"}`,
+		type: IF("dissolution_chamber")
+	})
+	event.custom({
+		input: [
+			{ item: KJ("enriched_void") },
+		],
+		inputFluid: `{FluidName:\"${IF("ether_gas")}\",Amount:10}`,
+		processingTime: 60,
+		output: toRecipeJsonItem(IF("dryrubber")),
+		outputFluid: `{Amount:100,FluidName:\"${KJ("liquid_void")}\"}`,
 		type: IF("dissolution_chamber")
 	})
 	

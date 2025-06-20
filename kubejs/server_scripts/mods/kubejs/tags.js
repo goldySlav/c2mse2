@@ -46,6 +46,10 @@ ServerEvents.tags("item", (event) => {
 	
   //balls
 	event.add(F("balls"), KJ("sand_ball"));
+	
+  //dusts
+	event.add(F("dusts"), KJ("void_dust"));
+	event.add(F("dusts/void"), KJ("void_dust"));
 });
 
 ServerEvents.tags("fluid", (event) => {
