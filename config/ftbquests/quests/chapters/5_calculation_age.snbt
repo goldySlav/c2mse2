@@ -445,7 +445,7 @@
 				"36DFF3E3982944FD"
 				"3BB8214617F3B855"
 			]
-			description: ["Combine Coke Chunks, Purified Sand and Fine Sand to make this."]
+			description: ["Combine Coke Chunks and Purified Sand to make this."]
 			icon: "kubejs:silicon_compound"
 			id: "2D69A78F6D4F555E"
 			subtitle: "Compound butter?"

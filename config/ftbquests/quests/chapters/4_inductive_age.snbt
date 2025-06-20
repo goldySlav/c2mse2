@@ -773,11 +773,18 @@
 			icon: "create:shadow_steel"
 			id: "74A24C995BFB12FB"
 			subtitle: "Dark and heavy"
-			tasks: [{
-				id: "4D76F4C05BE670F8"
-				item: "create:shadow_steel"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4D76F4C05BE670F8"
+					item: "create:shadow_steel"
+					type: "item"
+				}
+				{
+					id: "7C22602CD486C43A"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			x: -1.5d
 			y: 1.0d
 		}
@@ -787,13 +794,21 @@
 				"74A24C995BFB12FB"
 			]
 			description: ["Key component for unstable ingots and more!"]
+			icon: "kubejs:unstable_compound"
 			id: "37ADBC9349F7DFD9"
 			subtitle: "Unstable color"
-			tasks: [{
-				id: "7E6300E59642B43F"
-				item: "kubejs:unstable_compound"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7E6300E59642B43F"
+					item: "kubejs:unstable_compound"
+					type: "item"
+				}
+				{
+					id: "48A321AD59C96F90"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			x: -2.5d
 			y: 2.5d
 		}
