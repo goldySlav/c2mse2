@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
 	removeRecipeByOutput(event, [
 		MGC("accumulation_processor_press"),
 	])
-	customRecipes.expatternprovider.cutter(event, MGC("accumulation_processor_press"), 1, KJ("circuit_scrap"), 1, KJ("abstruse_waste"), 100)
+	customRecipes.expatternprovider.cutter(event, MGC("accumulation_processor_press"), 1, KJ("circuit_scrap"), 1, KJ("abstruse_waste"), 1000)
 	
 	//late game storage component recipes
 	event.recipes.mekanism.nucleosynthesizing(AE2('cell_component_256k'), `5x ${M("antimatter")}`, MGC('cell_component_1m'), 50)

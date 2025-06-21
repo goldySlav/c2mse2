@@ -113,4 +113,7 @@ ServerEvents.recipes((event) => {
 		D: KJ("chromatic_resonator"),
 		E: MC("ender_pearl"),
 	})
+	
+	//ender drawer clear nbt recipe
+	event.shapeless(FS("ender_drawer"), [FS("ender_drawer")])
 })

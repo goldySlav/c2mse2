@@ -257,6 +257,10 @@ StartupEvents.registry('item', event => {
 	//Crystal Matrix Ingot
 	event.create('crystal_matrix_ingot').displayName('Crystal Matrix Ingot').rarity("uncommon")
 	
+	//Void Dust
+	event.create('void_dust').displayName('Void Dust')
+	event.create('enriched_void').displayName('Enriched Void')
+	
 	//Custom Opinium Cores
 	event.create('miniutilities:wooden_opinium_core').displayName('Wooden Opinium Core')
 	event.create('miniutilities:leather_opinium_core').displayName('Leather Opinium Core')

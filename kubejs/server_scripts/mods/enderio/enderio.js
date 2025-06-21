@@ -197,9 +197,12 @@ ServerEvents.recipes((event) => {
 	//enchBook(AM("serpentfriend"), KJ("necrotic_bone"), 16)
 	//enchBook(AM("board_return"), KJ("chromatic_resonator"), 1)
 	
-	//infinity grains & rod
-	event.recipes.ae2.transform(EIO("grains_of_infinity"), [AE2("sky_dust"), CM("nether_star_fragment")]).circumstance({ type: 'fluid', tag: F('redstone') })
-	event.recipes.create.mixing(EIO("grains_of_infinity"), [AE2("sky_dust"), CM("nether_star_fragment"), Fluid.of(KJ("liquid_redstone"), 10)])
+	//infinity grains
+	event.recipes.ae2.transform(EIO("grains_of_infinity"), [AE2("sky_dust")]).circumstance({ type: 'fluid', tag: F('redstone') })
+	event.recipes.create.mixing(EIO("grains_of_infinity"), [AE2("sky_dust"), Fluid.of(KJ("liquid_redstone"), 10)])
+	event.recipes.mekanism.enriching(Item.of(EIO('grains_of_infinity'), 2), AE2("sky_dust"))
+	
+	//infinity rod
 	event.shaped(EIO("infinity_rod"), [
 		" AB",
 		"ABA",

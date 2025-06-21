@@ -3,14 +3,14 @@
 ServerEvents.recipes((event) => {
 	//flux dust
 	customRecipes.industrialforegoing.dissolution(event, `8x ${FN("flux_dust")}`, [
-		F("#dusts/obsidian"),
-		F("#dusts/obsidian"),
-		F("#dusts/obsidian"),
-		F("#dusts/obsidian"),
-		F("#dusts/obsidian"),
-		F("#dusts/obsidian"),
-		F("#dusts/obsidian"),
-		F("#dusts/obsidian"),
+		F("#dusts/grains_of_infinity"),
+		F("#dusts/grains_of_infinity"),
+		F("#dusts/grains_of_infinity"),
+		F("#dusts/grains_of_infinity"),
+		F("#dusts/grains_of_infinity"),
+		F("#dusts/grains_of_infinity"),
+		F("#dusts/grains_of_infinity"),
+		F("#dusts/grains_of_infinity"),
 	],
 		KJ("liquid_redstone"),
 		500

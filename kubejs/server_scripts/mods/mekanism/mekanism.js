@@ -3,7 +3,7 @@
 ServerEvents.recipes((event) => {
     //removal
     removeRecipeByID(event, [
-		
+		M("compat/ae2/sky_stone_dust_to_sky_stone"),
     ])
 	
 	const mekaTiers = ["basic", "advanced", "elite", "ultimate"]
