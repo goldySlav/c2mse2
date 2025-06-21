@@ -116,9 +116,9 @@ ServerEvents.recipes((event) => {
 		AE2("logic_processor_press"),
 	])
 	customRecipes.expatternprovider.cutter(event, AE2("silicon_press"), 1, KJ("circuit_scrap"), 1, MC("water"), 1000)
-	customRecipes.expatternprovider.cutter(event, AE2("engineering_processor_press"), 1, KJ("circuit_scrap"), 1, TCT("molten_diamond"), 90)
-	customRecipes.expatternprovider.cutter(event, AE2("calculation_processor_press"), 1, KJ("circuit_scrap"), 1, KJ("molten_certus"), 90)
-	customRecipes.expatternprovider.cutter(event, AE2("logic_processor_press"), 1, KJ("circuit_scrap"), 1, TCT("molten_gold"), 90)
+	customRecipes.expatternprovider.cutter(event, AE2("engineering_processor_press"), 1, KJ("circuit_scrap"), 1, TCT("molten_diamond"), 1000)
+	customRecipes.expatternprovider.cutter(event, AE2("calculation_processor_press"), 1, KJ("circuit_scrap"), 1, KJ("molten_certus"), 1000)
+	customRecipes.expatternprovider.cutter(event, AE2("logic_processor_press"), 1, KJ("circuit_scrap"), 1, TCT("molten_gold"), 1000)
 	event.stonecutting(AE2("name_press"), KJ("circuit_scrap"))
 	
 	//printed silicon

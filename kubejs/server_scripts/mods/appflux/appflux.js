@@ -14,7 +14,7 @@ ServerEvents.recipes((event) => {
 	removeRecipeByOutput(event, [
 		AF("energy_processor_press"),
 	])
-	customRecipes.expatternprovider.cutter(event, AF("energy_processor_press"), 1, KJ("circuit_scrap"), 1, KJ("liquid_redstone"), 100)
+	customRecipes.expatternprovider.cutter(event, AF("energy_processor_press"), 1, KJ("circuit_scrap"), 1, KJ("liquid_redstone"), 1000)
 	
 	
 	
