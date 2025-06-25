@@ -15,11 +15,38 @@ ServerEvents.recipes((event) => {
 		PR_C('plate'), PR_C("conductive_plate"), PR_C("cathode"),
 	])
 
-	//circuits
+	//red alloy
 	event.remove({ output: PR_C('red_ingot') })
 	event.remove({ output: PR_C('red_iron_comp') })
-	event.remove({ mod: 'projectred-illumination' })
 	event.recipes.createCompacting([PR_C('red_ingot')], [F('#ingots/copper'), Fluid.of(KJ("liquid_redstone"), 250)])
+	event.custom({
+		type: AE2_A("reaction"),
+		energy: 1000000,
+		fluid: {
+			fluidStack: {
+				Amount: 8000,
+				FluidName: KJ("liquid_redstone")
+			}
+		},
+		input_items: [
+			{
+				amount: 64,
+				ingredient: {
+					item: MC("copper_ingot")
+				}
+			},
+		],
+		output: {
+			"#": 64,
+			"#c": "ae2:i",
+			id: PR_C('red_ingot'),
+		}
+	})
+	event.recipes.mekanism.metallurgic_infusing(PR_C('red_ingot'), F("#ingots/copper"), `80x ${M("redstone")}`)
+
+
+	//circuits
+	event.remove({ mod: 'projectred-illumination' })
 	event.shaped(PR_C('platformed_plate'), [
 		'BBB',
 		'AAA',
