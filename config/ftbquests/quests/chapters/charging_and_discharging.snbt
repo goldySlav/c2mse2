@@ -1,18 +1,21 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
+	disable_toast: true
 	filename: "charging_and_discharging"
 	group: "051AA46D917B6FBA"
 	icon: "powah:player_transmitter_nitro"
 	id: "2EDDE83AC493B3D6"
-	order_index: 20
+	order_index: 22
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["79F55AA3D48E86DA"]
 			disable_toast: true
 			id: "08BA60FF16633B95"
+			shape: "rsquare"
 			tasks: [{
+				disable_toast: true
 				id: "2D5691BA79E725A4"
 				item: "powah:player_transmitter_blazing"
 				type: "item"
@@ -24,7 +27,9 @@
 			dependencies: ["18AF1F3B5F17616B"]
 			disable_toast: true
 			id: "79F55AA3D48E86DA"
+			shape: "rsquare"
 			tasks: [{
+				disable_toast: true
 				id: "7FEBABCF87BB6A80"
 				item: "powah:player_transmitter_hardened"
 				type: "item"
@@ -35,8 +40,11 @@
 		{
 			dependencies: ["25F6391A53D37C43"]
 			disable_toast: true
+			icon: "powah:player_transmitter_basic"
 			id: "18AF1F3B5F17616B"
+			shape: "rsquare"
 			tasks: [{
+				disable_toast: true
 				id: "6665B14524D272CB"
 				item: "powah:player_transmitter_basic"
 				type: "item"
@@ -49,7 +57,9 @@
 			description: ["Will charge all of the items in inventory of player it's bound to via Binding Card."]
 			disable_toast: true
 			id: "25F6391A53D37C43"
+			shape: "rsquare"
 			tasks: [{
+				disable_toast: true
 				id: "7F7668CE19A916A8"
 				item: "powah:player_transmitter_starter"
 				type: "item"
@@ -61,7 +71,9 @@
 			dependencies: ["08BA60FF16633B95"]
 			disable_toast: true
 			id: "37EF53A155A609DE"
+			shape: "rsquare"
 			tasks: [{
+				disable_toast: true
 				id: "28C6F5C5EB15D201"
 				item: "powah:player_transmitter_niotic"
 				type: "item"
@@ -72,8 +84,11 @@
 		{
 			dependencies: ["37EF53A155A609DE"]
 			disable_toast: true
+			icon: "powah:player_transmitter_spirited"
 			id: "2E1640AD4BC85708"
+			shape: "rsquare"
 			tasks: [{
+				disable_toast: true
 				id: "27603C7559641320"
 				item: "powah:player_transmitter_spirited"
 				type: "item"
@@ -85,7 +100,9 @@
 			dependencies: ["2E1640AD4BC85708"]
 			disable_toast: true
 			id: "7F57B8EB4206DC43"
+			shape: "rsquare"
 			tasks: [{
+				disable_toast: true
 				id: "56F04E6BF16FA188"
 				item: "powah:player_transmitter_nitro"
 				type: "item"
@@ -94,6 +111,7 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["3CF1132D00E19652"]
 			description: [
 				"Required by &6Player Transmitter&r."
 				"Needs to be bound to a single player."
@@ -101,6 +119,7 @@
 			disable_toast: true
 			id: "414A9A78F0F9ED81"
 			tasks: [{
+				disable_toast: true
 				id: "66F28F7CB121039B"
 				item: "powah:binding_card"
 				type: "item"
@@ -113,6 +132,7 @@
 			disable_toast: true
 			id: "6A544F2D0F7C65C2"
 			tasks: [{
+				disable_toast: true
 				id: "09D5B17B4B7BC907"
 				item: "powah:binding_card_dim"
 				type: "item"
@@ -126,6 +146,7 @@
 			disable_toast: true
 			id: "47B8251D68EED5FD"
 			tasks: [{
+				disable_toast: true
 				id: "6F60D7BD4CDD7780"
 				item: {
 					Count: 1
@@ -145,6 +166,7 @@
 			disable_toast: true
 			id: "5B153BE87A887779"
 			tasks: [{
+				disable_toast: true
 				id: "4A7CA60070CF7B51"
 				item: {
 					Count: 1
@@ -164,6 +186,7 @@
 			disable_toast: true
 			id: "3F4ED04D00D50764"
 			tasks: [{
+				disable_toast: true
 				id: "719A0FA887D42C69"
 				item: {
 					Count: 1
@@ -183,6 +206,7 @@
 			disable_toast: true
 			id: "0208156C99EC6FB8"
 			tasks: [{
+				disable_toast: true
 				id: "0EB78365B3AF2CD5"
 				item: {
 					Count: 1
@@ -202,6 +226,7 @@
 			disable_toast: true
 			id: "0450A6ECB5D55BDB"
 			tasks: [{
+				disable_toast: true
 				id: "157A226BBE1E095A"
 				item: {
 					Count: 1
@@ -221,6 +246,7 @@
 			disable_toast: true
 			id: "55680201EAD0DD02"
 			tasks: [{
+				disable_toast: true
 				id: "0DDB0905FA2F218F"
 				item: {
 					Count: 1
@@ -240,6 +266,7 @@
 			disable_toast: true
 			id: "2FAD156D05BFCDB8"
 			tasks: [{
+				disable_toast: true
 				id: "58970F5F96C665B1"
 				item: {
 					Count: 1
@@ -260,6 +287,7 @@
 			disable_toast: true
 			id: "2612D368BE8F774B"
 			tasks: [{
+				disable_toast: true
 				id: "0B1F8E876DD7B2EE"
 				item: "powah:energy_hopper_starter"
 				type: "item"
@@ -272,6 +300,7 @@
 			disable_toast: true
 			id: "70A56D5F0B35562A"
 			tasks: [{
+				disable_toast: true
 				id: "13A703A0EEFDF50C"
 				item: "powah:energy_hopper_basic"
 				type: "item"
@@ -282,8 +311,10 @@
 		{
 			dependencies: ["70A56D5F0B35562A"]
 			disable_toast: true
+			icon: "powah:energy_hopper_hardened"
 			id: "13C2FB2F8842280B"
 			tasks: [{
+				disable_toast: true
 				id: "2690DCBE7F8BD11D"
 				item: "powah:energy_hopper_hardened"
 				type: "item"
@@ -296,6 +327,7 @@
 			disable_toast: true
 			id: "1D230520E76D976B"
 			tasks: [{
+				disable_toast: true
 				id: "25C4DF86B5425E9A"
 				item: "powah:energy_hopper_blazing"
 				type: "item"
@@ -308,6 +340,7 @@
 			disable_toast: true
 			id: "5EDBE0CAE24DE64D"
 			tasks: [{
+				disable_toast: true
 				id: "28806F0862ED7B13"
 				item: "powah:energy_hopper_niotic"
 				type: "item"
@@ -320,6 +353,7 @@
 			disable_toast: true
 			id: "16CE821CBB0B766A"
 			tasks: [{
+				disable_toast: true
 				id: "0B9A40A38D294A73"
 				item: "powah:energy_hopper_spirited"
 				type: "item"
@@ -332,6 +366,7 @@
 			disable_toast: true
 			id: "185ED69F6FC64EAB"
 			tasks: [{
+				disable_toast: true
 				id: "42A7CBB16490C3FC"
 				item: "powah:energy_hopper_nitro"
 				type: "item"
@@ -345,6 +380,7 @@
 			disable_toast: true
 			id: "7AE90B5EB2F6FCA8"
 			tasks: [{
+				disable_toast: true
 				id: "6409355CD9CFF95F"
 				item: "powah:energy_discharger_starter"
 				type: "item"
@@ -355,8 +391,10 @@
 		{
 			dependencies: ["7AE90B5EB2F6FCA8"]
 			disable_toast: true
+			icon: "powah:energy_discharger_basic"
 			id: "64178A5A5B4431D0"
 			tasks: [{
+				disable_toast: true
 				id: "36C4D5970528E16C"
 				item: "powah:energy_discharger_basic"
 				type: "item"
@@ -367,8 +405,10 @@
 		{
 			dependencies: ["64178A5A5B4431D0"]
 			disable_toast: true
+			icon: "powah:energy_discharger_hardened"
 			id: "1E6D6611E98468AA"
 			tasks: [{
+				disable_toast: true
 				id: "5FDDF3E8BBA4EFE4"
 				item: "powah:energy_discharger_hardened"
 				type: "item"
@@ -381,6 +421,7 @@
 			disable_toast: true
 			id: "138569946C40B0F3"
 			tasks: [{
+				disable_toast: true
 				id: "75E0BCC44A5C3BAC"
 				item: "powah:energy_discharger_blazing"
 				type: "item"
@@ -393,6 +434,7 @@
 			disable_toast: true
 			id: "34E4ACFDB47C83D4"
 			tasks: [{
+				disable_toast: true
 				id: "271F384B2DF990CF"
 				item: "powah:energy_discharger_niotic"
 				type: "item"
@@ -405,6 +447,7 @@
 			disable_toast: true
 			id: "063C91BE5C55D8A9"
 			tasks: [{
+				disable_toast: true
 				id: "65E77945814FC755"
 				item: "powah:energy_discharger_spirited"
 				type: "item"
@@ -417,6 +460,7 @@
 			disable_toast: true
 			id: "1F8432280DBD5517"
 			tasks: [{
+				disable_toast: true
 				id: "694E2B27A67BB201"
 				item: "powah:energy_discharger_nitro"
 				type: "item"
@@ -425,6 +469,7 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["3CF1132D00E19652"]
 			description: [
 				"Mekanism Power Cubes have two slots in the GUI."
 				"One is for charging item with stored energy, and second does the opposite."
@@ -432,6 +477,7 @@
 			disable_toast: true
 			id: "2F8D7198FB351837"
 			tasks: [{
+				disable_toast: true
 				id: "176938D8EA46E1F6"
 				item: {
 					Count: 1
@@ -488,6 +534,7 @@
 			disable_toast: true
 			id: "7245A8E6B8EEE96C"
 			tasks: [{
+				disable_toast: true
 				id: "1B968FFD7287DEF9"
 				item: {
 					Count: 1
@@ -560,6 +607,7 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["3CF1132D00E19652"]
 			description: [
 				"Once any ME FE Storage Cell is in your ME Drive, use Flux Accessor connected to both ME System and your power source, you can directly access FE from your terminals, just like fluids and gases."
 				""
@@ -568,6 +616,7 @@
 			disable_toast: true
 			id: "32DB5094E335B93E"
 			tasks: [{
+				disable_toast: true
 				id: "2B52F04BED55ADD7"
 				item: {
 					Count: 1
@@ -634,11 +683,13 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["3CF1132D00E19652"]
 			description: ["Portable FE Cell acts just like a &6Huge&r battery you can open anytime and quickly recharge your items, as long as the Cell itself has enough AE stored."]
 			disable_toast: true
 			id: "10F886A191FA17DD"
 			subtitle: "Battery that has to be charged to be used"
 			tasks: [{
+				disable_toast: true
 				id: "7648DB4812969367"
 				item: {
 					Count: 1
@@ -705,10 +756,18 @@
 			y: -3.0d
 		}
 		{
-			description: ["This Chapter covers most solutions related to charging things you can't just attach a cable to."]
+			dependencies: ["429BA020217DDAEB"]
+			description: [
+				"This Chapter covers most solutions related to charging things you can't just attach a cable to."
+				""
+				"Quests with rounded edges indicate solutions that charge your items without need to interact with anything."
+			]
 			disable_toast: true
+			hide_dependent_lines: true
 			id: "3CF1132D00E19652"
+			subtitle: "Unlocks after completing &6Chapter 2&r"
 			tasks: [{
+				disable_toast: true
 				icon: "mekanism:energy_tablet"
 				id: "102B3A08E3E9DCE1"
 				stat: "minecraft:play_time"
@@ -719,6 +778,21 @@
 			title: "Machines are cool, but I need power too!"
 			x: 0.5d
 			y: -7.5d
+		}
+		{
+			dependencies: ["3CF1132D00E19652"]
+			description: ["This component of your late-game Flux Network allows you to wirelessly charge your armor, curios and hotbar (main inventory is disabled)."]
+			disable_toast: true
+			id: "5ED46316E7E4B9EB"
+			shape: "rsquare"
+			tasks: [{
+				disable_toast: true
+				id: "78C537253D8D07BE"
+				item: "fluxnetworks:flux_controller"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
 		}
 	]
 	title: "Charging and Discharging"

@@ -357,6 +357,10 @@
 		}
 		{
 			dependencies: ["034E9BFFAF7D234A"]
+			description: [
+				"Note: This quest unlocks the Otherside dimension to loot and explore!"
+				"{ \"text\": \"Click to learn more.\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"56E8841C2EB07F7C\" } }"
+			]
 			id: "558BAC0BD9E4AEE8"
 			rewards: [
 				{
@@ -1349,33 +1353,6 @@
 			title: "First Collection"
 			x: 1.0d
 			y: 7.0d
-		}
-		{
-			dependencies: ["558BAC0BD9E4AEE8"]
-			description: [
-				"Now you unlocked the \"Otherside\" dimension!"
-				""
-				"To join the dimension you need to build a horizontal frame from &cSculk Shrieker&r and light it up with &6Echo Shard&r!"
-				""
-				"{image:kubejs:textures/quests/otherside_portal.png width:200 height:200 align:1}"
-				""
-				"To find ingredients for the portal you need to sieve Crushed End Stone through a Netherite Mesh!"
-			]
-			id: "7D2BC05D221AECFE"
-			rewards: [{
-				count: 64
-				id: "0AEC265E3B18940A"
-				item: "minecraft:echo_shard"
-				type: "item"
-			}]
-			tasks: [{
-				dimension: "deeperdarker:otherside"
-				id: "2BCC5EE26370AA99"
-				title: "Visit \"Otherside\" Dimension"
-				type: "dimension"
-			}]
-			x: -13.0d
-			y: 11.0d
 		}
 	]
 	subtitle: ["Survive in open space after horrible accident"]

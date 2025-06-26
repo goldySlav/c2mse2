@@ -1,0 +1,932 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "energy_generation"
+	group: "051AA46D917B6FBA"
+	icon: "ae2:charged_certus_quartz_crystal"
+	id: "1754F2046D28F0A3"
+	order_index: 14
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"So you need energy?"
+				"We have energy."
+				"You are about to have energy as well."
+			]
+			disable_toast: true
+			id: "228C6FD0FA490A2E"
+			tasks: [{
+				biome: "minecraft:ocean"
+				disable_toast: true
+				icon: "minecraft:writable_book"
+				id: "7FD1ECF3FA598869"
+				title: "Energy Generation"
+				type: "biome"
+			}]
+			x: -4.25d
+			y: -5.5d
+		}
+		{
+			disable_toast: true
+			id: "2F572593C2DE4296"
+			tasks: [{
+				disable_toast: true
+				id: "4D39EB4ABAFEA699"
+				item: "powah:thermo_generator_starter"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			disable_toast: true
+			id: "55AD3007D2EB22AD"
+			tasks: [{
+				disable_toast: true
+				id: "29FBF18711B92485"
+				item: "powah:furnator_starter"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			disable_toast: true
+			id: "23446F7BEA4BA253"
+			tasks: [{
+				disable_toast: true
+				id: "079266CE6C5EEE75"
+				item: "powah:magmator_starter"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			disable_toast: true
+			id: "4C70062C34945FE4"
+			tasks: [{
+				disable_toast: true
+				id: "4433040D6A8E9574"
+				item: "powah:solar_panel_starter"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -3.5d
+		}
+		{
+			disable_toast: true
+			id: "098D703CBA8744C1"
+			tasks: [{
+				disable_toast: true
+				id: "2B11CEEEF224DCD8"
+				item: "mekanismgenerators:heat_generator"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			disable_toast: true
+			id: "748B1F63B3D74901"
+			tasks: [{
+				disable_toast: true
+				id: "5A049F352E630E2B"
+				item: "mekanismgenerators:solar_generator"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["748B1F63B3D74901"]
+			disable_toast: true
+			id: "5CCAF06898D9462F"
+			tasks: [{
+				disable_toast: true
+				id: "35F6D98D3CAEA6BA"
+				item: "mekanismgenerators:advanced_solar_generator"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5CCAF06898D9462F"]
+			disable_toast: true
+			id: "61F828C870B5D74B"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				disable_toast: true
+				id: "0B3599749F8F6FFF"
+				item: "mekanismgenerators:module_solar_recharging_unit"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			disable_toast: true
+			id: "4A66B964D280F961"
+			tasks: [{
+				disable_toast: true
+				id: "1DC4A56B29C559F0"
+				item: "mekanismgenerators:wind_generator"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			disable_toast: true
+			icon: "mekanismgenerators:control_rod_assembly"
+			id: "0303D4469B6CCF94"
+			tasks: [
+				{
+					disable_toast: true
+					id: "65B319F734476824"
+					item: "mekanismgenerators:fission_reactor_casing"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "425FBADFE17D0B43"
+					item: "mekanismgenerators:fission_reactor_port"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "525B60F2B1C8BA1C"
+					item: "mekanismgenerators:control_rod_assembly"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "635D293425B2EDB4"
+					item: "mekanismgenerators:fission_fuel_assembly"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "0585ED3D4FCBFF63"
+					item: "mekanismgenerators:reactor_glass"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "4C614D5AE5F4D819"
+					item: "mekanismgenerators:fission_reactor_logic_adapter"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Fission Reactor"
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"295A36F6CFADBFAC"
+				"0303D4469B6CCF94"
+				"7A2610570897F3E1"
+				"492BDF43EA2D8E82"
+			]
+			dependency_requirement: "one_started"
+			disable_toast: true
+			id: "0EAB1A0DED1124EA"
+			tasks: [
+				{
+					disable_toast: true
+					id: "618B739C6254FDC8"
+					item: "mekanismgenerators:turbine_blade"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "28E09FF7C88A7FE7"
+					item: "mekanismgenerators:turbine_rotor"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "596208BB666A03E6"
+					item: "mekanismgenerators:rotational_complex"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "6735A547A86998D5"
+					item: "mekanismgenerators:electromagnetic_coil"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "7A1B38C09064FAED"
+					item: "mekanismgenerators:turbine_casing"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "7B9A851AC8919C8C"
+					item: "mekanismgenerators:turbine_valve"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "39F32A2C4335874D"
+					item: "mekanismgenerators:turbine_vent"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "77AD28806DD189FF"
+					item: "mekanism:pressure_disperser"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "082BD7BA3D521759"
+					item: "mekanismgenerators:saturating_condenser"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "4D39B461E4FD15D8"
+					item: "mekanism:structural_glass"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Industrial Turbine"
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"0303D4469B6CCF94"
+				"7A2610570897F3E1"
+				"492BDF43EA2D8E82"
+			]
+			dependency_requirement: "one_started"
+			disable_toast: true
+			hide_dependency_lines: true
+			id: "295A36F6CFADBFAC"
+			tasks: [
+				{
+					disable_toast: true
+					id: "181E116E5FF9C81F"
+					item: "mekanism:boiler_casing"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "20177DC96053483B"
+					item: "mekanism:boiler_valve"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "24191CCDF8018BB3"
+					item: "mekanism:pressure_disperser"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "4E71F6AB48FB0F4C"
+					item: "mekanism:structural_glass"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Thermoelectric Boiler"
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			disable_toast: true
+			icon: "mekanismgenerators:fusion_reactor_controller"
+			id: "7A2610570897F3E1"
+			tasks: [
+				{
+					disable_toast: true
+					id: "6D4FB77548FF455A"
+					item: "mekanismgenerators:fusion_reactor_controller"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "55535C6ABFA62D24"
+					item: "mekanismgenerators:fusion_reactor_frame"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "7F8CD11D14305A0A"
+					item: "mekanismgenerators:fusion_reactor_port"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "1A8A949800F6C0FA"
+					item: "mekanismgenerators:fusion_reactor_logic_adapter"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Fusion Reactor"
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			disable_toast: true
+			icon: "mekanism_extras:naquadah_reactor_controller"
+			id: "492BDF43EA2D8E82"
+			tasks: [
+				{
+					disable_toast: true
+					id: "6FD552B3C3A76796"
+					item: "mekanism_extras:naquadah_reactor_controller"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "28B9309EE927058F"
+					item: "mekanism_extras:naquadah_reactor_casing"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "270AE451F7EB7EEE"
+					item: "mekanism_extras:naquadah_reactor_port"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "3E4CEC85877C43C5"
+					item: "mekanism_extras:lead_coated_laser_focus_matrix"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "7534911EFD52BD64"
+					item: "mekanism_extras:naquadah_reactor_logic_adapter"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "229E4F2CEE84F0B0"
+					item: "mekanism_extras:lead_coated_glass"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Naquadah Reactor"
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4C70062C34945FE4"]
+			disable_toast: true
+			id: "34E561624F76A4F2"
+			tasks: [{
+				id: "18E67CA184FDA4E8"
+				item: "powah:solar_panel_basic"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["34E561624F76A4F2"]
+			disable_toast: true
+			id: "1A232D76B4A60403"
+			tasks: [{
+				id: "382AB11D80F57B4B"
+				item: "powah:solar_panel_hardened"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1A232D76B4A60403"]
+			disable_toast: true
+			id: "2C23F053BD12A3B2"
+			tasks: [{
+				id: "6C2612E8D4CBE67D"
+				item: "powah:solar_panel_blazing"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2C23F053BD12A3B2"]
+			disable_toast: true
+			id: "2C1144B44CF86001"
+			tasks: [{
+				id: "1EB270583DFA8972"
+				item: "powah:solar_panel_niotic"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2C1144B44CF86001"]
+			disable_toast: true
+			id: "2D4CC5073B38B88A"
+			tasks: [{
+				id: "19C51C7B7F214CE7"
+				item: "powah:solar_panel_spirited"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2D4CC5073B38B88A"]
+			disable_toast: true
+			id: "2490CCA89FAAB4E4"
+			tasks: [{
+				id: "5D435BD6115A62EF"
+				item: "powah:solar_panel_nitro"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["23446F7BEA4BA253"]
+			disable_toast: true
+			id: "6908E051E7215802"
+			tasks: [{
+				id: "678C451F95470F80"
+				item: "powah:magmator_basic"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6908E051E7215802"]
+			id: "6D4AC2E6D0ADFEDB"
+			tasks: [{
+				id: "2A66D5F2997C08F3"
+				item: "powah:magmator_hardened"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6D4AC2E6D0ADFEDB"]
+			id: "6C3A583E10B3B979"
+			tasks: [{
+				id: "10F1CA451341AD71"
+				item: "powah:magmator_blazing"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6C3A583E10B3B979"]
+			disable_toast: true
+			id: "676871CD92CADD47"
+			tasks: [{
+				id: "7E03418EEE443934"
+				item: "powah:magmator_niotic"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["676871CD92CADD47"]
+			disable_toast: true
+			id: "26356F834175FCEF"
+			tasks: [{
+				id: "7BD86431CB7FA73A"
+				item: "powah:magmator_spirited"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["26356F834175FCEF"]
+			disable_toast: true
+			id: "6AD44ED6093A02C2"
+			tasks: [{
+				id: "2FA61BFA483148DD"
+				item: "powah:magmator_nitro"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["55AD3007D2EB22AD"]
+			disable_toast: true
+			id: "4F9BCD5CC426417D"
+			tasks: [{
+				id: "05A8A0F2388364C4"
+				item: "powah:furnator_basic"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4F9BCD5CC426417D"]
+			disable_toast: true
+			id: "3D9F594E5F1FDC0B"
+			tasks: [{
+				id: "31AFD4C79436D82D"
+				item: "powah:furnator_hardened"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3D9F594E5F1FDC0B"]
+			disable_toast: true
+			id: "08F6A958ADA47AE0"
+			tasks: [{
+				id: "49E5D261356A4A94"
+				item: "powah:furnator_blazing"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["08F6A958ADA47AE0"]
+			disable_toast: true
+			id: "13E2B0723E9CE654"
+			tasks: [{
+				id: "011FF73155C2AA8D"
+				item: "powah:furnator_niotic"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["13E2B0723E9CE654"]
+			disable_toast: true
+			id: "3658821E1B1E94BE"
+			tasks: [{
+				id: "6D518790CAFB4ED6"
+				item: "powah:furnator_spirited"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3658821E1B1E94BE"]
+			disable_toast: true
+			id: "70D9A2C322FA9B54"
+			tasks: [{
+				id: "12A3DA3F67033B54"
+				item: "powah:furnator_nitro"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2F572593C2DE4296"]
+			disable_toast: true
+			id: "3860ADA7B00D8A5F"
+			tasks: [{
+				id: "5A19A1F664F9FC15"
+				item: "powah:thermo_generator_basic"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3860ADA7B00D8A5F"]
+			disable_toast: true
+			id: "07FB4834D3468216"
+			tasks: [{
+				id: "5411D6551C3EB6FF"
+				item: "powah:thermo_generator_hardened"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["07FB4834D3468216"]
+			disable_toast: true
+			id: "557715982D50A4EB"
+			tasks: [{
+				id: "2E3EF7C0AFE6EBDD"
+				item: "powah:thermo_generator_blazing"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["557715982D50A4EB"]
+			disable_toast: true
+			id: "2D5686072B7ED889"
+			tasks: [{
+				id: "72742D891658A1BA"
+				item: "powah:thermo_generator_niotic"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2D5686072B7ED889"]
+			disable_toast: true
+			id: "29C4BFF59A52E347"
+			tasks: [{
+				id: "3AA3A249A7C99572"
+				item: "powah:thermo_generator_spirited"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["29C4BFF59A52E347"]
+			disable_toast: true
+			id: "75EB1C238860B102"
+			tasks: [{
+				id: "663BC293946A3D85"
+				item: "powah:thermo_generator_nitro"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["098D703CBA8744C1"]
+			disable_toast: true
+			id: "77FC9509F1453ECD"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				disable_toast: true
+				id: "4038BE3317E348D2"
+				item: "mekanismgenerators:module_geothermal_generator_unit"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			disable_toast: true
+			id: "463237D2985A0BF7"
+			tasks: [{
+				disable_toast: true
+				id: "2CCC8A161ABF5B01"
+				item: "industrialforegoing:pitiful_generator"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"27F1ECE514D73B04"
+				"6201F01C2251CAE5"
+				"5A03606E031D9B12"
+				"356F1D7E78F21F32"
+				"1E7ECB1DE39225A6"
+				"2E604843F3EFEAF2"
+				"70B849883F2BF5D3"
+				"74BF30FF6209487C"
+				"7738092601327A28"
+				"3097BD27798A19D3"
+				"03CC67EDE91D17ED"
+				"535DEA8CDC0A91C8"
+				"7E5E41488F729EBC"
+				"069830991D4F93FA"
+				"59582D6195373D79"
+				"7D661D9A9A8C73A3"
+			]
+			disable_toast: true
+			id: "34F8C20816FE02D3"
+			tasks: [{
+				disable_toast: true
+				id: "1330874DB9EAFC6D"
+				item: "industrialforegoing:mycelial_reactor"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 1.5d
+		}
+		{
+			disable_toast: true
+			icon: "industrialforegoing:mycelial_furnace"
+			id: "74BF30FF6209487C"
+			tasks: [{
+				disable_toast: true
+				id: "3BCEE6262B78E6E6"
+				item: "industrialforegoing:mycelial_furnace"
+				type: "item"
+			}]
+			x: -8.75d
+			y: -0.75d
+		}
+		{
+			disable_toast: true
+			id: "59582D6195373D79"
+			tasks: [{
+				disable_toast: true
+				id: "11CC1BDB01477CD3"
+				item: "industrialforegoing:mycelial_slimey"
+				type: "item"
+			}]
+			x: -9.85d
+			y: -1.5d
+		}
+		{
+			disable_toast: true
+			id: "6201F01C2251CAE5"
+			tasks: [{
+				disable_toast: true
+				id: "2558DA696B8F2779"
+				item: "industrialforegoing:mycelial_culinary"
+				type: "item"
+			}]
+			x: -12.15d
+			y: -1.5d
+		}
+		{
+			disable_toast: true
+			id: "069830991D4F93FA"
+			tasks: [{
+				disable_toast: true
+				id: "373F75DC27C920BD"
+				item: "industrialforegoing:mycelial_potion"
+				type: "item"
+			}]
+			x: -13.25d
+			y: -0.75d
+		}
+		{
+			disable_toast: true
+			id: "356F1D7E78F21F32"
+			tasks: [{
+				disable_toast: true
+				id: "6E709C80B98A8D9F"
+				item: "industrialforegoing:mycelial_disenchantment"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.35d
+		}
+		{
+			disable_toast: true
+			id: "1E7ECB1DE39225A6"
+			tasks: [{
+				disable_toast: true
+				id: "6EA6D6B983544954"
+				item: "industrialforegoing:mycelial_ender"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -1.85d
+		}
+		{
+			disable_toast: true
+			id: "2E604843F3EFEAF2"
+			tasks: [{
+				disable_toast: true
+				id: "043DEC69257E3D23"
+				item: "industrialforegoing:mycelial_explosive"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 2.65d
+		}
+		{
+			disable_toast: true
+			id: "70B849883F2BF5D3"
+			tasks: [{
+				disable_toast: true
+				id: "7694DAF79FF9CED5"
+				item: "industrialforegoing:mycelial_frosty"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 0.35d
+		}
+		{
+			disable_toast: true
+			id: "7738092601327A28"
+			tasks: [{
+				disable_toast: true
+				id: "462CB938F1E31DC2"
+				item: "industrialforegoing:mycelial_halitosis"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 2.65d
+		}
+		{
+			disable_toast: true
+			id: "3097BD27798A19D3"
+			tasks: [{
+				disable_toast: true
+				id: "2313AC14C9399894"
+				item: "industrialforegoing:mycelial_magma"
+				type: "item"
+			}]
+			x: -7.65d
+			y: 1.5d
+		}
+		{
+			disable_toast: true
+			icon: "industrialforegoing:mycelial_pink"
+			id: "7E5E41488F729EBC"
+			tasks: [{
+				disable_toast: true
+				id: "43E9FB8574FE9669"
+				item: "industrialforegoing:mycelial_pink"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 4.85d
+		}
+		{
+			disable_toast: true
+			id: "535DEA8CDC0A91C8"
+			tasks: [{
+				disable_toast: true
+				id: "2551BC155E707ED0"
+				item: "industrialforegoing:mycelial_netherstar"
+				type: "item"
+			}]
+			x: -14.35d
+			y: 1.5d
+		}
+		{
+			disable_toast: true
+			id: "5A03606E031D9B12"
+			tasks: [{
+				disable_toast: true
+				id: "4DA9C4D089AEDFA8"
+				item: "industrialforegoing:mycelial_death"
+				type: "item"
+			}]
+			x: -8.75d
+			y: 3.75d
+		}
+		{
+			disable_toast: true
+			id: "7D661D9A9A8C73A3"
+			tasks: [{
+				disable_toast: true
+				id: "431C0E893AD20464"
+				item: "industrialforegoing:mycelial_rocket"
+				type: "item"
+			}]
+			x: -9.85d
+			y: 4.5d
+		}
+		{
+			disable_toast: true
+			id: "27F1ECE514D73B04"
+			tasks: [{
+				disable_toast: true
+				id: "6F6A12850B560A99"
+				item: "industrialforegoing:mycelial_crimed"
+				type: "item"
+			}]
+			x: -12.15d
+			y: 4.5d
+		}
+		{
+			disable_toast: true
+			id: "03CC67EDE91D17ED"
+			tasks: [{
+				disable_toast: true
+				id: "2BC8595B999149A0"
+				item: "industrialforegoing:mycelial_meatallurgic"
+				type: "item"
+			}]
+			x: -13.25d
+			y: 3.75d
+		}
+	]
+	title: "Energy Generation"
+}

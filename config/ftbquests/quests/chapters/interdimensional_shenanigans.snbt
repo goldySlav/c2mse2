@@ -1,6 +1,7 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
+	disable_toast: true
 	filename: "interdimensional_shenanigans"
 	group: "051AA46D917B6FBA"
 	icon: "minecraft:end_portal_frame"
@@ -20,17 +21,17 @@
 				"{@pagebreak}"
 				"{image:kubejs:textures/quests/otherside_portal.png width:200 height:200 align:1}"
 			]
-			disable_toast: true
 			icon: "minecraft:sculk_shrieker"
 			id: "56E8841C2EB07F7C"
-			optional: true
 			rewards: [{
 				id: "47B5927709EFD921"
 				item: "minecraft:echo_shard"
 				type: "item"
 			}]
+			subtitle: "Unlocks after obtaining &6Netherite Mesh&r"
 			tasks: [{
 				dimension: "deeperdarker:otherside"
+				disable_toast: true
 				id: "4F4362650B1ED5A4"
 				type: "dimension"
 			}]
@@ -39,9 +40,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["6A440498F22DB5B5"]
+			dependencies: ["25B308D4C856ECD6"]
 			description: [
 				"Now you unlocked \"The Nether\" dimension!"
+				"This dimension is a main source of &3Apotheosis Gems&r and &5Blazes&r."
 				""
 				"To join the dimension you need to build a vertical frame from &cCompressed Netherrack (1x)&r and light it up with &6Polished Rose Quartz&r!"
 				""
@@ -56,14 +58,12 @@
 				"2. Pour &6Lava&r Bucket onto it"
 				"&o(other way around will produce Blackstone, you may also get it while you at it!)&r"
 			]
-			disable_toast: true
 			id: "28B79B9E038ABDC4"
-			optional: true
-			subtitle: "&3Apotheosis Gems&r and &5Blazes&r inside"
+			subtitle: "Unlocks after obtaining &6Rose Quartz&r"
 			tasks: [{
 				dimension: "minecraft:the_nether"
+				disable_toast: true
 				id: "6916C448128F7661"
-				optional_task: true
 				title: "Visit the Nether"
 				type: "dimension"
 			}]
@@ -83,11 +83,11 @@
 				""
 				"{image:kubejs:textures/quests/mining_dim_portal_compare.png width:200 height:100 align:1}"
 			]
-			disable_toast: true
 			id: "51CC58B2EF220096"
-			subtitle: "Infinite &3Caves&r and &5Ores&r inside"
+			subtitle: "Unlocks after completing &6Chapter 9&r"
 			tasks: [{
 				dimension: "mining_dimension:mining"
+				disable_toast: true
 				icon: "mekanism:osmium_ore"
 				id: "7FCCF5FB57B2643B"
 				title: "Visit the Mining Dimension"
@@ -141,6 +141,7 @@
 			optional: true
 			subtitle: "Progression based: &6Chapter 2&r"
 			tasks: [{
+				disable_toast: true
 				id: "5C369A6AA7AD4B1C"
 				item: {
 					Count: 1
@@ -162,6 +163,7 @@
 			optional: true
 			subtitle: "Progression based: &6Chapter 3&r"
 			tasks: [{
+				disable_toast: true
 				id: "51733A8D486A888A"
 				item: {
 					Count: 1
@@ -183,6 +185,7 @@
 			optional: true
 			subtitle: "Progression based: &6Chapter 4&r"
 			tasks: [{
+				disable_toast: true
 				id: "3BA10E3FFE8A7082"
 				item: {
 					Count: 1
@@ -204,6 +207,7 @@
 			optional: true
 			subtitle: "Progression based: &6Chapter 5&r"
 			tasks: [{
+				disable_toast: true
 				id: "3C8C9F9140866CB0"
 				item: {
 					Count: 1
@@ -225,6 +229,7 @@
 			optional: true
 			subtitle: "Progression based: &6Chapter 6&r"
 			tasks: [{
+				disable_toast: true
 				id: "2E91291944173381"
 				item: {
 					Count: 1
@@ -246,6 +251,7 @@
 			optional: true
 			subtitle: "Progression based: &6Chapter 7&r"
 			tasks: [{
+				disable_toast: true
 				id: "6EBCCC33E7D36ED5"
 				item: {
 					Count: 1
@@ -267,6 +273,7 @@
 			optional: true
 			subtitle: "Progression based: &6Chapter 8&r"
 			tasks: [{
+				disable_toast: true
 				id: "37CC8C37D6102602"
 				item: {
 					Count: 1
@@ -284,10 +291,18 @@
 			dependencies: ["5BA0D234D884D602"]
 			description: ["Remember that you don't need to craft all of the eyes to complete this chapter, only craft ones that seem easiest for you."]
 			disable_toast: true
+			icon: {
+				Count: 1
+				id: "endrem:corrupted_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "227D57360412C687"
 			optional: true
 			subtitle: "Progression based: &6Chapter 10&r"
 			tasks: [{
+				disable_toast: true
 				id: "0A9DC805037D2EC7"
 				item: {
 					Count: 1
@@ -309,6 +324,7 @@
 			optional: true
 			subtitle: "Progression based: &6Chapter 9&r"
 			tasks: [{
+				disable_toast: true
 				id: "2D9C4CFD24C2ECC1"
 				item: {
 					Count: 1
@@ -330,6 +346,7 @@
 			optional: true
 			subtitle: "Progression based: &6Applied Energistics 2&r"
 			tasks: [{
+				disable_toast: true
 				id: "10991475B03A0D86"
 				item: {
 					Count: 1
@@ -351,6 +368,7 @@
 			optional: true
 			subtitle: "Progression based: &6Mob Farming&r"
 			tasks: [{
+				disable_toast: true
 				id: "5BBD9383D2975649"
 				item: {
 					Count: 1
@@ -372,6 +390,7 @@
 			optional: true
 			subtitle: "Progression based: &6Head Hunting&r"
 			tasks: [{
+				disable_toast: true
 				id: "1B2630AF71E8EDA7"
 				item: {
 					Count: 1
@@ -393,6 +412,7 @@
 			optional: true
 			subtitle: "Progression based: &6Crop Farming \\& Cooking&r"
 			tasks: [{
+				disable_toast: true
 				id: "55B93116288B7F7E"
 				item: {
 					Count: 1
@@ -414,6 +434,7 @@
 			optional: true
 			subtitle: "Progression based: &6Experience&r"
 			tasks: [{
+				disable_toast: true
 				id: "03353AB7836D519F"
 				item: {
 					Count: 1
@@ -439,16 +460,19 @@
 			subtitle: "Getting to the End is no easy job"
 			tasks: [
 				{
+					disable_toast: true
 					id: "34598DF98710AFDD"
 					item: "extendedcrafting:crafting_core"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "59E1C4CEF9DAA91B"
 					item: "extendedcrafting:pedestal"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "5E112144F5858CA3"
 					item: "minecraft:ender_eye"
 					type: "item"
