@@ -1,0 +1,40 @@
+#Enable pebbles?
+enablePebbles = true
+#Should pebbles only generate in their respective dimensions?
+onlyDimensionalPebbles = false
+#When right clicking to get pebbles, should it emit sound?
+emitPebbleSound = true
+#The weight of andesite pebbles. (1 = 100%)
+#Range: 0 ~ 100
+andesitePebbleWeight = 0
+#The weight of calcite pebbles. (1 = 100%)
+#Range: 0 ~ 100
+calcitePebbleWeight = 0
+#The weight of deepslate pebbles. (1 = 100%)
+#Range: 0 ~ 100
+deepslatePebbleWeight = 0
+#The weight of diorite pebbles. (1 = 100%)
+#Range: 0 ~ 100
+dioritePebbleWeight = 0
+#The weight of dripstone pebbles. (1 = 100%)
+#Range: 0 ~ 100
+dripstonePebbleWeight = 0
+#The weight of granite pebbles. (1 = 100%)
+#Range: 0 ~ 100
+granitePebbleWeight = 0
+#The weight of tuff pebbles. (1 = 100%)
+#Range: 0 ~ 100
+tuffPebbleWeight = 0
+#The weight of stone pebbles. (1 = 100%)
+#Range: 0 ~ 100
+stonePebbleWeight = 100
+#The weight of netherrack pebbles. (1 = 100%)
+#Range: 0 ~ 100
+netherrackPebbleWeight = 0
+#The weight of basalt pebbles. (1 = 100%)
+#Range: 0 ~ 100
+basaltPebbleWeight = 0
+#The weight of blackstone pebbles. (1 = 100%)
+#Range: 0 ~ 100
+blackstonePebbleWeight = 0
+

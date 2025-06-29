@@ -3,7 +3,7 @@
 const sieving = {
 	"minecraft:dirt": {
 		string: {
-			"exdeorum:stone_pebble": 1,
+			"havenpebbles:stone_pebble": 1,
 			"minecraft:flint": 0.25,
 			"minecraft:wheat_seeds": 0.125,
 			"minecraft:carrot": 0.1,
@@ -18,7 +18,7 @@ const sieving = {
 			"exdeorum:mycelium_spores": 0.03,
 		},
 		flint: {
-			"exdeorum:stone_pebble": 1,
+			"havenpebbles:stone_pebble": 1,
 			"exdeorum:diorite_pebble": 1,
 			"exdeorum:granite_pebble": 1,
 			"exdeorum:andesite_pebble": 1,
@@ -39,7 +39,7 @@ const sieving = {
 			"minecraft:pink_petals": 0.03,
 		},
 		iron: {
-			"exdeorum:stone_pebble": 1,
+			"havenpebbles:stone_pebble": 1,
 			"exdeorum:diorite_pebble": 1,
 			"exdeorum:granite_pebble": 1,
 			"exdeorum:andesite_pebble": 1,
@@ -60,7 +60,7 @@ const sieving = {
 			"minecraft:pink_petals": 0.05,
 		},
 		golden: {
-			"exdeorum:stone_pebble": 1,
+			"havenpebbles:stone_pebble": 1,
 			"exdeorum:diorite_pebble": 1,
 			"exdeorum:granite_pebble": 1,
 			"exdeorum:andesite_pebble": 1,
@@ -82,7 +82,7 @@ const sieving = {
 			"minecraft:golden_carrot": 0.015,
 		},
 		diamond: {
-			"exdeorum:stone_pebble": 1,
+			"havenpebbles:stone_pebble": 1,
 			"exdeorum:diorite_pebble": 1,
 			"exdeorum:granite_pebble": 1,
 			"exdeorum:andesite_pebble": 1,
@@ -104,7 +104,7 @@ const sieving = {
 			"minecraft:golden_carrot": 0.02,
 		},
 		netherite: {
-			"exdeorum:stone_pebble": 1,
+			"havenpebbles:stone_pebble": 1,
 			"exdeorum:diorite_pebble": 1,
 			"exdeorum:granite_pebble": 1,
 			"exdeorum:andesite_pebble": 1,
@@ -297,12 +297,12 @@ const sieving = {
 	},
 	"minecraft:gravel": {
 		string: {
-			"exdeorum:stone_pebble": 1,
+			"havenpebbles:stone_pebble": 1,
 			"minecraft:flint": 0.2,
 			"minecraft:coal": 0.1,
 		},
 		flint: {
-			"exdeorum:stone_pebble": 1,
+			"havenpebbles:stone_pebble": 1,
 			"exdeorum:andesite_pebble": 1,
 			"exdeorum:granite_pebble": 1,
 			"exdeorum:diorite_pebble": 1,
@@ -311,7 +311,7 @@ const sieving = {
 			"minecraft:pointed_dripstone": 0.15,
 		},
 		iron: {
-			"exdeorum:stone_pebble": 1,
+			"havenpebbles:stone_pebble": 1,
 			"exdeorum:andesite_pebble": 1,
 			"exdeorum:granite_pebble": 1,
 			"exdeorum:diorite_pebble": 1,
@@ -320,7 +320,7 @@ const sieving = {
 			"minecraft:pointed_dripstone": 0.175,
 		},
 		golden: {
-			"exdeorum:stone_pebble": 1,
+			"havenpebbles:stone_pebble": 1,
 			"exdeorum:andesite_pebble": 1,
 			"exdeorum:granite_pebble": 1,
 			"exdeorum:diorite_pebble": 1,
@@ -329,7 +329,7 @@ const sieving = {
 			"minecraft:pointed_dripstone": 0.2,
 		},
 		diamond: {
-			"exdeorum:stone_pebble": 1,
+			"havenpebbles:stone_pebble": 1,
 			"exdeorum:andesite_pebble": 1,
 			"exdeorum:granite_pebble": 1,
 			"exdeorum:diorite_pebble": 1,
@@ -338,7 +338,7 @@ const sieving = {
 			"minecraft:pointed_dripstone": 0.225,
 		},
 		netherite: {
-			"exdeorum:stone_pebble": 1,
+			"havenpebbles:stone_pebble": 1,
 			"exdeorum:andesite_pebble": 1,
 			"exdeorum:granite_pebble": 1,
 			"exdeorum:diorite_pebble": 1,
