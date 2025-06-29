@@ -293,7 +293,4 @@ ItemEvents.tooltip(event => {
     PowahBatteries.forEach((item) => {
         event.add(item, `§7Press §6Shift + Right Click §7to toggle §6Inventory Charging §7mode`)
     })
-
-    //kubeJS screwdriver deprecation message
-    event.add('kubejs:industrial_screwdriver', "Will be removed in near future, use the migration recipe")
 })
