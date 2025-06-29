@@ -271,7 +271,12 @@
 				"2DCAABDF526C9332"
 				"7EFA012B9C2A157C"
 			]
-			description: ["Mix a &6Quartz Crystal&r with some &6Liqiud Redstone&r in a basin."]
+			description: [
+				"Mix a &6Quartz Crystal&r with some &6Liqiud Redstone&r in a basin."
+				""
+				"Note: This quest unlocks the Nether dimension for you to loot and explore!"
+				"{ \"text\": \"Click here to learn more.\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"28B79B9E038ABDC4\" } }"
+			]
 			icon: "create:polished_rose_quartz"
 			id: "6A440498F22DB5B5"
 			subtitle: "Made with love and pressure"
@@ -383,6 +388,9 @@
 			description: [
 				"There are &6plenty&r ways to do this."
 				"You can ask &6JEI&r for guidance."
+				""
+				"To learn you basic options to generate power, click here:"
+				"{ \"text\": \"Energy Generaion\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"228C6FD0FA490A2E\" }}"
 			]
 			icon: "ae2:charged_certus_quartz_crystal"
 			id: "4E6C04506584D408"
@@ -667,37 +675,6 @@
 			title: "Craft Your First \"Sky Stone Dust\""
 			x: -1.0d
 			y: -5.5d
-		}
-		{
-			dependencies: ["6A440498F22DB5B5"]
-			description: [
-				"Now you unlocked \"The Nether\" dimension!"
-				""
-				"To join the dimension you need to build a vertical frame from &cCompressed Netherrack (1x)&r and light it up with &6Polished Rose Quartz&r!"
-				""
-				"{image:kubejs:textures/quests/netherrack_portal.png width:200 height:225 align:1}"
-				""
-				"Find hints about how to get Netherrack on the next page."
-				""
-				"{@pagebreak}"
-				""
-				"To make &cNetherrack&r:"
-				"1. Produce &5Witch Water&r in Stone Barrel"
-				"2. Pour &6Lava&r Bucket onto it"
-				"&o(other way around will produce Blackstone, you may also get it while you at it!)&r"
-			]
-			id: "3F0D73D93442B7F1"
-			optional: true
-			shape: "circle"
-			subtitle: "&3Apotheosis Gems&r and &5Blazes&r inside"
-			tasks: [{
-				dimension: "minecraft:the_nether"
-				id: "091DC372BB8775DE"
-				title: "Visit \"The Nether\" Dimension"
-				type: "dimension"
-			}]
-			x: -2.0d
-			y: 4.0d
 		}
 	]
 	title: "3. Brass Age"

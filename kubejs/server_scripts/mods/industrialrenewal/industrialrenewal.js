@@ -209,7 +209,19 @@ ServerEvents.recipes((event) => {
 		C: CR('fluid_pipe'),
 		D: IR('fluid_gauge'),
 	})
-	
+
+	//screwdriver
+	event.shaped(IR('screwdriver'), [
+		'ABC',
+		' DC',
+		'  C',
+	], {
+		A: F('#rods/cast_iron'),
+		B: F('#gears/diamond'),
+		C: F('#ingots/cast_iron'),
+		D: F('#dyes/orange'),
+	})
+
 	//cast iron ingot
 	removeRecipeByID(event, [
 		IR("ingot_steel_from_smelting_sponge_iron"),

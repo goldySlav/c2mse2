@@ -20,7 +20,11 @@ ItemEvents.modification(event => {
 	event.modify(`industrialrenewal:battery_lithium`, item => {
 		item.maxStackSize = 64
 	})
-	
+	event.modify('industrialrenewal:screwdriver', item => {
+		item.maxDamage = 1024
+		item.rarity = 'uncommon'
+	})
+
 	const tools = ["shovel", "axe", "pickaxe", "sword", "hoe"]
 	tools.forEach(tool => {
 		event.modify(`minecraft:golden_${tool}`, item => {

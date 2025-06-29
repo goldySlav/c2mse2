@@ -4,6 +4,7 @@ ServerEvents.tags("item", (event) => {
   event.remove(F("ingots/steel"), IR("ingot_steel"));
   event.add(F("ingots"), IR("ingot_steel"));
   event.add(F("ingots/cast_iron"), IR("ingot_steel"));
+  event.add(F("tools/screwdrivers"), IR("screwdriver"));
   
   event.remove(F("rods/steel"), IR("stick_steel"));
   event.add(F("rods"), IR("stick_steel"));

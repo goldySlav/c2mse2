@@ -96,6 +96,7 @@ ClientEvents.lang('en_us', event => {
 	event.renameItem('industrialrenewal:battery_lithium', "Industrial Battery")
 	event.renameBlock('industrialrenewal:fluid_tank', "Industrial Fluid Tank")
 	event.renameBlock('industrialrenewal:concrete', "Industrial Concrete")
+	event.renameItem('industrialrenewal:screwdriver', 'Industrial Screwdriver')
 	
 	event.renameBlock('create_connected:fluid_vessel', "Fluid Tank (Horizontal)")
 	event.renameBlock('create_connected:creative_fluid_vessel', "Creative Fluid Tank (Horizontal)")
