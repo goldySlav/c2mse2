@@ -105,6 +105,8 @@ const IR = (id, x) => MOD("industrialrenewal", id, x)
 const HNN = (id, x) => MOD("hostilenetworks", id, x)
 const DD = (id, x) => MOD("deeperdarker", id, x)
 const BG = (id, x) => MOD("buildinggadgets2", id, x)
+const DYE = (id, x) => MOD("dyenamics", id, x)
+const DYE_F = (id, x) => MOD("dyenamicsandfriends", id, x)
 
 
 const processingTimesDefault = {
@@ -711,9 +713,14 @@ const woodTypes = {
 }
 
 const colours = ['white', 'orange', 'magenta', 'light_blue', 'lime', 'pink', 'purple', 'light_gray', 'gray', 'cyan', 'brown', 'green', 'blue', 'red', 'black', 'yellow']
+const colours_dyenamics = ['honey', 'mint', 'lavender', 'navy', 'bubblegum', 'amber', 'conifer', 'icy_blue', 'ultramarine', 'maroon', 'wine', 'rose', 'fluorescent', 'spring_green', 'peach', 'cherenkov', 'aquamarine', 'persimmon']
+
 const dyes = []
 colours.forEach(color => {
 	dyes.push(MC(`${color}_dye`))
+})
+colours_dyenamics.forEach(color => {
+	dyes.push(DYE(`${color}_dye`))
 })
 
 const componentSizes = {
