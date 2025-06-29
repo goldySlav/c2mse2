@@ -108,6 +108,7 @@ const DYE = (id, x) => MOD("dyenamics", id, x)
 const DYE_F = (id, x) => MOD("dyenamicsandfriends", id, x)
 const ABD = (id, x) => MOD("absentbydesign", id, x)
 const HV_P = (id, x) => MOD("havenpebbles", id, x)
+const HV_AS = (id, x) => MOD("havenanimalseeds", id, x)
 
 
 const processingTimesDefault = {

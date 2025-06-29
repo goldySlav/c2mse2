@@ -161,6 +161,9 @@
   "appliedcooking": {
     "kitchen_station": true
   },
+  "havenanimalseeds": {
+    "mobseed_remaining_time": true
+  },
   "cookingforblockheads": {
     "fridge": true,
     "oven": true,
