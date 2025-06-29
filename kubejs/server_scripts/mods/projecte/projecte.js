@@ -292,17 +292,16 @@ ServerEvents.recipes((event) => {
     C: 'projectexpansion:fading_emc_link'
   }).id(`kubejs:projectexpansion/final_emc_link`)
 
-  event.recipes.extendedcrafting.shaped_table('projecte:swiftwolf_rending_gale', [
-    'CCCCC',
-    'CBBBC',
-    'CBABC',
-    'CBBBC',
-    'CCCCC',
-  ], {
-    A: F('#angelring'),
-    B: F('#ingots/unstable'),
-    C: EC('ender_star'),
-  })
+	event.shaped(PRE("swiftwolf_rending_gale"), [
+		'ABA',
+		'BCB',
+		'DBD'
+	], {
+		A: MU("netherite_opinium_core"),
+		B: PREXP("blue_matter"),
+		C: MC("nether_star"),
+		D: F("#ingots/unstable"),
+	})
 
   event.recipes.extendedcrafting.shaped_table('projecte:watch_of_flowing_time', [
     'GGGGGGGGG',

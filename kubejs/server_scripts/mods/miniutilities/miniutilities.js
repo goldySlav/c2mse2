@@ -69,6 +69,22 @@ ServerEvents.recipes(e => {
 		C: PREXP("basic_collector"),
 		D: KJ("crystal_matrix_ingot"),
     })
+	
+	//angel ring
+	removeRecipeByID(e, [
+		MU("angel_ring_crafting"),
+	])
+	e.recipes.extendedcrafting.shaped_table(MU('angel_ring'), [
+		'CCCCC',
+		'CBBBC',
+		'CBABC',
+		'CBBBC',
+		'CCCCC',
+	], {
+		A: PRE('swiftwolf_rending_gale'),
+		B: F('#ingots/unstable'),
+		C: EC('flux_star'),
+	})
 
 	//opinium cores
 	removeRecipeByID(e, [
