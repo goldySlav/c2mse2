@@ -119,7 +119,7 @@ ServerEvents.recipes((event) => {
     S: F('#stone'),
     D: MC('diamond'),
     I: F("#ingots/iron"),
-    B: IC("obsidian_chest"),
+    B: SS("netherite_chest"),
   }).id(KJ(`${PRE()}/alchemical_chest`))
 
   event.shaped(PREXT('alchemical_barrel'), ['LMH', 'SDS', 'IBI'], {
@@ -129,7 +129,7 @@ ServerEvents.recipes((event) => {
     S: F('#stone'),
     D: MC('diamond'),
     I: F("#ingots/iron"),
-    B: MB("obsidian_barrel"),
+    B: SS("netherite_barrel"),
   }).id(KJ(`${PRE()}/alchemical_barrel`))
 
   event.replaceInput({ id: PRE("condenser_mk1") }, MC("obsidian"), PRE("dark_matter_block"))

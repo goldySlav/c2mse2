@@ -355,7 +355,7 @@ ServerEvents.recipes((event) => {
 		'FEEEF',
 		'CFBFC',
 	], {
-		A: IC('obsidian_chest'),
+		A: SS("netherite_chest"),
 		B: AE2('fluix_glass_cable'),
 		C: CP('iron_1'),
 		D: AE2('terminal'),

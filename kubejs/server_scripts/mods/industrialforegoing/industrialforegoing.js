@@ -339,8 +339,8 @@ ServerEvents.recipes((event) => {
 	], {
 		A: FS("#drawer"),
 		B: CP('gold_2'),
-		C: IC('obsidian_chest'),
-		D: MB("netherite_barrel"),
+		C: SS("netherite_chest"),
+		D: SS("netherite_barrel"),
 		E: MC('ender_eye'),
 		F: MC('ender_pearl'),
 		G: IF('plastic'),
@@ -360,8 +360,8 @@ ServerEvents.recipes((event) => {
 	], {
 		A: IF("common_black_hole_unit"),
 		B: CP('gold_2'),
-		C: IC('obsidian_chest'),
-		D: MB("netherite_barrel"),
+		C: SS('netherite_chest'),
+		D: SS("netherite_barrel"),
 		E: MC('ender_eye'),
 		F: MC('ender_pearl'),
 		G: IF('plastic'),
@@ -381,8 +381,8 @@ ServerEvents.recipes((event) => {
 	], {
 		A: IF("pity_black_hole_unit"),
 		B: CP('gold_2'),
-		C: IC('obsidian_chest'),
-		D: MB("netherite_barrel"),
+		C: SS('netherite_chest'),
+		D: SS("netherite_barrel"),
 		E: MC('ender_eye'),
 		F: MC('ender_pearl'),
 		G: IF('plastic'),
@@ -402,8 +402,8 @@ ServerEvents.recipes((event) => {
 	], {
 		A: IF("simple_black_hole_unit"),
 		B: CP('gold_2'),
-		C: IC('obsidian_chest'),
-		D: MB("netherite_barrel"),
+		C: SS('netherite_chest'),
+		D: SS("netherite_barrel"),
 		E: MC('ender_eye'),
 		F: MC('ender_pearl'),
 		G: IF('plastic'),
@@ -423,8 +423,8 @@ ServerEvents.recipes((event) => {
 	], {
 		A: IF("advanced_black_hole_unit"),
 		B: CP('gold_2'),
-		C: IC('obsidian_chest'),
-		D: MB("netherite_barrel"),
+		C: SS('netherite_chest'),
+		D: SS("netherite_barrel"),
 		E: MC('ender_eye'),
 		F: MC('ender_pearl'),
 		G: IF('plastic'),
@@ -558,7 +558,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: IF("machine_frame_pity"),
 		B: CP('gold_2'),
-		C: IC('obsidian_chest'),
+		C: SS('netherite_chest'),
 		D: MC('bucket'),
 		E: P('dielectric_casing'),
 		F: F('#gears/diamond'),
