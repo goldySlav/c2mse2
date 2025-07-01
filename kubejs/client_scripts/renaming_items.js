@@ -24,6 +24,12 @@ ClientEvents.lang('en_us', event => {
 	event.renameBlock('miniutilities:magenta_lapis_caelestis', "Magenta AntiBlock")
 	event.renameBlock('miniutilities:pink_lapis_caelestis', "Pink AntiBlock")
 	event.renameBlock('miniutilities:brown_lapis_caelestis', "Brown AntiBlock")
+	event.renameItem('miniutilities:angel_ring', "Advanced Angel Ring")
+	event.renameItem('miniutilities:gold_angel_ring', "Gold Advanced Angel Ring")
+	event.renameItem('miniutilities:ender_dragon_angel_ring', "Ender Dragon Advanced Angel Ring")
+	event.renameItem('miniutilities:feather_angel_ring', "Feather Advanced Angel Ring")
+	event.renameItem('miniutilities:bat_angel_ring', "Bat Advanced Angel Ring")
+	event.renameItem('miniutilities:peacock_angel_ring', "Peacock Advanced Angel Ring")
 	
 	event.renameBlock('flopper:flopper', "Fluid Hopper")
 	
@@ -77,7 +83,7 @@ ClientEvents.lang('en_us', event => {
 	event.renameItem('endrem:exotic_eye', "Embedded Eye")
 	event.renameItem('endrem:cryptic_eye', "Experienced Eye")
 	
-	event.renameItem('projecte:swiftwolf_rending_gale', "Switfwolf's Rending Gale (Advanced Angel Ring)")
+	event.renameItem('projecte:swiftwolf_rending_gale', "Switfwolf's Rending Gale (Angel Ring)")
 	
 	event.renameBlock('enderio:enderman_head', "Suspicious Enderman Head")
 	
@@ -96,6 +102,7 @@ ClientEvents.lang('en_us', event => {
 	event.renameItem('industrialrenewal:battery_lithium', "Industrial Battery")
 	event.renameBlock('industrialrenewal:fluid_tank', "Industrial Fluid Tank")
 	event.renameBlock('industrialrenewal:concrete', "Industrial Concrete")
+	event.renameItem('industrialrenewal:screwdriver', 'Industrial Screwdriver')
 	
 	event.renameBlock('create_connected:fluid_vessel', "Fluid Tank (Horizontal)")
 	event.renameBlock('create_connected:creative_fluid_vessel', "Creative Fluid Tank (Horizontal)")

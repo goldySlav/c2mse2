@@ -86,7 +86,7 @@ ServerEvents.recipes((event) => {
 	
 	
 	//magnet upgrade
-	removeRecipeByOutput(event, [
+	removeRecipeByID(event, [
 		SBP("magnet_upgrade"),
 	])
 	event.shaped(SBP("magnet_upgrade"), [

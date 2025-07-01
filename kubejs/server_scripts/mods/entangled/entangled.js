@@ -11,7 +11,7 @@ ServerEvents.recipes((event) => {
 		'BCB',
 		'ABA',
 	], {
-		A: IC("obsidian_chest"),
+		A: SS("netherite_chest"),
 		B: CP('obsidian_2'),
 		C: M('teleportation_core'),
 	})

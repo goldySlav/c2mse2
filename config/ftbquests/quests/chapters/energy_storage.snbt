@@ -5,7 +5,7 @@
 	group: "051AA46D917B6FBA"
 	icon: "mekanism_extras:infinite_induction_cell"
 	id: "22FAD188C07A39D1"
-	order_index: 15
+	order_index: 18
 	quest_links: [ ]
 	quests: [
 		{
@@ -17,7 +17,7 @@
 				item: "powah:energy_cell_starter"
 				type: "item"
 			}]
-			x: 1.0d
+			x: -0.5d
 			y: -2.0d
 		}
 		{
@@ -32,7 +32,7 @@
 				item: "powah:energy_cell_basic"
 				type: "item"
 			}]
-			x: 1.0d
+			x: -0.5d
 			y: -0.5d
 		}
 		{
@@ -47,7 +47,7 @@
 				item: "powah:energy_cell_hardened"
 				type: "item"
 			}]
-			x: 1.0d
+			x: -0.5d
 			y: 1.0d
 		}
 		{
@@ -62,7 +62,7 @@
 				item: "powah:energy_cell_blazing"
 				type: "item"
 			}]
-			x: 1.0d
+			x: -0.5d
 			y: 2.5d
 		}
 		{
@@ -77,7 +77,7 @@
 				item: "powah:energy_cell_niotic"
 				type: "item"
 			}]
-			x: 1.0d
+			x: -0.5d
 			y: 4.0d
 		}
 		{
@@ -92,7 +92,7 @@
 				item: "powah:energy_cell_spirited"
 				type: "item"
 			}]
-			x: 1.0d
+			x: -0.5d
 			y: 5.5d
 		}
 		{
@@ -107,18 +107,20 @@
 				item: "powah:energy_cell_nitro"
 				type: "item"
 			}]
-			x: 1.0d
+			x: -0.5d
 			y: 7.0d
 		}
 		{
 			dependencies: ["7A2ABDB70E955873"]
 			id: "186FD5E51915B554"
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "236E892C3D9B9C3D"
 				item: "powah:energy_cell_creative"
 				type: "item"
 			}]
-			x: 1.0d
+			x: -0.5d
 			y: 8.5d
 		}
 		{
@@ -131,7 +133,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["655C7BBC8EC3462E"]
@@ -143,7 +145,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4B8F6E1701E56859"]
@@ -155,7 +157,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 5.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0951FAEC0350644C"]
@@ -167,7 +169,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 7.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["07D84A54BC7A745B"]
@@ -179,7 +181,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 8.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["1384A933ED338CD8"]
@@ -191,7 +193,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 10.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["5B31E969DCAE4429"]
@@ -203,7 +205,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 11.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["161B4EB69A806C68"]
@@ -215,11 +217,13 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 13.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["24D382F419AF35B0"]
 			id: "049CF4A0B7A09632"
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "08EFA91BC81DF466"
 				item: {
@@ -247,7 +251,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 14.5d
+			y: 13.0d
 		}
 		{
 			disable_toast: true
@@ -300,6 +304,8 @@
 			dependencies: ["70B3C8D5F1A0048D"]
 			disable_toast: true
 			id: "705E33C55670E141"
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "43B103374843620B"
 				item: "ae2:creative_energy_cell"
@@ -321,7 +327,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -336,7 +342,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -351,7 +357,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 5.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -366,7 +372,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 7.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -381,7 +387,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 8.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -396,7 +402,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 10.0d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -411,7 +417,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 11.5d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -426,7 +432,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 13.0d
+			y: 11.5d
 		}
 		{
 			id: "3A490D7D16A4BAD5"
@@ -439,7 +445,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: -2.0d
 			y: -2.0d
 		}
 		{
@@ -454,7 +460,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: -2.0d
 			y: -0.5d
 		}
 		{
@@ -469,7 +475,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: -2.0d
 			y: 1.0d
 		}
 		{
@@ -484,7 +490,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: -2.0d
 			y: 2.5d
 		}
 		{
@@ -499,7 +505,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: -2.0d
 			y: 4.0d
 		}
 		{
@@ -514,7 +520,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: -2.0d
 			y: 5.5d
 		}
 		{
@@ -529,7 +535,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: -2.0d
 			y: 7.0d
 		}
 		{
@@ -546,7 +552,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5B0498C1C634ADF9"]
@@ -562,7 +568,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["73F41757A2CF6527"]
@@ -578,7 +584,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["22215C1DB1A8C52E"]
@@ -594,7 +600,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4DB514B0B77F7B68"]
@@ -610,7 +616,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 5.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["29E92CC0900B20AC"]
@@ -626,7 +632,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 7.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["1AC69EFCBEEB1A42"]
@@ -642,7 +648,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 8.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["1ADF8937BD3D12FA"]
@@ -658,7 +664,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 10.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["173422E68B7DBEDC"]
@@ -674,7 +680,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 11.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["4802E4605D198209"]
@@ -690,7 +696,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 13.0d
+			y: 11.5d
 		}
 		{
 			id: "025419B5A518ABD1"
@@ -703,7 +709,7 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
+			x: 1.0d
 			y: -2.0d
 		}
 		{
@@ -719,7 +725,7 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
+			x: 1.0d
 			y: -0.5d
 		}
 		{
@@ -735,7 +741,7 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
+			x: 1.0d
 			y: 1.0d
 		}
 		{
@@ -751,7 +757,7 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
+			x: 1.0d
 			y: 2.5d
 		}
 		{
@@ -767,7 +773,7 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
+			x: 1.0d
 			y: 4.0d
 		}
 		{
@@ -783,7 +789,7 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
+			x: 1.0d
 			y: 5.5d
 		}
 		{
@@ -799,7 +805,7 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
+			x: 1.0d
 			y: 7.0d
 		}
 		{
@@ -815,7 +821,7 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
+			x: 1.0d
 			y: 8.5d
 		}
 		{
@@ -831,7 +837,7 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
+			x: 1.0d
 			y: 10.0d
 		}
 		{
@@ -847,7 +853,7 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
+			x: 1.0d
 			y: 11.5d
 		}
 		{
@@ -862,6 +868,7 @@
 			y: -2.0d
 		}
 		{
+			description: ["Use an &6Industrial Screwdriver&r to configure output sides."]
 			disable_toast: true
 			id: "0928FF4BA880D0D4"
 			tasks: [{
@@ -869,7 +876,7 @@
 				item: "industrialrenewal:battery_bank"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.5d
 			y: -2.0d
 		}
 		{
@@ -884,7 +891,7 @@
 				item: "industrialrenewal:ind_battery_bank"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.5d
 			y: -0.5d
 		}
 		{
@@ -895,8 +902,48 @@
 				item: "industrialrenewal:battery_lithium"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -5.0d
 			y: -0.5d
+		}
+		{
+			dependencies: ["3FC60E3A340A485E"]
+			disable_toast: true
+			id: "17F957C38FAF3103"
+			tasks: [{
+				disable_toast: true
+				id: "3DC94ED9718879FD"
+				item: "fluxnetworks:basic_flux_storage"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["17F957C38FAF3103"]
+			disable_toast: true
+			icon: "fluxnetworks:herculean_flux_storage"
+			id: "7D743EC011FF575E"
+			tasks: [{
+				disable_toast: true
+				id: "44FD2A837CDAD09B"
+				item: "fluxnetworks:herculean_flux_storage"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7D743EC011FF575E"]
+			disable_toast: true
+			id: "0A741F041D6B54FF"
+			tasks: [{
+				disable_toast: true
+				id: "7337489FF59EE3FE"
+				item: "fluxnetworks:gargantuan_flux_storage"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 8.5d
 		}
 	]
 	title: "Energy Storage"

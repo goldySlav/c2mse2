@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
 		'FDEDF',
 		'CFEFC',
 	], {
-		A: IC('obsidian_chest'),
+		A: SS("netherite_chest"),
 		C: CP('iron_2'),
 		D: KJ('engineering_processor_wafer'),
 		E: AE2('fluix_block'),

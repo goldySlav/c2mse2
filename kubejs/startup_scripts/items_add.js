@@ -198,7 +198,6 @@ StartupEvents.registry('item', event => {
 	event.create('unstable_saw').displayName('Unstable Saw').glow(true).rarity("epic").maxDamage(32000).texture("kubejs:item/diamond_saw")
 	
 	//screwdriver
-	event.create('industrial_screwdriver').parentModel("kubejs:item/industrial_screwdriver").maxDamage(1024).displayName('Industrial Screwdriver').rarity('uncommon')
 	event.create('unstable_screwdriver').parentModel("kubejs:item/industrial_screwdriver").maxDamage(128000).displayName('Unstable Screwdriver').rarity("epic").glow(true)
 	
 	//chromatic resonator

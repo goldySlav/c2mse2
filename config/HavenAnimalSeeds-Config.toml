@@ -1,0 +1,85 @@
+
+#Mob Seeds
+[mobSeeds]
+	#The distance in blocks a player has to be from a mob seed for it to grow. (if 3 then it checks 3x3x3)
+	#Range: > 1
+	playerGrowthDistance = 10
+	#The time it takes in ticks for an axolotl to spawn from an axolotl seed. (20 ticks = 1 second)
+	#Range: > 1
+	axolotl_seed_spawn_timer = 12000
+	#The time it takes in ticks for a bee to spawn from a bee seed. (20 ticks = 1 second)
+	#Range: > 1
+	bee_seed_spawn_timer = 12000
+	#The time it takes in ticks for a cat to spawn from a cat seed. (20 ticks = 1 second)
+	#Range: > 1
+	cat_seed_spawn_timer = 12000
+	#The time in ticks it takes for a chicken to spawn from a chicken seed. (20 ticks = 1 second)
+	#Range: > 1
+	chicken_seed_spawn_timer = 12000
+	#The time in ticks it takes for a cow to spawn from a cow seed. (20 ticks = 1 second)
+	#Range: > 1
+	cow_seed_spawn_timer = 12000
+	#The time in ticks it takes for a donkey to spawn from a donkey seed. (20 ticks = 1 second)
+	#Range: > 1
+	donkey_seed_spawn_timer = 12000
+	#The time in ticks it takes for a fox to spawn from a fox seed. (20 ticks = 1 second)
+	#Range: > 1
+	fox_seed_spawn_timer = 12000
+	#The time in ticks it takes for a goat to spawn from a goat seed. (20 ticks = 1 second)
+	#Range: > 1
+	goat_seed_spawn_timer = 12000
+	#The time in ticks it takes for a horse to spawn from a horse seed. (20 ticks = 1 second)
+	#Range: > 1
+	horse_seed_spawn_timer = 12000
+	#The time in ticks it takes for a llama to spawn from a llama seed. (20 ticks = 1 second)
+	#Range: > 1
+	llama_seed_spawn_timer = 12000
+	#The time in ticks it takes for a mooshroom to spawn from a mooshroom seed. (20 ticks = 1 second)
+	#Range: > 1
+	mooshroom_seed_spawn_timer = 12000
+	#The time in ticks it takes for a mule to spawn from a mule seed. (20 ticks = 1 second)
+	#Range: > 1
+	mule_seed_spawn_timer = 12000
+	#The time in ticks it takes for an ocelot to spawn from an ocelot seed. (20 ticks = 1 second)
+	#Range: > 1
+	ocelot_seed_spawn_timer = 12000
+	#The time in ticks it takes for a panda to spawn from a panda seed. (20 ticks = 1 second)
+	#Range: > 1
+	panda_seed_spawn_timer = 12000
+	#The time in ticks it takes for a pig to spawn from a pig seed. (20 ticks = 1 second)
+	#Range: > 1
+	pig_seed_spawn_timer = 12000
+	#The time in ticks it takes for a rabbit to spawn from a rabbit seed. (20 ticks = 1 second)
+	#Range: > 1
+	rabbit_seed_spawn_timer = 12000
+	#The time in ticks it takes for a sheep to spawn from a sheep seed. (20 ticks = 1 second)
+	#Range: > 1
+	sheep_seed_spawn_timer = 12000
+	#The time in ticks it takes for a sniffer to spawn from a sniffer seed. (20 ticks = 1 second)
+	#Range: > 1
+	sniffer_seed_spawn_timer = 12000
+	#The time in ticks it takes for a parrot to spawn from a parrot seed. (20 ticks = 1 second)
+	#Range: > 1
+	parrot_seed_spawn_timer = 12000
+	#The time in ticks it takes for a turtle to spawn from a turtle seed. (20 ticks = 1 second)
+	#Range: > 1
+	turtle_seed_spawn_timer = 12000
+	#The time in ticks it takes for a wolf to spawn from a wolf seed. (20 ticks = 1 second)
+	#Range: > 1
+	wolf_seed_spawn_timer = 12000
+	#The time in ticks it takes for a dolphin to spawn from a dolphin seed. (20 ticks = 1 second)
+	#Range: > 1
+	dolphin_seed_spawn_timer = 12000
+	#The time in ticks it takes for a glow squid to spawn from a glow squid seed. (20 ticks = 1 second)
+	#Range: > 1
+	glow_squid_seed_spawn_timer = 12000
+	#The time in ticks it takes for a polar bear to spawn from a polar bear seed. (20 ticks = 1 second)
+	#Range: > 1
+	polar_bear_seed_spawn_timer = 12000
+	#The time in ticks it takes for a squid to spawn from a squid seed. (20 ticks = 1 second)
+	#Range: > 1
+	squid_seed_spawn_timer = 12000
+	#The time in ticks it takes for a villager to spawn from a villager seed. (20 ticks = 1 second)
+	#Range: > 1
+	villager_seed_spawn_timer = 12000
+

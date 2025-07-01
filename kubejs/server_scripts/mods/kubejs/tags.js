@@ -32,7 +32,6 @@ ServerEvents.tags("item", (event) => {
 	event.add(F("tools/saws"), KJ("iron_saw"));
 	event.add(F("tools/saws"), KJ("diamond_saw"));
 	event.add(F("tools/saws"), KJ("unstable_saw"));
-	event.add(F("tools/screwdrivers"), KJ("industrial_screwdriver"));
 	event.add(F("tools/screwdrivers"), KJ("unstable_screwdriver"));
 	event.add(F("tools/chromatic_resonators"), KJ("chromatic_resonator"));
 	event.add(F("tools/chromatic_resonators"), KJ("unstable_chromatic_resonator"));

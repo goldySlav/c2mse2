@@ -283,5 +283,14 @@ ItemEvents.tooltip(event => {
 	
 	
 	//mining dimension teleporter
-    event.add('mining_dimension:teleporter', '§7Legacy teleporter for OGs, §6will be removed§7 in the future!')
+	event.add('mining_dimension:teleporter', '§7Legacy teleporter for OGs, §6will be removed§7 in the future!')
+
+
+    //Powah batteries charging mode toggle
+    const PowahBatteries = [
+        "powah:battery_starter", "powah:battery_basic", "powah:battery_hardened", "powah:battery_blazing", "powah:battery_niotic", "powah:battery_spirited", "powah:battery_nitro"
+    ]
+    PowahBatteries.forEach((item) => {
+        event.add(item, `§7Press §6Shift + Right Click §7to toggle §6Inventory Charging §7mode`)
+    })
 })

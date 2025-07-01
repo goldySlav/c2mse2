@@ -5,7 +5,7 @@
 	group: "051AA46D917B6FBA"
 	icon: "create:creative_fluid_tank"
 	id: "7155CB1D08F913B8"
-	order_index: 14
+	order_index: 17
 	quest_links: [ ]
 	quests: [
 		{
@@ -147,6 +147,8 @@
 		{
 			dependencies: ["029A3AB286EFB208"]
 			id: "7E166B27DA315923"
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "34091DA19AE4CDBB"
 				item: "mekanism_extras:infinite_fluid_tank"
@@ -229,13 +231,39 @@
 		}
 		{
 			dependencies: ["254B1CE0803DA72D"]
+			description: [
+				"Fluid Drawers can be connected to the"
+				"{ \"text\": \"Storage Controller\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"1E7C3D46B2CE70EB\" } } "
+				"as well."
+			]
 			disable_toast: true
 			id: "321281E77DC6C399"
 			tasks: [{
 				id: "3DA51493701281DA"
-				item: "functionalstorage:fluid_1"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "functionalstorage:fluid_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:fluid_2"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:fluid_4"
+							}
+						]
+					}
+				}
+				title: "Any Fluid Drawer"
 				type: "item"
 			}]
+			title: "Fluid Drawers"
 			x: -12.0d
 			y: -1.5d
 		}
@@ -566,8 +594,8 @@
 				item: "industrialrenewal:fluid_tank"
 				type: "item"
 			}]
-			x: -13.5d
-			y: -1.5d
+			x: -9.0d
+			y: -3.0d
 		}
 	]
 	title: "Fluid Storage"

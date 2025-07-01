@@ -53,7 +53,6 @@ ServerEvents.recipes(event => {
   ])
   
 	event.remove({ input: EXD("stone_pebble") })
-    event.shapeless(Item.of(MC("stone"), 1), [Item.of(EXD("stone_pebble"), 4)])
 	
     event.shapeless(EXD("string_mesh"), [CR_S("string_mesh")])
 	

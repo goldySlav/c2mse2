@@ -13,8 +13,8 @@ ServerEvents.recipes((event) => {
     event.replaceInput({ id: M("teleportation_core") }, M("alloy_atomic"), MC("diamond"))
 
     //personal chest & barrel
-    event.replaceInput({ id: M("personal_chest") }, F("#chests/wooden"), IC("obsidian_chest"))
-    event.replaceInput({ id: M("personal_barrel") }, F("#barrels/wooden"), MB("obsidian_barrel"))
+    event.replaceInput({ id: M("personal_chest") }, F("#chests/wooden"), SS("netherite_chest"))
+    event.replaceInput({ id: M("personal_barrel") }, F("#barrels/wooden"), SS("netherite_barrel"))
 	
 	//carbon from coke
 	customRecipes.mekanism.infusion_conversion(event, M("carbon"), 30, KJ('coke'))

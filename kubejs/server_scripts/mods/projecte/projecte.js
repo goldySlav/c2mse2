@@ -119,7 +119,7 @@ ServerEvents.recipes((event) => {
     S: F('#stone'),
     D: MC('diamond'),
     I: F("#ingots/iron"),
-    B: IC("obsidian_chest"),
+    B: SS("netherite_chest"),
   }).id(KJ(`${PRE()}/alchemical_chest`))
 
   event.shaped(PREXT('alchemical_barrel'), ['LMH', 'SDS', 'IBI'], {
@@ -129,7 +129,7 @@ ServerEvents.recipes((event) => {
     S: F('#stone'),
     D: MC('diamond'),
     I: F("#ingots/iron"),
-    B: MB("obsidian_barrel"),
+    B: SS("netherite_barrel"),
   }).id(KJ(`${PRE()}/alchemical_barrel`))
 
   event.replaceInput({ id: PRE("condenser_mk1") }, MC("obsidian"), PRE("dark_matter_block"))
@@ -292,17 +292,16 @@ ServerEvents.recipes((event) => {
     C: 'projectexpansion:fading_emc_link'
   }).id(`kubejs:projectexpansion/final_emc_link`)
 
-  event.recipes.extendedcrafting.shaped_table('projecte:swiftwolf_rending_gale', [
-    'CCCCC',
-    'CBBBC',
-    'CBABC',
-    'CBBBC',
-    'CCCCC',
-  ], {
-    A: F('#angelring'),
-    B: F('#ingots/unstable'),
-    C: EC('ender_star'),
-  })
+	event.shaped(PRE("swiftwolf_rending_gale"), [
+		'ABA',
+		'BCB',
+		'DBD'
+	], {
+		A: MU("netherite_opinium_core"),
+		B: PREXP("blue_matter"),
+		C: MC("nether_star"),
+		D: F("#ingots/unstable"),
+	})
 
   event.recipes.extendedcrafting.shaped_table('projecte:watch_of_flowing_time', [
     'GGGGGGGGG',
