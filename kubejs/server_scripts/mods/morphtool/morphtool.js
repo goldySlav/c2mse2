@@ -12,7 +12,7 @@ ServerEvents.recipes((event) => {
 		'I  '
 	], {
 		I: F('#rods/cast_iron'),
-		W: FB('framed_wrench').consume(),
+		W: FB('framed_wrench'),
 		R: EC("redstone_nugget"),
 		G: EC("ender_nugget"),
 		B: TCT("cobalt_nugget")
