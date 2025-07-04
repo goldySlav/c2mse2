@@ -17,7 +17,13 @@
 				"&6When a full block is above chest, it still won't open.&r"
 			]
 			disable_toast: true
-			icon: "ironchest:diamond_chest"
+			icon: {
+				Count: 1
+				id: "sophisticatedstorage:diamond_chest"
+				tag: {
+					woodType: "oak"
+				}
+			}
 			id: "41AC6CD50DA48043"
 			size: 1.0d
 			subtitle: "Big &oChest&r."
@@ -133,6 +139,7 @@
 			size: 1.0d
 			subtitle: "&oChest.&r"
 			tasks: [{
+				icon: "minecraft:chest"
 				id: "42BCFA4368C70F0E"
 				item: {
 					Count: 1
