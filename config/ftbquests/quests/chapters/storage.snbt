@@ -17,24 +17,12 @@
 				"&6When a full block is above chest, it still won't open.&r"
 			]
 			disable_toast: true
-			icon: {
-				Count: 1
-				id: "sophisticatedstorage:diamond_chest"
-				tag: {
-					woodType: "oak"
-				}
-			}
+			icon: "sophisticatedstorage:diamond_chest"
 			id: "41AC6CD50DA48043"
 			size: 1.0d
 			subtitle: "Big &oChest&r."
 			tasks: [{
-				icon: {
-					Count: 1
-					id: "sophisticatedstorage:diamond_chest"
-					tag: {
-						woodType: "oak"
-					}
-				}
+				icon: "sophisticatedstorage:diamond_chest"
 				id: "66DEE6A3A9C1D85B"
 				item: {
 					Count: 1
