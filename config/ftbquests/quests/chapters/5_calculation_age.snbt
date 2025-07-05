@@ -550,7 +550,7 @@
 		}
 		{
 			dependencies: ["7037302B8C2694EE"]
-			description: ["Ball of Sand can be sawed into &6Sand Chunks&r."]
+			description: ["Ball of Sand can be cut down into &6Sand Chunks&r."]
 			icon: "kubejs:rough_sand"
 			id: "0C905BBE99EAF556"
 			subtitle: "Use instead of snowballs? That would hurt!"

@@ -17,13 +17,21 @@
 				"&6When a full block is above chest, it still won't open.&r"
 			]
 			disable_toast: true
-			icon: "ironchest:diamond_chest"
+			icon: "sophisticatedstorage:diamond_chest"
 			id: "41AC6CD50DA48043"
 			size: 1.0d
 			subtitle: "Big &oChest&r."
 			tasks: [{
+				icon: "sophisticatedstorage:diamond_chest"
 				id: "66DEE6A3A9C1D85B"
-				item: "ironchest:diamond_chest"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:diamond_chest"
+					tag: {
+						woodType: ""
+					}
+				}
+				title: "Any Diamond Chest"
 				type: "item"
 			}]
 			x: -6.0d
@@ -39,7 +47,14 @@
 			subtitle: "Chest with a twist"
 			tasks: [{
 				id: "3230CC4DD845AD0A"
-				item: "minecraft:barrel"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:barrels/wooden"
+					}
+				}
+				title: "Any Wooden Barrel"
 				type: "item"
 			}]
 			x: -7.5d
@@ -47,15 +62,35 @@
 		}
 		{
 			dependencies: ["7FBD9CE1F53B85B8"]
-			description: ["This barrel stores &6108&r stacks of items."]
+			description: ["This barrel stores &6108&r stacks of items and has 4 upgrade slots to boost the functionality even further."]
 			disable_toast: true
-			icon: "metalbarrels:diamond_barrel"
+			icon: {
+				Count: 1
+				id: "sophisticatedstorage:diamond_barrel"
+				tag: {
+					woodType: "oak"
+				}
+			}
 			id: "286CA851F442D7FF"
 			size: 1.0d
 			subtitle: "Big &oBarrel&r"
 			tasks: [{
+				icon: {
+					Count: 1
+					id: "sophisticatedstorage:diamond_barrel"
+					tag: {
+						woodType: "oak"
+					}
+				}
 				id: "10F155D378023887"
-				item: "metalbarrels:diamond_barrel"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:diamond_barrel"
+					tag: {
+						woodType: ""
+					}
+				}
+				title: "Any Diamond Barrel"
 				type: "item"
 			}]
 			x: -7.5d
@@ -92,8 +127,16 @@
 			size: 1.0d
 			subtitle: "&oChest.&r"
 			tasks: [{
+				icon: "minecraft:chest"
 				id: "42BCFA4368C70F0E"
-				item: "minecraft:chest"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:chests/wooden"
+					}
+				}
+				title: "Any Wooden Chest"
 				type: "item"
 			}]
 			x: -4.5d

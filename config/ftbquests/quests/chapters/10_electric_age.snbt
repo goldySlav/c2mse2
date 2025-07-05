@@ -356,7 +356,7 @@
 		}
 		{
 			dependencies: ["2D760C826C0A76BE"]
-			description: ["Put a coal into &6Metallurgic Infuser&r to transform it into &0Carbon&r."]
+			description: ["Put a piece of coal into &6Metallurgic Infuser&r to transform it into &0Carbon&r."]
 			id: "0EBFD7B345796972"
 			tasks: [{
 				icon: "tconstruct:molten_obsidian_bucket"

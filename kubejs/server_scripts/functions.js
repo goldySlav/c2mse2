@@ -109,7 +109,8 @@ const DYE_F = (id, x) => MOD("dyenamicsandfriends", id, x)
 const ABD = (id, x) => MOD("absentbydesign", id, x)
 const HV_P = (id, x) => MOD("havenpebbles", id, x)
 const HV_AS = (id, x) => MOD("havenanimalseeds", id, x)
-
+const MORPH = (id, x) => MOD("morphtool", id, x)
+const AK_T = (id, x) => MOD("akashictome", id, x)
 
 const processingTimesDefault = {
 	milling: 300,

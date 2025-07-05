@@ -49,5 +49,7 @@ ItemEvents.modification(event => {
             item.maxStackSize = 64
         })
     })
-
+	event.modify('rftoolsbase:filter_module', item => {
+		item.maxStackSize = 8
+	})
 })

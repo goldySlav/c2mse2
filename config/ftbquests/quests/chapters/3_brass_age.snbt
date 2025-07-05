@@ -116,7 +116,7 @@
 		{
 			dependencies: ["3984091B70C5869E"]
 			description: [
-				"Finally we have &6&o&lbrass&r."
+				"Finally we have &6&o&lBrass&r."
 				"This one is made by casting &6Molten Brass&r onto a &6Casting Table&r with a cast of your choice, preferably the &6Nugget Cast&r."
 			]
 			icon: "create:brass_nugget"
@@ -309,8 +309,8 @@
 				"Multiple terms work together (cogwheel @create)"
 				"Exclude search terms: Type - in front of a word (@create -small)"
 				"Search terms that have spaces in them: Type \"\" around the words (\"two words\")"
-				"Search by Tooltip Only: Type # in front of a word (#capacity)"
-				"Search by OreDict name: Type $ in front of a word ($ingot)"
+				"Search by Tooltip Only: Type $ in front of a word ($capacity)"
+				"Search by OreDict name: Type # in front of a word (#ingot)"
 				"Search by Creative Tab: Type % in front of a word (%Nature)"
 				"Multiple Searches: Separate terms with | characters (\"wrench|hammer\")"
 				"Searching for \"@tinkers #heart\" should show you all possible items for The Heat Source."
@@ -586,7 +586,7 @@
 		}
 		{
 			dependencies: ["0B16696302C3F3C5"]
-			description: ["Sifting skystone? crushed?? but how?"]
+			description: ["Sifting Skystone? Crushed?? But how?"]
 			id: "1E9D9B683C14E688"
 			subtitle: "Gonna grow some crystals. -Walter"
 			tasks: [{

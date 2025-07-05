@@ -114,11 +114,7 @@
 		}
 		{
 			dependencies: ["4FADC55FA94C323C"]
-			description: [
-				"He would chuck, he would, as much as he could, and chuck as much wood as a woodchuck would if a woodchuck could chuck wood."
-				""
-				"NOTE: I don't know what drugs this guy is on but, you can &6crouch&r or &6sprint&r next to a crop to grow it &6faster&r. (different descriptor!)"
-			]
+			description: ["He would chuck, he would, as much as he could, and chuck as much wood as a woodchuck would if a woodchuck could chuck wood."]
 			id: "4747F0E81C972CE7"
 			subtitle: "How much wood would a woodchuck chuck?"
 			tasks: [{
@@ -133,9 +129,7 @@
 			dependencies: ["4FADC55FA94C323C"]
 			description: [
 				"&6Harvest&r the Spiderweb Fruit to obtain String"
-				"Right-Clicking will allow you to harvest the same friut unlimited amount of times"
-				""
-				"(Tip: If you get close enough, you can repeatedly crouch to &6Accelerate&r growth of saplings, fruit, or many crops)"
+				"Right-Clicking will allow you to harvest the same friut unlimited amount of times."
 			]
 			id: "57BE7ACAF994B7DA"
 			subtitle: "Now without those silkworms!"
@@ -1353,6 +1347,147 @@
 			title: "First Collection"
 			x: 1.0d
 			y: 7.0d
+		}
+		{
+			dependencies: ["57BE7ACAF994B7DA"]
+			description: ["Tip: If you get close enough, you can repeatedly crouch to &6Accelerate&r growth of saplings, fruit, or many crops."]
+			icon: "minecraft:bone_meal"
+			id: "263750DE0B8C7860"
+			optional: true
+			shape: "circle"
+			subtitle: "Twerk 'em down"
+			tasks: [{
+				id: "657EAB146C2668E6"
+				title: "Understood"
+				type: "checkmark"
+			}]
+			title: "You're taking too long!"
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["34BF9226B9CB7468"]
+			description: ["Only hostile mobs spawn around you. To get passive mobs, you need to grow them yourself."]
+			icon: "minecraft:wheat_seeds"
+			id: "1C7AF0C1619A74DA"
+			optional: true
+			shape: "circle"
+			subtitle: "Monsters are not your friends"
+			tasks: [
+				{
+					id: "77F03D3DBEF168C2"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+				{
+					id: "56CCBDB070EDA834"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "havenanimalseeds:axolotl_seed"
+								}
+								{
+									Count: 1b
+									id: "havenanimalseeds:bee_seed"
+								}
+								{
+									Count: 1b
+									id: "havenanimalseeds:cat_seed"
+								}
+								{
+									Count: 1b
+									id: "havenanimalseeds:chicken_seed"
+								}
+								{
+									Count: 1b
+									id: "havenanimalseeds:cow_seed"
+								}
+								{
+									Count: 1b
+									id: "havenanimalseeds:donkey_seed"
+								}
+								{
+									Count: 1b
+									id: "havenanimalseeds:fox_seed"
+								}
+								{
+									Count: 1b
+									id: "havenanimalseeds:goat_seed"
+								}
+								{
+									Count: 1b
+									id: "havenanimalseeds:horse_seed"
+								}
+								{
+									Count: 1b
+									id: "havenanimalseeds:llama_seed"
+								}
+								{
+									Count: 1b
+									id: "havenanimalseeds:mooshroom_seed"
+								}
+								{
+									Count: 1b
+									id: "havenanimalseeds:mule_seed"
+								}
+								{
+									Count: 1b
+									id: "havenanimalseeds:pig_seed"
+								}
+								{
+									Count: 1b
+									id: "havenanimalseeds:rabbit_seed"
+								}
+								{
+									Count: 1b
+									id: "havenanimalseeds:sheep_seed"
+								}
+								{
+									Count: 1b
+									id: "havenanimalseeds:parrot_seed"
+								}
+								{
+									Count: 1b
+									id: "havenanimalseeds:turtle_seed"
+								}
+								{
+									Count: 1b
+									id: "havenanimalseeds:wolf_seed"
+								}
+								{
+									Count: 1b
+									id: "havenanimalseeds:dolphin_seed"
+								}
+								{
+									Count: 1b
+									id: "havenanimalseeds:glow_squid_seed"
+								}
+								{
+									Count: 1b
+									id: "havenanimalseeds:polar_bear_seed"
+								}
+								{
+									Count: 1b
+									id: "havenanimalseeds:squid_seed"
+								}
+								{
+									Count: 1b
+									id: "havenanimalseeds:villager_seed"
+								}
+							]
+						}
+					}
+					title: "Any Mob Seed"
+					type: "item"
+				}
+			]
+			title: "Restore lifestock"
+			x: -7.0d
+			y: 8.5d
 		}
 	]
 	subtitle: ["Survive in open space after horrible accident"]

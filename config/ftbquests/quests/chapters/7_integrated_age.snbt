@@ -43,6 +43,7 @@
 			description: ["EXPAND EXPAND EXPAND EXPAND!!!!"]
 			icon: "create_dreams_and_desires:integrated_mechanism"
 			id: "39DA9F7639D6AD78"
+			subtitle: "Dreaming about your desires"
 			tasks: [
 				{
 					id: "7AF607AE0F20C39D"
@@ -155,6 +156,7 @@
 				""
 				"NOTE: The extractor works faster when powered."
 				"NOTE 2: &6Accacia Logs&r are the richest in tree liquids."
+				"NOTE 3: &6Stripped Accacia Logs&r don't have any tree liquids."
 			]
 			icon: "industrialforegoing:latex_bucket"
 			id: "1703708CBC9B2247"
@@ -190,8 +192,13 @@
 		}
 		{
 			dependencies: ["431301D20ABE6ABD"]
+			description: [
+				"Overcharged means oversupplied with energy."
+				"So I think we both know how to make it."
+			]
 			icon: "powah:crystal_nitro"
 			id: "20317A92BD9A8AC5"
+			subtitle: "I'd rather not touch that"
 			tasks: [
 				{
 					id: "253133F9FEC2EC9E"
@@ -209,8 +216,10 @@
 		}
 		{
 			dependencies: ["342C68B775AAD6FC"]
+			description: ["AE2 In-game wiki has a lot of informations on this unnatural phenomenom."]
 			icon: "ae2:fluix_crystal"
 			id: "431301D20ABE6ABD"
+			subtitle: "Fully synthetic"
 			tasks: [
 				{
 					id: "7852013DEB889D5F"
