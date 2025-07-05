@@ -86,8 +86,11 @@ ServerEvents.recipes((event) => {
 	})
 	
 	
-	
-
+	//magnet upgrades
+	removeRecipeByID(event, [
+		SBP("magnet_upgrade"),
+		SBP("advanced_magnet_upgrade")
+	])
 	event.shaped(SBP("magnet_upgrade"), [
 		'EBE',
 		'ACA',
@@ -99,8 +102,6 @@ ServerEvents.recipes((event) => {
 		D: KJ("chromatic_resonator"),
 		E: MC("ender_pearl"),
 	})
-	removeRecipeByID(event, [
-	])
 	event.shaped(SBP("advanced_magnet_upgrade"), [
 		'EBE',
 		'ACA',

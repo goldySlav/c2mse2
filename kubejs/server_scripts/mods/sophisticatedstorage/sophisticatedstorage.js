@@ -2,14 +2,16 @@
 
 ServerEvents.recipes((event) => {
     removeRecipeByID(event, [
-		/sophisticatedstorage:double_*/,
-		SS("magnet_upgrade"),
-		SS("advanced_magnet_upgrade")
+		/sophisticatedstorage:double_*/
 	])
 	
 	
 	
 	//magnet upgrade
+	removeRecipeByID(event, [
+		SS("magnet_upgrade"),
+		SS("advanced_magnet_upgrade")
+	])
 	event.shaped(SS("magnet_upgrade"), [
 		'EBE',
 		'ACA',

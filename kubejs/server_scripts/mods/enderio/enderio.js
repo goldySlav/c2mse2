@@ -347,16 +347,11 @@ ServerEvents.recipes((event) => {
 	})
 
 	//Filters
-	event.recipes.extendedcrafting.shapeless_table(EIO("generic_filter_base"), [tieredItems.ch6.machine, RTB("filter_module")])
-	event.recipes.create.mechanical_crafting(EIO("generic_filter_base"), "AB", { A: tieredItems.ch6.machine, B: RTB("filter_module")})
-	event.smithing(EIO("generic_filter_base"), tieredItems.ch6.circuit, tieredItems.ch6.machine, RTB("filter_module"))
 	event.shapeless(EIO("generic_filter_base"), [EIO("redstone_filter_base")])
 	event.shapeless(EIO("redstone_filter_base"), [EIO("generic_filter_base")])
-
 	event.stonecutting(EIO("basic_item_filter"), EIO("generic_filter_base"))
 	event.stonecutting(EIO("basic_fluid_filter"), EIO("generic_filter_base"))
 	event.stonecutting(EIO("entity_filter"), EIO("generic_filter_base"))
-
 	event.stonecutting(EIO("redstone_not_filter"), EIO("redstone_filter_base"))
 	event.stonecutting(EIO("redstone_or_filter"), EIO("redstone_filter_base"))
 	event.stonecutting(EIO("redstone_and_filter"), EIO("redstone_filter_base"))
@@ -369,19 +364,16 @@ ServerEvents.recipes((event) => {
 	event.stonecutting(EIO("redstone_sensor_filter"), EIO("redstone_filter_base"))
 	event.stonecutting(EIO("redstone_timer_filter"), EIO("redstone_filter_base"))
 
-	event.recipes.extendedcrafting.shaped_table(Item.of(EIO("advanced_item_filter"), 2),
-		[
+	event.recipes.extendedcrafting.shaped_table(Item.of(EIO("advanced_item_filter"), 2), [
 			"DDDDD",
 			"DCBCD",
 			"DBABD",
 			"DCBCD",
-			"DDDDD",
+			"DDDDD"
 		], {
 		A: EIO("basic_item_filter"),
 		B: MC("paper"),
 		C: MC("hopper"),
 		D: IF("plastic"),
-	}
-	)
-
+	})
 })
