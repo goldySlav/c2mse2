@@ -2,7 +2,7 @@
 
 ServerEvents.recipes((event) => {
     removeRecipeByID(event, [
-		/sophisticatedstorage:double_*/
+		/sophisticatedstorage:double_*/,
 	])
 	
 	

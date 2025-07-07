@@ -363,7 +363,6 @@ ServerEvents.recipes((event) => {
 	event.stonecutting(EIO("redstone_counting_filter"), EIO("redstone_filter_base"))
 	event.stonecutting(EIO("redstone_sensor_filter"), EIO("redstone_filter_base"))
 	event.stonecutting(EIO("redstone_timer_filter"), EIO("redstone_filter_base"))
-
 	event.recipes.extendedcrafting.shaped_table(Item.of(EIO("advanced_item_filter"), 2), [
 			"DDDDD",
 			"DCBCD",
