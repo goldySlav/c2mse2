@@ -233,7 +233,7 @@
 			description: [
 				"You should have some by now. You crafted them in &6chapter 0&r."
 				""
-				"If only there was a block that &6Links&r directlt to your &6EMC&r..."
+				"If only there was a block that acts as a direct &6EMC Link&r..."
 			]
 			icon: "minecraft:ender_pearl"
 			id: "12D6ACC2191CB67C"
@@ -255,7 +255,7 @@
 		}
 		{
 			dependencies: ["72990BF5F56BCE79"]
-			description: ["Made &6Exclusively&r in Mechanical Crafters in a &62x2 grid&r."]
+			description: ["Made in Mechanical Crafters in a &62x2 grid&r."]
 			icon: {
 				Count: 1
 				id: "create:chromatic_compound"
