@@ -1750,7 +1750,8 @@ castsForNumber = {
 	abstruse_machine(P('energy_discharger_niotic'), 1, P('energy_discharger_blazing'))
 	abstruse_machine(IF('machine_frame_pity'), 1)
 	abstruse_machine(EIO("octadic_capacitor"), 1, EIO('double_layer_capacitor'))
-	
+	abstruse_machine(EIO("generic_filter_base"), 1, RTB("filter_module"))
+
 	//integrated machine
 	event.shaped(KJ('integrated_machine'), [
 		'SSS',

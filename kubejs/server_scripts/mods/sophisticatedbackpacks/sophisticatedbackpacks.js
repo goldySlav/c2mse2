@@ -5,6 +5,8 @@ ServerEvents.recipes((event) => {
 		SBP("crafting_upgrade"),
 		SBP("xp_pump_upgrade"),
 		SBP("battery_upgrade"),
+		SBP("magnet_upgrade"),
+		SBP("advanced_magnet_upgrade")
     ])
 	
 	const shapedSaveNBTBackpack = (event, output, patternArr, inputObj) => {
@@ -84,10 +86,10 @@ ServerEvents.recipes((event) => {
 	})
 	
 	
-	
-	//magnet upgrade
+	//magnet upgrades
 	removeRecipeByID(event, [
 		SBP("magnet_upgrade"),
+		SBP("advanced_magnet_upgrade")
 	])
 	event.shaped(SBP("magnet_upgrade"), [
 		'EBE',
@@ -97,6 +99,17 @@ ServerEvents.recipes((event) => {
 		A: F(`#ingots/iron`),
 		B: M("teleportation_core"),
 		C: SBP("pickup_upgrade"),
+		D: KJ("chromatic_resonator"),
+		E: MC("ender_pearl"),
+	})
+	event.shaped(SBP("advanced_magnet_upgrade"), [
+		'EBE',
+		'ACA',
+		'ADA'
+	], {
+		A: F(`#ingots/iron`),
+		B: M("teleportation_core"),
+		C: SBP("advanced_pickup_upgrade"),
 		D: KJ("chromatic_resonator"),
 		E: MC("ender_pearl"),
 	})

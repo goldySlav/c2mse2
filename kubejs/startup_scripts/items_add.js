@@ -290,4 +290,7 @@ StartupEvents.registry('item', event => {
 	event.create('miniutilities:unstable_hoe_part').displayName('Unstable Hoe Part').rarity("epic").glow(true)
 	event.create('projecte:dm_hoe_part').displayName('Dark Matter Hoe Part').rarity("epic").glow(true)
 	event.create('projecte:rm_hoe_part').displayName('Red Matter Hoe Part').rarity("epic").glow(true)
+
+	//filter
+	event.create('enderio:generic_filter_base').displayName('Generic Filter Base')
 });
