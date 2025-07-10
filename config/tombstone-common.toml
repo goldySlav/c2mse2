@@ -200,11 +200,11 @@
 	allow_halloween = true
 	#Allows Christmas [false/true|default:true]
 	allow_christmas = true
-	#Allows Easter [false/true|default:true]
-	allow_easter = true
 	#Allows April Fools [false/true|default:true]
 	allow_april_fools = true
-	#Allows you to set a Special Event as permanent [NONE/APRIL_FOOLS/HALLOWEEN/CHRISTMAS/EASTER|default:NONE]
-	#Allowed Values: NONE, APRIL_FOOLS, HALLOWEEN, CHRISTMAS, EASTER
+	#Allows you to set a Special Event as permanent [NONE/APRIL_FOOLS/HALLOWEEN/CHRISTMAS/SPRING_BLOOM|default:NONE]
+	#Allowed Values: NONE, APRIL_FOOLS, HALLOWEEN, CHRISTMAS, SPRING_BLOOM
 	force_special_event = "NONE"
+	#Allows Spring Bloom [false/true|default:true]
+	allow_spring_bloom = true
 
