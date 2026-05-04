@@ -24,3 +24,5 @@ simplebackups/
 config/exdeorum/compost_colors/
 config/structurify/
 CLAUDE.md
+.claude/
+graphify-out/
