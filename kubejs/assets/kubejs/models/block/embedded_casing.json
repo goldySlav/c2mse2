@@ -9,7 +9,11 @@
           "type": "is_same_block"
         },
         {
-          "type": "is_face_visible"
+          "type": "not",
+          "predicate": {
+            "type": "match_block_in_front",
+            "block": "kubejs:embedded_casing"
+          }
         }
       ]
     }

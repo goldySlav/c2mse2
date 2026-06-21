@@ -118,10 +118,19 @@
 			id: "4747F0E81C972CE7"
 			subtitle: "How much wood would a woodchuck chuck?"
 			tasks: [{
+				icon: "minecraft:oak_log"
 				id: "62427C273019E486"
-				item: "minecraft:oak_log"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "Any Log"
 				type: "item"
 			}]
+			title: "Any Log"
 			x: -1.0d
 			y: 5.0d
 		}
@@ -159,10 +168,19 @@
 			id: "7DB66F1A0165564A"
 			subtitle: "The Vanilla way"
 			tasks: [{
+				icon: "minecraft:oak_planks"
 				id: "5C89EFC98DF3BD02"
-				item: "minecraft:oak_planks"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:planks"
+					}
+				}
+				title: "Any Planks"
 				type: "item"
 			}]
+			title: "Any Planks"
 			x: -1.0d
 			y: 7.0d
 		}
@@ -233,7 +251,59 @@
 			subtitle: "Making water!"
 			tasks: [{
 				id: "775153D26255642A"
-				item: "exdeorum:oak_crucible"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "exdeorum:oak_crucible"
+							}
+							{
+								Count: 1b
+								id: "exdeorum:spruce_crucible"
+							}
+							{
+								Count: 1b
+								id: "exdeorum:birch_crucible"
+							}
+							{
+								Count: 1b
+								id: "exdeorum:jungle_crucible"
+							}
+							{
+								Count: 1b
+								id: "exdeorum:acacia_crucible"
+							}
+							{
+								Count: 1b
+								id: "exdeorum:dark_oak_crucible"
+							}
+							{
+								Count: 1b
+								id: "exdeorum:mangrove_crucible"
+							}
+							{
+								Count: 1b
+								id: "exdeorum:cherry_crucible"
+							}
+							{
+								Count: 1b
+								id: "exdeorum:bamboo_crucible"
+							}
+							{
+								Count: 1b
+								id: "exdeorum:crimson_crucible"
+							}
+							{
+								Count: 1b
+								id: "exdeorum:warped_crucible"
+							}
+						]
+					}
+				}
+				title: "Any Wooden Crucible"
 				type: "item"
 			}]
 			x: -2.0d
@@ -255,9 +325,17 @@
 			subtitle: "Let's get it started"
 			tasks: [{
 				id: "5FFA00FE26AC3F5F"
-				item: "exdeorum:oak_sieve"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "exdeorum:sieves"
+					}
+				}
+				title: "Any Sieve"
 				type: "item"
 			}]
+			title: "Any Sieve"
 			x: -4.0d
 			y: 9.5d
 		}
@@ -413,15 +491,23 @@
 			dependencies: ["6E6E24468D9F6CF1"]
 			description: [
 				"Barrels unlock simple crafting using &6Fluids&r."
-				"Also collects rain."
+				"They also collect rain."
 			]
 			id: "571BFE823C86B5E5"
 			subtitle: "Can't do a barrel roll with this one"
 			tasks: [{
 				id: "7319201E280DA298"
-				item: "exdeorum:oak_barrel"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "exdeorum:wooden_barrels"
+					}
+				}
+				title: "Any Wooden Barrel"
 				type: "item"
 			}]
+			title: "Any Wooden Barrel"
 			x: -3.0d
 			y: 10.5d
 		}

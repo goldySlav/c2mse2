@@ -174,8 +174,6 @@ StartupEvents.registry('block', event => {
         .tagBlock("mineable/pickaxe")
 		.soundType('lantern')
 		.displayName("Electric Casing")
-		.notSolid()
-		.renderType("cutout")
 
 	event.create(`compressed_crafting_table`)
 		.displayName(`Compressed Crafting Table`)

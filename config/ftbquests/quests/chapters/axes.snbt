@@ -329,6 +329,7 @@
 		}
 		{
 			dependencies: ["607A3E29C9ED39BA"]
+			disable_toast: true
 			id: "11C03877A4F4FD23"
 			tasks: [{
 				id: "3198F1F96E6ACB87"
@@ -363,6 +364,7 @@
 		}
 		{
 			dependencies: ["3977FC50A889631F"]
+			disable_toast: true
 			id: "09780D90EA4CBF85"
 			tasks: [{
 				id: "06331B0603490398"
@@ -380,6 +382,7 @@
 		}
 		{
 			dependencies: ["47D642331D73E96E"]
+			disable_toast: true
 			id: "3977FC50A889631F"
 			tasks: [{
 				id: "0E63155CB75851BF"
@@ -396,6 +399,7 @@
 			y: -3.0d
 		}
 		{
+			disable_toast: true
 			id: "47D642331D73E96E"
 			tasks: [{
 				id: "53DB9BFB6847E9FD"
